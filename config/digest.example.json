@@ -1,0 +1,359 @@
+{
+  "publication": {
+    "name": "Personal Daily",
+    "timezone": "America/Los_Angeles",
+    "tone": "curious, concise, lightly editorial, never press-release-like",
+    "target_length_words": 1400,
+    "formality": "smart magazine",
+    "max_stories": 8,
+    "min_serendipity_stories": 1
+  },
+  "freshness_hours": 72,
+  "cluster_similarity_threshold": 0.5,
+  "output_dir": "out",
+  "model": {
+    "provider": "openai",
+    "model": "gpt-5.5",
+    "timeout_seconds": 60,
+    "temperature": null,
+    "pricing_usd_per_1m_tokens": {
+      "input": 5.0,
+      "cached_input": 0.5,
+      "output": 30.0
+    }
+  },
+  "curated_feeds": [
+    {
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "tags": [
+        "ai",
+        "agent-infrastructure",
+        "practitioner-analysis"
+      ]
+    },
+    {
+      "name": "Interconnects",
+      "url": "https://www.interconnects.ai/feed",
+      "tags": [
+        "ai",
+        "model-analysis",
+        "practitioner-analysis"
+      ]
+    },
+    {
+      "name": "Latent Space",
+      "url": "https://www.latent.space/feed",
+      "tags": [
+        "ai",
+        "agent-infrastructure",
+        "industry-analysis"
+      ]
+    },
+    {
+      "name": "WSJ World News",
+      "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml",
+      "tags": [
+        "general",
+        "world",
+        "context"
+      ]
+    },
+    {
+      "name": "Washington Post World",
+      "url": "https://feeds.washingtonpost.com/rss/world",
+      "tags": [
+        "general",
+        "world",
+        "context"
+      ]
+    },
+    {
+      "name": "NYT U.S.",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
+      "tags": [
+        "general",
+        "us",
+        "context"
+      ]
+    },
+    {
+      "name": "NYT New York Region",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml",
+      "tags": [
+        "nyc",
+        "new-york",
+        "context"
+      ]
+    },
+    {
+      "name": "NYT Business",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
+      "tags": [
+        "business",
+        "economy",
+        "context"
+      ]
+    },
+    {
+      "name": "NYT Arts",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml",
+      "tags": [
+        "arts",
+        "culture",
+        "context"
+      ]
+    },
+    {
+      "name": "NYT Movies",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml",
+      "tags": [
+        "movies",
+        "criticism",
+        "reviews"
+      ]
+    },
+    {
+      "name": "LetsRun",
+      "url": "https://www.letsrun.com/feed/",
+      "tags": [
+        "running",
+        "elite-running",
+        "race-commentary"
+      ]
+    },
+    {
+      "name": "Literary Hub",
+      "url": "https://lithub.com/feed/",
+      "tags": [
+        "literary-fiction",
+        "criticism",
+        "books"
+      ]
+    },
+    {
+      "name": "The Millions",
+      "url": "https://themillions.com/feed",
+      "tags": [
+        "literary-fiction",
+        "criticism",
+        "books"
+      ]
+    },
+    {
+      "name": "Public Books",
+      "url": "https://www.publicbooks.org/feed/",
+      "tags": [
+        "literary-fiction",
+        "criticism",
+        "essays"
+      ]
+    },
+    {
+      "name": "101 Cookbooks",
+      "url": "https://www.101cookbooks.com/feed",
+      "tags": [
+        "cooking",
+        "seasonal",
+        "produce-forward"
+      ]
+    },
+    {
+      "name": "Smitten Kitchen",
+      "url": "https://smittenkitchen.com/feed/",
+      "tags": [
+        "cooking",
+        "home-cooking"
+      ]
+    },
+    {
+      "name": "NYT Dining & Wine",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/DiningandWine.xml",
+      "tags": [
+        "cooking",
+        "food",
+        "dining"
+      ]
+    },
+    {
+      "name": "Eater NY",
+      "url": "https://ny.eater.com/rss/index.xml",
+      "tags": [
+        "nyc-food",
+        "restaurants",
+        "openings"
+      ]
+    },
+    {
+      "name": "Curbed",
+      "url": "https://www.curbed.com/rss/index.xml",
+      "tags": [
+        "nyc",
+        "urbanism",
+        "housing"
+      ]
+    },
+    {
+      "name": "RogerEbert.com",
+      "url": "https://www.rogerebert.com/feed",
+      "tags": [
+        "movies",
+        "criticism",
+        "reviews"
+      ]
+    },
+    {
+      "name": "Film Comment",
+      "url": "https://www.filmcomment.com/feed/",
+      "tags": [
+        "movies",
+        "criticism",
+        "essays"
+      ]
+    },
+    {
+      "name": "Little White Lies",
+      "url": "https://lwlies.com/feed/",
+      "tags": [
+        "movies",
+        "criticism",
+        "reviews"
+      ]
+    }
+  ],
+  "discovery": {
+    "enabled": true,
+    "provider": "google_news_rss",
+    "locale": "en-US",
+    "region": "US",
+    "max_items_per_query": 6,
+    "query_sets": [
+      {
+        "name": "ai-agent-infrastructure",
+        "queries": [
+          "when:3d AI agents sandboxed code execution model serving vLLM TensorRT-LLM SGLang",
+          "when:3d LangGraph LlamaIndex agent observability evaluation tracing",
+          "when:3d practitioner analysis AI agents model serving inference stack"
+        ],
+        "tags": [
+          "ai",
+          "agent-infrastructure"
+        ],
+        "weight": 1.2
+      },
+      {
+        "name": "ai-industry-analysis",
+        "queries": [
+          "when:3d artificial intelligence industry analysis model labs open source models",
+          "when:3d AI startup infrastructure funding inference chips deployment",
+          "when:3d AI product launches developer tools practitioner reaction"
+        ],
+        "tags": [
+          "ai",
+          "industry-analysis"
+        ],
+        "weight": 1.0
+      },
+      {
+        "name": "competitive-running",
+        "queries": [
+          "when:3d elite distance running race results marathon track cross country analysis",
+          "when:3d competitive running training high mileage recovery nutrition hydration",
+          "when:3d running sports science cardiovascular health endurance athletes"
+        ],
+        "tags": [
+          "running",
+          "sports-science"
+        ],
+        "weight": 1.0
+      },
+      {
+        "name": "literary-fiction-criticism",
+        "queries": [
+          "when:7d literary fiction review criticism interior restrained novel",
+          "when:7d Kazuo Ishiguro Ottessa Moshfegh Hanya Yanagihara fiction criticism",
+          "when:7d contemporary literary fiction essays book criticism"
+        ],
+        "tags": [
+          "literary-fiction",
+          "criticism"
+        ],
+        "weight": 0.95
+      },
+            {
+                "name": "cooking-and-food",
+                "queries": [
+                    "when:7d home cooking technique seasonal produce Mediterranean California cuisine",
+                    "when:7d Serious Eats America's Test Kitchen cooking technique recipe testing",
+                    "when:7d farmers market seasonal cooking Alice Waters Chez Panisse"
+                ],
+        "tags": [
+          "cooking",
+          "technique",
+          "seasonal"
+        ],
+        "weight": 0.9
+      },
+      {
+        "name": "nyc-food",
+        "queries": [
+          "when:7d NYC restaurant review Lincoln Square Upper West Side opening",
+          "when:7d New York dining criticism restaurant opening Manhattan",
+          "when:7d NYC food restaurants critic openings Upper West Side"
+        ],
+        "tags": [
+          "nyc-food",
+          "restaurants"
+        ],
+        "weight": 0.95
+      },
+      {
+        "name": "film-criticism",
+        "queries": [
+          "when:7d film criticism restrained quiet cinema review essay",
+          "when:7d independent film review criticism directors festival",
+          "when:7d movies criticism essay arthouse cinema"
+        ],
+        "tags": [
+          "movies",
+          "criticism"
+        ],
+        "weight": 0.8
+      },
+      {
+        "name": "world-context",
+        "queries": [
+          "when:1d world politics economy top news analysis",
+          "when:1d science culture public health climate important news",
+          "when:1d New York City housing transit climate politics"
+        ],
+        "tags": [
+          "general",
+          "context"
+        ],
+        "weight": 0.55
+      }
+    ],
+    "serendipity_queries": [
+      "when:7d design architecture urban public space New York",
+      "when:7d food agriculture climate seasonal produce",
+      "when:7d translation literary fiction essay",
+      "when:7d documentary film criticism",
+      "when:7d human computer interaction AI tools"
+    ],
+    "serendipity_per_day": 2
+  },
+  "modules": [
+    {
+      "type": "calendar_json",
+      "title": "Today",
+      "path": "sample-calendar.json"
+    },
+    {
+      "type": "text_file",
+      "title": "Editor's Note",
+      "path": "editor-note.txt",
+      "rendered_hint": "Use as a tiny note near the top when it fits."
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.
+

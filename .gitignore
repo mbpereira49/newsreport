@@ -1,0 +1,5 @@
+out/
+config/out/
+__pycache__/
+.pytest_cache/
+.env
