@@ -1,0 +1,86 @@
+[
+  {
+    "body": "The postmortem on the Trump memecoin is getting sharper. According to a cryptocurrency analytics firm cited by the Times, nearly a million people who bought the coin lost money, with total losses estimated at $3.8 billion. The split is the familiar one in speculative crypto: retail investors, drawn into the heat of a branded asset, mostly got hurt; more sophisticated traders did better. The available excerpts don\u2019t detail the methodology or timing, so treat the exact accounting as report-driven rather than independently adjudicated here. But the shape of the story is clear enough: a politically supercharged token created a market where attention was abundant and losses were widely distributed.",
+    "cluster_id": "f5d5a08524f458f9",
+    "dek": "A crypto analytics report says nearly a million investors lost a combined $3.8 billion, while more sophisticated traders fared better.",
+    "headline": "The Trump memecoin looks like a retail wipeout",
+    "source_ids": [
+      "f5d5a08524f458f9-s1",
+      "f5d5a08524f458f9-s2"
+    ],
+    "why_it_matters": "It is a tidy, grim case study in how celebrity, politics and crypto mechanics can transfer risk from fast-moving professionals to ordinary buyers."
+  },
+  {
+    "body": "Justice Samuel Alito remains very much in the frame. The Times notes that this Supreme Court term brought major conservative victories in areas including voting rights, immigration and guns \u2014 and that Alito has given no indication he is ready to step down. That combination matters because speculation about Supreme Court retirements often runs hotter than the evidence. In this case, at least from the excerpt provided, the relevant fact is absence: no signal of departure, no apparent winding down, and continued influence on marquee conservative outcomes.",
+    "cluster_id": "84d93d8228cdff5d",
+    "dek": "After a term that delivered conservative wins on voting rights, immigration and guns, Justice Samuel Alito has given no indication he plans to leave the Supreme Court.",
+    "headline": "Alito isn\u2019t signaling an exit",
+    "source_ids": [
+      "84d93d8228cdff5d-s1"
+    ],
+    "why_it_matters": "Supreme Court tenure is political power measured in decades. If Alito stays, the current conservative legal project keeps one of its central architects on the bench."
+  },
+  {
+    "body": "\u201cWho should I vote for?\u201d is exactly the sort of question AI tools are now being asked \u2014 and exactly the sort of question they are poorly positioned to answer cleanly. The Times frames the trend as a shortcut for voters who want to be informed but face the usual time, attention and complexity problems of democratic life. That allure is real: a chatbot can digest, compare and summarize. But the risk is equally real, because elections are not just information-retrieval problems. Candidate choice involves values, trust, local context and source quality \u2014 all places where AI systems can sound more authoritative than they deserve.",
+    "cluster_id": "2e08079d1d4943e5",
+    "dek": "Voters are asking AI tools who to vote for \u2014 an appealing shortcut in civic life, but one with obvious risks.",
+    "headline": "The chatbot enters the voting booth, unofficially",
+    "source_ids": [
+      "2e08079d1d4943e5-s1"
+    ],
+    "why_it_matters": "If voters outsource political judgment to chatbots, the design choices and failure modes of those systems become part of election infrastructure, whether or not anyone voted to put them there."
+  },
+  {
+    "body": "Simon Willison points to a useful attempt to impose order on open-source AI\u2019s messy abundance. Current AI \u2014 described as a nonprofit \u201cglobal partnership building a public option for AI,\u201d founded at the Paris AI Action Summit in February 2025 and backed by $400 million in committed capital \u2014 has launched its Gap Map v0.1. The map details 421 products: 266 software tools and libraries, 85 models, 50 datasets and 20 hardware projects, produced by 228 organizations. It sorts them into 14 categories across three layers of the stack: model components, product/UX and infrastructure. The kicker is the long tail: another 24,400 artifacts remain uncategorized.",
+    "cluster_id": "437efe8edc01bb0d",
+    "dek": "Current AI\u2019s new Gap Map catalogs hundreds of tools, models, datasets and hardware projects \u2014 and hints at just how much of the ecosystem remains unclassified.",
+    "headline": "A first map of the open-source AI sprawl",
+    "source_ids": [
+      "437efe8edc01bb0d-s1"
+    ],
+    "why_it_matters": "Open-source AI is no longer a tidy list of models on a leaderboard. Mapping the stack is becoming part of governing, funding and understanding it."
+  },
+  {
+    "body": "Eater New York has updated the kind of maps people pretend they don\u2019t use and absolutely do: where to drink and eat right now. One monthly heatmap narrows in on the city\u2019s new cocktail bars; others track the most interesting new restaurants in Brooklyn and Manhattan. The framing is explicitly editorial rather than exhaustive \u2014 Eater says its editors focus on openings drawing attention, while also keeping smaller or hidden-gem arrivals on the radar. The Manhattan version comes with a little institutional swagger: the Heatmap has been answering \u201cWhat\u2019s hot and new in Manhattan?\u201d for two decades. Useful if you need a reservation idea; dangerous if you confuse heat with staying power.",
+    "cluster_id": "3c444d09d8baf9af",
+    "dek": "New cocktail bars, Brooklyn openings and Manhattan restaurants get the monthly heatmap treatment.",
+    "headline": "Eater refreshes its NYC \u201cwhat\u2019s hot\u201d maps",
+    "source_ids": [
+      "3c444d09d8baf9af-s1",
+      "3c444d09d8baf9af-s2",
+      "3c444d09d8baf9af-s3"
+    ],
+    "why_it_matters": "Restaurant cities move fast. A recurring heatmap is less a verdict than a weather report \u2014 good for spotting where the energy has shifted this month."
+  },
+  {
+    "body": "For track fans, the 2026 Prefontaine Classic is moving from anticipation to logistics. LetsRun has posted the schedule, entries and results hub for the Eugene Diamond League meet, along with a separate guide to TV and streaming information. The excerpts don\u2019t list athletes, events or broadcast partners, so the main news here is utility: the pages to keep open if you\u2019re following the meet in real time or trying to figure out how to watch. Prefontaine is one of those track events where the pre-meet paperwork \u2014 entries, start times, scratches, live results \u2014 matters almost as much as the preview hype.",
+    "cluster_id": "4b83628fcb16e942",
+    "dek": "LetsRun has the practical guideposts for the 2026 Eugene Diamond League stop.",
+    "headline": "Prefontaine Classic prep: entries, results and how to watch",
+    "source_ids": [
+      "4b83628fcb16e942-s1",
+      "4b83628fcb16e942-s2"
+    ],
+    "why_it_matters": "Diamond League meets are global, but fandom is practical: knowing when races happen and where to watch is the difference between following the action and reading about it later."
+  },
+  {
+    "body": "A Madison Avenue gallery has turned over 20 artifacts thought to have been looted from Cambodia, according to the Times. The objects included stone statues and other items the gallery had purchased from an art dealer accused of trafficking in illicit objects. The excerpt doesn\u2019t name the gallery, the dealer or the specific legal mechanism behind the surrender, but the outline fits a larger pattern in antiquities enforcement: objects that once moved through elite art channels are being reexamined through provenance, wartime theft and trafficking claims.",
+    "cluster_id": "9d0293070a509f9d",
+    "dek": "The Madison Avenue business surrendered 20 items believed to have been looted, including stone statues and other objects tied to a dealer accused of trafficking illicit antiquities.",
+    "headline": "A New York gallery gives up Cambodian artifacts",
+    "source_ids": [
+      "9d0293070a509f9d-s1"
+    ],
+    "why_it_matters": "Repatriation cases are not just about individual objects. They test whether museums, galleries and collectors can still rely on old paperwork \u2014 or old silence \u2014 when source countries press claims."
+  },
+  {
+    "body": "For America\u2019s 250th birthday celebrations, the symbolism is doing some heavy lifting. The USCGC Eagle, leading a parade of tall ships, is carrying a rare 1776 printing of the Declaration of Independence. That is a pleasingly theatrical pairing: an old-style vessel, a national anniversary, and a foundational text from the year everything is meant to commemorate. The excerpt doesn\u2019t specify where the printing comes from or how it is being protected, but the image is enough \u2014 history not just displayed behind glass, but carried as ceremonial cargo.",
+    "cluster_id": "1acd0c72482b595f",
+    "dek": "The USCGC Eagle is leading the tall ships parade with unusually apt cargo: a rare 1776 printing of the Declaration of Independence.",
+    "headline": "A tall ship carries a 1776 Declaration into America\u2019s 250th",
+    "source_ids": [
+      "1acd0c72482b595f-s1"
+    ],
+    "why_it_matters": "National anniversaries can become abstraction machines. A fragile 1776 printing aboard a tall ship gives the pageantry a concrete object to orbit."
+  }
+]
