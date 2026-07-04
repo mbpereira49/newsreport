@@ -21,7 +21,7 @@ from daily_digest.llm import (
 )
 from daily_digest.models import DigestRun, FetchedItem, utc_now_iso
 from daily_digest.modules import load_modules
-from daily_digest.render import render_fallback_digest, render_html_digest
+from daily_digest.render import render_fallback_digest, render_html_digest, render_index_page
 from daily_digest.selection import deterministic_selection
 from daily_digest.usage import usage_report
 
@@ -111,6 +111,17 @@ def run_digest(
         encoding="utf-8",
     )
     _emit(progress, f"Wrote HTML: {html_path}")
+    digest_files = sorted(
+        (path.name for path in output_root.glob("*-digest.html")),
+        reverse=True,
+    )
+    index_path = output_root / "index.html"
+    index_path.write_text(
+        render_index_page(config.publication, run_date, digest_files),
+        encoding="utf-8",
+    )
+    (output_root / ".nojekyll").write_text("", encoding="utf-8")
+    _emit(progress, f"Wrote index: {index_path}")
 
     model_usage = usage_report(client.usage_records) if client is not None else usage_report([])
     _write_json(artifact_dir / "model_usage.json", model_usage)

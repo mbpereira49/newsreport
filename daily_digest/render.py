@@ -109,6 +109,48 @@ def render_html_digest(
     return "\n".join(html_parts) + "\n"
 
 
+def render_index_page(
+    publication: PublicationConfig,
+    run_date: date,
+    digest_files: list[str],
+) -> str:
+    latest = f"{run_date.isoformat()}-digest.html"
+    archive_items = []
+    for filename in digest_files:
+        label = filename.removesuffix("-digest.html")
+        archive_items.append(f'<li><a href="{_escape_attr(filename)}">{_escape(label)}</a></li>')
+    archive_html = "\n".join(archive_items)
+    return "\n".join(
+        [
+            "<!doctype html>",
+            '<html lang="en">',
+            "<head>",
+            '<meta charset="utf-8">',
+            '<meta name="viewport" content="width=device-width, initial-scale=1">',
+            f"<title>{_escape(publication.name)}</title>",
+            "<style>",
+            INDEX_CSS,
+            "</style>",
+            "</head>",
+            "<body>",
+            '<main class="archive-page">',
+            '<section class="archive-hero">',
+            '<p class="kicker">Latest edition</p>',
+            f"<h1>{_escape(publication.name)}</h1>",
+            f'<p class="dateline">{_escape(run_date.strftime("%A, %B %-d, %Y"))}</p>',
+            f'<a class="latest-link" href="{_escape_attr(latest)}">Read today\'s digest</a>',
+            "</section>",
+            '<section class="archive-list">',
+            "<h2>Archive</h2>",
+            f"<ol>{archive_html}</ol>",
+            "</section>",
+            "</main>",
+            "</body>",
+            "</html>",
+        ]
+    ) + "\n"
+
+
 def _module_has_content(module: ModuleBlock) -> bool:
     if module.kind == "calendar_json":
         return bool(module.content.get("events"))
@@ -658,5 +700,117 @@ a {
     color: inherit;
     border-bottom: 0;
   }
+}
+""".strip()
+
+
+INDEX_CSS = """
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #5f5f5f;
+  --line: #1d1d1d;
+  --paper: #ffffff;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+
+.archive-page {
+  width: min(920px, calc(100% - 32px));
+  margin: 28px auto 48px;
+  border-top: 3px double var(--line);
+}
+
+.archive-hero {
+  padding: 30px 0 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.kicker,
+.dateline,
+.latest-link,
+.archive-list h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.kicker,
+.dateline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 8px 0;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  line-height: 0.92;
+  letter-spacing: 0;
+}
+
+.latest-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 24px;
+  padding: 11px 15px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.latest-link:hover {
+  background: var(--accent);
+}
+
+.archive-list {
+  padding: 24px 0;
+}
+
+.archive-list h2 {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+li {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+li a {
+  display: block;
+  padding: 14px 12px 14px 0;
+  color: var(--ink);
+  font-size: 1.12rem;
+  text-decoration-color: #b0b0b0;
+  text-underline-offset: 3px;
+}
+
+li a:hover {
+  color: var(--accent);
 }
 """.strip()

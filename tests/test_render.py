@@ -5,7 +5,7 @@ from datetime import date
 
 from daily_digest.config import PublicationConfig
 from daily_digest.models import FetchedItem, ModuleBlock, StoryCluster
-from daily_digest.render import render_html_digest
+from daily_digest.render import render_html_digest, render_index_page
 
 
 class HtmlRenderTests(unittest.TestCase):
@@ -47,7 +47,18 @@ class HtmlRenderTests(unittest.TestCase):
         self.assertIn("Example News", rendered)
         self.assertIn("@media print", rendered)
 
+    def test_index_page_links_latest_and_archive(self) -> None:
+        rendered = render_index_page(
+            PublicationConfig(name="Test Daily"),
+            date(2026, 7, 2),
+            ["2026-07-02-digest.html", "2026-07-01-digest.html"],
+        )
+
+        self.assertIn("<!doctype html>", rendered)
+        self.assertIn("Read today's digest", rendered)
+        self.assertIn('href="2026-07-02-digest.html"', rendered)
+        self.assertIn("2026-07-01", rendered)
+
 
 if __name__ == "__main__":
     unittest.main()
-
