@@ -1,12 +1,76 @@
 {
-  "calls": [],
+  "calls": [
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.06951,
+      "input_tokens": 8148,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 959,
+      "raw_usage": {
+        "input_tokens": 8148,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 959,
+        "output_tokens_details": {
+          "reasoning_tokens": 516
+        },
+        "total_tokens": 9107
+      },
+      "reasoning_tokens": 516,
+      "stage": "digest_selection",
+      "total_tokens": 9107
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.07046,
+      "input_tokens": 3070,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 1837,
+      "raw_usage": {
+        "input_tokens": 3070,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 1837,
+        "output_tokens_details": {
+          "reasoning_tokens": 76
+        },
+        "total_tokens": 4907
+      },
+      "reasoning_tokens": 76,
+      "stage": "digest_entries",
+      "total_tokens": 4907
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.10692,
+      "input_tokens": 3666,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 2953,
+      "raw_usage": {
+        "input_tokens": 3666,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 2953,
+        "output_tokens_details": {
+          "reasoning_tokens": 332
+        },
+        "total_tokens": 6619
+      },
+      "reasoning_tokens": 332,
+      "stage": "digest_layout",
+      "total_tokens": 6619
+    }
+  ],
   "summary": {
     "cached_input_tokens": 0,
-    "calls": 0,
-    "estimated_cost_usd": 0.0,
-    "input_tokens": 0,
-    "output_tokens": 0,
-    "reasoning_tokens": 0,
-    "total_tokens": 0
+    "calls": 3,
+    "estimated_cost_usd": 0.24689,
+    "input_tokens": 14884,
+    "output_tokens": 5749,
+    "reasoning_tokens": 924,
+    "total_tokens": 20633
   }
 }

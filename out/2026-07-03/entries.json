@@ -1,86 +1,84 @@
 [
   {
-    "body": "Eater editors do thorough reporting on the most exciting restaurant openings to hit the city, as well as smaller openings worth having on the radar. In this monthly map, we narrow the field to cocktail bars that are",
-    "cluster_id": "3c444d09d8baf9af",
-    "dek": "Welcome to the Eater Cocktail Heatmap, focusing on the hottest new bar openings in New York every month.",
-    "headline": "The Best New Cocktail Bars in New York City, According to Eater Editors",
+    "body": "A punishing weather double-hit: strong thunderstorm winds caused widespread power outages across a broad swath of the Midwest, Northeast and Ontario, even as the region was already dealing with a heat wave. The available report is brief, but the scale is the story \u2014 about 1 million customers without power in conditions where cooling is not a luxury.",
+    "cluster_id": "da4d373af31be1b8",
+    "dek": "Thunderstorm winds cut electricity to roughly 1 million customers across the Midwest, Northeast and Ontario.",
+    "headline": "Storms knock out power as heat bears down",
     "source_ids": [
-      "3c444d09d8baf9af-s1",
-      "3c444d09d8baf9af-s2",
-      "3c444d09d8baf9af-s3"
+      "da4d373af31be1b8-s1"
     ],
-    "why_it_matters": "Flagged from 1 source in nyc-food, openings, restaurants."
+    "why_it_matters": "Outages during heat waves are more dangerous than routine storm damage: they turn grid fragility into an immediate public-health problem, especially for older residents, medically vulnerable people and anyone without backup cooling."
   },
   {
-    "body": "",
-    "cluster_id": "4b83628fcb16e942",
-    "dek": "Schedule, entries, & results for 2026 Prefontaine Classic -- Eugene Diamond League The post Schedule, entries, & results for 2026 Prefontaine Classic \u2014 Eugene Diamond League appeared first on LetsRun.com .",
-    "headline": "Schedule, entries, & results for 2026 Prefontaine Classic \u2014 Eugene Diamond League",
+    "body": "Trump\u2019s latest clemency moves are being framed not as mercy at the margins, but as policy by pardon. According to the report, he pardoned people who violated the Clean Air Act, further weakening environmental law enforcement, and also helped a political supporter who had pleaded guilty in a fraud involving Jack Abramoff. With only one excerpt available, the details of each case are limited, but the editorial thrust is clear: clemency is being used to protect allies and signal hostility to regulation.",
+    "cluster_id": "40161314bc89ef65",
+    "dek": "The president pardoned Clean Air Act violators and a donor who pleaded guilty in a fraud case tied to Jack Abramoff.",
+    "headline": "Trump uses pardons to undercut environmental enforcement",
     "source_ids": [
-      "4b83628fcb16e942-s1",
-      "4b83628fcb16e942-s2"
+      "40161314bc89ef65-s1"
     ],
-    "why_it_matters": "Flagged from 1 source in elite-running, race-commentary, running."
+    "why_it_matters": "Presidential pardons are legally broad but politically revealing. When they touch environmental crimes and donor-linked fraud, they can chill enforcement and tell regulated industries which violations may no longer carry real consequences."
   },
   {
-    "body": "",
+    "body": "A sewage spill into the Hudson River continued for hours after a power failure at a treatment plant just north of New York City. The discharge ran from Thursday night to Friday afternoon, according to the report. Officials did not expect it to affect New York City\u2019s Fourth of July celebrations \u2014 a narrow reassurance that still leaves the larger environmental and infrastructure questions hanging.",
+    "cluster_id": "a3438e7559d1fe39",
+    "dek": "A power failure at a plant north of New York City sent sewage into the river from Thursday night into Friday afternoon.",
+    "headline": "Sewage spill hits the Hudson after treatment-plant failure",
+    "source_ids": [
+      "a3438e7559d1fe39-s1"
+    ],
+    "why_it_matters": "Wastewater systems are invisible until they fail. A power-related spill underscores how basic urban infrastructure depends on redundancy, maintenance and fast response \u2014 especially around heavily used waterways."
+  },
+  {
+    "body": "Simon Willison flags a useful piece of infrastructure for people trying to understand \u201copen source AI\u201d as something more concrete than a slogan. Current AI \u2014 described as a global partnership building a public option for AI, founded as a nonprofit at the Paris AI Action Summit in February 2025 and backed by $400 million in committed capital \u2014 has launched Gap Map v0.1. The map details 421 products: 266 software tools and libraries, 85 models, 50 datasets and 20 hardware projects, produced by 228 organizations. They are organized into 14 categories across three layers of the stack: model components, product/UX and infrastructure. The excerpt also notes a much larger universe: 24,400 uncategorized artifacts in the long tail.",
+    "cluster_id": "437efe8edc01bb0d",
+    "dek": "Current AI\u2019s Gap Map v0.1 catalogs hundreds of tools, models, datasets and hardware projects \u2014 and hints at a much larger uncategorized long tail.",
+    "headline": "A first map of the open-source AI stack arrives",
+    "source_ids": [
+      "437efe8edc01bb0d-s1"
+    ],
+    "why_it_matters": "Open-source AI is often debated at the level of ideology. A map like this makes the ecosystem inspectable: what exists, where the gaps are, and which parts of the stack are actually shared infrastructure rather than marketing language."
+  },
+  {
+    "body": "The AI Engineer World\u2019s Fair appears to have ended less with victory laps than with a practical argument about the shape of the work ahead. Latent Space\u2019s dispatch says the close featured a debate about loops, a report on the state of AI engineering, and keynotes focused on what builders should make next. The excerpt does not define the \u201cloops\u201d dispute, so the takeaway has to stay broad: the event is capturing a field moving from model awe toward engineering patterns, product choices and repeatable systems.",
+    "cluster_id": "fdb8ed73ccd105f3",
+    "dek": "The AI Engineer World\u2019s Fair wrapped with a \u201cgreat loops\u201d debate, a state-of-the-field report and closing keynotes about what to build next.",
+    "headline": "AI engineers end their fair debating loops \u2014 and what comes next",
+    "source_ids": [
+      "fdb8ed73ccd105f3-s1"
+    ],
+    "why_it_matters": "AI engineering is becoming its own discipline, with its own arguments about architecture and workflow. What practitioners normalize now \u2014 loops, agents, evaluation, infrastructure \u2014 will shape the next wave of AI products more than splashy demos alone."
+  },
+  {
+    "body": "After more than 20 years living in Jersey City while building recognized Indian restaurants in Manhattan, restaurateur Jimmy Rizvi is finally opening for the community at home. Eater reports that Rizvi \u2014 behind Gramercy\u2019s GupShup and the popular East Village restaurant Bungalow with Vikas Khanna of MasterChef India \u2014 had long watched Jersey City\u2019s large South Asian community. The duplicated source listing adds no new detail, but the headline\u2019s claim is pointed: this is being pitched as the Indian restaurant Jersey City has been waiting for.",
     "cluster_id": "a8e20b22f6da4669",
-    "dek": "Restaurateur Jimmy Rizvi has lived in Jersey City for over 20 years while building some of Manhattan\u2019s most recognized Indian restaurants: GupShup, which opened in 2018 in Gramercy, and Bungalow, the wildly popular Ea...",
-    "headline": "Jersey City\u2019s Indian Community Gets the Restaurant It\u2019s Been Waiting For",
+    "dek": "Jimmy Rizvi, known for GupShup and Bungalow, is turning attention to the South Asian community in his own backyard.",
+    "headline": "Jersey City gets a long-awaited Indian restaurant from a Manhattan power player",
     "source_ids": [
       "a8e20b22f6da4669-s1",
       "a8e20b22f6da4669-s2"
     ],
-    "why_it_matters": "Flagged from 2 sources in nyc-food, openings, restaurants."
+    "why_it_matters": "Restaurant openings can be civic signals. Here, the story is not just another expansion from Manhattan outward; it is about a restaurateur serving a large diaspora community where he has lived for decades."
   },
   {
-    "body": "They launched their Gap Map a couple of days ago - an attempt at indexing the current state of open source AI: The Gap",
-    "cluster_id": "437efe8edc01bb0d",
-    "dek": "Current AI is \"a global partnership building a public option for AI\", founded as a non-profit at the AI Action Summit in Paris in February 2025 and backed by serious capital ($400m already committed).",
-    "headline": "Open Source AI Gap Map",
+    "body": "RogerEbert.com\u2019s latest \u201cFemale Filmmakers in Focus\u201d entry turns to Alice Winocour and \u201cCouture,\u201d described in the excerpt as an emotive cancer drama starring Angelina Jolie. The two source entries appear to be the same interview surfaced through different feeds, so there is no competing account here \u2014 just a pointer to a filmmaker conversation centered on authorship, performance and illness in a high-profile drama.",
+    "cluster_id": "e62eb51626f8cbdb",
+    "dek": "RogerEbert.com\u2019s \u201cFemale Filmmakers in Focus\u201d interviews the director behind \u201cCouture.\u201d",
+    "headline": "Alice Winocour discusses her Angelina Jolie cancer drama",
     "source_ids": [
-      "437efe8edc01bb0d-s1"
+      "e62eb51626f8cbdb-s1",
+      "e62eb51626f8cbdb-s2"
     ],
-    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+    "why_it_matters": "Interviews like this can add texture beyond the review cycle, especially for films whose subject matter risks being reduced to prestige shorthand. Hearing from the director helps clarify intent, craft and emotional framing."
   },
   {
-    "body": "It\u2019s a similar story with my two existing courses. Sales are down significantly from last year. There are likely a lot of reasons for this, but I think the biggest is AI. There\u2019s",
-    "cluster_id": "46980ae423b333a3",
-    "dek": "I just launched my third course, Whimsical Animations, and so far, it\u2019s on track to sell roughly \u2153 as many copies as a typical course launch.",
-    "headline": "Quoting Josh W. Comeau",
+    "body": "Angela Nikolau and Ivan Beerkus, extreme climbers known for illegally scaling buildings around the world, were arrested after getting engaged atop the Empire State Building. Prosecutors accuse them of breaking a security door to reach the spire of the Manhattan landmark. The excerpt gives only the allegation and arraignment context, so the legal picture remains preliminary \u2014 but the episode sits squarely in the modern genre of daredevil spectacle meeting urban security reality.",
+    "cluster_id": "fe58474b3c8f2f95",
+    "dek": "Extreme climbers Angela Nikolau and Ivan Beerkus were arrested after allegedly breaking a security door to reach the spire.",
+    "headline": "Empire State Building engagement stunt ends in criminal allegations",
     "source_ids": [
-      "46980ae423b333a3-s1"
+      "fe58474b3c8f2f95-s1"
     ],
-    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
-  },
-  {
-    "body": "",
-    "cluster_id": "da1fac800f62b51d",
-    "dek": "When Vicki Gunvalson signed on for \u201cThe Real Housewives of Orange County\u201d 20 years ago, no one knew she\u2019d become a quintessential reality TV star.",
-    "headline": "Vicki Gunvalson on Her \u2018Real Housewives of Orange County\u2019 Return",
-    "source_ids": [
-      "da1fac800f62b51d-s1"
-    ],
-    "why_it_matters": "Flagged from 1 source in arts, context, culture."
-  },
-  {
-    "body": "Then a producer suggested an idea he couldn\u2019t resist.",
-    "cluster_id": "b9534af31d97c2d2",
-    "dek": "The director Pierre Coffin, who also voices the yellow chaos agents, wasn\u2019t interested in returning.",
-    "headline": "How Pierre Coffin Breathed New Life Into the Minions Franchise With \u2018Minions & Monsters\u2019",
-    "source_ids": [
-      "b9534af31d97c2d2-s1"
-    ],
-    "why_it_matters": "Flagged from 1 source in arts, context, culture."
-  },
-  {
-    "body": "",
-    "cluster_id": "7471060cf0c0e5e9",
-    "dek": "",
-    "headline": "The D.C. Office of Planning releases masterplan for Robert F. Kennedy Campus",
-    "source_ids": [
-      "7471060cf0c0e5e9-s1"
-    ],
-    "why_it_matters": "Flagged from 1 source in serendipity."
+    "why_it_matters": "Iconic buildings are both symbols and targets for attention-seeking stunts. Cases like this test how cities balance public fascination, private security, trespass law and the risk that viral spectacle encourages copycats."
   }
 ]
