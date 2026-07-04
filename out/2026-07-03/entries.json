@@ -34,45 +34,44 @@
     "why_it_matters": "Flagged from 2 sources in nyc-food, openings, restaurants."
   },
   {
-    "body": "",
-    "cluster_id": "e62eb51626f8cbdb",
-    "dek": "An interview with the filmmaker behind Angelina Jolie's emotive cancer drama.",
-    "headline": "Female Filmmakers in Focus: Alice Winocour on \u201cCouture\u201d",
+    "body": "They launched their Gap Map a couple of days ago - an attempt at indexing the current state of open source AI: The Gap",
+    "cluster_id": "437efe8edc01bb0d",
+    "dek": "Current AI is \"a global partnership building a public option for AI\", founded as a non-profit at the AI Action Summit in Paris in February 2025 and backed by serious capital ($400m already committed).",
+    "headline": "Open Source AI Gap Map",
     "source_ids": [
-      "e62eb51626f8cbdb-s1",
-      "e62eb51626f8cbdb-s2"
+      "437efe8edc01bb0d-s1"
     ],
-    "why_it_matters": "Flagged from 2 sources in criticism, movies, reviews."
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "It\u2019s a similar story with my two existing courses. Sales are down significantly from last year. There are likely a lot of reasons for this, but I think the biggest is AI. There\u2019s",
+    "cluster_id": "46980ae423b333a3",
+    "dek": "I just launched my third course, Whimsical Animations, and so far, it\u2019s on track to sell roughly \u2153 as many copies as a typical course launch.",
+    "headline": "Quoting Josh W. Comeau",
+    "source_ids": [
+      "46980ae423b333a3-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
   },
   {
     "body": "",
-    "cluster_id": "91a865fe9f7f38aa",
-    "dek": "The swimmer was treated for a minor foot injury after being bitten by \u201cunknown marine life,\u201d New York State officials said.",
-    "headline": "Swimmer Is Injured at Jones Beach in Possible Shark Attack",
+    "cluster_id": "da1fac800f62b51d",
+    "dek": "When Vicki Gunvalson signed on for \u201cThe Real Housewives of Orange County\u201d 20 years ago, no one knew she\u2019d become a quintessential reality TV star.",
+    "headline": "Vicki Gunvalson on Her \u2018Real Housewives of Orange County\u2019 Return",
     "source_ids": [
-      "91a865fe9f7f38aa-s1"
+      "da1fac800f62b51d-s1"
     ],
-    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+    "why_it_matters": "Flagged from 1 source in arts, context, culture."
   },
   {
-    "body": "",
-    "cluster_id": "d8c7f2ca1cc17c65",
-    "dek": "In a nearly 13-minute address, Mayor Zohran Mamdani of New York highlighted the nation\u2019s diversity and criticized those who would deprive immigrants of freedom.",
-    "headline": "Mamdani Says Blind Patriotism Ignores the Nation\u2019s Flaws and Inequality",
+    "body": "Then a producer suggested an idea he couldn\u2019t resist.",
+    "cluster_id": "b9534af31d97c2d2",
+    "dek": "The director Pierre Coffin, who also voices the yellow chaos agents, wasn\u2019t interested in returning.",
+    "headline": "How Pierre Coffin Breathed New Life Into the Minions Franchise With \u2018Minions & Monsters\u2019",
     "source_ids": [
-      "d8c7f2ca1cc17c65-s1"
+      "b9534af31d97c2d2-s1"
     ],
-    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
-  },
-  {
-    "body": "",
-    "cluster_id": "40161314bc89ef65",
-    "dek": "The president used his clemency power to further undermine environmental laws and to help a political supporter who pleaded guilty in a fraud involving Jack Abramoff.",
-    "headline": "Trump Pardons Violators of the Clean Air Act and a Major Donor",
-    "source_ids": [
-      "40161314bc89ef65-s1"
-    ],
-    "why_it_matters": "Flagged from 1 source in context, general, us."
+    "why_it_matters": "Flagged from 1 source in arts, context, culture."
   },
   {
     "body": "",
