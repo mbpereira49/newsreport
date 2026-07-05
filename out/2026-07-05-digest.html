@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-05</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Sunday, July 5, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Guam and the Northern Marianas brace for Bavi</h2><p class="dek">A Pacific cyclone is forecast to pass near the U.S. territories Monday with Category 5-level force.</p><div class="lead-lower"><div class="body-copy"><p>Typhoon Bavi is barreling through the Pacific, and the immediate concern is stark: forecasts put it near Guam and the Northern Mariana Islands on Monday with the force of a Category 5 hurricane. The excerpt does not say whether landfall is expected, so the key word is “near”—but at that intensity, proximity can still mean dangerous winds, seas and disruption for island communities with limited room to dodge a storm track.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Guam and the Northern Marianas sit in a typhoon-prone corridor, but a Category 5-strength system raises the stakes for emergency preparation, infrastructure resilience and U.S. territorial response.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/05/us/guam-typhoon-bavi-marianas.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Federal agencies retreat from discrimination enforcement under Trump</h2><p class="dek">The administration’s push to roll back long-standing anti-discrimination rules is now showing up in agency behavior.</p><div class="body-copy"><p>President Trump has sought to scale back anti-discrimination regulations that have been in place for decades, and federal agencies, according to the report, are following that direction by abandoning discrimination cases. The excerpt does not identify which agencies or cases, so the scope is unclear. But the basic direction is not: enforcement is being reoriented away from a body of civil-rights regulation that had become part of the federal government’s baseline operating system.</p></div><p class="why"><strong>Why it matters:</strong> Policy changes often matter most when they become case decisions. If agencies stop pursuing discrimination claims, legal protections can weaken even without Congress rewriting the underlying statutes.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/05/us/politics/trump-dei-order-eeoc-discrimination.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>OPEC Plus chooses more supply into a softer oil market</h2><p class="dek">The cartel’s pledge to pump more comes as U.S.-Iran talks ease pressure on supplies and oil prices fall.</p><div class="body-copy"><p>OPEC Plus is promising to increase production even as oil prices decline—a move that reads less like a simple bullish bet and more like a cartel navigating a market suddenly less squeezed. The report ties the decision to U.S.-Iran talks aimed at ending the war, which have eased pressure on oil supplies. That said, the excerpt also flags broader market and political volatility, so this is not a clean “supply is fixed” story. It is a decision made in a market where geopolitical relief can arrive quickly, and disappear just as fast.</p></div><p class="why"><strong>Why it matters:</strong> More OPEC Plus supply can filter into prices for fuel, inflation expectations and producer revenues—but the effect depends heavily on whether geopolitical risk keeps receding.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/05/business/opec-production-iran-war.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Wikipedia gets cast as the internet’s contested commons</h2><p class="dek">The free encyclopedia is described as facing pressure from MAGA politics, AI and foreign autocrats.</p><div class="body-copy"><p>Wikipedia, still the internet’s most visible stockpile of free knowledge, is being framed here as a battlefield rather than a settled institution. The threats named in the excerpt are varied—MAGA, artificial intelligence and foreign autocrats—which suggests a struggle over both trust and control. A “bibliophile ex-ambassador” is presented as part of the response, though the excerpt does not name the person or specify the strategy. The interesting through-line is that Wikipedia’s old promise—open, volunteer-built knowledge—now sits directly in the path of political pressure, machine-generated content and state influence.</p></div><p class="why"><strong>Why it matters:</strong> Wikipedia is not just another website; it is downstream infrastructure for search, education and AI systems. If its reliability erodes, the effects travel widely.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/05/business/media/wikipedia-ai-elon-musk.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>A working programmer puts Claude Fable on release-duty</h2><p class="dek">Simon Willison says Claude helped move sqlite-utils toward a stable 4.0 release, at a reported cost of about $149.25.</p><div class="body-copy"><p>Simon Willison’s account is a useful, grounded version of the AI-coding story: not “the model built everything,” but “the model found problems I had not encountered yet.” Preparing sqlite-utils 4.0, he used Claude Fable through Claude Code for web on an iPhone, asking it to spot last-minute breaking changes before a stable release. Willison says the model surfaced significant issues—five by the cutoff in the supplied excerpt—and the post’s title puts a price tag on the exercise: about $149.25. The result is less a magic demo than a snapshot of AI as an expensive, sometimes valuable release-review assistant.</p></div><p class="why"><strong>Why it matters:</strong> The practical question for AI coding tools is not whether they can produce code, but whether they can improve professional workflows enough to justify cost, trust and review burden.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Prefontaine Classic coverage is in utility mode</h2><p class="dek">LetsRun has the basics for the 2026 Eugene Diamond League meet: schedule, entries, results and how to watch.</p><div class="body-copy"><p>This cluster is less a narrative than a service desk for track fans. LetsRun has posted schedule, entries and results for the 2026 Prefontaine Classic, along with separate TV and streaming information for the Eugene Diamond League stop. The excerpts do not include performances, winners or storylines, so there is no result to analyze here. But for a meet like Pre, the useful thing on race day is often exactly this: where the fields are, when the races go off and how to watch without hunting across platforms.</p></div><p class="why"><strong>Why it matters:</strong> The Prefontaine Classic is a key Diamond League stop, and live access plus results infrastructure shape how fans follow elite running in real time.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/07/schedule-entries-results-for-2026-prefontaine-classic-eugene-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/07/how-to-watch-2026-prefontaine-classic-eugene-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Yosemite’s summer bottleneck returns</h2><p class="dek">Visitors are reportedly facing especially long waits after the Trump administration eliminated a summer reservation system.</p><div class="body-copy"><p>Yosemite’s wonders now come with a less majestic attraction: crushing crowds. The report says visitors are enduring especially long waits after the Trump administration eliminated a summer reservation system. The excerpt does not quantify the delays or explain the administration’s rationale, so the causal chain is presented by the source but not fully detailed here. Still, the pattern is familiar at beloved public lands: remove a demand-management tool, and the park experience can quickly shift from awe to queue management.</p></div><p class="why"><strong>Why it matters:</strong> Reservation systems are politically touchy, but they are also one of the few levers parks have for balancing access, visitor experience and protection of fragile places.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/05/us/yosemite-national-park-tourists.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>A tiny world map, squeezed into 500 bytes</h2><p class="dek">Iwo Kadziela, assisted by Codex, generated a credible ASCII world map using 445 bytes of data and browser-native decompression.</p><div class="body-copy"><p>Here is the day’s delightfully nerdy compression trick: Iwo Kadziela, assisted by Codex, figured out how to generate a credible ASCII world map using just 445 bytes of data. Simon Willison highlights the key move: deflate compression wired into JavaScript, including a neat use of fetch() with a data: URI and DecompressionStream('deflate-raw') to unpack the map in the browser. The pleasure of the item is partly aesthetic—ASCII cartography as code golf—but also practical: modern browser APIs can make very small artifacts surprisingly expressive.</p></div><p class="why"><strong>Why it matters:</strong> Tiny demos like this reveal hidden affordances in everyday web tooling—and show how AI assistance is slipping into playful, highly technical craft work.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 5, 2026
+</footer>
+</main>
+</body>
+</html>

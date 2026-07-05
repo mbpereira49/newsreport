@@ -1,0 +1,83 @@
+[
+  {
+    "body": "Typhoon Bavi is barreling through the Pacific, and the immediate concern is stark: forecasts put it near Guam and the Northern Mariana Islands on Monday with the force of a Category 5 hurricane. The excerpt does not say whether landfall is expected, so the key word is \u201cnear\u201d\u2014but at that intensity, proximity can still mean dangerous winds, seas and disruption for island communities with limited room to dodge a storm track.",
+    "cluster_id": "c188db5910be52da",
+    "dek": "A Pacific cyclone is forecast to pass near the U.S. territories Monday with Category 5-level force.",
+    "headline": "Guam and the Northern Marianas brace for Bavi",
+    "source_ids": [
+      "c188db5910be52da-s1"
+    ],
+    "why_it_matters": "Guam and the Northern Marianas sit in a typhoon-prone corridor, but a Category 5-strength system raises the stakes for emergency preparation, infrastructure resilience and U.S. territorial response."
+  },
+  {
+    "body": "President Trump has sought to scale back anti-discrimination regulations that have been in place for decades, and federal agencies, according to the report, are following that direction by abandoning discrimination cases. The excerpt does not identify which agencies or cases, so the scope is unclear. But the basic direction is not: enforcement is being reoriented away from a body of civil-rights regulation that had become part of the federal government\u2019s baseline operating system.",
+    "cluster_id": "c12312f14920f136",
+    "dek": "The administration\u2019s push to roll back long-standing anti-discrimination rules is now showing up in agency behavior.",
+    "headline": "Federal agencies retreat from discrimination enforcement under Trump",
+    "source_ids": [
+      "c12312f14920f136-s1"
+    ],
+    "why_it_matters": "Policy changes often matter most when they become case decisions. If agencies stop pursuing discrimination claims, legal protections can weaken even without Congress rewriting the underlying statutes."
+  },
+  {
+    "body": "OPEC Plus is promising to increase production even as oil prices decline\u2014a move that reads less like a simple bullish bet and more like a cartel navigating a market suddenly less squeezed. The report ties the decision to U.S.-Iran talks aimed at ending the war, which have eased pressure on oil supplies. That said, the excerpt also flags broader market and political volatility, so this is not a clean \u201csupply is fixed\u201d story. It is a decision made in a market where geopolitical relief can arrive quickly, and disappear just as fast.",
+    "cluster_id": "4fb8f96fcbb1548e",
+    "dek": "The cartel\u2019s pledge to pump more comes as U.S.-Iran talks ease pressure on supplies and oil prices fall.",
+    "headline": "OPEC Plus chooses more supply into a softer oil market",
+    "source_ids": [
+      "4fb8f96fcbb1548e-s1"
+    ],
+    "why_it_matters": "More OPEC Plus supply can filter into prices for fuel, inflation expectations and producer revenues\u2014but the effect depends heavily on whether geopolitical risk keeps receding."
+  },
+  {
+    "body": "Wikipedia, still the internet\u2019s most visible stockpile of free knowledge, is being framed here as a battlefield rather than a settled institution. The threats named in the excerpt are varied\u2014MAGA, artificial intelligence and foreign autocrats\u2014which suggests a struggle over both trust and control. A \u201cbibliophile ex-ambassador\u201d is presented as part of the response, though the excerpt does not name the person or specify the strategy. The interesting through-line is that Wikipedia\u2019s old promise\u2014open, volunteer-built knowledge\u2014now sits directly in the path of political pressure, machine-generated content and state influence.",
+    "cluster_id": "0348120eded09ea6",
+    "dek": "The free encyclopedia is described as facing pressure from MAGA politics, AI and foreign autocrats.",
+    "headline": "Wikipedia gets cast as the internet\u2019s contested commons",
+    "source_ids": [
+      "0348120eded09ea6-s1"
+    ],
+    "why_it_matters": "Wikipedia is not just another website; it is downstream infrastructure for search, education and AI systems. If its reliability erodes, the effects travel widely."
+  },
+  {
+    "body": "Simon Willison\u2019s account is a useful, grounded version of the AI-coding story: not \u201cthe model built everything,\u201d but \u201cthe model found problems I had not encountered yet.\u201d Preparing sqlite-utils 4.0, he used Claude Fable through Claude Code for web on an iPhone, asking it to spot last-minute breaking changes before a stable release. Willison says the model surfaced significant issues\u2014five by the cutoff in the supplied excerpt\u2014and the post\u2019s title puts a price tag on the exercise: about $149.25. The result is less a magic demo than a snapshot of AI as an expensive, sometimes valuable release-review assistant.",
+    "cluster_id": "9a396c3835d41d97",
+    "dek": "Simon Willison says Claude helped move sqlite-utils toward a stable 4.0 release, at a reported cost of about $149.25.",
+    "headline": "A working programmer puts Claude Fable on release-duty",
+    "source_ids": [
+      "9a396c3835d41d97-s1"
+    ],
+    "why_it_matters": "The practical question for AI coding tools is not whether they can produce code, but whether they can improve professional workflows enough to justify cost, trust and review burden."
+  },
+  {
+    "body": "This cluster is less a narrative than a service desk for track fans. LetsRun has posted schedule, entries and results for the 2026 Prefontaine Classic, along with separate TV and streaming information for the Eugene Diamond League stop. The excerpts do not include performances, winners or storylines, so there is no result to analyze here. But for a meet like Pre, the useful thing on race day is often exactly this: where the fields are, when the races go off and how to watch without hunting across platforms.",
+    "cluster_id": "589ae76ccf207879",
+    "dek": "LetsRun has the basics for the 2026 Eugene Diamond League meet: schedule, entries, results and how to watch.",
+    "headline": "Prefontaine Classic coverage is in utility mode",
+    "source_ids": [
+      "589ae76ccf207879-s1",
+      "589ae76ccf207879-s2"
+    ],
+    "why_it_matters": "The Prefontaine Classic is a key Diamond League stop, and live access plus results infrastructure shape how fans follow elite running in real time."
+  },
+  {
+    "body": "Yosemite\u2019s wonders now come with a less majestic attraction: crushing crowds. The report says visitors are enduring especially long waits after the Trump administration eliminated a summer reservation system. The excerpt does not quantify the delays or explain the administration\u2019s rationale, so the causal chain is presented by the source but not fully detailed here. Still, the pattern is familiar at beloved public lands: remove a demand-management tool, and the park experience can quickly shift from awe to queue management.",
+    "cluster_id": "6ed5c1bf9cf4c1f9",
+    "dek": "Visitors are reportedly facing especially long waits after the Trump administration eliminated a summer reservation system.",
+    "headline": "Yosemite\u2019s summer bottleneck returns",
+    "source_ids": [
+      "6ed5c1bf9cf4c1f9-s1"
+    ],
+    "why_it_matters": "Reservation systems are politically touchy, but they are also one of the few levers parks have for balancing access, visitor experience and protection of fragile places."
+  },
+  {
+    "body": "Here is the day\u2019s delightfully nerdy compression trick: Iwo Kadziela, assisted by Codex, figured out how to generate a credible ASCII world map using just 445 bytes of data. Simon Willison highlights the key move: deflate compression wired into JavaScript, including a neat use of fetch() with a data: URI and DecompressionStream('deflate-raw') to unpack the map in the browser. The pleasure of the item is partly aesthetic\u2014ASCII cartography as code golf\u2014but also practical: modern browser APIs can make very small artifacts surprisingly expressive.",
+    "cluster_id": "b09b0c3ecb0943e2",
+    "dek": "Iwo Kadziela, assisted by Codex, generated a credible ASCII world map using 445 bytes of data and browser-native decompression.",
+    "headline": "A tiny world map, squeezed into 500 bytes",
+    "source_ids": [
+      "b09b0c3ecb0943e2-s1"
+    ],
+    "why_it_matters": "Tiny demos like this reveal hidden affordances in everyday web tooling\u2014and show how AI assistance is slipping into playful, highly technical craft work."
+  }
+]
