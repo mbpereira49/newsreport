@@ -1,0 +1,2 @@
+Could not parse feed https://www.publicbooks.org/feed/: not well-formed (invalid token): line 1, column 119
+Could not fetch https://lwlies.com/feed/: HTTP Error 403: Forbidden

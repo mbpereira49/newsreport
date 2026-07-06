@@ -1,0 +1,83 @@
+[
+  {
+    "body": "Alibaba appears to have done one of the hardest things in A.I.: get developers around the world to actually use its models. The catch is embedded in the win. According to the supplied reports, the company\u2019s models are open source, meaning they can be used and modified freely. That openness can accelerate adoption and make Qwen harder to ignore in the global model race. It also makes monetization less straightforward than selling access to a closed system. The story is less \u201cAlibaba missed the A.I. boom\u201d than \u201cAlibaba may have chosen a route where influence arrives before income.\u201d",
+    "cluster_id": "d5966a2c8e440ac7",
+    "dek": "Its open-source A.I. models are traveling well beyond China, but free-to-use popularity does not automatically become revenue.",
+    "headline": "Alibaba\u2019s Qwen has the developer buzz. The business model is the harder part.",
+    "source_ids": [
+      "d5966a2c8e440ac7-s1",
+      "d5966a2c8e440ac7-s2"
+    ],
+    "why_it_matters": "Open-source A.I. is becoming a strategic weapon: useful for distribution, ecosystem-building and geopolitical reach, but awkward for companies that still need to turn compute-heavy products into durable profits."
+  },
+  {
+    "body": "Nuctech is not a household name, but that is partly why the dispute around it matters. The company supplies border-security equipment \u2014 the kind of infrastructure that sits quietly at ports, airports and crossings until politics catches up with it. The NYT frames Nuctech\u2019s rise, from a Chinese state-backed start-up to a global supplier, as a new lightning rod in Europe\u2019s trade and subsidy fights with China. That puts it in a category of companies whose products are commercial on paper but strategic in practice. Europe\u2019s dilemma is familiar: whether lower-cost or widely available Chinese technology comes with unacceptable dependency, security or subsidy concerns.",
+    "cluster_id": "7327080a96cd45de",
+    "dek": "Nuctech\u2019s path from state-backed start-up to global border-security supplier has made it a flashpoint over subsidies, security and market access.",
+    "headline": "A Chinese security-scanning company is becoming Europe\u2019s trade-war test case.",
+    "source_ids": [
+      "7327080a96cd45de-s1"
+    ],
+    "why_it_matters": "The next trade war may not start with cars or solar panels. It may start with the machinery of border control, where commerce, sovereignty and suspicion overlap."
+  },
+  {
+    "body": "Energy markets are taking a breath. The report says oil flows from the Persian Gulf have recovered, and OPEC Plus has pledged to pump more crude. Together, those signals are putting downward pressure on prices. The key word is \u201ceasing,\u201d not \u201csettled.\u201d Persian Gulf shipping is one of those systems whose normal functioning is mostly invisible until it wobbles; once vessels move again, the market reprices risk quickly. Add the prospect of more supply from OPEC Plus, and traders have less reason \u2014 at least for now \u2014 to bid up crude on scarcity fears.",
+    "cluster_id": "e6226411d02013c1",
+    "dek": "More ships are moving through the region again, while OPEC Plus is promising additional crude \u2014 a combination pushing prices lower.",
+    "headline": "Oil prices get some relief as Persian Gulf shipping recovers.",
+    "source_ids": [
+      "e6226411d02013c1-s1"
+    ],
+    "why_it_matters": "Oil prices translate geopolitical anxiety into everyday costs. Even a partial recovery in shipping flows can ripple through inflation expectations, transport costs and consumer energy bills."
+  },
+  {
+    "body": "The mechanics of public health can be unglamorous: an office, a campaign, a phone number. But when those pieces disappear, behavior changes. The report says the CDC\u2019s tobacco-control office has been shut for more than a year. Its most prominent antismoking campaign went off the air, and calls to 1-800-QUIT-NOW lines have plummeted. The story is not just about messaging; it is about whether would-be quitters are being nudged toward help at the moment they are receptive. A dormant campaign means fewer prompts. Fewer prompts can mean fewer calls. And fewer calls can mean fewer chances to quit.",
+    "cluster_id": "833b209c55249da6",
+    "dek": "With the CDC tobacco-control office shut for more than a year and a major campaign off air, quitline calls have fallen sharply.",
+    "headline": "America\u2019s anti-smoking infrastructure is going quiet.",
+    "source_ids": [
+      "833b209c55249da6-s1"
+    ],
+    "why_it_matters": "Smoking cessation is one of the clearest public-health bargains available. Letting the support system stall risks turning preventable disease back into background noise."
+  },
+  {
+    "body": "The damage from unstable research funding does not always show up first in shuttered labs. Sometimes it appears in smaller incoming Ph.D. classes. The report says some of the nation\u2019s top research universities are reducing doctoral admissions because of uncertainty over federal funding. That is a cautious administrative move with long consequences. Ph.D. cohorts are not just students; they are the labor force of research universities and the apprenticeship system for future scientists. If universities pull back now, the effects can echo years later in fewer trained researchers, thinner lab capacity and slower scientific work.",
+    "cluster_id": "0d78038b9a286ce6",
+    "dek": "Uncertain federal funding is prompting some major institutions to admit fewer doctoral students \u2014 a quiet warning sign for science.",
+    "headline": "Top research universities are shrinking Ph.D. pipelines.",
+    "source_ids": [
+      "0d78038b9a286ce6-s1"
+    ],
+    "why_it_matters": "Science depends on long timelines. Funding uncertainty can make universities behave defensively today, while the real costs arrive later in the form of missing people and delayed discoveries."
+  },
+  {
+    "body": "A local-news dispute in New Jersey has turned into a press-freedom alarm bell. According to the report, New Brunswick Today published a video of a school lockdown. Then a judge ordered the outlet to remove the video and barred it from writing about the episode. The excerpt does not detail the judge\u2019s reasoning, so the legal conflict is only partly visible here. But the broad outline is striking: a news organization was not only told to take down material, but also restricted from covering the matter. First Amendment advocates are alarmed, and it is easy to see why.",
+    "cluster_id": "56728460fbf4b6eb",
+    "dek": "The New Jersey order against New Brunswick Today has alarmed First Amendment advocates.",
+    "headline": "A judge ordered a local news site to delete a lockdown video \u2014 and stop writing about it.",
+    "source_ids": [
+      "56728460fbf4b6eb-s1"
+    ],
+    "why_it_matters": "Prior restraints on publishing are among the most sensitive moves in press law. When they hit a small local outlet, the case can test how much protection journalism has outside national media spotlights."
+  },
+  {
+    "body": "This is the kind of bug that sounds minor until you imagine thousands of agentic workflows depending on it. Simon Willison points to Armin\u2019s report about Pi: newer Claude models were calling an edit tool with extra, invented fields inside a nested edits array. The edit itself was usually correct, but the arguments did not match the schema, so Pi rejected the call and asked the model to try again. The surprising part, per the excerpt, is not that models sometimes emit malformed tool calls. It is that the behavior appeared worse in newer Anthropic models \u2014 Opus 4.8 and Sonnet 5 \u2014 than older ones.",
+    "cluster_id": "6504d5fe309036f1",
+    "dek": "A developer report highlighted newer Claude models inventing extra fields in tool calls \u2014 a small schema problem with big agent implications.",
+    "headline": "Smarter A.I. models may be getting sloppier with tools.",
+    "source_ids": [
+      "6504d5fe309036f1-s1"
+    ],
+    "why_it_matters": "If A.I. agents are going to operate software, databases and workflows, tool-call reliability matters as much as raw intelligence. A more capable model that breaks schemas can be a worse product component."
+  },
+  {
+    "body": "A small literary farce: a U.K. hobbyist made handmade hedgehogs from donated books and gave them to children, only for parents to discover that some had been assembled from pages of an erotic novel. Literary Hub, citing The Guardian, says the unidentified crafter came under fire over the weekend for the mishap. There is a pleasingly chaotic collision here between thrift, craft, recycling and the stubborn fact that books contain words. Donated pages may look like neutral material once folded into a hedgehog, but context has a way of unfolding itself.",
+    "cluster_id": "cd74aa11a68fc4d3",
+    "dek": "A U.K. crafter reportedly made children\u2019s paper hedgehogs from donated books \u2014 including pages from an erotic novel.",
+    "headline": "The accidental erotic hedgehogs were, somehow, a book story.",
+    "source_ids": [
+      "cd74aa11a68fc4d3-s1"
+    ],
+    "why_it_matters": "Beyond the comic surface, it is a reminder that physical books do not become content-free just because they are repurposed as objects. Also: check the pages before gifting the hedgehog."
+  }
+]

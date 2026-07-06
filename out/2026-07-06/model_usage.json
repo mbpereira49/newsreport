@@ -1,0 +1,76 @@
+{
+  "calls": [
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.06931,
+      "input_tokens": 7892,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 995,
+      "raw_usage": {
+        "input_tokens": 7892,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 995,
+        "output_tokens_details": {
+          "reasoning_tokens": 516
+        },
+        "total_tokens": 8887
+      },
+      "reasoning_tokens": 516,
+      "stage": "digest_selection",
+      "total_tokens": 8887
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.07525,
+      "input_tokens": 2750,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 2050,
+      "raw_usage": {
+        "input_tokens": 2750,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 2050,
+        "output_tokens_details": {
+          "reasoning_tokens": 165
+        },
+        "total_tokens": 4800
+      },
+      "reasoning_tokens": 165,
+      "stage": "digest_entries",
+      "total_tokens": 4800
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.090635,
+      "input_tokens": 3487,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 2440,
+      "raw_usage": {
+        "input_tokens": 3487,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 2440,
+        "output_tokens_details": {
+          "reasoning_tokens": 297
+        },
+        "total_tokens": 5927
+      },
+      "reasoning_tokens": 297,
+      "stage": "digest_layout",
+      "total_tokens": 5927
+    }
+  ],
+  "summary": {
+    "cached_input_tokens": 0,
+    "calls": 3,
+    "estimated_cost_usd": 0.235195,
+    "input_tokens": 14129,
+    "output_tokens": 5485,
+    "reasoning_tokens": 978,
+    "total_tokens": 19614
+  }
+}
