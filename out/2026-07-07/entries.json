@@ -1,0 +1,84 @@
+[
+  {
+    "body": "New York officials ordered an evacuation at a Midtown Manhattan building complex once occupied by Pfizer, after inspections found signs no one wants to see in a conversion project: support columns buckling and upper floors sagging. The Times framed it as a live, developing collapse-risk situation; the supplied updates are essentially the same account, underscoring the immediacy but leaving key details\u2014cause, timeline, scope of evacuation\u2014still unresolved.",
+    "cluster_id": "89b25b308146e09b",
+    "dek": "A former Pfizer complex under residential conversion was evacuated after inspectors found buckling columns and sagging upper floors.",
+    "headline": "Midtown\u2019s office-to-housing dream hits a frightening pause",
+    "source_ids": [
+      "89b25b308146e09b-s1",
+      "89b25b308146e09b-s2"
+    ],
+    "why_it_matters": "Office-to-residential conversions are being asked to solve a lot of urban problems at once. This is a reminder that adaptive reuse is also a structural-engineering story, not just a zoning or housing-supply story."
+  },
+  {
+    "body": "The administration\u2019s gun agenda is not only about what rights it expands; it is also about what public-health infrastructure it removes. According to the Times, hospitals and community groups have lost funding, while government reports on preventing firearm injuries have vanished from federal websites. That combination suggests a policy shift conducted both through budgets and through the public record itself.",
+    "cluster_id": "73ebf9b1fbb7395d",
+    "dek": "As the Trump administration expands gun-rights policy, funding has been cut and prevention reports have disappeared from federal websites.",
+    "headline": "Gun-violence prevention gets quietly dismantled",
+    "source_ids": [
+      "73ebf9b1fbb7395d-s1"
+    ],
+    "why_it_matters": "If prevention research and community programs shrink, the debate over guns becomes less informed by injury data and less connected to the places treating the consequences."
+  },
+  {
+    "body": "Just weeks after the United States and Iran agreed to try to negotiate a lasting end to hostilities, the Strait of Hormuz is again the pressure point. The latest attacks on ships, as described by the Times, show that the cease-fire may exist on paper while maritime risk remains very real. In oil markets, that distinction matters: Hormuz is where geopolitical ambiguity can quickly become a supply concern.",
+    "cluster_id": "f23ccbd91a5503bb",
+    "dek": "Iranian strikes on ships in the Strait of Hormuz are raising fresh doubts about a fragile U.S.-Iran pause and threatening oil flows.",
+    "headline": "Hormuz is the cease-fire\u2019s stress test",
+    "source_ids": [
+      "f23ccbd91a5503bb-s1"
+    ],
+    "why_it_matters": "A negotiated lull is only as durable as the behavior around it. Shipping attacks near a critical oil chokepoint can rattle energy markets even before diplomacy formally breaks down."
+  },
+  {
+    "body": "The U.S. trade deficit widened in May because imports of foreign goods hit a record. The mix is telling: pharmaceuticals and data-center equipment were among the goods cited, linking the deficit not just to consumer demand but to health supply chains and the infrastructure build-out behind the data economy. The result was the largest monthly trade gap in more than a year.",
+    "cluster_id": "b1220169f84f2ee4",
+    "dek": "Record goods imports\u2014including pharmaceuticals and data-center equipment\u2014pushed the May trade deficit to its highest level in over a year.",
+    "headline": "America bought its way into a wider trade gap",
+    "source_ids": [
+      "b1220169f84f2ee4-s1"
+    ],
+    "why_it_matters": "Trade numbers can look abstract, but this one is a snapshot of what the U.S. economy is prioritizing\u2014and what it still depends on other countries to provide."
+  },
+  {
+    "body": "Tencent\u2019s Hy Team has introduced Hy3, a new Apache 2.0 licensed model, according to Simon Willison\u2019s write-up. The headline specs are serious: 295 billion total parameters, 21 billion active parameters, 3.8 billion MTP layer parameters, and a 256K context length. Tencent says post-training was scaled after feedback from more than 50 products and claims the model outperforms similar-size competitors while rivaling larger open-source flagships. The practical catch is size: the full model is listed at 598GB on Hugging Face, with an FP8 quantized version at 300GB.",
+    "cluster_id": "8a9b1a8e3732ef50",
+    "dek": "Hy3 is billed as a 295B-parameter Apache 2.0 Mixture-of-Experts model with a 256K context window and heavyweight downloads.",
+    "headline": "Tencent\u2019s new open model arrives huge, permissive, and hard to run casually",
+    "source_ids": [
+      "8a9b1a8e3732ef50-s1"
+    ],
+    "why_it_matters": "Open-weight AI keeps getting more capable, but \u201cavailable\u201d increasingly does not mean \u201ceasy to run.\u201d Hy3 looks like another step toward powerful open models that still demand serious infrastructure."
+  },
+  {
+    "body": "The administration\u2019s report criticizing the National Museum of American History is not just a museum review; the Times describes it as echoing President Trump\u2019s effort to reshape the American story. The word doing the work here is \u201cunpatriotic\u201d: a label that turns curatorial choices into political targets. The excerpt does not specify which exhibits drew fire, but it makes clear the Smithsonian is being pulled into a larger fight over public memory.",
+    "cluster_id": "6d5c85d8a4733e6c",
+    "dek": "A White House critique of the National Museum of American History tracks with Trump\u2019s broader push to redefine patriotic history.",
+    "headline": "The Smithsonian becomes a battlefield over the national story",
+    "source_ids": [
+      "6d5c85d8a4733e6c-s1"
+    ],
+    "why_it_matters": "Museums are where a country argues with itself in public. When an administration moves to police the tone of that history, culture policy becomes identity politics with institutional consequences."
+  },
+  {
+    "body": "The U.S. loss to Belgium landed as a gut punch because the country now expects more from its men\u2019s national team. The Times frames the disappointment alongside a broader shift: this World Cup highlighted soccer\u2019s decades-long climb into the American mainstream. In that sense, the pain is part of the progress. A niche sport does not produce national anguish; a sport that has arrived does.",
+    "cluster_id": "80f3cf04702499a8",
+    "dek": "The defeat to Belgium disappointed fans, but the World Cup also showed how far soccer has climbed in American culture.",
+    "headline": "The U.S. men\u2019s soccer loss hurts because expectations finally changed",
+    "source_ids": [
+      "80f3cf04702499a8-s1"
+    ],
+    "why_it_matters": "For U.S. soccer, the question is no longer whether Americans care. It is what the sport does with a fan base large enough to be genuinely angry when the team falls short."
+  },
+  {
+    "body": "Berries used to announce a season. Now they mostly announce that someone went grocery shopping. The Times credits Driscoll\u2019s, the California giant, with helping transform berries from a local treat into a worldwide refrigerator staple and marketing juggernaut. It is a small food story with a big supply-chain shadow: freshness, branding and global availability have made seasonality feel optional.",
+    "cluster_id": "d153bdd4beaf0f3c",
+    "dek": "Driscoll\u2019s helped turn a local, seasonal pleasure into a year-round refrigerator staple\u2014and a global marketing machine.",
+    "headline": "How berries escaped the season",
+    "source_ids": [
+      "d153bdd4beaf0f3c-s1",
+      "d153bdd4beaf0f3c-s2"
+    ],
+    "why_it_matters": "The everyday abundance of supermarket berries is not natural; it is engineered by agriculture, logistics and marketing. That makes the clamshell in the fridge a quiet artifact of globalization."
+  }
+]
