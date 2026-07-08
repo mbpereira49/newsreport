@@ -1,0 +1,84 @@
+[
+  {
+    "body": "Simon Willison released sqlite-utils 4.0, calling it the project\u2019s 124th release and its first major version bump since 3.0 in November 2020. The release includes \u201csmall but significant\u201d breaking changes, plus three headline additions: database schema migrations, nested transactions through a new db.atomic() method, and support for compound foreign keys. The migrations feature is the main turn: sqlite-utils can now define a sequence of database changes in Python files, track which have been applied, and apply pending ones.",
+    "cluster_id": "2d1ff1f7c5676e1e",
+    "dek": "Version 4.0 adds schema migrations, nested transactions, and compound foreign keys\u2014small plumbing with outsized practical value.",
+    "headline": "sqlite-utils gets its first major bump since 2020",
+    "source_ids": [
+      "2d1ff1f7c5676e1e-s1"
+    ],
+    "why_it_matters": "SQLite is often chosen because it avoids operational ceremony; first-class migrations make it easier to keep that simplicity while treating schema changes as real application infrastructure."
+  },
+  {
+    "body": "Latent Space\u2019s AINews flags a slower news cycle as a chance to read \u201ccondensed insight,\u201d with the headline item being Lilian Weng\u2019s summary of 35 papers on \u201cHarness Engineering for RSI.\u201d The excerpt does not spell out the arguments or define the acronym, so the useful signal here is mostly curatorial: rather than another product announcement, the day\u2019s AI attention is being directed toward a research synthesis and the systems around building or steering advanced AI behavior.",
+    "cluster_id": "f984b686e2b0bef7",
+    "dek": "Latent Space points readers to Lilian Weng\u2019s synthesis of 35 papers on \u201cHarness Engineering for RSI.\u201d",
+    "headline": "A quiet AI day becomes a reading day",
+    "source_ids": [
+      "f984b686e2b0bef7-s1"
+    ],
+    "why_it_matters": "When the AI news tempo drops, the best item is often not a launch but a map of the literature. This one is framed as that kind of pause-and-read piece."
+  },
+  {
+    "body": "The New York Times reports that OpenAI and Anthropic are already distorting San Francisco Bay Area home sales even before going public. The mechanism is strikingly direct: buyers are racing to purchase homes, while some sellers are asking for shares in OpenAI or Anthropic rather than cash. The excerpt does not say how common these deals are, but the framing is clear\u2014the private-market AI boom is no longer just a compensation story or a venture story. It is changing what sellers think counts as money.",
+    "cluster_id": "dbdfb9497b9e7aef",
+    "dek": "Some Bay Area home sellers are reportedly asking for OpenAI or Anthropic stock instead of cash, before either company is public.",
+    "headline": "AI paper wealth is leaking into San Francisco housing",
+    "source_ids": [
+      "dbdfb9497b9e7aef-s1"
+    ],
+    "why_it_matters": "Housing markets are excellent detectors of concentrated wealth. If private AI equity is being treated as a bargaining chip for homes, the boom has entered everyday asset pricing."
+  },
+  {
+    "body": "UnitedHealth Group, CVS Health, and Cigna are suing states over laws targeting their pharmacy businesses, according to the New York Times. The excerpt describes the fight as an effort by health insurance giants to resist breakups, suggesting states are trying to loosen the tight integration between insurers and pharmacy operations. The details of the laws are not included here, but the lineup is familiar: large health care conglomerates defending the business structures that give them reach across insurance, pharmacy benefits, and drug distribution.",
+    "cluster_id": "c0281e5e8090b535",
+    "dek": "UnitedHealth Group, CVS Health, and Cigna are suing over new state laws aimed at their pharmacy operations.",
+    "headline": "Health insurers fight state attempts to split up their pharmacy businesses",
+    "source_ids": [
+      "c0281e5e8090b535-s1"
+    ],
+    "why_it_matters": "The story sits at the pressure point of U.S. health care: whether vertical integration lowers costs or simply lets the biggest players control more of the maze patients and employers have to navigate."
+  },
+  {
+    "body": "The family of Lorenzo Salgado Araujo, who was fatally shot by an ICE agent, is calling for an independent inquiry. The New York Times excerpt says his sons mourned him as a father, husband, and business owner, and said he was shot inside his car. It also explicitly notes that details of the encounter remain unclear. That uncertainty is the center of the story: the family is pushing for an outside account of what happened, while the publicly available facts in the excerpt remain limited.",
+    "cluster_id": "493e8a45d20a005b",
+    "dek": "Lorenzo Salgado Araujo\u2019s sons mourned him as a father, husband, and business owner; key facts of the encounter remain unclear.",
+    "headline": "Family seeks independent inquiry after fatal ICE shooting in Houston",
+    "source_ids": [
+      "493e8a45d20a005b-s1"
+    ],
+    "why_it_matters": "Fatal law-enforcement encounters often turn on contested early narratives. An independent inquiry matters most precisely when the basic sequence of events is still unresolved."
+  },
+  {
+    "body": "Oil prices rose after President Trump said the deal with Iran is \u201cover,\u201d the New York Times reports. The immediate backdrop is attacks on ships in the Strait of Hormuz, which the excerpt says sparked a new cycle of retaliation that could throttle the flow of energy from the region. The source frames the market move less as abstract geopolitics than as a shipping chokepoint problem: if Hormuz looks unsafe, energy traders have to price in the possibility that supply becomes harder to move.",
+    "cluster_id": "78b1780037d7b6d8",
+    "dek": "After attacks on ships in the Strait of Hormuz, Trump said the Iran deal is \u201cover,\u201d feeding concern about energy flows from the region.",
+    "headline": "Oil jumps as Hormuz fears return",
+    "source_ids": [
+      "78b1780037d7b6d8-s1"
+    ],
+    "why_it_matters": "Hormuz is the kind of place where political language, military escalation, and commodity prices collapse into one story. Even the threat of disruption can move markets quickly."
+  },
+  {
+    "body": "Lit Hub\u2019s July 8 daily roundup leads with Jane Austen\u2019s Emma as a subversion of the kind of romance Austen mastered, alongside Lisa Owens on the \u201ctaboo\u201d ways women writers balance creativity with family. The previous day\u2019s roundup points to Joyce Carol Oates\u2019s The Frenzy and its look at \u201cthe dispiriting effects of technology on contemporary life,\u201d plus Bryan Charles on AI\u2019s slow, steady invasion of literary translation. Read together, the two roundups sketch a very Lit Hub week: classic forms under revision, private life as creative constraint, and technology pressing on literary culture.",
+    "cluster_id": "314dffaf20a84e79",
+    "dek": "Two daily roundups point to criticism and craft pieces about romance, technology, translation, and women writers\u2019 domestic negotiations.",
+    "headline": "Lit Hub\u2019s daily menu: Austen, Oates, AI translation, and the family-creativity bargain",
+    "source_ids": [
+      "314dffaf20a84e79-s1",
+      "314dffaf20a84e79-s2"
+    ],
+    "why_it_matters": "The pieces flagged here suggest literary criticism is circling the same questions as everyone else: what old forms still know, what technology is changing, and what domestic arrangements make art possible."
+  },
+  {
+    "body": "LetsRun published its practical package for the 2026 Herculis \u2014 Monaco Diamond League: one post for schedule, entries, and results, and another for how to watch, including TV and streaming information. The excerpts do not highlight specific athletes or events, so this is less a race preview than a logistics bookmark. For track fans, that is often exactly what matters on meet day: who is entered, when events go off, where results land, and how to tune in.",
+    "cluster_id": "b254a5e7939e93e3",
+    "dek": "LetsRun has the schedule, entries, results hub, and viewing information for the 2026 Herculis meet.",
+    "headline": "Monaco Diamond League gets the practical LetsRun treatment",
+    "source_ids": [
+      "b254a5e7939e93e3-s1",
+      "b254a5e7939e93e3-s2"
+    ],
+    "why_it_matters": "Diamond League coverage can be scattered across start lists, broadcast windows, and results pages. A single logistics hub lowers the friction for following the meet live."
+  }
+]

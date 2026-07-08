@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-08</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Wednesday, July 8, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>sqlite-utils gets its first major bump since 2020</h2><p class="dek">Version 4.0 adds schema migrations, nested transactions, and compound foreign keys—small plumbing with outsized practical value.</p><div class="lead-lower"><div class="body-copy"><p>Simon Willison released sqlite-utils 4.0, calling it the project’s 124th release and its first major version bump since 3.0 in November 2020. The release includes “small but significant” breaking changes, plus three headline additions: database schema migrations, nested transactions through a new db.atomic() method, and support for compound foreign keys. The migrations feature is the main turn: sqlite-utils can now define a sequence of database changes in Python files, track which have been applied, and apply pending ones.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> SQLite is often chosen because it avoids operational ceremony; first-class migrations make it easier to keep that simplicity while treating schema changes as real application infrastructure.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/7/sqlite-utils-4/" target="_blank" rel="noreferrer">Simon Willison</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>A quiet AI day becomes a reading day</h2><p class="dek">Latent Space points readers to Lilian Weng’s synthesis of 35 papers on “Harness Engineering for RSI.”</p><div class="body-copy"><p>Latent Space’s AINews flags a slower news cycle as a chance to read “condensed insight,” with the headline item being Lilian Weng’s summary of 35 papers on “Harness Engineering for RSI.” The excerpt does not spell out the arguments or define the acronym, so the useful signal here is mostly curatorial: rather than another product announcement, the day’s AI attention is being directed toward a research synthesis and the systems around building or steering advanced AI behavior.</p></div><p class="why"><strong>Why it matters:</strong> When the AI news tempo drops, the best item is often not a launch but a map of the literature. This one is framed as that kind of pause-and-read piece.</p><p class="sources">Sources: <a href="https://latent.space/p/ainews-lilian-weng-summarizes-35" target="_blank" rel="noreferrer">Latent Space</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>AI paper wealth is leaking into San Francisco housing</h2><p class="dek">Some Bay Area home sellers are reportedly asking for OpenAI or Anthropic stock instead of cash, before either company is public.</p><div class="body-copy"><p>The New York Times reports that OpenAI and Anthropic are already distorting San Francisco Bay Area home sales even before going public. The mechanism is strikingly direct: buyers are racing to purchase homes, while some sellers are asking for shares in OpenAI or Anthropic rather than cash. The excerpt does not say how common these deals are, but the framing is clear—the private-market AI boom is no longer just a compensation story or a venture story. It is changing what sellers think counts as money.</p></div><p class="why"><strong>Why it matters:</strong> Housing markets are excellent detectors of concentrated wealth. If private AI equity is being treated as a bargaining chip for homes, the boom has entered everyday asset pricing.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/08/technology/san-francisco-home-sales-openai-anthropic-ipo.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Health insurers fight state attempts to split up their pharmacy businesses</h2><p class="dek">UnitedHealth Group, CVS Health, and Cigna are suing over new state laws aimed at their pharmacy operations.</p><div class="body-copy"><p>UnitedHealth Group, CVS Health, and Cigna are suing states over laws targeting their pharmacy businesses, according to the New York Times. The excerpt describes the fight as an effort by health insurance giants to resist breakups, suggesting states are trying to loosen the tight integration between insurers and pharmacy operations. The details of the laws are not included here, but the lineup is familiar: large health care conglomerates defending the business structures that give them reach across insurance, pharmacy benefits, and drug distribution.</p></div><p class="why"><strong>Why it matters:</strong> The story sits at the pressure point of U.S. health care: whether vertical integration lowers costs or simply lets the biggest players control more of the maze patients and employers have to navigate.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/08/business/health-insurance-cvs-unitedhealth-breakup.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Family seeks independent inquiry after fatal ICE shooting in Houston</h2><p class="dek">Lorenzo Salgado Araujo’s sons mourned him as a father, husband, and business owner; key facts of the encounter remain unclear.</p><div class="body-copy"><p>The family of Lorenzo Salgado Araujo, who was fatally shot by an ICE agent, is calling for an independent inquiry. The New York Times excerpt says his sons mourned him as a father, husband, and business owner, and said he was shot inside his car. It also explicitly notes that details of the encounter remain unclear. That uncertainty is the center of the story: the family is pushing for an outside account of what happened, while the publicly available facts in the excerpt remain limited.</p></div><p class="why"><strong>Why it matters:</strong> Fatal law-enforcement encounters often turn on contested early narratives. An independent inquiry matters most precisely when the basic sequence of events is still unresolved.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/08/us/ice-shooting-houston-victim.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Oil jumps as Hormuz fears return</h2><p class="dek">After attacks on ships in the Strait of Hormuz, Trump said the Iran deal is “over,” feeding concern about energy flows from the region.</p><div class="body-copy"><p>Oil prices rose after President Trump said the deal with Iran is “over,” the New York Times reports. The immediate backdrop is attacks on ships in the Strait of Hormuz, which the excerpt says sparked a new cycle of retaliation that could throttle the flow of energy from the region. The source frames the market move less as abstract geopolitics than as a shipping chokepoint problem: if Hormuz looks unsafe, energy traders have to price in the possibility that supply becomes harder to move.</p></div><p class="why"><strong>Why it matters:</strong> Hormuz is the kind of place where political language, military escalation, and commodity prices collapse into one story. Even the threat of disruption can move markets quickly.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/08/business/oil-gas-markets-iran-shipping-hormuz.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Lit Hub’s daily menu: Austen, Oates, AI translation, and the family-creativity bargain</h2><p class="dek">Two daily roundups point to criticism and craft pieces about romance, technology, translation, and women writers’ domestic negotiations.</p><div class="body-copy"><p>Lit Hub’s July 8 daily roundup leads with Jane Austen’s Emma as a subversion of the kind of romance Austen mastered, alongside Lisa Owens on the “taboo” ways women writers balance creativity with family. The previous day’s roundup points to Joyce Carol Oates’s The Frenzy and its look at “the dispiriting effects of technology on contemporary life,” plus Bryan Charles on AI’s slow, steady invasion of literary translation. Read together, the two roundups sketch a very Lit Hub week: classic forms under revision, private life as creative constraint, and technology pressing on literary culture.</p></div><p class="why"><strong>Why it matters:</strong> The pieces flagged here suggest literary criticism is circling the same questions as everyone else: what old forms still know, what technology is changing, and what domestic arrangements make art possible.</p><p class="sources">Sources: <a href="https://lithub.com/lit-hub-daily-july-8-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-daily-july-7-2026/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Monaco Diamond League gets the practical LetsRun treatment</h2><p class="dek">LetsRun has the schedule, entries, results hub, and viewing information for the 2026 Herculis meet.</p><div class="body-copy"><p>LetsRun published its practical package for the 2026 Herculis — Monaco Diamond League: one post for schedule, entries, and results, and another for how to watch, including TV and streaming information. The excerpts do not highlight specific athletes or events, so this is less a race preview than a logistics bookmark. For track fans, that is often exactly what matters on meet day: who is entered, when events go off, where results land, and how to tune in.</p></div><p class="why"><strong>Why it matters:</strong> Diamond League coverage can be scattered across start lists, broadcast windows, and results pages. A single logistics hub lowers the friction for following the meet live.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/07/schedule-entries-results-for-2026-herculis-monaco-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/07/how-to-watch-2026-herculis-monaco-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 8, 2026
+</footer>
+</main>
+</body>
+</html>
