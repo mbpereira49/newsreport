@@ -1,0 +1,82 @@
+[
+  {
+    "body": "SambaNova, an AI chip startup, has been valued at $11 billion in a $1 billion funding round, according to Reuters and a KELO-AM pickup of the same headline. The supplied excerpts are thin on participants, terms, or how SambaNova plans to use the capital, so the safe read is the obvious one: investors are still willing to write enormous checks for companies positioned anywhere near the AI compute bottleneck.",
+    "cluster_id": "63a87929c5d46502",
+    "dek": "The startup was reported valued at $11 billion after a $1 billion funding round.",
+    "headline": "SambaNova\u2019s new round keeps the AI-chip money spigot open",
+    "source_ids": [
+      "63a87929c5d46502-s1",
+      "63a87929c5d46502-s2"
+    ],
+    "why_it_matters": "AI infrastructure remains one of the few markets where private valuations can still leap on strategic scarcity. Chips are the choke point; money is chasing anything that might loosen it."
+  },
+  {
+    "body": "The data center boom has already strained communities around the country. Now, according to The New York Times, Big Tech is targeting Native American land, where the promise of development and faster approvals is colliding with a long history of exploitation. The excerpt doesn\u2019t name the companies or tribes involved, but it gives the central tension clearly: data centers need land, power, water, and political permission; tribal communities may see economic opportunity while also carrying good reasons to distrust rushed outside deals.",
+    "cluster_id": "bd5427542100f864",
+    "dek": "A new report frames tribal land as the latest pressure point in the AI-era infrastructure buildout.",
+    "headline": "Big Tech\u2019s data-center hunt reaches Native land",
+    "source_ids": [
+      "bd5427542100f864-s1"
+    ],
+    "why_it_matters": "AI\u2019s physical footprint is becoming harder to ignore. The story isn\u2019t just chips and models; it\u2019s who bears the local costs when the cloud needs somewhere to land."
+  },
+  {
+    "body": "Simon Willison points to Jarred Sumner\u2019s long-promised post on rewriting Bun from Zig to Rust, calling it worth the wait. The excerpt stresses that Sumner spends real time praising Zig for getting Bun this far, so this should not be read as a simple anti-Zig victory lap. The sharper bit is process: Willison describes \u201can extremely sophisticated piece of agentic engineering,\u201d with dynamic workflows, trial runs, adversarial review, and other techniques. The emotional driver was pragmatic, too: a bugfix list that \u201cfelt bad\u201d and sleep lost over crashes.",
+    "cluster_id": "de026dec7fcaf64e",
+    "dek": "Simon Willison highlights Jarred Sumner\u2019s account of moving Bun from Zig to Rust\u2014and the workflow around it may be the real story.",
+    "headline": "Bun\u2019s Rust rewrite doubles as a case study in agentic engineering",
+    "source_ids": [
+      "de026dec7fcaf64e-s1"
+    ],
+    "why_it_matters": "The interesting frontier in software may be less \u201cAI writes code\u201d than \u201cteams redesign engineering systems around AI-assisted review, migration, and risk reduction.\u201d"
+  },
+  {
+    "body": "Latent Space\u2019s new conversation with Modal CTO Akshat Bubna revisits the company two years after earlier coverage, this time around a pointed thesis: AI infrastructure must evolve for \u201cAgent Experience.\u201d The excerpt says the episode explores why that experience is working now and what Modal has learned building what it calls the \u201cnew agent cloud.\u201d The framing is promotional-adjacent by nature\u2014podcast interview, company cofounder\u2014but the underlying question is real: if agents are running more workflows, infrastructure has to accommodate their quirks, not merely human-triggered scripts.",
+    "cluster_id": "7d294272954bbaee",
+    "dek": "Latent Space returns to Modal to ask why AI infrastructure now has to serve agents, not just developers and jobs.",
+    "headline": "Modal pitches the cloud around \u2018Agent Experience\u2019",
+    "source_ids": [
+      "7d294272954bbaee-s1"
+    ],
+    "why_it_matters": "As AI agents move from demos to production workflows, developer platforms will compete on orchestration, latency, observability, and failure handling for semi-autonomous systems."
+  },
+  {
+    "body": "Minutes from Kevin M. Warsh\u2019s first Federal Reserve meeting as chairman showed heightened unease about inflation, according to The New York Times. The key detail: some officials signaled support for raising interest rates. The excerpt does not say whether that view commanded a majority, so the important nuance is that this is a signal of pressure inside the Fed, not necessarily a settled policy path. Still, the backdrop is blunt: inflation is running at a three-year high, putting the central bank back in a defensive crouch.",
+    "cluster_id": "f7924a179acb7b5f",
+    "dek": "Some officials signaled support for raising rates as inflation hit a three-year high.",
+    "headline": "Warsh\u2019s first Fed minutes show inflation anxiety hardening",
+    "source_ids": [],
+    "why_it_matters": "After years of rate-cycle drama, the Fed may again be weighing whether inflation risk matters more than growth pain. Markets, borrowers, and households will parse every hint."
+  },
+  {
+    "body": "Grocery stores are lowering prices as consumers pare spending, The New York Times reports. That sounds like relief, but the excerpt immediately narrows the promise: shoppers may get better deals on some items, while their overall grocery bill is unlikely to fall. In other words, this is less a broad deflation story than a retail tactics story. Grocers can discount selectively, chase traffic, and reassure price-sensitive customers without changing the full economics of a weekly shop.",
+    "cluster_id": "025d541d0fc2fabb",
+    "dek": "Retailers are responding to thriftier shoppers, yet overall grocery bills may not fall much.",
+    "headline": "Grocery stores cut prices, but don\u2019t expect a cheaper cart",
+    "source_ids": [
+      "025d541d0fc2fabb-s1"
+    ],
+    "why_it_matters": "Consumer strain is now visible in store strategy. Discounts can soothe sticker shock, but selective price cuts may not meaningfully change household budgets."
+  },
+  {
+    "body": "LetsRun has posted the service-journalism staples for the 2026 Herculis \u2014 Monaco Diamond League: one item for schedule, entries, and results, and another for how to watch, including TV and streaming information. The excerpts don\u2019t list athletes, events, or broadcast platforms, so there\u2019s no result to hype yet. But for track fans, Monaco is the kind of meet where the logistics matter: know when it starts, who\u2019s entered, and where the stream lives, then let the racing supply the drama.",
+    "cluster_id": "b254a5e7939e93e3",
+    "dek": "The 2026 Herculis meet now has schedule, entries, results, and viewing information collected in one place.",
+    "headline": "Monaco Diamond League gets the practical LetsRun treatment",
+    "source_ids": [
+      "b254a5e7939e93e3-s1",
+      "b254a5e7939e93e3-s2"
+    ],
+    "why_it_matters": "Elite track is still too often hard to follow casually. Clear schedule and viewing information is the unglamorous infrastructure that helps fans actually watch the sport."
+  },
+  {
+    "body": "A new play, \u201cQuestioning,\u201d tells the story of artist Julia Weist being officially investigated for making art, according to The New York Times. The premise is unusually recursive: the play is itself an artwork built from a first-person account of an inquiry into Weist\u2019s use of private investigation databases to create work. The excerpt doesn\u2019t specify who conducted the inquiry or what legal questions were at stake, but the conceptual charge is clear. Surveillance tools, artistic method, and institutional suspicion are all onstage at once.",
+    "cluster_id": "1532cf370d0aec92",
+    "dek": "Julia Weist\u2019s \u201cQuestioning\u201d uses an official investigation into her database-based work as source material.",
+    "headline": "An artist investigated for making art turns the inquiry into theater",
+    "source_ids": [
+      "1532cf370d0aec92-s1"
+    ],
+    "why_it_matters": "Art about data access and investigation can quickly become a test of the same systems it critiques. That makes the work both cultural object and civic stress test."
+  }
+]

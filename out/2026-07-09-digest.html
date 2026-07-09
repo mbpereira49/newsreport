@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-09</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Thursday, July 9, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>SambaNova’s new round keeps the AI-chip money spigot open</h2><p class="dek">The startup was reported valued at $11 billion after a $1 billion funding round.</p><div class="lead-lower"><div class="body-copy"><p>SambaNova, an AI chip startup, has been valued at $11 billion in a $1 billion funding round, according to Reuters and a KELO-AM pickup of the same headline. The supplied excerpts are thin on participants, terms, or how SambaNova plans to use the capital, so the safe read is the obvious one: investors are still willing to write enormous checks for companies positioned anywhere near the AI compute bottleneck.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> AI infrastructure remains one of the few markets where private valuations can still leap on strategic scarcity. Chips are the choke point; money is chasing anything that might loosen it.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOQ0JJOC1CUXdPSEl1M2k3U285cWp3c2Zvam9wSUJwTk92aEl4c3lvRWUwM3VRTEVpa3k3UkhnTzEwV1dWM0JXSV9NZUxlVjJvaWFmcE9WNVFuRzUyNDlTWVRfRGtFYTJIZzU4bk1KdUIyRHU2Mjd2Rm5YcXRNejRuVVpjTGlBSWYwLVE2aUlfWHlDWWlBTk1qYW4wbkVDZmlZMTA0Yg?oc=5" target="_blank" rel="noreferrer">KELO-AM</a> · <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQVFN4Q3MyZ0picXpkUUFKamxOY1RlNktsaVVQVkVCWXVPbGNobjBKeGlWaE9HTm4xVXM0RUFOUU1vbmt1M1A1eUxRdEJ2X2lzZUQ5NDZKVDMteG5tSkk3Q1Y4WlR4SUN0WmxVd1VwUUFZNzlzVVBiRTd6R19qOFoydDJkRUJTMXFZOTc4dHRxQk5wZC1MOF9ac3lMUjY1c1Rzd05mQi1KUUU1ZkF4aHgxN1Vrbm8zZ2RLYm5paQ?oc=5" target="_blank" rel="noreferrer">Reuters</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Big Tech’s data-center hunt reaches Native land</h2><p class="dek">A new report frames tribal land as the latest pressure point in the AI-era infrastructure buildout.</p><div class="body-copy"><p>The data center boom has already strained communities around the country. Now, according to The New York Times, Big Tech is targeting Native American land, where the promise of development and faster approvals is colliding with a long history of exploitation. The excerpt doesn’t name the companies or tribes involved, but it gives the central tension clearly: data centers need land, power, water, and political permission; tribal communities may see economic opportunity while also carrying good reasons to distrust rushed outside deals.</p></div><p class="why"><strong>Why it matters:</strong> AI’s physical footprint is becoming harder to ignore. The story isn’t just chips and models; it’s who bears the local costs when the cloud needs somewhere to land.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/09/us/data-centers-native-american-tribes.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Bun’s Rust rewrite doubles as a case study in agentic engineering</h2><p class="dek">Simon Willison highlights Jarred Sumner’s account of moving Bun from Zig to Rust—and the workflow around it may be the real story.</p><div class="body-copy"><p>Simon Willison points to Jarred Sumner’s long-promised post on rewriting Bun from Zig to Rust, calling it worth the wait. The excerpt stresses that Sumner spends real time praising Zig for getting Bun this far, so this should not be read as a simple anti-Zig victory lap. The sharper bit is process: Willison describes “an extremely sophisticated piece of agentic engineering,” with dynamic workflows, trial runs, adversarial review, and other techniques. The emotional driver was pragmatic, too: a bugfix list that “felt bad” and sleep lost over crashes.</p></div><p class="why"><strong>Why it matters:</strong> The interesting frontier in software may be less “AI writes code” than “teams redesign engineering systems around AI-assisted review, migration, and risk reduction.”</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Modal pitches the cloud around ‘Agent Experience’</h2><p class="dek">Latent Space returns to Modal to ask why AI infrastructure now has to serve agents, not just developers and jobs.</p><div class="body-copy"><p>Latent Space’s new conversation with Modal CTO Akshat Bubna revisits the company two years after earlier coverage, this time around a pointed thesis: AI infrastructure must evolve for “Agent Experience.” The excerpt says the episode explores why that experience is working now and what Modal has learned building what it calls the “new agent cloud.” The framing is promotional-adjacent by nature—podcast interview, company cofounder—but the underlying question is real: if agents are running more workflows, infrastructure has to accommodate their quirks, not merely human-triggered scripts.</p></div><p class="why"><strong>Why it matters:</strong> As AI agents move from demos to production workflows, developer platforms will compete on orchestration, latency, observability, and failure handling for semi-autonomous systems.</p><p class="sources">Sources: <a href="https://latent.space/p/modal2026" target="_blank" rel="noreferrer">Latent Space</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Warsh’s first Fed minutes show inflation anxiety hardening</h2><p class="dek">Some officials signaled support for raising rates as inflation hit a three-year high.</p><div class="body-copy"><p>Minutes from Kevin M. Warsh’s first Federal Reserve meeting as chairman showed heightened unease about inflation, according to The New York Times. The key detail: some officials signaled support for raising interest rates. The excerpt does not say whether that view commanded a majority, so the important nuance is that this is a signal of pressure inside the Fed, not necessarily a settled policy path. Still, the backdrop is blunt: inflation is running at a three-year high, putting the central bank back in a defensive crouch.</p></div><p class="why"><strong>Why it matters:</strong> After years of rate-cycle drama, the Fed may again be weighing whether inflation risk matters more than growth pain. Markets, borrowers, and households will parse every hint.</p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Grocery stores cut prices, but don’t expect a cheaper cart</h2><p class="dek">Retailers are responding to thriftier shoppers, yet overall grocery bills may not fall much.</p><div class="body-copy"><p>Grocery stores are lowering prices as consumers pare spending, The New York Times reports. That sounds like relief, but the excerpt immediately narrows the promise: shoppers may get better deals on some items, while their overall grocery bill is unlikely to fall. In other words, this is less a broad deflation story than a retail tactics story. Grocers can discount selectively, chase traffic, and reassure price-sensitive customers without changing the full economics of a weekly shop.</p></div><p class="why"><strong>Why it matters:</strong> Consumer strain is now visible in store strategy. Discounts can soothe sticker shock, but selective price cuts may not meaningfully change household budgets.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/09/business/grocery-stores-lower-food-prices.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Monaco Diamond League gets the practical LetsRun treatment</h2><p class="dek">The 2026 Herculis meet now has schedule, entries, results, and viewing information collected in one place.</p><div class="body-copy"><p>LetsRun has posted the service-journalism staples for the 2026 Herculis — Monaco Diamond League: one item for schedule, entries, and results, and another for how to watch, including TV and streaming information. The excerpts don’t list athletes, events, or broadcast platforms, so there’s no result to hype yet. But for track fans, Monaco is the kind of meet where the logistics matter: know when it starts, who’s entered, and where the stream lives, then let the racing supply the drama.</p></div><p class="why"><strong>Why it matters:</strong> Elite track is still too often hard to follow casually. Clear schedule and viewing information is the unglamorous infrastructure that helps fans actually watch the sport.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/07/schedule-entries-results-for-2026-herculis-monaco-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/07/how-to-watch-2026-herculis-monaco-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>An artist investigated for making art turns the inquiry into theater</h2><p class="dek">Julia Weist’s “Questioning” uses an official investigation into her database-based work as source material.</p><div class="body-copy"><p>A new play, “Questioning,” tells the story of artist Julia Weist being officially investigated for making art, according to The New York Times. The premise is unusually recursive: the play is itself an artwork built from a first-person account of an inquiry into Weist’s use of private investigation databases to create work. The excerpt doesn’t specify who conducted the inquiry or what legal questions were at stake, but the conceptual charge is clear. Surveillance tools, artistic method, and institutional suspicion are all onstage at once.</p></div><p class="why"><strong>Why it matters:</strong> Art about data access and investigation can quickly become a test of the same systems it critiques. That makes the work both cultural object and civic stress test.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/09/theater/questioning-play-new-theater-hollywood.html" target="_blank" rel="noreferrer">NYT Arts</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 9, 2026
+</footer>
+</main>
+</body>
+</html>
