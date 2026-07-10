@@ -1,0 +1,86 @@
+[
+  {
+    "body": "The reported scale is the story: more than 170 targets in two days is not a symbolic strike package. The targets named in the excerpt\u2014air defense systems, drone and missile storage sites, and military speedboats\u2014suggest an effort to degrade Iran\u2019s ability to respond across air, missile, drone, and maritime channels. With only one source excerpt here, the fog is still thick: we do not have official casualty claims, Iran\u2019s account, or the immediate trigger. But the Times frames it plainly as a sharp escalation, and the target list supports that reading.",
+    "cluster_id": "361db060f9ef45d2",
+    "dek": "American forces hit more than 170 targets over two days, according to the Times, including air defenses, drone and missile storage sites, and military speedboats.",
+    "headline": "U.S. strikes in Iran move from warning shot to escalation",
+    "source_ids": [
+      "361db060f9ef45d2-s1"
+    ],
+    "why_it_matters": "This raises the risk of a wider military cycle: strikes on air defenses and storage sites can be presented as defensive preparation, but they also reduce the off-ramp space for the other side."
+  },
+  {
+    "body": "SambaNova has raised $1 billion at an $11 billion valuation, according to Reuters and KELO-AM headlines carried in the cluster. That is a big number even in the AI infrastructure market, where capital intensity has become the rule rather than the exception. The limited excerpts do not say who led the round, what terms came with it, or how much the valuation has moved from prior financing. Still, the signal is clear enough: investors remain willing to fund alternatives in AI compute, a market dominated in public imagination by a small set of chip and systems players.",
+    "cluster_id": "63a87929c5d46502",
+    "dek": "The AI chip startup is being valued like a serious contender in the infrastructure race, though the available excerpts give only the headline terms.",
+    "headline": "SambaNova lands a $1 billion round at an $11 billion valuation",
+    "source_ids": [
+      "63a87929c5d46502-s1",
+      "63a87929c5d46502-s2"
+    ],
+    "why_it_matters": "AI\u2019s bottleneck is not just models; it is chips, memory, networking, and deployment. A billion-dollar financing round says the market still believes there is room\u2014and need\u2014for challengers."
+  },
+  {
+    "body": "The Times\u2019 framing is unusually blunt: \u201cThe Work of Helping A.I. Destroy Work.\u201d The mechanism is straightforward and unsettling. Startups pay white-collar professionals to transfer their expertise into AI systems\u2014turning tacit knowledge into training material, workflows, evaluations, and examples that models can absorb. For the workers, this can be lucrative now. For the labor market, it raises the obvious question: how long does the payday last if the product is a machine that can imitate more of the job? The excerpt does not specify which professions are most affected or how close the models are to replacement versus assistance, so the endgame remains contested. But the moral tension is already here.",
+    "cluster_id": "32b3d82f2b8e78e7",
+    "dek": "Startups are hiring professionals to teach AI models how to do their jobs. The Times calls it both a bonanza and bleak, which is about right.",
+    "headline": "White-collar workers are being paid to automate themselves",
+    "source_ids": [
+      "32b3d82f2b8e78e7-s1"
+    ],
+    "why_it_matters": "This is one of the cleanest examples of AI\u2019s labor paradox: the people best qualified to improve the systems may also be the people most exposed if those systems succeed."
+  },
+  {
+    "body": "The interesting part of this story is not merely \u201cZig to Rust.\u201d Simon Willison\u2019s excerpt says Jarred Sumner spends the first half praising Zig for getting Bun this far, then explains the rewrite through a sophisticated agentic engineering process: dynamic workflows, trial runs, adversarial review, and other techniques. The quoted motivation is more emotional and operational than ideological: \u201cOur bugfix list felt bad and I was tired of going to sleep worrying about crashes in Bun.\u201d Willison\u2019s framing matters because it turns a runtime rewrite into a glimpse of how serious teams may use AI agents\u2014not as magic coders, but as participants in structured, review-heavy engineering systems.",
+    "cluster_id": "de026dec7fcaf64e",
+    "dek": "Simon Willison highlights Jarred Sumner\u2019s account of moving Bun from Zig to Rust\u2014not as a simple language-war post, but as a detailed look at AI-assisted software work.",
+    "headline": "Bun\u2019s Rust rewrite becomes a case study in agentic engineering",
+    "source_ids": [
+      "de026dec7fcaf64e-s1"
+    ],
+    "why_it_matters": "If this approach works beyond one exceptional project, it hints at a practical frontier for AI in software: not replacing engineering judgment, but scaling tedious, risky migrations under tight human supervision."
+  },
+  {
+    "body": "New York is suing companies including 3M and DuPont over PFAS, the durable chemicals often called \u201cforever chemicals.\u201d According to the Times excerpt, the lawsuit claims the companies contaminated the environment and engaged in fraud by withholding information from the public about the chemicals\u2019 harms. The excerpt does not include the companies\u2019 responses, so the allegations should be treated as claims in litigation, not established findings. Still, the legal theory is important: this is not only a cleanup-cost case; it is also about what companies allegedly knew, when they knew it, and what they told\u2014or did not tell\u2014the public.",
+    "cluster_id": "e871f9f6d735d90a",
+    "dek": "The state\u2019s lawsuit alleges environmental contamination and fraud, saying companies withheld information about the harms of \u201cforever chemicals.\u201d",
+    "headline": "New York targets 3M, DuPont and others over PFAS contamination",
+    "source_ids": [
+      "e871f9f6d735d90a-s1"
+    ],
+    "why_it_matters": "PFAS litigation is becoming one of the major environmental accountability fights. If fraud claims stick, the financial and reputational exposure could reach well beyond remediation bills."
+  },
+  {
+    "body": "Sundance is creating a new jury with the International Federation of Film Critics to evaluate films by first-time foreign directors, according to Variety and IMDb headlines in the cluster. The sources frame the news similarly, with Variety presenting it as an exclusive. The excerpts do not give the prize structure, eligibility details, or whether this changes programming decisions. But even at headline level, the move is legible: Sundance is putting more formal critical attention on international debut filmmaking, a category that can be both artistically rich and easy to miss amid acquisition chatter and U.S.-industry buzz.",
+    "cluster_id": "064b55d9f4941d53",
+    "dek": "The Sundance Film Festival and the International Federation of Film Critics are establishing a jury to assess movies from debut foreign directors.",
+    "headline": "Sundance adds a critics\u2019 jury for first-time foreign directors",
+    "source_ids": [
+      "064b55d9f4941d53-s1",
+      "064b55d9f4941d53-s2"
+    ],
+    "why_it_matters": "Festival infrastructure shapes what gets noticed. A dedicated critics\u2019 jury can help first-time international filmmakers cut through a noisy marketplace where attention is often the scarce resource."
+  },
+  {
+    "body": "This is a utility item, but for track fans it is the useful kind. LetsRun has published both a schedule/entries/results page and a how-to-watch guide for the 2026 Herculis\u2014Monaco Diamond League meet. The excerpts do not list the athletes or events, so there is no basis here to hype a particular race. Still, Monaco is one of the circuit\u2019s marquee stops, and the combination of entries, live results, and viewing information is the package serious fans need when a fast meet starts moving quickly.",
+    "cluster_id": "b254a5e7939e93e3",
+    "dek": "LetsRun has the essentials for the 2026 Herculis meet: schedule, entries, results, and how to watch.",
+    "headline": "Monaco Diamond League gets the practical guide treatment",
+    "source_ids": [
+      "b254a5e7939e93e3-s1",
+      "b254a5e7939e93e3-s2"
+    ],
+    "why_it_matters": "Track\u2019s problem is often discoverability, not drama. Centralized watch and results info makes it easier for casual fans to actually follow elite racing in real time."
+  },
+  {
+    "body": "Sendo opened a second location in Greenwich Village this spring with little fanfare, and Eater NY\u2019s take is that it deserves attention precisely because it is trying not to be precious. Owner Guy Allen has built the counter around the model of Tokyo\u2019s casual neighborhood sushi bars, where good fish can be an everyday meal instead of a special-occasion performance. The excerpt does not include pricing, menu specifics, or a full critical verdict, so \u201caffordable\u201d is relative\u2014especially in Manhattan sushi. But the positioning is clear: quality without the forced drama of omakase-as-luxury-theater.",
+    "cluster_id": "3c6661b890575af3",
+    "dek": "Eater NY says Sendo\u2019s second location deserves a spot in the rotation, aiming for Tokyo-style neighborhood sushi rather than Manhattan splurge energy.",
+    "headline": "A Greenwich Village sushi counter makes affordability feel notable",
+    "source_ids": [
+      "3c6661b890575af3-s1",
+      "3c6661b890575af3-s2"
+    ],
+    "why_it_matters": "In a city where sushi often gets sorted into bargain-bin rolls or expensive omakase, a credible middle lane is genuinely useful dining news."
+  }
+]

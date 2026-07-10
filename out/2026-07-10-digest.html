@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-10</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Friday, July 10, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>U.S. strikes in Iran move from warning shot to escalation</h2><p class="dek">American forces hit more than 170 targets over two days, according to the Times, including air defenses, drone and missile storage sites, and military speedboats.</p><div class="lead-lower"><div class="body-copy"><p>The reported scale is the story: more than 170 targets in two days is not a symbolic strike package. The targets named in the excerpt—air defense systems, drone and missile storage sites, and military speedboats—suggest an effort to degrade Iran’s ability to respond across air, missile, drone, and maritime channels. With only one source excerpt here, the fog is still thick: we do not have official casualty claims, Iran’s account, or the immediate trigger. But the Times frames it plainly as a sharp escalation, and the target list supports that reading.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> This raises the risk of a wider military cycle: strikes on air defenses and storage sites can be presented as defensive preparation, but they also reduce the off-ramp space for the other side.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/10/us/politics/iran-war-escalation.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>SambaNova lands a $1 billion round at an $11 billion valuation</h2><p class="dek">The AI chip startup is being valued like a serious contender in the infrastructure race, though the available excerpts give only the headline terms.</p><div class="body-copy"><p>SambaNova has raised $1 billion at an $11 billion valuation, according to Reuters and KELO-AM headlines carried in the cluster. That is a big number even in the AI infrastructure market, where capital intensity has become the rule rather than the exception. The limited excerpts do not say who led the round, what terms came with it, or how much the valuation has moved from prior financing. Still, the signal is clear enough: investors remain willing to fund alternatives in AI compute, a market dominated in public imagination by a small set of chip and systems players.</p></div><p class="why"><strong>Why it matters:</strong> AI’s bottleneck is not just models; it is chips, memory, networking, and deployment. A billion-dollar financing round says the market still believes there is room—and need—for challengers.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOQ0JJOC1CUXdPSEl1M2k3U285cWp3c2Zvam9wSUJwTk92aEl4c3lvRWUwM3VRTEVpa3k3UkhnTzEwV1dWM0JXSV9NZUxlVjJvaWFmcE9WNVFuRzUyNDlTWVRfRGtFYTJIZzU4bk1KdUIyRHU2Mjd2Rm5YcXRNejRuVVpjTGlBSWYwLVE2aUlfWHlDWWlBTk1qYW4wbkVDZmlZMTA0Yg?oc=5" target="_blank" rel="noreferrer">KELO-AM</a> · <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQVFN4Q3MyZ0picXpkUUFKamxOY1RlNktsaVVQVkVCWXVPbGNobjBKeGlWaE9HTm4xVXM0RUFOUU1vbmt1M1A1eUxRdEJ2X2lzZUQ5NDZKVDMteG5tSkk3Q1Y4WlR4SUN0WmxVd1VwUUFZNzlzVVBiRTd6R19qOFoydDJkRUJTMXFZOTc4dHRxQk5wZC1MOF9ac3lMUjY1c1Rzd05mQi1KUUU1ZkF4aHgxN1Vrbm8zZ2RLYm5paQ?oc=5" target="_blank" rel="noreferrer">Reuters</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>White-collar workers are being paid to automate themselves</h2><p class="dek">Startups are hiring professionals to teach AI models how to do their jobs. The Times calls it both a bonanza and bleak, which is about right.</p><div class="body-copy"><p>The Times’ framing is unusually blunt: “The Work of Helping A.I. Destroy Work.” The mechanism is straightforward and unsettling. Startups pay white-collar professionals to transfer their expertise into AI systems—turning tacit knowledge into training material, workflows, evaluations, and examples that models can absorb. For the workers, this can be lucrative now. For the labor market, it raises the obvious question: how long does the payday last if the product is a machine that can imitate more of the job? The excerpt does not specify which professions are most affected or how close the models are to replacement versus assistance, so the endgame remains contested. But the moral tension is already here.</p></div><p class="why"><strong>Why it matters:</strong> This is one of the cleanest examples of AI’s labor paradox: the people best qualified to improve the systems may also be the people most exposed if those systems succeed.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/10/business/ai-white-collar-jobs.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Bun’s Rust rewrite becomes a case study in agentic engineering</h2><p class="dek">Simon Willison highlights Jarred Sumner’s account of moving Bun from Zig to Rust—not as a simple language-war post, but as a detailed look at AI-assisted software work.</p><div class="body-copy"><p>The interesting part of this story is not merely “Zig to Rust.” Simon Willison’s excerpt says Jarred Sumner spends the first half praising Zig for getting Bun this far, then explains the rewrite through a sophisticated agentic engineering process: dynamic workflows, trial runs, adversarial review, and other techniques. The quoted motivation is more emotional and operational than ideological: “Our bugfix list felt bad and I was tired of going to sleep worrying about crashes in Bun.” Willison’s framing matters because it turns a runtime rewrite into a glimpse of how serious teams may use AI agents—not as magic coders, but as participants in structured, review-heavy engineering systems.</p></div><p class="why"><strong>Why it matters:</strong> If this approach works beyond one exceptional project, it hints at a practical frontier for AI in software: not replacing engineering judgment, but scaling tedious, risky migrations under tight human supervision.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>New York targets 3M, DuPont and others over PFAS contamination</h2><p class="dek">The state’s lawsuit alleges environmental contamination and fraud, saying companies withheld information about the harms of “forever chemicals.”</p><div class="body-copy"><p>New York is suing companies including 3M and DuPont over PFAS, the durable chemicals often called “forever chemicals.” According to the Times excerpt, the lawsuit claims the companies contaminated the environment and engaged in fraud by withholding information from the public about the chemicals’ harms. The excerpt does not include the companies’ responses, so the allegations should be treated as claims in litigation, not established findings. Still, the legal theory is important: this is not only a cleanup-cost case; it is also about what companies allegedly knew, when they knew it, and what they told—or did not tell—the public.</p></div><p class="why"><strong>Why it matters:</strong> PFAS litigation is becoming one of the major environmental accountability fights. If fraud claims stick, the financial and reputational exposure could reach well beyond remediation bills.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/09/nyregion/ny-pfas-lawsuit-3m-dupont.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Sundance adds a critics’ jury for first-time foreign directors</h2><p class="dek">The Sundance Film Festival and the International Federation of Film Critics are establishing a jury to assess movies from debut foreign directors.</p><div class="body-copy"><p>Sundance is creating a new jury with the International Federation of Film Critics to evaluate films by first-time foreign directors, according to Variety and IMDb headlines in the cluster. The sources frame the news similarly, with Variety presenting it as an exclusive. The excerpts do not give the prize structure, eligibility details, or whether this changes programming decisions. But even at headline level, the move is legible: Sundance is putting more formal critical attention on international debut filmmaking, a category that can be both artistically rich and easy to miss amid acquisition chatter and U.S.-industry buzz.</p></div><p class="why"><strong>Why it matters:</strong> Festival infrastructure shapes what gets noticed. A dedicated critics’ jury can help first-time international filmmakers cut through a noisy marketplace where attention is often the scarce resource.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFB3a3JiVjVubDMxU0UyOHpaSW04eExHa3lkdzB5YlljWFdYZVVQV0pHR1QwSTlzWjFabUZOODV0N0NQczV2MmVhMjE4dWlGbDFZeXlHNlpXR052N2NNbDAtVWZJNXI5M1VqWEE?oc=5" target="_blank" rel="noreferrer">IMDb</a> · <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNTDhpVnEtWnVEUFB1NjV1TnNpNzY0N0ZkS0d5UzhaU05jcHZWVFA2Tl9DY1NLZHZoYU9obmZ5ZWZ4QkdNMkpyZGtKSnJJZWQwOXNvVUw2WU9CdUEzanljVmFaa2tzQm9MMFpHMTdReFFmU3RXSGJVSHFvLXRhQk9MLWhSQnUybTc2Zno0dmdwY2xidm9YQ0pfY2FNdy1peGVfeDd6QVFsbkh2aldXSGVrMg?oc=5" target="_blank" rel="noreferrer">Variety</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Monaco Diamond League gets the practical guide treatment</h2><p class="dek">LetsRun has the essentials for the 2026 Herculis meet: schedule, entries, results, and how to watch.</p><div class="body-copy"><p>This is a utility item, but for track fans it is the useful kind. LetsRun has published both a schedule/entries/results page and a how-to-watch guide for the 2026 Herculis—Monaco Diamond League meet. The excerpts do not list the athletes or events, so there is no basis here to hype a particular race. Still, Monaco is one of the circuit’s marquee stops, and the combination of entries, live results, and viewing information is the package serious fans need when a fast meet starts moving quickly.</p></div><p class="why"><strong>Why it matters:</strong> Track’s problem is often discoverability, not drama. Centralized watch and results info makes it easier for casual fans to actually follow elite racing in real time.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/07/schedule-entries-results-for-2026-herculis-monaco-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/07/how-to-watch-2026-herculis-monaco-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>A Greenwich Village sushi counter makes affordability feel notable</h2><p class="dek">Eater NY says Sendo’s second location deserves a spot in the rotation, aiming for Tokyo-style neighborhood sushi rather than Manhattan splurge energy.</p><div class="body-copy"><p>Sendo opened a second location in Greenwich Village this spring with little fanfare, and Eater NY’s take is that it deserves attention precisely because it is trying not to be precious. Owner Guy Allen has built the counter around the model of Tokyo’s casual neighborhood sushi bars, where good fish can be an everyday meal instead of a special-occasion performance. The excerpt does not include pricing, menu specifics, or a full critical verdict, so “affordable” is relative—especially in Manhattan sushi. But the positioning is clear: quality without the forced drama of omakase-as-luxury-theater.</p></div><p class="why"><strong>Why it matters:</strong> In a city where sushi often gets sorted into bargain-bin rolls or expensive omakase, a credible middle lane is genuinely useful dining news.</p><p class="sources">Sources: <a href="https://ny.eater.com/dining-report/412603/sendo-nyc-sushi-restaurant-review-greenwich-village" target="_blank" rel="noreferrer">Eater NY</a> · <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNaGQ4VkVXbllnczJCeGtqWjI5QUZuV21lRjdVU3hjM1RkU3dCd0FJa1JDMnhEaF9hUmpkeVZ1WlYzSThtTVBTcTlPdlhFMGNBa241Q3p4UC0za29lUVQ3cE1lY2tGREhWdlZYeUh1bHVHV1g5NXg1MS1EdTVXcE9qbEF4SzRPY1pucTJSZHZMN3I0TjYzcGU1Uw?oc=5" target="_blank" rel="noreferrer">Eater New York</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 10, 2026
+</footer>
+</main>
+</body>
+</html>
