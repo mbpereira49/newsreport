@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-11</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Saturday, July 11, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Marco Rubio’s Venezuela portfolio looks less like diplomacy than remote control</h2><p class="dek">The Times reports that the secretary of state effectively controls the country’s finances, natural resources and government machinery from Washington.</p><div class="lead-lower"><div class="body-copy"><p>The striking claim in this piece is not that the United States has influence in Venezuela, but that Secretary of State Marco Rubio has turned that influence into something approaching operational authority. According to the excerpt, Rubio “effectively controls” Venezuela’s finances, the distribution of its natural resources and its government — a formulation that makes the story about power, not merely policy. It casts Venezuela as a vivid case study in how American leverage is being used in the Trump era: less behind-the-scenes pressure, more direct management from afar.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> If accurate, this is a major marker of how U.S. power is being exercised: not just sanctioning or recognizing governments, but shaping the basic functions of another state.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/11/us/politics/how-marco-rubio-runs-venezuela.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Ukraine’s drone pipeline points to a cheaper, AI-driven defense industry</h2><p class="dek">A secret factory supplying Ukraine with Helsing SE drones illustrates how military spending is shifting toward mass-produced, inexpensive autonomous systems.</p><div class="body-copy"><p>The German start-up Helsing SE is framed here as more than a supplier to Ukraine; it is a signpost. Its factory produces inexpensive, mass-made, AI-powered war machines, suggesting that the next defense boom may not be dominated only by exquisite, high-cost hardware. The excerpt’s emphasis is on a “profound shift in military spending”: war as a market for software-heavy, quickly produced machines that can be deployed at scale. Ukraine’s battlefield needs have become a forcing function for this new model, where speed, price and autonomy matter as much as legacy procurement muscle.</p></div><p class="why"><strong>Why it matters:</strong> The drone war is remaking defense economics. If low-cost AI systems become central to military planning, budgets, contractors and battlefield assumptions all change with them.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/11/business/dealbook/drone-factory-helsing.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Kansas Republicans take another run at the court behind abortion rights</h2><p class="dek">After voters affirmed abortion rights, Republicans are pushing an Aug. 4 referendum to replace appointed Supreme Court justices with elected ones.</p><div class="body-copy"><p>Kansas is becoming another test of whether abortion fights move from ballot questions to judicial design. The state’s appointed Supreme Court has supported abortion rights, and voters have resoundingly affirmed those rights. Republicans, frustrated by that combination, are now pushing an Aug. 4 referendum that would make Kansas Supreme Court justices elected instead. The move is procedurally framed, but the target is explicit in the excerpt: abortion. It is a reminder that when one route to policy change closes, another often opens — in this case, changing who gets to sit on the court.</p></div><p class="why"><strong>Why it matters:</strong> The fight shows how abortion politics can migrate into the rules of democracy itself: who chooses judges, and whether courts remain insulated from electoral pressure.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/11/us/elections/kansas-supreme-court-justices-election-abortion.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Trump’s explanation for a $2 billion presidential windfall doesn’t hold up, per the Times</h2><p class="dek">The president has attributed gains during his second term to the stock market and salary donations; the Times says those claims are inaccurate.</p><div class="body-copy"><p>President Trump has made $2 billion during his second term, according to the excerpt, and his public explanation leans on two familiar themes: a hot stock market and his decision to donate his salary. The Times says both defenses are flawed. It reports that Trump wrongly attributed the windfall to market gains and incorrectly claimed he was the only president to donate his salary. The story is less about one talking point than about how a president narrates private enrichment while in office — and how easily patriotic framing can blur the underlying financial facts.</p></div><p class="why"><strong>Why it matters:</strong> Presidential wealth gained in office is not just a personal finance story. It raises questions about conflicts, accountability and whether voters are getting a clear account of who benefits from power.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/11/us/politics/trump-money-crypto-financial-gains.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Shipping firms are trapped between risk and necessity in the Strait of Hormuz</h2><p class="dek">As the U.S. and Iran vie for control of the Strait, companies want vessels moving but face worsening danger.</p><div class="body-copy"><p>The Strait of Hormuz story is becoming a logistics nightmare with geopolitical teeth. Companies want to keep ships moving through the chokepoint, but the risks are mounting as the United States and Iran vie for control. One executive’s line — “Things are becoming uglier by the minute” — captures the mood: not a clean shutdown, but a deteriorating calculation where delay, danger and cost all compound. The excerpt does not specify the precise operational risks, but the dilemma is clear enough: global commerce depends on a route that is increasingly exposed to state confrontation.</p></div><p class="why"><strong>Why it matters:</strong> When shipping through a critical strait becomes a gamble, the consequences can ripple into energy markets, insurance costs, supply chains and inflation far beyond the region.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/10/business/iran-shipping-strait-of-hormuz.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>OpenAI’s “big day” bundles model launches with a bigger ChatGPT ambition</h2><p class="dek">Latent Space flags GPT 5.6 Sol/Terra/Luna and Codex becoming a ChatGPT superapp, though the supplied excerpt offers little beyond the headline.</p><div class="body-copy"><p>The available excerpt is thin — “A big day for OpenAI” — but the headline does the signaling: OpenAI has launched GPT 5.6 Sol/Terra/Luna, while Codex is being positioned as part of a ChatGPT “superapp.” That framing points to two moves at once: a new model family, and a consolidation of coding capabilities inside ChatGPT rather than as a narrowly separate tool. Because the source excerpt does not provide feature details, performance claims or rollout specifics, the safest read is directional: OpenAI is packaging more capability under the ChatGPT umbrella.</p></div><p class="why"><strong>Why it matters:</strong> The product direction matters as much as the model number. If ChatGPT becomes the container for coding, agents and everyday AI work, OpenAI’s platform power deepens.</p><p class="sources">Sources: <a href="https://latent.space/p/ainews-openai-launches-gpt-56-solterraluna" target="_blank" rel="noreferrer">Latent Space</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Bun’s Rust rewrite doubles as a case study in agentic engineering</h2><p class="dek">Simon Willison highlights Jarred Sumner’s account of moving Bun from Zig to Rust, with dynamic workflows, trial runs and adversarial review.</p><div class="body-copy"><p>This is a software rewrite story, but the more interesting thread is how it was done. Simon Willison describes Jarred Sumner’s long-awaited post on rewriting Bun from Zig to Rust as “a detailed description of an extremely sophisticated piece of agentic engineering,” involving dynamic workflows, trial runs and adversarial review. The excerpt is careful not to turn the move into a simple anti-Zig morality play: Sumner reportedly praises Zig for getting Bun to this point and says he does not blame Zig for the crashes that made the bugfix list feel bad. The real story is a developer using agents as part of a serious migration workflow.</p></div><p class="why"><strong>Why it matters:</strong> Large rewrites are usually treated as risky human endurance tests. This suggests AI-assisted engineering is maturing into structured process, not just autocomplete with confidence.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Roswell got its UFO files — and apparently not the catharsis</h2><p class="dek">Trump-era declassification was expected to fuel triumphant “told you so’s” at Roswell’s annual festival. Instead, the mystery mood survived.</p><div class="body-copy"><p>Roswell’s annual UFO festival had the setup for a perfect disclosure-era victory lap: declassified alien files from the Trump administration and a crowd primed for vindication. According to the excerpt, that is not how it landed. The newly released material turned out to be a “declassified bummer,” and “apparently, the coverup continues.” The line is playful, but the dynamic is revealing. For believers, disclosure that disappoints does not necessarily close the book; it can become one more chapter in the same story of withheld truth.</p></div><p class="why"><strong>Why it matters:</strong> This is the serendipity entry with a civic subtext: official transparency does not automatically create trust, especially when communities are built around suspicion of official accounts.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/11/us/trump-roswell-ufo.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 11, 2026
+</footer>
+</main>
+</body>
+</html>

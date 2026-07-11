@@ -1,0 +1,79 @@
+{
+  "calls": [
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.08568,
+      "input_tokens": 7776,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 1560,
+      "raw_usage": {
+        "input_tokens": 7776,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1560,
+        "output_tokens_details": {
+          "reasoning_tokens": 1034
+        },
+        "total_tokens": 9336
+      },
+      "reasoning_tokens": 1034,
+      "stage": "digest_selection",
+      "total_tokens": 9336
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.07088,
+      "input_tokens": 2506,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 1945,
+      "raw_usage": {
+        "input_tokens": 2506,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1945,
+        "output_tokens_details": {
+          "reasoning_tokens": 96
+        },
+        "total_tokens": 4451
+      },
+      "reasoning_tokens": 96,
+      "stage": "digest_entries",
+      "total_tokens": 4451
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.112405,
+      "input_tokens": 3293,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 3198,
+      "raw_usage": {
+        "input_tokens": 3293,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3198,
+        "output_tokens_details": {
+          "reasoning_tokens": 240
+        },
+        "total_tokens": 6491
+      },
+      "reasoning_tokens": 240,
+      "stage": "digest_layout",
+      "total_tokens": 6491
+    }
+  ],
+  "summary": {
+    "cached_input_tokens": 0,
+    "calls": 3,
+    "estimated_cost_usd": 0.268965,
+    "input_tokens": 13575,
+    "output_tokens": 6703,
+    "reasoning_tokens": 1370,
+    "total_tokens": 20278
+  }
+}
