@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-12</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Sunday, July 12, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>OpenAI’s “big day” arrives with GPT 5.6 and a bigger Codex story</h2><p class="dek">Latent Space frames the rollout as both a model launch and a product-platform move: GPT 5.6 in Sol/Terra/Luna variants, with Codex becoming part of a ChatGPT “superapp.”</p><div class="lead-lower"><div class="body-copy"><p>The available excerpt is thin — just “A big day for OpenAI” — but the headline does the work: OpenAI has launched GPT 5.6 Sol/Terra/Luna, while Codex is being positioned as a ChatGPT superapp. That framing suggests the news is not merely benchmark-chasing or model-family branding; it is also about consolidating developer workflows inside ChatGPT itself. With only one supplied source and no details on capabilities, pricing, access, or performance, the practical significance remains uncertain. Still, the direction is clear enough: OpenAI wants the model layer and the agent/tooling layer to feel less like separate products and more like one surface.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> If Codex is being folded into a broader ChatGPT app experience, the competitive frontier shifts from “who has the best model?” toward “who owns the daily workbench for coding, agents, and automation?”</p><p class="sources">Sources: <a href="https://latent.space/p/ainews-openai-launches-gpt-56-solterraluna" target="_blank" rel="noreferrer">Latent Space</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Japan becomes a quiet front in Russia’s war supply chain</h2><p class="dek">A New York Times report says a Russian military intelligence unit operating from a Tokyo high-rise is hunting for high-tech equipment needed for the war.</p><div class="body-copy"><p>The Times’ framing is stark: “How Putin Turned Japan Into a Den of Spies.” According to the excerpt, a military intelligence unit operating out of a Tokyo high-rise is finding the high-tech equipment Russia needs to wage war. The story points to a familiar wartime pattern with a new geographic emphasis: sanctions and battlefield needs push procurement into dense commercial ecosystems where electronics, components, and intermediaries are easier to blend into ordinary trade. The excerpt does not specify the equipment, companies, or Japanese government response, so the scale is unclear. But the premise is consequential: Russia’s war machine is not only sustained on the battlefield or through overt allies; it also appears to be probing advanced economies for the parts modern war requires.</p></div><p class="why"><strong>Why it matters:</strong> Export controls are only as strong as the enforcement networks around them. If Tokyo is a procurement hub, Japan is not a peripheral player in the Ukraine war’s industrial shadow economy.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/12/world/asia/russia-spies-japan-war-drones-electronics.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Big-box stores discover the housing shortage as a city-entry strategy</h2><p class="dek">Costco, Target, and other retailers are reportedly attaching themselves to affordable-housing pushes to get into dense urban markets.</p><div class="body-copy"><p>The new retail playbook is less “pave a giant lot” and more “ride the housing policy wave.” As states and municipalities push to build affordable housing, the Times reports that companies like Costco and Target are using those projects as a path into crowded cities. The excerpt leaves the mechanics vague — whether these are mixed-use developments, zoning swaps, public-private deals, or landlord partnerships — but the strategy is legible. Urban land is scarce, political permission is expensive, and housing is one of the few development categories with broad urgency. If a big-box retailer can present itself as part of the solution, not just a traffic generator, it gets a better shot at neighborhoods once considered too dense or too hostile to its format.</p></div><p class="why"><strong>Why it matters:</strong> This is a telling convergence: housing policy becomes retail expansion strategy, and affordable-housing projects become anchors for corporate urban growth.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/12/business/costco-target-affordable-housing.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>In New York’s socialist surge, age may be the dividing line</h2><p class="dek">The Democratic Socialists of America’s House-primary wins in New York City appear to have been driven chiefly by younger voters, according to the Times.</p><div class="body-copy"><p>The excerpt gives one clean read on the Democratic Socialists of America’s recent primary success in New York City: age “seemed to be the predominant factor.” That is a sharper diagnosis than the usual bundle of explanations — ideology, rent, Gaza, machine politics, turnout, candidate quality — though the supplied material does not show the underlying data. If younger voters are indeed the core propellant, the DSA’s wins may be less a temporary protest wave than a generational sorting event inside the Democratic coalition. The question for New York Democrats is whether this remains concentrated in low-turnout primaries and select districts, or whether it becomes a durable organizing advantage.</p></div><p class="why"><strong>Why it matters:</strong> New York City politics often previews national Democratic tensions. A youth-driven socialist bloc changes how incumbents think about primaries, policy, and the party’s left flank.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/12/nyregion/dsa-young-voters-primary-ny.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Eater updates the impossible NYC restaurant question</h2><p class="dek">The site’s “38 Best Restaurants in New York City” returns to the classic query: where should you actually eat in a city where every answer needs caveats?</p><div class="body-copy"><p>Eater’s list starts from the question that breaks even confident New Yorkers: “Where should I eat in New York City?” The excerpt is refreshingly honest about why the answer is always unstable. Food type, price, neighborhood, occasion — all matter, and in a city of more restaurants than any one person can reasonably master, even those filters only go so far. The duplicate syndication source adds no new detail, so the takeaway is less about any one restaurant than about the function of the list itself: a curated map for decision fatigue. Best-of lists can flatten a city’s dining life into a ranking, but they also perform a useful service when the alternative is scrolling forever.</p></div><p class="why"><strong>Why it matters:</strong> For locals and visitors alike, restaurant discovery in New York is now an information problem as much as a taste problem. A good list is infrastructure.</p><p class="sources">Sources: <a href="https://ny.eater.com/maps/best-new-york-restaurants-38-map" target="_blank" rel="noreferrer">Eater NY</a> · <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1paDlDQVMzckpVZjltZkhUM3RSdFh4MGtVOHFGNll6NlRKNUpqOV9UVDl4ZlBXZldpcUtMNm9JLWtZZ0dSMHlORTBRVlZTNC1mZ1dCemkzaWRCcmFMN2E5VVlZallSYjI5MVE?oc=5" target="_blank" rel="noreferrer">Eater New York</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Lit Hub’s week: Austen, Oates, snake-venom scams, and the politics of making art</h2><p class="dek">The site’s July 6–10 roundup and July 10 daily point toward a characteristically wide literary mix: craft, biography, history, climate, and oddball con artistry.</p><div class="body-copy"><p>Lit Hub’s weekly and daily roundups are a reminder that literary culture is not just reviews and publication news; it is a cabinet of obsessions. The weekly excerpt highlights Lisa Owens on the “taboo” ways women writers balance creativity and family, a piece on how Jane Austen subverted the romance form she mastered in Emma, and material on Joyce Carol Oates. The daily excerpt swerves into Zach St. George on Australia’s snake-venom con men, plus environmental liberation “of the fae variety” brought to America by activists Kevin Tubbs and Jacob Ferguson. That range can feel chaotic, but it is also the point: literature as a hub for craft anxiety, historical weirdness, biography, and climate imagination.</p></div><p class="why"><strong>Why it matters:</strong> The most interesting literary coverage often lives in the crossfade — where writing advice, cultural history, scams, and ecological politics start talking to one another.</p><p class="sources">Sources: <a href="https://lithub.com/lit-hub-weekly-july-6-10-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-daily-july-10-2026/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Film Comment checks in from Karlovy Vary’s festival back half</h2><p class="dek">The podcast’s latest Karlovy Vary dispatch brings critics Robert Daniels and Guy Lodge together for buzzed-about Bulgarian films and other late-festival highlights.</p><div class="body-copy"><p>Film Comment’s Karlovy Vary coverage is unfolding as a critic’s notebook in podcast form. The third dispatch, “Vacation,” features Robert Daniels and Guy Lodge discussing a pair of buzzed-about Bulgarian films alongside other highlights from the festival’s final days. An earlier episode, “Family Photos,” had Daniels weighing in on Dao, The Hanging of Stuart Cornfeld, 3 Weeks After, and more. The excerpts do not offer judgments on the films, so it is impossible to say which titles emerged as consensus standouts. But the coverage signals where cinephile attention is being directed: not just toward marquee premieres, but toward regional cinemas and festival discoveries that may shape the art-house conversation months later.</p></div><p class="why"><strong>Why it matters:</strong> Festival podcasts are increasingly part of the discovery pipeline. Before distribution deals or year-end lists, critical attention often starts in conversations like these.</p><p class="sources">Sources: <a href="https://filmcomment.com/the-film-comment-podcast-karlovy-vary-2026-3-vacation/" target="_blank" rel="noreferrer">Film Comment</a> · <a href="https://filmcomment.com/the-film-comment-podcast-karlovy-vary-2026-2-family-photos/" target="_blank" rel="noreferrer">Film Comment</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>The Hamptons have entered the nuggets-and-caviar phase</h2><p class="dek">The Times captures a very South Fork summer image: chicken tenders dressed up for luxury consumption.</p><div class="body-copy"><p>“Care for some nuggets and caviar?” is almost too perfect a Hamptons sentence. The Times’ piece, judging by the excerpt, uses fancy chicken tenders as a small comic portal into South Fork summer culture — where even the most democratic comfort foods can be lacquered with status. There is no need to overstate the sociology from one snack, and the supplied material does not name the restaurants, prices, or patrons. But the image works because it compresses a familiar ritual: taking something childish, fried, and casual, then making it expensive enough to signal that casualness itself has become a luxury good.</p></div><p class="why"><strong>Why it matters:</strong> Food trends are often class stories in disguise. In the Hamptons, even chicken tenders can become a status accessory.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/11/nyregion/hamptons-chicken-tenders.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 12, 2026
+</footer>
+</main>
+</body>
+</html>
