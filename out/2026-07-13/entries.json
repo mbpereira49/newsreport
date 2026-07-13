@@ -1,0 +1,83 @@
+[
+  {
+    "body": "Willison went looking for a crisp definition of \u201cDirectly Responsible Individual\u201d and found one in GitLab\u2019s handbook: the person \u201cultimately accountable for the success or failure of a specific project, initiative, or activity.\u201d The term apparently originated at Apple, but his point is current: LLM-powered agents may do work inside organizations, yet they should not be treated as the DRI. His line is simple and useful: machines can act, but they cannot take accountability for their actions in the way humans can.",
+    "cluster_id": "308b567178f89d75",
+    "dek": "Simon Willison applies an old Apple management idea to the new agent era: accountability still needs a human address.",
+    "headline": "The DRI Cannot Be a Bot",
+    "source_ids": [
+      "308b567178f89d75-s1"
+    ],
+    "why_it_matters": "As companies wire agents into workflows, this is the governance question hiding under the productivity pitch: who owns the outcome when the software did the thing?"
+  },
+  {
+    "body": "The New York Times frames the Brooklyn decision as a stark trade-off: housing is winning over flood protection. A towering apartment development has been approved on the waterfront, while some residents would have preferred the site become parkland. The available excerpts do not spell out the project\u2019s exact location, scale, or mitigation measures, so the tension here is clearer than the technical case: more homes on valuable waterfront land versus public space that could absorb future flooding.",
+    "cluster_id": "6d2f3c3db0decd12",
+    "dek": "A tall waterfront development has been approved despite residents who wanted parkland for flood protection.",
+    "headline": "Brooklyn Chooses Apartments Over a Waterfront Buffer",
+    "source_ids": [
+      "6d2f3c3db0decd12-s1",
+      "6d2f3c3db0decd12-s2"
+    ],
+    "why_it_matters": "Cities short on housing are also cities facing climate risk. The hardest fights will be over parcels that plausibly serve both needs, but not equally at the same time."
+  },
+  {
+    "body": "Federal Reserve governor Christopher J. Waller said he needs to see several months of lower inflation data before feeling confident about the outlook. The warning, as summarized by the Times, is that higher rates remain on the table if inflation stays elevated. It is a familiar central-bank posture, but still a consequential one: one good print is not enough; the Fed wants a pattern.",
+    "cluster_id": "311bead3f3d6e770",
+    "dek": "Christopher Waller warned that rates could move higher if inflation stays elevated.",
+    "headline": "A Fed Governor Wants More Proof Inflation Is Cooling",
+    "source_ids": [
+      "311bead3f3d6e770-s1"
+    ],
+    "why_it_matters": "Rate-cut optimism can outrun the data. Waller\u2019s message is that borrowing costs remain hostage to repeated evidence, not vibes."
+  },
+  {
+    "body": "The old oil-market story centered on OPEC and how much crude it produced. This piece argues the balance of influence is shifting: China, as the largest importer, is demonstrating remarkable power over prices. The immediate hook is whether oil prices will rise as the U.S.-Iran truce frays, but the deeper point is demand-side leverage. Producers still matter, of course; the excerpt simply suggests that China\u2019s buying behavior may be the decisive variable to watch.",
+    "cluster_id": "d32dadb3331df7db",
+    "dek": "As the U.S.-Iran truce frays, the Times points to China\u2019s power as the world\u2019s largest oil importer.",
+    "headline": "Oil\u2019s Next Move May Depend Less on OPEC Than on China",
+    "source_ids": [
+      "d32dadb3331df7db-s1"
+    ],
+    "why_it_matters": "Energy shocks are geopolitical, but price formation is also about who can buy, pause, stockpile, or redirect demand at scale. China can move the market without pumping a barrel."
+  },
+  {
+    "body": "The European Commission is considering changing social media rules across the EU after the release of a new report, with a possible ban for children on the table. The excerpt does not specify the age threshold, enforcement mechanism, or whether the proposal has broad political support, so this is still a \u201cstep toward,\u201d not a settled policy. Even so, it signals that Europe may be preparing to treat youth access to social platforms as a bloc-wide regulatory problem rather than a family-by-family choice.",
+    "cluster_id": "0d79da47febf943f",
+    "dek": "After a new report, the European Commission is considering rule changes across the 27-nation bloc.",
+    "headline": "Europe Edges Toward a Children\u2019s Social Media Ban",
+    "source_ids": [
+      "0d79da47febf943f-s1"
+    ],
+    "why_it_matters": "If Europe moves, platforms may face a new default: design for age restriction and verification first, then argue over the details later."
+  },
+  {
+    "body": "A judge denounced an I.R.S. suit as an improper exercise in self-dealing, according to the Times. The decision did not explicitly kill the deal President Trump had worked out with his own government, which the excerpt characterizes as amounting to amnesty from investigations into tax returns already filed by him, his family and their businesses. That leaves the immediate legal effect somewhat uncertain, but the judicial language is plainly severe.",
+    "cluster_id": "01a78597dec9d6fa",
+    "dek": "The decision did not explicitly kill the arrangement, which the Times describes as amounting to amnesty from tax-return investigations.",
+    "headline": "Judge Rebukes Trump I.R.S. Deal as Self-Dealing",
+    "source_ids": [
+      "01a78597dec9d6fa-s1"
+    ],
+    "why_it_matters": "The core issue is not just tax enforcement; it is whether a president can negotiate with the government he controls over scrutiny of his own finances."
+  },
+  {
+    "body": "California and 11 other states have challenged the proposed Paramount-Warner Bros. merger in court. Their lawsuit argues that combining the companies would harm movie theaters and damage America\u2019s entertainment industry. The excerpt does not include the companies\u2019 response or the legal theory in detail, so the case should be read as an opening challenge rather than a verdict on the deal. Still, it places state antitrust enforcers directly in the path of media consolidation.",
+    "cluster_id": "a67bc4ee1cf94a26",
+    "dek": "California and 11 other states argue the deal would hurt theaters and damage the entertainment industry.",
+    "headline": "States Sue to Block Paramount-Warner Bros. Merger",
+    "source_ids": [
+      "a67bc4ee1cf94a26-s1"
+    ],
+    "why_it_matters": "Theater economics are already fragile. If states can frame a studio merger as a threat to the broader movie ecosystem, entertainment deals may face a tougher antitrust lane."
+  },
+  {
+    "body": "At the International Stunt School in Seattle, TV and film veterans teach the practical grammar of action: how to fall, fight and work with fire. The premise is a useful corrective to the way stunts appear onscreen. What looks like recklessness is, at least in this telling, trained technique\u2014movie magic built from repetition, safety protocols and bodies that know how to make danger legible without simply courting it.",
+    "cluster_id": "70a426030b9e6b76",
+    "dek": "At Seattle\u2019s International Stunt School, veterans teach newcomers falls, fights and fire.",
+    "headline": "Where Movie Stunts Become a Craft, Not a Dare",
+    "source_ids": [
+      "70a426030b9e6b76-s1"
+    ],
+    "why_it_matters": "A good stunt is designed to look out of control. The craft lies in making that illusion repeatable enough for a camera crew to survive it."
+  }
+]
