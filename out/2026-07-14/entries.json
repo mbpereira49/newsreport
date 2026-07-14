@@ -1,0 +1,82 @@
+[
+  {
+    "body": "Kevin M. Warsh is reiterating the Federal Reserve\u2019s pledge to get inflation under control while declining to say whether he supports raising rates to do it. That distinction matters: the signal is hawkish in goal, but deliberately noncommittal on the tool. Markets, households and businesses are left parsing tone rather than policy.",
+    "cluster_id": "4200a768d9ee56c8",
+    "dek": "The new Fed chair says the central bank remains committed to bringing inflation down, but he is still not saying whether that means higher interest rates.",
+    "headline": "Warsh keeps the Fed\u2019s anti-inflation line \u2014 without showing his rate hand",
+    "source_ids": [
+      "4200a768d9ee56c8-s1"
+    ],
+    "why_it_matters": "The Fed\u2019s credibility fight is now partly a communications fight. If inflation remains sticky, Warsh\u2019s refusal to pre-commit preserves flexibility \u2014 but it also keeps uncertainty high around borrowing costs."
+  },
+  {
+    "body": "The latest inflation snapshot is unusually welcome: the Consumer Price Index slowed to a 3.5 percent annual increase in June, and prices fell from the previous month by the most since 2020. The source frames the cooling as occurring during a pause in the war with Iran, though the excerpt does not establish how much of the price move was caused by that pause versus other forces.",
+    "cluster_id": "d0fe6c1e2cc31bb2",
+    "dek": "June\u2019s Consumer Price Index eased to a 3.5% annual increase, with prices posting their biggest month-to-month drop since 2020.",
+    "headline": "Inflation cools during pause in war with Iran",
+    "source_ids": [
+      "d0fe6c1e2cc31bb2-s1"
+    ],
+    "why_it_matters": "A softer CPI number gives the Fed and consumers breathing room. But one month of relief, especially amid geopolitical volatility, is not the same as a durable inflation victory."
+  },
+  {
+    "body": "New York is set to become the first state with a statewide moratorium on large data centers. Gov. Kathy Hochul will sign an executive order pausing construction of the largest projects for one year while the state assesses their effects on the environment and energy use. It is a blunt intervention in a sector whose growth is increasingly tied to AI demand and power constraints.",
+    "cluster_id": "29bbb23077a3431a",
+    "dek": "Gov. Kathy Hochul plans a one-year statewide moratorium while officials study the industry\u2019s energy and environmental costs.",
+    "headline": "New York hits pause on the biggest data centers",
+    "source_ids": [
+      "29bbb23077a3431a-s1"
+    ],
+    "why_it_matters": "Data centers are moving from invisible infrastructure to political flashpoint. New York\u2019s pause could become a template for states trying to balance tech investment, grid capacity and climate commitments."
+  },
+  {
+    "body": "The Interconnects piece casts the current moment as \u201cthe most serious test to date\u201d for open-source AI\u2019s viability. The claim is stark: open models may have only \u201c6 months to live,\u201d at least in their current competitive posture. The excerpt does not spell out the pressures, but the framing suggests a widening contest over whether open model ecosystems can keep pace with better-funded, more tightly controlled alternatives.",
+    "cluster_id": "8d23bdae24a39da3",
+    "dek": "Interconnects argues that the next six months may determine whether open models can remain viable against closed AI systems.",
+    "headline": "Open-source AI faces its stress test",
+    "source_ids": [
+      "8d23bdae24a39da3-s1"
+    ],
+    "why_it_matters": "Open models are not just a developer preference; they shape research access, startup strategy and who gets to build on frontier AI. If the open ecosystem falls behind, the AI stack could consolidate faster around closed platforms."
+  },
+  {
+    "body": "Latent Space reports that Codex usage has risen more than tenfold in six months to 7 million users, including 1 million added in roughly the past day. The post frames the moment as a chance to \u201cfact check\u201d numbers against the relative silence around Claude Code reporting, and asks whether Codex has overtaken Claude Code. That question remains framed as a question, not a settled conclusion.",
+    "cluster_id": "65aebd108c30ad81",
+    "dek": "Latent Space says Codex usage is up more than 10x in six months to 7 million users, while noting uncertainty around comparisons with Claude Code.",
+    "headline": "Codex\u2019s reported surge sharpens the AI coding-agent race",
+    "source_ids": [
+      "65aebd108c30ad81-s1"
+    ],
+    "why_it_matters": "Coding agents are one of the clearest places where AI usage can translate into daily workflow lock-in. If Codex\u2019s growth numbers hold up, the developer tooling market may be shifting faster than public benchmarks suggest."
+  },
+  {
+    "body": "Justice Elena Kagan\u2019s prepared remarks to a House panel describe a worsening security climate around the Supreme Court. According to the excerpt, she said Supreme Court Police estimate a 38 percent increase in threats this year, and that \u201cthreats have come very close.\u201d The phrasing is careful but alarming: not abstract hostility, but danger approaching the institution\u2019s physical perimeter.",
+    "cluster_id": "3c3ac90ec6b5992b",
+    "dek": "Justice Elena Kagan told a House panel that Supreme Court Police estimate threats are up 38% this year.",
+    "headline": "Kagan warns Supreme Court threats are getting dangerously close",
+    "source_ids": [
+      "3c3ac90ec6b5992b-s1"
+    ],
+    "why_it_matters": "The judiciary\u2019s legitimacy debate often plays out in opinions and politics. Kagan\u2019s testimony points to a more immediate problem: whether public fury is crossing into intimidation and real-world risk."
+  },
+  {
+    "body": "The attempted challenge to Paramount\u2019s planned takeover of Warner Bros. Discovery is being framed less as a one-off media fight than as evidence of a broader shift: states are becoming more assertive antitrust regulators. The excerpt does not identify which states or legal theories are involved, but the core tension is clear \u2014 media consolidation is no longer only a federal competition-policy story.",
+    "cluster_id": "5d571d8121a7629c",
+    "dek": "An effort to block Paramount\u2019s planned takeover of Warner Bros. Discovery shows state officials taking a more active antitrust role.",
+    "headline": "States muscle into the Paramount\u2013Warner Bros. Discovery fight",
+    "source_ids": [
+      "5d571d8121a7629c-s1"
+    ],
+    "why_it_matters": "State antitrust action can complicate even nationally scaled deals. For media companies already navigating streaming economics and consolidation pressure, another layer of enforcement could change the merger math."
+  },
+  {
+    "body": "A lighter but revealing dispatch from the International Stunt School in Seattle looks at how performers learn to turn danger into movie magic. Veterans of film and television teach newcomers the mechanics of falls, fights and fire \u2014 the kinds of screen moments designed to look chaotic precisely because they are rehearsed, engineered and controlled.",
+    "cluster_id": "70a426030b9e6b76",
+    "dek": "At Seattle\u2019s International Stunt School, film and TV veterans teach the controlled craft behind falls, fights and fire.",
+    "headline": "The very practiced art of looking reckless",
+    "source_ids": [
+      "70a426030b9e6b76-s1"
+    ],
+    "why_it_matters": "Stunt work is one of cinema\u2019s great invisible crafts: audiences are meant to feel risk, not notice technique. The school setting makes the labor behind spectacle easier to see."
+  }
+]
