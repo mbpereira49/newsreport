@@ -1,0 +1,83 @@
+[
+  {
+    "body": "Simon Willison flags a new hole in Claude\u2019s web_fetch design, credited to Ayush Paul, that undercuts an otherwise thoughtful defense against data exfiltration. The threat model is the \u201clethal trifecta\u201d: an AI has private context from prior interactions, can read hostile online instructions, and can leak data through URLs it accesses. Anthropic\u2019s mitigation, as described here, is to let web_fetch visit only exact URLs supplied by the user or returned by web_search. The reported attack appears to find a way around that constraint. The excerpt cuts off before the mechanics, so the severity is hard to independently size from the supplied material\u2014but the shape of the bug is familiar and important.",
+    "cluster_id": "67c17c6628f98beb",
+    "dek": "A clever exfiltration attack probes the boundary between safe browsing and agentic risk.",
+    "headline": "Claude\u2019s web tool has a leakier edge than advertised",
+    "source_ids": [
+      "67c17c6628f98beb-s1"
+    ],
+    "why_it_matters": "As assistants gain browsing tools and memory, security depends less on model vibes and more on boring, enforceable tool boundaries. This is exactly where agent infrastructure will keep breaking."
+  },
+  {
+    "body": "House Republicans released a budget plan designed to unlock $95 billion for the Iran war and the SAVE Act, according to The New York Times. The route is already described as rocky: Republican divisions could complicate passage, and the timing would put war-funding votes in front of lawmakers months before the midterm elections. The Times also frames the war as deeply unpopular in polling, which makes the proposal not just a fiscal maneuver but a political stress test for the party.",
+    "cluster_id": "3ec2b71b763c0731",
+    "dek": "The budget plan would tee up votes before the midterms, but GOP unity is not a given.",
+    "headline": "House Republicans try to open a $95 billion Iran-war lane",
+    "source_ids": [
+      "3ec2b71b763c0731-s1"
+    ],
+    "why_it_matters": "War appropriations often clarify where slogans end and votes begin. If this advances, Republicans will have to defend both the spending and the conflict itself in an election-year environment."
+  },
+  {
+    "body": "Oil prices ticked higher after the United States reinstated its blockade on Iranian ports in the Strait of Hormuz, The New York Times reports. The key phrase is \u201ctick higher\u201d: the excerpt points to market movement, but not yet a panic. Still, shipping in the waterway has slowed to a crawl amid renewed warfare, putting energy traders back in the familiar position of pricing geopolitical risk through a chokepoint that can affect global supply expectations fast.",
+    "cluster_id": "1c83234004c63d03",
+    "dek": "A reinstated blockade on Iranian ports has slowed shipping in one of the world\u2019s most sensitive waterways.",
+    "headline": "Oil edges up as the U.S. renews pressure at Hormuz",
+    "source_ids": [
+      "1c83234004c63d03-s1"
+    ],
+    "why_it_matters": "Hormuz is where regional conflict becomes everyone\u2019s fuel bill. Even a modest oil move can widen if shipping disruptions persist or insurers, refiners and governments start behaving defensively."
+  },
+  {
+    "body": "The New York Times Magazine frames the American EV story starkly: the largest U.S. automakers have pulled back from electric vehicles while global sales are booming. The piece\u2019s warning is existential rather than cyclical\u2014this retreat may make them obsolete. From the excerpt alone, we don\u2019t get the evidence trail or the counterargument from automakers, so the claim should be read as a forceful diagnosis, not a settled verdict. But the strategic tension is clear: domestic hesitation in a global growth market can harden into industrial disadvantage.",
+    "cluster_id": "0e2d642347069195",
+    "dek": "U.S. automakers are backing away from electric vehicles just as global demand keeps growing.",
+    "headline": "Detroit\u2019s EV retreat looks less like caution than surrender",
+    "source_ids": [
+      "0e2d642347069195-s1"
+    ],
+    "why_it_matters": "If the future of car demand is increasingly electric, a retreat by U.S. incumbents is not just a product-planning miss. It risks ceding manufacturing scale, software learning and brand relevance to competitors abroad."
+  },
+  {
+    "body": "Interconnects calls the current moment \u201cthe most serious test to date\u201d for open-source AI\u2019s viability. The headline\u2014\u201c6 months to live for open models\u201d\u2014is intentionally dramatic, and from the supplied excerpt we should treat it as analysis, not a reported deadline. Still, the framing captures a real anxiety in the AI ecosystem: open models have to keep proving they can compete as frontier development becomes more expensive, more infrastructure-dependent and more strategically guarded.",
+    "cluster_id": "8d23bdae24a39da3",
+    "dek": "An Interconnects essay argues the next six months will test whether open-source AI can remain viable.",
+    "headline": "Open AI models get their do-or-die forecast",
+    "source_ids": [
+      "8d23bdae24a39da3-s1"
+    ],
+    "why_it_matters": "Open models are the counterweight to a closed AI stack controlled by a few labs and cloud companies. If they fall too far behind, experimentation, auditing and independent deployment all get narrower."
+  },
+  {
+    "body": "China\u2019s economy grew 4.3 percent in the second quarter from a year earlier, its slowest pace in years, according to The New York Times. The important nuance is the split inside the number: export-oriented manufacturing remains a source of strength, while the broader economy is described as slumping. That suggests China\u2019s familiar playbook\u2014leaning on factories and foreign demand\u2014may be masking softer conditions elsewhere rather than solving them.",
+    "cluster_id": "ec9f9d4e462de6ea",
+    "dek": "Second-quarter GDP rose 4.3 percent from a year earlier, with weakness broadening beyond manufacturing bright spots.",
+    "headline": "China\u2019s growth slows outside the export machine",
+    "source_ids": [
+      "ec9f9d4e462de6ea-s1"
+    ],
+    "why_it_matters": "A slower China changes the global baseline for commodities, consumer demand and corporate earnings. If exports are carrying more of the load, Beijing\u2019s growth problem also becomes more exposed to trade friction abroad."
+  },
+  {
+    "body": "The Times review of Ambassadors Clubhouse in New York is short in the supplied material but vivid: a \u201chigh-flying\u201d outpost where the Punjabi cooking is \u201cbeguiling\u201d and the city feels miles away. That is restaurant-critic shorthand for something more than competence. The appeal seems to be atmospheric as much as culinary\u2014a room that can briefly override its own Manhattan context. The second source is essentially a duplicate listing of the same review, so there is no independent second take here.",
+    "cluster_id": "139ef01a9ba1d57c",
+    "dek": "The New York outpost is reviewed as high-flying, beguiling and transportive.",
+    "headline": "Ambassadors Clubhouse makes a case for escape-by-Punjabi-cooking",
+    "source_ids": [
+      "139ef01a9ba1d57c-s1",
+      "139ef01a9ba1d57c-s2"
+    ],
+    "why_it_matters": "In a city full of expensive dining rooms, transport is the trick everyone claims and few deliver. This review suggests Ambassadors Clubhouse may be one of the places actually pulling it off."
+  },
+  {
+    "body": "Archaeologists have unearthed ruins of a 2,400-year-old complex that suggest ancient Greeks treated Odysseus as more than a character in a poem, The New York Times reports. The proposed interpretation is striking: Homer\u2019s protagonist may have been a figure of genuine devotion. The excerpt does not give the site details or the evidentiary debate, so \u201csuggest\u201d is doing real work here. But even cautiously framed, the find blurs the modern line between literature, myth and religion.",
+    "cluster_id": "1196b35781152438",
+    "dek": "A 2,400-year-old sanctuary points to Homer\u2019s hero as an object of devotion in antiquity.",
+    "headline": "Odysseus may have had worshippers, not just readers",
+    "source_ids": [
+      "1196b35781152438-s1"
+    ],
+    "why_it_matters": "Ancient stories were not merely texts to be analyzed; they could structure places, rituals and identities. A sanctuary for Odysseus would make the Odyssey\u2019s afterlife materially visible."
+  }
+]
