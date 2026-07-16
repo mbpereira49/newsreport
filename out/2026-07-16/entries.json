@@ -1,0 +1,86 @@
+[
+  {
+    "body": "Academics, city leaders and members of Congress are among the thousands pressing the Trump administration to rethink a plan that would give the White House more control over federal grants. The available reporting frames the fight as a pushback campaign against political review, not yet as a settled policy change. Still, the premise is stark: money long routed through expert, agency or formula-driven processes could face a more explicitly political screen.",
+    "cluster_id": "b2f67f87a3a235bf",
+    "dek": "The White House plan to subject federal grants to more political review is drawing a broad, organized backlash.",
+    "headline": "Grantmaking meets the loyalty test",
+    "source_ids": [
+      "b2f67f87a3a235bf-s1",
+      "b2f67f87a3a235bf-s2"
+    ],
+    "why_it_matters": "Federal grants are how Washington quietly governs: research labs, city projects and public programs all depend on them. If political review becomes a bigger gatekeeper, the consequences could reach far beyond any single grant cycle."
+  },
+  {
+    "body": "The Trump administration is planning an $8 billion overhaul of Penn Station, but the intriguing part of the latest study is almost stubbornly practical. Rather than selling a grand architectural rescue, the U.S. study highlighted in the Times recommends extending platforms and adding staircases or escalators\u2014capacity fixes aimed at moving more trains during the periods when the station strains most. It is a reminder that the real Penn Station problem is not only civic embarrassment; it is throughput.",
+    "cluster_id": "9e67d79ff156c28f",
+    "dek": "A federal study says longer platforms and more stairs or escalators could help the station run more trains at peak hours.",
+    "headline": "Penn Station\u2019s next fix may be less glamorous\u2014and more useful",
+    "source_ids": [
+      "9e67d79ff156c28f-s1",
+      "9e67d79ff156c28f-s2"
+    ],
+    "why_it_matters": "For New York commuters, beauty would be welcome. But more trains at peak times would be transformative. The debate to watch is whether the overhaul prioritizes passenger capacity or gets swallowed by monument-building."
+  },
+  {
+    "body": "Wildfire smoke is again behaving less like a local disaster than a roaming regional condition. Air quality in several cities reached hazardous levels Thursday morning, with smoke expected to travel across North America. The excerpt does not specify which cities were hardest hit, but the pattern is familiar: fire season now arrives in urban life as darkened skies, health alerts and a new reason to check the forecast before stepping outside.",
+    "cluster_id": "7f65411ba2c521e0",
+    "dek": "Hazardous air quality hit several cities Thursday morning as smoke was expected to move across North America.",
+    "headline": "Wildfire smoke turns into a continental weather system",
+    "source_ids": [
+      "7f65411ba2c521e0-s1"
+    ],
+    "why_it_matters": "Smoke collapses distance. Fires burning far away can still shape school days, outdoor work, transit, exercise and hospital demand in cities nowhere near the flames."
+  },
+  {
+    "body": "Latent Space visits Lila Sciences to see what it means for a lab to \u201cfeel like a data center\u201d: a room full of robots designed to generate scientific data for AI systems. The thesis is a sharp pivot from the web-scraping era. If internet text has been the obvious training substrate, Lila is betting that scientific experimentation itself is the less-tapped frontier. That changes the metaphor for AI infrastructure: not just GPUs and crawlers, but benches, instruments and automated experiments.",
+    "cluster_id": "e3045bbe9f1b58f4",
+    "dek": "Lila Sciences is betting that science\u2014not the internet\u2014is the next great source of training data.",
+    "headline": "The AI lab is becoming a robot-filled data factory",
+    "source_ids": [
+      "e3045bbe9f1b58f4-s1"
+    ],
+    "why_it_matters": "If AI progress increasingly depends on new, proprietary scientific data, the advantage may shift to companies that can automate discovery itself\u2014not merely model what humans have already published."
+  },
+  {
+    "body": "The London Diamond League is on the calendar, and LetsRun is treating it as both a logistics event and a potential history watch. One item gathers the schedule, entries and results for the 2026 Novuna London Athletics Meet; another explains how to watch and flags Josh Kerr\u2019s mile world record attempt. The excerpts do not give event-by-event matchups or broadcast specifics, but the signal is clear enough: this is not just another circuit stop.",
+    "cluster_id": "d5424682a9d979a9",
+    "dek": "LetsRun has the schedule, entries, results and viewing details for the 2026 Novuna London Athletics Meet, including Josh Kerr\u2019s mile world record attempt.",
+    "headline": "London Diamond League: the meet to watch\u2014and maybe a mile record attempt",
+    "source_ids": [
+      "d5424682a9d979a9-s1",
+      "d5424682a9d979a9-s2"
+    ],
+    "why_it_matters": "Diamond League meets are where elite track moves from seasonal form-check to record chase. Kerr\u2019s mile attempt gives casual fans a simple hook and serious fans a reason to clear the schedule."
+  },
+  {
+    "body": "The Times review positions Demo in the West Village as part of a very New York genre: sophisticated but youthful, polished without sounding museum-like. The excerpt does not tell us what to order or how the room feels in detail, but the judgment is confident\u2014Demo \u201cearns its place\u201d in a category the city is apparently very good at. That is praise with a specific edge: not novelty for novelty\u2019s sake, but a restaurant fluent in the current downtown language.",
+    "cluster_id": "833cdcc45654c127",
+    "dek": "The West Village spot earns its place among the sophisticated, youthful restaurants the city keeps producing.",
+    "headline": "Demo joins New York\u2019s young-and-polished restaurant lane",
+    "source_ids": [
+      "833cdcc45654c127-s1",
+      "833cdcc45654c127-s2"
+    ],
+    "why_it_matters": "New York dining trends often calcify fast. A restaurant that can feel young, sophisticated and genuinely earned is worth noting\u2014especially in the West Village, where charm can become a surcharge."
+  },
+  {
+    "body": "The Times\u2019 review of Christopher Nolan\u2019s \u201cThe Odyssey\u201d lands on the quality that has defined much of his career: the ability to close the divide between the art film and the blockbuster. The headline promises \u201cpassion in every frame,\u201d suggesting a film being judged not merely as spectacle but as an authored object. With only the excerpt available, the review\u2019s argument is broad rather than granular, but the frame is unmistakable: Nolan is still being measured as one of the few filmmakers who can make mass entertainment feel like a personal wager.",
+    "cluster_id": "4bd1379ffb8efe8d",
+    "dek": "The Times review praises Christopher Nolan as a rare director able to bridge art-film ambition and blockbuster scale.",
+    "headline": "Nolan\u2019s \u2018The Odyssey\u2019 gets the art-blockbuster treatment",
+    "source_ids": [
+      "4bd1379ffb8efe8d-s1"
+    ],
+    "why_it_matters": "Big-budget cinema often asks audiences to choose between scale and sensibility. Nolan\u2019s work matters because it keeps testing whether a blockbuster can still feel director-driven."
+  },
+  {
+    "body": "A sweet gum tree in Madison Square has an unusually good origin story: its seed flew on a NASA mission before being planted on Earth. It will now be celebrated as a \u201cmoon tree\u201d in Manhattan. The item is small, almost ceremonial, but that is part of its appeal\u2014space exploration translated into shade, bark and public memory in the middle of the city.",
+    "cluster_id": "e4d0875e6474e563",
+    "dek": "Seeds flown on a NASA mission have become a sweet gum tree now being celebrated in Manhattan.",
+    "headline": "A moon tree takes root in Madison Square",
+    "source_ids": [
+      "e4d0875e6474e563-s1"
+    ],
+    "why_it_matters": "Not every space story needs to be about rockets or budgets. A moon tree is civic science at human scale: a living marker that connects a neighborhood park to a much larger project of exploration."
+  }
+]

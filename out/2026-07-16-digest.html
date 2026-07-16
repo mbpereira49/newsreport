@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-16</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Thursday, July 16, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Grantmaking meets the loyalty test</h2><p class="dek">The White House plan to subject federal grants to more political review is drawing a broad, organized backlash.</p><div class="lead-lower"><div class="body-copy"><p>Academics, city leaders and members of Congress are among the thousands pressing the Trump administration to rethink a plan that would give the White House more control over federal grants. The available reporting frames the fight as a pushback campaign against political review, not yet as a settled policy change. Still, the premise is stark: money long routed through expert, agency or formula-driven processes could face a more explicitly political screen.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Federal grants are how Washington quietly governs: research labs, city projects and public programs all depend on them. If political review becomes a bigger gatekeeper, the consequences could reach far beyond any single grant cycle.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/16/us/politics/white-house-federal-grants-political-review.html" target="_blank" rel="noreferrer">NYT U.S.</a> · <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPb2FxQ1JOU01jclpvSEhHdEhNdklhUjJOR2VBZVNDZ0JialgwaEhzUG0tZEg5a3RWTE9BcTVTX2VGY1N2clNGLVdna3hTWFhYUHZ5b3ZfcTVHY0ZLR1RmWkFodDRzS21ZUW81VkVlY2t1dTBhRjBNaWJmRy1VT3FITTJvYXk1SUNOanNQLTY4QWIzVy1oYzl6dU16Yw?oc=5" target="_blank" rel="noreferrer">The New York Times</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Penn Station’s next fix may be less glamorous—and more useful</h2><p class="dek">A federal study says longer platforms and more stairs or escalators could help the station run more trains at peak hours.</p><div class="body-copy"><p>The Trump administration is planning an $8 billion overhaul of Penn Station, but the intriguing part of the latest study is almost stubbornly practical. Rather than selling a grand architectural rescue, the U.S. study highlighted in the Times recommends extending platforms and adding staircases or escalators—capacity fixes aimed at moving more trains during the periods when the station strains most. It is a reminder that the real Penn Station problem is not only civic embarrassment; it is throughput.</p></div><p class="why"><strong>Why it matters:</strong> For New York commuters, beauty would be welcome. But more trains at peak times would be transformative. The debate to watch is whether the overhaul prioritizes passenger capacity or gets swallowed by monument-building.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/15/nyregion/penn-station-transportation-study.html" target="_blank" rel="noreferrer">NYT New York Region</a> · <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxPYnJVdlh5TVRLSG1pdWZGZ3JxOThvQk1QajAtWWp2N0JlMDIyQlBmald4aHlzN2Y1bll0U3NwZDhZdGxYOFFocTdFbjhVZTBERDVkR1JMU29mWVNVN3djZmpwdzVqQXRtUkd5Y28xMlY3dnpjeFl4Rkc2RjFSZ1NSWkl1V1hWWnVzU1E?oc=5" target="_blank" rel="noreferrer">The New York Times</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Wildfire smoke turns into a continental weather system</h2><p class="dek">Hazardous air quality hit several cities Thursday morning as smoke was expected to move across North America.</p><div class="body-copy"><p>Wildfire smoke is again behaving less like a local disaster than a roaming regional condition. Air quality in several cities reached hazardous levels Thursday morning, with smoke expected to travel across North America. The excerpt does not specify which cities were hardest hit, but the pattern is familiar: fire season now arrives in urban life as darkened skies, health alerts and a new reason to check the forecast before stepping outside.</p></div><p class="why"><strong>Why it matters:</strong> Smoke collapses distance. Fires burning far away can still shape school days, outdoor work, transit, exercise and hospital demand in cities nowhere near the flames.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/16/weather/canada-wildfire-smoke-us.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>The AI lab is becoming a robot-filled data factory</h2><p class="dek">Lila Sciences is betting that science—not the internet—is the next great source of training data.</p><div class="body-copy"><p>Latent Space visits Lila Sciences to see what it means for a lab to “feel like a data center”: a room full of robots designed to generate scientific data for AI systems. The thesis is a sharp pivot from the web-scraping era. If internet text has been the obvious training substrate, Lila is betting that scientific experimentation itself is the less-tapped frontier. That changes the metaphor for AI infrastructure: not just GPUs and crawlers, but benches, instruments and automated experiments.</p></div><p class="why"><strong>Why it matters:</strong> If AI progress increasingly depends on new, proprietary scientific data, the advantage may shift to companies that can automate discovery itself—not merely model what humans have already published.</p><p class="sources">Sources: <a href="https://latent.space/p/the-lab-of-the-future-should-feel" target="_blank" rel="noreferrer">Latent Space</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>London Diamond League: the meet to watch—and maybe a mile record attempt</h2><p class="dek">LetsRun has the schedule, entries, results and viewing details for the 2026 Novuna London Athletics Meet, including Josh Kerr’s mile world record attempt.</p><div class="body-copy"><p>The London Diamond League is on the calendar, and LetsRun is treating it as both a logistics event and a potential history watch. One item gathers the schedule, entries and results for the 2026 Novuna London Athletics Meet; another explains how to watch and flags Josh Kerr’s mile world record attempt. The excerpts do not give event-by-event matchups or broadcast specifics, but the signal is clear enough: this is not just another circuit stop.</p></div><p class="why"><strong>Why it matters:</strong> Diamond League meets are where elite track moves from seasonal form-check to record chase. Kerr’s mile attempt gives casual fans a simple hook and serious fans a reason to clear the schedule.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/07/schedule-entries-results-for-2026-novuna-london-athletics-meet-london-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/07/how-to-watch-2026-novuna-london-athletics-meet-london-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Demo joins New York’s young-and-polished restaurant lane</h2><p class="dek">The West Village spot earns its place among the sophisticated, youthful restaurants the city keeps producing.</p><div class="body-copy"><p>The Times review positions Demo in the West Village as part of a very New York genre: sophisticated but youthful, polished without sounding museum-like. The excerpt does not tell us what to order or how the room feels in detail, but the judgment is confident—Demo “earns its place” in a category the city is apparently very good at. That is praise with a specific edge: not novelty for novelty’s sake, but a restaurant fluent in the current downtown language.</p></div><p class="why"><strong>Why it matters:</strong> New York dining trends often calcify fast. A restaurant that can feel young, sophisticated and genuinely earned is worth noting—especially in the West Village, where charm can become a surcharge.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/14/dining/restaurant-review-demo-nyc.html" target="_blank" rel="noreferrer">NYT Dining &amp; Wine</a> · <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE9BOEZvUkVGM3Zqa2tBelQzc0ZvZGJGNnRqNFhsdDhEMThjZmRDdHhvTWN3ZVJtaW8xNHF1cGd1akNRbnVGc3otN0tZQ3JpeERCa0hPT1RUZ0N0MF9NMnJhZGdyZ0txb0RZOXNxRzdiUEpSYXpScnFGQWRGaENWZw?oc=5" target="_blank" rel="noreferrer">The New York Times</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Nolan’s ‘The Odyssey’ gets the art-blockbuster treatment</h2><p class="dek">The Times review praises Christopher Nolan as a rare director able to bridge art-film ambition and blockbuster scale.</p><div class="body-copy"><p>The Times’ review of Christopher Nolan’s “The Odyssey” lands on the quality that has defined much of his career: the ability to close the divide between the art film and the blockbuster. The headline promises “passion in every frame,” suggesting a film being judged not merely as spectacle but as an authored object. With only the excerpt available, the review’s argument is broad rather than granular, but the frame is unmistakable: Nolan is still being measured as one of the few filmmakers who can make mass entertainment feel like a personal wager.</p></div><p class="why"><strong>Why it matters:</strong> Big-budget cinema often asks audiences to choose between scale and sensibility. Nolan’s work matters because it keeps testing whether a blockbuster can still feel director-driven.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/15/movies/the-odyssey-review.html" target="_blank" rel="noreferrer">NYT Movies</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>A moon tree takes root in Madison Square</h2><p class="dek">Seeds flown on a NASA mission have become a sweet gum tree now being celebrated in Manhattan.</p><div class="body-copy"><p>A sweet gum tree in Madison Square has an unusually good origin story: its seed flew on a NASA mission before being planted on Earth. It will now be celebrated as a “moon tree” in Manhattan. The item is small, almost ceremonial, but that is part of its appeal—space exploration translated into shade, bark and public memory in the middle of the city.</p></div><p class="why"><strong>Why it matters:</strong> Not every space story needs to be about rockets or budgets. A moon tree is civic science at human scale: a living marker that connects a neighborhood park to a much larger project of exploration.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/16/nyregion/nasa-tree-madison-square-park.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 16, 2026
+</footer>
+</main>
+</body>
+</html>
