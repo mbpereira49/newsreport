@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-17</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Friday, July 17, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>AI’s data-center boom is moving onto the bond market</h2><p class="dek">Oracle and other big tech firms are looking beyond cash and equity to fund the next wave of compute buildout.</p><div class="lead-lower"><div class="body-copy"><p>The AI buildout is no longer just a capex story; it is becoming a credit story. The Times reports that large tech companies, including Oracle, need to tap bond markets for “staggering sums” to finance data centers. The phrasing matters: debt investors are being asked to underwrite the infrastructure layer of AI at a scale big enough to raise risk concerns. Oracle gets singled out not just as a tech borrower, but as the “ultimate financial source” of the Ellison media empire, making its balance-sheet choices feel less like back-office finance and more like a hinge for several ambitions at once.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> AI enthusiasm has mostly been priced through stocks. If the boom increasingly depends on bonds, the pressure shifts to credit markets—and to the question of whether future AI revenue can justify today’s concrete, chips and power bills.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/17/business/ai-spending-oracle-stocks-bonds.html" target="_blank" rel="noreferrer">NYT Business</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Markets are starting to wince at AI spending</h2><p class="dek">A chip-led sell-off in Asia spread to Europe and the U.S., according to the Times.</p><div class="body-copy"><p>The market mood around AI spending has turned less euphoric, at least for the day. A sell-off that began in Asia, led by chipmakers, spilled into European and U.S. markets on Friday. The excerpt does not specify whether investors are worried about valuations, financing, margins or all of the above—but the direction is clear enough: the companies most exposed to AI infrastructure are no longer getting an automatic pass from traders.</p></div><p class="why"><strong>Why it matters:</strong> This is the other side of the AI investment cycle. The same spending that has powered the tech narrative can become a liability if investors start asking how quickly it pays back.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/17/business/stocks-ai-tech-wall-street.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Persian Gulf shipping slows sharply as oil rises</h2><p class="dek">The Iran war is disrupting energy supply routes, with traffic near its lowest level in more than a month.</p><div class="body-copy"><p>Shipping in the Persian Gulf has nearly ground to a halt, according to the Times, with traffic at its lowest level in more than a month. Oil prices moved higher as the Iran war continued to interfere with energy supply. The excerpt does not give the size of the price move or identify which routes are most affected, but the signal is stark: geopolitical risk is translating into physical hesitation on the water, not just anxiety on trading screens.</p></div><p class="why"><strong>Why it matters:</strong> Energy markets can absorb a lot of fear until ships stop moving. A sustained disruption in Gulf traffic would put pressure on oil prices, shipping costs and the broader inflation picture.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/17/business/strait-hormuz-iran-oil-prices.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>States step into the graduate-loan gap</h2><p class="dek">Minnesota and Connecticut are expanding loan options after a GOP budget bill changed federal support.</p><div class="body-copy"><p>A federal retreat from graduate lending is sending states scrambling. The Times reports that Minnesota and Connecticut are among the states expanding their loan options after a gap opened by the GOP budget bill. One official described the effort plainly: “We see it as a substitute program.” That is an unusually direct admission that state-level finance is being asked to replace a federal pathway for graduate students.</p></div><p class="why"><strong>Why it matters:</strong> Graduate education is expensive enough that loan architecture shapes who can enroll. If states become stopgaps, access may depend more heavily on where students live—or where they can plausibly borrow.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/17/your-money/states-graduate-loans-us-government.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Kimi K3 arrives with a very large open-model claim</h2><p class="dek">Moonshot AI says its 2.8 trillion-parameter model is its strongest yet, with open weights promised by July 27.</p><div class="body-copy"><p>Chinese AI lab Moonshot AI has announced Kimi K3, calling it its “most capable model to date” and describing it as a 2.8 trillion-parameter system. Simon Willison notes the company is branding it as the first “open 3T-class model,” a bit of rounding that turns 2.8 trillion into a category claim. The model is already available through Moonshot’s website and API, with an open-weight release promised by July 27, 2026. The benchmark picture comes with the usual caveat: Moonshot’s self-reported results mostly beat Claude Opus 4.8 max and GPT-5.5 high, while trailing Claude Fable 5 and GPT-5.6 Sol.</p></div><p class="why"><strong>Why it matters:</strong> If the promised weights arrive, Kimi K3 would push the open-model race into a much larger parameter class. But the story is still partly provisional: availability, independent testing and the meaning of “open 3T-class” all matter.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/16/kimi-k3/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Roger Summit, a pioneer of online search, dies at 95</h2><p class="dek">The Lockheed researcher helped imagine near-instant computer search for scientific and technical literature.</p><div class="body-copy"><p>Roger Summit, a research scientist at Lockheed who invented an early online search service, has died at 95. His key idea sounds ordinary now only because it won: a computer system that could search scientific and technical literature almost instantaneously. In the era before search became ambient infrastructure, that was a radical compression of time—turning specialized knowledge retrieval from a slow institutional process into something closer to conversation with a machine.</p></div><p class="why"><strong>Why it matters:</strong> Search is one of the great hidden utilities of modern life. Summit’s work sits in the lineage behind today’s expectation that knowledge should be queryable immediately.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/17/technology/roger-summit-dead.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>The gay hockey romance as Melvillean project</h2><p class="dek">Public Books reads “Heated Rivalry” through “Moby-Dick,” contemporary MM romance and the imagined worlds literature tries to build.</p><div class="body-copy"><p>Public Books makes the kind of argument that sounds like a dare and then starts to feel inevitable: “Heated Rivalry” is the “Moby-Dick” of Canadian gay hockey shows. The essay’s stated claim is that contemporary MM romance realizes an imagined world Melville was trying to write into being. The Google News mirror offers only the headline, while the Public Books excerpt gives the fuller critical frame: this is not just comparison-by-grandiosity, but a way of treating genre romance as a serious literary machine for imagining social and erotic possibility.</p></div><p class="why"><strong>Why it matters:</strong> The fun is in the category violation. Pairing Melville with gay hockey romance pushes against the old hierarchy in which prestige fiction theorizes desire while popular genre merely depicts it.</p><p class="sources">Sources: <a href="https://publicbooks.org/heated-rivalry-is-the-moby-dick-of-canadian-gay-hockey-shows/" target="_blank" rel="noreferrer">Public Books</a> · <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQc01pdHI4ZTFuOGVlclUxU1NUQkpWclRkNmdrUHcyazNtdk1pTEo2X0VwdWF6SkxVd1RaaGVUdzJGcGVHNHVUM3lWeTlqZnR3cVdkbXhlZ1dWY2VKZ2hEeUgyOGROV3gyRUhJNGdsT19qMHFpUHhzU085UlcyMTBlRllOaXZORDc4VVhNNVRsVm9LS3M?oc=5" target="_blank" rel="noreferrer">Public Books</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>London Diamond League sets the stage for Josh Kerr’s mile attempt</h2><p class="dek">LetsRun has the schedule, entries, results and viewing details for the 2026 Novuna London Athletics Meet.</p><div class="body-copy"><p>The 2026 Novuna London Athletics Meet is getting the full LetsRun treatment: schedule, entries, results and a separate how-to-watch guide. The key hook in the available excerpts is Josh Kerr’s mile world record attempt, which gives the London Diamond League stop a clean narrative spine beyond the usual elite-meet buffet. The sources here are service-y rather than analytical, but useful: one page for the meet logistics and results, another for broadcast details.</p></div><p class="why"><strong>Why it matters:</strong> Diamond League meets can be sprawling. A world record attempt turns one race into the appointment-viewing center of the program—and makes the logistics worth having in one place.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/07/schedule-entries-results-for-2026-novuna-london-athletics-meet-london-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/07/how-to-watch-2026-novuna-london-athletics-meet-london-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 17, 2026
+</footer>
+</main>
+</body>
+</html>
