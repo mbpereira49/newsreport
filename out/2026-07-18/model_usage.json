@@ -1,0 +1,79 @@
+{
+  "calls": [
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.070645,
+      "input_tokens": 8405,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 954,
+      "raw_usage": {
+        "input_tokens": 8405,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 954,
+        "output_tokens_details": {
+          "reasoning_tokens": 516
+        },
+        "total_tokens": 9359
+      },
+      "reasoning_tokens": 516,
+      "stage": "digest_selection",
+      "total_tokens": 9359
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.082485,
+      "input_tokens": 3801,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 2116,
+      "raw_usage": {
+        "input_tokens": 3801,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2116,
+        "output_tokens_details": {
+          "reasoning_tokens": 177
+        },
+        "total_tokens": 5917
+      },
+      "reasoning_tokens": 177,
+      "stage": "digest_entries",
+      "total_tokens": 5917
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.133965,
+      "input_tokens": 4413,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 3730,
+      "raw_usage": {
+        "input_tokens": 4413,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3730,
+        "output_tokens_details": {
+          "reasoning_tokens": 344
+        },
+        "total_tokens": 8143
+      },
+      "reasoning_tokens": 344,
+      "stage": "digest_layout",
+      "total_tokens": 8143
+    }
+  ],
+  "summary": {
+    "cached_input_tokens": 0,
+    "calls": 3,
+    "estimated_cost_usd": 0.287095,
+    "input_tokens": 16619,
+    "output_tokens": 6800,
+    "reasoning_tokens": 1037,
+    "total_tokens": 23419
+  }
+}

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-18</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Saturday, July 18, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>AI chips are now collateral</h2><p class="dek">General Compute reportedly landed a $400 million Upper90 loan secured by inference chips—a neat symbol of how AI infrastructure is becoming financeable hardware, not just hype.</p><div class="lead-lower"><div class="body-copy"><p>The details here are sparse, but the framing is striking: General Compute has secured a $400 million loan from Upper90 in what AI Insider calls the first deal backed by AI inference chips. Mezha describes the same transaction more plainly as a loan “secured by inference chips.” Either way, the takeaway is less about one borrower than about a maturing capital stack around AI compute. Inference chips—the hardware used to run models after training—are being treated as assets sturdy enough to underwrite serious debt.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> If lenders get comfortable valuing deployed AI hardware, startups may be able to finance compute without relying only on equity rounds or hyperscaler partnerships. That could reshape who can afford to compete in AI services.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNdy1qb2xMX012MUNVbnlTR2M5d29GMzdySlRpUFNSRGhZSkpXZlFyc2lwX3lTdWpyUzBNZkwtRGh5VHJHUlJUaWItOFZLZ19faGY1NmVvZVktcG1fN1FONGpYeTRTTVBXR2RuMmg0aTVxdWNFSERVWVB1b1VoZ1gtUEFiZmdNVzFCdGd0UkRaQmhBQnVsT0ZyN2lIOHZmNHQ4OU5Wbm1SbV9CM2lIcHBsRlp2VmVhRDZXeHJLN0FDeHJyd1kzSkE?oc=5" target="_blank" rel="noreferrer">AI Insider</a> · <a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5HX3pTSUpzcllqNnBscmdSLUxLakpRUjlKVkdISzlvWThhVFdXQzNyazExalN0bjNjWEV0Umx3SFZ1UFR5X0R3MF8tYXEybzJuaFZYbUZMejVoaEZGTXdXem4yc2RiMjJkc0g0?oc=5" target="_blank" rel="noreferrer">Межа. Новини України.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Kimi K3 joins the trillion-parameter arms race</h2><p class="dek">Moonshot AI says its new 2.8 trillion-parameter model is its most capable yet, with open weights promised soon and benchmarks that invite both awe and skepticism.</p><div class="body-copy"><p>Chinese AI lab Moonshot AI announced Kimi K3, described as its “most capable model to date” and clocking in at 2.8 trillion parameters. Simon Willison notes that Moonshot is calling it the first “open 3T-class model”—rounding up, a little cheekily, from 2.8T—and positioning it ahead of DeepSeek’s 1.6T v4 Pro. K3 is already available through Moonshot’s website and API, with an open-weight release promised by July 27, 2026. Moonshot’s self-reported benchmarks put K3 mostly ahead of Claude Opus 4.8 max and GPT-5.5 high, though behind Claude Fable 5 and GPT-5.6 Sol. Willison’s piece also uses the model as a way into the enduring usefulness of quirky evaluation tests like the “pelican benchmark.”</p></div><p class="why"><strong>Why it matters:</strong> The race is no longer just closed frontier labs versus everyone else. If Moonshot follows through on open weights, very large models may keep migrating into broader developer ecosystems—though self-reported benchmark claims still deserve a raised eyebrow.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/16/kimi-k3/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>ICE assault cases are falling apart</h2><p class="dek">A Times investigation says the Trump administration has lost or abandoned hundreds of criminal cases against protesters and immigrants accused of assaulting ICE agents.</p><div class="body-copy"><p>The headline finding is stark: according to a New York Times investigation, the Trump administration has lost or abandoned hundreds of criminal cases involving protesters and immigrants charged with assaulting ICE agents. The excerpt does not spell out why the cases are crumbling—whether because of weak evidence, overcharging, procedural problems, or shifting prosecutorial choices—but the scale alone suggests a gap between public claims of threats to officers and what survives in court.</p></div><p class="why"><strong>Why it matters:</strong> Criminal charges can shape public narratives long before verdicts do. If hundreds of these cases are failing, it raises questions about enforcement tactics, prosecutorial judgment, and how protest and immigration crackdowns are justified.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/18/us/ice-assaults-protesters.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>The World Cup final becomes a prediction-market stress test</h2><p class="dek">Kalshi and Polymarket reportedly saw billions in bets around the soccer tournament, pushing prediction markets toward gambling-event scale.</p><div class="body-copy"><p>The World Cup final has apparently done what major elections and crypto frenzies only previewed: turned prediction markets into a mass betting venue. The New York Times reports that the tournament helped Kalshi and Polymarket reach new user records, with billions in bets flowing through the platforms. The Times frames it as potentially the largest gambling event in history—a big claim, but one that captures the shift from niche forecasting culture to mainstream wagering behavior.</p></div><p class="why"><strong>Why it matters:</strong> Prediction markets like to present themselves as information engines. A World Cup-driven betting surge makes them look more like consumer gambling platforms—and will likely sharpen questions about regulation, addiction, market integrity, and where “forecasting” ends.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/18/business/world-cup-kalshi-polymarket.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Lit Hub’s week: cell phone novels, Homer, and booksellers’ worries</h2><p class="dek">The week’s literary miscellany ranges from early-2000s Japanese mobile fiction and its moral panic to the eternal question of how many Homers there were.</p><div class="body-copy"><p>Lit Hub’s weekly and daily roundups are doing what literary roundups do best: turning scattered obsessions into a reading itinerary. One thread revisits the rise and fall of the Japanese cell phone novel in the early 2000s, along with the moral panic that followed it. Another has Henry Power asking the pleasingly ancient question: how many Homers were there, actually? Elsewhere, Josh Cook—bookseller and founder of the Porter Square Review of Books—explores why booksellers matter, or at least why they are worth thinking about at a moment when literary culture is constantly being re-platformed. There’s also a note of enthusiasm around The Odyssey’s continuing relevance and its next rendition.</p></div><p class="why"><strong>Why it matters:</strong> The lineup is a reminder that literary culture is often most alive at the edges: dead authorship mysteries, vanished digital forms, anxious book retail, and old epics that keep being remade.</p><p class="sources">Sources: <a href="https://lithub.com/lit-hub-weekly-july-13-17-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-daily-july-17-2026/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Nolan’s Odyssey lands as both art film and blockbuster</h2><p class="dek">The Times’ review praises Christopher Nolan’s The Odyssey for bringing passion to every frame—and for narrowing a divide few directors can cross.</p><div class="body-copy"><p>The New York Times’ review of Christopher Nolan’s The Odyssey arrives with a clean thesis: few directors are as good at closing the gap between art film and blockbuster. The excerpt is short, but the implication is familiar and still meaningful for Nolan: scale need not cancel out formal ambition. The review’s headline, “Passion in Every Frame,” suggests a film that treats myth not just as IP or spectacle but as an occasion for image-making.</p></div><p class="why"><strong>Why it matters:</strong> Nolan remains one of the few filmmakers whose name can sell an expensive, serious movie at blockbuster scale. If The Odyssey works on both registers, it strengthens the case that mass cinema still has room for grand, auteur-driven swings.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/15/movies/the-odyssey-review.html" target="_blank" rel="noreferrer">NYT Movies</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>London Diamond League sets the table for a Kerr mile attempt</h2><p class="dek">LetsRun has the practical guide: schedule, entries, results, and how to watch the 2026 Novuna London Athletics Meet, with Josh Kerr’s mile record attempt as the hook.</p><div class="body-copy"><p>The London Diamond League is one of those meets where the logistics matter because the performances might. LetsRun has published both the schedule/entries/results hub and a viewing guide for the 2026 Novuna London Athletics Meet. The notable tease in the watch guide is Josh Kerr’s mile world record attempt, which gives the meet a clear narrative spine beyond the usual Diamond League depth.</p></div><p class="why"><strong>Why it matters:</strong> Track’s biggest regular-season meets live or die by appointment-viewing moments. A mile world record attempt gives fans a simple reason to tune in—and gives the London meet a chance to become more than a results sheet.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/07/schedule-entries-results-for-2026-novuna-london-athletics-meet-london-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/07/how-to-watch-2026-novuna-london-athletics-meet-london-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>At Bridges, order the Comté tart</h2><p class="dek">Eater NY says the Chinatown restaurant’s cheese tart is the “nonnegotiable” dish: essentially a fancy slice of cheese quiche, and apparently the star of the menu.</p><div class="body-copy"><p>The Comté tart at Bridges in Chinatown gets the kind of recommendation restaurants dream about: “nonnegotiable.” Eater NY describes it as basically a slice of cheese quiche made fancy, and the standout of chef and co-owner Sam Lawrence’s “electric” menu. That menu is described as rooted in European cuisine with global touches, which is restaurant-speak that can mean almost anything—but in this case, the tart seems to be the anchor dish people remember.</p></div><p class="why"><strong>Why it matters:</strong> New York dining hype often chases novelty. A cheese tart becoming the must-order is more charming: simple, rich, legible, and apparently good enough to organize dinner around.</p><p class="sources">Sources: <a href="https://ny.eater.com/dining-report/412721/bridges-nyc-restaurant-review-chinatown" target="_blank" rel="noreferrer">Eater NY</a> · <a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxON1RIZjFXU2QzYjh0MmlyWThtMGhIaFpjdDNxNTVWUGt2RGxTTjFYaGJjRjI3WnA3VmFVRzF6Mk5OcHZMUmgxbXV4aV9xbnBCOUVTU3NSMWxYYXRITE9aaS1jcmM5aUFKTEw5SFIwNG9NaEY2bVZPTjd5UkYtUDQzQXd0SFB5OHNR?oc=5" target="_blank" rel="noreferrer">Eater New York</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 18, 2026
+</footer>
+</main>
+</body>
+</html>

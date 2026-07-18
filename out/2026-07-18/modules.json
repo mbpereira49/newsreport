@@ -1,0 +1,21 @@
+[
+  {
+    "content": {
+      "date": "2026-07-18",
+      "events": []
+    },
+    "id": "d6d45573e68bbf8a",
+    "kind": "calendar_json",
+    "rendered_hint": "Brief calendar sidebar or short agenda block, only if there are events.",
+    "title": "Today"
+  },
+  {
+    "content": {
+      "text": "This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.\n\n"
+    },
+    "id": "0fdb5ce8466cf888",
+    "kind": "text_file",
+    "rendered_hint": "Use as a tiny note near the top when it fits.",
+    "title": "Editor's Note"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "body": "The details here are sparse, but the framing is striking: General Compute has secured a $400 million loan from Upper90 in what AI Insider calls the first deal backed by AI inference chips. Mezha describes the same transaction more plainly as a loan \u201csecured by inference chips.\u201d Either way, the takeaway is less about one borrower than about a maturing capital stack around AI compute. Inference chips\u2014the hardware used to run models after training\u2014are being treated as assets sturdy enough to underwrite serious debt.",
+    "cluster_id": "374a3f1af24b7da4",
+    "dek": "General Compute reportedly landed a $400 million Upper90 loan secured by inference chips\u2014a neat symbol of how AI infrastructure is becoming financeable hardware, not just hype.",
+    "headline": "AI chips are now collateral",
+    "source_ids": [
+      "374a3f1af24b7da4-s1",
+      "374a3f1af24b7da4-s2"
+    ],
+    "why_it_matters": "If lenders get comfortable valuing deployed AI hardware, startups may be able to finance compute without relying only on equity rounds or hyperscaler partnerships. That could reshape who can afford to compete in AI services."
+  },
+  {
+    "body": "Chinese AI lab Moonshot AI announced Kimi K3, described as its \u201cmost capable model to date\u201d and clocking in at 2.8 trillion parameters. Simon Willison notes that Moonshot is calling it the first \u201copen 3T-class model\u201d\u2014rounding up, a little cheekily, from 2.8T\u2014and positioning it ahead of DeepSeek\u2019s 1.6T v4 Pro. K3 is already available through Moonshot\u2019s website and API, with an open-weight release promised by July 27, 2026. Moonshot\u2019s self-reported benchmarks put K3 mostly ahead of Claude Opus 4.8 max and GPT-5.5 high, though behind Claude Fable 5 and GPT-5.6 Sol. Willison\u2019s piece also uses the model as a way into the enduring usefulness of quirky evaluation tests like the \u201cpelican benchmark.\u201d",
+    "cluster_id": "b2eaf7c081a1898c",
+    "dek": "Moonshot AI says its new 2.8 trillion-parameter model is its most capable yet, with open weights promised soon and benchmarks that invite both awe and skepticism.",
+    "headline": "Kimi K3 joins the trillion-parameter arms race",
+    "source_ids": [
+      "b2eaf7c081a1898c-s1"
+    ],
+    "why_it_matters": "The race is no longer just closed frontier labs versus everyone else. If Moonshot follows through on open weights, very large models may keep migrating into broader developer ecosystems\u2014though self-reported benchmark claims still deserve a raised eyebrow."
+  },
+  {
+    "body": "The headline finding is stark: according to a New York Times investigation, the Trump administration has lost or abandoned hundreds of criminal cases involving protesters and immigrants charged with assaulting ICE agents. The excerpt does not spell out why the cases are crumbling\u2014whether because of weak evidence, overcharging, procedural problems, or shifting prosecutorial choices\u2014but the scale alone suggests a gap between public claims of threats to officers and what survives in court.",
+    "cluster_id": "72a32e218c8a7472",
+    "dek": "A Times investigation says the Trump administration has lost or abandoned hundreds of criminal cases against protesters and immigrants accused of assaulting ICE agents.",
+    "headline": "ICE assault cases are falling apart",
+    "source_ids": [
+      "72a32e218c8a7472-s1"
+    ],
+    "why_it_matters": "Criminal charges can shape public narratives long before verdicts do. If hundreds of these cases are failing, it raises questions about enforcement tactics, prosecutorial judgment, and how protest and immigration crackdowns are justified."
+  },
+  {
+    "body": "The World Cup final has apparently done what major elections and crypto frenzies only previewed: turned prediction markets into a mass betting venue. The New York Times reports that the tournament helped Kalshi and Polymarket reach new user records, with billions in bets flowing through the platforms. The Times frames it as potentially the largest gambling event in history\u2014a big claim, but one that captures the shift from niche forecasting culture to mainstream wagering behavior.",
+    "cluster_id": "3c0c95d058c0b2e1",
+    "dek": "Kalshi and Polymarket reportedly saw billions in bets around the soccer tournament, pushing prediction markets toward gambling-event scale.",
+    "headline": "The World Cup final becomes a prediction-market stress test",
+    "source_ids": [
+      "3c0c95d058c0b2e1-s1"
+    ],
+    "why_it_matters": "Prediction markets like to present themselves as information engines. A World Cup-driven betting surge makes them look more like consumer gambling platforms\u2014and will likely sharpen questions about regulation, addiction, market integrity, and where \u201cforecasting\u201d ends."
+  },
+  {
+    "body": "Lit Hub\u2019s weekly and daily roundups are doing what literary roundups do best: turning scattered obsessions into a reading itinerary. One thread revisits the rise and fall of the Japanese cell phone novel in the early 2000s, along with the moral panic that followed it. Another has Henry Power asking the pleasingly ancient question: how many Homers were there, actually? Elsewhere, Josh Cook\u2014bookseller and founder of the Porter Square Review of Books\u2014explores why booksellers matter, or at least why they are worth thinking about at a moment when literary culture is constantly being re-platformed. There\u2019s also a note of enthusiasm around The Odyssey\u2019s continuing relevance and its next rendition.",
+    "cluster_id": "80700dfd7abd4f60",
+    "dek": "The week\u2019s literary miscellany ranges from early-2000s Japanese mobile fiction and its moral panic to the eternal question of how many Homers there were.",
+    "headline": "Lit Hub\u2019s week: cell phone novels, Homer, and booksellers\u2019 worries",
+    "source_ids": [
+      "80700dfd7abd4f60-s1",
+      "80700dfd7abd4f60-s2"
+    ],
+    "why_it_matters": "The lineup is a reminder that literary culture is often most alive at the edges: dead authorship mysteries, vanished digital forms, anxious book retail, and old epics that keep being remade."
+  },
+  {
+    "body": "The New York Times\u2019 review of Christopher Nolan\u2019s The Odyssey arrives with a clean thesis: few directors are as good at closing the gap between art film and blockbuster. The excerpt is short, but the implication is familiar and still meaningful for Nolan: scale need not cancel out formal ambition. The review\u2019s headline, \u201cPassion in Every Frame,\u201d suggests a film that treats myth not just as IP or spectacle but as an occasion for image-making.",
+    "cluster_id": "4bd1379ffb8efe8d",
+    "dek": "The Times\u2019 review praises Christopher Nolan\u2019s The Odyssey for bringing passion to every frame\u2014and for narrowing a divide few directors can cross.",
+    "headline": "Nolan\u2019s Odyssey lands as both art film and blockbuster",
+    "source_ids": [
+      "4bd1379ffb8efe8d-s1"
+    ],
+    "why_it_matters": "Nolan remains one of the few filmmakers whose name can sell an expensive, serious movie at blockbuster scale. If The Odyssey works on both registers, it strengthens the case that mass cinema still has room for grand, auteur-driven swings."
+  },
+  {
+    "body": "The London Diamond League is one of those meets where the logistics matter because the performances might. LetsRun has published both the schedule/entries/results hub and a viewing guide for the 2026 Novuna London Athletics Meet. The notable tease in the watch guide is Josh Kerr\u2019s mile world record attempt, which gives the meet a clear narrative spine beyond the usual Diamond League depth.",
+    "cluster_id": "d5424682a9d979a9",
+    "dek": "LetsRun has the practical guide: schedule, entries, results, and how to watch the 2026 Novuna London Athletics Meet, with Josh Kerr\u2019s mile record attempt as the hook.",
+    "headline": "London Diamond League sets the table for a Kerr mile attempt",
+    "source_ids": [
+      "d5424682a9d979a9-s1",
+      "d5424682a9d979a9-s2"
+    ],
+    "why_it_matters": "Track\u2019s biggest regular-season meets live or die by appointment-viewing moments. A mile world record attempt gives fans a simple reason to tune in\u2014and gives the London meet a chance to become more than a results sheet."
+  },
+  {
+    "body": "The Comt\u00e9 tart at Bridges in Chinatown gets the kind of recommendation restaurants dream about: \u201cnonnegotiable.\u201d Eater NY describes it as basically a slice of cheese quiche made fancy, and the standout of chef and co-owner Sam Lawrence\u2019s \u201celectric\u201d menu. That menu is described as rooted in European cuisine with global touches, which is restaurant-speak that can mean almost anything\u2014but in this case, the tart seems to be the anchor dish people remember.",
+    "cluster_id": "3dc786e61eb4ccc5",
+    "dek": "Eater NY says the Chinatown restaurant\u2019s cheese tart is the \u201cnonnegotiable\u201d dish: essentially a fancy slice of cheese quiche, and apparently the star of the menu.",
+    "headline": "At Bridges, order the Comt\u00e9 tart",
+    "source_ids": [
+      "3dc786e61eb4ccc5-s1",
+      "3dc786e61eb4ccc5-s2"
+    ],
+    "why_it_matters": "New York dining hype often chases novelty. A cheese tart becoming the must-order is more charming: simple, rich, legible, and apparently good enough to organize dinner around."
+  }
+]
