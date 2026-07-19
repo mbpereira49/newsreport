@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-19</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Sunday, July 19, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>New York’s leftward wins are raising a representation question</h2><p class="dek">As Democratic Socialists gain ground in gentrifying neighborhoods, some longtime Black and Latino leaders worry the shift could sideline the political power they built.</p><div class="lead-lower"><div class="body-copy"><p>The story is less “socialists versus moderates” than a harder New York question: who gets to speak for neighborhoods in flux? The Times reports that longtime leaders and advocates in minority districts fear recent Democratic Socialists of America victories in gentrifying areas could amount to political erasure. That is a concern, not a settled outcome—and the available sources frame it through those anxieties rather than through a definitive measurement of lost representation.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> New York’s electoral map is also a map of demographic change. If insurgent politics rises fastest where neighborhoods are changing fastest, the fight over ideology can quickly become a fight over belonging, history and power.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/19/nyregion/black-latino-leaders-dsa-nyc.html" target="_blank" rel="noreferrer">NYT New York Region</a> · <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNZmFtUWZYRGl1c2N4eXBpY2YwUnp3eXEybF9OZVo4VVJkek9IMk00UEVTVUREcWdwaGQ3SkJLNHdXOFBPVUlEbnpzYmNNai1TY2F2QWEtbHE2c0pFYjVGcjRLT2JOQTZtZ1hmZEhrX3M3Wk1nb1Z1Y1RoWmNWZC1YNFBkRQ?oc=5" target="_blank" rel="noreferrer">The New York Times</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Campaigns now have to campaign to chatbots, too</h2><p class="dek">Candidates are trying to correct or influence what AI tools tell voters about them—especially when the answers are incomplete or unflattering.</p><div class="body-copy"><p>Political campaigns have a new reputation-management problem: voters may ask a chatbot about a candidate before they ever visit a campaign site, see an ad or read a voter guide. The Times reports that campaigns are trying to change what AI programs say when those answers are unflattering or incomplete. The excerpt does not specify how campaigns are doing that, but the direction is clear: AI summaries are becoming part of the political information environment.</p></div><p class="why"><strong>Why it matters:</strong> Search results once became campaign terrain; chatbot answers may be next. The worry is not only bias or mistakes, but opacity—voters may treat a fluent answer as settled fact without knowing where it came from or what it left out.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/19/us/politics/chatbots-political-campaigns.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Wildfire smoke turns the World Cup final into an air-quality story</h2><p class="dek">A thick haze over New York City and the Northeast is bringing dangerous air just as the region hosts a major sporting spectacle.</p><div class="body-copy"><p>Smoke has blanketed New York City and parts of the Northeast this week, producing smoggy skies and dangerous air, according to the Times. The timing makes the haze more than a background nuisance: it is hanging over the World Cup final, turning a marquee event into another reminder that outdoor sports are increasingly exposed to environmental conditions beyond organizers’ control.</p></div><p class="why"><strong>Why it matters:</strong> Bad air is no longer an occasional West Coast subplot. When smoke reaches dense East Coast cities during major public events, climate-linked disruption becomes visible to millions at once.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/18/nyregion/smoke-world-cup-final-nyc.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Prediction markets have a billionaire rivalry now</h2><p class="dek">Polymarket’s Shayne Coplan and Kalshi’s Tarek Mansour are competing to dominate the space—and the contest has reportedly become personal.</p><div class="body-copy"><p>The prediction-market business is being cast not just as a regulatory or financial contest, but as a feud. The Times describes Shayne Coplan of Polymarket and Tarek Mansour of Kalshi as young billionaires intent on dominating prediction markets, with the rivalry marked by “bad blood.” The excerpt gives the drama, not the operational stakes, but the subtext is obvious: a once-niche betting-on-outcomes category is important enough to mint fortunes and enemies.</p></div><p class="why"><strong>Why it matters:</strong> Prediction markets sit at the intersection of finance, politics, gambling and information. If they keep growing, who controls the dominant platforms will shape not only a business category, but potentially how people price public events in real time.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/19/technology/polymarket-kalshi-rivalry-coplan-mansour.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>That fasted workout habit may not be helping</h2><p class="dek">A Women’s Health piece argues that always exercising on an empty stomach could hurt progress, citing research.</p><div class="body-copy"><p>The headline advice is direct: if you always work out on an empty stomach, that routine may be working against your goals. Women’s Health frames the piece around research suggesting fasted training can hurt progress. The supplied excerpts do not include the study details or what kind of exercise is most affected, so the useful takeaway is modest rather than absolute: “empty stomach” should not be treated as the default best choice for every workout.</p></div><p class="why"><strong>Why it matters:</strong> Fitness advice often hardens into ritual. This is a reminder to match fueling to the work you’re asking your body to do, rather than assuming restriction equals discipline or better results.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxQMndpeTJVaVVKekxtd2ItRmx3NlhjRGRoYUljWFhvS0VqOHZFVll2Vl9aeV8wOVVGcGl2ZTg4cEdpUnZzYllfVGxUd2djQkhJYk82UXNYM3BVb1YzcmFQMHlwVzJwOE51bW14RHlOZ3YtR1o5R053WkZvNkhPX0FFMG1ydlpwdkd3ZVpVOVhDUQ?oc=5" target="_blank" rel="noreferrer">Women's Health</a> · <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9laTZsSTh2YU5JMWhFeXp6NXNCWkhNLW1tVjVVbnRxNy13bDlvcmNZMEJROFVhSTlpODdvWVcxLXowSVpUXzBSQnBIQWVWdlBDa0NwT3JQUmMxeGRjZXJTVGFfX1RRX2YxWmxHRWpIWnNvc29SNXpsNXNicjJLUjg?oc=5" target="_blank" rel="noreferrer">AOL.com</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Lit Hub’s week wanders from cell phone novels to Homer</h2><p class="dek">The site’s recent roundups point toward a pleasingly odd mix: Japanese mobile fiction, booksellers, the authorship of Homer and why “The Odyssey” still keeps returning.</p><div class="body-copy"><p>Lit Hub’s weekly and daily roundups offer the kind of literary scatterplot that can be more useful than a single big review. One item revisits the rise and fall of the Japanese cell phone novel in the early 2000s and the moral panic around it; another features bookseller Josh Cook of the Porter Square Review of Books. A separate daily roundup flags Henry Power on the enduring question of how many Homers there were, alongside Rose’s enthusiasm for the next rendition of “The Odyssey.”</p></div><p class="why"><strong>Why it matters:</strong> The through-line is literary culture’s recurring panic-and-return cycle: new formats arrive, old epics get remade, and readers keep renegotiating what counts as serious, durable or worth defending.</p><p class="sources">Sources: <a href="https://lithub.com/lit-hub-weekly-july-13-17-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-daily-july-17-2026/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Zaxbys lands in New York City</h2><p class="dek">The Georgia fried-chicken tender chain has opened its first NYC location, one item in Eater NY’s latest restaurant-news catch-up.</p><div class="body-copy"><p>A bit of Southern fast-casual chicken has entered the New York food churn: Zaxbys, the Georgia-based fried chicken tender chain, has opened its first-ever New York City location, according to Eater NY’s roundup. The item appears as part of a broader ICYMI restaurant-news digest, which is fitting—NYC openings can be both civic event and blink-and-you-missed-it commodity.</p></div><p class="why"><strong>Why it matters:</strong> Chain arrivals are a small but telling part of the city’s food ecology. They reveal which regional brands think New York is worth the rent, the attention and the inevitable scrutiny.</p><p class="sources">Sources: <a href="https://ny.eater.com/news/412535/nyc-restaurant-news-july-2026" target="_blank" rel="noreferrer">Eater NY</a> · <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBIWWtXS0kwdTFxSV9jbWhUTVBSbDhIY2g5NzJJMy16enVRenFETkU2SWtTSnNXekVZLXpHLVhWS1hwU0xlekZ4UGJoaW05bkpydHd2NmtBaUFhTWtVOHZ1U0lsLVpOb3JZb1R1MTZjaw?oc=5" target="_blank" rel="noreferrer">Eater New York</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>New York has bats, and apparently more than scientists expected</h2><p class="dek">Several bat species have made homes in the city’s patchwork of green spaces, trading superhero mythology for insect control.</p><div class="body-copy"><p>New York’s green spaces are doing more ecological work than they sometimes get credit for. The Times reports that several species of bats have made homes in the city’s patchwork parks and planted corridors, surprising some scientists. The headline has the right spirit: they do not fight crime, but they do eat bugs—and their presence suggests the city is more hospitable to wildlife than its hard surfaces imply.</p></div><p class="why"><strong>Why it matters:</strong> Urban nature is often treated as decorative. Bats in the city are a reminder that even fragmented green space can support unexpected species—and that biodiversity is not only something that happens elsewhere.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/18/nyregion/bats-nyc-highline-prospect-park.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 19, 2026
+</footer>
+</main>
+</body>
+</html>

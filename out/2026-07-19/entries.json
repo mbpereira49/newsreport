@@ -1,0 +1,86 @@
+[
+  {
+    "body": "The story is less \u201csocialists versus moderates\u201d than a harder New York question: who gets to speak for neighborhoods in flux? The Times reports that longtime leaders and advocates in minority districts fear recent Democratic Socialists of America victories in gentrifying areas could amount to political erasure. That is a concern, not a settled outcome\u2014and the available sources frame it through those anxieties rather than through a definitive measurement of lost representation.",
+    "cluster_id": "b12f9f9f98e894fd",
+    "dek": "As Democratic Socialists gain ground in gentrifying neighborhoods, some longtime Black and Latino leaders worry the shift could sideline the political power they built.",
+    "headline": "New York\u2019s leftward wins are raising a representation question",
+    "source_ids": [
+      "b12f9f9f98e894fd-s1",
+      "b12f9f9f98e894fd-s2"
+    ],
+    "why_it_matters": "New York\u2019s electoral map is also a map of demographic change. If insurgent politics rises fastest where neighborhoods are changing fastest, the fight over ideology can quickly become a fight over belonging, history and power."
+  },
+  {
+    "body": "Political campaigns have a new reputation-management problem: voters may ask a chatbot about a candidate before they ever visit a campaign site, see an ad or read a voter guide. The Times reports that campaigns are trying to change what AI programs say when those answers are unflattering or incomplete. The excerpt does not specify how campaigns are doing that, but the direction is clear: AI summaries are becoming part of the political information environment.",
+    "cluster_id": "5b41cc2addeb6164",
+    "dek": "Candidates are trying to correct or influence what AI tools tell voters about them\u2014especially when the answers are incomplete or unflattering.",
+    "headline": "Campaigns now have to campaign to chatbots, too",
+    "source_ids": [
+      "5b41cc2addeb6164-s1"
+    ],
+    "why_it_matters": "Search results once became campaign terrain; chatbot answers may be next. The worry is not only bias or mistakes, but opacity\u2014voters may treat a fluent answer as settled fact without knowing where it came from or what it left out."
+  },
+  {
+    "body": "Smoke has blanketed New York City and parts of the Northeast this week, producing smoggy skies and dangerous air, according to the Times. The timing makes the haze more than a background nuisance: it is hanging over the World Cup final, turning a marquee event into another reminder that outdoor sports are increasingly exposed to environmental conditions beyond organizers\u2019 control.",
+    "cluster_id": "9879681fdb70bf3e",
+    "dek": "A thick haze over New York City and the Northeast is bringing dangerous air just as the region hosts a major sporting spectacle.",
+    "headline": "Wildfire smoke turns the World Cup final into an air-quality story",
+    "source_ids": [
+      "9879681fdb70bf3e-s1"
+    ],
+    "why_it_matters": "Bad air is no longer an occasional West Coast subplot. When smoke reaches dense East Coast cities during major public events, climate-linked disruption becomes visible to millions at once."
+  },
+  {
+    "body": "The prediction-market business is being cast not just as a regulatory or financial contest, but as a feud. The Times describes Shayne Coplan of Polymarket and Tarek Mansour of Kalshi as young billionaires intent on dominating prediction markets, with the rivalry marked by \u201cbad blood.\u201d The excerpt gives the drama, not the operational stakes, but the subtext is obvious: a once-niche betting-on-outcomes category is important enough to mint fortunes and enemies.",
+    "cluster_id": "49b9d2061c4f2a36",
+    "dek": "Polymarket\u2019s Shayne Coplan and Kalshi\u2019s Tarek Mansour are competing to dominate the space\u2014and the contest has reportedly become personal.",
+    "headline": "Prediction markets have a billionaire rivalry now",
+    "source_ids": [
+      "49b9d2061c4f2a36-s1"
+    ],
+    "why_it_matters": "Prediction markets sit at the intersection of finance, politics, gambling and information. If they keep growing, who controls the dominant platforms will shape not only a business category, but potentially how people price public events in real time."
+  },
+  {
+    "body": "The headline advice is direct: if you always work out on an empty stomach, that routine may be working against your goals. Women\u2019s Health frames the piece around research suggesting fasted training can hurt progress. The supplied excerpts do not include the study details or what kind of exercise is most affected, so the useful takeaway is modest rather than absolute: \u201cempty stomach\u201d should not be treated as the default best choice for every workout.",
+    "cluster_id": "0011566cd4c29e09",
+    "dek": "A Women\u2019s Health piece argues that always exercising on an empty stomach could hurt progress, citing research.",
+    "headline": "That fasted workout habit may not be helping",
+    "source_ids": [
+      "0011566cd4c29e09-s1",
+      "0011566cd4c29e09-s2"
+    ],
+    "why_it_matters": "Fitness advice often hardens into ritual. This is a reminder to match fueling to the work you\u2019re asking your body to do, rather than assuming restriction equals discipline or better results."
+  },
+  {
+    "body": "Lit Hub\u2019s weekly and daily roundups offer the kind of literary scatterplot that can be more useful than a single big review. One item revisits the rise and fall of the Japanese cell phone novel in the early 2000s and the moral panic around it; another features bookseller Josh Cook of the Porter Square Review of Books. A separate daily roundup flags Henry Power on the enduring question of how many Homers there were, alongside Rose\u2019s enthusiasm for the next rendition of \u201cThe Odyssey.\u201d",
+    "cluster_id": "80700dfd7abd4f60",
+    "dek": "The site\u2019s recent roundups point toward a pleasingly odd mix: Japanese mobile fiction, booksellers, the authorship of Homer and why \u201cThe Odyssey\u201d still keeps returning.",
+    "headline": "Lit Hub\u2019s week wanders from cell phone novels to Homer",
+    "source_ids": [
+      "80700dfd7abd4f60-s1",
+      "80700dfd7abd4f60-s2"
+    ],
+    "why_it_matters": "The through-line is literary culture\u2019s recurring panic-and-return cycle: new formats arrive, old epics get remade, and readers keep renegotiating what counts as serious, durable or worth defending."
+  },
+  {
+    "body": "A bit of Southern fast-casual chicken has entered the New York food churn: Zaxbys, the Georgia-based fried chicken tender chain, has opened its first-ever New York City location, according to Eater NY\u2019s roundup. The item appears as part of a broader ICYMI restaurant-news digest, which is fitting\u2014NYC openings can be both civic event and blink-and-you-missed-it commodity.",
+    "cluster_id": "b0f759af9fa63c45",
+    "dek": "The Georgia fried-chicken tender chain has opened its first NYC location, one item in Eater NY\u2019s latest restaurant-news catch-up.",
+    "headline": "Zaxbys lands in New York City",
+    "source_ids": [
+      "b0f759af9fa63c45-s1",
+      "b0f759af9fa63c45-s2"
+    ],
+    "why_it_matters": "Chain arrivals are a small but telling part of the city\u2019s food ecology. They reveal which regional brands think New York is worth the rent, the attention and the inevitable scrutiny."
+  },
+  {
+    "body": "New York\u2019s green spaces are doing more ecological work than they sometimes get credit for. The Times reports that several species of bats have made homes in the city\u2019s patchwork parks and planted corridors, surprising some scientists. The headline has the right spirit: they do not fight crime, but they do eat bugs\u2014and their presence suggests the city is more hospitable to wildlife than its hard surfaces imply.",
+    "cluster_id": "3624ccfedc8b3b3d",
+    "dek": "Several bat species have made homes in the city\u2019s patchwork of green spaces, trading superhero mythology for insect control.",
+    "headline": "New York has bats, and apparently more than scientists expected",
+    "source_ids": [
+      "3624ccfedc8b3b3d-s1"
+    ],
+    "why_it_matters": "Urban nature is often treated as decorative. Bats in the city are a reminder that even fragmented green space can support unexpected species\u2014and that biodiversity is not only something that happens elsewhere."
+  }
+]
