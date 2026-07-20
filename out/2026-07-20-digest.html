@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-20</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Monday, July 20, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>The Pentagon’s injury count has a disclosure gap</h2><p class="dek">Dozens of U.S. military injuries in the Iran war were reportedly withheld from public release.</p><div class="lead-lower"><div class="body-copy"><p>The New York Times reports that the Pentagon did not disclose dozens of U.S. troop injuries connected to the Iran war. The stated rationale is procedural, not necessarily exceptional: a military official said Central Command is not required to release information about injured troops, particularly when service members quickly return to duty. That leaves a familiar gray zone between official casualty accounting and the public’s ability to understand the human cost of military operations.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> The policy question is bigger than this episode: if injuries can disappear from public view because troops return quickly, the official record may understate the risks borne by service members.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/20/us/politics/troops-injured-jordan-iran-war.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Maine Democrats trade Senate-primary chaos for a front-runner problem</h2><p class="dek">Troy Jackson’s rise as the apparent favorite to replace Graham Platner simplifies the race—but may narrow the party’s choices.</p><div class="body-copy"><p>In Maine’s Senate race, Democrats appear to have moved from disorder to something closer to a coronation. Troy Jackson has emerged as the clear front-runner to replace Graham Platner, according to the New York Times. That could spare the party a messy fight, but the same consolidation creates new challenges: a quick consensus can settle nerves while also concentrating scrutiny on one candidate and one path to victory.</p></div><p class="why"><strong>Why it matters:</strong> Primary chaos can wound a party; coronations can mask unresolved weaknesses. Maine Democrats may have avoided one problem only to inherit another.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/20/us/politics/maine-democrats-senate-jackson-platner.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Google’s AI search keeps users close—and publishers nervous</h2><p class="dek">As AI answers become more central to search, website operators worry the open web is being drained of traffic.</p><div class="body-copy"><p>Google is putting more artificial intelligence into search, and the reported effect is simple: people are spending more time on Google. Website operators are crying foul, according to the New York Times, because the bargain that powered the web—publishers make pages, search sends readers—looks less reliable when answers sit inside Google’s own interface. The story is not just about a feature rollout; it is about whether AI search turns the web into raw material for a platform that increasingly keeps the audience for itself.</p></div><p class="why"><strong>Why it matters:</strong> If AI search reduces clicks outward, the economics of independent sites, niche publishers and much of the open web get shakier fast.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/20/technology/google-ai-open-web.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>China’s egg-price spike hits a daily staple</h2><p class="dek">In a country that eats eggs at unusually high rates, rising costs are touching a nerve.</p><div class="body-copy"><p>Egg prices are soaring in China, and the pain is unusually visible because eggs are so central to everyday diets there. The New York Times notes that China consumes more eggs per capita than almost every other country, which turns a grocery-price move into a broader social irritant. Inflation stories often sound abstract until they land on something people buy constantly; in China, eggs appear to be that item.</p></div><p class="why"><strong>Why it matters:</strong> Food inflation becomes politically and economically sensitive when it affects a staple. In China, eggs are not a marginal purchase—they are a household baseline.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/20/business/china-eggs-expensive.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Denise Oliver-Velez, organizer across the Young Lords and Black Panthers, dies at 78</h2><p class="dek">She became the highest-ranking female member of New York’s Young Lords and pushed women’s rights inside the movement.</p><div class="body-copy"><p>Denise Oliver-Velez, described by the New York Times as a powerful voice of the left, has died at 78. Her political life crossed some of the most charged organizing spaces of her era: she became the highest-ranking female member of the Young Lords in New York, pressed for women’s rights, and later joined the Black Panthers. The arc matters because it places her not only inside radical politics, but inside the internal fights over gender and power that shaped those movements from within.</p></div><p class="why"><strong>Why it matters:</strong> Obituaries like this recover the organizers who changed movements from the inside—not just by joining them, but by challenging their limits.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/20/us/denise-oliver-velez-dead.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Texas defines “essential reading,” Bible included</h2><p class="dek">A new required-reading list points to the state’s answer to what students should encounter in school: classics, including the Bible.</p><div class="body-copy"><p>Texas has produced an answer to the perennial curriculum fight over what counts as essential reading. According to the New York Times, the state’s required list emphasizes classics and includes the Bible. The framing alone signals why the list will matter beyond English classrooms: required reading is never just a catalog of books. It is a declaration about cultural inheritance, civic formation and who gets to decide what students must share.</p></div><p class="why"><strong>Why it matters:</strong> Curriculum lists are political documents as much as academic ones. Texas’s choices will likely become another reference point in national fights over schools, religion and canon-building.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/20/us/texas-schools-required-reading-books.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>AI strategy season has reached the parody phase</h2><p class="dek">A practitioner-linked critique describes executives and companies making sweeping AI plans with thin firsthand understanding.</p><div class="body-copy"><p>Simon Willison highlights Nik Suresh’s sharply anecdotal critique of corporate AI mania, describing large companies overwhelmed by the pressure to produce AI strategies. The excerpt’s most telling image is an executive who had never used ChatGPT or any AI tool, yet had produced a technical strategy centered entirely on AI for an organization with more than $2 billion in revenue. Another anecdote points to engineers gaming or performing for a “token leaderboard,” including by asking AI to rewrite a Go repository in Zig while they work on something else. The sourcing is explicitly anecdotal and anonymous, so it should be read as texture rather than measurement—but the texture is damning.</p></div><p class="why"><strong>Why it matters:</strong> The risk is not that companies experiment with AI. It is that AI becomes a managerial costume: strategies written before understanding, incentives optimized for spectacle, and technical judgment outsourced to vibes.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/19/ai-mania/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>A Brooklyn public-housing upgrade, paved with wine corks</h2><p class="dek">At Marlboro Houses, recycled cork walkways and bright outdoor furniture turn a small materials experiment into a livelier shared space.</p><div class="body-copy"><p>At Marlboro Houses in Brooklyn, recycled wine corks have been turned into public-housing pathways. The New York Times reports that the outdoor space has also been brightened with yellow benches and sculptures. It is a small, tactile urban story: discarded material becomes infrastructure; functional walkways become a design statement; a public-housing campus gets visible care in a form residents can literally walk on.</p></div><p class="why"><strong>Why it matters:</strong> Public-space improvements do not have to be monumental to matter. Sometimes the signal is that a place is being noticed, maintained and made more pleasant at human scale.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/20/nyregion/cork-pathways-marlboro-houses-brooklyn.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 20, 2026
+</footer>
+</main>
+</body>
+</html>

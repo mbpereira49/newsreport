@@ -1,0 +1,82 @@
+[
+  {
+    "body": "The New York Times reports that the Pentagon did not disclose dozens of U.S. troop injuries connected to the Iran war. The stated rationale is procedural, not necessarily exceptional: a military official said Central Command is not required to release information about injured troops, particularly when service members quickly return to duty. That leaves a familiar gray zone between official casualty accounting and the public\u2019s ability to understand the human cost of military operations.",
+    "cluster_id": "cf2bd1c08238ad23",
+    "dek": "Dozens of U.S. military injuries in the Iran war were reportedly withheld from public release.",
+    "headline": "The Pentagon\u2019s injury count has a disclosure gap",
+    "source_ids": [
+      "cf2bd1c08238ad23-s1"
+    ],
+    "why_it_matters": "The policy question is bigger than this episode: if injuries can disappear from public view because troops return quickly, the official record may understate the risks borne by service members."
+  },
+  {
+    "body": "In Maine\u2019s Senate race, Democrats appear to have moved from disorder to something closer to a coronation. Troy Jackson has emerged as the clear front-runner to replace Graham Platner, according to the New York Times. That could spare the party a messy fight, but the same consolidation creates new challenges: a quick consensus can settle nerves while also concentrating scrutiny on one candidate and one path to victory.",
+    "cluster_id": "377357d17088cc9d",
+    "dek": "Troy Jackson\u2019s rise as the apparent favorite to replace Graham Platner simplifies the race\u2014but may narrow the party\u2019s choices.",
+    "headline": "Maine Democrats trade Senate-primary chaos for a front-runner problem",
+    "source_ids": [
+      "377357d17088cc9d-s1"
+    ],
+    "why_it_matters": "Primary chaos can wound a party; coronations can mask unresolved weaknesses. Maine Democrats may have avoided one problem only to inherit another."
+  },
+  {
+    "body": "Google is putting more artificial intelligence into search, and the reported effect is simple: people are spending more time on Google. Website operators are crying foul, according to the New York Times, because the bargain that powered the web\u2014publishers make pages, search sends readers\u2014looks less reliable when answers sit inside Google\u2019s own interface. The story is not just about a feature rollout; it is about whether AI search turns the web into raw material for a platform that increasingly keeps the audience for itself.",
+    "cluster_id": "68b0b60b7d71b2f0",
+    "dek": "As AI answers become more central to search, website operators worry the open web is being drained of traffic.",
+    "headline": "Google\u2019s AI search keeps users close\u2014and publishers nervous",
+    "source_ids": [
+      "68b0b60b7d71b2f0-s1"
+    ],
+    "why_it_matters": "If AI search reduces clicks outward, the economics of independent sites, niche publishers and much of the open web get shakier fast."
+  },
+  {
+    "body": "Egg prices are soaring in China, and the pain is unusually visible because eggs are so central to everyday diets there. The New York Times notes that China consumes more eggs per capita than almost every other country, which turns a grocery-price move into a broader social irritant. Inflation stories often sound abstract until they land on something people buy constantly; in China, eggs appear to be that item.",
+    "cluster_id": "6f73a07cdc5dc257",
+    "dek": "In a country that eats eggs at unusually high rates, rising costs are touching a nerve.",
+    "headline": "China\u2019s egg-price spike hits a daily staple",
+    "source_ids": [
+      "6f73a07cdc5dc257-s1"
+    ],
+    "why_it_matters": "Food inflation becomes politically and economically sensitive when it affects a staple. In China, eggs are not a marginal purchase\u2014they are a household baseline."
+  },
+  {
+    "body": "Denise Oliver-Velez, described by the New York Times as a powerful voice of the left, has died at 78. Her political life crossed some of the most charged organizing spaces of her era: she became the highest-ranking female member of the Young Lords in New York, pressed for women\u2019s rights, and later joined the Black Panthers. The arc matters because it places her not only inside radical politics, but inside the internal fights over gender and power that shaped those movements from within.",
+    "cluster_id": "d24faaef047e53ba",
+    "dek": "She became the highest-ranking female member of New York\u2019s Young Lords and pushed women\u2019s rights inside the movement.",
+    "headline": "Denise Oliver-Velez, organizer across the Young Lords and Black Panthers, dies at 78",
+    "source_ids": [
+      "d24faaef047e53ba-s1"
+    ],
+    "why_it_matters": "Obituaries like this recover the organizers who changed movements from the inside\u2014not just by joining them, but by challenging their limits."
+  },
+  {
+    "body": "Texas has produced an answer to the perennial curriculum fight over what counts as essential reading. According to the New York Times, the state\u2019s required list emphasizes classics and includes the Bible. The framing alone signals why the list will matter beyond English classrooms: required reading is never just a catalog of books. It is a declaration about cultural inheritance, civic formation and who gets to decide what students must share.",
+    "cluster_id": "378348d2b637c744",
+    "dek": "A new required-reading list points to the state\u2019s answer to what students should encounter in school: classics, including the Bible.",
+    "headline": "Texas defines \u201cessential reading,\u201d Bible included",
+    "source_ids": [
+      "378348d2b637c744-s1"
+    ],
+    "why_it_matters": "Curriculum lists are political documents as much as academic ones. Texas\u2019s choices will likely become another reference point in national fights over schools, religion and canon-building."
+  },
+  {
+    "body": "Simon Willison highlights Nik Suresh\u2019s sharply anecdotal critique of corporate AI mania, describing large companies overwhelmed by the pressure to produce AI strategies. The excerpt\u2019s most telling image is an executive who had never used ChatGPT or any AI tool, yet had produced a technical strategy centered entirely on AI for an organization with more than $2 billion in revenue. Another anecdote points to engineers gaming or performing for a \u201ctoken leaderboard,\u201d including by asking AI to rewrite a Go repository in Zig while they work on something else. The sourcing is explicitly anecdotal and anonymous, so it should be read as texture rather than measurement\u2014but the texture is damning.",
+    "cluster_id": "2189111d0c76bbe5",
+    "dek": "A practitioner-linked critique describes executives and companies making sweeping AI plans with thin firsthand understanding.",
+    "headline": "AI strategy season has reached the parody phase",
+    "source_ids": [
+      "2189111d0c76bbe5-s1"
+    ],
+    "why_it_matters": "The risk is not that companies experiment with AI. It is that AI becomes a managerial costume: strategies written before understanding, incentives optimized for spectacle, and technical judgment outsourced to vibes."
+  },
+  {
+    "body": "At Marlboro Houses in Brooklyn, recycled wine corks have been turned into public-housing pathways. The New York Times reports that the outdoor space has also been brightened with yellow benches and sculptures. It is a small, tactile urban story: discarded material becomes infrastructure; functional walkways become a design statement; a public-housing campus gets visible care in a form residents can literally walk on.",
+    "cluster_id": "53118287bb0c0712",
+    "dek": "At Marlboro Houses, recycled cork walkways and bright outdoor furniture turn a small materials experiment into a livelier shared space.",
+    "headline": "A Brooklyn public-housing upgrade, paved with wine corks",
+    "source_ids": [
+      "53118287bb0c0712-s1"
+    ],
+    "why_it_matters": "Public-space improvements do not have to be monumental to matter. Sometimes the signal is that a place is being noticed, maintained and made more pleasant at human scale."
+  }
+]
