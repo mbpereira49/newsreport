@@ -1,0 +1,85 @@
+[
+  {
+    "body": "Venice Critics\u2019 Week has unveiled its 2026 selection, with Deadline highlighting films from Colombia, China and Tunisia. The available excerpts don\u2019t list titles, filmmakers or program structure, so the news here is less a full slate than a signal: the Venice sidebar is foregrounding work from regions that can still be treated as \u201cinternational\u201d seasoning by larger festival coverage. One source is a Facebook item that appears to mirror the Deadline headline rather than independently report the lineup, so the substantive sourcing is thin.",
+    "cluster_id": "65ea7ea22a185b7c",
+    "dek": "The 2026 selection includes films from Colombia, China and Tunisia, according to Deadline; a Facebook-linked item repeats the same headline without adding detail.",
+    "headline": "Venice Critics\u2019 Week points its spotlight beyond the usual map",
+    "source_ids": [
+      "65ea7ea22a185b7c-s1",
+      "65ea7ea22a185b7c-s2"
+    ],
+    "why_it_matters": "Critics\u2019 Week is often where festival reputations start before the red carpet machine catches up. Even a bare lineup notice hints at which national cinemas and emerging directors may be entering the fall-film conversation."
+  },
+  {
+    "body": "Lit Hub\u2019s daily roundup is doing what Lit Hub\u2019s daily roundup does best: making literary criticism feel like a table of live wires. The July 21 edition points readers to an argument for more Odyssey retellings centered on women \u2014 \u201cWe are like Penelope, unraveling Homer\u2019s tale for our own purposes\u201d \u2014 and to a piece on how Jean-Paul Sartre and other French intellectuals came to embrace Marxism, to the horror of some observers. A July 20 item shifts registers, excerpting a memoir piece about trying to obtain Greek citizenship through a parent born in Greece while experiencing a family homeland amid grief.",
+    "cluster_id": "cb2e35c8e86e2668",
+    "dek": "The site\u2019s July 21 digest links women-centered Odyssey retellings and French intellectual Marxism; the prior day\u2019s edition turns toward Greek citizenship, grief and family origin.",
+    "headline": "Lit Hub\u2019s daily mix: Penelope, Sartre and the pull of homeland",
+    "source_ids": [
+      "cb2e35c8e86e2668-s1",
+      "cb2e35c8e86e2668-s2"
+    ],
+    "why_it_matters": "The cluster is a reminder that literary coverage is not just reviews: it is myth rewritten, ideology revisited and inheritance made bureaucratic and emotional at once."
+  },
+  {
+    "body": "Simon Willison is enthusiastic about Nativ, a new Mac app from Prince Canuma, the developer behind the MLX-VLM Python library for running vision-language models with Apple\u2019s MLX framework. Nativ packages that local-model world into a full macOS desktop application, roughly in the shape of LM Studio: there\u2019s a chat interface, plus a localhost API server for accessing models. A particularly nice touch, Willison notes, is that it picked up MLX models he had already tried from his Hugging Face cache directory.",
+    "cluster_id": "d432f3b109099753",
+    "dek": "Simon Willison flags a new macOS app from Prince Canuma that wraps MLX with chat and a localhost API server.",
+    "headline": "Nativ brings local AI models to the Mac desktop",
+    "source_ids": [
+      "d432f3b109099753-s1"
+    ],
+    "why_it_matters": "Local LLM tooling keeps moving from command-line hobbyism toward usable desktop software. If apps like Nativ make model discovery, chat and local APIs feel native, more developers can experiment without sending every prompt to a cloud provider."
+  },
+  {
+    "body": "Interconnects\u2019 headline says the quiet part loudly: \u201cKimi K3: The open-weights escalation.\u201d The excerpt offers only the frame \u2014 \u201cthe global implications on the AI ecosystem\u201d \u2014 not the details of the model, benchmarks or release terms. Still, the choice of language matters. \u201cEscalation\u201d suggests this is being read not as another model drop, but as part of the competitive pressure around open-weight AI systems: who releases capable models, under what constraints, and how that changes the balance between labs, developers and states.",
+    "cluster_id": "67ff2b06a92172c9",
+    "dek": "Interconnects frames the model as part of a broader shift with global implications for the AI ecosystem.",
+    "headline": "Kimi K3 enters the open-weights escalation",
+    "source_ids": [
+      "67ff2b06a92172c9-s1"
+    ],
+    "why_it_matters": "Open-weight releases can reshape who gets to build with frontier-adjacent AI. Even without the article\u2019s specifics, the framing points to a bigger contest over access, commoditization and strategic advantage."
+  },
+  {
+    "body": "President Trump\u2019s new tariffs on Canada are aimed at gaining concessions from one of the United States\u2019 most important trading partners, according to the New York Times. But the headline\u2019s warning \u2014 \u201cDon\u2019t Expect Carney to Roll Over\u201d \u2014 signals the story\u2019s real tension: the Canadian government, and the Canadian public, have been bracing for this escalation. That does not mean Ottawa has endless leverage, only that the expected script of U.S. pressure producing quick concessions may not hold.",
+    "cluster_id": "6156afd0accbe05a",
+    "dek": "The New York Times frames the new tariffs as an attempt to extract concessions from a top U.S. trading partner, but says Canada\u2019s government and public have prepared for escalation.",
+    "headline": "Trump turns up tariff pressure on Canada \u2014 and Carney is bracing, not bending",
+    "source_ids": [
+      "6156afd0accbe05a-s1"
+    ],
+    "why_it_matters": "Tariffs against Canada are never just bilateral theater. They ripple through integrated supply chains, domestic politics and the broader question of how U.S. allies respond when Washington treats trade as a pressure campaign."
+  },
+  {
+    "body": "In Sandpoint, Idaho, people still don\u2019t agree on how to characterize a woman\u2019s encounter with a transgender woman in a YMCA locker room. What is clearer, according to the New York Times, is what happened next: a 911 call followed, and the incident is still reverberating as part of the story behind the nation\u2019s strictest trans bathroom law. The excerpt is careful about local uncertainty \u2014 \u201cpeople\u2026 don\u2019t know how to characterize\u201d the encounter \u2014 which is important, because the political afterlife of such episodes often hardens ambiguity into legislative certainty.",
+    "cluster_id": "a31f8ae72111eb85",
+    "dek": "The New York Times traces how a contested locker-room encounter at a YMCA is still reverberating through state policy.",
+    "headline": "A 911 call in Sandpoint became the seed of Idaho\u2019s strict trans bathroom law",
+    "source_ids": [
+      "a31f8ae72111eb85-s1"
+    ],
+    "why_it_matters": "This is how culture-war policy often travels: from a local incident, through emergency language and public fear, into statewide rules governing everyday spaces."
+  },
+  {
+    "body": "Time Out has its weekly New York activity guides up: one for July 20\u201326, and another focused on the July 24\u201326 weekend. The available excerpts don\u2019t name the actual events, restaurants, shows or openings, so there\u2019s no honest way to pluck a recommendation from the cluster. Treat this as a useful pointer rather than a curated tip: if you\u2019re planning the week or weekend in the city, the listings are the thing to click through.",
+    "cluster_id": "e27b3fb2fbdf9f21",
+    "dek": "Two Time Out listings point to things to do in NYC for July 20\u201326 and the July 24\u201326 weekend, without surfacing specific picks.",
+    "headline": "Time Out maps the week in New York, but the excerpts keep the itinerary hidden",
+    "source_ids": [
+      "e27b3fb2fbdf9f21-s1",
+      "e27b3fb2fbdf9f21-s2"
+    ],
+    "why_it_matters": "Not every digest item needs to pretend it knows more than it does. The signal here is practical: Time Out has refreshed its NYC calendar for the week and weekend."
+  },
+  {
+    "body": "More than seven decades after it was lost at sea, the wreckage of the Pan Am Clipper Endeavor has been found, according to the New York Times. The plane crashed off Puerto Rico and sank to the bottom of the Atlantic Ocean; 52 of the 69 people aboard died. The excerpt does not say who found it or how, but the essential fact is stark enough: a mass-casualty aviation disaster that had remained physically unresolved now has a located wreck site.",
+    "cluster_id": "a3445aaf13ec60f5",
+    "dek": "The plane crashed off Puerto Rico, killing 52 of the 69 people aboard, and sank to the bottom of the Atlantic.",
+    "headline": "The Pan Am Clipper Endeavor has been found after more than 70 years underwater",
+    "source_ids": [
+      "a3445aaf13ec60f5-s1"
+    ],
+    "why_it_matters": "Finding a wreck is not the same as undoing a tragedy, but it can restore a measure of historical specificity \u2014 a place, an object, evidence \u2014 to lives long reduced to a disaster line."
+  }
+]

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-21</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Tuesday, July 21, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Venice Critics’ Week points its spotlight beyond the usual map</h2><p class="dek">The 2026 selection includes films from Colombia, China and Tunisia, according to Deadline; a Facebook-linked item repeats the same headline without adding detail.</p><div class="lead-lower"><div class="body-copy"><p>Venice Critics’ Week has unveiled its 2026 selection, with Deadline highlighting films from Colombia, China and Tunisia. The available excerpts don’t list titles, filmmakers or program structure, so the news here is less a full slate than a signal: the Venice sidebar is foregrounding work from regions that can still be treated as “international” seasoning by larger festival coverage. One source is a Facebook item that appears to mirror the Deadline headline rather than independently report the lineup, so the substantive sourcing is thin.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Critics’ Week is often where festival reputations start before the red carpet machine catches up. Even a bare lineup notice hints at which national cinemas and emerging directors may be entering the fall-film conversation.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxQVTZxQXNQWUlHMllqUFIzem9iRlUtUFhJaVB3UFRzMUszaV9ZSDJRY0JHa0Rpd3pRbjNtaGFhWXZNeVdWZ29jRU05V2F3YWFkYkRLTFo4Y3dXUHpiUnU5cGRQemx6OFJZU2F3aDVCLUJNTTkxWjdyUmV2OFlON01HZUtWbXEtRks5cmZ4ejdBNUo5V09WMERjdlE4UXNGTGdDM2tIRHpGR09ZUnR5NTA1bXBjTC1xN1AyLUNtUWJEWXZrUmdmQUxqV25HdGdfbDAzZXJsMQ?oc=5" target="_blank" rel="noreferrer">facebook.com</a> · <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNk9CaVM5SG9scHFiUF9ILTFSZjZWMHpYRERMc3lzZlNIc0k1R254aHloa0JkSFpSOFNObUYyZGlOMnZRTFh2Tk5uY1NZdGhOZ3ZMSkR6TWJaRjgzQTRpSW13VTJKeEZsM2JsTEhBZnBuLUhRdlcwZl9aN0hkY1cwRmh1cF84ellfcW1z?oc=5" target="_blank" rel="noreferrer">Deadline</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Lit Hub’s daily mix: Penelope, Sartre and the pull of homeland</h2><p class="dek">The site’s July 21 digest links women-centered Odyssey retellings and French intellectual Marxism; the prior day’s edition turns toward Greek citizenship, grief and family origin.</p><div class="body-copy"><p>Lit Hub’s daily roundup is doing what Lit Hub’s daily roundup does best: making literary criticism feel like a table of live wires. The July 21 edition points readers to an argument for more Odyssey retellings centered on women — “We are like Penelope, unraveling Homer’s tale for our own purposes” — and to a piece on how Jean-Paul Sartre and other French intellectuals came to embrace Marxism, to the horror of some observers. A July 20 item shifts registers, excerpting a memoir piece about trying to obtain Greek citizenship through a parent born in Greece while experiencing a family homeland amid grief.</p></div><p class="why"><strong>Why it matters:</strong> The cluster is a reminder that literary coverage is not just reviews: it is myth rewritten, ideology revisited and inheritance made bureaucratic and emotional at once.</p><p class="sources">Sources: <a href="https://lithub.com/lit-hub-daily-july-21-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-daily-july-20-2026/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Nativ brings local AI models to the Mac desktop</h2><p class="dek">Simon Willison flags a new macOS app from Prince Canuma that wraps MLX with chat and a localhost API server.</p><div class="body-copy"><p>Simon Willison is enthusiastic about Nativ, a new Mac app from Prince Canuma, the developer behind the MLX-VLM Python library for running vision-language models with Apple’s MLX framework. Nativ packages that local-model world into a full macOS desktop application, roughly in the shape of LM Studio: there’s a chat interface, plus a localhost API server for accessing models. A particularly nice touch, Willison notes, is that it picked up MLX models he had already tried from his Hugging Face cache directory.</p></div><p class="why"><strong>Why it matters:</strong> Local LLM tooling keeps moving from command-line hobbyism toward usable desktop software. If apps like Nativ make model discovery, chat and local APIs feel native, more developers can experiment without sending every prompt to a cloud provider.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/21/nativ/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Kimi K3 enters the open-weights escalation</h2><p class="dek">Interconnects frames the model as part of a broader shift with global implications for the AI ecosystem.</p><div class="body-copy"><p>Interconnects’ headline says the quiet part loudly: “Kimi K3: The open-weights escalation.” The excerpt offers only the frame — “the global implications on the AI ecosystem” — not the details of the model, benchmarks or release terms. Still, the choice of language matters. “Escalation” suggests this is being read not as another model drop, but as part of the competitive pressure around open-weight AI systems: who releases capable models, under what constraints, and how that changes the balance between labs, developers and states.</p></div><p class="why"><strong>Why it matters:</strong> Open-weight releases can reshape who gets to build with frontier-adjacent AI. Even without the article’s specifics, the framing points to a bigger contest over access, commoditization and strategic advantage.</p><p class="sources">Sources: <a href="https://interconnects.ai/p/kimi-k3-the-open-weights-escalation" target="_blank" rel="noreferrer">Interconnects</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Trump turns up tariff pressure on Canada — and Carney is bracing, not bending</h2><p class="dek">The New York Times frames the new tariffs as an attempt to extract concessions from a top U.S. trading partner, but says Canada’s government and public have prepared for escalation.</p><div class="body-copy"><p>President Trump’s new tariffs on Canada are aimed at gaining concessions from one of the United States’ most important trading partners, according to the New York Times. But the headline’s warning — “Don’t Expect Carney to Roll Over” — signals the story’s real tension: the Canadian government, and the Canadian public, have been bracing for this escalation. That does not mean Ottawa has endless leverage, only that the expected script of U.S. pressure producing quick concessions may not hold.</p></div><p class="why"><strong>Why it matters:</strong> Tariffs against Canada are never just bilateral theater. They ripple through integrated supply chains, domestic politics and the broader question of how U.S. allies respond when Washington treats trade as a pressure campaign.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/21/world/canada/trump-carney-trade-tariffs.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>A 911 call in Sandpoint became the seed of Idaho’s strict trans bathroom law</h2><p class="dek">The New York Times traces how a contested locker-room encounter at a YMCA is still reverberating through state policy.</p><div class="body-copy"><p>In Sandpoint, Idaho, people still don’t agree on how to characterize a woman’s encounter with a transgender woman in a YMCA locker room. What is clearer, according to the New York Times, is what happened next: a 911 call followed, and the incident is still reverberating as part of the story behind the nation’s strictest trans bathroom law. The excerpt is careful about local uncertainty — “people… don’t know how to characterize” the encounter — which is important, because the political afterlife of such episodes often hardens ambiguity into legislative certainty.</p></div><p class="why"><strong>Why it matters:</strong> This is how culture-war policy often travels: from a local incident, through emergency language and public fear, into statewide rules governing everyday spaces.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/21/us/sandpoint-idaho-transgender-bathroom-law.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Time Out maps the week in New York, but the excerpts keep the itinerary hidden</h2><p class="dek">Two Time Out listings point to things to do in NYC for July 20–26 and the July 24–26 weekend, without surfacing specific picks.</p><div class="body-copy"><p>Time Out has its weekly New York activity guides up: one for July 20–26, and another focused on the July 24–26 weekend. The available excerpts don’t name the actual events, restaurants, shows or openings, so there’s no honest way to pluck a recommendation from the cluster. Treat this as a useful pointer rather than a curated tip: if you’re planning the week or weekend in the city, the listings are the thing to click through.</p></div><p class="why"><strong>Why it matters:</strong> Not every digest item needs to pretend it knows more than it does. The signal here is practical: Time Out has refreshed its NYC calendar for the week and weekend.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOQWxYV1BnMmJ3MnRuWkN1MVVURFY2ck9aZWpWd0hVcVMtYlU0NkNXMTdYVEIxSVMzRGsxVzYzRXprV2MxNGlIWEtGc2xxNHZHUEFaLWJlYlpoMmRzLWNFdXJRWXpyV2ZmME9LTGNXazB3Y0pjeEsyWnk2Ty1vMEFodzV2QjhSZw?oc=5" target="_blank" rel="noreferrer">Time Out Worldwide</a> · <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxQRlpaREpSdTYyNVZZeDFBc1pLRzlseGpBa1lzMTdab050Vk5vUmxxYkJERjFSN2FnS3g3ZGJ0dWR0TWJ0cURlNHVZQ09oS3BoYUVqS3ZkLTRvNnM3amhnOEgtYktmd3hvYVZjcTYyZ2tYVzZfaktGSlpWNXZIaldCRFczVQ?oc=5" target="_blank" rel="noreferrer">Time Out Worldwide</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>The Pan Am Clipper Endeavor has been found after more than 70 years underwater</h2><p class="dek">The plane crashed off Puerto Rico, killing 52 of the 69 people aboard, and sank to the bottom of the Atlantic.</p><div class="body-copy"><p>More than seven decades after it was lost at sea, the wreckage of the Pan Am Clipper Endeavor has been found, according to the New York Times. The plane crashed off Puerto Rico and sank to the bottom of the Atlantic Ocean; 52 of the 69 people aboard died. The excerpt does not say who found it or how, but the essential fact is stark enough: a mass-casualty aviation disaster that had remained physically unresolved now has a located wreck site.</p></div><p class="why"><strong>Why it matters:</strong> Finding a wreck is not the same as undoing a tragedy, but it can restore a measure of historical specificity — a place, an object, evidence — to lives long reduced to a disaster line.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/21/us/pan-am-clipper-endeavor-wreckage-found.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 21, 2026
+</footer>
+</main>
+</body>
+</html>
