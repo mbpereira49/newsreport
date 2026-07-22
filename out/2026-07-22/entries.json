@@ -1,0 +1,84 @@
+[
+  {
+    "body": "A planned U.S.-Saudi nuclear agreement is already drawing fire before its announcement. According to the supplied report, the deal could let the kingdom enrich nuclear fuel as part of a civilian nuclear project. Critics in Congress and Israel worry that the same capability could shorten the path to a weapons program, even if the project is framed as peaceful energy policy. The key word is \u201ccould\u201d: the excerpt does not spell out the deal\u2019s safeguards, limits, or verification terms, so the shape of the risk depends on details not provided here.",
+    "cluster_id": "eed94c46e64b1358",
+    "dek": "The Trump administration is expected to announce an agreement that could allow Saudi Arabia to enrich nuclear fuel, alarming lawmakers and Israeli officials.",
+    "headline": "A Saudi nuclear deal tests Washington\u2019s comfort with enrichment",
+    "source_ids": [
+      "eed94c46e64b1358-s1"
+    ],
+    "why_it_matters": "Enrichment is the hard edge of civilian nuclear cooperation. If Washington loosens its standard for Riyadh, it could reshape nonproliferation politics in the Middle East and complicate U.S. relations with both Congress and Israel."
+  },
+  {
+    "body": "The House has passed a temporary spending bill that would fund the federal government through Dec. 4. That solves the immediate procedural problem but not the political one: the vote was narrow, Republicans pushed it through, and Democrats remain opposed. In other words, Congress has moved the deadline rather than defused the conflict. The supplied excerpt does not say what concessions or policy fights are driving the Democratic opposition, but it is clear the stopgap bill is only the opening act.",
+    "cluster_id": "c8409fca7b801c6f",
+    "dek": "Republicans narrowly passed a stopgap bill to keep the government funded through Dec. 4, but Democratic opposition keeps a shutdown fight alive.",
+    "headline": "The House buys time on funding, not peace",
+    "source_ids": [
+      "c8409fca7b801c6f-s1"
+    ],
+    "why_it_matters": "Short-term funding bills keep agencies open while preserving maximum leverage for the next standoff. Expect the real fight to concentrate around the next deadline, when both parties have less runway and more incentive to escalate."
+  },
+  {
+    "body": "Artificial intelligence is doing more than producing demos and workplace anxiety; it is helping carry markets and broader economic spending. The report says investment in A.I. and related companies is lifting the stock market and spending across the economy. That\u2019s the optimistic half. The risk is that a growing share of market confidence may be tied to one theme, making investors and the economy more vulnerable if expectations cool, investment slows, or promised productivity gains take longer than hoped. The excerpt does not quantify the boom, but it frames A.I. as both stimulus and stress test.",
+    "cluster_id": "d141aa729e79b2c0",
+    "dek": "Investment in artificial intelligence is lifting stocks and economic spending, but the same boom is raising the stakes for both.",
+    "headline": "A.I. is now a market engine\u2014and a concentration risk",
+    "source_ids": [
+      "d141aa729e79b2c0-s1"
+    ],
+    "why_it_matters": "When one technology narrative supports stocks, capital spending, and corporate strategy all at once, disappointment can travel fast. The A.I. trade is becoming macroeconomic, not just tech-sector gossip."
+  },
+  {
+    "body": "A wildfire threatening Pleasanton, California, has forced some residents to evacuate after spreading quickly across dry hillsides. One firefighter was injured, according to the report. The excerpt does not provide acreage, containment, weather conditions, or the exact number of people under evacuation orders beyond \u201cthousands,\u201d but the basic picture is familiar and grim: dry terrain, rapid spread, and communities pushed into emergency mode with little warning.",
+    "cluster_id": "3e5c817f1a933694",
+    "dek": "A Northern California fire spread across dry hillsides, injuring one firefighter and prompting evacuation orders.",
+    "headline": "A fast-moving Pleasanton wildfire forces thousands to evacuate",
+    "source_ids": [
+      "3e5c817f1a933694-s1"
+    ],
+    "why_it_matters": "For Northern California, a fire near populated areas is never just a local incident. It is a reminder that the wildland-urban edge remains fragile, especially when dry hillsides turn a spark into a public-safety crisis."
+  },
+  {
+    "body": "Nativ is a new macOS desktop app for running A.I. models locally on a Mac, highlighted by Simon Willison. It comes from Prince Canuma, developer of the MLX-VLM Python library for running vision-language models with Apple\u2019s MLX framework. The appeal is practical: Nativ wraps MLX in an app shaped somewhat like LM Studio, with a chat interface and a localhost API server. Willison notes that it even detected MLX models already sitting in his Hugging Face cache, a small but revealing quality-of-life touch. This is less about a new model than about smoothing the path between open models and everyday use.",
+    "cluster_id": "d432f3b109099753",
+    "dek": "Nativ wraps Apple\u2019s MLX ecosystem in a desktop interface with chat, a local API server, and Hugging Face cache awareness.",
+    "headline": "A Mac app makes local A.I. feel less like a hobby project",
+    "source_ids": [
+      "d432f3b109099753-s1"
+    ],
+    "why_it_matters": "Local LLMs are moving from command-line tinkering toward consumer-grade tooling. If apps like this get good enough, more developers can prototype privately, cheaply, and offline on hardware they already own."
+  },
+  {
+    "body": "Chez Panisse, the Bay Area restaurant long treated as a founding text of American farm-to-table cooking, has opened a new place right next door: Bar Panisse. The review frames the original as a restaurant that changed the American dining scene and describes the newcomer as \u201cdynamic,\u201d though the excerpts do not offer menu details, verdict, or star-level assessment. Still, the premise alone is notable: a canonical restaurant is not merely preserving its legacy but extending it physically and conceptually into the neighboring space.",
+    "cluster_id": "999d2c775328c25c",
+    "dek": "The Berkeley farm-to-table institution that helped change American restaurants now has a new companion: Bar Panisse.",
+    "headline": "Chez Panisse gets a next-door sequel",
+    "source_ids": [
+      "999d2c775328c25c-s1",
+      "999d2c775328c25c-s2"
+    ],
+    "why_it_matters": "Restaurants with this much history can become museums of their own influence. A new adjacent bar suggests Chez Panisse is trying to stay alive as a working idea, not just a pilgrimage site."
+  },
+  {
+    "body": "Venice Critics\u2019 Week has unveiled its 2026 selection, with films from Colombia, China, and Tunisia among those highlighted in the available excerpts. The sourcing is uneven: one item is a Facebook-linked headline, while the clearer attribution comes from Deadline. The excerpts do not list titles, filmmakers, or program structure, so the takeaway is necessarily limited. Still, the geographic spread is the story the headlines emphasize: the sidebar is presenting itself as a platform for work from multiple film cultures rather than a narrow European showcase.",
+    "cluster_id": "65ea7ea22a185b7c",
+    "dek": "The 2026 selection includes films from Colombia, China, and Tunisia, according to Deadline and a linked social post.",
+    "headline": "Venice Critics\u2019 Week points its spotlight beyond the usual centers",
+    "source_ids": [
+      "65ea7ea22a185b7c-s1",
+      "65ea7ea22a185b7c-s2"
+    ],
+    "why_it_matters": "Festival sidebars can shape the first wave of international attention for emerging filmmakers. Even a small programming announcement can matter if it becomes the route from regional cinema to global distribution and criticism."
+  },
+  {
+    "body": "New York may be getting more bats. The report says the city\u2019s bat population appears to be rising after a disease cut into their ranks some years back. The wording is cautious\u2014\u201clooks as though\u201d\u2014so this is not presented as a final census or sweeping ecological recovery. But it is a welcome urban-wildlife note: a creature often treated as spooky background is quietly reoccupying the city\u2019s night skies.",
+    "cluster_id": "ecdb28513cf3935b",
+    "dek": "After disease reduced their numbers years ago, the city\u2019s bat population now seems to be rising.",
+    "headline": "New York\u2019s bats appear to be making a comeback",
+    "source_ids": [
+      "ecdb28513cf3935b-s1"
+    ],
+    "why_it_matters": "Bats are part of the urban ecosystem, not just Halloween d\u00e9cor. A rebound would suggest that even dense cities can host recovering wildlife populations when disease pressure eases and habitat remains usable."
+  }
+]

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-22</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Wednesday, July 22, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>A Saudi nuclear deal tests Washington’s comfort with enrichment</h2><p class="dek">The Trump administration is expected to announce an agreement that could allow Saudi Arabia to enrich nuclear fuel, alarming lawmakers and Israeli officials.</p><div class="lead-lower"><div class="body-copy"><p>A planned U.S.-Saudi nuclear agreement is already drawing fire before its announcement. According to the supplied report, the deal could let the kingdom enrich nuclear fuel as part of a civilian nuclear project. Critics in Congress and Israel worry that the same capability could shorten the path to a weapons program, even if the project is framed as peaceful energy policy. The key word is “could”: the excerpt does not spell out the deal’s safeguards, limits, or verification terms, so the shape of the risk depends on details not provided here.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Enrichment is the hard edge of civilian nuclear cooperation. If Washington loosens its standard for Riyadh, it could reshape nonproliferation politics in the Middle East and complicate U.S. relations with both Congress and Israel.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/21/us/politics/trump-saudi-nuclear-deal.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>The House buys time on funding, not peace</h2><p class="dek">Republicans narrowly passed a stopgap bill to keep the government funded through Dec. 4, but Democratic opposition keeps a shutdown fight alive.</p><div class="body-copy"><p>The House has passed a temporary spending bill that would fund the federal government through Dec. 4. That solves the immediate procedural problem but not the political one: the vote was narrow, Republicans pushed it through, and Democrats remain opposed. In other words, Congress has moved the deadline rather than defused the conflict. The supplied excerpt does not say what concessions or policy fights are driving the Democratic opposition, but it is clear the stopgap bill is only the opening act.</p></div><p class="why"><strong>Why it matters:</strong> Short-term funding bills keep agencies open while preserving maximum leverage for the next standoff. Expect the real fight to concentrate around the next deadline, when both parties have less runway and more incentive to escalate.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/21/us/politics/house-stopgap-spending-bill-shutdown.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>A.I. is now a market engine—and a concentration risk</h2><p class="dek">Investment in artificial intelligence is lifting stocks and economic spending, but the same boom is raising the stakes for both.</p><div class="body-copy"><p>Artificial intelligence is doing more than producing demos and workplace anxiety; it is helping carry markets and broader economic spending. The report says investment in A.I. and related companies is lifting the stock market and spending across the economy. That’s the optimistic half. The risk is that a growing share of market confidence may be tied to one theme, making investors and the economy more vulnerable if expectations cool, investment slows, or promised productivity gains take longer than hoped. The excerpt does not quantify the boom, but it frames A.I. as both stimulus and stress test.</p></div><p class="why"><strong>Why it matters:</strong> When one technology narrative supports stocks, capital spending, and corporate strategy all at once, disappointment can travel fast. The A.I. trade is becoming macroeconomic, not just tech-sector gossip.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/22/business/economy/stocks-economy-ai.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>A fast-moving Pleasanton wildfire forces thousands to evacuate</h2><p class="dek">A Northern California fire spread across dry hillsides, injuring one firefighter and prompting evacuation orders.</p><div class="body-copy"><p>A wildfire threatening Pleasanton, California, has forced some residents to evacuate after spreading quickly across dry hillsides. One firefighter was injured, according to the report. The excerpt does not provide acreage, containment, weather conditions, or the exact number of people under evacuation orders beyond “thousands,” but the basic picture is familiar and grim: dry terrain, rapid spread, and communities pushed into emergency mode with little warning.</p></div><p class="why"><strong>Why it matters:</strong> For Northern California, a fire near populated areas is never just a local incident. It is a reminder that the wildland-urban edge remains fragile, especially when dry hillsides turn a spark into a public-safety crisis.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/21/us/little-fire-pleasanton-ca.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>A Mac app makes local A.I. feel less like a hobby project</h2><p class="dek">Nativ wraps Apple’s MLX ecosystem in a desktop interface with chat, a local API server, and Hugging Face cache awareness.</p><div class="body-copy"><p>Nativ is a new macOS desktop app for running A.I. models locally on a Mac, highlighted by Simon Willison. It comes from Prince Canuma, developer of the MLX-VLM Python library for running vision-language models with Apple’s MLX framework. The appeal is practical: Nativ wraps MLX in an app shaped somewhat like LM Studio, with a chat interface and a localhost API server. Willison notes that it even detected MLX models already sitting in his Hugging Face cache, a small but revealing quality-of-life touch. This is less about a new model than about smoothing the path between open models and everyday use.</p></div><p class="why"><strong>Why it matters:</strong> Local LLMs are moving from command-line tinkering toward consumer-grade tooling. If apps like this get good enough, more developers can prototype privately, cheaply, and offline on hardware they already own.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/21/nativ/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Chez Panisse gets a next-door sequel</h2><p class="dek">The Berkeley farm-to-table institution that helped change American restaurants now has a new companion: Bar Panisse.</p><div class="body-copy"><p>Chez Panisse, the Bay Area restaurant long treated as a founding text of American farm-to-table cooking, has opened a new place right next door: Bar Panisse. The review frames the original as a restaurant that changed the American dining scene and describes the newcomer as “dynamic,” though the excerpts do not offer menu details, verdict, or star-level assessment. Still, the premise alone is notable: a canonical restaurant is not merely preserving its legacy but extending it physically and conceptually into the neighboring space.</p></div><p class="why"><strong>Why it matters:</strong> Restaurants with this much history can become museums of their own influence. A new adjacent bar suggests Chez Panisse is trying to stay alive as a working idea, not just a pilgrimage site.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/21/dining/restaurant-review-chez-panisse.html" target="_blank" rel="noreferrer">NYT Dining &amp; Wine</a> · <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxQTExaTnotZnZNcXBSWWh4QWtSY1BKbWxRUDhpNjkxVG0xeTdVUmcxeEdvYXNjUTNnRGpBWE1jaVdHaEFzUzd3TFVPSFJCbVZmUVZuMTBOVXVLcl9vVGtJMXJmdElsR0NERFRmZHY4VWx3NVNwNndOUVhBNUlPbmRyVDZOdw?oc=5" target="_blank" rel="noreferrer">The New York Times</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Venice Critics’ Week points its spotlight beyond the usual centers</h2><p class="dek">The 2026 selection includes films from Colombia, China, and Tunisia, according to Deadline and a linked social post.</p><div class="body-copy"><p>Venice Critics’ Week has unveiled its 2026 selection, with films from Colombia, China, and Tunisia among those highlighted in the available excerpts. The sourcing is uneven: one item is a Facebook-linked headline, while the clearer attribution comes from Deadline. The excerpts do not list titles, filmmakers, or program structure, so the takeaway is necessarily limited. Still, the geographic spread is the story the headlines emphasize: the sidebar is presenting itself as a platform for work from multiple film cultures rather than a narrow European showcase.</p></div><p class="why"><strong>Why it matters:</strong> Festival sidebars can shape the first wave of international attention for emerging filmmakers. Even a small programming announcement can matter if it becomes the route from regional cinema to global distribution and criticism.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxQVTZxQXNQWUlHMllqUFIzem9iRlUtUFhJaVB3UFRzMUszaV9ZSDJRY0JHa0Rpd3pRbjNtaGFhWXZNeVdWZ29jRU05V2F3YWFkYkRLTFo4Y3dXUHpiUnU5cGRQemx6OFJZU2F3aDVCLUJNTTkxWjdyUmV2OFlON01HZUtWbXEtRks5cmZ4ejdBNUo5V09WMERjdlE4UXNGTGdDM2tIRHpGR09ZUnR5NTA1bXBjTC1xN1AyLUNtUWJEWXZrUmdmQUxqV25HdGdfbDAzZXJsMQ?oc=5" target="_blank" rel="noreferrer">facebook.com</a> · <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNk9CaVM5SG9scHFiUF9ILTFSZjZWMHpYRERMc3lzZlNIc0k1R254aHloa0JkSFpSOFNObUYyZGlOMnZRTFh2Tk5uY1NZdGhOZ3ZMSkR6TWJaRjgzQTRpSW13VTJKeEZsM2JsTEhBZnBuLUhRdlcwZl9aN0hkY1cwRmh1cF84ellfcW1z?oc=5" target="_blank" rel="noreferrer">Deadline</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>New York’s bats appear to be making a comeback</h2><p class="dek">After disease reduced their numbers years ago, the city’s bat population now seems to be rising.</p><div class="body-copy"><p>New York may be getting more bats. The report says the city’s bat population appears to be rising after a disease cut into their ranks some years back. The wording is cautious—“looks as though”—so this is not presented as a final census or sweeping ecological recovery. But it is a welcome urban-wildlife note: a creature often treated as spooky background is quietly reoccupying the city’s night skies.</p></div><p class="why"><strong>Why it matters:</strong> Bats are part of the urban ecosystem, not just Halloween décor. A rebound would suggest that even dense cities can host recovering wildlife populations when disease pressure eases and habitat remains usable.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/22/nyregion/for-bats-new-yorks-a-wonderful-town.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 22, 2026
+</footer>
+</main>
+</body>
+</html>
