@@ -1,0 +1,86 @@
+[
+  {
+    "body": "The core tension in this account is almost painfully simple: President Trump has the \u201cworld\u2019s biggest hammer,\u201d but not a clean way out. The New York Times describes a president who believed there were few limits on his power now discovering several amid the Iran war, with frustration hardening into erratic behavior. The second source is essentially the same Times story surfaced through Google News, so this is a single-frame read rather than a competing account.",
+    "cluster_id": "8603589c6fc7c80c",
+    "dek": "The Times frames the president as armed with overwhelming force but hemmed in by the realities of war.",
+    "headline": "Trump\u2019s Iran war is exposing limits he didn\u2019t expect",
+    "source_ids": [
+      "8603589c6fc7c80c-s1",
+      "8603589c6fc7c80c-s2"
+    ],
+    "why_it_matters": "Wars tend to punish maximalist theories of executive power. If even overwhelming military capacity does not produce control, the political story becomes less about strength than constraint \u2014 and about how a frustrated president responds to it."
+  },
+  {
+    "body": "Tariffs are back, but the backdrop is uglier than a normal trade fight. The Times\u2019 business desk notes that the global economy is already jolted by a Persian Gulf war and oil at $100 a barrel. That means new tariffs land not as an isolated policy experiment, but as a second inflationary shove at a moment when energy costs are already doing damage.",
+    "cluster_id": "8116c22d064b8ea6",
+    "dek": "The global economy is being asked to absorb two shocks at once: a Persian Gulf war and renewed tariffs.",
+    "headline": "Oil at $100 makes the tariff sequel more dangerous",
+    "source_ids": [
+      "8116c22d064b8ea6-s1"
+    ],
+    "why_it_matters": "The political temptation is to treat tariffs as a domestic lever. The economic reality is messier: when oil prices are spiking because of war, tariffs can amplify price pressure across supply chains and household budgets."
+  },
+  {
+    "body": "A recent Supreme Court ruling has opened the door for the Trump administration to end a humanitarian program that allowed about one million immigrants to work legally in the United States. Employers are now warning of labor shortages. The story is framed less as an immigration-court abstraction than as an operational question for businesses that have been relying on workers whose legal status may now disappear.",
+    "cluster_id": "7ccd42650559c8a7",
+    "dek": "Employers are bracing after a Supreme Court ruling cleared the way to end work authorization for roughly one million immigrants.",
+    "headline": "Ending protected status could turn into a labor problem fast",
+    "source_ids": [
+      "7ccd42650559c8a7-s1"
+    ],
+    "why_it_matters": "Immigration policy often gets argued as border politics, but this is the workplace version: remove legal work status at scale, and employers may suddenly confront vacancies, churn and higher labor stress in sectors that depend on immigrant workers."
+  },
+  {
+    "body": "Astral\u2019s Ruff v0.16.0 shipped July 23 with a much larger default rule set: 413 enabled rules, up from 59. Simon Willison noticed the practical consequence when CI jobs began failing because his development dependency on \u201cruff\u201d was unpinned. The release expands defaults after years of rule growth, from 708 rules in v0.1.0-era context to 968 now, including checks that can catch syntax errors and immediate runtime errors.",
+    "cluster_id": "91b0db353ea49fec",
+    "dek": "The Python linter now enables 413 rules by default, up from 59 \u2014 a reminder that unpinned tooling is still production risk.",
+    "headline": "Ruff\u2019s big default-rule jump broke the quiet contract of dev dependencies",
+    "source_ids": [
+      "91b0db353ea49fec-s1"
+    ],
+    "why_it_matters": "Better defaults can still be breaking changes in practice. For teams, this is a small but useful parable: pin your developer tools, especially when they sit in CI and can stop work across multiple projects overnight."
+  },
+  {
+    "body": "Lit Hub\u2019s weekly Book Marks list highlights Colson Whitehead\u2019s \u201cCool Machine,\u201d Michael Cunningham\u2019s \u201cUnsayable\u201d and Claire Vaye Watkins\u2019s \u201cYellow Pine\u201d among the best reviewed books of the week. The excerpt gives only a glimpse \u2014 including that Whitehead\u2019s \u201cCool Machine\u201d leads the fiction list \u2014 but the signal is clear enough: this is a week anchored by heavyweight literary fiction and critical consensus rather than sleeper discovery.",
+    "cluster_id": "748c47242674388c",
+    "dek": "Lit Hub\u2019s Book Marks roundup puts three literary names near the top of the week\u2019s best-reviewed fiction.",
+    "headline": "This week\u2019s review darlings: Whitehead, Cunningham and Watkins",
+    "source_ids": [
+      "748c47242674388c-s1",
+      "748c47242674388c-s2"
+    ],
+    "why_it_matters": "Review roundups are imperfect instruments, but useful ones: they show where critical attention is clustering, and this week it appears to be clustering around established, serious-fiction names."
+  },
+  {
+    "body": "LetsRun has compiled results across the first three days of the 2026 USATF Outdoor Championships. The Day 2 note carries the most drama in the available excerpts: Noah Lyles and Sha\u2019Carri Richardson delivered as favorites in the 100 meters, while Donavan Brazier flamed out in the 800 and Quincy Hall bombed out of the 400. Day 1 and Day 3 are presented chiefly as compiled-results posts, useful for avoiding the usual scavenger hunt through event pages.",
+    "cluster_id": "c088877b5fa04587",
+    "dek": "LetsRun\u2019s rolling results captured a meet where Noah Lyles and Sha\u2019Carri Richardson delivered, while Donavan Brazier and Quincy Hall faltered.",
+    "headline": "At USATF championships, the favorites hit \u2014 and some big names missed",
+    "source_ids": [
+      "c088877b5fa04587-s1",
+      "c088877b5fa04587-s2",
+      "c088877b5fa04587-s3"
+    ],
+    "why_it_matters": "National championships are where reputations either cash out or wobble. Even from brief results notes, the meet already has the familiar championship mix: stars confirming form, contenders losing margin, and selectors getting real evidence instead of season-long assumptions."
+  },
+  {
+    "body": "For Christopher Nolan\u2019s \u201cOdyssey,\u201d composer Ludwig G\u00f6ransson resurrects the aulos, an ancient instrument, for the siren scene. The Times frames the choice as a way to evoke the \u201ctormenting allure\u201d of the sirens \u2014 not just by scoring myth with eerie music, but by pulling an old sound-world into a modern blockbuster.",
+    "cluster_id": "6de089460e54979a",
+    "dek": "Ludwig G\u00f6ransson\u2019s score uses the aulos to make myth feel less like museum glass and more like temptation.",
+    "headline": "Nolan\u2019s \u2018Odyssey\u2019 sirens get their ancient sound back",
+    "source_ids": [
+      "6de089460e54979a-s1"
+    ],
+    "why_it_matters": "The best historical gestures in film are not trivia; they change texture. Using an ancient instrument for the sirens suggests a score interested in making antiquity strange and bodily again, rather than merely grand."
+  },
+  {
+    "body": "Uber and Lyft still dominate app-based for-hire vehicles, but new rivals are trying to make inroads in New York City. Their pitch, according to the Times excerpt, leans on driver-friendly overtures. The catch is history: others have tried and failed. That makes this less a disruption fairy tale than a test of whether better terms for drivers can overcome entrenched rider habits and platform scale.",
+    "cluster_id": "210f48191235c8c9",
+    "dek": "New ride-share rivals are again testing New York City, where others have already tried and failed to crack the duopoly.",
+    "headline": "Uber and Lyft\u2019s challengers are trying the driver-friendly route",
+    "source_ids": [
+      "210f48191235c8c9-s1"
+    ],
+    "why_it_matters": "Ride-share competition is usually framed around passenger prices and wait times. A driver-centered challenge asks a sharper question: can labor conditions become a competitive advantage in a market built by network effects?"
+  }
+]
