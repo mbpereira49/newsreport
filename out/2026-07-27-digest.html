@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-27</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Monday, July 27, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Three killed in shooting near Seattle’s Space Needle</h2><p class="dek">Police said one suspect was in custody and another was still being sought after violence at a food festival Sunday.</p><div class="lead-lower"><div class="body-copy"><p>A Seattle food festival became the site of a fatal shooting Sunday near the Space Needle, leaving three people dead, according to police. The available report says one suspect was in custody while police continued searching for another, a detail that keeps the story in the active-investigation category rather than the settled-account category.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Public gatherings remain vulnerable spaces, and the split status of the suspects means the immediate safety and accountability questions are still unresolved.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/27/us/seattle-shooting-suspect-victims-what-happened.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Pentagon casualty reporting gets harder to read</h2><p class="dek">A change in how Iran war casualties are posted separates figures across two web pages, potentially obscuring the full toll.</p><div class="body-copy"><p>The Pentagon has changed the way it reports casualty numbers from the Iran war, splitting the figures into two separate web pages. The practical effect, as framed by the report, is not a revision of the toll itself but a presentation change that may make the total harder to tally. That distinction matters: transparency can erode through formatting as much as through omission.</p></div><p class="why"><strong>Why it matters:</strong> In wartime, casualty accounting is one of the public’s basic tools for judging costs. Making the count more cumbersome weakens oversight even if the underlying numbers remain available.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/26/us/politics/pentagon-casualties-iran-war.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Arizona Republicans nominate an election denier to run elections</h2><p class="dek">Alexander Kolodin, whose election-denial efforts drew a state bar admonition, is now the GOP nominee for secretary of state.</p><div class="body-copy"><p>Arizona Republican voters nominated Alexander Kolodin for secretary of state, putting an election denier in position to seek control of the state’s election machinery. The report’s sharpest line is its ambiguity: voters backed him “despite, or perhaps because of” election-denial efforts that earned him an admonition from the state bar association. That uncertainty is the story—whether election denial is a liability in Arizona GOP politics, or a credential.</p></div><p class="why"><strong>Why it matters:</strong> Secretary of state races can sound procedural until they become contests over who administers and legitimizes elections. Arizona is again testing that boundary.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/27/us/alexander-kolodin-election-denial-arizona.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Warsh faces his first real Fed test: tolerate inflation or hike</h2><p class="dek">The new Fed chairman, who has said there is “no tolerance” for elevated inflation, must decide whether to push for a rate increase this week.</p><div class="body-copy"><p>Kevin M. Warsh’s rhetoric is meeting the policy calendar. The new Federal Reserve chairman has said the central bank has “no tolerance” for elevated inflation; now he must decide whether to push for an interest-rate increase at this week’s meeting. The excerpt frames this as his biggest test yet because it forces a choice between anti-inflation credibility and the risks that come with tightening.</p></div><p class="why"><strong>Why it matters:</strong> A new Fed chair’s early decisions can define how seriously markets, businesses and households take his stated inflation stance. This week may show whether Warsh’s language was posture or policy.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/27/business/the-feds-new-chairman-faces-his-biggest-test-yet.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>The gray market reselling discounted LLM access</h2><p class="dek">A relay economy is pooling API keys and routing users through proxies, with discounts allegedly powered by free-trial abuse, exposed bots and fraud.</p><div class="body-copy"><p>Simon Willison highlights Matt Lenhard’s investigation into a relay market for reselling LLM tokens at a discount. The model, as described, is straightforward and ugly: resellers sell access to an LLM proxy, then source cheaper or illicit capacity by pooling API keys, abusing free trials, proxying through unprotected support bots, or using stolen credit cards and chargeback attacks. The activity appears to be mostly in China. The tooling complicates the picture: one-api and its fork new-api are described as open-source, legitimate API proxy products, even if some operators use them for abuse.</p></div><p class="why"><strong>Why it matters:</strong> AI pricing, API security and fraud are now entangled. If discounted “LLM access” is subsidized by abuse, providers will keep tightening controls—and legitimate proxy and aggregation tools may get caught in the blast radius.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/26/relay-market/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Restarting a dead nuclear plant is not just flipping a switch</h2><p class="dek">The first U.S. attempt to reopen a shuttered reactor has run into worn equipment and poor planning.</p><div class="body-copy"><p>The push to restart a shuttered nuclear reactor in the United States is proving harder than the pro-revival pitch can make it sound. According to the report, the country’s first such attempt has been held back by run-down equipment and a lack of planning. That is a useful corrective to the clean-energy shorthand around nuclear restarts: dormant infrastructure has a long memory, and neglect becomes a project cost.</p></div><p class="why"><strong>Why it matters:</strong> As nuclear power gets renewed attention, reopening old plants may look faster than building new ones. This case suggests speed depends less on ambition than on maintenance, planning and the condition of the machinery left behind.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/27/business/energy-environment/nuclear-power-palisades-michigan.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>USATF outdoor championships wrap in New York</h2><p class="dek">The national track meet returned to New York City for the first time since 1991, with final-day results posted from Icahn Stadium.</p><div class="body-copy"><p>LetsRun compiled results from all four days of the 2026 USATF Outdoor Championships, held at Icahn Stadium on Randall’s Island—New York City’s first time hosting the meet since 1991. The final-day post covers Sunday, July 26, while earlier updates note that Noah Lyles and Sha’Carri Richardson delivered as favorites in the 100-meter races. Not everyone did: Donavan Brazier “flamed out” in the 800, and Quincy Hall “bombed out” of the 400, in LetsRun’s blunt house style.</p></div><p class="why"><strong>Why it matters:</strong> National championships are where reputations get confirmed, dented or rewritten. This meet offered both expected sprint wins and high-profile disappointments.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/07/2026-usatf-outdoor-championships-final-day-results-day-4-results/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/07/day-3-2026-usatf-outdoor-championships-results/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/07/day-2-2026-usatf-outdoor-championships-results/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Lit Hub’s daily mix: class, Cash and the canon</h2><p class="dek">Today’s literary roundup points to class in publishing, Johnny Cash at prison, and Rebecca Solnit on the Odyssey’s silencing of women.</p><div class="body-copy"><p>Lit Hub’s July 27 daily roundup points readers toward a conversation with D/Annie Liontas, Sara Nović, Chet’la Sebree and Maria Adelman on the literary world’s unacknowledged class system, plus a music piece on the time Johnny Cash almost started a riot at California’s most infamous prison. Its weekly roundup also foregrounds Rebecca Solnit’s critique of the Odyssey and the Western tradition of silencing women, including the line: “Classical culture is a lot of things including, literally, rape culture.”</p></div><p class="why"><strong>Why it matters:</strong> The through-line is power inside culture: who gets heard, who gets mythologized, and who gets edited out—whether in publishing, prison music lore or the classical canon.</p><p class="sources">Sources: <a href="https://lithub.com/lit-hub-daily-july-27-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-weekly-july-20-24-2026/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 27, 2026
+</footer>
+</main>
+</body>
+</html>

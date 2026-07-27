@@ -1,0 +1,85 @@
+[
+  {
+    "body": "A Seattle food festival became the site of a fatal shooting Sunday near the Space Needle, leaving three people dead, according to police. The available report says one suspect was in custody while police continued searching for another, a detail that keeps the story in the active-investigation category rather than the settled-account category.",
+    "cluster_id": "20440ca2b9761433",
+    "dek": "Police said one suspect was in custody and another was still being sought after violence at a food festival Sunday.",
+    "headline": "Three killed in shooting near Seattle\u2019s Space Needle",
+    "source_ids": [
+      "20440ca2b9761433-s1"
+    ],
+    "why_it_matters": "Public gatherings remain vulnerable spaces, and the split status of the suspects means the immediate safety and accountability questions are still unresolved."
+  },
+  {
+    "body": "The Pentagon has changed the way it reports casualty numbers from the Iran war, splitting the figures into two separate web pages. The practical effect, as framed by the report, is not a revision of the toll itself but a presentation change that may make the total harder to tally. That distinction matters: transparency can erode through formatting as much as through omission.",
+    "cluster_id": "98a778fb9dba64bf",
+    "dek": "A change in how Iran war casualties are posted separates figures across two web pages, potentially obscuring the full toll.",
+    "headline": "Pentagon casualty reporting gets harder to read",
+    "source_ids": [
+      "98a778fb9dba64bf-s1"
+    ],
+    "why_it_matters": "In wartime, casualty accounting is one of the public\u2019s basic tools for judging costs. Making the count more cumbersome weakens oversight even if the underlying numbers remain available."
+  },
+  {
+    "body": "Arizona Republican voters nominated Alexander Kolodin for secretary of state, putting an election denier in position to seek control of the state\u2019s election machinery. The report\u2019s sharpest line is its ambiguity: voters backed him \u201cdespite, or perhaps because of\u201d election-denial efforts that earned him an admonition from the state bar association. That uncertainty is the story\u2014whether election denial is a liability in Arizona GOP politics, or a credential.",
+    "cluster_id": "a2d6aa423812423b",
+    "dek": "Alexander Kolodin, whose election-denial efforts drew a state bar admonition, is now the GOP nominee for secretary of state.",
+    "headline": "Arizona Republicans nominate an election denier to run elections",
+    "source_ids": [
+      "a2d6aa423812423b-s1"
+    ],
+    "why_it_matters": "Secretary of state races can sound procedural until they become contests over who administers and legitimizes elections. Arizona is again testing that boundary."
+  },
+  {
+    "body": "Kevin M. Warsh\u2019s rhetoric is meeting the policy calendar. The new Federal Reserve chairman has said the central bank has \u201cno tolerance\u201d for elevated inflation; now he must decide whether to push for an interest-rate increase at this week\u2019s meeting. The excerpt frames this as his biggest test yet because it forces a choice between anti-inflation credibility and the risks that come with tightening.",
+    "cluster_id": "dff823a53d69e0be",
+    "dek": "The new Fed chairman, who has said there is \u201cno tolerance\u201d for elevated inflation, must decide whether to push for a rate increase this week.",
+    "headline": "Warsh faces his first real Fed test: tolerate inflation or hike",
+    "source_ids": [
+      "dff823a53d69e0be-s1"
+    ],
+    "why_it_matters": "A new Fed chair\u2019s early decisions can define how seriously markets, businesses and households take his stated inflation stance. This week may show whether Warsh\u2019s language was posture or policy."
+  },
+  {
+    "body": "Simon Willison highlights Matt Lenhard\u2019s investigation into a relay market for reselling LLM tokens at a discount. The model, as described, is straightforward and ugly: resellers sell access to an LLM proxy, then source cheaper or illicit capacity by pooling API keys, abusing free trials, proxying through unprotected support bots, or using stolen credit cards and chargeback attacks. The activity appears to be mostly in China. The tooling complicates the picture: one-api and its fork new-api are described as open-source, legitimate API proxy products, even if some operators use them for abuse.",
+    "cluster_id": "b7c4b938a0f66a25",
+    "dek": "A relay economy is pooling API keys and routing users through proxies, with discounts allegedly powered by free-trial abuse, exposed bots and fraud.",
+    "headline": "The gray market reselling discounted LLM access",
+    "source_ids": [
+      "b7c4b938a0f66a25-s1"
+    ],
+    "why_it_matters": "AI pricing, API security and fraud are now entangled. If discounted \u201cLLM access\u201d is subsidized by abuse, providers will keep tightening controls\u2014and legitimate proxy and aggregation tools may get caught in the blast radius."
+  },
+  {
+    "body": "The push to restart a shuttered nuclear reactor in the United States is proving harder than the pro-revival pitch can make it sound. According to the report, the country\u2019s first such attempt has been held back by run-down equipment and a lack of planning. That is a useful corrective to the clean-energy shorthand around nuclear restarts: dormant infrastructure has a long memory, and neglect becomes a project cost.",
+    "cluster_id": "9a9cb33813acb8b8",
+    "dek": "The first U.S. attempt to reopen a shuttered reactor has run into worn equipment and poor planning.",
+    "headline": "Restarting a dead nuclear plant is not just flipping a switch",
+    "source_ids": [
+      "9a9cb33813acb8b8-s1"
+    ],
+    "why_it_matters": "As nuclear power gets renewed attention, reopening old plants may look faster than building new ones. This case suggests speed depends less on ambition than on maintenance, planning and the condition of the machinery left behind."
+  },
+  {
+    "body": "LetsRun compiled results from all four days of the 2026 USATF Outdoor Championships, held at Icahn Stadium on Randall\u2019s Island\u2014New York City\u2019s first time hosting the meet since 1991. The final-day post covers Sunday, July 26, while earlier updates note that Noah Lyles and Sha\u2019Carri Richardson delivered as favorites in the 100-meter races. Not everyone did: Donavan Brazier \u201cflamed out\u201d in the 800, and Quincy Hall \u201cbombed out\u201d of the 400, in LetsRun\u2019s blunt house style.",
+    "cluster_id": "a082e23d5ddb1f45",
+    "dek": "The national track meet returned to New York City for the first time since 1991, with final-day results posted from Icahn Stadium.",
+    "headline": "USATF outdoor championships wrap in New York",
+    "source_ids": [
+      "a082e23d5ddb1f45-s1",
+      "a082e23d5ddb1f45-s2",
+      "a082e23d5ddb1f45-s3"
+    ],
+    "why_it_matters": "National championships are where reputations get confirmed, dented or rewritten. This meet offered both expected sprint wins and high-profile disappointments."
+  },
+  {
+    "body": "Lit Hub\u2019s July 27 daily roundup points readers toward a conversation with D/Annie Liontas, Sara Novi\u0107, Chet\u2019la Sebree and Maria Adelman on the literary world\u2019s unacknowledged class system, plus a music piece on the time Johnny Cash almost started a riot at California\u2019s most infamous prison. Its weekly roundup also foregrounds Rebecca Solnit\u2019s critique of the Odyssey and the Western tradition of silencing women, including the line: \u201cClassical culture is a lot of things including, literally, rape culture.\u201d",
+    "cluster_id": "f8bfa3e3479588e5",
+    "dek": "Today\u2019s literary roundup points to class in publishing, Johnny Cash at prison, and Rebecca Solnit on the Odyssey\u2019s silencing of women.",
+    "headline": "Lit Hub\u2019s daily mix: class, Cash and the canon",
+    "source_ids": [
+      "f8bfa3e3479588e5-s1",
+      "f8bfa3e3479588e5-s2"
+    ],
+    "why_it_matters": "The through-line is power inside culture: who gets heard, who gets mythologized, and who gets edited out\u2014whether in publishing, prison music lore or the classical canon."
+  }
+]
