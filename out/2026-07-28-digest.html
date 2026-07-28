@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-07-28</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Tuesday, July 28, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Etched pulls in $300 million for the AI inference arms race</h2><p class="dek">The chip startup’s Series C reportedly values it at $10.3 billion, a reminder that AI’s next bottleneck is not just models—it is serving them cheaply and fast.</p><div class="lead-lower"><div class="body-copy"><p>Etched has raised a $300 million Series C to scale AI inference hardware, according to two brief reports. Citybiz frames the round around both the raise and a $10.3 billion valuation; quasa.io emphasizes the financing for AI inference hardware without the valuation in its headline. The sparse sourcing leaves the strategic details—customers, manufacturing timelines, and performance claims—out of view, but the signal is clear enough: investors are still willing to fund specialized AI infrastructure at very large prices.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Training gets the glamour, but inference is where AI products meet cost, latency, and margins every day. A $10.3 billion valuation for an inference-hardware company suggests the market still believes there is room to challenge incumbent compute stacks—or at least to carve out lucrative niches as AI usage grows.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxObWd4UnM1eEFoOEtEajJ5cGQwajdjUzVuZ294NFZrVzEtUF9CM3NxVjgxbWd6ckt1OVdEZk10VGN4ZkF2NmU4M2t0c1N1M2ZFWGhnYnhZb3RnSFc3Y3ZMd0dRaDRnUC16clEwMHdneXhCeXJVT0xneDI2MlhXRzZ1U05sUFZzYW5lV2lHRjdHbjI1cDQ0WmRaYnl4UnVJNWUzWnNTUUdkeG5qR0FxYmJ3SjJoNmlKdjg?oc=5" target="_blank" rel="noreferrer">citybiz</a> · <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdmM0VDhUSkkzeHQxLXFsUjA1Q21NSUZ0b29lVDUzSUwzM2p1OFhsTHdDN0Vtc3ZheEJEbVZBcHkySm5zVWNGNFJqY0diUEhxdTFRd1BZMUFEcVBidEN4NjhpVHU0cUp0V2ZCaXFyTTdKeUh3WmtRS3drVkwwLVNiNXVxdzAxZ19ySWtr?oc=5" target="_blank" rel="noreferrer">quasa.io</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>The gray market for cheap LLM tokens is getting organized</h2><p class="dek">A cited investigation describes resellers pooling API access from free trials, exposed bots, stolen cards, and chargeback schemes—then selling discounted access through proxy services.</p><div class="body-copy"><p>Simon Willison highlights Matt Lenhard’s investigation into a relay market for resold LLM tokens, apparently concentrated largely in China. The basic pattern: resellers offer access to an LLM proxy at steep discounts to official API pricing, with supply allegedly coming from abused free trials, unprotected support bots, stolen credit cards, or chargeback attacks. The proxy software named in the excerpt—one-api and its more active fork new-api—is described as open source and legitimate in itself, which makes the story less about a single malicious tool than about how ordinary infrastructure can be repurposed when arbitrage gets profitable.</p></div><p class="why"><strong>Why it matters:</strong> This is the unglamorous backside of AI platform growth: wherever tokens are valuable, someone will build a market to acquire and launder them. For model providers, that turns fraud prevention, bot hardening, and key management into core revenue protection—not just security hygiene.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/26/relay-market/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Prediction markets move from elections to drug approvals</h2><p class="dek">Kalshi and Polymarket now let users bet on drug approvals, and Kalshi reportedly plans markets tied to clinical trial results.</p><div class="body-copy"><p>The New York Times reports that prediction markets on Kalshi and Polymarket have expanded into wagers on drug approvals, with Kalshi also planning to allow bets on clinical trial results. The concern, as framed in the excerpt, is not merely that people are gambling on health outcomes; it is that markets tied to research milestones could create incentives that rub uneasily against the norms of clinical science.</p></div><p class="why"><strong>Why it matters:</strong> Prediction markets are often sold as information engines. Drug development is a harder test: trial outcomes and approvals move billions of dollars, affect patients, and depend on research systems that need trust. Letting traders bet directly on those milestones may surface useful signals—but it also raises obvious worries about leaks, manipulation, and pressure around already fragile research processes.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/28/business/kalshi-polymarket-prediction-market-drugs.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>School districts are becoming housing developers</h2><p class="dek">As housing costs make it harder for teachers to live near their jobs, more districts are trying a blunt fix: build homes themselves.</p><div class="body-copy"><p>The New York Times reports that an increasing number of school districts are building housing to recruit and retain teachers. The reason is straightforward: the national housing shortage has made it difficult for essential workers, including educators, to live in the communities where they work. The idea sounds unusual only until you strip it down. If wages cannot keep pace with local rents, and the labor shortage is severe enough, employers with land or borrowing capacity start acting like housing providers.</p></div><p class="why"><strong>Why it matters:</strong> Teacher housing is a local workaround for a national affordability problem. It may help districts compete for staff, but it also shows how distorted the housing market has become: schools are being pushed beyond education policy into real estate because the surrounding economy no longer supports the workforce they need.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/28/business/affordable-housing-schools-teachers.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Atlanta rethinks how to exhibit the Civil War</h2><p class="dek">The Atlanta History Center has replaced a military-history-focused Civil War exhibition with one meant to treat the conflict as America’s defining rupture, not just a collection of relics.</p><div class="body-copy"><p>The New York Times reports that the Atlanta History Center has remade its Civil War exhibition, moving away from a focus on military history and toward a broader reflection on the conflict’s meaning. The excerpt offers few specifics about the new interpretive choices, but the shift itself is telling: a museum in Atlanta is treating the Civil War less as battlefield chronology and more as a civic and national reckoning.</p></div><p class="why"><strong>Why it matters:</strong> Museums do not just preserve history; they decide what kind of history the public is asked to confront. Reframing a Civil War exhibit beyond relics suggests a broader institutional move away from object-centered nostalgia and toward interpretation—especially in a region where the war’s memory has always been politically charged.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/28/arts/design/civil-war-atlanta-history-center.html" target="_blank" rel="noreferrer">NYT Arts</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>U.S. track championships returned to New York, and LetsRun has the receipts</h2><p class="dek">The 2026 USATF Outdoor Championships were held at Icahn Stadium on Randall’s Island—the meet’s first New York City staging since 1991—with LetsRun compiling day-by-day results.</p><div class="body-copy"><p>LetsRun published results from the 2026 USATF Outdoor Championships, including the final day of action on Sunday, July 26, and a separate compilation for day three. The meet was held at Icahn Stadium on Randall’s Island, marking the first time since 1991 that the U.S. track and field championships took place in New York City. The excerpts are results-focused rather than narrative, so there is no supplied detail here on standout performances, selection implications, or controversies.</p></div><p class="why"><strong>Why it matters:</strong> For track fans, national championships are both a scoreboard and a sorting mechanism: they show who is peaking, who is healthy, and who can handle championship rounds. Even without the individual results in the excerpt, the NYC setting is notable—a major-market stage for a sport that often fights for broader attention.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/07/2026-usatf-outdoor-championships-final-day-results-day-4-results/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/07/day-3-2026-usatf-outdoor-championships-results/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Minecraft as a civic planning tool for kids</h2><p class="dek">A New York Times story, also picked up by GV Wire, looks at how children are using Minecraft to redesign their cities.</p><div class="body-copy"><p>Two sources point to the same intriguing premise: Minecraft is helping kids redesign their cities. The available excerpts do not say where the projects are happening, who is organizing them, or whether the designs are influencing actual planning decisions. Still, the headline alone captures a useful inversion. Instead of treating children as future citizens, the projects appear to use a familiar game world to let them model what they want from the real one.</p></div><p class="why"><strong>Why it matters:</strong> This is the day’s serendipity item, but it is not frivolous. Planning processes often struggle to include people who are not fluent in maps, zoning language, or public-meeting rituals. A sandbox game may be a surprisingly practical interface for imagination—especially for young residents who experience streets, parks, transit, and public space differently from adults.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNejI0aVE5Y2ExS3FPY2k2eXhQSTdEVUlpZkZONFhONVNPaTZPMkJFQW5zNTVvZTFsZWxWSzBrNlVGTTNlTWU0SWR2VEtidmhRcEJkaEU2TlhnYVBIaFRlb3ZWYlhJcXpFTU9rQ0FrRGVaVURTX2xKVkNpRGZSQTBob2JyejY?oc=5" target="_blank" rel="noreferrer">GV Wire</a> · <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQQzV5UnFraHpTZWRGbFItTWRSUXU5SjFTYnpBTE42QVlLeHlYcWN3SzZxQlVFajU1MFF4ZFJodkZNdllzUjVVOEEzQTI0RXBUdmJEcXR5c3QxRUFwOUtwbG9nMmpZU2EtdnJNaUhKNU9BQS1YSThVWUhQNVJZWFlQZi1IRGVTYTFCUHhQeF9SVjNXWVZ4VzRYSGF3?oc=5" target="_blank" rel="noreferrer">The New York Times</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>A vacant subway newsstand gets recast as a tiny joy machine</h2><p class="dek">At West 4th Street station, a comedian and friends are turning unused retail space into a place for freebies, art, and puppet shows.</p><div class="body-copy"><p>The New York Times reports that a comedian and his friends are transforming a vacant retail space at the West 4th Street subway station into something more playful: a newsstand-like project with freebies, art, and puppet shows aimed at making commutes more enjoyable. The excerpt does not name the organizers or explain the arrangement behind the space, but the premise is charmingly specific—less grand urban renewal than a small intervention in the daily grind.</p></div><p class="why"><strong>Why it matters:</strong> Transit systems are usually judged by speed, safety, and reliability, as they should be. But cities also run on mood. A tiny cultural outpost in an unused subway retail space is a reminder that public infrastructure can be softened and enlivened, not only optimized.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/07/28/nyregion/subway-newstand-west-4th-station-nyc.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · July 28, 2026
+</footer>
+</main>
+</body>
+</html>

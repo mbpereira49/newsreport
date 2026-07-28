@@ -1,0 +1,85 @@
+[
+  {
+    "body": "Etched has raised a $300 million Series C to scale AI inference hardware, according to two brief reports. Citybiz frames the round around both the raise and a $10.3 billion valuation; quasa.io emphasizes the financing for AI inference hardware without the valuation in its headline. The sparse sourcing leaves the strategic details\u2014customers, manufacturing timelines, and performance claims\u2014out of view, but the signal is clear enough: investors are still willing to fund specialized AI infrastructure at very large prices.",
+    "cluster_id": "1dfd73763cae193a",
+    "dek": "The chip startup\u2019s Series C reportedly values it at $10.3 billion, a reminder that AI\u2019s next bottleneck is not just models\u2014it is serving them cheaply and fast.",
+    "headline": "Etched pulls in $300 million for the AI inference arms race",
+    "source_ids": [
+      "1dfd73763cae193a-s1",
+      "1dfd73763cae193a-s2"
+    ],
+    "why_it_matters": "Training gets the glamour, but inference is where AI products meet cost, latency, and margins every day. A $10.3 billion valuation for an inference-hardware company suggests the market still believes there is room to challenge incumbent compute stacks\u2014or at least to carve out lucrative niches as AI usage grows."
+  },
+  {
+    "body": "Simon Willison highlights Matt Lenhard\u2019s investigation into a relay market for resold LLM tokens, apparently concentrated largely in China. The basic pattern: resellers offer access to an LLM proxy at steep discounts to official API pricing, with supply allegedly coming from abused free trials, unprotected support bots, stolen credit cards, or chargeback attacks. The proxy software named in the excerpt\u2014one-api and its more active fork new-api\u2014is described as open source and legitimate in itself, which makes the story less about a single malicious tool than about how ordinary infrastructure can be repurposed when arbitrage gets profitable.",
+    "cluster_id": "b7c4b938a0f66a25",
+    "dek": "A cited investigation describes resellers pooling API access from free trials, exposed bots, stolen cards, and chargeback schemes\u2014then selling discounted access through proxy services.",
+    "headline": "The gray market for cheap LLM tokens is getting organized",
+    "source_ids": [
+      "b7c4b938a0f66a25-s1"
+    ],
+    "why_it_matters": "This is the unglamorous backside of AI platform growth: wherever tokens are valuable, someone will build a market to acquire and launder them. For model providers, that turns fraud prevention, bot hardening, and key management into core revenue protection\u2014not just security hygiene."
+  },
+  {
+    "body": "The New York Times reports that prediction markets on Kalshi and Polymarket have expanded into wagers on drug approvals, with Kalshi also planning to allow bets on clinical trial results. The concern, as framed in the excerpt, is not merely that people are gambling on health outcomes; it is that markets tied to research milestones could create incentives that rub uneasily against the norms of clinical science.",
+    "cluster_id": "e28ff6fd1e01fd40",
+    "dek": "Kalshi and Polymarket now let users bet on drug approvals, and Kalshi reportedly plans markets tied to clinical trial results.",
+    "headline": "Prediction markets move from elections to drug approvals",
+    "source_ids": [
+      "e28ff6fd1e01fd40-s1"
+    ],
+    "why_it_matters": "Prediction markets are often sold as information engines. Drug development is a harder test: trial outcomes and approvals move billions of dollars, affect patients, and depend on research systems that need trust. Letting traders bet directly on those milestones may surface useful signals\u2014but it also raises obvious worries about leaks, manipulation, and pressure around already fragile research processes."
+  },
+  {
+    "body": "The New York Times reports that an increasing number of school districts are building housing to recruit and retain teachers. The reason is straightforward: the national housing shortage has made it difficult for essential workers, including educators, to live in the communities where they work. The idea sounds unusual only until you strip it down. If wages cannot keep pace with local rents, and the labor shortage is severe enough, employers with land or borrowing capacity start acting like housing providers.",
+    "cluster_id": "3e6c40740a0079c2",
+    "dek": "As housing costs make it harder for teachers to live near their jobs, more districts are trying a blunt fix: build homes themselves.",
+    "headline": "School districts are becoming housing developers",
+    "source_ids": [
+      "3e6c40740a0079c2-s1"
+    ],
+    "why_it_matters": "Teacher housing is a local workaround for a national affordability problem. It may help districts compete for staff, but it also shows how distorted the housing market has become: schools are being pushed beyond education policy into real estate because the surrounding economy no longer supports the workforce they need."
+  },
+  {
+    "body": "The New York Times reports that the Atlanta History Center has remade its Civil War exhibition, moving away from a focus on military history and toward a broader reflection on the conflict\u2019s meaning. The excerpt offers few specifics about the new interpretive choices, but the shift itself is telling: a museum in Atlanta is treating the Civil War less as battlefield chronology and more as a civic and national reckoning.",
+    "cluster_id": "d99e630bb59f651d",
+    "dek": "The Atlanta History Center has replaced a military-history-focused Civil War exhibition with one meant to treat the conflict as America\u2019s defining rupture, not just a collection of relics.",
+    "headline": "Atlanta rethinks how to exhibit the Civil War",
+    "source_ids": [
+      "d99e630bb59f651d-s1"
+    ],
+    "why_it_matters": "Museums do not just preserve history; they decide what kind of history the public is asked to confront. Reframing a Civil War exhibit beyond relics suggests a broader institutional move away from object-centered nostalgia and toward interpretation\u2014especially in a region where the war\u2019s memory has always been politically charged."
+  },
+  {
+    "body": "LetsRun published results from the 2026 USATF Outdoor Championships, including the final day of action on Sunday, July 26, and a separate compilation for day three. The meet was held at Icahn Stadium on Randall\u2019s Island, marking the first time since 1991 that the U.S. track and field championships took place in New York City. The excerpts are results-focused rather than narrative, so there is no supplied detail here on standout performances, selection implications, or controversies.",
+    "cluster_id": "f0679fac2657d7e1",
+    "dek": "The 2026 USATF Outdoor Championships were held at Icahn Stadium on Randall\u2019s Island\u2014the meet\u2019s first New York City staging since 1991\u2014with LetsRun compiling day-by-day results.",
+    "headline": "U.S. track championships returned to New York, and LetsRun has the receipts",
+    "source_ids": [
+      "f0679fac2657d7e1-s1",
+      "f0679fac2657d7e1-s2"
+    ],
+    "why_it_matters": "For track fans, national championships are both a scoreboard and a sorting mechanism: they show who is peaking, who is healthy, and who can handle championship rounds. Even without the individual results in the excerpt, the NYC setting is notable\u2014a major-market stage for a sport that often fights for broader attention."
+  },
+  {
+    "body": "Two sources point to the same intriguing premise: Minecraft is helping kids redesign their cities. The available excerpts do not say where the projects are happening, who is organizing them, or whether the designs are influencing actual planning decisions. Still, the headline alone captures a useful inversion. Instead of treating children as future citizens, the projects appear to use a familiar game world to let them model what they want from the real one.",
+    "cluster_id": "54b6c0c1ec62671f",
+    "dek": "A New York Times story, also picked up by GV Wire, looks at how children are using Minecraft to redesign their cities.",
+    "headline": "Minecraft as a civic planning tool for kids",
+    "source_ids": [
+      "54b6c0c1ec62671f-s1",
+      "54b6c0c1ec62671f-s2"
+    ],
+    "why_it_matters": "This is the day\u2019s serendipity item, but it is not frivolous. Planning processes often struggle to include people who are not fluent in maps, zoning language, or public-meeting rituals. A sandbox game may be a surprisingly practical interface for imagination\u2014especially for young residents who experience streets, parks, transit, and public space differently from adults."
+  },
+  {
+    "body": "The New York Times reports that a comedian and his friends are transforming a vacant retail space at the West 4th Street subway station into something more playful: a newsstand-like project with freebies, art, and puppet shows aimed at making commutes more enjoyable. The excerpt does not name the organizers or explain the arrangement behind the space, but the premise is charmingly specific\u2014less grand urban renewal than a small intervention in the daily grind.",
+    "cluster_id": "1db039e22a878de3",
+    "dek": "At West 4th Street station, a comedian and friends are turning unused retail space into a place for freebies, art, and puppet shows.",
+    "headline": "A vacant subway newsstand gets recast as a tiny joy machine",
+    "source_ids": [
+      "1db039e22a878de3-s1"
+    ],
+    "why_it_matters": "Transit systems are usually judged by speed, safety, and reliability, as they should be. But cities also run on mood. A tiny cultural outpost in an unused subway retail space is a reminder that public infrastructure can be softened and enlivened, not only optimized."
+  }
+]
