@@ -1,0 +1,2 @@
+Could not parse feed https://www.publicbooks.org/feed/: not well-formed (invalid token): line 1, column 119
+Could not parse feed https://lithub.com/feed/: not well-formed (invalid token): line 98, column 28
