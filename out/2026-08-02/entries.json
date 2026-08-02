@@ -1,0 +1,83 @@
+[
+  {
+    "body": "More than a dozen wildfires are burning across Washington State, according to the report, with the Old Trails fire near Spokane the immediate marker of how fast conditions can turn. By Sunday morning it had grown to about 3,500 acres, propelled by strong wind gusts and high temperatures. The excerpt does not specify how many people have evacuated or how contained the fire is, but the basic picture is clear: volatile weather is turning local ignitions into regional emergencies.",
+    "cluster_id": "cd240cfc97418084",
+    "dek": "The Old Trails fire has reached roughly 3,500 acres, with evacuations underway as heat and wind do the work firefighters dread.",
+    "headline": "Washington\u2019s fire season flares near Spokane",
+    "source_ids": [
+      "cd240cfc97418084-s1"
+    ],
+    "why_it_matters": "Wildfire risk is increasingly a weather story as much as a land-management story. Wind and heat can quickly turn a fire into an evacuation crisis, especially near population centers like Spokane."
+  },
+  {
+    "body": "Paul Weiss, once described here as a leader of the legal resistance against President Trump, is now being cast by the Times as the firm that helped model Big Law\u2019s retreat. The investigation\u2019s takeaway, based on the excerpt, is not just that one elite firm changed posture, but that its reversal rippled across the legal industry. The central claim is sharp: Paul Weiss \u201ccaved to White House pressure.\u201d With only the excerpt, the mechanics of that pressure are not available, but the framing suggests a broader test of institutional backbone inside corporate law.",
+    "cluster_id": "1df83cef2db935ab",
+    "dek": "A Times investigation frames the firm\u2019s shift from anti-Trump legal resistance to industry retreat as a capitulation to White House pressure.",
+    "headline": "Paul Weiss becomes the cautionary tale of Big Law under Trump",
+    "source_ids": [
+      "1df83cef2db935ab-s1"
+    ],
+    "why_it_matters": "Elite law firms sell independence as part of their brand. If political pressure can move even the most prestigious players, the consequences reach beyond firm reputation into access to counsel, public-interest litigation, and the legal profession\u2019s willingness to confront power."
+  },
+  {
+    "body": "Michigan\u2019s Democratic Senate primary is being framed around five defining moments, but the underlying tension is familiar: how far left a competitive Democratic nominee can or should run. The Times excerpt identifies two forces shaping the race \u2014 divisions over Israel and high-profile endorsements \u2014 and two candidates defined by ideological contrast: a progressive former public health official and a more moderate member of Congress. That combination makes the contest less a local r\u00e9sum\u00e9 fight than a referendum on where Democratic voters want the party to land on foreign policy, electability, and generational style.",
+    "cluster_id": "bd53556b1dc91b69",
+    "dek": "The race has been shaped by Israel, endorsements, and the contrast between a progressive former public health official and a more moderate member of Congress.",
+    "headline": "Michigan\u2019s Democratic Senate primary is a proxy fight with real stakes",
+    "source_ids": [
+      "bd53556b1dc91b69-s1"
+    ],
+    "why_it_matters": "Michigan is usually treated as a state where national Democratic anxieties become concrete. A Senate primary there can preview how the party manages Israel, progressive pressure, and establishment intervention heading into a broader election cycle."
+  },
+  {
+    "body": "Simon Willison\u2019s roundup of recent AI open letters highlights one especially revealing document: \u201cOpen Weights and American AI Leadership,\u201d dated July 24 and shepherded by Microsoft. It was signed by 235 AI-adjacent companies, including NVIDIA, Amazon, Y Combinator, The Linux Foundation and, later, OpenAI. Willison\u2019s read is that the letter is \u201cclearly\u201d designed to counter U.S. government instincts to ban or limit open-weight models on safety grounds. The excerpt also notes the counterargument: closed models are not automatically safe, because they too can be breached or misused. In other words, this is not a clean safety-versus-risk debate; it is a fight over which risks count, and who gets regulated.",
+    "cluster_id": "7b7635dd5e23e568",
+    "dek": "Simon Willison reads a Microsoft-shepherded letter on open-weight AI as an attempt to head off U.S. restrictions on open models.",
+    "headline": "The AI open-letter wars are really about who gets to define \u201csafety\u201d",
+    "source_ids": [
+      "7b7635dd5e23e568-s1"
+    ],
+    "why_it_matters": "Open-weight models sit at the center of AI\u2019s next policy fight. Restrictions could reshape research, startups, national competitiveness and misuse prevention \u2014 and the loudest voices are not neutral observers."
+  },
+  {
+    "body": "Smart baby-monitor companies such as Nanit and Owlet are being described less as gadget makers than as data companies with a longer view of childhood. The Times excerpt says these start-ups want to track children through the night \u2014 and soon, for much longer than that. The promise is presumably reassurance and insight for parents; the discomfort is embedded in the same sentence. Once monitoring becomes normalized in infancy, the business incentive is to extend the relationship, collect more signals, and turn anxious parenting into a recurring data stream.",
+    "cluster_id": "c561cb866c11b3a4",
+    "dek": "Nanit and similar start-ups already track infants through the night. The next ambition is tracking children for much longer.",
+    "headline": "Baby monitors are growing into childhood data businesses",
+    "source_ids": [
+      "c561cb866c11b3a4-s1"
+    ],
+    "why_it_matters": "Parents are often offered surveillance as care. The question is whether the convenience and comfort of baby tracking will quietly create long-running dossiers on children before they can consent to any of it."
+  },
+  {
+    "body": "The battle over space infrastructure is increasingly about something you cannot see: radio spectrum. The Times frames spectrum as \u201cinvisible real estate,\u201d a scarce and valuable resource that companies like SpaceX are now pursuing alongside governments. The excerpt does not spell out the regulatory fight, but the stakes are evident. Satellites, connectivity, national systems and commercial networks all depend on access to frequencies that do not become less contested just because they are intangible.",
+    "cluster_id": "eb36e3f3355ee1ff",
+    "dek": "Radio spectrum is becoming valuable invisible real estate, with SpaceX and governments jostling for control.",
+    "headline": "The next space race is for spectrum, not just orbits",
+    "source_ids": [
+      "eb36e3f3355ee1ff-s1"
+    ],
+    "why_it_matters": "Spectrum allocation decides who can communicate from space, at what scale, and under whose rules. As private satellite networks grow more powerful, governments are no longer the only actors shaping the architecture above us."
+  },
+  {
+    "body": "A small bit of New York restaurant news with outsized neighborhood nostalgia: Mary\u2019s Fish Camp, the West Village seafood staple, is returning, according to Eater NY\u2019s weekly roundup. The excerpt is light on specifics \u2014 no reopening date, address or menu details are included here \u2014 but the headline alone explains the emotional hook. In a city where beloved restaurants vanish, mutate, or reappear under new economics, a return can feel less like an opening than a minor civic restoration.",
+    "cluster_id": "1cc597746206d655",
+    "dek": "Eater\u2019s NYC restaurant roundup says the beloved seafood staple is returning, part of the city\u2019s steady churn of openings and comebacks.",
+    "headline": "Mary\u2019s Fish Camp is headed back to the West Village",
+    "source_ids": [
+      "1cc597746206d655-s1",
+      "1cc597746206d655-s2"
+    ],
+    "why_it_matters": "Restaurant comebacks are one way New Yorkers measure continuity in a city built on turnover. For longtime diners, Mary\u2019s Fish Camp returning is not just food news; it is neighborhood memory resurfacing."
+  },
+  {
+    "body": "South of Anchorage, the tidal bore that rockets up the Turnagain Arm offers a surreal prize: a wave that can carry a surfer for six miles, potentially for an hour. The same phenomenon can also kill. The Times frames the story around a familiar outdoor-recreation dilemma: once a dangerous local secret becomes public, officials may feel pressure to intervene. The excerpt does not say what restrictions are being considered, if any, but it points to the tension between personal risk, viral adventure culture and public responsibility.",
+    "cluster_id": "972d874ee3ba2831",
+    "dek": "The Turnagain Arm tidal bore can carry surfers for an hour \u2014 and kill them. Now popularity may force authorities to decide how much risk is tolerable.",
+    "headline": "Alaska\u2019s six-mile surf ride comes with a warning label",
+    "source_ids": [
+      "972d874ee3ba2831-s1"
+    ],
+    "why_it_matters": "As extreme recreation gets more visible, remote hazards become governance problems. The question is where to draw the line between letting people chase rare experiences and preventing predictable rescues or deaths."
+  }
+]

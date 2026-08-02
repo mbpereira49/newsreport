@@ -1,0 +1,79 @@
+{
+  "calls": [
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.08482,
+      "input_tokens": 8084,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 1480,
+      "raw_usage": {
+        "input_tokens": 8084,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1480,
+        "output_tokens_details": {
+          "reasoning_tokens": 1034
+        },
+        "total_tokens": 9564
+      },
+      "reasoning_tokens": 1034,
+      "stage": "digest_selection",
+      "total_tokens": 9564
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.07112,
+      "input_tokens": 2746,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 1913,
+      "raw_usage": {
+        "input_tokens": 2746,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1913,
+        "output_tokens_details": {
+          "reasoning_tokens": 105
+        },
+        "total_tokens": 4659
+      },
+      "reasoning_tokens": 105,
+      "stage": "digest_entries",
+      "total_tokens": 4659
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.096515,
+      "input_tokens": 3403,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 2650,
+      "raw_usage": {
+        "input_tokens": 3403,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2650,
+        "output_tokens_details": {
+          "reasoning_tokens": 315
+        },
+        "total_tokens": 6053
+      },
+      "reasoning_tokens": 315,
+      "stage": "digest_layout",
+      "total_tokens": 6053
+    }
+  ],
+  "summary": {
+    "cached_input_tokens": 0,
+    "calls": 3,
+    "estimated_cost_usd": 0.252455,
+    "input_tokens": 14233,
+    "output_tokens": 6043,
+    "reasoning_tokens": 1454,
+    "total_tokens": 20276
+  }
+}

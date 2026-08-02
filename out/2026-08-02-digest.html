@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-02</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Sunday, August 2, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Washington’s fire season flares near Spokane</h2><p class="dek">The Old Trails fire has reached roughly 3,500 acres, with evacuations underway as heat and wind do the work firefighters dread.</p><div class="lead-lower"><div class="body-copy"><p>More than a dozen wildfires are burning across Washington State, according to the report, with the Old Trails fire near Spokane the immediate marker of how fast conditions can turn. By Sunday morning it had grown to about 3,500 acres, propelled by strong wind gusts and high temperatures. The excerpt does not specify how many people have evacuated or how contained the fire is, but the basic picture is clear: volatile weather is turning local ignitions into regional emergencies.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Wildfire risk is increasingly a weather story as much as a land-management story. Wind and heat can quickly turn a fire into an evacuation crisis, especially near population centers like Spokane.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/01/us/wildfires-spokane-washington-evacuations.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Paul Weiss becomes the cautionary tale of Big Law under Trump</h2><p class="dek">A Times investigation frames the firm’s shift from anti-Trump legal resistance to industry retreat as a capitulation to White House pressure.</p><div class="body-copy"><p>Paul Weiss, once described here as a leader of the legal resistance against President Trump, is now being cast by the Times as the firm that helped model Big Law’s retreat. The investigation’s takeaway, based on the excerpt, is not just that one elite firm changed posture, but that its reversal rippled across the legal industry. The central claim is sharp: Paul Weiss “caved to White House pressure.” With only the excerpt, the mechanics of that pressure are not available, but the framing suggests a broader test of institutional backbone inside corporate law.</p></div><p class="why"><strong>Why it matters:</strong> Elite law firms sell independence as part of their brand. If political pressure can move even the most prestigious players, the consequences reach beyond firm reputation into access to counsel, public-interest litigation, and the legal profession’s willingness to confront power.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/02/us/politics/trump-paul-weiss-takeaways.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Michigan’s Democratic Senate primary is a proxy fight with real stakes</h2><p class="dek">The race has been shaped by Israel, endorsements, and the contrast between a progressive former public health official and a more moderate member of Congress.</p><div class="body-copy"><p>Michigan’s Democratic Senate primary is being framed around five defining moments, but the underlying tension is familiar: how far left a competitive Democratic nominee can or should run. The Times excerpt identifies two forces shaping the race — divisions over Israel and high-profile endorsements — and two candidates defined by ideological contrast: a progressive former public health official and a more moderate member of Congress. That combination makes the contest less a local résumé fight than a referendum on where Democratic voters want the party to land on foreign policy, electability, and generational style.</p></div><p class="why"><strong>Why it matters:</strong> Michigan is usually treated as a state where national Democratic anxieties become concrete. A Senate primary there can preview how the party manages Israel, progressive pressure, and establishment intervention heading into a broader election cycle.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/02/us/politics/five-big-moments-michigan-democratic-senate-primary.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>The AI open-letter wars are really about who gets to define “safety”</h2><p class="dek">Simon Willison reads a Microsoft-shepherded letter on open-weight AI as an attempt to head off U.S. restrictions on open models.</p><div class="body-copy"><p>Simon Willison’s roundup of recent AI open letters highlights one especially revealing document: “Open Weights and American AI Leadership,” dated July 24 and shepherded by Microsoft. It was signed by 235 AI-adjacent companies, including NVIDIA, Amazon, Y Combinator, The Linux Foundation and, later, OpenAI. Willison’s read is that the letter is “clearly” designed to counter U.S. government instincts to ban or limit open-weight models on safety grounds. The excerpt also notes the counterargument: closed models are not automatically safe, because they too can be breached or misused. In other words, this is not a clean safety-versus-risk debate; it is a fight over which risks count, and who gets regulated.</p></div><p class="why"><strong>Why it matters:</strong> Open-weight models sit at the center of AI’s next policy fight. Restrictions could reshape research, startups, national competitiveness and misuse prevention — and the loudest voices are not neutral observers.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/2/open-letters/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Baby monitors are growing into childhood data businesses</h2><p class="dek">Nanit and similar start-ups already track infants through the night. The next ambition is tracking children for much longer.</p><div class="body-copy"><p>Smart baby-monitor companies such as Nanit and Owlet are being described less as gadget makers than as data companies with a longer view of childhood. The Times excerpt says these start-ups want to track children through the night — and soon, for much longer than that. The promise is presumably reassurance and insight for parents; the discomfort is embedded in the same sentence. Once monitoring becomes normalized in infancy, the business incentive is to extend the relationship, collect more signals, and turn anxious parenting into a recurring data stream.</p></div><p class="why"><strong>Why it matters:</strong> Parents are often offered surveillance as care. The question is whether the convenience and comfort of baby tracking will quietly create long-running dossiers on children before they can consent to any of it.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/02/business/smart-baby-monitors-nanit-owlet.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>The next space race is for spectrum, not just orbits</h2><p class="dek">Radio spectrum is becoming valuable invisible real estate, with SpaceX and governments jostling for control.</p><div class="body-copy"><p>The battle over space infrastructure is increasingly about something you cannot see: radio spectrum. The Times frames spectrum as “invisible real estate,” a scarce and valuable resource that companies like SpaceX are now pursuing alongside governments. The excerpt does not spell out the regulatory fight, but the stakes are evident. Satellites, connectivity, national systems and commercial networks all depend on access to frequencies that do not become less contested just because they are intangible.</p></div><p class="why"><strong>Why it matters:</strong> Spectrum allocation decides who can communicate from space, at what scale, and under whose rules. As private satellite networks grow more powerful, governments are no longer the only actors shaping the architecture above us.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/01/business/dealbook/spacex-spectrum-battle.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Mary’s Fish Camp is headed back to the West Village</h2><p class="dek">Eater’s NYC restaurant roundup says the beloved seafood staple is returning, part of the city’s steady churn of openings and comebacks.</p><div class="body-copy"><p>A small bit of New York restaurant news with outsized neighborhood nostalgia: Mary’s Fish Camp, the West Village seafood staple, is returning, according to Eater NY’s weekly roundup. The excerpt is light on specifics — no reopening date, address or menu details are included here — but the headline alone explains the emotional hook. In a city where beloved restaurants vanish, mutate, or reappear under new economics, a return can feel less like an opening than a minor civic restoration.</p></div><p class="why"><strong>Why it matters:</strong> Restaurant comebacks are one way New Yorkers measure continuity in a city built on turnover. For longtime diners, Mary’s Fish Camp returning is not just food news; it is neighborhood memory resurfacing.</p><p class="sources">Sources: <a href="https://ny.eater.com/news/412535/nyc-restaurant-news-july-2026" target="_blank" rel="noreferrer">Eater NY</a> · <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBIWWtXS0kwdTFxSV9jbWhUTVBSbDhIY2g5NzJJMy16enVRenFETkU2SWtTSnNXekVZLXpHLVhWS1hwU0xlekZ4UGJoaW05bkpydHd2NmtBaUFhTWtVOHZ1U0lsLVpOb3JZb1R1MTZjaw?oc=5" target="_blank" rel="noreferrer">Eater New York</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Alaska’s six-mile surf ride comes with a warning label</h2><p class="dek">The Turnagain Arm tidal bore can carry surfers for an hour — and kill them. Now popularity may force authorities to decide how much risk is tolerable.</p><div class="body-copy"><p>South of Anchorage, the tidal bore that rockets up the Turnagain Arm offers a surreal prize: a wave that can carry a surfer for six miles, potentially for an hour. The same phenomenon can also kill. The Times frames the story around a familiar outdoor-recreation dilemma: once a dangerous local secret becomes public, officials may feel pressure to intervene. The excerpt does not say what restrictions are being considered, if any, but it points to the tension between personal risk, viral adventure culture and public responsibility.</p></div><p class="why"><strong>Why it matters:</strong> As extreme recreation gets more visible, remote hazards become governance problems. The question is where to draw the line between letting people chase rare experiences and preventing predictable rescues or deaths.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/02/us/bore-tide-surfing-alaska.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 2, 2026
+</footer>
+</main>
+</body>
+</html>
