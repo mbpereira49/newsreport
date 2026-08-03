@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-03</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Monday, August 3, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Stateless MCP gives the agent-tooling spec a second wind</h2><p class="dek">Simon Willison says the 2026-07-28 Model Context Protocol update is the biggest shift since MCP’s debut — and enough to pull him back in.</p><div class="lead-lower"><div class="body-copy"><p>MCP 2.0, formally the 2026-07-28 Model Context Protocol specification, lands as more than a version bump in Simon Willison’s telling. MCP was introduced by Anthropic in November 2024 as a standard way to expose tools to LLM-powered agent frameworks, then rode a major 2025 wave before being partly eclipsed by Anthropic’s Skills. The new stateless direction, Willison writes, has “recaptured” his interest and already inspired mcp-explorer and datasette-mcp. That is a practitioner signal worth noting: not just that a spec changed, but that it may have become easier or more compelling to build against.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Agent infrastructure is still in flux. When a once-hyped protocol wins back skeptical builders, it suggests the ecosystem may be converging on more practical interfaces for AI tools.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Jul/31/stateless-mcp/" target="_blank" rel="noreferrer">Simon Willison</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Open models keep crowding the frontier</h2><p class="dek">Interconnects points to Laguna S2.1, Inkling and Kimi K3 as evidence that strong model training capacity is spreading.</p><div class="body-copy"><p>The latest “open artifacts” roundup from Interconnects is built around a blunt thesis: “Capacity to train strong models is proliferating.” The post names Laguna S2.1, Inkling and Kimi K3 as examples of open models showing utility on the Pareto frontier — the zone where performance trade-offs start to matter most. The excerpt is spare, but the direction is clear: open-model progress is no longer just about symbolic access or lagging replications. It is increasingly about credible artifacts that test how much of the leading edge can be made available outside closed labs.</p></div><p class="why"><strong>Why it matters:</strong> If more groups can train strong models, competitive pressure shifts from simply owning model capability to distribution, tooling, data, deployment and trust.</p><p class="sources">Sources: <a href="https://interconnects.ai/p/latest-open-artifacts-23-laguna-s21" target="_blank" rel="noreferrer">Interconnects</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>AI spending now has its own ROI discipline: tokenomics</h2><p class="dek">Companies are pouring money into AI; a new measurement field is trying to answer the obvious question — what are they getting back?</p><div class="body-copy"><p>The New York Times says a new field of “tokenomics” has emerged to measure returns on corporate AI spending. The framing is telling. After the first rush of experimentation and infrastructure investment, the conversation is moving from capability demos to accounting: tokens bought, tasks automated, productivity gained, money saved or not. The supplied excerpt does not say whether tokenomics is rigorous, faddish or merely a convenient label, but it captures the pressure building around AI budgets. Executives are no longer just asking whether AI can do something impressive. They are asking whether the bill makes sense.</p></div><p class="why"><strong>Why it matters:</strong> AI adoption is entering its spreadsheet phase. The winners may be the tools that can prove economic value, not just technical novelty.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/03/business/economy/ai-spending-tokenomics.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>AI speeds up the corrido as breaking-news memorial</h2><p class="dek">A century-old song tradition is being compressed into hours after tragedy, with AI helping people write ballads fast.</p><div class="body-copy"><p>The New York Times reports that AI is helping people write corridos within hours, accelerating a long-running tradition of memorializing tragedy through song. The case in the headline is stark — “ICE Killed Him” — and the story appears to focus on a Texas ICE shooting and the rapid creation of a folk ballad in response. What is striking is not just that AI can generate lyrics. It is that a communal form of remembrance, protest and storytelling can now move at platform speed, almost immediately after an event becomes known.</p></div><p class="why"><strong>Why it matters:</strong> Generative AI is not only reshaping office work and software. It is entering vernacular culture, where speed can amplify grief, politics and memory before institutions have settled the narrative.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/03/us/ai-corridos-song-music-texas-ice-shooting.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Trump’s Justice Department pressure is creating legal blowback</h2><p class="dek">The Times frames the president’s involvement as self-defeating: one case imperiled, another exposed to sanctions and a nomination complicated.</p><div class="body-copy"><p>In the New York Times’ account, President Trump’s meddling in the Justice Department is producing problems of his own making. The reported effects in just one week are concrete: interference that imperiled one criminal case, set the stage for sanctions in a second and hindered the confirmation chances of his pick for attorney general. That is an unusually compressed chain of consequences. The excerpt does not detail the cases, but the pattern it describes is familiar in shape: political pressure intended to control legal outcomes can instead contaminate them.</p></div><p class="why"><strong>Why it matters:</strong> Justice Department independence is not an abstract norm when interference affects prosecutions, sanctions risk and confirmation politics. Process becomes outcome.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/03/us/trump-doj-comey-reflecting-pool-blanche.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>The U.S. steps in as the yen’s slide becomes a wider market risk</h2><p class="dek">Washington joined Tokyo’s effort to support the Japanese currency, a sign the yen’s weakness is no longer just Japan’s problem.</p><div class="body-copy"><p>The U.S. Treasury joined efforts in Tokyo to stem the yen’s slide against the dollar, according to the New York Times. Currency interventions are never just about an exchange rate on a screen; the excerpt points to “broader risks” from turmoil in Japanese markets. The U.S. role is the key signal here. If Washington is helping prop up the yen, officials likely see spillover risk beyond Japan’s borders — or at least enough instability to justify coordinated action.</p></div><p class="why"><strong>Why it matters:</strong> Japan sits deep inside global finance. A disorderly yen move can ripple through bonds, trade, corporate balance sheets and investor positioning well beyond Tokyo.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/03/business/us-japan-yen-intervention.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Misty Copeland curates ballet after the spotlight</h2><p class="dek">The retired American Ballet Theater star is shaping a two-week Joyce Theater festival — and, implicitly, the conversation about ballet’s future.</p><div class="body-copy"><p>Misty Copeland, the first Black female principal dancer at American Ballet Theater, is now curating a two-week festival at the Joyce Theater. The Times frames the piece around both the festival and Copeland’s ballet philosophy, which suggests a post-performance role larger than celebrity stewardship. The excerpt gives few program details, but the premise is enough: a dancer whose career carried symbolic weight is using curation to define what and who gets centered onstage.</p></div><p class="why"><strong>Why it matters:</strong> Institutions change not only through appointments and premieres, but through programming. Copeland’s curatorial role is another way influence moves through ballet after retirement.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/03/arts/dance/misty-copeland-ballet-festival-joyce-theater.html" target="_blank" rel="noreferrer">NYT Arts</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Spider-Man is still built for blockbuster gravity</h2><p class="dek">“Brand New Day,” the 11th big-budget Spider-Man movie since 2002, was tracking toward an $875 million global opening.</p><div class="body-copy"><p>Sony’s “Spider-Man: Brand New Day” was on pace for an $875 million global opening, according to the New York Times, and one of the biggest domestic first weekends ever. The number is the story, but so is the ordinal: this is the 11th big-budget Spider-Man blockbuster since 2002. Superhero fatigue may be a durable industry anxiety, but this franchise is apparently still engineered for gravitational pull. The supplied excerpt does not say whether the pace held through the weekend, so the careful read is “heading for,” not final tally.</p></div><p class="why"><strong>Why it matters:</strong> Hollywood’s franchise economy keeps getting declared exhausted, then periodically reminds everyone why studios still bet so heavily on known masks, logos and multigenerational IP.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/01/business/media/spider-man-box-office-superhero.html" target="_blank" rel="noreferrer">NYT Movies</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 3, 2026
+</footer>
+</main>
+</body>
+</html>

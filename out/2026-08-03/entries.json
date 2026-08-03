@@ -1,0 +1,82 @@
+[
+  {
+    "body": "MCP 2.0, formally the 2026-07-28 Model Context Protocol specification, lands as more than a version bump in Simon Willison\u2019s telling. MCP was introduced by Anthropic in November 2024 as a standard way to expose tools to LLM-powered agent frameworks, then rode a major 2025 wave before being partly eclipsed by Anthropic\u2019s Skills. The new stateless direction, Willison writes, has \u201crecaptured\u201d his interest and already inspired mcp-explorer and datasette-mcp. That is a practitioner signal worth noting: not just that a spec changed, but that it may have become easier or more compelling to build against.",
+    "cluster_id": "b08e2853463b7ee0",
+    "dek": "Simon Willison says the 2026-07-28 Model Context Protocol update is the biggest shift since MCP\u2019s debut \u2014 and enough to pull him back in.",
+    "headline": "Stateless MCP gives the agent-tooling spec a second wind",
+    "source_ids": [
+      "b08e2853463b7ee0-s1"
+    ],
+    "why_it_matters": "Agent infrastructure is still in flux. When a once-hyped protocol wins back skeptical builders, it suggests the ecosystem may be converging on more practical interfaces for AI tools."
+  },
+  {
+    "body": "The latest \u201copen artifacts\u201d roundup from Interconnects is built around a blunt thesis: \u201cCapacity to train strong models is proliferating.\u201d The post names Laguna S2.1, Inkling and Kimi K3 as examples of open models showing utility on the Pareto frontier \u2014 the zone where performance trade-offs start to matter most. The excerpt is spare, but the direction is clear: open-model progress is no longer just about symbolic access or lagging replications. It is increasingly about credible artifacts that test how much of the leading edge can be made available outside closed labs.",
+    "cluster_id": "8186fd6c1498f5fc",
+    "dek": "Interconnects points to Laguna S2.1, Inkling and Kimi K3 as evidence that strong model training capacity is spreading.",
+    "headline": "Open models keep crowding the frontier",
+    "source_ids": [
+      "8186fd6c1498f5fc-s1"
+    ],
+    "why_it_matters": "If more groups can train strong models, competitive pressure shifts from simply owning model capability to distribution, tooling, data, deployment and trust."
+  },
+  {
+    "body": "The New York Times says a new field of \u201ctokenomics\u201d has emerged to measure returns on corporate AI spending. The framing is telling. After the first rush of experimentation and infrastructure investment, the conversation is moving from capability demos to accounting: tokens bought, tasks automated, productivity gained, money saved or not. The supplied excerpt does not say whether tokenomics is rigorous, faddish or merely a convenient label, but it captures the pressure building around AI budgets. Executives are no longer just asking whether AI can do something impressive. They are asking whether the bill makes sense.",
+    "cluster_id": "bda54c1be7163925",
+    "dek": "Companies are pouring money into AI; a new measurement field is trying to answer the obvious question \u2014 what are they getting back?",
+    "headline": "AI spending now has its own ROI discipline: tokenomics",
+    "source_ids": [
+      "bda54c1be7163925-s1"
+    ],
+    "why_it_matters": "AI adoption is entering its spreadsheet phase. The winners may be the tools that can prove economic value, not just technical novelty."
+  },
+  {
+    "body": "The New York Times reports that AI is helping people write corridos within hours, accelerating a long-running tradition of memorializing tragedy through song. The case in the headline is stark \u2014 \u201cICE Killed Him\u201d \u2014 and the story appears to focus on a Texas ICE shooting and the rapid creation of a folk ballad in response. What is striking is not just that AI can generate lyrics. It is that a communal form of remembrance, protest and storytelling can now move at platform speed, almost immediately after an event becomes known.",
+    "cluster_id": "13f725c305fc1a6b",
+    "dek": "A century-old song tradition is being compressed into hours after tragedy, with AI helping people write ballads fast.",
+    "headline": "AI speeds up the corrido as breaking-news memorial",
+    "source_ids": [
+      "13f725c305fc1a6b-s1"
+    ],
+    "why_it_matters": "Generative AI is not only reshaping office work and software. It is entering vernacular culture, where speed can amplify grief, politics and memory before institutions have settled the narrative."
+  },
+  {
+    "body": "In the New York Times\u2019 account, President Trump\u2019s meddling in the Justice Department is producing problems of his own making. The reported effects in just one week are concrete: interference that imperiled one criminal case, set the stage for sanctions in a second and hindered the confirmation chances of his pick for attorney general. That is an unusually compressed chain of consequences. The excerpt does not detail the cases, but the pattern it describes is familiar in shape: political pressure intended to control legal outcomes can instead contaminate them.",
+    "cluster_id": "f50e4faf5cee7be5",
+    "dek": "The Times frames the president\u2019s involvement as self-defeating: one case imperiled, another exposed to sanctions and a nomination complicated.",
+    "headline": "Trump\u2019s Justice Department pressure is creating legal blowback",
+    "source_ids": [
+      "f50e4faf5cee7be5-s1"
+    ],
+    "why_it_matters": "Justice Department independence is not an abstract norm when interference affects prosecutions, sanctions risk and confirmation politics. Process becomes outcome."
+  },
+  {
+    "body": "The U.S. Treasury joined efforts in Tokyo to stem the yen\u2019s slide against the dollar, according to the New York Times. Currency interventions are never just about an exchange rate on a screen; the excerpt points to \u201cbroader risks\u201d from turmoil in Japanese markets. The U.S. role is the key signal here. If Washington is helping prop up the yen, officials likely see spillover risk beyond Japan\u2019s borders \u2014 or at least enough instability to justify coordinated action.",
+    "cluster_id": "5a7f515ba73e0588",
+    "dek": "Washington joined Tokyo\u2019s effort to support the Japanese currency, a sign the yen\u2019s weakness is no longer just Japan\u2019s problem.",
+    "headline": "The U.S. steps in as the yen\u2019s slide becomes a wider market risk",
+    "source_ids": [
+      "5a7f515ba73e0588-s1"
+    ],
+    "why_it_matters": "Japan sits deep inside global finance. A disorderly yen move can ripple through bonds, trade, corporate balance sheets and investor positioning well beyond Tokyo."
+  },
+  {
+    "body": "Misty Copeland, the first Black female principal dancer at American Ballet Theater, is now curating a two-week festival at the Joyce Theater. The Times frames the piece around both the festival and Copeland\u2019s ballet philosophy, which suggests a post-performance role larger than celebrity stewardship. The excerpt gives few program details, but the premise is enough: a dancer whose career carried symbolic weight is using curation to define what and who gets centered onstage.",
+    "cluster_id": "fba04ad4e4120a4b",
+    "dek": "The retired American Ballet Theater star is shaping a two-week Joyce Theater festival \u2014 and, implicitly, the conversation about ballet\u2019s future.",
+    "headline": "Misty Copeland curates ballet after the spotlight",
+    "source_ids": [
+      "fba04ad4e4120a4b-s1"
+    ],
+    "why_it_matters": "Institutions change not only through appointments and premieres, but through programming. Copeland\u2019s curatorial role is another way influence moves through ballet after retirement."
+  },
+  {
+    "body": "Sony\u2019s \u201cSpider-Man: Brand New Day\u201d was on pace for an $875 million global opening, according to the New York Times, and one of the biggest domestic first weekends ever. The number is the story, but so is the ordinal: this is the 11th big-budget Spider-Man blockbuster since 2002. Superhero fatigue may be a durable industry anxiety, but this franchise is apparently still engineered for gravitational pull. The supplied excerpt does not say whether the pace held through the weekend, so the careful read is \u201cheading for,\u201d not final tally.",
+    "cluster_id": "3a79613c48d59754",
+    "dek": "\u201cBrand New Day,\u201d the 11th big-budget Spider-Man movie since 2002, was tracking toward an $875 million global opening.",
+    "headline": "Spider-Man is still built for blockbuster gravity",
+    "source_ids": [
+      "3a79613c48d59754-s1"
+    ],
+    "why_it_matters": "Hollywood\u2019s franchise economy keeps getting declared exhausted, then periodically reminds everyone why studios still bet so heavily on known masks, logos and multigenerational IP."
+  }
+]
