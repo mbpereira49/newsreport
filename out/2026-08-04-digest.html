@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-04</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Tuesday, August 4, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>A hardier malaria mosquito is racing into Africa’s cities</h2><p class="dek">An invasive, insecticide-resistant mosquito is spreading fast, and scientists are trying to blunt the urban malaria risk before it compounds.</p><div class="lead-lower"><div class="body-copy"><p>The warning sign here is not just that a malaria-carrying mosquito is moving quickly. It is that this one is reportedly resistant to all insecticides, narrowing the usual public-health playbook just as the threat spreads through African cities. Scientists are now scrambling for ways to reduce the risk, a phrase that carries its own quiet alarm: the tools that worked against other mosquitoes may not be enough against this one.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Malaria control has long depended on killing or repelling mosquitoes. If a fast-spreading urban species can evade insecticides, city health systems may face a harder, more expensive fight.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/04/us/politics/mosquito-africa-anopheles-stephensi.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Marie Gluesenkamp Perez gets squeezed from both sides</h2><p class="dek">Washington State’s primaries put a moderate Democrat in the familiar, uncomfortable spot: defending a battleground seat against challenges from the right and the left.</p><div class="body-copy"><p>Representative Marie Gluesenkamp Perez, a moderate Democrat, is heading into a primary fight that neatly captures the pressures on politicians who run between partisan poles. In her battleground district, she faces candidates to her right and her left, making the contest less a routine primary than a test of whether a cross-pressured political identity can still hold together.</p></div><p class="why"><strong>Why it matters:</strong> Moderate members in competitive districts are often treated as electoral bellwethers. This race may show whether voters reward ideological flexibility—or punish it as insufficient loyalty.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/04/us/politics/washington-state-primaries-what-to-watch.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Kevin Warsh wanted a Fed reset. Markets want clarity.</h2><p class="dek">After comments that rattled markets, the Federal Reserve chair is under pressure to clarify how firmly he is committed to bringing inflation down.</p><div class="body-copy"><p>Kevin M. Warsh came in talking about “regime change.” Now markets appear to be asking for something less dramatic and more useful: a clean signal. After his latest appearance set off volatility, the Federal Reserve chairman is facing pressure to resolve mixed messages about his commitment to lowering inflation. The issue is not merely tone. At the Fed, ambiguity can itself become a policy event.</p></div><p class="why"><strong>Why it matters:</strong> Markets price expectations as much as decisions. If investors doubt the Fed’s inflation resolve—or cannot read it—volatility can rise before any formal policy move is made.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/04/business/kevin-warsh-federal-reserve-markets.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Medicaid flags a surge in autism therapy spending</h2><p class="dek">Spending on the therapy has quintupled since 2021, prompting calls for more state oversight amid concerns about overprescribing and fraud.</p><div class="body-copy"><p>Medicaid is urging states to tighten oversight of autism therapy after spending on the treatment quintupled since 2021. The growth has far outpaced the rise in diagnoses, according to the report, raising concerns that the boom may include overprescribing and fraud. The delicate part is obvious: oversight has to distinguish between needed care and exploitative billing without turning access into collateral damage.</p></div><p class="why"><strong>Why it matters:</strong> When public spending grows this quickly, states face twin risks: fraud that drains Medicaid dollars, and blunt crackdowns that could make legitimate therapy harder to obtain.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/04/health/autism-therapy-medicaid.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Uber’s courtroom posture in sexual-assault suits comes under scrutiny</h2><p class="dek">A review of about a dozen lawsuits describes aggressive legal tactics by Uber as riders pursue claims of assault or harassment during rides.</p><div class="body-copy"><p>An investigation by Emily Steel reviewed roughly a dozen lawsuits brought by Uber riders who say they were sexually assaulted or harassed during rides. The cases, according to the report, reveal aggressive tactics by Uber’s lawyers as part of the company’s defense strategy. The excerpt does not detail those tactics, but the frame is clear: the scrutiny is shifting from the alleged incidents alone to how the platform fights the claims in court.</p></div><p class="why"><strong>Why it matters:</strong> For companies built on trust and scale, legal strategy is reputational strategy. How Uber defends these cases may shape public confidence as much as the outcomes themselves.</p><p class="sources">Sources: <a href="https://nytimes.com/video/business/100000011021856/uber-sexual-assault-lawsuits.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>A Palisades mall reopens into a changed neighborhood</h2><p class="dek">Rick Caruso is reviving a shopping center after the Palisades Fire, even as burned-out lots still surround the property.</p><div class="body-copy"><p>In Pacific Palisades, a shopping center tied to billionaire developer and former Los Angeles mayoral candidate Rick Caruso is set to reopen after the Palisades Fire. The striking detail is the setting: the property is being revived while still surrounded by burned-out lots. That makes the reopening more than a retail milestone. It is a visible bet on recovery before the surrounding landscape has caught up.</p></div><p class="why"><strong>Why it matters:</strong> Post-disaster rebuilding often begins unevenly. A reopened commercial hub can signal momentum, but it can also underline how fragmented recovery remains for the wider community.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/04/business/palisades-mall-wildfires.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Please don’t become a ‘meat proxy’ for AI</h2><p class="dek">A useful new insult names a common failure mode: copying AI output to other humans without reading, checking, or owning it.</p><div class="body-copy"><p>Niklas Gruhn’s phrase “meat proxy,” highlighted by Simon Willison, is funny because it is too precise. It describes people who blindly copy and paste AI-generated text to peers, outsourcing not just drafting but judgment. Willison’s prescription is simple and humane: prompt AI if you want, but read the output, understand it, validate it, and then respond in your own words. The value is not in moving text from machine to person. It is in adding discernment before you do.</p></div><p class="why"><strong>Why it matters:</strong> As AI slips into everyday work, the scarce skill is not generating words. It is being accountable for them.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>A reading list for the not-quite-marriage plot</h2><p class="dek">Literary Hub points toward books that complicate marriage as an ending, a structure, or even the right question.</p><div class="body-copy"><p>This Literary Hub piece begins with a project the writer describes to strangers as “a book about flowers” and to friends and family as “a book about flowers and my not-marriage.” That small distinction opens the door to a reading list about complicating the marriage plot—stories that appear to circle intimacy, commitment, and refusal without treating marriage as the only narrative destination. The supplied excerpt cuts off early, so the specific books are not visible here; the premise is the pleasure.</p></div><p class="why"><strong>Why it matters:</strong> The old marriage plot still shapes how stories organize desire and adulthood. A list that troubles that structure offers a different map of attachment, autonomy, and endings.</p><p class="sources">Sources: <a href="https://lithub.com/complicating-the-marriage-plot-a-reading-list/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1WQlRnT2NRU3RlYkJGaWlEdFVhTlRRY04yMjNtanlSU3dpUkdHWkpjMF9MVFNsNk5MUWJYeVNhZWhMWEFjY3lzamV6ckRVWmtFVU9odUNydXExcW4zbGVqQXh6ZFF2NTdmdDNKQWxzVU9YcG8?oc=5" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 4, 2026
+</footer>
+</main>
+</body>
+</html>
