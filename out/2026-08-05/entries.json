@@ -1,0 +1,84 @@
+[
+  {
+    "body": "LLM 0.32 is a substantial release for people using the CLI as their daily interface to language models. The headliner is visibility: when running reasoning models, LLM can now show reasoning traces to standard error, letting users watch what the model is \u201cthinking\u201d without contaminating standard output that might be piped into another tool. The release also adds server-side provider tools, new models, OpenAI Responses API features, and content-addressable SQLite logs meant to make saved interactions smarter and more robust. Willison also shipped a major update to the llm-anthropic plugin alongside it.",
+    "cluster_id": "6f2123377ebf5948",
+    "dek": "Simon Willison calls the release the project\u2019s most significant since launch, with visible reasoning traces, OpenAI Responses support, server-side tools, and redesigned SQLite logs.",
+    "headline": "LLM 0.32 turns the command line into a better window on reasoning models",
+    "source_ids": [
+      "6f2123377ebf5948-s1"
+    ],
+    "why_it_matters": "The interesting move is not just new model support; it\u2019s treating AI workflows like Unix workflows, where observability and clean streams matter."
+  },
+  {
+    "body": "The U.S. water supply is now the focus of an urgent federal and state response after what officials describe as an assault on water systems. The New York Times frames the story as the consequence of \u201cyears of warnings and neglect,\u201d with officials believing Iranian hackers are behind the activity. The excerpt is thin on operational detail, but the thrust is blunt: a critical infrastructure risk that had been warned about is no longer hypothetical enough to leave on a policy shelf.",
+    "cluster_id": "ac54a2b257fa6822",
+    "dek": "Officials are racing to respond to attacks on the nation\u2019s water supply that they believe are the work of Iranian hackers.",
+    "headline": "Warnings about U.S. water-system hacks are becoming a live emergency",
+    "source_ids": [
+      "ac54a2b257fa6822-s1"
+    ],
+    "why_it_matters": "Water systems are local, essential, and often under-resourced; that combination makes cybersecurity failures feel less like abstract espionage and more like public-safety debt coming due."
+  },
+  {
+    "body": "Abdul El-Sayed has won a major Michigan Senate primary, but the general election is the real examination. The Times frames his candidacy as a critical test for Democrats\u2019 ascendant progressive wing: can an insurgent, running on openly liberal positions, win in a state described as moderate? That is the tension, and it is bigger than one candidate. The primary victory proves strength inside a Democratic electorate; the next phase tests persuasion, coalition discipline, and the limits of ideological appetite in a broader electorate.",
+    "cluster_id": "23ebdd96648c07c9",
+    "dek": "After a high-stakes Senate primary victory, El-Sayed now becomes a case study in whether unabashed liberal politics can travel statewide in a moderate state.",
+    "headline": "Abdul El-Sayed\u2019s Michigan win sets up the harder test for progressives",
+    "source_ids": [
+      "23ebdd96648c07c9-s1"
+    ],
+    "why_it_matters": "Michigan is exactly the kind of place where parties learn whether their energized base is an asset, a ceiling, or both."
+  },
+  {
+    "body": "In African tech hubs, Chinese AI models are gaining ground for a simple reason: they are cheap and freely available. The Times contrasts that accessibility with more powerful U.S. models, suggesting that raw capability is not the only thing that determines adoption. For developers making practical choices, cost and availability can matter more than leaderboard dominance. The excerpt does not name specific models or companies, but the strategic implication is clear enough: China\u2019s AI influence is spreading not only through state policy or hardware, but through tools that developers can actually afford to use.",
+    "cluster_id": "28b5e1f78d103816",
+    "dek": "Developers in African tech hubs are choosing cheap, freely available Chinese models over more powerful U.S. alternatives.",
+    "headline": "China\u2019s AI push in Africa is winning on price and openness",
+    "source_ids": [
+      "28b5e1f78d103816-s1"
+    ],
+    "why_it_matters": "The AI race is often narrated as a contest of frontier performance; this is a reminder that distribution, pricing, and permissive access may decide who becomes default infrastructure."
+  },
+  {
+    "body": "Malta is being cast as a hot destination for U.S. companies looking to protect profits from income taxes. The Times\u2019 example is Crocs, but the framing points to a broader corporate-tax pattern: profits move more easily than factories, workers, or customers. The excerpt does not lay out the mechanism, so the specifics remain outside the supplied material. Still, the story sits squarely in the familiar gap between where companies sell and operate and where they arrange to be taxed.",
+    "cluster_id": "a584dc15c421180d",
+    "dek": "The archipelago has become a favored destination for companies seeking to shield profits from income taxes, with Crocs among the named examples.",
+    "headline": "Malta\u2019s appeal to U.S. companies is the old tax-haven story with a Mediterranean address",
+    "source_ids": [
+      "a584dc15c421180d-s1"
+    ],
+    "why_it_matters": "Tax havens are not side curiosities in the global economy; they shape who pays for public budgets and how much leverage national tax systems really have."
+  },
+  {
+    "body": "Eater\u2019s New York heatmaps are back doing what heatmaps do: narrowing a noisy dining city into a working shortlist. The Brooklyn edition focuses on the hottest new openings in the borough, while the Manhattan version leans on a format Eater says has been around for two decades to answer \u201cWhat\u2019s hot and new in Manhattan?\u201d Both excerpts emphasize reporting, not just list-making, and include smaller openings and hidden gems alongside splashier arrivals. The result is less a definitive canon than a monthly radar for where attention is moving.",
+    "cluster_id": "0df3400ed6c00979",
+    "dek": "The latest Brooklyn and Manhattan guides sort through hot openings, smaller debuts, and hidden gems worth tracking.",
+    "headline": "Eater\u2019s NYC heatmaps keep the new-restaurant chase moving borough by borough",
+    "source_ids": [
+      "0df3400ed6c00979-s1",
+      "0df3400ed6c00979-s2"
+    ],
+    "why_it_matters": "Restaurant culture runs on discovery, but discovery needs curation; these maps are useful precisely because the city\u2019s dining scene is too large to track casually."
+  },
+  {
+    "body": "Lit Hub\u2019s daily roundups are doing their usual elegant rummaging. August 5 teases a writing date with Rumpelstiltskin, a piece on Etna, The Call of the Wild, and the enduring appeal of the canine narrator, plus ten nonfiction titles to read. August 4 is equally eclectic: mothers with babies as the ultimate fl\u00e2neurs, despite the shortage of \u201cmother-fl\u00e2neurs in literature,\u201d and Tracy Borman recommending Tudor-obsession fuel from C.J. Sansom, Hilary Mantel, Stephen Alford, and others. This is the digest\u2019s serendipity shelf: not one story, but a set of doors into craft and criticism.",
+    "cluster_id": "3915a1a5d7dc844f",
+    "dek": "The August 5 and August 4 roundups point readers toward craft, criticism, nonfiction recommendations, Tudor books, and the literary possibilities of walking with a baby.",
+    "headline": "Lit Hub\u2019s daily mix wanders from Rumpelstiltskin writing dates to mother-fl\u00e2neurs",
+    "source_ids": [
+      "3915a1a5d7dc844f-s1",
+      "3915a1a5d7dc844f-s2"
+    ],
+    "why_it_matters": "A good literary daily is less about urgency than appetite; it reminds you that reading trails can begin almost anywhere."
+  },
+  {
+    "body": "Sesame Street is addressing the dangers of warming in an episode this week, but the notable editorial choice is what it reportedly does not say: \u201cclimate change.\u201d The Times frames the episode as climate change coming to Sesame Street, even as the program avoids naming it directly. That tension is the story. For a children\u2019s show, translating planetary risk into age-appropriate language is hard enough; doing so in a polarized media environment adds another layer of choreography.",
+    "cluster_id": "62c01864d214ba2c",
+    "dek": "A new episode focuses on dangerous effects of warming while avoiding the explicit phrase, according to the Times.",
+    "headline": "Sesame Street takes on warming without saying \u2018climate change\u2019",
+    "source_ids": [
+      "62c01864d214ba2c-s1"
+    ],
+    "why_it_matters": "How children\u2019s media talks about climate is culturally revealing: even basic explanations of heat, storms, and danger can become exercises in careful wording."
+  }
+]
