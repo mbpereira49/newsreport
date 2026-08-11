@@ -1,0 +1,82 @@
+[
+  {
+    "body": "A wildfire that broke out near Highway 1 on Sunday spread rapidly overnight, prompting evacuation orders across Monterey County. The setting \u2014 Big Sur, along one of California\u2019s most recognizable coastal routes \u2014 makes this both a local emergency and a reminder that scenic isolation can complicate fast-moving fire response.",
+    "cluster_id": "c2888f60770be7b0",
+    "dek": "A fast-moving blaze on California\u2019s Central Coast is forcing Monterey County evacuation orders.",
+    "headline": "Big Sur fire pushes evacuations along Highway 1",
+    "source_ids": [
+      "c2888f60770be7b0-s1"
+    ],
+    "why_it_matters": "California\u2019s fire season increasingly turns geography into vulnerability: when a blaze moves quickly near limited-access coastal roads, evacuations and containment can become urgent fast."
+  },
+  {
+    "body": "New court evidence, including body-camera video, captures federal agents using racial slurs during immigration sweeps and targeting Latinos while passing over white bystanders, according to the source excerpt. The reported evidence centers on operations in Chicago and Los Angeles, and sharpens a longstanding legal and political question: whether immigration enforcement is being conducted through individualized suspicion or racial profiling.",
+    "cluster_id": "b33e84a1e6520cab",
+    "dek": "Body-camera footage and other evidence reportedly show federal agents using racial slurs and bypassing white bystanders in Chicago and Los Angeles operations.",
+    "headline": "Court evidence points to slurs and Latino targeting in immigration sweeps",
+    "source_ids": [
+      "b33e84a1e6520cab-s1"
+    ],
+    "why_it_matters": "If the evidence holds up in court, it could shape challenges to immigration enforcement practices \u2014 and deepen scrutiny of how federal agents decide whom to stop."
+  },
+  {
+    "body": "Oil prices touched $90 a barrel amid a hardening U.S.-Iran stalemate and dwindling commercial shipping in the Strait of Hormuz. The excerpt does not spell out whether the price move is driven more by actual supply disruption or fear of one, but the market signal is clear enough: traders are pricing geopolitical risk into energy again.",
+    "cluster_id": "12895ba8219e1266",
+    "dek": "Prices rose as the Iran war stalemate hardened and commercial traffic through the Strait of Hormuz continued to shrink.",
+    "headline": "Oil hits $90 as U.S.-Iran stalemate strains Hormuz shipping",
+    "source_ids": [
+      "12895ba8219e1266-s1"
+    ],
+    "why_it_matters": "The Strait of Hormuz is a chokepoint for global energy markets; even reduced shipping activity can ripple into fuel costs, inflation expectations and political pressure on governments."
+  },
+  {
+    "body": "With home equity at record levels, more Americans are refinancing mortgages to pay bills, including credit-card debt. It is a familiar trade: swap expensive short-term debt for borrowing secured by the house. That can ease monthly pressure, but it also turns the home into a balance-sheet shock absorber \u2014 useful until the cushion is gone.",
+    "cluster_id": "e31fdc6c8d3b900f",
+    "dek": "Rising home values are giving households a tempting escape hatch from mounting consumer debt.",
+    "headline": "Americans tap record home equity to outrun credit-card bills",
+    "source_ids": [
+      "e31fdc6c8d3b900f-s1"
+    ],
+    "why_it_matters": "Household debt stress is moving from plastic to property. That may lower immediate interest costs for some borrowers, while tying everyday financial strain more tightly to housing wealth."
+  },
+  {
+    "body": "Investors including BlackRock have committed what the source calls an \u201ceye-popping\u201d amount to lend to the artificial-intelligence industry. The enthusiasm, however, is not universal. The story\u2019s tension is less about whether AI needs capital \u2014 it clearly does \u2014 than whether the rush to fund infrastructure, companies and growth expectations is outrunning sober credit judgment.",
+    "cluster_id": "07deaf0044bccf3d",
+    "dek": "BlackRock and other investors are committing huge sums to finance the artificial-intelligence buildout \u2014 and not everyone is convinced the risk is priced right.",
+    "headline": "Wall Street\u2019s AI lending boom is starting to look less effortless",
+    "source_ids": [
+      "07deaf0044bccf3d-s1"
+    ],
+    "why_it_matters": "AI\u2019s next phase is increasingly debt-financed, not just venture-funded. If lenders misread demand or durability, the consequences could spread beyond tech stocks into broader credit markets."
+  },
+  {
+    "body": "Ari Emanuel\u2019s company plans to acquire ATG Entertainment, an operator of dozens of venues worldwide. The deal would include seven Broadway theaters and 10 in London\u2019s West End, but it still needs regulatory approval. In theater terms, this is not just a real-estate transaction; it is a bid for more control over the stages where commercial productions live or die.",
+    "cluster_id": "451ca84ae230dc9a",
+    "dek": "The proposed ATG Entertainment deal would add seven Broadway theaters and 10 West End venues, pending regulatory approval.",
+    "headline": "Ari Emanuel\u2019s company moves to buy a major theater footprint",
+    "source_ids": [
+      "451ca84ae230dc9a-s1"
+    ],
+    "why_it_matters": "Ownership of major venues shapes what gets booked, how productions scale and who has leverage in two of the world\u2019s most important theater markets."
+  },
+  {
+    "body": "French art experts had insisted the Bayeux Tapestry could never travel. Now the fragile, 900-year-old masterpiece has made its way to the British Museum, thanks to political will, cutting-edge engineering and what the source describes as unorthodox diplomacy. The intrigue here is practical as much as cultural: sometimes the hardest part of moving history is persuading the living custodians that it can be done safely.",
+    "cluster_id": "21a36f7ac62509fd",
+    "dek": "A 900-year-old masterpiece once deemed too fragile to move is traveling after a mix of engineering, politics and diplomacy changed the answer.",
+    "headline": "The Bayeux Tapestry\u2019s improbable trip to the British Museum",
+    "source_ids": [
+      "21a36f7ac62509fd-s1"
+    ],
+    "why_it_matters": "Blockbuster loans of fragile cultural objects test the balance between preservation, access and national symbolism \u2014 especially when the object carries centuries of historical weight."
+  },
+  {
+    "body": "Simon Willison is exploring a deceptively simple way to store revision histories in relational databases: keep the full text of every prior version in a large JSON array of strings, then compress the whole thing with zlib or zstd. The intuition is that repeated text across versions should compress well. The post also notes that he discussed the prototype using GPT\u2011Live voice mode in the ChatGPT iPhone app, though voice conversation URLs still cannot be shared.",
+    "cluster_id": "45f1ff93d98c080b",
+    "dek": "Simon Willison prototypes storing full text revisions in a JSON array, then compressing the lot with zlib or zstd.",
+    "headline": "A small SQLite experiment asks: what if version history is just compressed repetition?",
+    "source_ids": [
+      "45f1ff93d98c080b-s1"
+    ],
+    "why_it_matters": "It is a practitioner\u2019s reminder that useful infrastructure ideas do not always start with complex data models. Sometimes the winning move is to exploit boring compression against repetitive text."
+  }
+]

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-11</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Tuesday, August 11, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Big Sur fire pushes evacuations along Highway 1</h2><p class="dek">A fast-moving blaze on California’s Central Coast is forcing Monterey County evacuation orders.</p><div class="lead-lower"><div class="body-copy"><p>A wildfire that broke out near Highway 1 on Sunday spread rapidly overnight, prompting evacuation orders across Monterey County. The setting — Big Sur, along one of California’s most recognizable coastal routes — makes this both a local emergency and a reminder that scenic isolation can complicate fast-moving fire response.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> California’s fire season increasingly turns geography into vulnerability: when a blaze moves quickly near limited-access coastal roads, evacuations and containment can become urgent fast.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/11/us/california-timber-fire-big-sur.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Court evidence points to slurs and Latino targeting in immigration sweeps</h2><p class="dek">Body-camera footage and other evidence reportedly show federal agents using racial slurs and bypassing white bystanders in Chicago and Los Angeles operations.</p><div class="body-copy"><p>New court evidence, including body-camera video, captures federal agents using racial slurs during immigration sweeps and targeting Latinos while passing over white bystanders, according to the source excerpt. The reported evidence centers on operations in Chicago and Los Angeles, and sharpens a longstanding legal and political question: whether immigration enforcement is being conducted through individualized suspicion or racial profiling.</p></div><p class="why"><strong>Why it matters:</strong> If the evidence holds up in court, it could shape challenges to immigration enforcement practices — and deepen scrutiny of how federal agents decide whom to stop.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/11/us/videos-ice-agents-racial-profiling.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Oil hits $90 as U.S.-Iran stalemate strains Hormuz shipping</h2><p class="dek">Prices rose as the Iran war stalemate hardened and commercial traffic through the Strait of Hormuz continued to shrink.</p><div class="body-copy"><p>Oil prices touched $90 a barrel amid a hardening U.S.-Iran stalemate and dwindling commercial shipping in the Strait of Hormuz. The excerpt does not spell out whether the price move is driven more by actual supply disruption or fear of one, but the market signal is clear enough: traders are pricing geopolitical risk into energy again.</p></div><p class="why"><strong>Why it matters:</strong> The Strait of Hormuz is a chokepoint for global energy markets; even reduced shipping activity can ripple into fuel costs, inflation expectations and political pressure on governments.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/11/business/oil-prices-iran-war-hormuz.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Americans tap record home equity to outrun credit-card bills</h2><p class="dek">Rising home values are giving households a tempting escape hatch from mounting consumer debt.</p><div class="body-copy"><p>With home equity at record levels, more Americans are refinancing mortgages to pay bills, including credit-card debt. It is a familiar trade: swap expensive short-term debt for borrowing secured by the house. That can ease monthly pressure, but it also turns the home into a balance-sheet shock absorber — useful until the cushion is gone.</p></div><p class="why"><strong>Why it matters:</strong> Household debt stress is moving from plastic to property. That may lower immediate interest costs for some borrowers, while tying everyday financial strain more tightly to housing wealth.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/11/business/home-equity-credit-card-debt.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Wall Street’s AI lending boom is starting to look less effortless</h2><p class="dek">BlackRock and other investors are committing huge sums to finance the artificial-intelligence buildout — and not everyone is convinced the risk is priced right.</p><div class="body-copy"><p>Investors including BlackRock have committed what the source calls an “eye-popping” amount to lend to the artificial-intelligence industry. The enthusiasm, however, is not universal. The story’s tension is less about whether AI needs capital — it clearly does — than whether the rush to fund infrastructure, companies and growth expectations is outrunning sober credit judgment.</p></div><p class="why"><strong>Why it matters:</strong> AI’s next phase is increasingly debt-financed, not just venture-funded. If lenders misread demand or durability, the consequences could spread beyond tech stocks into broader credit markets.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/11/business/dealbook/ai-lending-nvidia-blackrock.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Ari Emanuel’s company moves to buy a major theater footprint</h2><p class="dek">The proposed ATG Entertainment deal would add seven Broadway theaters and 10 West End venues, pending regulatory approval.</p><div class="body-copy"><p>Ari Emanuel’s company plans to acquire ATG Entertainment, an operator of dozens of venues worldwide. The deal would include seven Broadway theaters and 10 in London’s West End, but it still needs regulatory approval. In theater terms, this is not just a real-estate transaction; it is a bid for more control over the stages where commercial productions live or die.</p></div><p class="why"><strong>Why it matters:</strong> Ownership of major venues shapes what gets booked, how productions scale and who has leverage in two of the world’s most important theater markets.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/11/theater/ari-emanuel-atg-entertainment.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>The Bayeux Tapestry’s improbable trip to the British Museum</h2><p class="dek">A 900-year-old masterpiece once deemed too fragile to move is traveling after a mix of engineering, politics and diplomacy changed the answer.</p><div class="body-copy"><p>French art experts had insisted the Bayeux Tapestry could never travel. Now the fragile, 900-year-old masterpiece has made its way to the British Museum, thanks to political will, cutting-edge engineering and what the source describes as unorthodox diplomacy. The intrigue here is practical as much as cultural: sometimes the hardest part of moving history is persuading the living custodians that it can be done safely.</p></div><p class="why"><strong>Why it matters:</strong> Blockbuster loans of fragile cultural objects test the balance between preservation, access and national symbolism — especially when the object carries centuries of historical weight.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/11/arts/design/bayeux-tapestry-british-museum.html" target="_blank" rel="noreferrer">NYT Arts</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>A small SQLite experiment asks: what if version history is just compressed repetition?</h2><p class="dek">Simon Willison prototypes storing full text revisions in a JSON array, then compressing the lot with zlib or zstd.</p><div class="body-copy"><p>Simon Willison is exploring a deceptively simple way to store revision histories in relational databases: keep the full text of every prior version in a large JSON array of strings, then compress the whole thing with zlib or zstd. The intuition is that repeated text across versions should compress well. The post also notes that he discussed the prototype using GPT‑Live voice mode in the ChatGPT iPhone app, though voice conversation URLs still cannot be shared.</p></div><p class="why"><strong>Why it matters:</strong> It is a practitioner’s reminder that useful infrastructure ideas do not always start with complex data models. Sometimes the winning move is to exploit boring compression against repetitive text.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 11, 2026
+</footer>
+</main>
+</body>
+</html>
