@@ -1,0 +1,82 @@
+[
+  {
+    "body": "A benign Consumer Price Index reading has given Federal Reserve officials a little breathing room as they weigh whether to raise interest rates. The data appears to reinforce the patient posture many officials have already adopted, according to the report, but it is not a clean all-clear. The debate over rates remains live: one inflation print can ease pressure without settling whether policy is tight enough, too tight, or about to need another nudge.",
+    "cluster_id": "10106aba6beda0a0",
+    "dek": "The latest CPI report strengthens the case for patience on rate increases \u2014 but doesn\u2019t end the argument inside the central bank.",
+    "headline": "Cooler inflation buys the Fed time, not consensus",
+    "source_ids": [
+      "10106aba6beda0a0-s1"
+    ],
+    "why_it_matters": "Markets and borrowers often treat inflation data like a verdict. This one is better understood as a delay: it reduces urgency, while leaving the Fed\u2019s next move unresolved."
+  },
+  {
+    "body": "The Wisconsin Democratic primary for governor became the latest proxy fight between the party\u2019s progressive and moderate wings \u2014 and this round went to a moderate. The result, alongside contests in Minnesota and South Carolina, offers another snapshot of a party still sorting out what kind of candidates it wants to elevate. The supplied report frames Wisconsin as the central signal: closely fought, ideologically legible, and likely to be read well beyond the state.",
+    "cluster_id": "ab092f0f6fc852f7",
+    "dek": "A moderate victory in the closely watched governor\u2019s race adds to the party\u2019s running argument over electability and ideology.",
+    "headline": "Wisconsin\u2019s Democratic primary gives moderates another data point",
+    "source_ids": [
+      "ab092f0f6fc852f7-s1"
+    ],
+    "why_it_matters": "Primaries are where parties reveal their risk tolerance. A moderate win in a contested race suggests Democratic voters, at least in this case, prized general-election positioning over a sharper ideological break."
+  },
+  {
+    "body": "Heat kills hundreds of workers each year, and the legal protections remain uneven. The report centers on a postal carrier as one case in a broader pattern: only about half a dozen states have explicit worker protections for excessive heat. Some states go further in the other direction. Texas, for example, prevents local governments from passing their own heat-safety laws, according to the excerpt.",
+    "cluster_id": "805157178aa3ea88",
+    "dek": "A postal carrier\u2019s death sits inside a larger policy gap: only about half a dozen states explicitly protect workers from excessive heat.",
+    "headline": "Extreme heat is a workplace killer, and the rules are still patchy",
+    "source_ids": [
+      "805157178aa3ea88-s1"
+    ],
+    "why_it_matters": "As extreme heat becomes more routine, worker safety is increasingly a governance question. The current map leaves protection dependent on state politics rather than the physical reality of the job."
+  },
+  {
+    "body": "The long fight over Elizabeth Street Garden appears to be nearing its end. Mamdani plans to abandon the effort to build affordable housing on the Manhattan community garden site, according to the report. That turns a familiar New York dilemma \u2014 scarce open space versus scarce affordable housing \u2014 into a concrete outcome: the garden stays, and the proposed housing plan recedes after more than a decade of conflict.",
+    "cluster_id": "13864f2ce1d17ba8",
+    "dek": "Mamdani is set to abandon a plan to replace Elizabeth Street Garden with affordable housing, ending a decade-plus clash over land use.",
+    "headline": "In Manhattan, the garden wins \u2014 and the housing fight winds down",
+    "source_ids": [
+      "13864f2ce1d17ba8-s1"
+    ],
+    "why_it_matters": "The decision shows how even urgently needed affordable housing can lose when the site has become a beloved neighborhood amenity. In New York land use, the abstract crisis often meets very specific resistance."
+  },
+  {
+    "body": "Five Palestinian American plaintiffs, all currently or formerly affiliated with Columbia University, have filed a discrimination lawsuit against the school. They allege Columbia failed to adequately protect them from harassment in the period after the 2023 Hamas attack against Israel. The excerpt gives the plaintiffs\u2019 claim, not Columbia\u2019s response, so the legal and factual dispute remains one-sided in the available material.",
+    "cluster_id": "7badeb093f4cc4f4",
+    "dek": "Five current or former Columbia affiliates say the university did not adequately shield them from harassment after the 2023 Hamas attack on Israel.",
+    "headline": "Palestinian Americans sue Columbia over alleged failure to protect them",
+    "source_ids": [
+      "7badeb093f4cc4f4-s1"
+    ],
+    "why_it_matters": "Universities are still litigating \u2014 legally and institutionally \u2014 how they handled campus life after Oct. 7. This case places Palestinian American students and affiliates at the center of that accountability fight."
+  },
+  {
+    "body": "Latent Space\u2019s AINews entry, titled \u201cHow to steal a Reasoning Trace,\u201d points at a technical and competitive anxiety in AI: whether the intermediate reasoning-like outputs of a model can be captured or distilled. The excerpt\u2019s line \u2014 \u201cSpeculative Decoding by any other name would distil as sweet\u201d \u2014 suggests the piece connects model-speed techniques with knowledge extraction, though the supplied material is intentionally elliptical.",
+    "cluster_id": "a0fc28deaf118896",
+    "dek": "Latent Space frames the issue with a wink: speculative decoding, distillation, and the problem of extracting how a model thinks.",
+    "headline": "The AI world is worrying about stolen reasoning traces",
+    "source_ids": [
+      "a0fc28deaf118896-s1"
+    ],
+    "why_it_matters": "As AI systems become more valuable, the fight is not just over outputs but over process. If reasoning traces can be copied, hidden, or reconstructed, model differentiation and safety claims both get messier."
+  },
+  {
+    "body": "Simon Willison amplifies Sophie Alpert\u2019s internal policy on AI-assisted engineering writing, focusing on a blunt premise: there are no lossless transformations of natural-language text. If an LLM helps massage a document, the author still has to own the ideas and sentences. The key test is social, not technical: if a reviewer asks what a line means, \u201cAI wrote that\u201d is not an acceptable escape hatch.",
+    "cluster_id": "2b65137040358647",
+    "dek": "Simon Willison highlights a simple rule for engineers using LLMs: you must stand behind every sentence you publish.",
+    "headline": "AI can help edit your writing \u2014 but it can\u2019t own your meaning",
+    "source_ids": [
+      "2b65137040358647-s1"
+    ],
+    "why_it_matters": "This is a useful standard for AI in knowledge work: delegation does not remove authorship. The more fluent the machine\u2019s prose becomes, the more important it is to verify that the document still represents your actual thinking."
+  },
+  {
+    "body": "The International Puppet Fringe Festival is taking over the Lower East Side with dozens of shows, films, exhibits, and workshops. This year\u2019s focus is women, captured by the nicely pointed question in the source title: what if Judy punched back? It sounds playful, but the frame suggests a festival interested in who gets to animate old forms \u2014 and who gets to rewrite their power dynamics.",
+    "cluster_id": "b9fb3920031a8d9f",
+    "dek": "The International Puppet Fringe Festival brings shows, films, exhibits, and workshops to New York \u2014 with women at the center this year.",
+    "headline": "At a Lower East Side puppet festival, Judy gets a fist",
+    "source_ids": [
+      "b9fb3920031a8d9f-s1"
+    ],
+    "why_it_matters": "A puppet festival is the day\u2019s welcome swerve, but it also fits a bigger cultural pattern: revisiting inherited stories by changing who holds the strings."
+  }
+]
