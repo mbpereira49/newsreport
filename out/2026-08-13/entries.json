@@ -1,0 +1,82 @@
+[
+  {
+    "body": "New York\u2019s unusually generous health plan for working-class people has been hit hard by federal funding cuts, according to the report. The result is not an abstract budget fight: more than 400,000 people are now trying to find replacement coverage or living uninsured. The political framing is plain in the story\u2019s premise\u2014Trump-era cuts are now showing up as household-level trade-offs, especially for people who were not poor enough for the most limited safety nets but not financially secure enough to absorb the loss of coverage.",
+    "cluster_id": "2e3f60e7b42750f2",
+    "dek": "More than 400,000 New Yorkers are hunting for health insurance\u2014or going without\u2014after federal cuts hit a state plan for working-class residents.",
+    "headline": "New York\u2019s coverage cliff arrives",
+    "source_ids": [
+      "2e3f60e7b42750f2-s1"
+    ],
+    "why_it_matters": "Health policy often becomes real only when enrollment letters arrive. This is a large-scale test of how quickly a state can patch a hole created by federal retrenchment\u2014and who falls through while it tries."
+  },
+  {
+    "body": "The Department of Homeland Security used a no-bid contract to buy 10 used jets for deportation flights, saying the planes were urgently needed. But the report says the $464 million fleet has mostly been parked for months. That gap\u2014between emergency procurement and actual use\u2014is the story: an expensive piece of immigration-enforcement infrastructure acquired under urgency, then apparently underused.",
+    "cluster_id": "1a708a86c59b7592",
+    "dek": "Homeland Security spent $464 million through a no-bid contract for 10 used jets it said were urgently needed. The fleet has largely sat idle for months.",
+    "headline": "DHS bought deportation jets, then left them parked",
+    "source_ids": [
+      "1a708a86c59b7592-s1"
+    ],
+    "why_it_matters": "No-bid contracts always ask for trust; idle assets ask whether that trust was earned. The episode is a clean window into how the politics of deportation can translate into costly, fast-moving procurement decisions."
+  },
+  {
+    "body": "Three states are set to execute inmates on the same day. The Tennessee execution carries particular scrutiny because, months earlier, the state called off another execution after medical staff could not find a vein for lethal injection. The excerpt does not say whether the other two states face similar procedural questions, but the clustering of executions itself makes the day notable\u2014and Tennessee\u2019s recent failure makes the mechanics impossible to treat as routine.",
+    "cluster_id": "8d6be1485424999c",
+    "dek": "Tennessee, Alabama and Oklahoma are scheduled to carry out executions, with Tennessee\u2019s plan shadowed by a recently botched attempt involving lethal injection access.",
+    "headline": "Three states move toward executions on the same day",
+    "source_ids": [
+      "8d6be1485424999c-s1"
+    ],
+    "why_it_matters": "Capital punishment debates often center on law and morality, but implementation is its own battleground. A state\u2019s inability to carry out an execution as planned can reshape public attention around competence, cruelty and oversight."
+  },
+  {
+    "body": "A Covid-era scramble has reshaped Supreme Court oral arguments. Live audio, a new format and a broader set of voices have transformed what the report calls the court\u2019s signature public ceremony. The change appears double-edged: more accessible and arguably more revealing, but also disruptive to a ritual built on hierarchy, timing and controlled public exposure.",
+    "cluster_id": "40bdae7285e20243",
+    "dek": "Live audio and a revised argument format have changed the court\u2019s most public ritual\u2014opening it up while unsettling its old choreography.",
+    "headline": "The Supreme Court\u2019s pandemic improvisation stuck",
+    "source_ids": [
+      "40bdae7285e20243-s1"
+    ],
+    "why_it_matters": "Oral arguments are not just legal theater; they are one of the few regular ways the public hears the justices work. Changing the format changes how the court explains itself\u2014and how it is judged."
+  },
+  {
+    "body": "The Treasury Department is scaling back scrutiny of U.S. shell companies by declining to enforce reporting requirements under the 2021 Corporate Transparency Act. The law was designed to crack down on money laundering by requiring more disclosure from business entities. The move does not repeal the law, based on the excerpt, but nonenforcement can be functionally powerful: a transparency regime without enforcement is, at minimum, a much softer deterrent.",
+    "cluster_id": "473f01aba0cb939d",
+    "dek": "The Trump administration will not enforce Corporate Transparency Act reporting rules meant to help crack down on money laundering.",
+    "headline": "Treasury backs off shell-company transparency",
+    "source_ids": [
+      "473f01aba0cb939d-s1"
+    ],
+    "why_it_matters": "Anonymous shell companies are a favored tool for hiding money. Pulling back on disclosure enforcement shifts the balance toward privacy for owners\u2014and away from investigators trying to trace illicit finance."
+  },
+  {
+    "body": "A new generation of U.S. start-ups is trying to build a domestic humanoid robot industry, but the race is already uneven. China, the report says, is already manufacturing humanoid robots by the thousands. The American bet is that the market is still early enough for new entrants to matter. The risk is that manufacturing scale\u2014not just software ambition\u2014becomes the decisive advantage.",
+    "cluster_id": "5ae733c9ab42dc0b",
+    "dek": "China is manufacturing humanoid robots by the thousands, while U.S. start-ups are betting there is still time to compete.",
+    "headline": "The U.S. wants a humanoid robot industry. China already has one.",
+    "source_ids": [
+      "5ae733c9ab42dc0b-s1"
+    ],
+    "why_it_matters": "Humanoid robots sit at the intersection of AI, hardware, labor and industrial policy. If the category becomes commercially important, the country that can manufacture at scale may shape both the technology and the market."
+  },
+  {
+    "body": "Latent Space\u2019s AINews item casts SpaceXAI\u2019s Grok 4.6 and Grok @Bot as perhaps the most significant new entrant yet in the AI teammate category. The excerpt is more industry signal than full accounting: it does not detail features, benchmarks or adoption. But the framing is notable. \u201cAI teammate\u201d suggests a shift from chatbots as tools you query toward agents that participate in ongoing work, coordination or collaboration.",
+    "cluster_id": "a9f2e6fcd18c3f41",
+    "dek": "Latent Space frames SpaceXAI\u2019s Grok 4.6 and Grok @Bot as a major new entrant in the emerging \u201cAI teammate\u201d category.",
+    "headline": "Grok pushes into the AI teammate race",
+    "source_ids": [
+      "a9f2e6fcd18c3f41-s1"
+    ],
+    "why_it_matters": "The next platform fight in AI may be less about who has the cleverest chatbot and more about who owns the persistent work companion. Even the label \u201cteammate\u201d is a bid to redefine user expectations."
+  },
+  {
+    "body": "The report describes a golden age for Mexican food in the United States: never a richer variety of Mexican restaurants, even amid anti-immigration politics. That tension is the point. A cuisine deeply shaped by migration, regional identity and labor is being celebrated at the same time the politics around immigration have hardened. The story\u2019s \u201ccomplicated\u201d is doing real work: abundance on the plate does not erase pressure on the people and communities behind it.",
+    "cluster_id": "0835ff8a15ab963d",
+    "dek": "The U.S. has never had a richer variety of Mexican restaurants, even as anti-immigration politics complicate the moment.",
+    "headline": "Mexican food is flourishing in America, under a political shadow",
+    "source_ids": [
+      "0835ff8a15ab963d-s1"
+    ],
+    "why_it_matters": "Food culture is often treated as a feel-good story of American openness. This one asks a sharper question: what does it mean to celebrate a culture\u2019s restaurants while contesting the presence of its people?"
+  }
+]
