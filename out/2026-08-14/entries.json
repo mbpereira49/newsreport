@@ -1,0 +1,83 @@
+[
+  {
+    "body": "The squeeze in rural Alaska is brutally simple: small towns and hamlets rely on diesel generators for electricity, and diesel prices are soaring. The Times frames Manley Hot Springs as a community under strain from an energy crisis worsened by war, with \u201cno end in sight\u201d to the price pressure. That means this is not just an inflation story; it is an infrastructure story, too. When the basic system for keeping lights on depends on fuel that must be bought at volatile global prices, every geopolitical shock lands locally.",
+    "cluster_id": "df295504e85ff9a6",
+    "dek": "In places like Manley Hot Springs, electricity still runs through diesel generators\u2014and the bill is rising.",
+    "headline": "Rural Alaska\u2019s energy math gets harsher",
+    "source_ids": [
+      "df295504e85ff9a6-s1"
+    ],
+    "why_it_matters": "Energy transition debates often sound abstract. In diesel-dependent communities, they show up as immediate questions of survival, affordability and whether a place can remain viable."
+  },
+  {
+    "body": "Flock, whose cameras track vehicles, is rolling out privacy updates after criticism of how the technology can be used. The company\u2019s move reads as an attempt to reassure the public and regulators; critics quoted by the Times are not buying it, calling the measures \u201cpublic relations\u201d and warning they still leave room for misuse. With only the excerpt here, the exact technical changes are unclear. The important signal is the fight over default power: whether surveillance tools are governed by meaningful limits, or by company policies that can be revised after trust has already been spent.",
+    "cluster_id": "a2a12304ed3a76ed",
+    "dek": "The car-tracking company announced privacy updates, but critics say the changes leave the core risks intact.",
+    "headline": "Flock tries to calm the camera backlash",
+    "source_ids": [
+      "a2a12304ed3a76ed-s1"
+    ],
+    "why_it_matters": "License-plate and vehicle-tracking networks can become public safety tools, surveillance infrastructure, or both. The privacy rules around them are being negotiated in real time."
+  },
+  {
+    "body": "Japan is struggling to stop the yen\u2019s decline. According to the Times, the currency has resumed its slide after earlier gains tied to U.S. Treasury intervention, while concerns build around the direction of Japan\u2019s spending. The excerpt does not spell out the mechanics, but the outline is familiar: currency support can buy time, not necessarily change the forces pushing a currency down. If investors remain worried about fiscal policy or broader economic direction, intervention risks becoming a pause button rather than a reset.",
+    "cluster_id": "854d797a3882b1b2",
+    "dek": "Japan\u2019s currency is sliding again, eroding gains after U.S. Treasury intervention.",
+    "headline": "The yen\u2019s rescue didn\u2019t stick",
+    "source_ids": [
+      "854d797a3882b1b2-s1"
+    ],
+    "why_it_matters": "A weaker yen affects trade, inflation and household purchasing power in Japan\u2014and it tests how much governments can shape currency markets when confidence is moving the other way."
+  },
+  {
+    "body": "The Interconnects piece starts from a nicely self-incriminating question: after writing an AI textbook, how long until AI can do the job better? The excerpt describes it as a reflection on AI\u2019s writing ability and how models become more capable. That framing matters because it moves the discussion away from demo spectacle and toward professional craft. Textbooks require structure, judgment, explanation and taste\u2014not just fluent paragraphs. The open question is whether those remain durable human advantages, or simply current benchmarks on a moving curve.",
+    "cluster_id": "b293b774f8ecbe00",
+    "dek": "A practitioner reflects on machine writing, model capability and the uneasy pace of improvement.",
+    "headline": "An AI textbook author asks when AI catches up",
+    "source_ids": [
+      "b293b774f8ecbe00-s1"
+    ],
+    "why_it_matters": "AI\u2019s impact on writing will not be measured only by whether it can produce prose. The harder test is whether it can organize knowledge well enough to teach."
+  },
+  {
+    "body": "Simon Willison points to a paper with a memorable vanity domain, stolen-thoughts.com, and a striking claim: Anthropic, OpenAI and Google return encrypted chain-of-thought blocks to clients that can be replayed across sessions, users and models. The excerpt says the researchers take a trace from a frontier model, replay it into a weaker sibling, jailbreak that weaker model and recover the stronger model\u2019s hidden reasoning in plaintext. That is a big claim, and the excerpt frames it as a \u201cneat paper,\u201d not a fully litigated security consensus. Still, the alleged failure mode is serious: hidden reasoning may be less hidden if implementation details allow replay attacks.",
+    "cluster_id": "0b8640412a891f7c",
+    "dek": "A paper highlighted by Simon Willison says encrypted chain-of-thought blocks can be replayed and exposed.",
+    "headline": "A claimed crack in hidden AI reasoning",
+    "source_ids": [
+      "0b8640412a891f7c-s1"
+    ],
+    "why_it_matters": "As model providers hide chain-of-thought for safety and product reasons, the security of those hidden traces becomes part of the API surface\u2014not just an internal design choice."
+  },
+  {
+    "body": "Little White Lies profiles Paul Ridd as the Edinburgh International Film Festival enters its 79th year. The excerpt centers on a familiar but real challenge for long-running cultural institutions: how to honor history without becoming trapped by it. Ridd\u2019s answer, at least as framed here, is collaboration\u2014treating the festival\u2019s past as a foundation rather than a museum case. The duplicate feed item adds no new detail, but reinforces the piece as an interview-style festival dispatch rather than a review of this year\u2019s slate.",
+    "cluster_id": "d6edf7dcd02cb093",
+    "dek": "As EIFF reaches its 79th year, director Paul Ridd emphasizes collaboration and institutional memory.",
+    "headline": "Edinburgh\u2019s film festival looks backward to move forward",
+    "source_ids": [
+      "d6edf7dcd02cb093-s1",
+      "d6edf7dcd02cb093-s2"
+    ],
+    "why_it_matters": "Film festivals are not just showcases; they are cultural infrastructure. Their leadership choices shape what gets discovered, canonized and remembered."
+  },
+  {
+    "body": "In Literary Hub, the author describes founding Gaza Publications during what the piece calls genocide. The excerpt begins in Rafah, in displacement, under a roof the writer was not sure would survive the night, with shells falling nearby. From that scene, the project\u2019s title-level argument is clear: publication becomes a defense against erasure. With only the excerpt, we do not get the full institutional plan or catalog. What comes through is the urgency of record-making when ordinary life, physical safety and cultural continuity are all under attack.",
+    "cluster_id": "eacd55a678660c84",
+    "dek": "A Literary Hub essay explains the founding of Gaza Publications from displacement in Rafah.",
+    "headline": "A publishing project against erasure in Gaza",
+    "source_ids": [
+      "eacd55a678660c84-s1"
+    ],
+    "why_it_matters": "Publishing can seem slow beside war. This piece argues the opposite: that preserving voices and testimony is part of survival, not an afterthought."
+  },
+  {
+    "body": "The Times profiles Andy Mariani, an 80-year-old grower of \u201cexotic and ethereally delicious\u201d stone fruit in Silicon Valley. The hook is elegiac: a dirt farmer hanging up his shears in a region better known for code, capital and campuses. The excerpt says he is giving up the land, but does not specify what will replace it. Even without that detail, the contrast is sharp. Silicon Valley\u2019s mythology celebrates creation; Mariani\u2019s orchard represents another version of it, slower, seasonal and rooted in soil that has become extraordinarily contested.",
+    "cluster_id": "3b2217fd93e6870c",
+    "dek": "Andy Mariani, known for rare stone fruit grown in the shadow of tech giants, is giving up the land at 80.",
+    "headline": "Silicon Valley loses a different kind of maker",
+    "source_ids": [
+      "3b2217fd93e6870c-s1"
+    ],
+    "why_it_matters": "Stories like this mark how economic geography changes culture. When agricultural land disappears from high-value regions, what vanishes is not only acreage but knowledge, flavor and memory."
+  }
+]

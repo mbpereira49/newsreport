@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-14</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Friday, August 14, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Rural Alaska’s energy math gets harsher</h2><p class="dek">In places like Manley Hot Springs, electricity still runs through diesel generators—and the bill is rising.</p><div class="lead-lower"><div class="body-copy"><p>The squeeze in rural Alaska is brutally simple: small towns and hamlets rely on diesel generators for electricity, and diesel prices are soaring. The Times frames Manley Hot Springs as a community under strain from an energy crisis worsened by war, with “no end in sight” to the price pressure. That means this is not just an inflation story; it is an infrastructure story, too. When the basic system for keeping lights on depends on fuel that must be bought at volatile global prices, every geopolitical shock lands locally.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Energy transition debates often sound abstract. In diesel-dependent communities, they show up as immediate questions of survival, affordability and whether a place can remain viable.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/14/us/rural-alaska-oil-prices-iran.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Flock tries to calm the camera backlash</h2><p class="dek">The car-tracking company announced privacy updates, but critics say the changes leave the core risks intact.</p><div class="body-copy"><p>Flock, whose cameras track vehicles, is rolling out privacy updates after criticism of how the technology can be used. The company’s move reads as an attempt to reassure the public and regulators; critics quoted by the Times are not buying it, calling the measures “public relations” and warning they still leave room for misuse. With only the excerpt here, the exact technical changes are unclear. The important signal is the fight over default power: whether surveillance tools are governed by meaningful limits, or by company policies that can be revised after trust has already been spent.</p></div><p class="why"><strong>Why it matters:</strong> License-plate and vehicle-tracking networks can become public safety tools, surveillance infrastructure, or both. The privacy rules around them are being negotiated in real time.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/13/business/flock-cameras-privacy-updates.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>The yen’s rescue didn’t stick</h2><p class="dek">Japan’s currency is sliding again, eroding gains after U.S. Treasury intervention.</p><div class="body-copy"><p>Japan is struggling to stop the yen’s decline. According to the Times, the currency has resumed its slide after earlier gains tied to U.S. Treasury intervention, while concerns build around the direction of Japan’s spending. The excerpt does not spell out the mechanics, but the outline is familiar: currency support can buy time, not necessarily change the forces pushing a currency down. If investors remain worried about fiscal policy or broader economic direction, intervention risks becoming a pause button rather than a reset.</p></div><p class="why"><strong>Why it matters:</strong> A weaker yen affects trade, inflation and household purchasing power in Japan—and it tests how much governments can shape currency markets when confidence is moving the other way.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/14/business/japan-yen-intervention.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>An AI textbook author asks when AI catches up</h2><p class="dek">A practitioner reflects on machine writing, model capability and the uneasy pace of improvement.</p><div class="body-copy"><p>The Interconnects piece starts from a nicely self-incriminating question: after writing an AI textbook, how long until AI can do the job better? The excerpt describes it as a reflection on AI’s writing ability and how models become more capable. That framing matters because it moves the discussion away from demo spectacle and toward professional craft. Textbooks require structure, judgment, explanation and taste—not just fluent paragraphs. The open question is whether those remain durable human advantages, or simply current benchmarks on a moving curve.</p></div><p class="why"><strong>Why it matters:</strong> AI’s impact on writing will not be measured only by whether it can produce prose. The harder test is whether it can organize knowledge well enough to teach.</p><p class="sources">Sources: <a href="https://interconnects.ai/p/i-wrote-an-ai-textbook-how-long-until" target="_blank" rel="noreferrer">Interconnects</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>A claimed crack in hidden AI reasoning</h2><p class="dek">A paper highlighted by Simon Willison says encrypted chain-of-thought blocks can be replayed and exposed.</p><div class="body-copy"><p>Simon Willison points to a paper with a memorable vanity domain, stolen-thoughts.com, and a striking claim: Anthropic, OpenAI and Google return encrypted chain-of-thought blocks to clients that can be replayed across sessions, users and models. The excerpt says the researchers take a trace from a frontier model, replay it into a weaker sibling, jailbreak that weaker model and recover the stronger model’s hidden reasoning in plaintext. That is a big claim, and the excerpt frames it as a “neat paper,” not a fully litigated security consensus. Still, the alleged failure mode is serious: hidden reasoning may be less hidden if implementation details allow replay attacks.</p></div><p class="why"><strong>Why it matters:</strong> As model providers hide chain-of-thought for safety and product reasons, the security of those hidden traces becomes part of the API surface—not just an internal design choice.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Edinburgh’s film festival looks backward to move forward</h2><p class="dek">As EIFF reaches its 79th year, director Paul Ridd emphasizes collaboration and institutional memory.</p><div class="body-copy"><p>Little White Lies profiles Paul Ridd as the Edinburgh International Film Festival enters its 79th year. The excerpt centers on a familiar but real challenge for long-running cultural institutions: how to honor history without becoming trapped by it. Ridd’s answer, at least as framed here, is collaboration—treating the festival’s past as a foundation rather than a museum case. The duplicate feed item adds no new detail, but reinforces the piece as an interview-style festival dispatch rather than a review of this year’s slate.</p></div><p class="why"><strong>Why it matters:</strong> Film festivals are not just showcases; they are cultural infrastructure. Their leadership choices shape what gets discovered, canonized and remembered.</p><p class="sources">Sources: <a href="https://lwlies.com/festivals/eiff-79-paul-ridd" target="_blank" rel="noreferrer">Little White Lies</a> · <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE40b2tKZHVnSWpIT1Q4a19ndkVrWGNPbnVsV2ZfUGxoM2hOV3Zjb0tzcGMyQXR5T2FreEhMTU9ndVN6bDZRZFZ2NHl2Z3M4R2hSUzVVT2pIWEZEQQ?oc=5" target="_blank" rel="noreferrer">Little White Lies</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>A publishing project against erasure in Gaza</h2><p class="dek">A Literary Hub essay explains the founding of Gaza Publications from displacement in Rafah.</p><div class="body-copy"><p>In Literary Hub, the author describes founding Gaza Publications during what the piece calls genocide. The excerpt begins in Rafah, in displacement, under a roof the writer was not sure would survive the night, with shells falling nearby. From that scene, the project’s title-level argument is clear: publication becomes a defense against erasure. With only the excerpt, we do not get the full institutional plan or catalog. What comes through is the urgency of record-making when ordinary life, physical safety and cultural continuity are all under attack.</p></div><p class="why"><strong>Why it matters:</strong> Publishing can seem slow beside war. This piece argues the opposite: that preserving voices and testimony is part of survival, not an afterthought.</p><p class="sources">Sources: <a href="https://lithub.com/before-we-are-erased-why-i-founded-gaza-publications-during-the-genocide/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Silicon Valley loses a different kind of maker</h2><p class="dek">Andy Mariani, known for rare stone fruit grown in the shadow of tech giants, is giving up the land at 80.</p><div class="body-copy"><p>The Times profiles Andy Mariani, an 80-year-old grower of “exotic and ethereally delicious” stone fruit in Silicon Valley. The hook is elegiac: a dirt farmer hanging up his shears in a region better known for code, capital and campuses. The excerpt says he is giving up the land, but does not specify what will replace it. Even without that detail, the contrast is sharp. Silicon Valley’s mythology celebrates creation; Mariani’s orchard represents another version of it, slower, seasonal and rooted in soil that has become extraordinarily contested.</p></div><p class="why"><strong>Why it matters:</strong> Stories like this mark how economic geography changes culture. When agricultural land disappears from high-value regions, what vanishes is not only acreage but knowledge, flavor and memory.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/14/business/andys-orchard-silicon-valley.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 14, 2026
+</footer>
+</main>
+</body>
+</html>
