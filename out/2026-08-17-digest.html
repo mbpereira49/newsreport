@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-17</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Monday, August 17, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Qwen’s new 27B model looks laptop-friendly — with one big caveat</h2><p class="dek">Alibaba’s Qwen 3.8 27B arrives as an Apache 2, vision-capable model in the sweet spot for serious local use.</p><div class="lead-lower"><div class="body-copy"><p>Simon Willison’s early read on Qwen 3.8 27B is enthusiastic but not unqualified: a 27-billion-parameter, Apache 2–licensed, vision-capable model from Alibaba’s Qwen lab is exactly the kind of release that matters for people running models on “reasonably specced” laptops. Qwen’s own benchmarks claim meaningful gains over Qwen 3.6 27B and even the closed-weight Qwen 3.7-Plus, which Willison notes was among Qwen’s strongest models as recently as May. The catch is in the framing of his headline: the model may be excellent, but it defaults to “wildly overthinking things.” Independent benchmarks are still pending, and self-reported numbers deserve the usual discount.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> The open-weight local-model tier keeps improving fast. If a 27B vision model can compete credibly while running on high-end personal hardware, the frontier between cloud-only AI and personal AI gets blurrier.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/16/qwen-38-27b/" target="_blank" rel="noreferrer">Simon Willison</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Flue 2 wants to be React for agents</h2><p class="dek">Fred Schott’s agent harness borrows hooks from frontend development — a telling sign of where AI engineering is maturing.</p><div class="body-copy"><p>Latent Space profiles Flue 2, an agent framework from Astro creator Fred Schott that takes direct inspiration from React. The core idea is less about yet another agent demo and more about the “harness”: the runtime, structure, and developer ergonomics that define what an agent can reliably do. Schott has added hooks, borrowing one of React’s most influential abstractions, to organize agent behavior. That analogy is doing a lot of work. Frontend development got dramatically more legible once teams converged around component models, lifecycle patterns, and state management. Agent infrastructure is now hunting for its own equivalents.</p></div><p class="why"><strong>Why it matters:</strong> The agent story is shifting from flashy autonomy to boring-but-crucial software architecture. If agents become useful, it may be because their harnesses become as disciplined as UI frameworks.</p><p class="sources">Sources: <a href="https://latent.space/p/flue-2" target="_blank" rel="noreferrer">Latent Space</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>The essay is becoming the AI fault line in schools</h2><p class="dek">Educators worry students are losing more than grammar when they stop writing for themselves.</p><div class="body-copy"><p>The New York Times reports that educators are increasingly worried many students can no longer write essays without AI. The concern is not just mechanical — spelling, grammar, structure — but developmental. Writing has long functioned as a way to clarify thought, build argument, and practice intellectual stamina. If students outsource that process too early or too often, the loss may be harder to measure than a bad paragraph but more consequential. The excerpt does not tell us how widespread the problem is, and schools are likely seeing uneven patterns. Still, the anxiety is clear: AI assistance is forcing educators to decide what writing is for.</p></div><p class="why"><strong>Why it matters:</strong> This is one of the central AI-in-education questions: whether tools that improve output also weaken the cognitive practice that output used to prove.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/17/us/student-writing-essays-ai.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>AI data centers are becoming local political bargains</h2><p class="dek">As tech giants build more infrastructure, policymakers want communities to share in the upside.</p><div class="body-copy"><p>The New York Times says pressure is mounting around the country to ensure AI data centers do not enrich only the companies building them. The excerpt frames this as a political economy problem: data centers bring investment, but also concentrate benefits unless policymakers negotiate for something broader. The details are not supplied here — tax terms, power demands, jobs, revenue sharing, or community benefits — but the direction is familiar. AI’s physical footprint is now large enough that local governments are treating it less like abstract innovation and more like heavy infrastructure.</p></div><p class="why"><strong>Why it matters:</strong> The AI boom is no longer just chips, models, and apps. It is land, electricity, water, tax policy, and regional bargaining power — and communities are starting to ask what they get in return.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/16/business/ai-data-centers.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>China’s talent push gets help from U.S. restrictions</h2><p class="dek">A long-standing pipeline of young researchers to America is being reshaped by Chinese funding and tighter U.S. rules.</p><div class="body-copy"><p>The New York Times reports that China’s hunt for scientific talent is benefiting from a combination of Chinese money and U.S. restrictions. Young researchers have long come to the United States for academic training, but the balance is shifting. The excerpt does not specify which restrictions are most decisive or how many researchers are changing plans, so the causal picture should be read carefully. But the strategic tension is plain: policies meant to protect U.S. scientific and technological advantage can also make the U.S. a less attractive destination for the very people who help sustain it.</p></div><p class="why"><strong>Why it matters:</strong> Talent is infrastructure. In science and AI especially, visa policy, research funding, and national-security anxieties can redirect careers — and eventually redirect innovation.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/17/business/china-scientific-talent-competition.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>A false Iran nuclear claim shows the velocity of bad information</h2><p class="dek">A dubious post on X reportedly traveled from India into Washington’s discourse, hardening into a false claim.</p><div class="body-copy"><p>The New York Times traces how a dubious X post became the basis for false claims that Iran’s leadership had declared the country a nuclear power. The excerpt says the claim ricocheted from India to Washington, a neat illustration of how misinformation now moves: geographically, politically, and platform-to-platform, often faster than verification can catch up. The underlying subject — Iran and nuclear status — is especially volatile, which makes the mutation of a bad post into a policy-adjacent talking point more dangerous than ordinary social media noise.</p></div><p class="why"><strong>Why it matters:</strong> False claims about nuclear weapons are not just content moderation problems. They can distort public debate, feed geopolitical escalation, and reward actors who launder uncertainty into certainty.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/16/business/iran-nuclear-false-claims.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Baltimore is adjusting to a startling drop in murder</h2><p class="dek">After decades of grim homicide totals, the city is confronting a different and unfamiliar reality.</p><div class="body-copy"><p>The New York Times reports that murder in Baltimore has fallen to historic lows, a striking turn for a city long associated with high homicide totals. The excerpt emphasizes adjustment: not only the statistics, but the people whose work revolves around violent crime are dealing with a changed landscape. Without the full article, we do not know which causes the reporting weighs most heavily — policing, community intervention, demographics, drug markets, broader national trends, or some mix. But the fact of the decline is notable enough to challenge old narratives about what is possible in a city like Baltimore.</p></div><p class="why"><strong>Why it matters:</strong> Sustained drops in violence can change civic expectations. The next question is whether Baltimore can understand, preserve, and build on the conditions behind the decline.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/17/us/baltimore-historic-decline-murder-homicide.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Meet Morris, the Pacific’s unlikely Northern Gannet</h2><p class="dek">A lone white seabird with a yellow head has become a local celebrity in Pillar Point Harbor.</p><div class="body-copy"><p>For today’s small wonder: Simon Willison posts about Morris, a Northern Gannet in Pillar Point Harbor near Half Moon Bay. The bird is apparently the only known Northern Gannet in the entire Pacific Ocean. Morris first showed up around the Farallon Islands off San Francisco 14 years ago and has since made the harbor home. The field mark is charmingly simple: look for the only white bird with a yellow head, usually hanging out with smaller black Brandt’s cormorants near the harbor sign visible from the commercial pier.</p></div><p class="why"><strong>Why it matters:</strong> Not every notable migration is human or technological. Morris is a reminder that anomalies become landmarks when a community notices them long enough.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/15/sighting-391300422/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 17, 2026
+</footer>
+</main>
+</body>
+</html>
