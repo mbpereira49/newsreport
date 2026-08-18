@@ -1,0 +1,82 @@
+[
+  {
+    "body": "Interconnects puts Nvidia\u2019s strategy bluntly: the company \u201cwants you building your own model, not buying from Anthropic/OpenAI.\u201d That is a neat inversion of the current enterprise default, where many teams start with an API and worry about differentiation later. Nvidia\u2019s incentive is obvious enough from the excerpt: more builders of bespoke models means more demand for the infrastructure around training and serving them. The interesting bit is the implied cultural shift\u2014AI as a capability companies cultivate internally, not merely a subscription line item.",
+    "cluster_id": "c5f3b5cb6a20f9d0",
+    "dek": "A practitioner note frames Nvidia as pushing companies toward owning their model stack rather than buying outputs from the frontier labs.",
+    "headline": "Nvidia\u2019s AI pitch: don\u2019t just rent intelligence\u2014build it",
+    "source_ids": [
+      "c5f3b5cb6a20f9d0-s1"
+    ],
+    "why_it_matters": "If the market moves from model consumption to model production, the winners may be the firms selling picks, shovels, and workflows\u2014not only the labs selling finished intelligence."
+  },
+  {
+    "body": "The excerpt describes a strange, telling supply chain: book dealers receiving large, price-insensitive orders from anonymous buyers, widely suspected of sourcing material to scan for AI training. In the case Willison flags, 404 Media reportedly investigated by placing an Apple AirTag in a book included in a roughly 1,000-book order on Biblio; the tracked shipment ended at an Amazon AI training facility. The source frames this as part of a broader pattern, alongside prior reporting on Anthropic-related book scanning.",
+    "cluster_id": "548e84744c18690f",
+    "dek": "Simon Willison highlights 404 Media reporting that followed a shipment of books to an Amazon AI training facility.",
+    "headline": "The rare-book trail to AI training gets an AirTag plot twist",
+    "source_ids": [
+      "548e84744c18690f-s1"
+    ],
+    "why_it_matters": "AI training data fights often sound abstract. Physical books, anonymous bulk orders, and a tracker make the extraction economy concrete\u2014and raise sharper questions about provenance, consent, and who gets paid."
+  },
+  {
+    "body": "Latent Space\u2019s headline says Stripe buys OpenRouter for $7 billion, and its kicker is the point: \u201cNo GPUs, no Agents, just really, really, really good infra and distribution.\u201d In a market obsessed with model labs, chips, and autonomous agent demos, that framing makes the deal feel almost old-fashioned. OpenRouter sits closer to routing, access, and aggregation\u2014the layer that can make many models feel usable to developers. Stripe, meanwhile, is already a distribution machine for internet businesses.",
+    "cluster_id": "a0e267c43fb9a1d4",
+    "dek": "Latent Space frames the $7 billion acquisition as a distribution-and-plumbing story: no GPUs, no agents, just useful connective tissue.",
+    "headline": "Stripe\u2019s reported OpenRouter deal is an infra bet, not an agent fantasy",
+    "source_ids": [
+      "a0e267c43fb9a1d4-s1"
+    ],
+    "why_it_matters": "If accurate as framed, the deal suggests AI\u2019s next valuable choke points may be boring-sounding: routing, billing, developer access, and reliability across a fragmented model market."
+  },
+  {
+    "body": "The New York Times frames AI as a possible boon for federal revenue, but with a large caveat. The budget consequences will hinge on whether\u2014and how much\u2014the technology reshapes the labor market. If AI drives productivity and taxable income upward, it could help curtail debt growth. But the headline\u2019s warning is just as important: even a boom would not \u201csolve\u201d America\u2019s debt problem. AI may improve the numerator in Washington\u2019s fiscal spreadsheets without erasing the underlying spending and obligation pressures.",
+    "cluster_id": "d6c2a0e7e0d1c011",
+    "dek": "The fiscal upside depends on the labor-market story: does AI lift productivity, wages, and profits, or scramble the taxable base?",
+    "headline": "An AI tax boom could help America\u2019s debt math\u2014but not rescue it",
+    "source_ids": [
+      "d6c2a0e7e0d1c011-s1"
+    ],
+    "why_it_matters": "The AI economy is increasingly being drafted into every policy fantasy. This is a useful check: faster growth can ease debt burdens, but it is not a substitute for actual budget choices."
+  },
+  {
+    "body": "A New York Times report says a ship leaving the Strait of Hormuz was attacked, underscoring how dangerous the route remains six months into the conflict. At least 17 commercial sailors have been killed in and around Iranian and Omani waters since March, according to the excerpt. The Strait is one of those places where geography turns instantly into economics: a narrow passage, vital traffic, and a security situation that can rattle energy and shipping markets far beyond the region.",
+    "cluster_id": "b8c67531a369bbd7",
+    "dek": "A ship exiting the vital waterway was attacked, as the toll on commercial sailors in nearby waters continues to rise.",
+    "headline": "The Strait of Hormuz remains a live-wire shipping risk",
+    "source_ids": [
+      "b8c67531a369bbd7-s1"
+    ],
+    "why_it_matters": "Global trade risk is not theoretical here. Persistent attacks around Hormuz can raise costs, disrupt routes, and keep pressure on energy markets even without a broader escalation."
+  },
+  {
+    "body": "ABC has sued the Trump administration over what it describes as FCC threats to its TV licenses. The network is asking a court to stop the agency from taking steps that could force ABC stations off the air, and it accuses the FCC of violating its First Amendment rights. The excerpt does not give the underlying programming dispute, but the stakes are plain: broadcast licensing is a powerful lever when pointed at a news or entertainment network.",
+    "cluster_id": "5c609c8c77d0f251",
+    "dek": "The network says the Trump administration\u2019s FCC is violating its First Amendment rights by threatening steps that could force stations off air.",
+    "headline": "ABC takes the FCC to court over license threats",
+    "source_ids": [
+      "5c609c8c77d0f251-s1"
+    ],
+    "why_it_matters": "A fight over licenses is not just a media-business story. It tests how far a regulator can go before oversight starts to look like political pressure on speech."
+  },
+  {
+    "body": "The New York Times reports that Texas Tech University is using AI to cut left-leaning content. The effort is tied to the politician behind Texas\u2019 conservative overhaul of higher education, now running a university system. The excerpt says some critics see the campaign to ferret out forbidden topics as a dystopian academic nightmare. Even without the full mechanics, the premise is striking: ideological review, delegated or accelerated by AI, aimed at curricula or academic material.",
+    "cluster_id": "93dff37ffde3e71a",
+    "dek": "The university system is reportedly using AI to cut left-leaning content, an effort critics describe as a dystopian academic nightmare.",
+    "headline": "Texas Tech\u2019s AI content purge turns campus politics into a software problem",
+    "source_ids": [
+      "93dff37ffde3e71a-s1"
+    ],
+    "why_it_matters": "AI governance debates often focus on bias inside models. This flips the question: what happens when institutions use AI as an instrument to enforce political definitions of acceptable knowledge?"
+  },
+  {
+    "body": "The San Fernando Valley, long ignored in Los Angeles conversations and once home to a secession push, gets a day of recognition each year: 818 Day. The New York Times frames it as a celebration of a region that is part of L.A. but often culturally cast as somewhere adjacent\u2014suburban, sunny, and punch-lined. The \u201cLike Totally\u201d headline leans into the Valley\u2019s pop-cultural caricature, but the holiday sounds like something more grounded: residents insisting their corner of Los Angeles deserves to be seen on its own terms.",
+    "cluster_id": "0137d0fa212c6019",
+    "dek": "Often treated as Los Angeles\u2019 afterthought, the San Fernando Valley now has an annual civic wink in its own area code.",
+    "headline": "818 Day gives the Valley its main-character moment",
+    "source_ids": [
+      "0137d0fa212c6019-s1"
+    ],
+    "why_it_matters": "A little local ritual can reveal a lot about civic identity. In a sprawling city, even an area code can become a flag."
+  }
+]
