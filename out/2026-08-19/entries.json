@@ -1,0 +1,85 @@
+[
+  {
+    "body": "This is a service note rather than a reported feature: LetsRun has published its schedule/entries/results hub for the 2026 Kamila Skolimowska Memorial in Silesia, plus a companion \u201chow to watch\u201d page. The same treatment is up for Athletissima, the Lausanne Diamond League meet. The cluster title emphasizes Silesia, but the source set is really a paired Diamond League utility drop for both Silesia and Lausanne.",
+    "cluster_id": "440490b40a9b9925",
+    "dek": "LetsRun has posted the practical pages: schedules, entries, results and streaming info for two late-summer meets.",
+    "headline": "Diamond League watch lists land for Silesia and Lausanne",
+    "source_ids": [
+      "440490b40a9b9925-s1",
+      "440490b40a9b9925-s2",
+      "440490b40a9b9925-s3",
+      "440490b40a9b9925-s4"
+    ],
+    "why_it_matters": "If you follow elite track, these are the pages to bookmark before the races start: start lists, event timing, broadcast/streaming details and results tend to become the live spine of a meet day."
+  },
+  {
+    "body": "Cecilia Kang of The New York Times traveled to Loudoun County, Va., described here as the \u201cdata center capital of the world,\u201d to examine the local effects of the AI build-out. The excerpt does not spell out the specific trade-offs, but the framing is telling: AI is not just an abstract race among models and chipmakers. It is also a land-use, power, water, noise, tax-base and community story concentrated in places where the internet\u2019s industrial backend has been allowed to scale.",
+    "cluster_id": "bab173c906244401",
+    "dek": "The New York Times visits the \u201cdata center capital of the world\u201d to look at how AI infrastructure is changing Northern Virginia.",
+    "headline": "The AI boom has a very physical address: Loudoun County",
+    "source_ids": [
+      "bab173c906244401-s1"
+    ],
+    "why_it_matters": "The AI economy is increasingly limited by infrastructure. Loudoun County is a preview of what happens when global demand for compute becomes a local political and environmental fact."
+  },
+  {
+    "body": "The New York Times\u2019 DealBook frames the latest rise in global bond yields as an escalation, not an isolated market wobble. Investors were already rattled by several factors; higher yields make the pressure more concrete by raising the price of money. That flows through to governments, companies, mortgages and risk assets. The headline phrase \u201cglobal bond rout\u201d suggests a broad selloff, while the excerpt\u2019s practical point is simpler: when yields climb, financing gets more expensive for almost everyone.",
+    "cluster_id": "669f517e448339c1",
+    "dek": "Rising yields are adding another cost shock at a moment when investors were already on edge.",
+    "headline": "The bond rout is becoming everyone\u2019s problem",
+    "source_ids": [
+      "669f517e448339c1-s1"
+    ],
+    "why_it_matters": "Bond yields are the plumbing of the economy. A sustained move higher can tighten conditions without any new central-bank decision, squeezing borrowers and repricing stocks, housing and public debt all at once."
+  },
+  {
+    "body": "State Representative Angie Nixon, described by The New York Times as a \u201cprogressive firebrand,\u201d won a striking Florida primary against a moderate opponent who dramatically out-raised her. The Times frames the result as one of Tuesday\u2019s major primary takeaways: a win powered by grassroots enthusiasm rather than financial advantage. The open question, and the one the excerpt foregrounds, is whether that coalition can carry Nixon through the general election.",
+    "cluster_id": "58f35581ec2059ff",
+    "dek": "Angie Nixon beat a better-funded moderate in a Democratic primary; November is the harder question.",
+    "headline": "A progressive upset in Florida tests what grassroots energy can buy",
+    "source_ids": [
+      "58f35581ec2059ff-s1"
+    ],
+    "why_it_matters": "Primary upsets are often read as ideological signals, but the durable lesson is organizational: a candidate can overcome a money gap if the base is motivated enough. Whether that works beyond the primary electorate is the real stress test."
+  },
+  {
+    "body": "Mojo, the programming language that has courted Python users and AI developers, has followed its 1.0 release by open-sourcing its compiler and toolchain under an Apache 2 license. Simon Willison notes that this fulfills a promise dating back to May 2023. The more interesting wrinkle is strategic: Mojo originally pitched itself as a superset of Python, a way to bootstrap adoption from existing Python code. That framing changed around August 2025; the excerpt says Mojo \u201cmay or may not\u201d become a full Python superset, and that this is now treated as acceptable. The new bet appears to lean on AI-assisted coding tools to help migrate Python to Mojo instead of requiring perfect language compatibility.",
+    "cluster_id": "318c6a253dc4c52c",
+    "dek": "The compiler and toolchain are now under Apache 2.0, but the language\u2019s original \u201cPython superset\u201d ambition has softened.",
+    "headline": "Mojo finally goes open source, with a quieter Python promise",
+    "source_ids": [
+      "318c6a253dc4c52c-s1"
+    ],
+    "why_it_matters": "Open sourcing removes a major adoption barrier, but the shift in ambition matters just as much. Mojo is asking developers to believe less in seamless Python continuity and more in tooling-assisted migration."
+  },
+  {
+    "body": "Latent Space\u2019s AI News item puts the memory crunch in blunt terms: \u201cMemory prices up 500% in 12 months,\u201d with the dek saying Moore\u2019s Law has been \u201creversed to 2007 levels.\u201d The excerpt offers no granular breakdown by memory type or supplier, so treat the headline as the source\u2019s framing rather than a full market audit. Still, the direction is unmistakable: the AI build-out is not only hungry for GPUs and power, but for the memory systems that make large-scale training and inference usable.",
+    "cluster_id": "1409e3c06ac1e2f4",
+    "dek": "Latent Space flags a reported 500% rise in memory prices over 12 months \u2014 a hardware squeeze with software consequences.",
+    "headline": "Memory prices are the new AI bottleneck",
+    "source_ids": [
+      "1409e3c06ac1e2f4-s1"
+    ],
+    "why_it_matters": "If memory gets dramatically more expensive, AI costs rise beyond the chip headline. That can affect model training budgets, inference margins, hardware availability and the economics of smaller labs trying to keep up."
+  },
+  {
+    "body": "Literary Hub looks at Ursula K. Le Guin\u2019s fiction through the environmental and political commitments that shaped her work in the 1960s and 1970s. The excerpt names the key currents: ecology, pacifist anarchist feminism and anti-Vietnam War activism. It also places A Wizard of Earthsea (1968) in that frame, not merely as a landmark fantasy novel but as part of a broader imaginative project. The piece appears to push against the flattening of Le Guin into \u201cworld-building\u201d alone; her worlds were moral and ecological systems, not decorative maps.",
+    "cluster_id": "825bda1e8d90fb11",
+    "dek": "A Literary Hub essay revisits how ecology, feminism, pacifism and antiwar politics shaped her speculative fiction.",
+    "headline": "Le Guin\u2019s environmentalism was not backdrop; it was architecture",
+    "source_ids": [
+      "825bda1e8d90fb11-s1"
+    ],
+    "why_it_matters": "Le Guin remains a useful antidote to fantasy and science fiction that treats politics as garnish. Her work shows how speculative fiction can make environmental interdependence feel like plot, ethics and cosmology at once."
+  },
+  {
+    "body": "The New York Times reports on a \u201cbetting coup\u201d roiling horse racing: several horses wildly outperformed the odds at tracks at Saratoga and the Jersey Shore, stinging bookmakers in London. Industry watchers, the excerpt says, suspected an elaborate plot. That wording matters \u2014 the source presents suspicion and intrigue, not a settled finding of wrongdoing. Still, the shape of the story is classic racing noir: unexpected performances, overseas bookmakers taking losses and a market that suddenly looks less random than it should.",
+    "cluster_id": "87622ab5181fb8d9",
+    "dek": "A run of horses beating long odds at Saratoga and the Jersey Shore left London bookmakers burned and observers suspicious.",
+    "headline": "Horse racing gets a betting mystery worthy of the backstretch",
+    "source_ids": [
+      "87622ab5181fb8d9-s1"
+    ],
+    "why_it_matters": "Betting markets depend on trust that odds reflect imperfect information, not hidden coordination. Even the suspicion of a coup can damage confidence in racing\u2019s already fragile economics and integrity systems."
+  }
+]

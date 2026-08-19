@@ -1,0 +1,3 @@
+Could not fetch https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml: HTTP Error 404: Not Found
+Could not fetch https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml: HTTP Error 404: Not Found
+Could not fetch https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml: HTTP Error 404: Not Found

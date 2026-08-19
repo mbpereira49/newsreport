@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-19</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Wednesday, August 19, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Diamond League watch lists land for Silesia and Lausanne</h2><p class="dek">LetsRun has posted the practical pages: schedules, entries, results and streaming info for two late-summer meets.</p><div class="lead-lower"><div class="body-copy"><p>This is a service note rather than a reported feature: LetsRun has published its schedule/entries/results hub for the 2026 Kamila Skolimowska Memorial in Silesia, plus a companion “how to watch” page. The same treatment is up for Athletissima, the Lausanne Diamond League meet. The cluster title emphasizes Silesia, but the source set is really a paired Diamond League utility drop for both Silesia and Lausanne.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> If you follow elite track, these are the pages to bookmark before the races start: start lists, event timing, broadcast/streaming details and results tend to become the live spine of a meet day.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/08/schedule-entries-results-for-2026-kamila-skolimowska-memorial-silesia-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/08/how-to-watch-2026-kamila-skolimowska-memorial-silesia-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/08/schedule-entries-results-for-2026-athletissima-lausanne-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/08/how-to-watch-2026-athletissima-lausanne-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>The AI boom has a very physical address: Loudoun County</h2><p class="dek">The New York Times visits the “data center capital of the world” to look at how AI infrastructure is changing Northern Virginia.</p><div class="body-copy"><p>Cecilia Kang of The New York Times traveled to Loudoun County, Va., described here as the “data center capital of the world,” to examine the local effects of the AI build-out. The excerpt does not spell out the specific trade-offs, but the framing is telling: AI is not just an abstract race among models and chipmakers. It is also a land-use, power, water, noise, tax-base and community story concentrated in places where the internet’s industrial backend has been allowed to scale.</p></div><p class="why"><strong>Why it matters:</strong> The AI economy is increasingly limited by infrastructure. Loudoun County is a preview of what happens when global demand for compute becomes a local political and environmental fact.</p><p class="sources">Sources: <a href="https://nytimes.com/video/us/100000011066777/inside-the-data-center-capital-of-the-world.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>The bond rout is becoming everyone’s problem</h2><p class="dek">Rising yields are adding another cost shock at a moment when investors were already on edge.</p><div class="body-copy"><p>The New York Times’ DealBook frames the latest rise in global bond yields as an escalation, not an isolated market wobble. Investors were already rattled by several factors; higher yields make the pressure more concrete by raising the price of money. That flows through to governments, companies, mortgages and risk assets. The headline phrase “global bond rout” suggests a broad selloff, while the excerpt’s practical point is simpler: when yields climb, financing gets more expensive for almost everyone.</p></div><p class="why"><strong>Why it matters:</strong> Bond yields are the plumbing of the economy. A sustained move higher can tighten conditions without any new central-bank decision, squeezing borrowers and repricing stocks, housing and public debt all at once.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/19/business/dealbook/bonds-yields-treasury-ai.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>A progressive upset in Florida tests what grassroots energy can buy</h2><p class="dek">Angie Nixon beat a better-funded moderate in a Democratic primary; November is the harder question.</p><div class="body-copy"><p>State Representative Angie Nixon, described by The New York Times as a “progressive firebrand,” won a striking Florida primary against a moderate opponent who dramatically out-raised her. The Times frames the result as one of Tuesday’s major primary takeaways: a win powered by grassroots enthusiasm rather than financial advantage. The open question, and the one the excerpt foregrounds, is whether that coalition can carry Nixon through the general election.</p></div><p class="why"><strong>Why it matters:</strong> Primary upsets are often read as ideological signals, but the durable lesson is organizational: a candidate can overcome a money gap if the base is motivated enough. Whether that works beyond the primary electorate is the real stress test.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/19/us/politics/florida-primaries-takeaways.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Mojo finally goes open source, with a quieter Python promise</h2><p class="dek">The compiler and toolchain are now under Apache 2.0, but the language’s original “Python superset” ambition has softened.</p><div class="body-copy"><p>Mojo, the programming language that has courted Python users and AI developers, has followed its 1.0 release by open-sourcing its compiler and toolchain under an Apache 2 license. Simon Willison notes that this fulfills a promise dating back to May 2023. The more interesting wrinkle is strategic: Mojo originally pitched itself as a superset of Python, a way to bootstrap adoption from existing Python code. That framing changed around August 2025; the excerpt says Mojo “may or may not” become a full Python superset, and that this is now treated as acceptable. The new bet appears to lean on AI-assisted coding tools to help migrate Python to Mojo instead of requiring perfect language compatibility.</p></div><p class="why"><strong>Why it matters:</strong> Open sourcing removes a major adoption barrier, but the shift in ambition matters just as much. Mojo is asking developers to believe less in seamless Python continuity and more in tooling-assisted migration.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Memory prices are the new AI bottleneck</h2><p class="dek">Latent Space flags a reported 500% rise in memory prices over 12 months — a hardware squeeze with software consequences.</p><div class="body-copy"><p>Latent Space’s AI News item puts the memory crunch in blunt terms: “Memory prices up 500% in 12 months,” with the dek saying Moore’s Law has been “reversed to 2007 levels.” The excerpt offers no granular breakdown by memory type or supplier, so treat the headline as the source’s framing rather than a full market audit. Still, the direction is unmistakable: the AI build-out is not only hungry for GPUs and power, but for the memory systems that make large-scale training and inference usable.</p></div><p class="why"><strong>Why it matters:</strong> If memory gets dramatically more expensive, AI costs rise beyond the chip headline. That can affect model training budgets, inference margins, hardware availability and the economics of smaller labs trying to keep up.</p><p class="sources">Sources: <a href="https://latent.space/p/ainews-memory-prices-up-500-in-12" target="_blank" rel="noreferrer">Latent Space</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Le Guin’s environmentalism was not backdrop; it was architecture</h2><p class="dek">A Literary Hub essay revisits how ecology, feminism, pacifism and antiwar politics shaped her speculative fiction.</p><div class="body-copy"><p>Literary Hub looks at Ursula K. Le Guin’s fiction through the environmental and political commitments that shaped her work in the 1960s and 1970s. The excerpt names the key currents: ecology, pacifist anarchist feminism and anti-Vietnam War activism. It also places A Wizard of Earthsea (1968) in that frame, not merely as a landmark fantasy novel but as part of a broader imaginative project. The piece appears to push against the flattening of Le Guin into “world-building” alone; her worlds were moral and ecological systems, not decorative maps.</p></div><p class="why"><strong>Why it matters:</strong> Le Guin remains a useful antidote to fantasy and science fiction that treats politics as garnish. Her work shows how speculative fiction can make environmental interdependence feel like plot, ethics and cosmology at once.</p><p class="sources">Sources: <a href="https://lithub.com/how-ursula-k-le-guin-channeled-her-environmentalism-into-fiction/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Horse racing gets a betting mystery worthy of the backstretch</h2><p class="dek">A run of horses beating long odds at Saratoga and the Jersey Shore left London bookmakers burned and observers suspicious.</p><div class="body-copy"><p>The New York Times reports on a “betting coup” roiling horse racing: several horses wildly outperformed the odds at tracks at Saratoga and the Jersey Shore, stinging bookmakers in London. Industry watchers, the excerpt says, suspected an elaborate plot. That wording matters — the source presents suspicion and intrigue, not a settled finding of wrongdoing. Still, the shape of the story is classic racing noir: unexpected performances, overseas bookmakers taking losses and a market that suddenly looks less random than it should.</p></div><p class="why"><strong>Why it matters:</strong> Betting markets depend on trust that odds reflect imperfect information, not hidden coordination. Even the suspicion of a coup can damage confidence in racing’s already fragile economics and integrity systems.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/19/business/horse-racing-betting-coup.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 19, 2026
+</footer>
+</main>
+</body>
+</html>
