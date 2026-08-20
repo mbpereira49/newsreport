@@ -1,0 +1,86 @@
+[
+  {
+    "body": "The New York Times frames Treasury Secretary Scott Bessent\u2019s latest moves as a reinvention of the government\u2019s role in the world\u2019s most important bond market. The stated aim: lower interest rates. The loaded phrase is \u201cinterventionist tactics,\u201d which suggests a shift from merely issuing debt and communicating policy toward a more active effort to shape market outcomes. With only the excerpt available, the mechanics are not spelled out, but the direction is clear enough: Treasury is no longer being described as a passive participant in rates.",
+    "cluster_id": "ba84134d7ba4d39e",
+    "dek": "Scott Bessent is recasting Treasury\u2019s role in the market that sets the price of money everywhere.",
+    "headline": "Treasury is getting more hands-on in the bond market",
+    "source_ids": [
+      "ba84134d7ba4d39e-s1"
+    ],
+    "why_it_matters": "The Treasury market is the benchmark for mortgages, corporate borrowing, government financing and global risk pricing. If Washington is more openly trying to manage rates, investors will care not just about Fed policy, but about Treasury strategy as a market-moving force in its own right."
+  },
+  {
+    "body": "Walmart posted its slowest sales growth in years, according to the Times, joining other large U.S. retailers in warning that Americans are spending more carefully. The interesting tension is that the consumer does not appear broken on paper: the excerpt notes that household balance sheets \u201cseemed healthy.\u201d But retail executives are reading behavior, not spreadsheets, and the behavior is caution. Walmart is usually where households stretch dollars, so a slowdown there is harder to dismiss as a luxury-sector wobble.",
+    "cluster_id": "67f7fc15c5e9eba8",
+    "dek": "Retailers keep finding the same paradox: household balance sheets may look fine, but shoppers are acting nervous.",
+    "headline": "Walmart\u2019s sales slowdown says the cautious consumer is real",
+    "source_ids": [
+      "67f7fc15c5e9eba8-s1"
+    ],
+    "why_it_matters": "Consumer spending has been the economy\u2019s shock absorber. If even big-box retail is seeing slower growth, the question shifts from whether Americans can spend to whether they feel confident enough to keep doing it."
+  },
+  {
+    "body": "President Trump has ordered a cutback in military exercises with South Korea, and experts quoted by the Times say the move carries risks. The excerpt places the decision in a broader context: allies are questioning the U.S. commitment to longstanding alliances. That is the real story beneath the scheduling of drills. Military exercises are not just training; they are visible signals of readiness and political backing. Curtailing them may be read differently in Washington, Seoul and Pyongyang, and the available summary does not say how the administration is defending the decision.",
+    "cluster_id": "3cab2e50d9685e33",
+    "dek": "A decision to curtail U.S.\u2013South Korea military exercises lands at a moment when allies are already questioning Washington\u2019s reliability.",
+    "headline": "Trump\u2019s South Korea exercise cut raises the alliance-anxiety meter",
+    "source_ids": [
+      "3cab2e50d9685e33-s1"
+    ],
+    "why_it_matters": "Alliance credibility is built from repeated signals. Reducing exercises could save friction or serve a diplomatic purpose, but it may also make partners wonder whether U.S. commitments are becoming more conditional."
+  },
+  {
+    "body": "Trump officials have abandoned an undisclosed effort to recruit Pentagon lawyers to represent migrant children, the Times reports. The plan\u2019s reversal matters partly because it had not been publicly known, and partly because it arrives amid \u201cmounting confusion\u201d over protections for unaccompanied minors. The excerpt does not say why Pentagon lawyers were considered, why the idea was dropped, or what replaces it. But the outline is striking: a legal-support problem involving children, an unusual proposed pool of government lawyers, and a retreat before public scrutiny had fully begun.",
+    "cluster_id": "e85065eaf01ee458",
+    "dek": "The reversal adds to confusion over how the administration is protecting unaccompanied minors\u2019 rights.",
+    "headline": "A quiet plan for Pentagon lawyers and migrant children gets scrapped",
+    "source_ids": [
+      "e85065eaf01ee458-s1"
+    ],
+    "why_it_matters": "Unaccompanied minors sit at the most legally and morally sensitive edge of immigration policy. If the government is improvising representation plans behind the scenes, the process itself becomes part of the accountability question."
+  },
+  {
+    "body": "Simon Willison set Claude Fable 5, running in Claude Code for web, a practical research task: test smolmachines/smolvm as a fast, secure sandbox for untrusted Python and JavaScript. The goal was concrete\u2014limit RAM and CPU time, protect against infinite loops, block network access, and allow filesystem access only to designated files, useful for user-provided data transformations. The test quickly ran into a problem: Claude Code for web could not run smol machines. That is not a verdict on smolvm; it is a reminder that sandbox research is often blocked by the sandbox you are already inside.",
+    "cluster_id": "4616fc1ad186aff2",
+    "dek": "The appeal is obvious: run untrusted Python and JavaScript with hard limits. The first lesson is that the evaluation environment matters.",
+    "headline": "Simon Willison kicks the tires on smolvm for unsafe code\u2014and immediately hits a tooling wall",
+    "source_ids": [
+      "4616fc1ad186aff2-s1"
+    ],
+    "why_it_matters": "As agentic systems execute more user-supplied code, \u201csafe enough\u201d sandboxing becomes infrastructure, not a side quest. But evaluations need to prove not only the security model, but also whether the tools can be exercised in real deployment environments."
+  },
+  {
+    "body": "Latent Space\u2019s AINews flags a stark figure: memory prices up 500% over 12 months, with the teaser calling it \u201cMoore\u2019s Law reversed to 2007 levels.\u201d The excerpt does not break down which memory categories or buyers are most exposed, so treat the exact scope cautiously. Still, the framing is important. AI progress is often narrated as bigger models riding cheaper hardware curves. A memory crunch flips that story: capacity, bandwidth and supply constraints become a tax on ambition.",
+    "cluster_id": "1409e3c06ac1e2f4",
+    "dek": "Latent Space says memory prices are up 500% in 12 months\u2014an ugly inversion of the cheap-compute story.",
+    "headline": "AI\u2019s memory crunch is turning into a price shock",
+    "source_ids": [
+      "1409e3c06ac1e2f4-s1"
+    ],
+    "why_it_matters": "For AI builders, memory is not a commodity footnote; it is a limiting reagent. If prices really have moved this sharply, model serving, training economics and hardware procurement all get more brittle."
+  },
+  {
+    "body": "Catch Hospitality Group is preparing to open Cafe Charmant, a French brasserie at 340 Bleecker Street between Christopher and West 10th streets, in mid-September, according to Eater NY. The opening follows a busy run from Eugene Remm, Tilman Fertitta and company: Soho\u2019s Mediterranean Or\u2019esh, the Eighty-Six in the old Chumley\u2019s space, and the hard-to-get-into Corner Store. Eater\u2019s framing\u2014\u201copening machine\u201d\u2014does some work here. This is less a one-off neighborhood arrival than another node in a hospitality group\u2019s rapid expansion through high-attention Manhattan rooms.",
+    "cluster_id": "5f739ff95349d999",
+    "dek": "Cafe Charmant is slated for Bleecker Street, extending the group\u2019s run after the Corner Store, Or\u2019esh and the Eighty-Six.",
+    "headline": "Catch Hospitality\u2019s West Village brasserie machine keeps humming",
+    "source_ids": [
+      "5f739ff95349d999-s1",
+      "5f739ff95349d999-s2"
+    ],
+    "why_it_matters": "The West Village does not lack restaurants, but it does reward concepts that can turn buzz into bookings. Cafe Charmant will test whether Catch\u2019s current momentum travels from scene-y scarcity to classic brasserie fare."
+  },
+  {
+    "body": "LetsRun has published its utility pages for two Diamond League stops: the 2026 Kamila Skolimowska Memorial in Silesia and Athletissima in Lausanne. The cluster\u2019s top item is the Silesia schedule, entries and results page, paired with a separate how-to-watch guide. The source set also includes the same practical treatment for Lausanne: schedule, entries, results and viewing information. There is no race analysis in the excerpts\u2014just the infrastructure that track fans need before the action starts.",
+    "cluster_id": "440490b40a9b9925",
+    "dek": "Schedules, entries, results and how-to-watch pages are up for the Kamila Skolimowska Memorial and Athletissima.",
+    "headline": "LetsRun posts the practical Diamond League guides: Silesia and Lausanne",
+    "source_ids": [
+      "440490b40a9b9925-s1",
+      "440490b40a9b9925-s2",
+      "440490b40a9b9925-s3",
+      "440490b40a9b9925-s4"
+    ],
+    "why_it_matters": "For elite-running followers, Diamond League weeks are logistics-heavy: start lists, time zones, streams and results all matter. LetsRun\u2019s pages are the pre-race dashboard rather than the post-race take machine."
+  }
+]
