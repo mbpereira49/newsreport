@@ -1,0 +1,85 @@
+[
+  {
+    "body": "This is less a story than a useful bookmark cluster: LetsRun published schedule/entries/results pages and how-to-watch guides for the 2026 Kamila Skolimowska Memorial in Silesia, plus parallel pages for Athletissima in Lausanne. The excerpts don\u2019t include start lists, event-by-event highlights, or broadcast specifics, so the takeaway is simply that the meet logistics are now being centralized and updated in the usual Diamond League service-post format.",
+    "cluster_id": "440490b40a9b9925",
+    "dek": "LetsRun has posted the practical stuff\u2014entries, schedules, results hubs, and viewing info\u2014for two late-August Diamond League stops.",
+    "headline": "Diamond League watch-list housekeeping: Silesia and Lausanne pages are live",
+    "source_ids": [
+      "440490b40a9b9925-s1",
+      "440490b40a9b9925-s2",
+      "440490b40a9b9925-s3",
+      "440490b40a9b9925-s4"
+    ],
+    "why_it_matters": "For track fans, these pages become the live map: who\u2019s entered, when events go off, where to watch, and eventually what happened. The cluster also appears to mix Silesia and Lausanne items, so treat it as a broader Diamond League logistics bundle rather than a single-meet preview."
+  },
+  {
+    "body": "Samuel Tunick, a U.S. citizen, is facing a felony charge after deleting data from his phone during an airport customs search, according to the Times. His framing is blunt: government scrutiny of private digital lives is \u201ccreepy,\u201d and his case, he argues, puts privacy at risk. The excerpt does not give the government\u2019s legal theory or the precise statute involved, so the conflict is presented here mostly through Tunick\u2019s public argument and the fact of the prosecution.",
+    "cluster_id": "90e173b0385e6765",
+    "dek": "Samuel Tunick says his prosecution for deleting phone data during a customs search shows how intrusive border searches have become.",
+    "headline": "A phone-deletion felony turns airport privacy into the test case",
+    "source_ids": [
+      "90e173b0385e6765-s1"
+    ],
+    "why_it_matters": "Phones are not luggage in any ordinary sense; they are diaries, inboxes, work files, location logs, and social graphs. If deleting data during a border search can become a felony case, the practical boundary between customs authority and digital privacy gets much more consequential."
+  },
+  {
+    "body": "The administration\u2019s push, as described by the Times, is to let average Americans buy guns online and have them shipped to their homes. The notable opposition is not coming only from gun-control advocates: small gun stores are warning that the change could upend the industry and create public-safety risks. The excerpt leaves open the policy mechanics\u2014background checks, state-law interaction, shipping rules\u2014but the political wrinkle is clear enough: a deregulatory move pitched to gun buyers may threaten the local dealers who have long been part of the firearms ecosystem.",
+    "cluster_id": "eefc723963b5c3ff",
+    "dek": "The Trump administration wants guns shipped directly to buyers\u2019 doors; small gun dealers warn the move could hurt both their businesses and public safety.",
+    "headline": "Online gun sales run into an unexpected retail backlash",
+    "source_ids": [
+      "eefc723963b5c3ff-s1"
+    ],
+    "why_it_matters": "This is a reminder that \u201cpro-gun\u201d policy is not always aligned with every gun-industry interest. Moving sales online could redistribute power away from small retailers while also sharpening the long-running fight over how firearms transactions should be monitored."
+  },
+  {
+    "body": "Harvard\u2019s conflict with the federal government is no longer just a courtroom drama. According to the Times, federal funding has slowed despite the university\u2019s legal wins, creating real pressure on campus. The excerpt does not specify which programs, grants, or departments are feeling the squeeze, but it does capture the asymmetry: legal vindication may not immediately restore cash flow, research certainty, or institutional breathing room.",
+    "cluster_id": "5fb623cea0bbdbea",
+    "dek": "The university\u2019s fight with the Trump administration is forcing hard choices even as legal victories pile up.",
+    "headline": "Harvard keeps winning in court, but losing time and money",
+    "source_ids": [
+      "5fb623cea0bbdbea-s1"
+    ],
+    "why_it_matters": "Universities can win formal legal arguments and still be damaged by delay. If funding slowdowns become a governing tactic, the real leverage may sit not in final judgments but in the months of uncertainty before them."
+  },
+  {
+    "body": "Treasury Secretary Scott Bessent has been talking up a \u201cbig tool kit\u201d to restore calm in the debt markets, but the Times\u2019 DealBook excerpt says the effort is not yet working out that way. The supplied material does not specify which tools are under discussion or what market indicators are flashing stress. Still, the core tension is familiar: officials can promise capacity, but bond investors tend to price credibility, fiscal arithmetic, and execution rather than reassurance alone.",
+    "cluster_id": "c4d04b4f78f9a4c8",
+    "dek": "The Treasury secretary has promised action to calm debt markets, but the early verdict from bonds is skepticism.",
+    "headline": "Bessent says he has tools for the bond market; investors aren\u2019t buying it yet",
+    "source_ids": [
+      "c4d04b4f78f9a4c8-s1"
+    ],
+    "why_it_matters": "Bond-market anxiety can quickly become more than a Wall Street problem, feeding into borrowing costs for the government, companies, and households. If investors remain unconvinced, Bessent\u2019s problem is not messaging\u2014it is trust."
+  },
+  {
+    "body": "Simon Willison points to Promptwatch, a company in the emerging \u201cGEO\u201d market\u2014Generative Engine Optimization, essentially SEO for chatbot answers. Promptwatch tracks responses across products like ChatGPT, Claude, and Gemini, then publishes aggregate reports. Its data, Willison writes, offers \u201ccredible hints\u201d about otherwise hard-to-see design changes. One reported shift aligned with a GPT-5.6 rollout: ChatGPT search now appears to use the site: operator at scale. Because the excerpt is based on outside tracking rather than a platform announcement, this should be read as informed inference, not confirmed product documentation.",
+    "cluster_id": "673e464e462d9449",
+    "dek": "Simon Willison flags Promptwatch data suggesting ChatGPT search is using the site: operator at scale\u2014an invisible tweak with SEO-sized implications.",
+    "headline": "ChatGPT search may be quietly changing how it finds the web",
+    "source_ids": [
+      "673e464e462d9449-s1"
+    ],
+    "why_it_matters": "If chatbots increasingly mediate web discovery, small retrieval choices can reshape traffic, attribution, and visibility. The rise of GEO also signals a familiar cycle: as soon as a platform influences attention, an optimization industry appears to reverse-engineer it."
+  },
+  {
+    "body": "The Times\u2019 Popcast interview centers on Busta Rhymes sorting through an archive of 300 unreleased J Dilla beats for a new album, while also talking about performance, longevity, and connections across rap generations. The excerpt does not detail the album\u2019s track list, release strategy, or how the beats were selected. But the premise alone carries weight: Busta, one of rap\u2019s great kinetic performers, working through unreleased material from Dilla, one of hip-hop\u2019s most revered producers.",
+    "cluster_id": "57ab3f9cc55149cb",
+    "dek": "The rapper discusses turning a trove of 300 unreleased Dilla beats into a project while thinking aloud about showmanship and rap\u2019s generational links.",
+    "headline": "Busta Rhymes builds a new album from the J Dilla vault",
+    "source_ids": [
+      "57ab3f9cc55149cb-s1"
+    ],
+    "why_it_matters": "Posthumous archives can be delicate territory: homage, preservation, and commerce all blur. In the right hands, though, unreleased beats can become a conversation across eras rather than a museum display."
+  },
+  {
+    "body": "Frank E. Campbell, the Upper East Side funeral home known for serving the well-known, will host a performance this weekend, according to the Times. The excerpt is spare\u2014it does not name the band, the occasion, or how the event fits into the funeral home\u2019s broader public life\u2014but the setting does most of the work. A place built around ritual, grief, and celebrity memorials is becoming, at least for a night, a performance venue.",
+    "cluster_id": "a43cc676ec432038",
+    "dek": "Frank E. Campbell, long associated with high-profile farewells, is hosting a live performance this weekend.",
+    "headline": "At an Upper East Side funeral home, the band plays on",
+    "source_ids": [
+      "a43cc676ec432038-s1"
+    ],
+    "why_it_matters": "New York\u2019s best oddities often come from institutions gently misusing themselves. A funeral home hosting music is a small cultural swerve, but it says something about how spaces with heavy symbolic weight can be reimagined without losing their strangeness."
+  }
+]

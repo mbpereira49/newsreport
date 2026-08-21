@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-21</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Friday, August 21, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Diamond League watch-list housekeeping: Silesia and Lausanne pages are live</h2><p class="dek">LetsRun has posted the practical stuff—entries, schedules, results hubs, and viewing info—for two late-August Diamond League stops.</p><div class="lead-lower"><div class="body-copy"><p>This is less a story than a useful bookmark cluster: LetsRun published schedule/entries/results pages and how-to-watch guides for the 2026 Kamila Skolimowska Memorial in Silesia, plus parallel pages for Athletissima in Lausanne. The excerpts don’t include start lists, event-by-event highlights, or broadcast specifics, so the takeaway is simply that the meet logistics are now being centralized and updated in the usual Diamond League service-post format.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> For track fans, these pages become the live map: who’s entered, when events go off, where to watch, and eventually what happened. The cluster also appears to mix Silesia and Lausanne items, so treat it as a broader Diamond League logistics bundle rather than a single-meet preview.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/08/schedule-entries-results-for-2026-kamila-skolimowska-memorial-silesia-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/08/how-to-watch-2026-kamila-skolimowska-memorial-silesia-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/08/schedule-entries-results-for-2026-athletissima-lausanne-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/08/how-to-watch-2026-athletissima-lausanne-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>A phone-deletion felony turns airport privacy into the test case</h2><p class="dek">Samuel Tunick says his prosecution for deleting phone data during a customs search shows how intrusive border searches have become.</p><div class="body-copy"><p>Samuel Tunick, a U.S. citizen, is facing a felony charge after deleting data from his phone during an airport customs search, according to the Times. His framing is blunt: government scrutiny of private digital lives is “creepy,” and his case, he argues, puts privacy at risk. The excerpt does not give the government’s legal theory or the precise statute involved, so the conflict is presented here mostly through Tunick’s public argument and the fact of the prosecution.</p></div><p class="why"><strong>Why it matters:</strong> Phones are not luggage in any ordinary sense; they are diaries, inboxes, work files, location logs, and social graphs. If deleting data during a border search can become a felony case, the practical boundary between customs authority and digital privacy gets much more consequential.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Online gun sales run into an unexpected retail backlash</h2><p class="dek">The Trump administration wants guns shipped directly to buyers’ doors; small gun dealers warn the move could hurt both their businesses and public safety.</p><div class="body-copy"><p>The administration’s push, as described by the Times, is to let average Americans buy guns online and have them shipped to their homes. The notable opposition is not coming only from gun-control advocates: small gun stores are warning that the change could upend the industry and create public-safety risks. The excerpt leaves open the policy mechanics—background checks, state-law interaction, shipping rules—but the political wrinkle is clear enough: a deregulatory move pitched to gun buyers may threaten the local dealers who have long been part of the firearms ecosystem.</p></div><p class="why"><strong>Why it matters:</strong> This is a reminder that “pro-gun” policy is not always aligned with every gun-industry interest. Moving sales online could redistribute power away from small retailers while also sharpening the long-running fight over how firearms transactions should be monitored.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/21/us/politics/online-gun-sales-trump.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Harvard keeps winning in court, but losing time and money</h2><p class="dek">The university’s fight with the Trump administration is forcing hard choices even as legal victories pile up.</p><div class="body-copy"><p>Harvard’s conflict with the federal government is no longer just a courtroom drama. According to the Times, federal funding has slowed despite the university’s legal wins, creating real pressure on campus. The excerpt does not specify which programs, grants, or departments are feeling the squeeze, but it does capture the asymmetry: legal vindication may not immediately restore cash flow, research certainty, or institutional breathing room.</p></div><p class="why"><strong>Why it matters:</strong> Universities can win formal legal arguments and still be damaged by delay. If funding slowdowns become a governing tactic, the real leverage may sit not in final judgments but in the months of uncertainty before them.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/21/us/harvard-trump-costs.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Bessent says he has tools for the bond market; investors aren’t buying it yet</h2><p class="dek">The Treasury secretary has promised action to calm debt markets, but the early verdict from bonds is skepticism.</p><div class="body-copy"><p>Treasury Secretary Scott Bessent has been talking up a “big tool kit” to restore calm in the debt markets, but the Times’ DealBook excerpt says the effort is not yet working out that way. The supplied material does not specify which tools are under discussion or what market indicators are flashing stress. Still, the core tension is familiar: officials can promise capacity, but bond investors tend to price credibility, fiscal arithmetic, and execution rather than reassurance alone.</p></div><p class="why"><strong>Why it matters:</strong> Bond-market anxiety can quickly become more than a Wall Street problem, feeding into borrowing costs for the government, companies, and households. If investors remain unconvinced, Bessent’s problem is not messaging—it is trust.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/21/business/dealbook/bessent-bonds-tool-kit.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>ChatGPT search may be quietly changing how it finds the web</h2><p class="dek">Simon Willison flags Promptwatch data suggesting ChatGPT search is using the site: operator at scale—an invisible tweak with SEO-sized implications.</p><div class="body-copy"><p>Simon Willison points to Promptwatch, a company in the emerging “GEO” market—Generative Engine Optimization, essentially SEO for chatbot answers. Promptwatch tracks responses across products like ChatGPT, Claude, and Gemini, then publishes aggregate reports. Its data, Willison writes, offers “credible hints” about otherwise hard-to-see design changes. One reported shift aligned with a GPT-5.6 rollout: ChatGPT search now appears to use the site: operator at scale. Because the excerpt is based on outside tracking rather than a platform announcement, this should be read as informed inference, not confirmed product documentation.</p></div><p class="why"><strong>Why it matters:</strong> If chatbots increasingly mediate web discovery, small retrieval choices can reshape traffic, attribution, and visibility. The rise of GEO also signals a familiar cycle: as soon as a platform influences attention, an optimization industry appears to reverse-engineer it.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Busta Rhymes builds a new album from the J Dilla vault</h2><p class="dek">The rapper discusses turning a trove of 300 unreleased Dilla beats into a project while thinking aloud about showmanship and rap’s generational links.</p><div class="body-copy"><p>The Times’ Popcast interview centers on Busta Rhymes sorting through an archive of 300 unreleased J Dilla beats for a new album, while also talking about performance, longevity, and connections across rap generations. The excerpt does not detail the album’s track list, release strategy, or how the beats were selected. But the premise alone carries weight: Busta, one of rap’s great kinetic performers, working through unreleased material from Dilla, one of hip-hop’s most revered producers.</p></div><p class="why"><strong>Why it matters:</strong> Posthumous archives can be delicate territory: homage, preservation, and commerce all blur. In the right hands, though, unreleased beats can become a conversation across eras rather than a museum display.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/21/arts/music/busta-rhymes-popcast-interview-dillagence-2.html" target="_blank" rel="noreferrer">NYT Arts</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>At an Upper East Side funeral home, the band plays on</h2><p class="dek">Frank E. Campbell, long associated with high-profile farewells, is hosting a live performance this weekend.</p><div class="body-copy"><p>Frank E. Campbell, the Upper East Side funeral home known for serving the well-known, will host a performance this weekend, according to the Times. The excerpt is spare—it does not name the band, the occasion, or how the event fits into the funeral home’s broader public life—but the setting does most of the work. A place built around ritual, grief, and celebrity memorials is becoming, at least for a night, a performance venue.</p></div><p class="why"><strong>Why it matters:</strong> New York’s best oddities often come from institutions gently misusing themselves. A funeral home hosting music is a small cultural swerve, but it says something about how spaces with heavy symbolic weight can be reimagined without losing their strangeness.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/21/nyregion/frank-e-campbell-funeral-home-band.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 21, 2026
+</footer>
+</main>
+</body>
+</html>
