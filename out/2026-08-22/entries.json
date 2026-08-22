@@ -1,0 +1,83 @@
+[
+  {
+    "body": "After a long stretch in which low borrowing costs shaped business plans, household decisions and financial markets, the United States is entering a faster readjustment. The source frames this less as a single shock than as a broad vulnerability: the world\u2019s largest economy and most important financial system has to relearn what risk, debt and investment look like when money is no longer unusually cheap.",
+    "cluster_id": "456f30d1517e47b5",
+    "dek": "The U.S. economy spent roughly two decades acclimating to ultralow interest rates. Now the adjustment away from that world is the story.",
+    "headline": "The bill for the cheap-money era is coming due",
+    "source_ids": [
+      "456f30d1517e47b5-s1"
+    ],
+    "why_it_matters": "Higher borrowing costs do not just make loans pricier; they test assumptions embedded across the economy. The risk is that systems built for easy money may not unwind smoothly."
+  },
+  {
+    "body": "In Springfield, Ohio, Haitian immigrants are being fitted with ankle monitors amid an increased ICE presence. The devices matter practically \u2014 they would make it easier for authorities to locate people if large-scale deportations begin \u2014 but the immediate effect described here is psychological. The monitoring has intensified fear in a community already living under uncertainty about its future in the United States.",
+    "cluster_id": "8250699f85761663",
+    "dek": "Haitians in Ohio are confronting increased ICE presence and monitoring devices that could make future deportations easier to carry out.",
+    "headline": "In Springfield, ankle monitors turn immigration policy into daily dread",
+    "source_ids": [
+      "8250699f85761663-s1"
+    ],
+    "why_it_matters": "Immigration enforcement often lands as bureaucracy from afar. Here, it is being experienced as something worn on the body, turning a possible future crackdown into a present-tense anxiety."
+  },
+  {
+    "body": "The warning here is not simply that some polls are wrong. It is that the political information environment is getting noisier at the exact moment campaigns, donors, journalists and voters are trying to measure candidate strength. Bad polls, misleading betting odds and surveys designed to shape narratives are combining into what the source calls serious confusion about voter sentiment before the midterms and 2028.",
+    "cluster_id": "71e862b9c34f10b0",
+    "dek": "Ahead of the midterms and 2028, confusion over polls, prediction markets and narrative-driven surveys is muddying the picture of American politics.",
+    "headline": "The polling problem is no longer just bad numbers",
+    "source_ids": [
+      "71e862b9c34f10b0-s1"
+    ],
+    "why_it_matters": "Polling uncertainty can become political reality: it affects fundraising, media attention, strategic decisions and voter perceptions of viability. When the scoreboard is unreliable, everyone starts gaming the scoreboard."
+  },
+  {
+    "body": "Harvard Business School has built AI versions of its faculty for a $699 bootcamp aimed at entrepreneurs. The pitch is straightforward: make a version of elite business-school feedback cheaper and more scalable. The more interesting question is what gets translated when faculty become software \u2014 not just lectures or frameworks, but the aura of institutional authority that makes a Harvard critique feel valuable in the first place.",
+    "cluster_id": "b37366c1453b36d9",
+    "dek": "A new $699 entrepreneurship bootcamp uses AI versions of HBS faculty to hear start-up pitches.",
+    "headline": "Harvard Business School puts its professors in the AI-clone booth",
+    "source_ids": [
+      "b37366c1453b36d9-s1"
+    ],
+    "why_it_matters": "AI education products are moving beyond generic tutors into branded simulations of scarce expertise. That could broaden access, but it also turns reputation itself into a product feature."
+  },
+  {
+    "body": "The piece tracks a subtle change in AI agent design: the tooling around models \u2014 the \u201charness\u201d that helps them plan, call tools and act \u2014 is being absorbed into model capabilities themselves. If that continues, the author argues, the next harness is less about propping up the model and more about structuring human attention around it. In other words, the bottleneck may move from machine competence to human supervision, interruption and trust.",
+    "cluster_id": "fa28ebea1a002a8a",
+    "dek": "Latent Space argues that as models absorb more of the \u201cagent harness,\u201d the real interface problem shifts toward managing human attention.",
+    "headline": "AI agents may be outgrowing their scaffolding",
+    "source_ids": [
+      "fa28ebea1a002a8a-s1"
+    ],
+    "why_it_matters": "If agent infrastructure becomes less visible, product design gets harder, not easier. The frontier shifts from making models act to deciding when people should look, steer or stay out of the loop."
+  },
+  {
+    "body": "The research question was concrete: could smolmachines/smolvm serve as a fast, secure sandbox for untrusted Python and JavaScript, with limits on RAM, CPU time, network access and filesystem access? That is exactly the kind of plumbing needed for user-provided data transformations and agentic workflows. But the test quickly hit a meta-problem: Claude Code for web could not run smol machines, limiting the evaluation before the sandbox itself could be fully put through its paces.",
+    "cluster_id": "4616fc1ad186aff2",
+    "dek": "Simon Willison tried to evaluate smolmachines/smolvm for running untrusted Python and JavaScript, but the test environment itself became a constraint.",
+    "headline": "A sandbox test runs into the practical edge of AI-assisted research",
+    "source_ids": [
+      "4616fc1ad186aff2-s1"
+    ],
+    "why_it_matters": "The excerpt is a useful reminder that safe code execution is now a core AI infrastructure problem \u2014 and that evaluating such tools depends on the capabilities and constraints of the AI workbench doing the evaluation."
+  },
+  {
+    "body": "Lit Hub\u2019s latest roundups read like a map of literary culture\u2019s current preoccupations: grief as something learned through ghosts, pop television as a serious archive of growing up, and politics as a force shaping who gets to flourish. One item looks at what Buffy the Vampire Slayer and Angel can teach about grief, literature and adulthood; another invokes the ghost of Sylvia Plath as a guide through discomfort. The excerpts also point to the tragedy of Jason Arday as reflecting a rigged game for today\u2019s Black scholars, and to environmentalism as another thread in the week\u2019s conversation.",
+    "cluster_id": "f1bb6a1f496298c2",
+    "dek": "The site\u2019s weekly and daily roundups point from Buffy and Sylvia Plath to Black scholarship and environmentalism.",
+    "headline": "Lit Hub\u2019s week circles grief, fandom and the politics of who gets to belong",
+    "source_ids": [
+      "f1bb6a1f496298c2-s1",
+      "f1bb6a1f496298c2-s2"
+    ],
+    "why_it_matters": "The cluster is less one story than a signal: literary criticism keeps widening its canon and its toolkit, treating genre TV, biography, race, grief and climate as part of the same cultural weather."
+  },
+  {
+    "body": "A small countertrend is taking shape against the constant ping: apps that send digital messages at deliberately slow speeds. Users are apparently embracing the friction, treating delay as a feature rather than a bug. The caveat in the source says plenty \u2014 don\u2019t use these tools to make dinner plans \u2014 but that limitation is also the point. Not every message needs to arrive with the urgency of an alarm.",
+    "cluster_id": "f25e9c85d39d2559",
+    "dek": "Ultra-slow texting apps are finding users who want digital communication to move less like a notification and more like a carrier pigeon.",
+    "headline": "The new luxury in messaging is delay",
+    "source_ids": [
+      "f25e9c85d39d2559-s1"
+    ],
+    "why_it_matters": "The appeal of slow messaging suggests fatigue with real-time availability. After years of making communication faster, some users are now paying attention to the emotional cost of instant reachability."
+  }
+]
