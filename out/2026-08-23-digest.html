@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-23</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Sunday, August 23, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Data centers are becoming a campaign issue, not just a zoning fight</h2><p class="dek">As opposition mounts, candidates in both parties are finding reasons to run against the AI-era buildout.</p><div class="lead-lower"><div class="body-copy"><p>The backlash to data centers has moved from local planning meetings into the midterm bloodstream. The New York Times reports that many Democrats—and a growing number of Republicans—are campaigning against the centers as opposition mounts. The excerpt does not spell out whether the anger is over electricity use, water, land, noise, tax breaks, or all of the above, but the political signal is clear enough: infrastructure once sold as inevitable is now something candidates think can win them votes by resisting.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> The AI boom depends on physical capacity. If data centers become politically toxic across party lines, the constraint on tech growth may be less about chips and more about permits, power, and angry neighbors.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/23/us/politics/data-centers-midterm-elections.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Arizona’s old Colorado River bargain is coming due</h2><p class="dek">A deal that helped fund a massive canal project also put the state first in line for deep-drought water cuts. The Trump administration says it is time.</p><div class="body-copy"><p>Arizona’s desert metropolis faces the sharp edge of a decades-old compromise. According to the Times, the state secured funding for a massive Colorado River project by accepting a painful condition: in a severe drought, it would be among the first to lose water. The Trump administration now says that moment has arrived. The excerpt frames this less as a surprise policy shift than as the enforcement of an old bargain made in a wetter political imagination.</p></div><p class="why"><strong>Why it matters:</strong> Water scarcity is often discussed as a future crisis. This is the more uncomfortable version: past development deals, legal priorities, and infrastructure promises are deciding who absorbs today’s shortages.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/23/us/arizona-canals-colorado-river.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Big Tech’s school takeover looks less like disruption than supply-chain control</h2><p class="dek">Google, Microsoft, and peers have used money, reach, and institutional leverage to shape nearly every step of education technology.</p><div class="body-copy"><p>The Times’ framing is blunt: companies like Google and Microsoft have “captured” American schools. The mechanism, as described in the excerpt, is not just popular software or cheap devices, but influence across “nearly every step of the education supply chain.” That phrase matters. It suggests a system in which Big Tech is not merely selling tools to schools; it is shaping procurement, classroom practice, administration, and the defaults that students and teachers inherit.</p></div><p class="why"><strong>Why it matters:</strong> Education technology debates often focus on screen time or privacy. The deeper question is dependency: once a school system is built around a handful of platforms, opting out becomes less a policy choice than a logistical impossibility.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/23/business/schools-big-tech-google-microsoft.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>The new coding-agent skill is verification, not line-by-line vigilance</h2><p class="dek">Simon Willison argues that productive AI-assisted programming depends on knowing how to direct agents—and how to prove their work is right.</p><div class="body-copy"><p>Simon Willison pushes against a narrow idea of “code review” for AI coding agents. The essential skill, he argues, is confidently instructing agents to make changes and then confidently verifying that those changes landed correctly. Sometimes that still means reading every line. But Willison’s sharper point is that eyeballing code has never been the only—or even the best—way to validate software changes. Tests, behavior, constraints, and review strategies matter more as the volume of agent-written code grows.</p></div><p class="why"><strong>Why it matters:</strong> If coding agents become normal coworkers, the bottleneck shifts. The valuable engineer is not the person who personally inspects every generated line, but the one who can specify, constrain, and verify systems without being lulled by plausible-looking diffs.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/22/more-than-just-code-review/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Lit Hub’s week: grief, ghosts, fandom, politics, and the uses of discomfort</h2><p class="dek">The site’s weekly and daily roundups point to a literary internet that is happy to move between Buffy, Sylvia Plath, Black scholarship, and environmentalism.</p><div class="body-copy"><p>Lit Hub’s August 17–21 roundup is less a single story than a map of preoccupations. The weekly edition highlights pieces on what “Buffy the Vampire Slayer” and “Angel” can teach about grief, literature, and growing up; the tragedy of Jason Arday as a reflection of a rigged game for Black scholars; and environmentalism. The daily edition adds a more intimate hook: learning about grief from the ghost of Sylvia Plath, with the suggestion that the ghosts we fear may be the ones that help us move through discomfort.</p></div><p class="why"><strong>Why it matters:</strong> The cluster is a reminder that literary coverage now often works by adjacency: pop culture, politics, grief, and criticism sharing the same table rather than living in separate sections.</p><p class="sources">Sources: <a href="https://lithub.com/lit-hub-weekly-august-17-21-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-daily-august-21-2026/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Eater’s West Village guide sells the neighborhood before the restaurants</h2><p class="dek">The updated map leans into the area’s brownstones, small storefronts, gardens, lofts, galleries, and famously fuzzy borders.</p><div class="body-copy"><p>Eater’s guide to the best West Village restaurants begins with place-making: stately 1800s brownstones, small storefronts, a country church with formal flower gardens, and old port and industrial spaces turned into lofts, galleries, and coffee shops. The two sources here appear to point to the same Eater guide, with one carrying only a headline-style excerpt. The useful signal is that the West Village remains as much an atmosphere as a dining district; even the borders, Eater notes, are murky.</p></div><p class="why"><strong>Why it matters:</strong> Restaurant guides are never just about where to eat. In neighborhoods like the West Village, they also preserve—and market—a version of urban romance that keeps drawing diners, rents, and attention.</p><p class="sources">Sources: <a href="https://ny.eater.com/maps/best-west-village-restaurants" target="_blank" rel="noreferrer">Eater NY</a> · <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFB0VUxZNEV2Rk5LaVVfWjRQNjhlYmFJUWhrVVBzMzA5T2c3RVBMcjRXZlpmeWJGeHNUdWMtdjR5SzV3QnBNaTgxb2lwblhZUm80YUNtNkwyZVI0cVByYjItVEJKNjZmZw?oc=5" target="_blank" rel="noreferrer">Eater New York</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Busta Rhymes meets the J Dilla archive</h2><p class="dek">A new album draws from 300 unreleased Dilla beats, turning curation itself into a generational rap story.</p><div class="body-copy"><p>Busta Rhymes’ new album is built from an imposing archive: 300 unreleased J Dilla beats. In a Times interview, the rapper discusses showmanship, rap’s generational connections, and the process of sorting through that trove for “Dillagence 2.” The excerpt does not say how many beats made the final cut or how the material was transformed, but the premise is rich: one of rap’s most kinetic performers engaging with the posthumous abundance of one of its most revered producers.</p></div><p class="why"><strong>Why it matters:</strong> Posthumous archives can feel extractive or revelatory depending on the care applied. Here, the story turns on taste, stewardship, and whether unreleased material can become a living conversation rather than a museum piece.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/21/arts/music/busta-rhymes-popcast-interview-dillagence-2.html" target="_blank" rel="noreferrer">NYT Arts</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>The anti-ping backlash has reached carrier-pigeon speed</h2><p class="dek">New apps let people send digital messages very, very slowly—less productivity hack than small rebellion against instant everything.</p><div class="body-copy"><p>Some users are embracing messaging apps that deliberately slow digital communication to a crawl. The Times says these ultraslow texting tools have taken off among people “reveling in a slower pace of life,” with the obvious caveat that they are a terrible way to make dinner plans. The appeal is almost comic in its simplicity: keep the convenience of digital writing, remove the tyranny of immediate response.</p></div><p class="why"><strong>Why it matters:</strong> The interesting trend is not that people want worse messaging. It is that constant reachability has become irritating enough that delay now feels like a feature—and perhaps even a luxury.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/22/technology/carrier-pigeon-app-texting-technology.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 23, 2026
+</footer>
+</main>
+</body>
+</html>

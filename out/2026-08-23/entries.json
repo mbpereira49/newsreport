@@ -1,0 +1,84 @@
+[
+  {
+    "body": "The backlash to data centers has moved from local planning meetings into the midterm bloodstream. The New York Times reports that many Democrats\u2014and a growing number of Republicans\u2014are campaigning against the centers as opposition mounts. The excerpt does not spell out whether the anger is over electricity use, water, land, noise, tax breaks, or all of the above, but the political signal is clear enough: infrastructure once sold as inevitable is now something candidates think can win them votes by resisting.",
+    "cluster_id": "d3655d5bb4f878bb",
+    "dek": "As opposition mounts, candidates in both parties are finding reasons to run against the AI-era buildout.",
+    "headline": "Data centers are becoming a campaign issue, not just a zoning fight",
+    "source_ids": [
+      "d3655d5bb4f878bb-s1"
+    ],
+    "why_it_matters": "The AI boom depends on physical capacity. If data centers become politically toxic across party lines, the constraint on tech growth may be less about chips and more about permits, power, and angry neighbors."
+  },
+  {
+    "body": "Arizona\u2019s desert metropolis faces the sharp edge of a decades-old compromise. According to the Times, the state secured funding for a massive Colorado River project by accepting a painful condition: in a severe drought, it would be among the first to lose water. The Trump administration now says that moment has arrived. The excerpt frames this less as a surprise policy shift than as the enforcement of an old bargain made in a wetter political imagination.",
+    "cluster_id": "8b7e824f4d414076",
+    "dek": "A deal that helped fund a massive canal project also put the state first in line for deep-drought water cuts. The Trump administration says it is time.",
+    "headline": "Arizona\u2019s old Colorado River bargain is coming due",
+    "source_ids": [
+      "8b7e824f4d414076-s1"
+    ],
+    "why_it_matters": "Water scarcity is often discussed as a future crisis. This is the more uncomfortable version: past development deals, legal priorities, and infrastructure promises are deciding who absorbs today\u2019s shortages."
+  },
+  {
+    "body": "The Times\u2019 framing is blunt: companies like Google and Microsoft have \u201ccaptured\u201d American schools. The mechanism, as described in the excerpt, is not just popular software or cheap devices, but influence across \u201cnearly every step of the education supply chain.\u201d That phrase matters. It suggests a system in which Big Tech is not merely selling tools to schools; it is shaping procurement, classroom practice, administration, and the defaults that students and teachers inherit.",
+    "cluster_id": "ae27f52c5bfbef7f",
+    "dek": "Google, Microsoft, and peers have used money, reach, and institutional leverage to shape nearly every step of education technology.",
+    "headline": "Big Tech\u2019s school takeover looks less like disruption than supply-chain control",
+    "source_ids": [
+      "ae27f52c5bfbef7f-s1"
+    ],
+    "why_it_matters": "Education technology debates often focus on screen time or privacy. The deeper question is dependency: once a school system is built around a handful of platforms, opting out becomes less a policy choice than a logistical impossibility."
+  },
+  {
+    "body": "Simon Willison pushes against a narrow idea of \u201ccode review\u201d for AI coding agents. The essential skill, he argues, is confidently instructing agents to make changes and then confidently verifying that those changes landed correctly. Sometimes that still means reading every line. But Willison\u2019s sharper point is that eyeballing code has never been the only\u2014or even the best\u2014way to validate software changes. Tests, behavior, constraints, and review strategies matter more as the volume of agent-written code grows.",
+    "cluster_id": "705eea036f31d5ac",
+    "dek": "Simon Willison argues that productive AI-assisted programming depends on knowing how to direct agents\u2014and how to prove their work is right.",
+    "headline": "The new coding-agent skill is verification, not line-by-line vigilance",
+    "source_ids": [
+      "705eea036f31d5ac-s1"
+    ],
+    "why_it_matters": "If coding agents become normal coworkers, the bottleneck shifts. The valuable engineer is not the person who personally inspects every generated line, but the one who can specify, constrain, and verify systems without being lulled by plausible-looking diffs."
+  },
+  {
+    "body": "Lit Hub\u2019s August 17\u201321 roundup is less a single story than a map of preoccupations. The weekly edition highlights pieces on what \u201cBuffy the Vampire Slayer\u201d and \u201cAngel\u201d can teach about grief, literature, and growing up; the tragedy of Jason Arday as a reflection of a rigged game for Black scholars; and environmentalism. The daily edition adds a more intimate hook: learning about grief from the ghost of Sylvia Plath, with the suggestion that the ghosts we fear may be the ones that help us move through discomfort.",
+    "cluster_id": "f1bb6a1f496298c2",
+    "dek": "The site\u2019s weekly and daily roundups point to a literary internet that is happy to move between Buffy, Sylvia Plath, Black scholarship, and environmentalism.",
+    "headline": "Lit Hub\u2019s week: grief, ghosts, fandom, politics, and the uses of discomfort",
+    "source_ids": [
+      "f1bb6a1f496298c2-s1",
+      "f1bb6a1f496298c2-s2"
+    ],
+    "why_it_matters": "The cluster is a reminder that literary coverage now often works by adjacency: pop culture, politics, grief, and criticism sharing the same table rather than living in separate sections."
+  },
+  {
+    "body": "Eater\u2019s guide to the best West Village restaurants begins with place-making: stately 1800s brownstones, small storefronts, a country church with formal flower gardens, and old port and industrial spaces turned into lofts, galleries, and coffee shops. The two sources here appear to point to the same Eater guide, with one carrying only a headline-style excerpt. The useful signal is that the West Village remains as much an atmosphere as a dining district; even the borders, Eater notes, are murky.",
+    "cluster_id": "88965a576e22d301",
+    "dek": "The updated map leans into the area\u2019s brownstones, small storefronts, gardens, lofts, galleries, and famously fuzzy borders.",
+    "headline": "Eater\u2019s West Village guide sells the neighborhood before the restaurants",
+    "source_ids": [
+      "88965a576e22d301-s1",
+      "88965a576e22d301-s2"
+    ],
+    "why_it_matters": "Restaurant guides are never just about where to eat. In neighborhoods like the West Village, they also preserve\u2014and market\u2014a version of urban romance that keeps drawing diners, rents, and attention."
+  },
+  {
+    "body": "Busta Rhymes\u2019 new album is built from an imposing archive: 300 unreleased J Dilla beats. In a Times interview, the rapper discusses showmanship, rap\u2019s generational connections, and the process of sorting through that trove for \u201cDillagence 2.\u201d The excerpt does not say how many beats made the final cut or how the material was transformed, but the premise is rich: one of rap\u2019s most kinetic performers engaging with the posthumous abundance of one of its most revered producers.",
+    "cluster_id": "57ab3f9cc55149cb",
+    "dek": "A new album draws from 300 unreleased Dilla beats, turning curation itself into a generational rap story.",
+    "headline": "Busta Rhymes meets the J Dilla archive",
+    "source_ids": [
+      "57ab3f9cc55149cb-s1"
+    ],
+    "why_it_matters": "Posthumous archives can feel extractive or revelatory depending on the care applied. Here, the story turns on taste, stewardship, and whether unreleased material can become a living conversation rather than a museum piece."
+  },
+  {
+    "body": "Some users are embracing messaging apps that deliberately slow digital communication to a crawl. The Times says these ultraslow texting tools have taken off among people \u201creveling in a slower pace of life,\u201d with the obvious caveat that they are a terrible way to make dinner plans. The appeal is almost comic in its simplicity: keep the convenience of digital writing, remove the tyranny of immediate response.",
+    "cluster_id": "f25e9c85d39d2559",
+    "dek": "New apps let people send digital messages very, very slowly\u2014less productivity hack than small rebellion against instant everything.",
+    "headline": "The anti-ping backlash has reached carrier-pigeon speed",
+    "source_ids": [
+      "f25e9c85d39d2559-s1"
+    ],
+    "why_it_matters": "The interesting trend is not that people want worse messaging. It is that constant reachability has become irritating enough that delay now feels like a feature\u2014and perhaps even a luxury."
+  }
+]
