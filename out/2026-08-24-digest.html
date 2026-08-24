@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-24</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Monday, August 24, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Anthropic’s top-model problem meets some very big revenue numbers</h2><p class="dek">A reported FT data drop, relayed by Simon Willison, sketches a strange AI market: premium models may be harder to sell even as revenue races upward.</p><div class="lead-lower"><div class="body-copy"><p>The headline frame is that Anthropic’s best model is struggling to attract users while cheaper tools thrive. The numbers in the excerpt complicate that story. Citing “people with knowledge of the matter,” the FT says Anthropic’s annualized revenue reached $65bn in July, up from $47bn in May. The company also reportedly expects Q3 to be profitable under the same model it used to declare Q2 profitable, and told investors it has 6,000 customers spending at least $100,000 annually. OpenAI, meanwhile, is described as recovering from a sluggish start to the year: annualized revenue is said to be up 35% quarter-to-date and above $40bn after GPT 5.6 launched in July. The uncertainty here is useful: user preference may be shifting toward cheaper products, but the enterprise money still appears huge.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> The AI market may be segmenting faster than the model leaderboards suggest: “best” is not always the same as “most bought,” especially if customers are optimizing for cost, latency, or good-enough performance.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/" target="_blank" rel="noreferrer">Simon Willison</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>The agent harness is becoming an attention interface</h2><p class="dek">Latent Space’s compact thesis: as models absorb more orchestration into their weights, the hard part shifts from managing the model to managing the human.</p><div class="body-copy"><p>The old agent stack wrapped models in scaffolding: tools, planners, memory, routing, retries, interface glue. Latent Space argues that models are steadily absorbing more of that “harness” internally. If that trend continues, the next harness will not be primarily for the model at all. It will be for human attention: deciding when to interrupt, what to surface, how to compress context, and how to make supervision tolerable rather than constant. That is a subtle but important reframing. Agent infrastructure may become less about coaxing fragile models through multi-step work and more about designing the control surface between autonomous systems and people who cannot watch everything.</p></div><p class="why"><strong>Why it matters:</strong> The bottleneck in AI agents may move from capability to coordination. If models need less mechanical scaffolding, product design, notifications, review flows, and trust calibration become the new infrastructure layer.</p><p class="sources">Sources: <a href="https://latent.space/p/attention-interface" target="_blank" rel="noreferrer">Latent Space</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>A hollowed-out Agriculture Department is showing up at the farm gate</h2><p class="dek">Rural communities are reporting delays and breakdowns in the unglamorous federal services that keep farms, loans, grants, and infrastructure projects moving.</p><div class="body-copy"><p>After the departure of thousands of federal workers, farmers and rural communities are struggling to get basic help from the Agriculture Department, according to the Times. The reported pain points are not abstract: loans, grants, technical assistance, infrastructure support, and other services. This is the kind of government capacity story that often becomes visible only after it has already degraded. A missing staffer in Washington can mean a stalled loan, a delayed project, or a local office that no longer has the expertise to solve a practical problem. The excerpt does not specify the causes of the worker exodus, but the effect described is plain: the federal back office for rural America is thinner, and people who depend on it are feeling the loss.</p></div><p class="why"><strong>Why it matters:</strong> Agriculture policy is not just subsidies and headlines. It is administrative plumbing. When that plumbing loses people, rural communities can lose access to money, expertise, and basic execution.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/24/us/politics/farmers-federal-workers-exodus.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Another U.S. boat strike, and a rising death toll</h2><p class="dek">The military killed two people in the Pacific, bringing renewed attention to a nearly yearlong campaign that has killed at least 223 people.</p><div class="body-copy"><p>The U.S. military killed two people in an attack on a boat in the Pacific, according to the Times. The strike is part of a broader campaign of boat attacks that began nearly a year ago and has killed at least 223 people. The excerpt offers little detail about the target, legal rationale, or operational context, which makes the topline even starker: a sustained campaign is continuing, and the death toll is now well into the hundreds. The framing leaves open key questions—who is being targeted, under what authority, and with what oversight—but the cumulative number suggests this is not an isolated counterterrorism or interdiction episode. It is an ongoing use of lethal force at sea.</p></div><p class="why"><strong>Why it matters:</strong> A campaign of repeated boat strikes can slip below the threshold of daily political attention, even as it creates a significant body count and raises questions about transparency, accountability, and war powers.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/24/us/politics/military-boat-strike.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Democrats’ Senate path is still narrow, but no longer far-fetched</h2><p class="dek">Republicans retain structural advantages on the map; Trump’s unpopularity is what has made the contest more competitive.</p><div class="body-copy"><p>The Senate map still favors Republicans, according to the Times’ framing, but Democrats’ chances of winning back the chamber have improved. The key change is President Trump’s unpopularity, which has opened the door to an outcome that previously looked remote. That is the basic tension of midterm Senate math: candidate quality, presidential approval, and national mood can move races, but the map sets the starting terrain. The excerpt does not list the specific states now in play, so the takeaway is directional rather than predictive. Republicans still have “clear advantages”; Democrats now have a plausible opening. In other words, the story is not that the Senate has tipped, but that the political weather has shifted enough to make old assumptions less safe.</p></div><p class="why"><strong>Why it matters:</strong> Senate control often turns on a handful of races, but the governing consequences are large: judges, confirmations, investigations, and the legislative floor all follow from the majority.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/24/us/politics/democrats-republicans-midterms-senate-majority.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Three cyclist hit-and-run deaths in a week jolt New York</h2><p class="dek">All three victims were riding e-bikes; cyclist deaths in the city have reached 17 this year.</p><div class="body-copy"><p>Three cyclists died in hit-and-runs in New York City in a single week, the Times reports. All three were on e-bikes. Seventeen cyclists have been killed so far this year, and advocacy groups are calling the deaths a rallying cry for safety improvements. The excerpt does not say where the crashes occurred or what street designs were involved, but the pattern is grimly familiar: vulnerable road users, fast-moving traffic, and hit-and-run drivers. The e-bike detail matters without making the deaths an “e-bike story.” E-bikes are now part of the city’s transportation system, especially for delivery work and everyday trips; the infrastructure and enforcement debate has not caught up evenly.</p></div><p class="why"><strong>Why it matters:</strong> Street safety is measured in design choices before it is measured in fatalities. A cluster of deaths can force the city to confront whether its bike network, traffic enforcement, and road redesigns match how New Yorkers actually move.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/23/nyregion/nyc-cycling-bike-deaths.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>New York’s spray-painted street codes are accidental public art</h2><p class="dek">Those cryptic sidewalk markings are instructions for construction crews—and, if you look sideways, a citywide layer of improvised design.</p><div class="body-copy"><p>Colored symbols painted across New York’s sidewalks, streets, and sewers are not random scrawl. They tell construction crews where to dig, warning them about the hidden systems below. The Times frames them as both practical code and accidental art: markings that hide in plain sight while quietly mapping the city’s underground anatomy. It is a nice reminder that urban beauty is not always commissioned, framed, or preserved. Sometimes it is sprayed quickly onto asphalt because someone needs to avoid rupturing a utility line. The marks are temporary, functional, and oddly expressive—the city talking to itself in color, arrows, letters, and lines.</p></div><p class="why"><strong>Why it matters:</strong> Infrastructure is usually invisible until it breaks. These markings make the buried city briefly legible, turning maintenance logistics into a public visual language.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/24/arts/design/street-symbols-michael-kimmelman.html" target="_blank" rel="noreferrer">NYT Arts</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Iceland has almost no murders, and a lot of murder fiction</h2><p class="dek">Crime is the country’s favorite literary genre, which gives Icelandic writers a peculiar craft problem: making fictional killings feel plausible.</p><div class="body-copy"><p>Iceland’s real-world homicide rate is tiny, but its literary appetite for murder is enormous. The Times notes that crime fiction is the Nordic nation’s favorite genre, leaving writers with an unusual challenge: how do you make murder believable in a place where murder is rare? That tension is part of the genre’s charm. Crime fiction often depends on social pressure, buried secrets, and the idea that order is more fragile than it looks. In a low-homicide country, a fictional killing can feel especially disruptive—not routine, but almost mythic. The result is a literary paradox: a safe society that keeps returning, imaginatively, to violence.</p></div><p class="why"><strong>Why it matters:</strong> Genre fiction is a revealing cultural mirror. Icelandic crime writing suggests that readers do not need high crime rates to be fascinated by transgression, fear, and the hidden cracks in orderly places.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/24/books/iceland-crime-fiction.html" target="_blank" rel="noreferrer">NYT Arts</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 24, 2026
+</footer>
+</main>
+</body>
+</html>
