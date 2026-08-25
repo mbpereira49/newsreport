@@ -1,0 +1,82 @@
+[
+  {
+    "body": "The Trump administration is trying to cut off Iran\u2019s economic lifelines, but the pressure campaign is quickly becoming a China story. According to The New York Times, the White House risks a clash with Beijing as it tightens enforcement around Iran while trying not to destabilize a delicate U.S.-China d\u00e9tente. That is the hard part of sanctions policy: the target may be Tehran, but the leverage often runs through third parties with their own priorities\u2014and China is not a bit player.",
+    "cluster_id": "d6810adae97a71a4",
+    "dek": "Trump wants to squeeze Tehran without blowing up a fragile truce with Beijing.",
+    "headline": "Iran sanctions run into the China problem",
+    "source_ids": [
+      "d6810adae97a71a4-s1"
+    ],
+    "why_it_matters": "The Iran file is no longer just about Iran. If Washington pushes too hard on Chinese links to Tehran, it could turn a sanctions campaign into another front in U.S.-China economic conflict."
+  },
+  {
+    "body": "Treasury Secretary Scott Bessent is facing a sharper backlash over plans to intervene in bond markets. The criticism, per The New York Times, is not just coming from predictable political opponents: it includes a prominent former mentor. That detail matters because it frames the pushback less as partisan noise and more as a dispute over market credibility. Bond markets are where governments learn whether investors believe their fiscal and monetary story; even talk of intervention can become its own signal.",
+    "cluster_id": "565d43f24a6e6b77",
+    "dek": "The Treasury secretary\u2019s plans to intervene in bond markets are alarming critics, including a former mentor.",
+    "headline": "Scott Bessent\u2019s bond-market idea is drawing fire",
+    "source_ids": [
+      "565d43f24a6e6b77-s1"
+    ],
+    "why_it_matters": "Treasury\u2019s relationship with bond markets is foundational. If investors read intervention as political management rather than crisis management, the cure can start to look like the risk."
+  },
+  {
+    "body": "The backlash against data centers has a simple source: they use enormous amounts of power, and communities increasingly notice. Emerald AI is trying to turn that problem into a software market. The company, now valued at $1.05 billion, uses software meant to keep power demand at computing facilities under control, according to The New York Times. The pitch is tidy: don\u2019t stop the AI build-out; make it less chaotic for the grid.",
+    "cluster_id": "3c9fc5e2758e5cf3",
+    "dek": "Emerald AI, valued at $1.05 billion, says it can keep computing facilities\u2019 power demand from running wild.",
+    "headline": "A startup pitches software as the data-center pressure valve",
+    "source_ids": [
+      "3c9fc5e2758e5cf3-s1"
+    ],
+    "why_it_matters": "AI\u2019s physical footprint is becoming a political and infrastructure constraint. If companies can smooth data-center demand, they may buy the industry time\u2014but software will still have to prove it can solve a very material electricity problem."
+  },
+  {
+    "body": "Simon Willison\u2019s latest note cuts against a common reflex in AI-assisted programming: reading every line the machine wrote. His argument is that productive use of coding agents depends on two linked skills: giving confident instructions and verifying that the resulting changes were made correctly. Sometimes that still means close code review. But, he writes, \u201ceyeballing every line of code\u201d has never been the most effective way to validate software changes. The implication is subtle but important: agentic coding shifts the developer\u2019s job toward specification, test design, and validation strategy\u2014not passive acceptance, and not necessarily exhaustive inspection.",
+    "cluster_id": "705eea036f31d5ac",
+    "dek": "Simon Willison argues the real skill is directing AI tools well\u2014and verifying outcomes confidently.",
+    "headline": "Coding with agents is becoming less about line-by-line review",
+    "source_ids": [
+      "705eea036f31d5ac-s1"
+    ],
+    "why_it_matters": "As coding agents get more capable, the bottleneck moves from generation to verification. Teams that adapt their review practices may get more from these tools than teams that merely bolt AI onto old workflows."
+  },
+  {
+    "body": "The New York Times frames a pointed question: if many NFL players develop brain disease linked to their work, why hasn\u2019t OSHA intervened? The story cites a former chief scientist at the agency saying, \u201cWe never see things that are this dire,\u201d referring to rates of C.T.E. in former players. That language pushes the issue out of sports-page tragedy and into workplace-safety territory. Football\u2019s harms are often treated as inherent to the game, but the OSHA framing asks whether \u201cinherent\u201d has become a loophole.",
+    "cluster_id": "5d101eea987e419d",
+    "dek": "A former agency chief scientist says the disease rates in ex-players are unusually dire. So why hasn\u2019t workplace safety law stepped in?",
+    "headline": "The NFL\u2019s CTE crisis raises an uncomfortable OSHA question",
+    "source_ids": [
+      "5d101eea987e419d-s1"
+    ],
+    "why_it_matters": "If professional football is treated more like a workplace than an entertainment product, the legal and regulatory stakes change. The question is not whether the sport is dangerous; it is who has responsibility to reduce that danger."
+  },
+  {
+    "body": "Nancy Smith\u2019s case has moved from wrongful-conviction story to something even more unsettling: the fragility of exoneration. A judge exonerated Smith, an Ohio bus driver, after she had been convicted of abusing children in her care. Now prosecutors are trying to reverse an order saying she was innocent, according to The New York Times. The competing frames are stark: for Smith, a declaration of innocence should mean an end; for prosecutors, the legal fight apparently remains open.",
+    "cluster_id": "bd80efedca89fed9",
+    "dek": "Nancy Smith was absolved after a conviction for abusing children. Prosecutors now want to undo the order declaring her innocent.",
+    "headline": "An exonerated Ohio bus driver is still fighting the state",
+    "source_ids": [
+      "bd80efedca89fed9-s1"
+    ],
+    "why_it_matters": "Exoneration is often presented as the justice system correcting itself. This case shows how provisional that correction can be when prosecutors continue to contest not just procedure, but innocence itself."
+  },
+  {
+    "body": "New York City\u2019s 911 system suffered a partial outage last week, and officials kept quiet about it, according to The New York Times. The outage itself is serious enough: emergency systems are supposed to be boringly reliable. But the nondisclosure is the sharper civic problem. When the public is not informed about a breakdown in emergency response, residents lose the chance to adjust behavior, seek alternatives, or simply understand the risk they were living through.",
+    "cluster_id": "29cb86fff4b7e9a2",
+    "dek": "Officials did not tell the public after a partial breakdown of the emergency system last week.",
+    "headline": "New York\u2019s 911 outage was also a transparency failure",
+    "source_ids": [
+      "29cb86fff4b7e9a2-s1"
+    ],
+    "why_it_matters": "Public trust in emergency infrastructure depends on candor after failures. Silence may avoid panic in the short term, but it also makes every future assurance harder to believe."
+  },
+  {
+    "body": "A small urban mystery gets a charming answer: the colored symbols spray-painted across New York sidewalks, streets, and sewers are not random graffiti. They mark what lies below, telling construction crews where to dig. The New York Times also frames them as accidental art\u2014an infrastructure code hiding in plain sight. It is the sort of city detail that most people step over until someone decodes it, after which the pavement starts looking like a working map.",
+    "cluster_id": "c8274bbd8b1dbfcd",
+    "dek": "New York\u2019s spray-painted street markings guide construction crews\u2014and accidentally decorate the city.",
+    "headline": "The secret language painted underfoot",
+    "source_ids": [
+      "c8274bbd8b1dbfcd-s1"
+    ],
+    "why_it_matters": "Cities are full of visible systems we stop seeing. These markings are a reminder that urban life depends on quiet coordination between buried infrastructure and the people trying not to break it."
+  }
+]

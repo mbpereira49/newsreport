@@ -1,0 +1,79 @@
+{
+  "calls": [
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.079555,
+      "input_tokens": 7919,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 1332,
+      "raw_usage": {
+        "input_tokens": 7919,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1332,
+        "output_tokens_details": {
+          "reasoning_tokens": 878
+        },
+        "total_tokens": 9251
+      },
+      "reasoning_tokens": 878,
+      "stage": "digest_selection",
+      "total_tokens": 9251
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.065245,
+      "input_tokens": 2399,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 1775,
+      "raw_usage": {
+        "input_tokens": 2399,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1775,
+        "output_tokens_details": {
+          "reasoning_tokens": 102
+        },
+        "total_tokens": 4174
+      },
+      "reasoning_tokens": 102,
+      "stage": "digest_entries",
+      "total_tokens": 4174
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.093255,
+      "input_tokens": 3069,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 2597,
+      "raw_usage": {
+        "input_tokens": 3069,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2597,
+        "output_tokens_details": {
+          "reasoning_tokens": 314
+        },
+        "total_tokens": 5666
+      },
+      "reasoning_tokens": 314,
+      "stage": "digest_layout",
+      "total_tokens": 5666
+    }
+  ],
+  "summary": {
+    "cached_input_tokens": 0,
+    "calls": 3,
+    "estimated_cost_usd": 0.238055,
+    "input_tokens": 13387,
+    "output_tokens": 5704,
+    "reasoning_tokens": 1294,
+    "total_tokens": 19091
+  }
+}

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-25</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Tuesday, August 25, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Iran sanctions run into the China problem</h2><p class="dek">Trump wants to squeeze Tehran without blowing up a fragile truce with Beijing.</p><div class="lead-lower"><div class="body-copy"><p>The Trump administration is trying to cut off Iran’s economic lifelines, but the pressure campaign is quickly becoming a China story. According to The New York Times, the White House risks a clash with Beijing as it tightens enforcement around Iran while trying not to destabilize a delicate U.S.-China détente. That is the hard part of sanctions policy: the target may be Tehran, but the leverage often runs through third parties with their own priorities—and China is not a bit player.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> The Iran file is no longer just about Iran. If Washington pushes too hard on Chinese links to Tehran, it could turn a sanctions campaign into another front in U.S.-China economic conflict.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/25/business/us-bessent-china-iran.html" target="_blank" rel="noreferrer">NYT Business</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Scott Bessent’s bond-market idea is drawing fire</h2><p class="dek">The Treasury secretary’s plans to intervene in bond markets are alarming critics, including a former mentor.</p><div class="body-copy"><p>Treasury Secretary Scott Bessent is facing a sharper backlash over plans to intervene in bond markets. The criticism, per The New York Times, is not just coming from predictable political opponents: it includes a prominent former mentor. That detail matters because it frames the pushback less as partisan noise and more as a dispute over market credibility. Bond markets are where governments learn whether investors believe their fiscal and monetary story; even talk of intervention can become its own signal.</p></div><p class="why"><strong>Why it matters:</strong> Treasury’s relationship with bond markets is foundational. If investors read intervention as political management rather than crisis management, the cure can start to look like the risk.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/25/business/dealbook/bessent-bond-market-druckenmiller.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>A startup pitches software as the data-center pressure valve</h2><p class="dek">Emerald AI, valued at $1.05 billion, says it can keep computing facilities’ power demand from running wild.</p><div class="body-copy"><p>The backlash against data centers has a simple source: they use enormous amounts of power, and communities increasingly notice. Emerald AI is trying to turn that problem into a software market. The company, now valued at $1.05 billion, uses software meant to keep power demand at computing facilities under control, according to The New York Times. The pitch is tidy: don’t stop the AI build-out; make it less chaotic for the grid.</p></div><p class="why"><strong>Why it matters:</strong> AI’s physical footprint is becoming a political and infrastructure constraint. If companies can smooth data-center demand, they may buy the industry time—but software will still have to prove it can solve a very material electricity problem.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/25/business/dealbook/emerald-ai-start-up-data-center-backlash.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Coding with agents is becoming less about line-by-line review</h2><p class="dek">Simon Willison argues the real skill is directing AI tools well—and verifying outcomes confidently.</p><div class="body-copy"><p>Simon Willison’s latest note cuts against a common reflex in AI-assisted programming: reading every line the machine wrote. His argument is that productive use of coding agents depends on two linked skills: giving confident instructions and verifying that the resulting changes were made correctly. Sometimes that still means close code review. But, he writes, “eyeballing every line of code” has never been the most effective way to validate software changes. The implication is subtle but important: agentic coding shifts the developer’s job toward specification, test design, and validation strategy—not passive acceptance, and not necessarily exhaustive inspection.</p></div><p class="why"><strong>Why it matters:</strong> As coding agents get more capable, the bottleneck moves from generation to verification. Teams that adapt their review practices may get more from these tools than teams that merely bolt AI onto old workflows.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/22/more-than-just-code-review/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>The NFL’s CTE crisis raises an uncomfortable OSHA question</h2><p class="dek">A former agency chief scientist says the disease rates in ex-players are unusually dire. So why hasn’t workplace safety law stepped in?</p><div class="body-copy"><p>The New York Times frames a pointed question: if many NFL players develop brain disease linked to their work, why hasn’t OSHA intervened? The story cites a former chief scientist at the agency saying, “We never see things that are this dire,” referring to rates of C.T.E. in former players. That language pushes the issue out of sports-page tragedy and into workplace-safety territory. Football’s harms are often treated as inherent to the game, but the OSHA framing asks whether “inherent” has become a loophole.</p></div><p class="why"><strong>Why it matters:</strong> If professional football is treated more like a workplace than an entertainment product, the legal and regulatory stakes change. The question is not whether the sport is dangerous; it is who has responsibility to reduce that danger.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/25/us/nfl-cte-osha.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>An exonerated Ohio bus driver is still fighting the state</h2><p class="dek">Nancy Smith was absolved after a conviction for abusing children. Prosecutors now want to undo the order declaring her innocent.</p><div class="body-copy"><p>Nancy Smith’s case has moved from wrongful-conviction story to something even more unsettling: the fragility of exoneration. A judge exonerated Smith, an Ohio bus driver, after she had been convicted of abusing children in her care. Now prosecutors are trying to reverse an order saying she was innocent, according to The New York Times. The competing frames are stark: for Smith, a declaration of innocence should mean an end; for prosecutors, the legal fight apparently remains open.</p></div><p class="why"><strong>Why it matters:</strong> Exoneration is often presented as the justice system correcting itself. This case shows how provisional that correction can be when prosecutors continue to contest not just procedure, but innocence itself.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/25/us/nancy-smith-child-sex-abuse-exoneration.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>New York’s 911 outage was also a transparency failure</h2><p class="dek">Officials did not tell the public after a partial breakdown of the emergency system last week.</p><div class="body-copy"><p>New York City’s 911 system suffered a partial outage last week, and officials kept quiet about it, according to The New York Times. The outage itself is serious enough: emergency systems are supposed to be boringly reliable. But the nondisclosure is the sharper civic problem. When the public is not informed about a breakdown in emergency response, residents lose the chance to adjust behavior, seek alternatives, or simply understand the risk they were living through.</p></div><p class="why"><strong>Why it matters:</strong> Public trust in emergency infrastructure depends on candor after failures. Silence may avoid panic in the short term, but it also makes every future assurance harder to believe.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/24/nyregion/mamdani-911-outage-nyc.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>The secret language painted underfoot</h2><p class="dek">New York’s spray-painted street markings guide construction crews—and accidentally decorate the city.</p><div class="body-copy"><p>A small urban mystery gets a charming answer: the colored symbols spray-painted across New York sidewalks, streets, and sewers are not random graffiti. They mark what lies below, telling construction crews where to dig. The New York Times also frames them as accidental art—an infrastructure code hiding in plain sight. It is the sort of city detail that most people step over until someone decodes it, after which the pavement starts looking like a working map.</p></div><p class="why"><strong>Why it matters:</strong> Cities are full of visible systems we stop seeing. These markings are a reminder that urban life depends on quiet coordination between buried infrastructure and the people trying not to break it.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/24/arts/design/street-symbols-michael-kimmelman.html" target="_blank" rel="noreferrer">NYT Arts</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 25, 2026
+</footer>
+</main>
+</body>
+</html>
