@@ -1,0 +1,85 @@
+[
+  {
+    "body": "Meta has settled a sweeping set of social media addiction claims brought by 47 states, the District of Columbia and U.S. territories. The case centered on allegations that its platforms endangered children; the settlement pairs a potentially enormous payout \u2014 up to $17.1 billion \u2014 with \u201cmajor changes\u201d to Meta\u2019s products. The excerpt does not specify which features will change, so the meaningful question now is less whether Meta writes the check than how visible those changes become to young users and parents.",
+    "cluster_id": "6406cf987d8a9828",
+    "dek": "A settlement with 47 states, D.C. and U.S. territories could cost the company up to $17.1 billion and force product changes.",
+    "headline": "Meta\u2019s youth-safety reckoning gets a very large price tag",
+    "source_ids": [
+      "6406cf987d8a9828-s1"
+    ],
+    "why_it_matters": "This is the kind of settlement that can reset industry norms: if product design is treated as a child-safety liability, other platforms will be watching closely."
+  },
+  {
+    "body": "The Personal Consumption Expenditure index \u2014 the Federal Reserve\u2019s preferred inflation tracker \u2014 held steady in July, according to the Times excerpt. That is not the same as cooling. The framing here is that inflation remained elevated, with high energy costs helping keep pressure in the system. With only the headline-level data supplied, there\u2019s no read on the underlying components beyond energy, but the signal is plain: the Fed is not yet looking at a clean disinflation story.",
+    "cluster_id": "a800a913041cb98c",
+    "dek": "July\u2019s PCE index held steady, with inflation remaining elevated amid high energy costs.",
+    "headline": "The Fed\u2019s favorite inflation gauge is still not giving the all-clear",
+    "source_ids": [
+      "a800a913041cb98c-s1"
+    ],
+    "why_it_matters": "PCE is the inflation measure policymakers privilege. A steady-but-elevated reading complicates hopes for easier monetary policy and keeps household cost pressure in focus."
+  },
+  {
+    "body": "The Motley Fool, with the same framing echoed via AOL, casts Nvidia\u2019s $6 billion Poolside deal as a strategic bet on open-source models driving demand for its chips. The supplied excerpts are thin, but the thesis is notable: Nvidia is not just selling picks and shovels into the AI boom; it appears to be trying to shape the machinery that creates models, too. If open-source development accelerates, the logic goes, more builders need more compute \u2014 and Nvidia wins upstream and downstream.",
+    "cluster_id": "a83057645201b6f0",
+    "dek": "A reported $6 billion deal for Poolside\u2019s \u201cmodel factory\u201d is being framed as a wager that open-source AI models will keep chip demand roaring.",
+    "headline": "Nvidia\u2019s Poolside bet is really a bet on demand for more compute",
+    "source_ids": [
+      "a83057645201b6f0-s1",
+      "a83057645201b6f0-s2"
+    ],
+    "why_it_matters": "The AI chip story is shifting from scarcity to ecosystem control. Nvidia\u2019s strongest position may be not merely making the hardware, but investing where future compute appetite is created."
+  },
+  {
+    "body": "A new C.T.E. study has intensified family debates over youth football. The Times frames the story around parents weighing children\u2019s participation after a study found a high percentage of N.F.L. players had developed the degenerative brain disease. The excerpt does not say what the study found about children specifically, which matters; the emotional force of the finding comes from the sport\u2019s highest level being used as a warning flare for decisions made much earlier.",
+    "cluster_id": "a21d7cc848b30dd0",
+    "dek": "Families are debating whether children should play football after research found a high percentage of N.F.L. players had developed degenerative brain disease.",
+    "headline": "A new C.T.E. study pushes the youth-football question back to kitchen tables",
+    "source_ids": [
+      "a21d7cc848b30dd0-s1"
+    ],
+    "why_it_matters": "Football\u2019s risk conversation is no longer confined to pros and leagues. It is landing with parents deciding whether the game is worth the possible neurological cost."
+  },
+  {
+    "body": "New York City officials are defending the rollout of a second-home tax while trying to ease homeowner anxiety. According to the Times excerpt, Mamdani administration officials said they used new data to shrink the list of properties that might be subject to the tax and extended the deadline for owners to prove city residency. That combination \u2014 narrower pool, longer runway \u2014 suggests a policy team trying to keep the tax intact while containing a backlash over mistaken or premature targeting.",
+    "cluster_id": "eabbbf5b530855b6",
+    "dek": "Mamdani administration officials say new data narrowed the pool of properties potentially subject to the tax, and homeowners get more time to prove residency.",
+    "headline": "New York tries to calm the second-home tax panic",
+    "source_ids": [
+      "eabbbf5b530855b6-s1"
+    ],
+    "why_it_matters": "Second-home taxes are politically potent because they promise fairness but can quickly become an administrative trust test: who gets flagged, and how easily can they clear their name?"
+  },
+  {
+    "body": "The Times\u2019 dining desk has refreshed its \u201cWhere to Eat in New York City Right Now\u201d guide \u2014 essentially a living snapshot of its favorite restaurants of the moment. The excerpts do not name the picks, so this is less a news event than a useful cultural marker: in New York, restaurant attention is seasonal, fickle and highly curated. The guide\u2019s value is in that curation, especially for readers trying to cut through the city\u2019s constant churn of openings, rediscoveries and hype cycles.",
+    "cluster_id": "571c9dbbecca798e",
+    "dek": "A rolling restaurant guide highlights the paper\u2019s current favorites in a city that \u201cnever stops eating.\u201d",
+    "headline": "The Times updates its map of where to eat in New York right now",
+    "source_ids": [
+      "571c9dbbecca798e-s1",
+      "571c9dbbecca798e-s2"
+    ],
+    "why_it_matters": "For New Yorkers and visitors alike, a good restaurant list is not just service journalism; it is a map of what the city currently thinks is worth leaving the apartment for."
+  },
+  {
+    "body": "For the 2026 Weltklasse Zurich Diamond League meet, LetsRun has published the essentials: schedule, entries, results and TV/streaming information. The supplied excerpts do not list athletes, event times or broadcast outlets, but the package is aimed squarely at fans who want to follow the meet without hunting across federation pages and streaming platforms. Zurich is being treated here not as a vague prestige stop, but as an event to plan around.",
+    "cluster_id": "d18de5be2f0a5935",
+    "dek": "LetsRun has the practical goods: schedule, entries, results and how to watch the 2026 Diamond League stop.",
+    "headline": "Weltklasse Zurich gets the track-nerd treatment",
+    "source_ids": [
+      "d18de5be2f0a5935-s1",
+      "d18de5be2f0a5935-s2"
+    ],
+    "why_it_matters": "Track\u2019s biggest meets can be weirdly hard to follow in real time. Consolidated schedules and viewing info are small but crucial infrastructure for the sport\u2019s most committed fans."
+  },
+  {
+    "body": "A Times New York piece looks at the color markings on city sidewalks: the symbols that guide construction crews but also read as accidental street art. The excerpt frames them as a \u201cvisual language,\u201d which is exactly the kind of city detail most people step over until someone decodes it. There is no claim here that utility markings are meant as art; the charm is that purely practical infrastructure can still create patterns, codes and moments of attention in plain sight.",
+    "cluster_id": "76a7a99e24d5c42c",
+    "dek": "Those colored construction markings on city streets are functional instructions \u2014 and, seen differently, a kind of public visual language.",
+    "headline": "The sidewalk spray paint was trying to tell you something",
+    "source_ids": [
+      "76a7a99e24d5c42c-s1"
+    ],
+    "why_it_matters": "Cities are full of hidden systems. Learning to read even one of them turns the sidewalk from background into evidence of how the place actually works."
+  }
+]

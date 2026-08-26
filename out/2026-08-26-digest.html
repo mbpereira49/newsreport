@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-26</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Wednesday, August 26, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Meta’s youth-safety reckoning gets a very large price tag</h2><p class="dek">A settlement with 47 states, D.C. and U.S. territories could cost the company up to $17.1 billion and force product changes.</p><div class="lead-lower"><div class="body-copy"><p>Meta has settled a sweeping set of social media addiction claims brought by 47 states, the District of Columbia and U.S. territories. The case centered on allegations that its platforms endangered children; the settlement pairs a potentially enormous payout — up to $17.1 billion — with “major changes” to Meta’s products. The excerpt does not specify which features will change, so the meaningful question now is less whether Meta writes the check than how visible those changes become to young users and parents.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> This is the kind of settlement that can reset industry norms: if product design is treated as a child-safety liability, other platforms will be watching closely.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/26/technology/meta-settlement-social-media-addiction-lawsuit.html" target="_blank" rel="noreferrer">NYT Business</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>The Fed’s favorite inflation gauge is still not giving the all-clear</h2><p class="dek">July’s PCE index held steady, with inflation remaining elevated amid high energy costs.</p><div class="body-copy"><p>The Personal Consumption Expenditure index — the Federal Reserve’s preferred inflation tracker — held steady in July, according to the Times excerpt. That is not the same as cooling. The framing here is that inflation remained elevated, with high energy costs helping keep pressure in the system. With only the headline-level data supplied, there’s no read on the underlying components beyond energy, but the signal is plain: the Fed is not yet looking at a clean disinflation story.</p></div><p class="why"><strong>Why it matters:</strong> PCE is the inflation measure policymakers privilege. A steady-but-elevated reading complicates hopes for easier monetary policy and keeps household cost pressure in focus.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/26/business/economy/inflation-pce.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Nvidia’s Poolside bet is really a bet on demand for more compute</h2><p class="dek">A reported $6 billion deal for Poolside’s “model factory” is being framed as a wager that open-source AI models will keep chip demand roaring.</p><div class="body-copy"><p>The Motley Fool, with the same framing echoed via AOL, casts Nvidia’s $6 billion Poolside deal as a strategic bet on open-source models driving demand for its chips. The supplied excerpts are thin, but the thesis is notable: Nvidia is not just selling picks and shovels into the AI boom; it appears to be trying to shape the machinery that creates models, too. If open-source development accelerates, the logic goes, more builders need more compute — and Nvidia wins upstream and downstream.</p></div><p class="why"><strong>Why it matters:</strong> The AI chip story is shifting from scarcity to ecosystem control. Nvidia’s strongest position may be not merely making the hardware, but investing where future compute appetite is created.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQZW81MWR4TlZJRG1tU19ZTHVfMHhrUFBLUFc1cmNxUmVWblhBMHBUN3hpLXJEeW1TdnV4NmVWeVJrZHRjU3gtVVFDNmgtOEp5VHY4dkJFRng4cGJFcXBrNHlZVEpHZ2hsUUY1VFVwNWVsQ1RNYWltS1VtelZOU2VENWNaSUg1dmdOMVV5UHNDQUJFUW9XZGpyWA?oc=5" target="_blank" rel="noreferrer">The Motley Fool</a> · <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOYlNheEZjU0M0Ykx3ZlJ5Z04zSEZtdWp6eE05bjBHZjZsTk5BbUJicXVHWTVVT0lxdHg1U3hYelJmVTRwWEJsZHlJQTlrQ2JZd1RwSnliTzhTb0VjVnJJMWx2RGRqdTlPY2JvMTB3THRVZjdRZlBtZTQ1SHJCWk1CcVlB?oc=5" target="_blank" rel="noreferrer">AOL.com</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>A new C.T.E. study pushes the youth-football question back to kitchen tables</h2><p class="dek">Families are debating whether children should play football after research found a high percentage of N.F.L. players had developed degenerative brain disease.</p><div class="body-copy"><p>A new C.T.E. study has intensified family debates over youth football. The Times frames the story around parents weighing children’s participation after a study found a high percentage of N.F.L. players had developed the degenerative brain disease. The excerpt does not say what the study found about children specifically, which matters; the emotional force of the finding comes from the sport’s highest level being used as a warning flare for decisions made much earlier.</p></div><p class="why"><strong>Why it matters:</strong> Football’s risk conversation is no longer confined to pros and leagues. It is landing with parents deciding whether the game is worth the possible neurological cost.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/26/us/parents-football-cte-decisions.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>New York tries to calm the second-home tax panic</h2><p class="dek">Mamdani administration officials say new data narrowed the pool of properties potentially subject to the tax, and homeowners get more time to prove residency.</p><div class="body-copy"><p>New York City officials are defending the rollout of a second-home tax while trying to ease homeowner anxiety. According to the Times excerpt, Mamdani administration officials said they used new data to shrink the list of properties that might be subject to the tax and extended the deadline for owners to prove city residency. That combination — narrower pool, longer runway — suggests a policy team trying to keep the tax intact while containing a backlash over mistaken or premature targeting.</p></div><p class="why"><strong>Why it matters:</strong> Second-home taxes are politically potent because they promise fairness but can quickly become an administrative trust test: who gets flagged, and how easily can they clear their name?</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/25/nyregion/mamdani-pieds-a-terre-tax-homes.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>The Times updates its map of where to eat in New York right now</h2><p class="dek">A rolling restaurant guide highlights the paper’s current favorites in a city that “never stops eating.”</p><div class="body-copy"><p>The Times’ dining desk has refreshed its “Where to Eat in New York City Right Now” guide — essentially a living snapshot of its favorite restaurants of the moment. The excerpts do not name the picks, so this is less a news event than a useful cultural marker: in New York, restaurant attention is seasonal, fickle and highly curated. The guide’s value is in that curation, especially for readers trying to cut through the city’s constant churn of openings, rediscoveries and hype cycles.</p></div><p class="why"><strong>Why it matters:</strong> For New Yorkers and visitors alike, a good restaurant list is not just service journalism; it is a map of what the city currently thinks is worth leaving the apartment for.</p><p class="sources">Sources: <a href="https://nytimes.com/article/where-to-eat-nyc-restaurants.html" target="_blank" rel="noreferrer">NYT Dining &amp; Wine</a> · <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE4tQ1FWNmI4emZLS1NKVVllbzJ5aEJ0OFpET0ExUFJ5S2t6ajRpNjhMYThRUUxtMjhOVHBIUVFZUDUwNTBzVjI2OUpDWG9LSUx5cHBYTlZpSUN2SU9wNXZNcXppeXEyS1RwblN6aWdEekRHNDQ?oc=5" target="_blank" rel="noreferrer">The New York Times</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Weltklasse Zurich gets the track-nerd treatment</h2><p class="dek">LetsRun has the practical goods: schedule, entries, results and how to watch the 2026 Diamond League stop.</p><div class="body-copy"><p>For the 2026 Weltklasse Zurich Diamond League meet, LetsRun has published the essentials: schedule, entries, results and TV/streaming information. The supplied excerpts do not list athletes, event times or broadcast outlets, but the package is aimed squarely at fans who want to follow the meet without hunting across federation pages and streaming platforms. Zurich is being treated here not as a vague prestige stop, but as an event to plan around.</p></div><p class="why"><strong>Why it matters:</strong> Track’s biggest meets can be weirdly hard to follow in real time. Consolidated schedules and viewing info are small but crucial infrastructure for the sport’s most committed fans.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/08/schedule-entries-results-for-2026-weltklasse-zurich-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/08/how-to-watch-2026-weltklasse-zurich-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>The sidewalk spray paint was trying to tell you something</h2><p class="dek">Those colored construction markings on city streets are functional instructions — and, seen differently, a kind of public visual language.</p><div class="body-copy"><p>A Times New York piece looks at the color markings on city sidewalks: the symbols that guide construction crews but also read as accidental street art. The excerpt frames them as a “visual language,” which is exactly the kind of city detail most people step over until someone decodes it. There is no claim here that utility markings are meant as art; the charm is that purely practical infrastructure can still create patterns, codes and moments of attention in plain sight.</p></div><p class="why"><strong>Why it matters:</strong> Cities are full of hidden systems. Learning to read even one of them turns the sidewalk from background into evidence of how the place actually works.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/26/nyregion/the-street-symbols-that-are-art-in-plain-sight.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 26, 2026
+</footer>
+</main>
+</body>
+</html>
