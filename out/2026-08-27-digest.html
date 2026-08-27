@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-27</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Thursday, August 27, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Claude Code’s “auto mode” gets a prompt-injection stress test</h2><p class="dek">Anthropic has made the protective mode the default. A prominent researcher says he found a way around it that works most of the time.</p><div class="lead-lower"><div class="body-copy"><p>Anthropic is leaning hard on Claude Code’s auto mode as a defense for people using coding agents against prompt-injection attacks. Simon Willison highlights a new test from Johann Rehberger, a well-known prompt-injection researcher, who says he found an attack that works about 80% of the time. The maneuver, as described, tricks Claude Code into downloading and uncompressing a zip archive, then executing code that imports base64 — while missing that the import can execute a local struct.py file extracted from the archive. The excerpt notes that auto mode did directly prevent the agent in a few cases, so this is not framed as a total bypass. But it is a sharp reminder that “default protection” is not the same thing as a solved security boundary.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Coding agents are moving from demos into developer workflows. If their safety modes can be reliably nudged into running hostile local code, the hard part is no longer whether agents can act — it is whether anyone can trust the guardrails around those actions.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/" target="_blank" rel="noreferrer">Simon Willison</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Nvidia-Hugging Face report lands with an “open source wins” frame</h2><p class="dek">Latent Space flags a claimed $13 billion Nvidia acquisition of Hugging Face alongside OpenAI’s Hugging Face incident retrospective.</p><div class="body-copy"><p>Latent Space’s AINews item carries a big headline: “NVIDIA buys HuggingFace for $13B,” paired with the note that OpenAI has published its Hugging Face incident retrospective. The supplied excerpt gives only the gloss — “Open Source wins!” — so the details and implications are thin from the available text. Still, the framing is notable: Hugging Face has become core AI infrastructure, and Nvidia’s name attached to it points toward the continuing consolidation of model distribution, tooling, compute, and developer attention. The OpenAI incident-retro piece in the same headline also suggests a second thread: as more AI work routes through shared hubs, security and platform governance become part of the open-source story, not a side issue.</p></div><p class="why"><strong>Why it matters:</strong> If accurate as framed, a Nvidia-Hugging Face deal would be a major AI infrastructure move. But with only a headline and one-line excerpt here, treat this as a flagged item rather than a fully evidenced acquisition brief.</p><p class="sources">Sources: <a href="https://latent.space/p/ainews-nvidia-buys-huggingface-for" target="_blank" rel="noreferrer">Latent Space</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>New York gets another flood-watch afternoon</h2><p class="dek">City officials warned of possible flash flooding Thursday, with the watch beginning at noon and risk extending into the evening.</p><div class="body-copy"><p>New York City officials said a flood watch was in effect Thursday starting at 12 p.m., with possible flash flooding in the afternoon and evening. The short version: another rainy day with enough intensity risk to disrupt commutes, low-lying streets, basements, and the city’s already familiar storm-drain anxiety. The excerpt does not specify expected rainfall totals or which neighborhoods face the highest risk, so the actionable takeaway is basic but useful: assume conditions could change quickly later in the day.</p></div><p class="why"><strong>Why it matters:</strong> Flash-flood watches in New York are no longer rare background weather. They affect transit, deliveries, school pickups, restaurant nights, and anyone whose route crosses an underpass or flood-prone block.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/27/nyregion/rain-storm-flooding-nyc.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Mamdani tries a CEO charm offensive</h2><p class="dek">The democratic socialist mayor, still working to win over Wall Street, is assembling a business advisory council for New York’s economy.</p><div class="body-copy"><p>Mayor Zohran Mamdani plans to use a new business advisory council to help invigorate New York City’s economy, according to the Times. The politically interesting part is the casting: Mamdani is a democratic socialist who has struggled to win over Wall Street, and now he is persuading C.E.O.s to join his orbit. That does not mean ideological détente has arrived; the excerpt gives no roster, policy agenda, or commitments from the executives. But it does show Mamdani choosing engagement with business leaders rather than simply governing around them. In New York, that is both practical politics and economic signaling.</p></div><p class="why"><strong>Why it matters:</strong> For a mayor with a left political brand, the composition and influence of a CEO advisory council could become a test of whether business outreach softens policy — or simply gives City Hall another channel for pressure and feedback.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/26/nyregion/mamdani-ceos-business-advisory-council.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Prediction markets become a states’ rights fight</h2><p class="dek">Kalshi, Polymarket, the Trump administration, Donald Trump’s son, and nearly every state attorney general are now orbiting the same legal dispute.</p><div class="body-copy"><p>The legal fight over prediction markets has escalated into a political brawl. The Times frames the dispute around the future of Kalshi, Polymarket, and similar platforms, with the Trump administration, the president’s son, and nearly every state attorney general drawn in. The excerpt does not lay out the claims, but the collision is clear: prediction markets want room to operate across elections, sports, economics, and public events; states are pushing back through their own regulatory and enforcement powers. That makes this less like a niche fintech case and more like a federalism fight over who gets to define gambling, financial contracts, and information markets.</p></div><p class="why"><strong>Why it matters:</strong> Prediction markets are trying to become mainstream forecasting infrastructure. Whether they are regulated as financial products, gambling, or something else will shape how much of public life can be turned into a tradable probability.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/27/technology/prediction-markets-states-kalshi-polymarket-lawsuits.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>A pancreatic cancer approval hints at a bigger drug class race</h2><p class="dek">The FDA approved a new drug for pancreatic cancer, while companies test similar approaches across lung, colon, and other cancers.</p><div class="body-copy"><p>A new FDA-approved drug for pancreatic cancer may be only the first in a broader wave. The Times notes that companies are testing dozens of similar drugs not just in pancreatic cancer, but also in cancers of the lung, colon, and more. The excerpt does not name the drug, the target, or the clinical benefit, so the story here is less about prescribing specifics and more about pipeline momentum. Pancreatic cancer is notoriously difficult to treat, which makes any approval meaningful — but the phrase “could be first of many” is doing the heavy lifting. The next question is whether similar drugs can show durable, clinically significant results across tumor types.</p></div><p class="why"><strong>Why it matters:</strong> Cancer drug development often advances by class: one approval opens the door for rivals, combinations, and expanded indications. For hard-to-treat cancers, that can change both medical options and biotech economics.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/27/science/pancreatic-cancer-drug-fda-testing.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Atoboy, ten years in, gets the rare “better than ever” review</h2><p class="dek">Eater revisits Junghyun “JP” Park and Ellia Jeongeun Park’s Nomad restaurant, crediting it with lasting force in modern Korean dining in New York.</p><div class="body-copy"><p>A decade after Junghyun “JP” Park and Ellia Jeongeun Park opened Atoboy in Nomad, Eater argues the restaurant is better than ever. The piece frames Atoboy as the Parks’ first groundbreaking New York restaurant, one that helped show the city what a fine-modern-dining approach to Korean food could be. Their later acclaim — including Atomix, opened two years later and two blocks away — can make Atoboy feel like the origin story. Eater’s point is that it should not be treated as merely that. In a restaurant city obsessed with openings, a ten-year-old prix fixe spot still improving is its own kind of flex.</p></div><p class="why"><strong>Why it matters:</strong> Restaurants that survive a decade in Manhattan usually either calcify or become institutions. Atoboy’s continued relevance suggests the Parks’ influence is not just about expansion, but about keeping the original idea alive and evolving.</p><p class="sources">Sources: <a href="https://ny.eater.com/dining-report/413488/atoboy-nyc-restaurant-review-korean-prix-fixe-manhattan-nomad" target="_blank" rel="noreferrer">Eater NY</a> · <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPWEUtUVZxR0xCUEM2RzFWdVNyX2E0cmN5TzBQNVozTEszM0JMcHhqNWlFVUZyNGhZTUQ4TWJxMlZ4YUhmYWk3S25lSnhFYnpYd2V1Q2RRY2RQY0VMd3NDeUdqam5KQ3U0b2ZlNjJpY0Y0RkstVEJaN0VkN092SmNvR1VQU1RWWGo3ZVNBRnZsa3VrXzVYT3VqWkxFZGhpa3poN2c4WXZR?oc=5" target="_blank" rel="noreferrer">Eater New York</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Zurich Diamond League: the practical tabs are up</h2><p class="dek">LetsRun has posted schedule, entries, results, and viewing information for the 2026 Weltklasse Zurich meet.</p><div class="body-copy"><p>For track fans, this is the utilitarian bookmark: LetsRun has the schedule, entries, results page, and TV/streaming information for the 2026 Weltklasse Zurich Diamond League. The excerpts do not list the featured athletes or event-by-event stakes, but Zurich usually functions as one of the sport’s marquee late-season stages. If you are trying to follow live results, plan a watch window, or check who is entered before races go off, the two LetsRun posts are the relevant launch points.</p></div><p class="why"><strong>Why it matters:</strong> Diamond League meets can be hard to track across time zones, broadcast windows, and staggered event schedules. Having entries, results, and how-to-watch details in one place is the difference between following the meet live and catching fragments afterward.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/08/schedule-entries-results-for-2026-weltklasse-zurich-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/08/how-to-watch-2026-weltklasse-zurich-diamond-league/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 27, 2026
+</footer>
+</main>
+</body>
+</html>

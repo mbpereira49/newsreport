@@ -1,0 +1,84 @@
+[
+  {
+    "body": "Anthropic is leaning hard on Claude Code\u2019s auto mode as a defense for people using coding agents against prompt-injection attacks. Simon Willison highlights a new test from Johann Rehberger, a well-known prompt-injection researcher, who says he found an attack that works about 80% of the time. The maneuver, as described, tricks Claude Code into downloading and uncompressing a zip archive, then executing code that imports base64 \u2014 while missing that the import can execute a local struct.py file extracted from the archive. The excerpt notes that auto mode did directly prevent the agent in a few cases, so this is not framed as a total bypass. But it is a sharp reminder that \u201cdefault protection\u201d is not the same thing as a solved security boundary.",
+    "cluster_id": "fc9cf7de5fb088e8",
+    "dek": "Anthropic has made the protective mode the default. A prominent researcher says he found a way around it that works most of the time.",
+    "headline": "Claude Code\u2019s \u201cauto mode\u201d gets a prompt-injection stress test",
+    "source_ids": [
+      "fc9cf7de5fb088e8-s1"
+    ],
+    "why_it_matters": "Coding agents are moving from demos into developer workflows. If their safety modes can be reliably nudged into running hostile local code, the hard part is no longer whether agents can act \u2014 it is whether anyone can trust the guardrails around those actions."
+  },
+  {
+    "body": "Latent Space\u2019s AINews item carries a big headline: \u201cNVIDIA buys HuggingFace for $13B,\u201d paired with the note that OpenAI has published its Hugging Face incident retrospective. The supplied excerpt gives only the gloss \u2014 \u201cOpen Source wins!\u201d \u2014 so the details and implications are thin from the available text. Still, the framing is notable: Hugging Face has become core AI infrastructure, and Nvidia\u2019s name attached to it points toward the continuing consolidation of model distribution, tooling, compute, and developer attention. The OpenAI incident-retro piece in the same headline also suggests a second thread: as more AI work routes through shared hubs, security and platform governance become part of the open-source story, not a side issue.",
+    "cluster_id": "12460842f62d402b",
+    "dek": "Latent Space flags a claimed $13 billion Nvidia acquisition of Hugging Face alongside OpenAI\u2019s Hugging Face incident retrospective.",
+    "headline": "Nvidia-Hugging Face report lands with an \u201copen source wins\u201d frame",
+    "source_ids": [
+      "12460842f62d402b-s1"
+    ],
+    "why_it_matters": "If accurate as framed, a Nvidia-Hugging Face deal would be a major AI infrastructure move. But with only a headline and one-line excerpt here, treat this as a flagged item rather than a fully evidenced acquisition brief."
+  },
+  {
+    "body": "New York City officials said a flood watch was in effect Thursday starting at 12 p.m., with possible flash flooding in the afternoon and evening. The short version: another rainy day with enough intensity risk to disrupt commutes, low-lying streets, basements, and the city\u2019s already familiar storm-drain anxiety. The excerpt does not specify expected rainfall totals or which neighborhoods face the highest risk, so the actionable takeaway is basic but useful: assume conditions could change quickly later in the day.",
+    "cluster_id": "038ff8dbb9d6e5fc",
+    "dek": "City officials warned of possible flash flooding Thursday, with the watch beginning at noon and risk extending into the evening.",
+    "headline": "New York gets another flood-watch afternoon",
+    "source_ids": [
+      "038ff8dbb9d6e5fc-s1"
+    ],
+    "why_it_matters": "Flash-flood watches in New York are no longer rare background weather. They affect transit, deliveries, school pickups, restaurant nights, and anyone whose route crosses an underpass or flood-prone block."
+  },
+  {
+    "body": "Mayor Zohran Mamdani plans to use a new business advisory council to help invigorate New York City\u2019s economy, according to the Times. The politically interesting part is the casting: Mamdani is a democratic socialist who has struggled to win over Wall Street, and now he is persuading C.E.O.s to join his orbit. That does not mean ideological d\u00e9tente has arrived; the excerpt gives no roster, policy agenda, or commitments from the executives. But it does show Mamdani choosing engagement with business leaders rather than simply governing around them. In New York, that is both practical politics and economic signaling.",
+    "cluster_id": "f3254a068568b041",
+    "dek": "The democratic socialist mayor, still working to win over Wall Street, is assembling a business advisory council for New York\u2019s economy.",
+    "headline": "Mamdani tries a CEO charm offensive",
+    "source_ids": [
+      "f3254a068568b041-s1"
+    ],
+    "why_it_matters": "For a mayor with a left political brand, the composition and influence of a CEO advisory council could become a test of whether business outreach softens policy \u2014 or simply gives City Hall another channel for pressure and feedback."
+  },
+  {
+    "body": "The legal fight over prediction markets has escalated into a political brawl. The Times frames the dispute around the future of Kalshi, Polymarket, and similar platforms, with the Trump administration, the president\u2019s son, and nearly every state attorney general drawn in. The excerpt does not lay out the claims, but the collision is clear: prediction markets want room to operate across elections, sports, economics, and public events; states are pushing back through their own regulatory and enforcement powers. That makes this less like a niche fintech case and more like a federalism fight over who gets to define gambling, financial contracts, and information markets.",
+    "cluster_id": "1a49330990e20607",
+    "dek": "Kalshi, Polymarket, the Trump administration, Donald Trump\u2019s son, and nearly every state attorney general are now orbiting the same legal dispute.",
+    "headline": "Prediction markets become a states\u2019 rights fight",
+    "source_ids": [
+      "1a49330990e20607-s1"
+    ],
+    "why_it_matters": "Prediction markets are trying to become mainstream forecasting infrastructure. Whether they are regulated as financial products, gambling, or something else will shape how much of public life can be turned into a tradable probability."
+  },
+  {
+    "body": "A new FDA-approved drug for pancreatic cancer may be only the first in a broader wave. The Times notes that companies are testing dozens of similar drugs not just in pancreatic cancer, but also in cancers of the lung, colon, and more. The excerpt does not name the drug, the target, or the clinical benefit, so the story here is less about prescribing specifics and more about pipeline momentum. Pancreatic cancer is notoriously difficult to treat, which makes any approval meaningful \u2014 but the phrase \u201ccould be first of many\u201d is doing the heavy lifting. The next question is whether similar drugs can show durable, clinically significant results across tumor types.",
+    "cluster_id": "8b2aead3db487925",
+    "dek": "The FDA approved a new drug for pancreatic cancer, while companies test similar approaches across lung, colon, and other cancers.",
+    "headline": "A pancreatic cancer approval hints at a bigger drug class race",
+    "source_ids": [
+      "8b2aead3db487925-s1"
+    ],
+    "why_it_matters": "Cancer drug development often advances by class: one approval opens the door for rivals, combinations, and expanded indications. For hard-to-treat cancers, that can change both medical options and biotech economics."
+  },
+  {
+    "body": "A decade after Junghyun \u201cJP\u201d Park and Ellia Jeongeun Park opened Atoboy in Nomad, Eater argues the restaurant is better than ever. The piece frames Atoboy as the Parks\u2019 first groundbreaking New York restaurant, one that helped show the city what a fine-modern-dining approach to Korean food could be. Their later acclaim \u2014 including Atomix, opened two years later and two blocks away \u2014 can make Atoboy feel like the origin story. Eater\u2019s point is that it should not be treated as merely that. In a restaurant city obsessed with openings, a ten-year-old prix fixe spot still improving is its own kind of flex.",
+    "cluster_id": "4728897d15c14d0f",
+    "dek": "Eater revisits Junghyun \u201cJP\u201d Park and Ellia Jeongeun Park\u2019s Nomad restaurant, crediting it with lasting force in modern Korean dining in New York.",
+    "headline": "Atoboy, ten years in, gets the rare \u201cbetter than ever\u201d review",
+    "source_ids": [
+      "4728897d15c14d0f-s1",
+      "4728897d15c14d0f-s2"
+    ],
+    "why_it_matters": "Restaurants that survive a decade in Manhattan usually either calcify or become institutions. Atoboy\u2019s continued relevance suggests the Parks\u2019 influence is not just about expansion, but about keeping the original idea alive and evolving."
+  },
+  {
+    "body": "For track fans, this is the utilitarian bookmark: LetsRun has the schedule, entries, results page, and TV/streaming information for the 2026 Weltklasse Zurich Diamond League. The excerpts do not list the featured athletes or event-by-event stakes, but Zurich usually functions as one of the sport\u2019s marquee late-season stages. If you are trying to follow live results, plan a watch window, or check who is entered before races go off, the two LetsRun posts are the relevant launch points.",
+    "cluster_id": "d18de5be2f0a5935",
+    "dek": "LetsRun has posted schedule, entries, results, and viewing information for the 2026 Weltklasse Zurich meet.",
+    "headline": "Zurich Diamond League: the practical tabs are up",
+    "source_ids": [
+      "d18de5be2f0a5935-s1",
+      "d18de5be2f0a5935-s2"
+    ],
+    "why_it_matters": "Diamond League meets can be hard to track across time zones, broadcast windows, and staggered event schedules. Having entries, results, and how-to-watch details in one place is the difference between following the meet live and catching fragments afterward."
+  }
+]
