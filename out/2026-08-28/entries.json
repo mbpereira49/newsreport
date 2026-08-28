@@ -1,0 +1,83 @@
+[
+  {
+    "body": "The New York Times frames the Iran war as an increasingly familiar trap for President Trump: sustained combat without a visible endpoint. The excerpt describes a conflict that has deteriorated over six months into Trump\u2019s own version of a \u201cforever war,\u201d marked by unclear goals and no obvious path out. That framing matters because it cuts against the political promise embedded in \u201cpeace through strength\u201d: force may have been easier to start than to convert into a durable settlement.",
+    "cluster_id": "c8e2847eb8709d1d",
+    "dek": "Six months in, the fighting is neither resolved nor clearly aimed at peace.",
+    "headline": "Trump\u2019s Iran conflict drifts into forever-war territory",
+    "source_ids": [
+      "c8e2847eb8709d1d-s1"
+    ],
+    "why_it_matters": "Open-ended wars reshape presidencies. The key question now is not just whether the U.S. can keep fighting, but what outcome the administration is actually trying to secure."
+  },
+  {
+    "body": "An appeals court said prediction markets should be regulated as gambling, contradicting an earlier appeals court decision. Federal regulators, according to the Times excerpt, see the split as Supreme Court material. The uncertainty is the story: prediction-market companies have tried to present themselves as information engines and financial exchanges, while courts are now offering competing answers about whether wagers on real-world outcomes belong under gambling law.",
+    "cluster_id": "852e41721465629d",
+    "dek": "A new appeals court ruling deepens a legal split over whether event contracts are finance, betting, or both.",
+    "headline": "Prediction markets get pulled back toward the gambling table",
+    "source_ids": [
+      "852e41721465629d-s1"
+    ],
+    "why_it_matters": "If the Supreme Court takes the issue, it could define the boundaries for a fast-growing market that sits awkwardly between finance, politics, sports-style betting, and public forecasting."
+  },
+  {
+    "body": "California is suing the Trump administration over the cancellation of a planned offshore wind farm, asking a court to reverse the administration\u2019s agreement and reinstate the project. The excerpt gives only the legal posture, but the political shape is plain enough: energy permitting has become another venue where climate policy, federal power, and state ambitions collide.",
+    "cluster_id": "c69d19addd0370a4",
+    "dek": "The state wants a judge to undo a Trump administration agreement and revive a planned wind farm.",
+    "headline": "California goes to court over a killed offshore wind project",
+    "source_ids": [
+      "c69d19addd0370a4-s1"
+    ],
+    "why_it_matters": "Offshore wind projects are capital-intensive and legally fragile. If cancellations can be reversed\u2014or cemented\u2014through litigation, the courts will help decide how much momentum clean-energy infrastructure can keep across administrations."
+  },
+  {
+    "body": "A leading Chinese AI start-up released a new model and used the moment to make a pointed argument: China\u2019s embrace of open software is safer than the closed systems favored by Silicon Valley. The Times frames this as opportunistic positioning amid \u201cAmerica\u2019s recent A.I. security scares.\u201d The claim is contested by implication\u2014open systems can invite scrutiny, but they can also spread capabilities quickly. Closed systems can limit access, but they require trust in the companies guarding them.",
+    "cluster_id": "6c062d1b6c635514",
+    "dek": "A Chinese start-up is using recent U.S. security scares to argue against Silicon Valley\u2019s closed-model approach.",
+    "headline": "China pitches open AI as the safer AI",
+    "source_ids": [
+      "6c062d1b6c635514-s1"
+    ],
+    "why_it_matters": "The AI race is no longer just about model quality. Safety narratives are becoming geopolitical branding, and \u201copen\u201d versus \u201cclosed\u201d is now a strategic argument as much as an engineering choice."
+  },
+  {
+    "body": "Simon Willison points to a post by Anil Madhavapeddy, a Cambridge computer science professor and OCaml compiler maintainer, describing a sharply compressed vulnerability timeline. Where security issues once allowed days for coordination and perhaps a week or two for release, Madhavapeddy reports probes arriving within about ten minutes of patches being shared for discussion. The excerpt suggests automated watchers are scanning public repositories, while modern coding agents have become effective enough at finding flaws that even partial public signals can be dangerous.",
+    "cluster_id": "2db3543e6d51937c",
+    "dek": "Simon Willison highlights a troubling report: even a rumor of a bug can trigger automated exploit hunting almost immediately.",
+    "headline": "Security disclosure now has a minutes-long fuse",
+    "source_ids": [
+      "2db3543e6d51937c-s1"
+    ],
+    "why_it_matters": "Open-source security depends on collaboration, but collaboration leaves traces. If attackers can turn patch discussions into exploit attempts within minutes, maintainers may need new norms for private coordination, embargoes, and automated defense."
+  },
+  {
+    "body": "Latent Space\u2019s interview with Anima Anandkumar centers on a useful provocation: \u201cWe have foundation models for language, not for physics.\u201d Anandkumar, described as a two-decade AI veteran whose work spans classical math and deep learning, is applying AI to physical systems including weather and fusion reactors. The excerpt suggests a shift away from treating language models as the template for all AI progress and toward models grounded in scientific structure and real-world dynamics.",
+    "cluster_id": "8890373af82adc3e",
+    "dek": "Anima Anandkumar argues that AI\u2019s deepest opportunity lies in modeling the physical world\u2014from weather to fusion.",
+    "headline": "The next foundation-model frontier may be physics, not chat",
+    "source_ids": [
+      "8890373af82adc3e-s1"
+    ],
+    "why_it_matters": "If AI can model physics better, the payoff is not just better assistants. It could change forecasting, engineering, climate science, and energy research\u2014domains where being approximately fluent is much less useful than being reliably predictive."
+  },
+  {
+    "body": "Lit Hub\u2019s August 28 daily roundup leads with a tender line about Elliott Smith: \u201cHe wrote sad songs but didn\u2019t want to make anyone sad,\u201d followed by an observation about his \u201cshy, exaggerated empathy.\u201d The prior day\u2019s roundup turns to writerly embarrassment\u2014what to do when a workshop finds your serious story hilarious\u2014and the pleasure of reading a novella in a single afternoon. Together, the items sketch Lit Hub\u2019s usual range: devotion, advice, and the small practical seductions of reading life.",
+    "cluster_id": "ba451ede49a6767a",
+    "dek": "The literary internet\u2019s softer pulse today is equal parts melancholy, craft anxiety, and short-book advocacy.",
+    "headline": "Lit Hub\u2019s daily mood: Elliott Smith, workshop whiplash, and novella evangelism",
+    "source_ids": [
+      "ba451ede49a6767a-s1",
+      "ba451ede49a6767a-s2"
+    ],
+    "why_it_matters": "Not every cultural signal has to be a grand trend. Sometimes the useful thing is a reminder that literature also lives in taste, mood, and the rituals that keep people reading and writing."
+  },
+  {
+    "body": "Thieves stole Bronze Age treasures from Spain\u2019s Museum of Villena in what art-theft experts describe as part of a broader European pattern: robberies that are quick, brazen, and increasingly violent. The Times excerpt says the heist may have been inspired by last year\u2019s Louvre break-in, though that remains framed as expert interpretation rather than established fact. The alarming detail is not only what was taken, but the apparent diffusion of a method.",
+    "cluster_id": "2a0cc269a3a3794e",
+    "dek": "Thieves stole Bronze Age treasures from the Museum of Villena in a robbery experts compare to recent violent smash-and-grab tactics.",
+    "headline": "A Spanish museum heist fits Europe\u2019s faster, rougher art-theft pattern",
+    "source_ids": [
+      "2a0cc269a3a3794e-s1"
+    ],
+    "why_it_matters": "Museums are built for public access, not fortress conditions. If high-profile heists become templates, institutions holding portable antiquities may face new pressure to harden security without turning cultural spaces into bunkers."
+  }
+]

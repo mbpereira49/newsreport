@@ -1,0 +1,79 @@
+{
+  "calls": [
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.06677,
+      "input_tokens": 7618,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 956,
+      "raw_usage": {
+        "input_tokens": 7618,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 956,
+        "output_tokens_details": {
+          "reasoning_tokens": 516
+        },
+        "total_tokens": 8574
+      },
+      "reasoning_tokens": 516,
+      "stage": "digest_selection",
+      "total_tokens": 8574
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.06708,
+      "input_tokens": 2664,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 1792,
+      "raw_usage": {
+        "input_tokens": 2664,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1792,
+        "output_tokens_details": {
+          "reasoning_tokens": 158
+        },
+        "total_tokens": 4456
+      },
+      "reasoning_tokens": 158,
+      "stage": "digest_entries",
+      "total_tokens": 4456
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.09043,
+      "input_tokens": 3146,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 2490,
+      "raw_usage": {
+        "input_tokens": 3146,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2490,
+        "output_tokens_details": {
+          "reasoning_tokens": 296
+        },
+        "total_tokens": 5636
+      },
+      "reasoning_tokens": 296,
+      "stage": "digest_layout",
+      "total_tokens": 5636
+    }
+  ],
+  "summary": {
+    "cached_input_tokens": 0,
+    "calls": 3,
+    "estimated_cost_usd": 0.22428,
+    "input_tokens": 13428,
+    "output_tokens": 5238,
+    "reasoning_tokens": 970,
+    "total_tokens": 18666
+  }
+}

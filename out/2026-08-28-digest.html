@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-28</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Friday, August 28, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Trump’s Iran conflict drifts into forever-war territory</h2><p class="dek">Six months in, the fighting is neither resolved nor clearly aimed at peace.</p><div class="lead-lower"><div class="body-copy"><p>The New York Times frames the Iran war as an increasingly familiar trap for President Trump: sustained combat without a visible endpoint. The excerpt describes a conflict that has deteriorated over six months into Trump’s own version of a “forever war,” marked by unclear goals and no obvious path out. That framing matters because it cuts against the political promise embedded in “peace through strength”: force may have been easier to start than to convert into a durable settlement.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Open-ended wars reshape presidencies. The key question now is not just whether the U.S. can keep fighting, but what outcome the administration is actually trying to secure.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/28/us/politics/trump-iran-war.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Prediction markets get pulled back toward the gambling table</h2><p class="dek">A new appeals court ruling deepens a legal split over whether event contracts are finance, betting, or both.</p><div class="body-copy"><p>An appeals court said prediction markets should be regulated as gambling, contradicting an earlier appeals court decision. Federal regulators, according to the Times excerpt, see the split as Supreme Court material. The uncertainty is the story: prediction-market companies have tried to present themselves as information engines and financial exchanges, while courts are now offering competing answers about whether wagers on real-world outcomes belong under gambling law.</p></div><p class="why"><strong>Why it matters:</strong> If the Supreme Court takes the issue, it could define the boundaries for a fast-growing market that sits awkwardly between finance, politics, sports-style betting, and public forecasting.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/28/technology/kalshi-prediction-markets-federal-courts.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>California goes to court over a killed offshore wind project</h2><p class="dek">The state wants a judge to undo a Trump administration agreement and revive a planned wind farm.</p><div class="body-copy"><p>California is suing the Trump administration over the cancellation of a planned offshore wind farm, asking a court to reverse the administration’s agreement and reinstate the project. The excerpt gives only the legal posture, but the political shape is plain enough: energy permitting has become another venue where climate policy, federal power, and state ambitions collide.</p></div><p class="why"><strong>Why it matters:</strong> Offshore wind projects are capital-intensive and legally fragile. If cancellations can be reversed—or cemented—through litigation, the courts will help decide how much momentum clean-energy infrastructure can keep across administrations.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/28/us/politics/california-trump-offshore-wind-lawsuit.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>China pitches open AI as the safer AI</h2><p class="dek">A Chinese start-up is using recent U.S. security scares to argue against Silicon Valley’s closed-model approach.</p><div class="body-copy"><p>A leading Chinese AI start-up released a new model and used the moment to make a pointed argument: China’s embrace of open software is safer than the closed systems favored by Silicon Valley. The Times frames this as opportunistic positioning amid “America’s recent A.I. security scares.” The claim is contested by implication—open systems can invite scrutiny, but they can also spread capabilities quickly. Closed systems can limit access, but they require trust in the companies guarding them.</p></div><p class="why"><strong>Why it matters:</strong> The AI race is no longer just about model quality. Safety narratives are becoming geopolitical branding, and “open” versus “closed” is now a strategic argument as much as an engineering choice.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/28/business/china-artificial-intelligence-zai.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Security disclosure now has a minutes-long fuse</h2><p class="dek">Simon Willison highlights a troubling report: even a rumor of a bug can trigger automated exploit hunting almost immediately.</p><div class="body-copy"><p>Simon Willison points to a post by Anil Madhavapeddy, a Cambridge computer science professor and OCaml compiler maintainer, describing a sharply compressed vulnerability timeline. Where security issues once allowed days for coordination and perhaps a week or two for release, Madhavapeddy reports probes arriving within about ten minutes of patches being shared for discussion. The excerpt suggests automated watchers are scanning public repositories, while modern coding agents have become effective enough at finding flaws that even partial public signals can be dangerous.</p></div><p class="why"><strong>Why it matters:</strong> Open-source security depends on collaboration, but collaboration leaves traces. If attackers can turn patch discussions into exploit attempts within minutes, maintainers may need new norms for private coordination, embargoes, and automated defense.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>The next foundation-model frontier may be physics, not chat</h2><p class="dek">Anima Anandkumar argues that AI’s deepest opportunity lies in modeling the physical world—from weather to fusion.</p><div class="body-copy"><p>Latent Space’s interview with Anima Anandkumar centers on a useful provocation: “We have foundation models for language, not for physics.” Anandkumar, described as a two-decade AI veteran whose work spans classical math and deep learning, is applying AI to physical systems including weather and fusion reactors. The excerpt suggests a shift away from treating language models as the template for all AI progress and toward models grounded in scientific structure and real-world dynamics.</p></div><p class="why"><strong>Why it matters:</strong> If AI can model physics better, the payoff is not just better assistants. It could change forecasting, engineering, climate science, and energy research—domains where being approximately fluent is much less useful than being reliably predictive.</p><p class="sources">Sources: <a href="https://latent.space/p/anima" target="_blank" rel="noreferrer">Latent Space</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Lit Hub’s daily mood: Elliott Smith, workshop whiplash, and novella evangelism</h2><p class="dek">The literary internet’s softer pulse today is equal parts melancholy, craft anxiety, and short-book advocacy.</p><div class="body-copy"><p>Lit Hub’s August 28 daily roundup leads with a tender line about Elliott Smith: “He wrote sad songs but didn’t want to make anyone sad,” followed by an observation about his “shy, exaggerated empathy.” The prior day’s roundup turns to writerly embarrassment—what to do when a workshop finds your serious story hilarious—and the pleasure of reading a novella in a single afternoon. Together, the items sketch Lit Hub’s usual range: devotion, advice, and the small practical seductions of reading life.</p></div><p class="why"><strong>Why it matters:</strong> Not every cultural signal has to be a grand trend. Sometimes the useful thing is a reminder that literature also lives in taste, mood, and the rituals that keep people reading and writing.</p><p class="sources">Sources: <a href="https://lithub.com/lit-hub-daily-august-28-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-daily-august-27-2026/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>A Spanish museum heist fits Europe’s faster, rougher art-theft pattern</h2><p class="dek">Thieves stole Bronze Age treasures from the Museum of Villena in a robbery experts compare to recent violent smash-and-grab tactics.</p><div class="body-copy"><p>Thieves stole Bronze Age treasures from Spain’s Museum of Villena in what art-theft experts describe as part of a broader European pattern: robberies that are quick, brazen, and increasingly violent. The Times excerpt says the heist may have been inspired by last year’s Louvre break-in, though that remains framed as expert interpretation rather than established fact. The alarming detail is not only what was taken, but the apparent diffusion of a method.</p></div><p class="why"><strong>Why it matters:</strong> Museums are built for public access, not fortress conditions. If high-profile heists become templates, institutions holding portable antiquities may face new pressure to harden security without turning cultural spaces into bunkers.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/28/arts/design/spain-museum-heist-treasure-of-villena.html" target="_blank" rel="noreferrer">NYT Arts</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 28, 2026
+</footer>
+</main>
+</body>
+</html>
