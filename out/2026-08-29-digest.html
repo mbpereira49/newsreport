@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-29</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Saturday, August 29, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Private equity’s housing story gets a human bill</h2><p class="dek">The Times traces the fall of Syracuse’s Nob Hill from coveted address to a place marked by neglect, squalor and death.</p><div class="lead-lower"><div class="body-copy"><p>Nob Hill, a sprawling apartment complex in Syracuse, is presented here as a grim case study in what happens when ownership, incentives and basic habitability come apart. The Times’s framing is blunt: a private equity group “drove” the complex into the ground after decades in which it had been a desirable address. The excerpt gives the broad arc rather than the mechanics, but the endpoint is clear enough: deterioration so severe that one family “paid a terrible price.”</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Housing finance stories can go abstract quickly. This one appears to locate private equity’s business model in the daily consequences for tenants: maintenance deferred, lives destabilized, and, in the worst cases, lives lost.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/28/nyregion/nob-hill-private-equity-fire.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Security teams may no longer get a quiet patch window</h2><p class="dek">A report from the OCaml world suggests automated exploit hunting is now moving within minutes of public bug discussion.</p><div class="body-copy"><p>Simon Willison flags an alarming observation from Anil Madhavapeddy, a Cambridge computer science professor and OCaml compiler maintainer: security issues in OCaml projects are seeing probes almost immediately after patches are shared for discussion. What used to allow a few days — perhaps a release within a week or two — may now be compressed to minutes. In one cited case, a website began seeing probes for percent-encoded traversal sequences within about ten minutes, suggesting automated watchers are monitoring public repositories. Willison’s sharper point is that modern coding agents have become good enough at finding flaws that even a rumor or patch hint can become an exploit lead.</p></div><p class="why"><strong>Why it matters:</strong> Open-source security has long depended on a fragile norm: disclose, patch, release, then explain. If bots and coding agents can infer exploits from patch chatter instantly, maintainers may need a much more private, faster, and operationally disciplined process.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>The AI platform fight reaches Cursor</h2><p class="dek">Latent Space frames OpenAI shutting off Cursor as a concrete consequence of the Elon Musk–Sam Altman conflict.</p><div class="body-copy"><p>The excerpt is spare, but pointed: “[AINews] OpenAI shuts off Cursor,” with the summary line, “Elon v Altman has a real consequence.” That framing suggests this is not merely a product-access hiccup, but a platform dependency becoming visible at the worst possible time. Cursor, whatever the specific operational details beyond the excerpt, is being treated as collateral in a larger AI industry feud. The important uncertainty: the provided source does not spell out the mechanism, scope or duration of the shutdown, only the claim and its political-industrial interpretation.</p></div><p class="why"><strong>Why it matters:</strong> The AI stack is full of companies built atop other companies’ models and APIs. When access changes, the consequences can look less like normal vendor management and more like geopolitical risk inside a developer toolchain.</p><p class="sources">Sources: <a href="https://latent.space/p/ainews-openai-shuts-off-cursor" target="_blank" rel="noreferrer">Latent Space</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Music labels want AI to pay — and maybe to partner</h2><p class="dek">The industry’s response to AI music generators is splitting between litigation, collaboration and, in at least one case, both.</p><div class="body-copy"><p>The Times captures the music business in its most familiar posture: furious about a new technology, intrigued by its revenue potential, and divided over how to proceed. Some labels have sued AI music generators such as Suno; others have partnered with them. At least one has done both, which may be the most honest signal of where the industry is. The headline’s question — “Thievery or Innovation?” — is a little too tidy, but useful: labels appear to be treating AI music as an alleged rights violation, a possible product category and a bargaining chip all at once.</p></div><p class="why"><strong>Why it matters:</strong> The fight over AI music is not just about songs. It is about whether creative catalogs become training material, licensing leverage, or both — and whether incumbents can turn disruption into another negotiated tollbooth.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/29/business/dealbook/ai-generated-music.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>An ICE shooting case runs into an extradition wall</h2><p class="dek">Federal prosecutors planned to charge an immigration agent after a Minneapolis shooting. Then, according to the Times, the agent walked free.</p><div class="body-copy"><p>This is a law-enforcement accountability story with an unusually jagged procedural turn. The Times reports that federal prosecutors planned to charge an immigration agent arrested in connection with a shooting in Minneapolis. But an extradition showdown intervened, and the federal case stalled. The excerpt’s final line lands hard: “Then the agent walked free.” The available text does not give the alleged facts of the shooting, the legal arguments or who blocked what, so the key point is narrower: prosecutors’ intent to charge did not translate into a case moving forward.</p></div><p class="why"><strong>Why it matters:</strong> When a federal agent is arrested in connection with a shooting, the public expectation is a clear legal process. A stalled case and failed extradition fight raise the more troubling question of whether accountability depends on jurisdictional cooperation as much as evidence.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/29/us/christian-castro-ice-agent-minnesota-texas.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Atoboy’s decade-in trick: getting sharper, not grander</h2><p class="dek">Eater revisits Junghyun “JP” Park and Ellia Jeongeun Park’s Nomad restaurant ten years after it helped reset expectations for modern Korean dining in New York.</p><div class="body-copy"><p>Atoboy opened in Nomad a decade ago as chef Junghyun “JP” Park and Ellia Jeongeun Park’s first major statement: a fine-modern, prix fixe take on Korean food that helped show New York what the form could be. Eater’s new review argues the restaurant is “better than ever,” which is notable partly because the Parks’ later projects — including the acclaimed Atomix, opened two years later and two blocks away — could easily have made the original feel like a prelude. Instead, the claim here is that Atoboy has aged into itself.</p></div><p class="why"><strong>Why it matters:</strong> Restaurants that change a city’s palate often become trapped by their own origin story. Atoboy’s apparent second-act strength suggests a rarer path: staying foundational without becoming frozen.</p><p class="sources">Sources: <a href="https://ny.eater.com/dining-report/413488/atoboy-nyc-restaurant-review-korean-prix-fixe-manhattan-nomad" target="_blank" rel="noreferrer">Eater NY</a> · <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxPWEUtUVZxR0xCUEM2RzFWdVNyX2E0cmN5TzBQNVozTEszM0JMcHhqNWlFVUZyNGhZTUQ4TWJxMlZ4YUhmYWk3S25lSnhFYnpYd2V1Q2RRY2RQY0VMd3NDeUdqam5KQ3U0b2ZlNjJpY0Y0RkstVEJaN0VkN092SmNvR1VQU1RWWGo3ZVNBRnZsa3VrXzVYT3VqWkxFZGhpa3poN2c4WXZR?oc=5" target="_blank" rel="noreferrer">Eater New York</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Lit Hub’s week: grief, advice, icons and the strange work of reading</h2><p class="dek">The site’s late-August roundups move from Jason Arday and Dolly Parton to Elliott Smith, novellas and the perils of an unintentionally funny story.</p><div class="body-copy"><p>This Lit Hub cluster is less a single story than a literary weather report. The weekly roundup leads with Steven Thrasher on the killing of Jason Arday — “not just hounded out of academia,” but “hounded out of existence” — then shifts to Dolly Parton as American icon and giver of books, and an item on Hieronymus. The daily links widen the mood: loving Elliott Smith, whose sad songs came with “shy, exaggerated empathy”; writing-group advice for when a serious story lands as comedy; and a prompt to spend a free afternoon reading a novella cover to cover.</p></div><p class="why"><strong>Why it matters:</strong> The value of a literary roundup is its collisions. Here, cultural memory, craft anxiety, music devotion and reading pleasure sit side by side — a useful reminder that literary culture is not one conversation but many overlapping rooms.</p><p class="sources">Sources: <a href="https://lithub.com/lit-hub-weekly-august-24-28-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-daily-august-28-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-daily-august-27-2026/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>A dead-tree Declaration in tech-mad San Francisco</h2><p class="dek">Arion Press is making a new riff on the Declaration of Independence for America’s 250th birthday — very slowly, very physically, and very much on purpose.</p><div class="body-copy"><p>In San Francisco, amid the culture of speed and software, Arion Press continues to make what the Times calls some of the world’s most sought-after “dead-tree artifacts.” Its latest project is a new take on the Declaration of Independence timed to America’s 250th birthday. The appeal is almost contrarian: at a moment when text is infinitely reproducible, Arion is betting on the authority of the made object — paper, presswork, scarcity, touch.</p></div><p class="why"><strong>Why it matters:</strong> The Declaration is already a document, symbol and argument. Recasting it through fine printing asks a timely question: in a country flooded with words, can physical craft make civic language feel less disposable?</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/28/arts/arion-press-san-francisco-declaration-independence.html" target="_blank" rel="noreferrer">NYT Arts</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 29, 2026
+</footer>
+</main>
+</body>
+</html>
