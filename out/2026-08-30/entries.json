@@ -1,0 +1,84 @@
+[
+  {
+    "body": "The immediate news is procedural but consequential: a judge has temporarily blocked the Postal Service from implementing a strict new rule governing mail voting. The policy, as framed in the source, could disproportionately affect Democrats and many battleground elections. That makes this less a postal-administration story than a midterms story, with voting logistics once again becoming a front line in partisan politics.",
+    "cluster_id": "0ca2b03338a0501c",
+    "dek": "A judge temporarily blocked a stricter Postal Service policy that critics say could keep millions from voting by mail.",
+    "headline": "A postal voting rule hits a judicial speed bump",
+    "source_ids": [
+      "0ca2b03338a0501c-s1"
+    ],
+    "why_it_matters": "Mail voting rules can change who successfully casts a ballot, not just how ballots travel. A temporary block buys time, but the underlying fight over election administration is plainly not over."
+  },
+  {
+    "body": "New York is leaning harder into office-to-residential conversions as one answer to its housing crisis. According to a New York Times analysis, the pace of projects has quickened sharply. The example named in the excerpt is the former Pfizer building, where two steel columns buckled in July \u2014 a detail that gives the policy push a useful dose of reality. Conversions sound elegant on paper: empty offices become homes. In practice, old commercial buildings come with structural, regulatory and design complications that can\u2019t be waved away by a housing target.",
+    "cluster_id": "8fb61c051386794b",
+    "dek": "A Times analysis says conversions are speeding up sharply, even as a buckling incident at the former Pfizer building underscores the risks.",
+    "headline": "New York\u2019s office-to-apartment bet is accelerating",
+    "source_ids": [
+      "8fb61c051386794b-s1"
+    ],
+    "why_it_matters": "The city needs housing badly, and office conversions may be one of the few politically available tools. But speed is not the same as simplicity, especially when aging buildings become residential infrastructure."
+  },
+  {
+    "body": "The Treasury Department has barred specific reporters from covering next week\u2019s G20 finance meeting in Asheville, North Carolina, according to the source excerpt. The reporters named by affiliation are from The New York Times, The Wall Street Journal and Bloomberg \u2014 all major outlets in economic and financial coverage. The excerpt does not provide Treasury\u2019s rationale, so the key fact for now is the exclusion itself, and the lack of stated context in the supplied material.",
+    "cluster_id": "f620eb50c8c0f25a",
+    "dek": "Reporters from The New York Times, The Wall Street Journal and Bloomberg were not granted access to next week\u2019s meeting in Asheville, N.C.",
+    "headline": "Treasury denies credentials to select G20 finance reporters",
+    "source_ids": [
+      "f620eb50c8c0f25a-s1"
+    ],
+    "why_it_matters": "Access fights can sound inside-baseball until they shape what the public learns about powerful officials and global financial policy. Selective credentialing of major financial reporters deserves scrutiny, whatever explanation Treasury offers."
+  },
+  {
+    "body": "Simon Willison highlights a challenge to Anthropic\u2019s confidence in Claude Code\u2019s auto mode, which the company has made the default and has positioned as protection against prompt injection attacks. The reported attack comes from Johann Rehberger, described by Willison as one of the most credible active prompt-injection researchers. Rehberger claims the attack works 80% of the time: it tricks Claude Code into downloading and uncompressing a zip archive, then executing code that imports `base64` without noticing that a local `struct.py` file from the archive will be imported and executed. The excerpt also notes that in a few cases auto mode directly prevented the attack, so this is not framed as a universal bypass.",
+    "cluster_id": "fc9cf7de5fb088e8",
+    "dek": "Researcher Johann Rehberger says he found an attack that defeats Anthropic\u2019s default coding-agent protection about 80% of the time.",
+    "headline": "Claude Code\u2019s \u201cauto mode\u201d faces a prompt-injection stress test",
+    "source_ids": [
+      "fc9cf7de5fb088e8-s1"
+    ],
+    "why_it_matters": "Coding agents are moving from demos to defaults. If their safety model can be steered by the files they inspect or unpack, the weak point is not model intelligence but operational trust: what an agent is allowed to touch, import and execute."
+  },
+  {
+    "body": "Eater\u2019s latest NYC restaurant-news roundup leads with a small but sentimental closure: the last Mimi Cheng\u2019s is closing. The supplied excerpt offers little beyond that headline, but it\u2019s enough to mark the story as one of those neighborhood food-world endings that travels by word of mouth before it becomes urban memory. The Google News mirror frames the same item almost identically \u2014 \u201cthe end of an era for an East Village dumpling shop\u201d \u2014 so there is no meaningful disagreement between the two supplied sources.",
+    "cluster_id": "eff917d0573c75b5",
+    "dek": "Eater\u2019s NYC restaurant roundup flags the end of an East Village dumpling-shop era.",
+    "headline": "The last Mimi Cheng\u2019s is closing",
+    "source_ids": [
+      "eff917d0573c75b5-s1",
+      "eff917d0573c75b5-s2"
+    ],
+    "why_it_matters": "Restaurant churn is part of New York\u2019s metabolism, but closures like this also erase familiar rituals: a go-to dumpling stop, a block\u2019s texture, a version of the East Village that locals thought would last a little longer."
+  },
+  {
+    "body": "Lit Hub\u2019s weekly and daily roundups are less one story than a mood board for the literary internet. The week\u2019s edition points to Steven Thrasher on Jason Arday \u2014 with the stark line, \u201cJason was not just hounded out of academia, he was hounded out of existence\u201d \u2014 alongside a celebration of Dolly Parton as \u201cAmerican icon, giver of books,\u201d and an item on Hieronymus Bosch. The daily edition adds a piece on Elliott Smith: \u201cHe wrote sad songs but didn\u2019t want to make anyone sad,\u201d a sentence that neatly explains why literary sites keep returning to musicians whose work feels like private weather.",
+    "cluster_id": "36e36922098174d7",
+    "dek": "The literary roundup ranges from Steven Thrasher on Jason Arday to Dolly Parton\u2019s book-giving, Hieronymus Bosch and a meditation on loving Elliott Smith.",
+    "headline": "Lit Hub\u2019s week: politics, Dolly, Bosch and Elliott Smith",
+    "source_ids": [
+      "36e36922098174d7-s1",
+      "36e36922098174d7-s2"
+    ],
+    "why_it_matters": "Roundups can be disposable, but this one sketches the range of contemporary literary attention: politics, biography, old art, pop grief and the people who become symbols because language keeps circling them."
+  },
+  {
+    "body": "In tech-mad San Francisco, Arion Press continues to make what the excerpt calls some of the world\u2019s most sought-after \u201cdead-tree artifacts.\u201d Its latest subject is appropriately loaded: a new riff on the Declaration of Independence for America\u2019s 250th birthday. The contrast is the point. In a city synonymous with software, the press is betting on physical craft, scarcity and the enduring theater of ink on paper.",
+    "cluster_id": "cf647370fd6cd399",
+    "dek": "San Francisco\u2019s Arion Press is making a new riff on the Declaration for America\u2019s 250th birthday.",
+    "headline": "A Declaration of Independence for the dead-tree faithful",
+    "source_ids": [
+      "cf647370fd6cd399-s1"
+    ],
+    "why_it_matters": "Anniversary culture can get kitschy fast. But a finely made Declaration project asks a sharper question: what does a founding text become when it is treated not just as politics, but as an object to be remade, handled and collected?"
+  },
+  {
+    "body": "New York has a new urban mystery, or at least a very New York one: people keep sneaking into the city\u2019s sewers, and no one seems to know why. The recent spate of subterranean exploring has piqued public curiosity, according to the excerpt, while officials are warning about the danger underground. That tension \u2014 city as playground versus city as infrastructure \u2014 is doing most of the work here. The romance of forbidden tunnels lasts right up until the practicalities of sewage, gases, flooding and rescue enter the frame.",
+    "cluster_id": "4f30ca97d95e9dd7",
+    "dek": "A recent spate of subterranean exploring has amused and baffled New Yorkers while alarming officials.",
+    "headline": "Why are people sneaking into New York City sewers?",
+    "source_ids": [
+      "4f30ca97d95e9dd7-s1"
+    ],
+    "why_it_matters": "It\u2019s a quirky story with a civic point underneath: infrastructure is not scenery. The systems that keep a city functioning are dangerous precisely because they were never meant to be tourist attractions."
+  }
+]

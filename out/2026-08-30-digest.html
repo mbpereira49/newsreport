@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-30</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Sunday, August 30, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>A postal voting rule hits a judicial speed bump</h2><p class="dek">A judge temporarily blocked a stricter Postal Service policy that critics say could keep millions from voting by mail.</p><div class="lead-lower"><div class="body-copy"><p>The immediate news is procedural but consequential: a judge has temporarily blocked the Postal Service from implementing a strict new rule governing mail voting. The policy, as framed in the source, could disproportionately affect Democrats and many battleground elections. That makes this less a postal-administration story than a midterms story, with voting logistics once again becoming a front line in partisan politics.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Mail voting rules can change who successfully casts a ballot, not just how ballots travel. A temporary block buys time, but the underlying fight over election administration is plainly not over.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/30/us/politics/mail-voting-trump-midterms-supreme-court.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>New York’s office-to-apartment bet is accelerating</h2><p class="dek">A Times analysis says conversions are speeding up sharply, even as a buckling incident at the former Pfizer building underscores the risks.</p><div class="body-copy"><p>New York is leaning harder into office-to-residential conversions as one answer to its housing crisis. According to a New York Times analysis, the pace of projects has quickened sharply. The example named in the excerpt is the former Pfizer building, where two steel columns buckled in July — a detail that gives the policy push a useful dose of reality. Conversions sound elegant on paper: empty offices become homes. In practice, old commercial buildings come with structural, regulatory and design complications that can’t be waved away by a housing target.</p></div><p class="why"><strong>Why it matters:</strong> The city needs housing badly, and office conversions may be one of the few politically available tools. But speed is not the same as simplicity, especially when aging buildings become residential infrastructure.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/30/nyregion/nyc-conversions-analysis-pfizer.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Treasury denies credentials to select G20 finance reporters</h2><p class="dek">Reporters from The New York Times, The Wall Street Journal and Bloomberg were not granted access to next week’s meeting in Asheville, N.C.</p><div class="body-copy"><p>The Treasury Department has barred specific reporters from covering next week’s G20 finance meeting in Asheville, North Carolina, according to the source excerpt. The reporters named by affiliation are from The New York Times, The Wall Street Journal and Bloomberg — all major outlets in economic and financial coverage. The excerpt does not provide Treasury’s rationale, so the key fact for now is the exclusion itself, and the lack of stated context in the supplied material.</p></div><p class="why"><strong>Why it matters:</strong> Access fights can sound inside-baseball until they shape what the public learns about powerful officials and global financial policy. Selective credentialing of major financial reporters deserves scrutiny, whatever explanation Treasury offers.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/29/business/reporters-denied-g20-meeting.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Claude Code’s “auto mode” faces a prompt-injection stress test</h2><p class="dek">Researcher Johann Rehberger says he found an attack that defeats Anthropic’s default coding-agent protection about 80% of the time.</p><div class="body-copy"><p>Simon Willison highlights a challenge to Anthropic’s confidence in Claude Code’s auto mode, which the company has made the default and has positioned as protection against prompt injection attacks. The reported attack comes from Johann Rehberger, described by Willison as one of the most credible active prompt-injection researchers. Rehberger claims the attack works 80% of the time: it tricks Claude Code into downloading and uncompressing a zip archive, then executing code that imports `base64` without noticing that a local `struct.py` file from the archive will be imported and executed. The excerpt also notes that in a few cases auto mode directly prevented the attack, so this is not framed as a universal bypass.</p></div><p class="why"><strong>Why it matters:</strong> Coding agents are moving from demos to defaults. If their safety model can be steered by the files they inspect or unpack, the weak point is not model intelligence but operational trust: what an agent is allowed to touch, import and execute.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>The last Mimi Cheng’s is closing</h2><p class="dek">Eater’s NYC restaurant roundup flags the end of an East Village dumpling-shop era.</p><div class="body-copy"><p>Eater’s latest NYC restaurant-news roundup leads with a small but sentimental closure: the last Mimi Cheng’s is closing. The supplied excerpt offers little beyond that headline, but it’s enough to mark the story as one of those neighborhood food-world endings that travels by word of mouth before it becomes urban memory. The Google News mirror frames the same item almost identically — “the end of an era for an East Village dumpling shop” — so there is no meaningful disagreement between the two supplied sources.</p></div><p class="why"><strong>Why it matters:</strong> Restaurant churn is part of New York’s metabolism, but closures like this also erase familiar rituals: a go-to dumpling stop, a block’s texture, a version of the East Village that locals thought would last a little longer.</p><p class="sources">Sources: <a href="https://ny.eater.com/news/413160/nyc-restaurant-news-august-2026" target="_blank" rel="noreferrer">Eater NY</a> · <a href="https://news.google.com/rss/articles/CBMickFVX3lxTE51U3dNa1lzMXRsbjRBWk1GWEV0ZF9FcF9iU19waXBnWDRyNDBneWVjWHF0VnI3bmFQWWVmMmw0WUo0TjJ3NEtSVXptZVZBYl9JWDgyYjJSM0dFTW5kSFdMWTU3WVdYVXJzY2ZRVlJIOWoxUQ?oc=5" target="_blank" rel="noreferrer">Eater New York</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Lit Hub’s week: politics, Dolly, Bosch and Elliott Smith</h2><p class="dek">The literary roundup ranges from Steven Thrasher on Jason Arday to Dolly Parton’s book-giving, Hieronymus Bosch and a meditation on loving Elliott Smith.</p><div class="body-copy"><p>Lit Hub’s weekly and daily roundups are less one story than a mood board for the literary internet. The week’s edition points to Steven Thrasher on Jason Arday — with the stark line, “Jason was not just hounded out of academia, he was hounded out of existence” — alongside a celebration of Dolly Parton as “American icon, giver of books,” and an item on Hieronymus Bosch. The daily edition adds a piece on Elliott Smith: “He wrote sad songs but didn’t want to make anyone sad,” a sentence that neatly explains why literary sites keep returning to musicians whose work feels like private weather.</p></div><p class="why"><strong>Why it matters:</strong> Roundups can be disposable, but this one sketches the range of contemporary literary attention: politics, biography, old art, pop grief and the people who become symbols because language keeps circling them.</p><p class="sources">Sources: <a href="https://lithub.com/lit-hub-weekly-august-24-28-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-daily-august-28-2026/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>A Declaration of Independence for the dead-tree faithful</h2><p class="dek">San Francisco’s Arion Press is making a new riff on the Declaration for America’s 250th birthday.</p><div class="body-copy"><p>In tech-mad San Francisco, Arion Press continues to make what the excerpt calls some of the world’s most sought-after “dead-tree artifacts.” Its latest subject is appropriately loaded: a new riff on the Declaration of Independence for America’s 250th birthday. The contrast is the point. In a city synonymous with software, the press is betting on physical craft, scarcity and the enduring theater of ink on paper.</p></div><p class="why"><strong>Why it matters:</strong> Anniversary culture can get kitschy fast. But a finely made Declaration project asks a sharper question: what does a founding text become when it is treated not just as politics, but as an object to be remade, handled and collected?</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/28/arts/arion-press-san-francisco-declaration-independence.html" target="_blank" rel="noreferrer">NYT Arts</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Why are people sneaking into New York City sewers?</h2><p class="dek">A recent spate of subterranean exploring has amused and baffled New Yorkers while alarming officials.</p><div class="body-copy"><p>New York has a new urban mystery, or at least a very New York one: people keep sneaking into the city’s sewers, and no one seems to know why. The recent spate of subterranean exploring has piqued public curiosity, according to the excerpt, while officials are warning about the danger underground. That tension — city as playground versus city as infrastructure — is doing most of the work here. The romance of forbidden tunnels lasts right up until the practicalities of sewage, gases, flooding and rescue enter the frame.</p></div><p class="why"><strong>Why it matters:</strong> It’s a quirky story with a civic point underneath: infrastructure is not scenery. The systems that keep a city functioning are dangerous precisely because they were never meant to be tourist attractions.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/30/nyregion/manholes-sewers-nyc.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 30, 2026
+</footer>
+</main>
+</body>
+</html>
