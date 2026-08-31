@@ -1,0 +1,84 @@
+[
+  {
+    "body": "Global oil prices rose to $90 a barrel after the United States and Iran traded attacks, according to the New York Times. The excerpt frames these as the first attacks in a month \u2014 enough to jolt energy markets even before any broader damage assessment. For U.S. consumers, the pressure is already visible: average gasoline prices remain 37 percent higher than when the war began.",
+    "cluster_id": "d539c9f1fe25efb0",
+    "dek": "The energy market got its reminder that \u201cpaused\u201d is not the same as \u201cover.\u201d",
+    "headline": "Oil jumps to $90 after U.S.\u2013Iran attacks break a month of quiet",
+    "source_ids": [
+      "d539c9f1fe25efb0-s1"
+    ],
+    "why_it_matters": "Oil is the fast lane from geopolitics to household budgets. Even a limited exchange can reset inflation expectations, transport costs and political pressure at home."
+  },
+  {
+    "body": "At least two bodies have been found after flooding in the Grand Canyon, and more than a dozen people remain missing, according to the New York Times. The immediate danger is not just what has already happened: further storms could hinder rescue efforts on Monday, complicating searches in terrain where access is already difficult.",
+    "cluster_id": "f8442b86706ea806",
+    "dek": "Rescuers face the grim arithmetic of flash floods \u2014 and more storms may be coming.",
+    "headline": "Grand Canyon flooding leaves at least two dead and more than a dozen missing",
+    "source_ids": [
+      "f8442b86706ea806-s1"
+    ],
+    "why_it_matters": "Flash floods turn familiar landscapes into traps with little warning. The open question now is whether weather gives rescuers a window \u2014 or closes it."
+  },
+  {
+    "body": "A watchdog found that IRS audit revenue has plummeted under President Trump, the New York Times reports. The agency has lost roughly a quarter of its employees since Trump took office, a decline the excerpt says has hampered its ability to conduct audits. The framing is straightforward: fewer auditors, fewer audits, less audit revenue.",
+    "cluster_id": "2db457c1a24e4090",
+    "dek": "A tax agency with fewer people is collecting less through audits \u2014 not exactly a mystery, but still a major fiscal signal.",
+    "headline": "IRS audit revenue has plunged as staffing shrinks under Trump, watchdog says",
+    "source_ids": [
+      "2db457c1a24e4090-s1"
+    ],
+    "why_it_matters": "Tax enforcement is one of the quieter ways governments fund themselves and signal fairness. A weakened IRS does not just change collections; it changes the odds people and companies perceive when deciding whether to comply."
+  },
+  {
+    "body": "Rasonque, a new pancreatic cancer treatment from Revolution Medicines, costs $480,000 a year, according to the New York Times. The article frames the pill as an example of the \u201cnew normal\u201d in cancer drugs and as evidence of huge inflation in oncology pricing over the past two decades. The excerpt does not provide efficacy data or patient eligibility details, so the core tension here is price before value can be fully weighed.",
+    "cluster_id": "d1b7131f06a640d4",
+    "dek": "Rasonque is presented less as an outlier than as a symptom of a two-decade price escalation.",
+    "headline": "A $480,000-a-year cancer pill shows where oncology pricing has landed",
+    "source_ids": [
+      "d1b7131f06a640d4-s1"
+    ],
+    "why_it_matters": "Cancer drug prices increasingly test the boundary between medical breakthrough and financial shock. A six-figure annual pill forces insurers, patients and policymakers into hard choices even when the science is promising."
+  },
+  {
+    "body": "Pennsylvania\u2019s AI gold rush is meeting resistance, the New York Times reports. Gov. Josh Shapiro is \u201cpumping the brakes\u201d on enormous data centers amid a backlash, even as some residents in a region marked by the collapse of the steel industry welcome billions in construction. The story is not simply pro-growth versus anti-growth; it is about communities weighing a new industrial promise against whatever costs have triggered the pushback.",
+    "cluster_id": "afb6d30b8bb298fa",
+    "dek": "Billions in construction look different in a region scarred by steel\u2019s collapse \u2014 but backlash is making the governor slow down.",
+    "headline": "Pennsylvania\u2019s AI data-center boom runs into local second thoughts",
+    "source_ids": [
+      "afb6d30b8bb298fa-s1"
+    ],
+    "why_it_matters": "AI may live in the cloud as a metaphor, but it lands as concrete, power demand and local politics. The next phase of the AI boom will be negotiated town by town."
+  },
+  {
+    "body": "Simon Willison describes ChatGPT Work as \u201cextraordinarily confusing and very powerful,\u201d after OpenAI announced it on July 9 and rapidly iterated on it. His key clarification is that ChatGPT Work is effectively two products: \u201cWork Cloud,\u201d accessible through chatgpt.com and the mobile apps, and \u201cWork Local,\u201d available through the desktop app formerly called Codex, which can access files and run programs directly on a user\u2019s computer. Willison says the local version feels more like Codex re-skinned, though the excerpt cuts off before the full assessment.",
+    "cluster_id": "3974b5c9ed974044",
+    "dek": "The practical distinction: one version runs in the cloud, the other can touch files and programs on your computer.",
+    "headline": "Simon Willison tries to untangle ChatGPT Work \u2014 and finds two products wearing one name",
+    "source_ids": [
+      "3974b5c9ed974044-s1"
+    ],
+    "why_it_matters": "For AI tools, product naming is now a usability problem. The difference between a cloud assistant and a local agent with file and program access is not cosmetic \u2014 it changes capability, risk and workflow."
+  },
+  {
+    "body": "Lit Hub\u2019s August 31 daily highlights include a piece on the myths and facts of Dresden in Kurt Vonnegut\u2019s \u201cSlaughterhouse-Five,\u201d with the striking line that Nazis used not only terror against American prisoners but also \u201cpropagandistic persuasion.\u201d The same daily roundup notes Marlon James speaking with Eric Olson about \u201cfinally\u201d writing, though the excerpt ends before the subject is completed. A nearby weekly roundup points to Steven Thrasher on Jason Arday, Dolly Parton as an American icon and giver of books, and a truncated item on Hieronymus.",
+    "cluster_id": "073d3ffa83ddbd7b",
+    "dek": "A roundup points from wartime propaganda to contemporary literary lives \u2014 with the usual Lit Hub sprawl.",
+    "headline": "Lit Hub\u2019s daily mix revisits Dresden, Marlon James and literary mythmaking",
+    "source_ids": [
+      "073d3ffa83ddbd7b-s1",
+      "073d3ffa83ddbd7b-s2"
+    ],
+    "why_it_matters": "The useful thing about a literary roundup is the collision: canonical war fiction, propaganda, biography and cultural politics all sharing a page. It is less a single story than a map of what the book world is arguing with this week."
+  },
+  {
+    "body": "The available excerpts for this cluster are essentially headline-only duplicates from the5krunner.com: \u201cGarmin Training Features: Status, Load, Effect, Readiness and Recovery Time.\u201d No substantive claims are included beyond the topic list. Still, the selection of features is telling: Garmin\u2019s ecosystem increasingly asks athletes to interpret status, load, training effect, readiness and recovery time as a connected dashboard rather than isolated numbers.",
+    "cluster_id": "651f617d3303c4c5",
+    "dek": "The excerpt is thin, but the topic is familiar: runners trying to translate watch metrics into actual decisions.",
+    "headline": "A Garmin guide promises to decode training status, load, readiness and recovery",
+    "source_ids": [
+      "651f617d3303c4c5-s1",
+      "651f617d3303c4c5-s2"
+    ],
+    "why_it_matters": "Wearable metrics are only useful if they change behavior intelligently. For runners, the hard part is not collecting more data; it is knowing when the watch is giving a signal versus just another score to worry about."
+  }
+]

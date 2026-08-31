@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-08-31</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Monday, August 31, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Oil jumps to $90 after U.S.–Iran attacks break a month of quiet</h2><p class="dek">The energy market got its reminder that “paused” is not the same as “over.”</p><div class="lead-lower"><div class="body-copy"><p>Global oil prices rose to $90 a barrel after the United States and Iran traded attacks, according to the New York Times. The excerpt frames these as the first attacks in a month — enough to jolt energy markets even before any broader damage assessment. For U.S. consumers, the pressure is already visible: average gasoline prices remain 37 percent higher than when the war began.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Oil is the fast lane from geopolitics to household budgets. Even a limited exchange can reset inflation expectations, transport costs and political pressure at home.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/31/business/oil-prices-iran-war.html" target="_blank" rel="noreferrer">NYT Business</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Grand Canyon flooding leaves at least two dead and more than a dozen missing</h2><p class="dek">Rescuers face the grim arithmetic of flash floods — and more storms may be coming.</p><div class="body-copy"><p>At least two bodies have been found after flooding in the Grand Canyon, and more than a dozen people remain missing, according to the New York Times. The immediate danger is not just what has already happened: further storms could hinder rescue efforts on Monday, complicating searches in terrain where access is already difficult.</p></div><p class="why"><strong>Why it matters:</strong> Flash floods turn familiar landscapes into traps with little warning. The open question now is whether weather gives rescuers a window — or closes it.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/31/us/grand-canyon-flash-floods.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>IRS audit revenue has plunged as staffing shrinks under Trump, watchdog says</h2><p class="dek">A tax agency with fewer people is collecting less through audits — not exactly a mystery, but still a major fiscal signal.</p><div class="body-copy"><p>A watchdog found that IRS audit revenue has plummeted under President Trump, the New York Times reports. The agency has lost roughly a quarter of its employees since Trump took office, a decline the excerpt says has hampered its ability to conduct audits. The framing is straightforward: fewer auditors, fewer audits, less audit revenue.</p></div><p class="why"><strong>Why it matters:</strong> Tax enforcement is one of the quieter ways governments fund themselves and signal fairness. A weakened IRS does not just change collections; it changes the odds people and companies perceive when deciding whether to comply.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/31/business/irs-audit-revenue.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>A $480,000-a-year cancer pill shows where oncology pricing has landed</h2><p class="dek">Rasonque is presented less as an outlier than as a symptom of a two-decade price escalation.</p><div class="body-copy"><p>Rasonque, a new pancreatic cancer treatment from Revolution Medicines, costs $480,000 a year, according to the New York Times. The article frames the pill as an example of the “new normal” in cancer drugs and as evidence of huge inflation in oncology pricing over the past two decades. The excerpt does not provide efficacy data or patient eligibility details, so the core tension here is price before value can be fully weighed.</p></div><p class="why"><strong>Why it matters:</strong> Cancer drug prices increasingly test the boundary between medical breakthrough and financial shock. A six-figure annual pill forces insurers, patients and policymakers into hard choices even when the science is promising.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/31/business/pancreatic-cancer-drug-prices.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Pennsylvania’s AI data-center boom runs into local second thoughts</h2><p class="dek">Billions in construction look different in a region scarred by steel’s collapse — but backlash is making the governor slow down.</p><div class="body-copy"><p>Pennsylvania’s AI gold rush is meeting resistance, the New York Times reports. Gov. Josh Shapiro is “pumping the brakes” on enormous data centers amid a backlash, even as some residents in a region marked by the collapse of the steel industry welcome billions in construction. The story is not simply pro-growth versus anti-growth; it is about communities weighing a new industrial promise against whatever costs have triggered the pushback.</p></div><p class="why"><strong>Why it matters:</strong> AI may live in the cloud as a metaphor, but it lands as concrete, power demand and local politics. The next phase of the AI boom will be negotiated town by town.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/08/31/business/pennsylvanias-ai-gold-rush-meets-second-thoughts.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Simon Willison tries to untangle ChatGPT Work — and finds two products wearing one name</h2><p class="dek">The practical distinction: one version runs in the cloud, the other can touch files and programs on your computer.</p><div class="body-copy"><p>Simon Willison describes ChatGPT Work as “extraordinarily confusing and very powerful,” after OpenAI announced it on July 9 and rapidly iterated on it. His key clarification is that ChatGPT Work is effectively two products: “Work Cloud,” accessible through chatgpt.com and the mobile apps, and “Work Local,” available through the desktop app formerly called Codex, which can access files and run programs directly on a user’s computer. Willison says the local version feels more like Codex re-skinned, though the excerpt cuts off before the full assessment.</p></div><p class="why"><strong>Why it matters:</strong> For AI tools, product naming is now a usability problem. The difference between a cloud assistant and a local agent with file and program access is not cosmetic — it changes capability, risk and workflow.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Lit Hub’s daily mix revisits Dresden, Marlon James and literary mythmaking</h2><p class="dek">A roundup points from wartime propaganda to contemporary literary lives — with the usual Lit Hub sprawl.</p><div class="body-copy"><p>Lit Hub’s August 31 daily highlights include a piece on the myths and facts of Dresden in Kurt Vonnegut’s “Slaughterhouse-Five,” with the striking line that Nazis used not only terror against American prisoners but also “propagandistic persuasion.” The same daily roundup notes Marlon James speaking with Eric Olson about “finally” writing, though the excerpt ends before the subject is completed. A nearby weekly roundup points to Steven Thrasher on Jason Arday, Dolly Parton as an American icon and giver of books, and a truncated item on Hieronymus.</p></div><p class="why"><strong>Why it matters:</strong> The useful thing about a literary roundup is the collision: canonical war fiction, propaganda, biography and cultural politics all sharing a page. It is less a single story than a map of what the book world is arguing with this week.</p><p class="sources">Sources: <a href="https://lithub.com/lit-hub-daily-august-31-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-weekly-august-24-28-2026/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>A Garmin guide promises to decode training status, load, readiness and recovery</h2><p class="dek">The excerpt is thin, but the topic is familiar: runners trying to translate watch metrics into actual decisions.</p><div class="body-copy"><p>The available excerpts for this cluster are essentially headline-only duplicates from the5krunner.com: “Garmin Training Features: Status, Load, Effect, Readiness and Recovery Time.” No substantive claims are included beyond the topic list. Still, the selection of features is telling: Garmin’s ecosystem increasingly asks athletes to interpret status, load, training effect, readiness and recovery time as a connected dashboard rather than isolated numbers.</p></div><p class="why"><strong>Why it matters:</strong> Wearable metrics are only useful if they change behavior intelligently. For runners, the hard part is not collecting more data; it is knowing when the watch is giving a signal versus just another score to worry about.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1NNlFxc1BIbGs2SnRIbmpsWDE1aXZ4WFJpQUtjRHdNVVRDX1k5NXh5NUYtZ2hiOG1Bc3ZhdkZLQk0wenFtVnVJOTNMWHJqaVAwVEhPLWg2QjhLZzBpZl9oaHMxV3FSTURrMmVham94VQ?oc=5" target="_blank" rel="noreferrer">the5krunner.com</a> · <a href="https://news.google.com/rss/articles/CBMickFVX3lxTFBjSHRHRlhXNVdQT2VsQUR5aUtaZ1d4OVFyeGhHRXBYZ2F2QVVMNkN4ZUVvakQ2QzgtRXQ1d3owT0hFbEltc0NSZlgtSHN0S1RzbnM0LWdJeGFfcEtkWGRIOGszOEhvdjNfREJ0R3ozbXJqQQ?oc=5" target="_blank" rel="noreferrer">the5krunner.com</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · August 31, 2026
+</footer>
+</main>
+</body>
+</html>
