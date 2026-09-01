@@ -1,0 +1,83 @@
+[
+  {
+    "body": "The United States has launched strikes inside Iran aimed at the Islamic Revolutionary Guards Corps, according to U.S. Central Command. The most important missing detail is also the most consequential one: CENTCOM did not say precisely what the attacks were intended to destroy. That leaves the action framed more by its target category \u2014 the IRGC \u2014 than by an explanation of military objective, scale or intended effect.",
+    "cluster_id": "3b63adfea4851c05",
+    "dek": "CENTCOM says the attacks were aimed at the Islamic Revolutionary Guards Corps, without saying exactly what it tried to destroy.",
+    "headline": "U.S. strikes Iran, but leaves the target list vague",
+    "source_ids": [
+      "3b63adfea4851c05-s1"
+    ],
+    "why_it_matters": "A U.S. strike in Iran is inherently escalatory. The lack of specificity makes it harder to judge whether this was meant as a narrow operation, a deterrent signal or the start of something larger."
+  },
+  {
+    "body": "A whistle-blower report is warning of \u201cgrave concerns\u201d inside the U.S. Postal Service over a new system being rushed into use before the midterm elections. The allegation, as framed in the report, is that USPS is secretly proceeding on President Trump\u2019s mail-voting plan and that the rollout could put millions of mail ballots at risk. The excerpt does not detail the mechanics of the system, but the charge is stark: an operational change at the Postal Service could become an election-administration crisis.",
+    "cluster_id": "fcef4da01f4e4125",
+    "dek": "A report says the Postal Service is secretly moving ahead with a new system tied to Trump\u2019s mail-voting plan, warning it could imperil millions of ballots.",
+    "headline": "A USPS whistle-blower raises alarms over mail voting before the midterms",
+    "source_ids": [
+      "fcef4da01f4e4125-s1"
+    ],
+    "why_it_matters": "Mail voting depends on boring competence: predictable handling, clear procedures and public trust. A rushed or opaque postal change, if substantiated, could affect both ballot delivery and confidence in the count."
+  },
+  {
+    "body": "The Supreme Court\u2019s public work is monumental, but its internal record may remain out of reach for a very long time. After Justice Antonin Scalia died, the justices held private negotiations about locking away their papers, according to the reporting. A companion video frames the stakes plainly: these working papers could shape future understanding of key decisions by the nation\u2019s highest court, but the justices may be able to keep them hidden for decades.",
+    "cluster_id": "ca6e8df1614d8373",
+    "dek": "After Justice Scalia\u2019s death, the justices privately negotiated how long to lock away their papers. The Roberts court\u2019s internal record may stay hidden for decades.",
+    "headline": "The Supreme Court is writing history \u2014 then sealing the drafts",
+    "source_ids": [
+      "ca6e8df1614d8373-s1",
+      "ca6e8df1614d8373-s2"
+    ],
+    "why_it_matters": "The court\u2019s opinions tell the official story; internal papers can reveal the process, pressures and evolution behind them. Sealing those records delays accountability and leaves historians \u2014 and the public \u2014 reading the Roberts court through a keyhole."
+  },
+  {
+    "body": "A global bond sell-off is pushing government bond yields to multi-decade highs, reflecting investor anxiety over debt levels, deficits and inflation. That sounds abstract until it reaches borrowers: higher yields tend to feed into mortgages, business loans and other forms of credit. In other words, the market\u2019s verdict on government borrowing is not staying confined to treasuries and trading desks.",
+    "cluster_id": "a5f45f246d273eaa",
+    "dek": "Government yields are hitting multi-decade highs as investors worry about debt, deficits and inflation \u2014 pressure that will ripple into mortgages and business credit.",
+    "headline": "The bond market is making debt more expensive everywhere",
+    "source_ids": [
+      "a5f45f246d273eaa-s1"
+    ],
+    "why_it_matters": "When benchmark borrowing costs rise, households and companies feel it. The squeeze can cool investment, make home purchases harder and turn public-debt anxiety into a private-sector slowdown."
+  },
+  {
+    "body": "Two more oil tankers were attacked near Oman on Monday, adding to a series of strikes on vessels in the Persian Gulf. The immediate market reaction was clear: oil prices rose more than 2 percent. The excerpt does not identify who carried out the attacks or describe the damage, but the location alone is enough to rattle energy markets, given the Strait of Hormuz\u2019s role as a critical chokepoint.",
+    "cluster_id": "b0d0f1389ee154ba",
+    "dek": "Two oil tankers were attacked near Oman, the latest strikes on vessels in the Persian Gulf. Oil prices rose more than 2 percent.",
+    "headline": "More tankers hit near Hormuz, and oil prices jump",
+    "source_ids": [
+      "b0d0f1389ee154ba-s1"
+    ],
+    "why_it_matters": "Attacks on tankers can quickly turn regional conflict into a global price shock. Even modest oil moves can bleed into inflation expectations, shipping costs and political pressure on governments."
+  },
+  {
+    "body": "Some prominent AI-adjacent open-source projects are rethinking the old bargain of community development. Vercel\u2019s AI SDK, Astro, Flue and tldraw are described as replacing drive-by pull requests with \u201csoftware factories,\u201d where teams of agents apply fixes and features. The framing is provocative \u2014 \u201cPRs NOT Welcome\u201d \u2014 but the underlying issue is practical: once contributor volume gets too high, maintainers may prefer orchestrated automation over a flood of one-off submissions.",
+    "cluster_id": "44cc86eecc51f5f9",
+    "dek": "Vercel\u2019s AI SDK, Astro, Flue and tldraw are reportedly shifting from drive-by community contributions to agent-driven software factories.",
+    "headline": "Open-source AI projects are starting to say: please stop sending PRs",
+    "source_ids": [
+      "44cc86eecc51f5f9-s1"
+    ],
+    "why_it_matters": "Open source has long treated outside pull requests as a sign of health. If major projects move toward agent-managed contribution pipelines, the center of gravity shifts from community participation to maintainer-controlled automation."
+  },
+  {
+    "body": "John Boorman is looking back at one of cinema\u2019s more notorious misfires: \u201cExorcist II.\u201d A new documentary aims to reassess the 1977 failure, and Boorman apparently does not dodge the obvious problem. One explanation offered in the excerpt is almost brutally simple: it wasn\u2019t really scary. For a sequel to \u201cThe Exorcist,\u201d that is not a small flaw; it is close to a category error.",
+    "cluster_id": "a0151fdd9ebb49a9",
+    "dek": "A new documentary tries to reassess the 1977 failure, with Boorman speaking candidly about what went wrong \u2014 including that it wasn\u2019t really scary.",
+    "headline": "John Boorman revisits why \u2018Exorcist II\u2019 became a legendary flop",
+    "source_ids": [
+      "a0151fdd9ebb49a9-s1"
+    ],
+    "why_it_matters": "Flops often become more interesting with time. A reassessment can reveal not just why a film failed commercially or critically, but how ambition, genre expectations and audience memory collide."
+  },
+  {
+    "body": "Here is the day\u2019s palate cleanser, and a real one: the k\u0101k\u0101p\u014d population has reached 325. Andrew Digby notes that chicks from this year\u2019s record breeding season are now juveniles and have been added to the total. The comparison is the heart of the story: in 1995, there were just 51 k\u0101k\u0101p\u014d left. His conclusion is worth letting stand: recovery of critically endangered species is possible with sustained effort.",
+    "cluster_id": "97cab0afa69e2556",
+    "dek": "After a record breeding season, juveniles have been added to the count. In 1995, only 51 k\u0101k\u0101p\u014d remained.",
+    "headline": "A rare good-news number: 325 k\u0101k\u0101p\u014d",
+    "source_ids": [
+      "97cab0afa69e2556-s1"
+    ],
+    "why_it_matters": "Conservation stories are often framed as managed decline. This one is evidence that patient, long-term recovery work can change the trajectory of a species that once looked perilously close to disappearing."
+  }
+]
