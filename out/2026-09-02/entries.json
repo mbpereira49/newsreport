@@ -1,0 +1,83 @@
+[
+  {
+    "body": "President Trump returned to a familiar pressure tactic Tuesday, publicly urging Iranians to \u201crise up and fight\u201d while the United States appears increasingly mired in a conflict that has now lasted six months. The available account frames the appeal less as a fresh strategy than as a reprise of Trump\u2019s instinct for maximalist public messaging when military or diplomatic options look stuck.",
+    "cluster_id": "2da6528fc480b536",
+    "dek": "After six months of conflict, the president is calling on Iranians to \u201crise up and fight.\u201d",
+    "headline": "Trump leans on regime-change rhetoric as the Iran war drags on",
+    "source_ids": [
+      "2da6528fc480b536-s1"
+    ],
+    "why_it_matters": "Calls for popular revolt can signal resolve, but they can also narrow room for diplomacy and raise expectations the U.S. may not be able\u2014or willing\u2014to meet."
+  },
+  {
+    "body": "Employer-sponsored health coverage may be headed for one of its steepest cost increases in decades. A new U.S. survey anticipates an average 11 percent rise in 2027 unless employers cut benefits, with other findings also pointing to a sharp increase. That sets up a familiar but painful choice: absorb higher costs, shift more of them to workers, or narrow coverage.",
+    "cluster_id": "26a52957d1e18630",
+    "dek": "A new survey points to an 11 percent average increase unless companies trim benefits.",
+    "headline": "Employer health costs are projected to jump sharply in 2027",
+    "source_ids": [
+      "26a52957d1e18630-s1"
+    ],
+    "why_it_matters": "For many Americans, employer insurance is the health system. A spike this large would show up in paychecks, household budgets and benefit design\u2014not just corporate expense lines."
+  },
+  {
+    "body": "The deaths of two men in Los Angeles police custody have triggered investigations after the city released graphic video of officers\u2019 actions. Mayor Karen Bass questioned whether police are adequately trained to handle mental health crises, placing the cases squarely inside the city\u2019s long-running debate over what officers are asked to do\u2014and whether they are equipped to do it safely.",
+    "cluster_id": "8db72703a6ae121c",
+    "dek": "Graphic video prompted investigations and questions from Mayor Karen Bass about officer training.",
+    "headline": "Two deaths in LAPD custody put mental-health policing back under scrutiny",
+    "source_ids": [
+      "8db72703a6ae121c-s1"
+    ],
+    "why_it_matters": "Custody deaths test public trust at the most basic level. When mental health is part of the call, the stakes extend beyond one department to the design of emergency response itself."
+  },
+  {
+    "body": "New York City\u2019s richest residents\u2014down to the top .001 percent\u2014have grown even richer, according to a new report from the city comptroller. The report\u2019s central finding is blunt: income inequality remains as entrenched as ever. In a city already defined by proximity between extreme wealth and everyday precarity, the numbers suggest the gap is not merely persistent but still widening at the very top.",
+    "cluster_id": "106332e5f48e0297",
+    "dek": "A comptroller\u2019s report says income inequality in the city remains deeply entrenched.",
+    "headline": "New York\u2019s ultra-rich keep pulling away",
+    "source_ids": [
+      "106332e5f48e0297-s1"
+    ],
+    "why_it_matters": "New York\u2019s tax base, housing politics and public-service debates all run through the same inequality story: who can afford the city, and who increasingly cannot."
+  },
+  {
+    "body": "Simon Willison notes that Anthropic continues to publish system prompts for its Claude consumer apps\u2014Claude.ai and the mobile apps, though not Claude Cowork or Claude Code\u2014and now organizes them by model with historical versions. The detail that jumps out: Claude\u2019s newer prompt appears especially emphatic about not reproducing song lyrics. Willison praises the transparency, including the availability of past prompt changes, while pointing out the documentation site is itself designed to be usable by LLMs.",
+    "cluster_id": "13bdd657dac74c91",
+    "dek": "Anthropic\u2019s published consumer prompts show a conspicuous tightening around copyrighted lyric reproduction.",
+    "headline": "Claude\u2019s system prompt now draws a bright line around song lyrics",
+    "source_ids": [
+      "13bdd657dac74c91-s1"
+    ],
+    "why_it_matters": "System prompts are policy in executable form. When a major AI lab publicly shows how it steers models around copyrighted material, it offers a rare view into the practical, evolving boundary between usefulness and legal risk."
+  },
+  {
+    "body": "The Saturday Evening Post, known for publishing Jack London stories and Norman Rockwell art, will stop printing after 205 years. The publication will continue online, but the end of the physical magazine is still a symbolic marker: another legacy title severing its identity from the format that made it famous.",
+    "cluster_id": "7894f4a66349217c",
+    "dek": "The storied magazine will continue online, closing a long chapter of American print culture.",
+    "headline": "The Saturday Evening Post is ending print after 205 years",
+    "source_ids": [
+      "7894f4a66349217c-s1"
+    ],
+    "why_it_matters": "Print\u2019s decline is often told in quarterly losses and ad shifts. This one lands differently because the Post was not just a magazine brand but a vessel for a particular image of American mass culture."
+  },
+  {
+    "body": "Cleo in the West Village earned a critic\u2019s pick for a menu led by chicken rubbed with a warming Lebanese spice blend. The review\u2019s teaser makes the case in direct, appetite-first terms: go for the bird, and do not overlook the crinkle-cut fries. The second source is essentially a syndicated pointer to the same New York Times review, so there is no competing account here.",
+    "cluster_id": "c77753b7a0ce42c5",
+    "dek": "The restaurant\u2019s warming spice-rubbed bird\u2014and crinkle-cut fries\u2014anchor the praise.",
+    "headline": "Cleo gets the critic\u2019s nod for Lebanese-spiced chicken in the West Village",
+    "source_ids": [
+      "c77753b7a0ce42c5-s1",
+      "c77753b7a0ce42c5-s2"
+    ],
+    "why_it_matters": "In a crowded New York dining field, a critic\u2019s pick can quickly turn a neighborhood restaurant into a reservation problem\u2014especially when the hook is as legible as spiced chicken and fries."
+  },
+  {
+    "body": "Andrew Digby reports that the k\u0101k\u0101p\u014d population has reached 325 after chicks from this year\u2019s record breeding season became juveniles and were added to the count. In 1995, just 51 k\u0101k\u0101p\u014d remained. Simon Willison quotes the update as \u201cthe best news of the year,\u201d and the numbers make the optimism feel earned rather than sentimental.",
+    "cluster_id": "97cab0afa69e2556",
+    "dek": "After a record breeding season, juveniles have been added to the critically endangered parrot\u2019s population count.",
+    "headline": "A rare bit of conservation joy: 325 k\u0101k\u0101p\u014d",
+    "source_ids": [
+      "97cab0afa69e2556-s1"
+    ],
+    "why_it_matters": "Recovery for critically endangered species is slow, fragile work. This is a reminder that sustained conservation effort can move the line from managed decline toward genuine rebound."
+  }
+]

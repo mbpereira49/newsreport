@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-09-02</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Wednesday, September 2, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Trump leans on regime-change rhetoric as the Iran war drags on</h2><p class="dek">After six months of conflict, the president is calling on Iranians to “rise up and fight.”</p><div class="lead-lower"><div class="body-copy"><p>President Trump returned to a familiar pressure tactic Tuesday, publicly urging Iranians to “rise up and fight” while the United States appears increasingly mired in a conflict that has now lasted six months. The available account frames the appeal less as a fresh strategy than as a reprise of Trump’s instinct for maximalist public messaging when military or diplomatic options look stuck.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Calls for popular revolt can signal resolve, but they can also narrow room for diplomacy and raise expectations the U.S. may not be able—or willing—to meet.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/02/us/politics/trump-iran-strait-of-hormuz.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Employer health costs are projected to jump sharply in 2027</h2><p class="dek">A new survey points to an 11 percent average increase unless companies trim benefits.</p><div class="body-copy"><p>Employer-sponsored health coverage may be headed for one of its steepest cost increases in decades. A new U.S. survey anticipates an average 11 percent rise in 2027 unless employers cut benefits, with other findings also pointing to a sharp increase. That sets up a familiar but painful choice: absorb higher costs, shift more of them to workers, or narrow coverage.</p></div><p class="why"><strong>Why it matters:</strong> For many Americans, employer insurance is the health system. A spike this large would show up in paychecks, household budgets and benefit design—not just corporate expense lines.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/02/business/health-insurance-increases.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Two deaths in LAPD custody put mental-health policing back under scrutiny</h2><p class="dek">Graphic video prompted investigations and questions from Mayor Karen Bass about officer training.</p><div class="body-copy"><p>The deaths of two men in Los Angeles police custody have triggered investigations after the city released graphic video of officers’ actions. Mayor Karen Bass questioned whether police are adequately trained to handle mental health crises, placing the cases squarely inside the city’s long-running debate over what officers are asked to do—and whether they are equipped to do it safely.</p></div><p class="why"><strong>Why it matters:</strong> Custody deaths test public trust at the most basic level. When mental health is part of the call, the stakes extend beyond one department to the design of emergency response itself.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/02/us/los-angeles-jail-inmate-beating.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>New York’s ultra-rich keep pulling away</h2><p class="dek">A comptroller’s report says income inequality in the city remains deeply entrenched.</p><div class="body-copy"><p>New York City’s richest residents—down to the top .001 percent—have grown even richer, according to a new report from the city comptroller. The report’s central finding is blunt: income inequality remains as entrenched as ever. In a city already defined by proximity between extreme wealth and everyday precarity, the numbers suggest the gap is not merely persistent but still widening at the very top.</p></div><p class="why"><strong>Why it matters:</strong> New York’s tax base, housing politics and public-service debates all run through the same inequality story: who can afford the city, and who increasingly cannot.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/02/nyregion/new-york-income-inequality.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Claude’s system prompt now draws a bright line around song lyrics</h2><p class="dek">Anthropic’s published consumer prompts show a conspicuous tightening around copyrighted lyric reproduction.</p><div class="body-copy"><p>Simon Willison notes that Anthropic continues to publish system prompts for its Claude consumer apps—Claude.ai and the mobile apps, though not Claude Cowork or Claude Code—and now organizes them by model with historical versions. The detail that jumps out: Claude’s newer prompt appears especially emphatic about not reproducing song lyrics. Willison praises the transparency, including the availability of past prompt changes, while pointing out the documentation site is itself designed to be usable by LLMs.</p></div><p class="why"><strong>Why it matters:</strong> System prompts are policy in executable form. When a major AI lab publicly shows how it steers models around copyrighted material, it offers a rare view into the practical, evolving boundary between usefulness and legal risk.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>The Saturday Evening Post is ending print after 205 years</h2><p class="dek">The storied magazine will continue online, closing a long chapter of American print culture.</p><div class="body-copy"><p>The Saturday Evening Post, known for publishing Jack London stories and Norman Rockwell art, will stop printing after 205 years. The publication will continue online, but the end of the physical magazine is still a symbolic marker: another legacy title severing its identity from the format that made it famous.</p></div><p class="why"><strong>Why it matters:</strong> Print’s decline is often told in quarterly losses and ad shifts. This one lands differently because the Post was not just a magazine brand but a vessel for a particular image of American mass culture.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/02/business/media/saturday-evening-post-stop-printing.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Cleo gets the critic’s nod for Lebanese-spiced chicken in the West Village</h2><p class="dek">The restaurant’s warming spice-rubbed bird—and crinkle-cut fries—anchor the praise.</p><div class="body-copy"><p>Cleo in the West Village earned a critic’s pick for a menu led by chicken rubbed with a warming Lebanese spice blend. The review’s teaser makes the case in direct, appetite-first terms: go for the bird, and do not overlook the crinkle-cut fries. The second source is essentially a syndicated pointer to the same New York Times review, so there is no competing account here.</p></div><p class="why"><strong>Why it matters:</strong> In a crowded New York dining field, a critic’s pick can quickly turn a neighborhood restaurant into a reservation problem—especially when the hook is as legible as spiced chicken and fries.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/01/dining/restaurant-review-cleo-nyc.html" target="_blank" rel="noreferrer">NYT Dining &amp; Wine</a> · <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE41ZFFGNm9Ya0t2STg2eUNDa0ZzcVY3V1lmNjZWTmRHVWxsenBXSlVFMkRDRlhFeUNOamxBN3RIT2trSExpY0xQbUtxY0JScFNTQTZrN0liZzlud3JGM0ZPWkl1UTVxZHBSSUVpZVgtRGMzTmctcVUzZUdxMlA4dw?oc=5" target="_blank" rel="noreferrer">nytimes.com</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>A rare bit of conservation joy: 325 kākāpō</h2><p class="dek">After a record breeding season, juveniles have been added to the critically endangered parrot’s population count.</p><div class="body-copy"><p>Andrew Digby reports that the kākāpō population has reached 325 after chicks from this year’s record breeding season became juveniles and were added to the count. In 1995, just 51 kākāpō remained. Simon Willison quotes the update as “the best news of the year,” and the numbers make the optimism feel earned rather than sentimental.</p></div><p class="why"><strong>Why it matters:</strong> Recovery for critically endangered species is slow, fragile work. This is a reminder that sustained conservation effort can move the line from managed decline toward genuine rebound.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Aug/31/andrew-digby/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · September 2, 2026
+</footer>
+</main>
+</body>
+</html>
