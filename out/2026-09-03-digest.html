@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-09-03</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Thursday, September 3, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Los Angeles schools move to put AI mostly off-limits</h2><p class="dek">The district’s moratorium appears stricter than New York City’s newly announced plan, including tighter limits for older students.</p><div class="lead-lower"><div class="body-copy"><p>Los Angeles is drawing a harder line on classroom AI. According to the report, the district has banned most student use of artificial intelligence, with a moratorium that appears to go beyond a similar plan announced by New York City. The key distinction is scope: Los Angeles is described as imposing strict limits even on older students, a group many school systems have treated as more capable of using AI with guardrails.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Schools are still choosing between prohibition, supervision and integration. Los Angeles is signaling that, at least for now, the risks of AI shortcuts and uneven classroom use outweigh the case for broad student access.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/03/us/lausd-schools-ban-ai-artificial-intelligence.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Nvidia’s Hugging Face deal would make it even more central to AI</h2><p class="dek">The $12.9 billion acquisition underscores Nvidia’s role not just as chip supplier, but as Silicon Valley’s financial and infrastructure power broker.</p><div class="body-copy"><p>Nvidia has bought Hugging Face in a $12.9 billion deal, a move framed as evidence of the company’s expanding role as Silicon Valley’s “central banker.” Hugging Face’s importance lies in open-source AI tooling and community infrastructure; Nvidia’s interest suggests it wants influence not only over the hardware layer, but over the software ecosystems where developers build and share models.</p></div><p class="why"><strong>Why it matters:</strong> The deal would tighten Nvidia’s grip on the AI stack. A company already essential to compute now appears to be reaching deeper into the open-source layer that many AI teams depend on.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/03/technology/nvidia-hugging-face.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>A voting-rights fight over seniors-only mail ballots may be headed to the Supreme Court</h2><p class="dek">Federal appeals courts are split on whether states can let only older voters cast ballots by mail.</p><div class="body-copy"><p>A constitutional question around mail voting is moving toward high-court territory: can states give seniors access to mail ballots while denying the same option to younger voters? Federal appeals courts have split on the issue, making Supreme Court review likely. The dispute turns a seemingly narrow election-administration rule into a broader test of equal treatment at the ballot box.</p></div><p class="why"><strong>Why it matters:</strong> Mail voting rules have become a durable legal battleground. If the Supreme Court takes the case, its ruling could shape how much flexibility states have to design age-based voting accommodations.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/03/us/politics/the-docket-senior-mail-ballot.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Trump Treasury rules target schools’ tax exemptions over race-based programs</h2><p class="dek">The proposed rules would deny tax-exempt status to schools with race-based aid or programs, raising stakes for colleges and private schools alike.</p><div class="body-copy"><p>The Treasury Department has released rules that would prevent schools with race-based programs from qualifying for tax-exempt status. The report frames the move as a threat not only to higher education, but also to other private schools. The lever is powerful: rather than only challenging a program directly, the rules would put an institution’s tax status on the line.</p></div><p class="why"><strong>Why it matters:</strong> Tax exemption is foundational to many schools’ finances. Using it to police race-conscious programs could force institutions to choose between diversity initiatives and a core legal-financial benefit.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/03/business/economy/trump-irs-college-nonprofits.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Oil keeps climbing as U.S.–Iran strikes shake energy markets</h2><p class="dek">Crude rose for a fourth straight day, while diesel neared a record high as traders priced in a longer disruption.</p><div class="body-copy"><p>Oil prices jumped for the fourth consecutive day, and diesel prices moved near a record high. The driver, according to the report, is renewed strikes by the United States and Iran, which are straining energy flows and weakening expectations that the disruption will end soon. Markets appear to be treating the conflict less as a passing shock and more as a continuing constraint.</p></div><p class="why"><strong>Why it matters:</strong> Diesel is a cost embedded in freight, farming and construction. If elevated prices persist, the impact can move quickly from commodity screens into consumer prices and business margins.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/03/business/oil-diesel-prices-iran-war.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>A New York startup builds a practice around aid in dying</h2><p class="dek">With medical aid in dying now legal in New York, clinical professionals are organizing a service for clients who want to die on their own terms.</p><div class="body-copy"><p>Medical aid in dying is now legal in New York, and a team of clinical professionals has created a practice to help clients use that option. The startup is built around one of medicine’s most ethically loaded frontiers: giving terminally ill people structured help to end life on their own terms, within the bounds of the new law.</p></div><p class="why"><strong>Why it matters:</strong> Legalization is only the first step. The emergence of a dedicated practice shows how aid in dying is becoming an operational reality—with protocols, clinicians, clients and all the moral scrutiny that follows.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/03/nyregion/assisted-suicide-quietus-new-york.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Claude’s system prompt offers a glimpse of AI’s copyright nerves</h2><p class="dek">Anthropic’s published consumer prompts now include conspicuous instructions against reproducing song lyrics, Simon Willison notes.</p><div class="body-copy"><p>Simon Willison highlights a new version of Claude’s consumer system prompt that is especially emphatic about not reproducing song lyrics. He also points out Anthropic’s unusual transparency: the company publishes prompts for Claude.ai and its mobile apps, including historical changes, though not for Claude Cowork or Claude Code. The prompt archive has been reorganized into an index and model-specific pages, making the evolution easier to inspect.</p></div><p class="why"><strong>Why it matters:</strong> System prompts are where policy becomes product behavior. Anthropic’s lyric warnings show how copyright pressure is being translated into explicit model instructions—and how prompt transparency lets outsiders watch that governance layer change over time.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Alex Eala turns Queens into a U.S. Open home crowd</h2><p class="dek">The 21-year-old Filipino tennis standout has charmed the tournament and rallied a far-flung community around her run.</p><div class="body-copy"><p>Alex Eala, a 21-year-old Filipino tennis sensation, is becoming more than a U.S. Open story. Her rise has energized Filipino fans in Queens, including a neighborhood community described as united by her success. The appeal is partly athletic and partly diasporic: a young player on a global stage giving far-flung compatriots someone vivid to gather around.</p></div><p class="why"><strong>Why it matters:</strong> Sports fandom often doubles as civic glue. Eala’s run shows how a breakout athlete can briefly redraw the emotional map of a city, turning a tournament into a neighborhood event.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/02/nyregion/alex-eala-us-open-philippines-little-manila.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · September 3, 2026
+</footer>
+</main>
+</body>
+</html>
