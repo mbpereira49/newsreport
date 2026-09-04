@@ -1,0 +1,83 @@
+[
+  {
+    "body": "Jared Kushner and Steve Witkoff are set to travel to Russia and Ukraine in an attempt to revive peace talks, according to The New York Times. The planned meetings with the countries\u2019 presidents come, notably, at what the source describes as a \u201cprecarious moment\u201d in the conflict\u2014useful phrasing because it suggests both urgency and risk, without yet telling us whether either side is ready to move.",
+    "cluster_id": "d9ee6a6b4fe5d7f4",
+    "dek": "The reported trip to meet both presidents lands at a fragile point in the war.",
+    "headline": "Kushner and Witkoff head into Ukraine peace-talk shuttle",
+    "source_ids": [
+      "d9ee6a6b4fe5d7f4-s1"
+    ],
+    "why_it_matters": "The personnel are the story as much as the itinerary: sending Kushner and Witkoff signals a highly personalized diplomatic channel, with uncertain leverage and uncertain buy-in from the parties actually fighting the war."
+  },
+  {
+    "body": "A new agreement between the Pentagon and the National Institutes of Health would expand the Defense Department\u2019s role in biodefense and pandemic preparedness. Democrats are warning that the arrangement could become, in the Times\u2019s summary, a \u201cPentagon cash grab.\u201d The excerpt doesn\u2019t spell out the mechanics of the partnership, so the tension is still framed broadly: national-security capacity on one side, civilian public-health control and funding concerns on the other.",
+    "cluster_id": "4423ff0aa0216eb4",
+    "dek": "A new partnership would give Defense a larger role in pandemic preparedness\u2014and critics see a possible budget grab.",
+    "headline": "Pentagon-NIH biodefense pact raises Democratic alarms",
+    "source_ids": [
+      "4423ff0aa0216eb4-s1"
+    ],
+    "why_it_matters": "Pandemic preparedness is not just a science question; it is a governance question. Moving more of it toward Defense could change priorities, oversight, and who gets to define future biological threats."
+  },
+  {
+    "body": "ICE agent Christian Castro has been charged in a federal indictment with six counts of lying about a Minnesota shooting. The Times frames the case as unusual: a rare move by the Trump administration to seek accountability for an immigration agent\u2019s actions while on duty. The available excerpt does not detail the shooting itself or the alleged false statements, so the clearest takeaway is institutional: this prosecution stands out against the broader enforcement backdrop.",
+    "cluster_id": "06122a051162cf1d",
+    "dek": "The case is a rare instance of the Trump administration charging an immigration agent for on-duty conduct.",
+    "headline": "ICE agent indicted over alleged lies after Minnesota shooting",
+    "source_ids": [
+      "06122a051162cf1d-s1"
+    ],
+    "why_it_matters": "When immigration enforcement is politically charged and often insulated from outside scrutiny, even a narrow false-statements case can become a test of whether accountability reaches agents in the field."
+  },
+  {
+    "body": "Police fatally shot a man with a knife on the Brooklyn Bridge on Friday morning, according to the Times. The incident came just days after officers shot and killed a woman in Times Square who had stabbed two people. The excerpt does not provide the Brooklyn Bridge encounter\u2019s sequence of events, so it is too early to compare the cases beyond the basic pattern: two fatal NYPD shootings in high-profile public spaces within days.",
+    "cluster_id": "ecd84f4f73d301a6",
+    "dek": "The Friday morning shooting follows another fatal police shooting days earlier in Times Square.",
+    "headline": "NYPD fatally shoots man with knife on Brooklyn Bridge",
+    "source_ids": [
+      "ecd84f4f73d301a6-s1"
+    ],
+    "why_it_matters": "A second fatal police shooting so soon after the first will intensify attention on NYPD tactics in fast-moving knife incidents\u2014especially in crowded, symbolic parts of the city."
+  },
+  {
+    "body": "Medical aid in dying has come to New York in practice, with a doctor-run group helping terminally ill patients fulfill legal requirements to die on their own terms. The excerpt does not specify the law\u2019s procedural details or how many patients are involved, but the framing is clear: this is not only a legal shift, it is an infrastructure shift, as clinicians organize to make the option usable.",
+    "cluster_id": "cf52055784f4ab75",
+    "dek": "Doctors are helping terminally ill patients navigate the legal steps to end life on their own terms.",
+    "headline": "Medical aid in dying begins taking shape in New York",
+    "source_ids": [
+      "cf52055784f4ab75-s1"
+    ],
+    "why_it_matters": "End-of-life autonomy often turns less on abstract rights than on access, paperwork, and willing medical support. New York now appears to be building that practical layer."
+  },
+  {
+    "body": "Gloria Steinem\u2019s Upper East Side brownstone will continue as a permanent home for feminist organizing and activism, her foundation said after her death on Wednesday. The plan turns a private residence into something closer to civic infrastructure: a physical place meant to preserve not only memory, but ongoing movement work.",
+    "cluster_id": "f4b22e15d2be1846",
+    "dek": "After Steinem\u2019s death, her foundation says the Upper East Side home will remain a space for organizing and activism.",
+    "headline": "Gloria Steinem\u2019s brownstone to become a permanent feminist sanctuary",
+    "source_ids": [
+      "f4b22e15d2be1846-s1"
+    ],
+    "why_it_matters": "Legacy projects can easily become museums. This one is being framed as a working space\u2014an attempt to keep Steinem\u2019s home politically alive rather than merely commemorative."
+  },
+  {
+    "body": "OpenAI\u2019s GPT-6 Astra is rolling out first to a limited set of organizations, with broader availability planned for ChatGPT Plus, Pro, Business, and Enterprise users, plus the OpenAI API and AWS. Simon Willison, who says he has not yet tried it, reads Astra as a clear competitor to Claude Fable 5 and 5.1, priced at the same API rate: $10 per million input tokens and $50 per million output tokens. The headline benchmark claim is a 99.9% score on ARC-AGI 3, though Willison notes an important caveat: Fable 5 apparently does not yet have a published result on that benchmark.",
+    "cluster_id": "658e4b37c843dc65",
+    "dek": "Simon Willison notes limited rollout, premium API pricing, and striking self-reported benchmark claims\u2014while reserving judgment.",
+    "headline": "GPT-6 Astra arrives as OpenAI\u2019s apparent Fable rival",
+    "source_ids": [
+      "658e4b37c843dc65-s1"
+    ],
+    "why_it_matters": "This is the high-end model race in miniature: expensive frontier pricing, selective rollout, benchmark one-upmanship, and the lingering question practitioners care about most\u2014how it behaves once people can actually use it."
+  },
+  {
+    "body": "Eater NY has updated its heatmaps for both Brooklyn and Manhattan, narrowing the field to new restaurants and smaller openings its editors say are drawing attention or worth keeping on the radar. The Manhattan guide is pitched as a two-decade-old answer to the perennial \u201cwhat\u2019s hot and new?\u201d question; the Brooklyn version applies the same heatmap logic borough-specific. The excerpts don\u2019t name individual restaurants, so the value here is directional rather than prescriptive: two current editor-curated maps for where the city\u2019s dining conversation is moving.",
+    "cluster_id": "0df3400ed6c00979",
+    "dek": "Brooklyn and Manhattan get updated guides to the new openings editors think are worth tracking.",
+    "headline": "Eater refreshes its NYC restaurant heatmaps",
+    "source_ids": [
+      "0df3400ed6c00979-s1",
+      "0df3400ed6c00979-s2"
+    ],
+    "why_it_matters": "For diners, these heatmaps are less about definitive \u201cbest\u201d lists than early signal\u2014useful when the local restaurant scene is too broad, fast-moving, and uneven to track casually."
+  }
+]
