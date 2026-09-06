@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-09-06</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Sunday, September 6, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Mail-voting fight lands back at the Supreme Court—right as ballots go out</h2><p class="dek">The Trump administration is again asking the justices to let voting-by-mail restrictions proceed.</p><div class="lead-lower"><div class="body-copy"><p>The administration’s latest filing puts the legality of President Trump’s effort to limit mail voting directly before the Supreme Court. The timing is the point: states are already beginning to send out ballots, so a decision either way would not be abstract election law but operational guidance in the middle of voting season.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Election rules are most destabilizing when they change late. Even without details on the specific restrictions in the excerpt, the filing raises the stakes for voters, state officials and courts trying to run an election while the rules are still being litigated.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/06/us/politics/trump-mail-in-voting-supreme-court.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>OPEC Plus chooses not to move as the Gulf heats up again</h2><p class="dek">The oil group held production steady after renewed U.S. and Iranian strikes in the Persian Gulf.</p><div class="body-copy"><p>OPEC Plus decided Sunday to keep oil production unchanged, according to the excerpt, even after military strikes resumed between the United States and Iran in the Persian Gulf. That is a notably restrained move from a cartel whose output decisions can amplify—or dampen—market anxiety during geopolitical shocks.</p></div><p class="why"><strong>Why it matters:</strong> Oil markets do not just price barrels; they price fear. A steady-production decision suggests OPEC Plus is not, at least for now, adding a supply-side jolt to an already volatile Gulf crisis. But the excerpt does not say how prices reacted or whether members debated a different path.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/06/business/opec-iran-war-oil-production.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>A blacklist with a loophole big enough for Nvidia’s top AI chips</h2><p class="dek">A sanctioned Chinese tech giant’s subsidiary reportedly kept shipping advanced American chips to China’s leading AI firms.</p><div class="body-copy"><p>Washington sanctioned Inspur over its work with the Chinese military. But according to the excerpt, an Inspur subsidiary continued moving Nvidia’s best chips to major Chinese AI companies. The story is less about one company than about the familiar fragility of export controls: a rule can look tough on paper while corporate structures, subsidiaries and supply chains route around it.</p></div><p class="why"><strong>Why it matters:</strong> The U.S.-China AI contest increasingly depends on who can access high-end compute. If blacklisted firms can still obtain top chips through affiliates, sanctions may be signaling policy more effectively than they are constraining capability.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/06/technology/ai-chips-china-blacklist.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>The web’s address book has a scam problem hiding in plain sight</h2><p class="dek">A practitioner post points to estimates that 10% to 20% of new generic top-level domains may be abusive.</p><div class="body-copy"><p>Simon Willison highlights Terence Eden’s bracing read of an Interisle report: 85 million new generic top-level domain registrations in 2025, with 8.5 million already added to blocklists by May. Eden’s conclusion is deliberately sharp—that DNS now functions as a vector for scams at a terrifying rate—and he suggests the 10% abuse rate may be a floor, with the true number closer to 20%.</p></div><p class="why"><strong>Why it matters:</strong> If even one in ten newly registered gTLD domains are abusive, trust infrastructure is being overwhelmed at registration speed. The framing here is commentary, not a neutral institutional finding, but the cited numbers make the alarm hard to dismiss.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Grok Bot pitch: OpenClaw-level power, consumer-laptop simplicity</h2><p class="dek">Latent Space frames SpaceXAI’s Grok Bot as powerful programming at a higher abstraction layer.</p><div class="body-copy"><p>After five days with SpaceXAI’s Grok Bot, Latent Space’s shorthand is that it has the programming power of OpenClaw but feels programmable at a different level of abstraction—more “MacBook simplicity” than low-level machinery. The excerpt is thin on examples, but the claim is clear: the product’s significance lies not merely in capability, but in making that capability easier to steer.</p></div><p class="why"><strong>Why it matters:</strong> Agent infrastructure is increasingly a usability race. If tools with serious programming power become approachable at a higher abstraction layer, the bottleneck shifts from raw model capability to interface design, workflow fit and trust.</p><p class="sources">Sources: <a href="https://latent.space/p/grok-bot" target="_blank" rel="noreferrer">Latent Space</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Eater’s September NYC radar splits the night: cocktails and Brooklyn openings</h2><p class="dek">Two updated heatmaps point readers toward new cocktail bars citywide and notable new Brooklyn restaurants.</p><div class="body-copy"><p>Eater NY’s monthly heatmap machinery is trained on two appetites here: the hottest new cocktail bars in New York and the new Brooklyn restaurants drawing attention. Both blurbs emphasize editorial reporting and curation rather than a comprehensive directory, narrowing the city’s churn of openings to places worth watching now.</p></div><p class="why"><strong>Why it matters:</strong> In a city where “new” is almost too abundant to be useful, heatmaps function as a first filter. The useful signal is not that something opened, but that editors think it is already creating enough pull to merit a spot on the short list.</p><p class="sources">Sources: <a href="https://ny.eater.com/maps/nyc-best-new-cocktail-bars-heatmap" target="_blank" rel="noreferrer">Eater NY</a> · <a href="https://ny.eater.com/maps/best-new-restaurants-brooklyn-heatmap" target="_blank" rel="noreferrer">Eater NY</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Diamond League finale wraps in Brussels</h2><p class="dek">LetsRun posted full results from both days of the 2026 Wanda Diamond League final.</p><div class="body-copy"><p>The 2026 Wanda Diamond League final took place at the Allianz Memorial Van Damme meeting in Brussels, with LetsRun publishing results for Day 1 and Day 2. The excerpts do not surface standout performances or winners, so the clean takeaway is archival: the full finale results are now posted for anyone tracking the season’s last elite marks.</p></div><p class="why"><strong>Why it matters:</strong> For running fans, Diamond League finals are a season-ending ledger. Even when the headline is simply “results,” the value is in having the complete record in one place—especially for comparing championship-season form against late-summer racing.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/09/day-2-brussels-diamond-league-final-results/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/09/day-1-brussels-diamond-league-final-results/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Route 66 at 100: Europeans still chase the American road-trip myth</h2><p class="dek">As the highway reaches its centennial, tourists look for Americana while trying to tune out war, inflation and politics.</p><div class="body-copy"><p>Route 66 turns 100, and the enduring pull of the highway now includes Europeans seeking a concentrated dose of Americana. The excerpt frames the trip as escapist but not naïve: visitors are trying to keep war, inflation and politics in the rearview, which implies the romance of the open road is competing with a much noisier global mood.</p></div><p class="why"><strong>Why it matters:</strong> Tourism stories often double as economic and cultural weather reports. A century-old U.S. highway still selling freedom to foreign travelers says something about the durability of American mythmaking—and about the desire to take a vacation from the present.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/06/business/route-66-highway-centennial.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · September 6, 2026
+</footer>
+</main>
+</body>
+</html>

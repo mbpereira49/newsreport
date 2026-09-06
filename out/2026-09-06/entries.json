@@ -1,0 +1,84 @@
+[
+  {
+    "body": "The administration\u2019s latest filing puts the legality of President Trump\u2019s effort to limit mail voting directly before the Supreme Court. The timing is the point: states are already beginning to send out ballots, so a decision either way would not be abstract election law but operational guidance in the middle of voting season.",
+    "cluster_id": "588f026d147fc7c9",
+    "dek": "The Trump administration is again asking the justices to let voting-by-mail restrictions proceed.",
+    "headline": "Mail-voting fight lands back at the Supreme Court\u2014right as ballots go out",
+    "source_ids": [
+      "588f026d147fc7c9-s1"
+    ],
+    "why_it_matters": "Election rules are most destabilizing when they change late. Even without details on the specific restrictions in the excerpt, the filing raises the stakes for voters, state officials and courts trying to run an election while the rules are still being litigated."
+  },
+  {
+    "body": "OPEC Plus decided Sunday to keep oil production unchanged, according to the excerpt, even after military strikes resumed between the United States and Iran in the Persian Gulf. That is a notably restrained move from a cartel whose output decisions can amplify\u2014or dampen\u2014market anxiety during geopolitical shocks.",
+    "cluster_id": "f2d73cce63d67ad2",
+    "dek": "The oil group held production steady after renewed U.S. and Iranian strikes in the Persian Gulf.",
+    "headline": "OPEC Plus chooses not to move as the Gulf heats up again",
+    "source_ids": [
+      "f2d73cce63d67ad2-s1"
+    ],
+    "why_it_matters": "Oil markets do not just price barrels; they price fear. A steady-production decision suggests OPEC Plus is not, at least for now, adding a supply-side jolt to an already volatile Gulf crisis. But the excerpt does not say how prices reacted or whether members debated a different path."
+  },
+  {
+    "body": "Washington sanctioned Inspur over its work with the Chinese military. But according to the excerpt, an Inspur subsidiary continued moving Nvidia\u2019s best chips to major Chinese AI companies. The story is less about one company than about the familiar fragility of export controls: a rule can look tough on paper while corporate structures, subsidiaries and supply chains route around it.",
+    "cluster_id": "0824e48640261aed",
+    "dek": "A sanctioned Chinese tech giant\u2019s subsidiary reportedly kept shipping advanced American chips to China\u2019s leading AI firms.",
+    "headline": "A blacklist with a loophole big enough for Nvidia\u2019s top AI chips",
+    "source_ids": [
+      "0824e48640261aed-s1"
+    ],
+    "why_it_matters": "The U.S.-China AI contest increasingly depends on who can access high-end compute. If blacklisted firms can still obtain top chips through affiliates, sanctions may be signaling policy more effectively than they are constraining capability."
+  },
+  {
+    "body": "Simon Willison highlights Terence Eden\u2019s bracing read of an Interisle report: 85 million new generic top-level domain registrations in 2025, with 8.5 million already added to blocklists by May. Eden\u2019s conclusion is deliberately sharp\u2014that DNS now functions as a vector for scams at a terrifying rate\u2014and he suggests the 10% abuse rate may be a floor, with the true number closer to 20%.",
+    "cluster_id": "a9dd0dabb56b0353",
+    "dek": "A practitioner post points to estimates that 10% to 20% of new generic top-level domains may be abusive.",
+    "headline": "The web\u2019s address book has a scam problem hiding in plain sight",
+    "source_ids": [
+      "a9dd0dabb56b0353-s1"
+    ],
+    "why_it_matters": "If even one in ten newly registered gTLD domains are abusive, trust infrastructure is being overwhelmed at registration speed. The framing here is commentary, not a neutral institutional finding, but the cited numbers make the alarm hard to dismiss."
+  },
+  {
+    "body": "After five days with SpaceXAI\u2019s Grok Bot, Latent Space\u2019s shorthand is that it has the programming power of OpenClaw but feels programmable at a different level of abstraction\u2014more \u201cMacBook simplicity\u201d than low-level machinery. The excerpt is thin on examples, but the claim is clear: the product\u2019s significance lies not merely in capability, but in making that capability easier to steer.",
+    "cluster_id": "1590306bf3754915",
+    "dek": "Latent Space frames SpaceXAI\u2019s Grok Bot as powerful programming at a higher abstraction layer.",
+    "headline": "Grok Bot pitch: OpenClaw-level power, consumer-laptop simplicity",
+    "source_ids": [
+      "1590306bf3754915-s1"
+    ],
+    "why_it_matters": "Agent infrastructure is increasingly a usability race. If tools with serious programming power become approachable at a higher abstraction layer, the bottleneck shifts from raw model capability to interface design, workflow fit and trust."
+  },
+  {
+    "body": "Eater NY\u2019s monthly heatmap machinery is trained on two appetites here: the hottest new cocktail bars in New York and the new Brooklyn restaurants drawing attention. Both blurbs emphasize editorial reporting and curation rather than a comprehensive directory, narrowing the city\u2019s churn of openings to places worth watching now.",
+    "cluster_id": "3bd3cbf130d058b2",
+    "dek": "Two updated heatmaps point readers toward new cocktail bars citywide and notable new Brooklyn restaurants.",
+    "headline": "Eater\u2019s September NYC radar splits the night: cocktails and Brooklyn openings",
+    "source_ids": [
+      "3bd3cbf130d058b2-s1",
+      "3bd3cbf130d058b2-s2"
+    ],
+    "why_it_matters": "In a city where \u201cnew\u201d is almost too abundant to be useful, heatmaps function as a first filter. The useful signal is not that something opened, but that editors think it is already creating enough pull to merit a spot on the short list."
+  },
+  {
+    "body": "The 2026 Wanda Diamond League final took place at the Allianz Memorial Van Damme meeting in Brussels, with LetsRun publishing results for Day 1 and Day 2. The excerpts do not surface standout performances or winners, so the clean takeaway is archival: the full finale results are now posted for anyone tracking the season\u2019s last elite marks.",
+    "cluster_id": "f48113a3f105e187",
+    "dek": "LetsRun posted full results from both days of the 2026 Wanda Diamond League final.",
+    "headline": "Diamond League finale wraps in Brussels",
+    "source_ids": [
+      "f48113a3f105e187-s1",
+      "f48113a3f105e187-s2"
+    ],
+    "why_it_matters": "For running fans, Diamond League finals are a season-ending ledger. Even when the headline is simply \u201cresults,\u201d the value is in having the complete record in one place\u2014especially for comparing championship-season form against late-summer racing."
+  },
+  {
+    "body": "Route 66 turns 100, and the enduring pull of the highway now includes Europeans seeking a concentrated dose of Americana. The excerpt frames the trip as escapist but not na\u00efve: visitors are trying to keep war, inflation and politics in the rearview, which implies the romance of the open road is competing with a much noisier global mood.",
+    "cluster_id": "f6284a8bf3b4c2a2",
+    "dek": "As the highway reaches its centennial, tourists look for Americana while trying to tune out war, inflation and politics.",
+    "headline": "Route 66 at 100: Europeans still chase the American road-trip myth",
+    "source_ids": [
+      "f6284a8bf3b4c2a2-s1"
+    ],
+    "why_it_matters": "Tourism stories often double as economic and cultural weather reports. A century-old U.S. highway still selling freedom to foreign travelers says something about the durability of American mythmaking\u2014and about the desire to take a vacation from the present."
+  }
+]
