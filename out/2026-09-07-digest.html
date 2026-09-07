@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-09-07</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Monday, September 7, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Oil flirts with $100 after U.S.–Iran strikes</h2><p class="dek">Brent rose to about $97 a barrel Monday, while the average U.S. gas price hit $4.15 a gallon.</p><div class="lead-lower"><div class="body-copy"><p>The market’s first read on the latest U.S.–Iran exchange was blunt: pricier oil, pricier gasoline. Brent crude, the global benchmark, climbed to roughly $97 a barrel Monday, and the national average for gas reached $4.15 a gallon, according to the Times excerpt. The story is framed around the two countries trading strikes, but the supplied material does not say how much of the move reflects direct supply fears versus broader war-risk pricing.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Energy markets are often where geopolitical risk becomes household math. A jump in crude can quickly become higher pump prices, inflation pressure and political pain—especially if traders start pricing in a longer conflict.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/06/business/oil-gas-prices-iran-war.html" target="_blank" rel="noreferrer">NYT Business</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>A blacklisted Chinese tech giant still found a path to Nvidia’s top chips</h2><p class="dek">Washington sanctioned Inspur over military ties, but a subsidiary reportedly kept shipping advanced Nvidia chips to China’s leading A.I. firms.</p><div class="body-copy"><p>The export-control story has a familiar weak spot: corporate structure. Washington put Inspur on a sanctions list because of its work with the Chinese military, according to the Times excerpt. Yet the company’s subsidiary kept moving Nvidia’s best A.I. chips to major Chinese A.I. firms. The supplied material does not detail the legal mechanism, volumes, dates or whether U.S. officials viewed the subsidiary’s activity as a violation or a loophole—but the headline alone points to the central problem: blacklisting a parent company may not be the same as cutting off a supply chain.</p></div><p class="why"><strong>Why it matters:</strong> The U.S. campaign to slow China’s A.I. and military-tech progress depends less on slogans than enforcement architecture. If subsidiaries can keep accessing restricted hardware, chip controls become a maze with expensive exits.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/06/technology/ai-chips-china-blacklist.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Inside OpenAI, “recursive self-improvement” becomes the new thing to watch</h2><p class="dek">Simon Willison flags OpenAI’s emphasis on RSI and a sharp rise in internal agentic engineering and compute spend per researcher.</p><div class="body-copy"><p>Simon Willison reads a pair of OpenAI pieces as a signal: “Apparently today is RSI day at OpenAI,” with RSI standing for Recursive Self-Improvement. He notes that both an OpenAI research-acceleration piece and Chief Scientist Jakub Pachocki’s essay “An Alien Mind” discuss it, and that one piece does not even expand the acronym. The excerpt also says OpenAI researchers are using coding agents heavily, with 2026 described as the year “agentic engineering really took off” inside the company. Willison is especially curious about a “significant acceleration in AI spend per researcher in late July,” guessing it may line up with internal access to a later model—clearly marked as his guess, not a confirmed explanation.</p></div><p class="why"><strong>Why it matters:</strong> The most revealing A.I. adoption story may be how frontier labs use their own tools. If coding agents are materially accelerating research inside OpenAI, the recursive loop is no longer just a theory deck—it is an operating model.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Investigators look for answers after deadly Miami cargo-plane crash</h2><p class="dek">An Amazon-operated cargo plane crashed onto a public road, killing five people and disrupting more than 200 flights over Labor Day weekend.</p><div class="body-copy"><p>A cargo plane operated for Amazon plowed into a public road near Miami’s airport and struck vehicles, killing five people. Officials are now searching for answers after a crash that also disrupted more than 200 flights over the Labor Day weekend. The supplied excerpt does not identify a cause, aircraft model, operator beyond “operated for Amazon,” or whether the victims were on the plane, road or both—so the live question is still investigative, not explanatory.</p></div><p class="why"><strong>Why it matters:</strong> Airport crashes do not have to happen on runways to expose the public-risk perimeter around aviation logistics. This one also puts Amazon’s vast cargo network under scrutiny at a moment when a single failure spilled into both street traffic and holiday air travel.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/07/us/miami-airport-plane-crash.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Five fall races become early stress tests for the midterms</h2><p class="dek">Contests in Iowa, Michigan, Texas and beyond are being watched for voter signals on Trump, progressivism, Iran and the political climate ahead.</p><div class="body-copy"><p>The Times frames five fall races as diagnostic tools for the bigger midterm story. The contests, spanning states including Iowa, Michigan and Texas, are expected to offer clues about voters’ views of President Trump, progressive ideas, the war with Iran and more. The excerpt does not name the races or candidates, so the useful takeaway is structural: before the midterms, both parties will be hunting for signals in smaller contests that may or may not scale nationally.</p></div><p class="why"><strong>Why it matters:</strong> Off-year and special-election results are often overinterpreted, but they still shape donor behavior, candidate messaging and party confidence. These races could become the first rough polling booth on whether 2026 is about Trump, ideology, war—or something less tidy.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/07/us/politics/midterms-key-races-to-watch.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>The post-9/11 generation now has its own view of 9/11</h2><p class="dek">Young adults too young to remember the attacks still carry opinions about their legacy, shaped by absence, security lines and inherited memory.</p><div class="body-copy"><p>They never saw the pre-9/11 skyline, and they do not remember airports before the security regime. But young adults born after the attacks have strong feelings about how the country should regard 9/11’s legacy, according to the Times excerpt. That makes the anniversary less a memory test than a transfer of meaning: what becomes of a defining national trauma when the people coming of age know it through rituals, policy changes and stories rather than lived experience?</p></div><p class="why"><strong>Why it matters:</strong> Generational distance changes public memory. As 9/11 moves from lived event to inherited history, debates over security, grief, war and national identity will increasingly be led by people formed by its aftermath, not its day.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/07/nyregion/born-after-9-11-young-adults.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>The Diamond League season closes in Brussels</h2><p class="dek">LetsRun posted full Day 1 and Day 2 results from the 2026 Wanda Diamond League final at Allianz Memorial Van Damme.</p><div class="body-copy"><p>Track’s top circuit wrapped its 2026 finale in Brussels, and LetsRun has the results sheets for both days. Day 1 took place Sept. 4 at the Allianz Memorial Van Damme meeting in Brussels, Belgium; Day 2 completed the Diamond League final. The excerpts do not surface winners, marks or records, so this cluster is less about a single result than a pointer to the full ledger of the season-ending meet.</p></div><p class="why"><strong>Why it matters:</strong> For elite running fans, Diamond League finals are where a season’s scattered brilliance gets reduced to hard outcomes. Even without the marks in the excerpt, the Brussels results are the definitive reference point for who ended 2026 on top.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/09/day-2-brussels-diamond-league-final-results/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/09/day-1-brussels-diamond-league-final-results/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Los Angeles’ newest camera-ready neighbors: black bears</h2><p class="dek">California has roughly 60,000 black bears, and more are moving beyond familiar habitat in search of food and shelter.</p><div class="body-copy"><p>Black bears are increasingly turning up in and around Los Angeles, far from what many humans consider their “usual” habitat. California has about 60,000 of them, according to the Times excerpt, and they are venturing outward in search of food and shelter. The framing is pointed: it is the humans who have to adapt. The excerpt does not specify which neighborhoods, what is driving the movement or how officials are responding, but the direction of travel is clear enough—bear country and city life are overlapping more often.</p></div><p class="why"><strong>Why it matters:</strong> Wildlife stories in cities are often treated as cute until they become governance problems. Bears searching for food and shelter test trash systems, development patterns and public patience—and remind Angelenos that habitat boundaries were always more human fiction than animal fact.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/07/us/california-black-bears.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · September 7, 2026
+</footer>
+</main>
+</body>
+</html>
