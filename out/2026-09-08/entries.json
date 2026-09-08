@@ -1,0 +1,83 @@
+[
+  {
+    "body": "The administration\u2019s effort to screen mail-in ballots is still on ice, but the dispute is no longer just another procedural election-law skirmish. The Supreme Court is weighing challenges to new U.S. Postal Service ballot rules, putting the mechanics of mail voting \u2014 who can scrutinize ballots, when, and under what authority \u2014 back at the center of national politics. The source frames the plan as blocked for now, not dead, which is the key distinction: the legal question is still live, and the practical stakes would land directly on voters and election administrators.",
+    "cluster_id": "31f6bd1835e4027e",
+    "dek": "Trump\u2019s blocked plan to screen mail-in ballots now turns on challenges to new Postal Service ballot rules.",
+    "headline": "The mail-voting fight reaches the Supreme Court\u2019s doorstep",
+    "source_ids": [
+      "31f6bd1835e4027e-s1"
+    ],
+    "why_it_matters": "Mail voting has become both infrastructure and battleground. A Supreme Court move here could reshape the rules before the next major election cycle."
+  },
+  {
+    "body": "The Mamdani administration has released a vast cache \u2014 more than 170,000 pages \u2014 of documents about air quality around the World Trade Center site in the months after Sept. 11. The headline claim is stark: the documents suggest New Yorkers were misled about the risks. The excerpt does not spell out who said what, or how the documents establish that case, but the scale of the release alone signals an attempt to revisit one of the city\u2019s most painful post-attack questions: what officials knew about environmental danger, and what residents, workers and first responders were told.",
+    "cluster_id": "2b1a834c8f4aa775",
+    "dek": "New York City released more than 170,000 pages tied to conditions around the World Trade Center site after the attacks.",
+    "headline": "A 9/11 air-quality record dump reopens an old public-health wound",
+    "source_ids": [
+      "2b1a834c8f4aa775-s1"
+    ],
+    "why_it_matters": "For people who lived and worked near the site, this is not archival housekeeping. It bears on trust, accountability and long-tail health consequences."
+  },
+  {
+    "body": "Brent crude, the international oil benchmark, is spiking again \u2014 and with it come familiar anxieties about inflation. The source frames the key threshold as a potential return to $100 oil, the kind of headline number that can quickly filter into market psychology, transportation costs and household expectations. The excerpt does not identify the cause of the spike, so the useful read is narrower: energy prices are once again threatening to become a macroeconomic irritant just when policymakers and investors would rather not relearn that lesson.",
+    "cluster_id": "00851fb7b75642ec",
+    "dek": "A spike in Brent crude has revived fears that expensive energy could complicate the economic picture.",
+    "headline": "Oil is again flirting with the inflation danger zone",
+    "source_ids": [
+      "00851fb7b75642ec-s1"
+    ],
+    "why_it_matters": "Oil shocks do not stay neatly inside the energy market. If prices keep rising, inflation worries could bleed back into rates, consumer spending and politics."
+  },
+  {
+    "body": "In a video address, Prime Minister Mark Carney cast Canada\u2019s retaliation against U.S. tariffs as unavoidable. His sharpest line \u2014 that the United States was seeking \u201cdependency, not a true economic partnership\u201d \u2014 turns a trade dispute into a sovereignty argument. The excerpt does not detail the tariffs or Canada\u2019s countermeasures, but the rhetoric matters: Carney is not merely defending a tactical response; he is framing the relationship itself as lopsided and coercive. That is a more durable political posture than a complaint over a single levy.",
+    "cluster_id": "bbec6a72cc2acbe5",
+    "dek": "Prime Minister Mark Carney accused the United States of seeking \u201cdependency, not a true economic partnership.\u201d",
+    "headline": "Canada\u2019s tariff retaliation moves from threat to necessity, Carney says",
+    "source_ids": [
+      "bbec6a72cc2acbe5-s1"
+    ],
+    "why_it_matters": "U.S.-Canada trade fights can look technical until they start rewriting assumptions about alliance, leverage and economic trust across the border."
+  },
+  {
+    "body": "Simon Willison points to Konstantin Ryabitsev\u2019s account of abusive crawlers hammering git.kernel.org, the official Git repository for the Linux kernel. The quoted bottom line is grimly comic: the site spends more CPU cycles rendering commits for scrapers than on all legitimate access, including git clones. Across five geographically distributed nodes, 14 CPU cores are said to be doing nothing but rendering Git commits as HTML. Willison connects the problem to Datasette, which serves many crawlable pages, and tags the issue with crawling, AI ethics and infrastructure. The phrase \u201cbackground radiation\u201d captures the new normal: not a single attack, but constant machine attention.",
+    "cluster_id": "2a015eef49a03c5b",
+    "dek": "Git.kernel.org is reportedly spending more CPU rendering pages for scrapers than serving legitimate users.",
+    "headline": "The web\u2019s crawler tax is becoming a real infrastructure bill",
+    "source_ids": [
+      "2a015eef49a03c5b-s1"
+    ],
+    "why_it_matters": "The AI-era web has an externality problem. Crawlers may look like traffic, but at scale they shift costs onto maintainers of public-interest infrastructure."
+  },
+  {
+    "body": "Seaweed, once the definition of a quiet coastal trade, is now valuable enough to provoke a fight over control. In western Ireland, a Canadian corporation\u2019s bid for exclusive harvesting rights has upended a long-established way of life, according to the source. The excerpt gives the outline rather than the fine print: global demand is surging, a company wants sweeping access, and local communities see a threat to an industry that has historically been embedded in place. It is a small story with a familiar shape \u2014 traditional use meets global commodity logic.",
+    "cluster_id": "bdced70fcb1f8fe0",
+    "dek": "Rising global demand has put local harvesters at odds with a Canadian company seeking exclusive rights in western Ireland.",
+    "headline": "A fight over Irish seaweed shows how quickly a sleepy resource can become strategic",
+    "source_ids": [
+      "bdced70fcb1f8fe0-s1"
+    ],
+    "why_it_matters": "As climate, food and materials markets hunt for new resources, even humble coastal economies can become targets for consolidation."
+  },
+  {
+    "body": "At an A-list gathering on the French Riviera, the film industry\u2019s survival anxiety was given a characteristically French answer: mobilize culture as something worth defending. The sector, according to the source, sees threats from YouTube, TikTok and artificial intelligence \u2014 not just competitors, but forces that alter attention, production and value. The excerpt positions France as trying to \u201csave the day,\u201d which may be grandiose, but not unserious. France has long treated cinema as both art and national infrastructure; the interesting question is whether that model travels in a platform-dominated era.",
+    "cluster_id": "b66ccf0a3f27098a",
+    "dek": "A Riviera gathering rallied an industry rattled by YouTube, TikTok and artificial intelligence.",
+    "headline": "France wants cinema to act like it still has a state behind it",
+    "source_ids": [
+      "b66ccf0a3f27098a-s1"
+    ],
+    "why_it_matters": "The movie business is no longer only competing with other movies. Its fight is with feeds, creators, synthetic media and collapsing attention spans."
+  },
+  {
+    "body": "Emily Wilson\u2019s literary celebrity remains a rare phenomenon: a classicist becoming widely known because of how she translates ancient texts. Literary Hub\u2019s interview foregrounds the qualities that made her 2017 Odyssey \u2014 noted here as the first complete English version by a woman \u2014 feel like an event: attention to complicated men, comfort with strangeness and a translator\u2019s insistence that language is never inevitable. The two sources in the cluster are effectively the same item rather than independent accounts, so there is no competing frame to reconcile. The attraction is clear enough: Wilson treats translation not as a museum service, but as live argument.",
+    "cluster_id": "16af9620aed86afe",
+    "dek": "The classicist discusses complicated men, productive strangeness and the premise that there is always another way to say it.",
+    "headline": "Emily Wilson keeps making translation sound like moral intelligence",
+    "source_ids": [
+      "16af9620aed86afe-s1",
+      "16af9620aed86afe-s2"
+    ],
+    "why_it_matters": "Translation choices shape which old books feel dead, dangerous or newly readable. Wilson has made that invisible labor unusually visible."
+  }
+]

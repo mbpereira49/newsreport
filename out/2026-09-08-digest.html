@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-09-08</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Tuesday, September 8, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>The mail-voting fight reaches the Supreme Court’s doorstep</h2><p class="dek">Trump’s blocked plan to screen mail-in ballots now turns on challenges to new Postal Service ballot rules.</p><div class="lead-lower"><div class="body-copy"><p>The administration’s effort to screen mail-in ballots is still on ice, but the dispute is no longer just another procedural election-law skirmish. The Supreme Court is weighing challenges to new U.S. Postal Service ballot rules, putting the mechanics of mail voting — who can scrutinize ballots, when, and under what authority — back at the center of national politics. The source frames the plan as blocked for now, not dead, which is the key distinction: the legal question is still live, and the practical stakes would land directly on voters and election administrators.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Mail voting has become both infrastructure and battleground. A Supreme Court move here could reshape the rules before the next major election cycle.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/08/us/politics/trump-mail-voting-what-to-know-supreme-court.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>A 9/11 air-quality record dump reopens an old public-health wound</h2><p class="dek">New York City released more than 170,000 pages tied to conditions around the World Trade Center site after the attacks.</p><div class="body-copy"><p>The Mamdani administration has released a vast cache — more than 170,000 pages — of documents about air quality around the World Trade Center site in the months after Sept. 11. The headline claim is stark: the documents suggest New Yorkers were misled about the risks. The excerpt does not spell out who said what, or how the documents establish that case, but the scale of the release alone signals an attempt to revisit one of the city’s most painful post-attack questions: what officials knew about environmental danger, and what residents, workers and first responders were told.</p></div><p class="why"><strong>Why it matters:</strong> For people who lived and worked near the site, this is not archival housekeeping. It bears on trust, accountability and long-tail health consequences.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/07/nyregion/sept-11-air-quality-cancer.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>Oil is again flirting with the inflation danger zone</h2><p class="dek">A spike in Brent crude has revived fears that expensive energy could complicate the economic picture.</p><div class="body-copy"><p>Brent crude, the international oil benchmark, is spiking again — and with it come familiar anxieties about inflation. The source frames the key threshold as a potential return to $100 oil, the kind of headline number that can quickly filter into market psychology, transportation costs and household expectations. The excerpt does not identify the cause of the spike, so the useful read is narrower: energy prices are once again threatening to become a macroeconomic irritant just when policymakers and investors would rather not relearn that lesson.</p></div><p class="why"><strong>Why it matters:</strong> Oil shocks do not stay neatly inside the energy market. If prices keep rising, inflation worries could bleed back into rates, consumer spending and politics.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/08/business/dealbook/oil-inflation-markets.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Canada’s tariff retaliation moves from threat to necessity, Carney says</h2><p class="dek">Prime Minister Mark Carney accused the United States of seeking “dependency, not a true economic partnership.”</p><div class="body-copy"><p>In a video address, Prime Minister Mark Carney cast Canada’s retaliation against U.S. tariffs as unavoidable. His sharpest line — that the United States was seeking “dependency, not a true economic partnership” — turns a trade dispute into a sovereignty argument. The excerpt does not detail the tariffs or Canada’s countermeasures, but the rhetoric matters: Carney is not merely defending a tactical response; he is framing the relationship itself as lopsided and coercive. That is a more durable political posture than a complaint over a single levy.</p></div><p class="why"><strong>Why it matters:</strong> U.S.-Canada trade fights can look technical until they start rewriting assumptions about alliance, leverage and economic trust across the border.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/08/world/canada/carney-tariffs-trade.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>The web’s crawler tax is becoming a real infrastructure bill</h2><p class="dek">Git.kernel.org is reportedly spending more CPU rendering pages for scrapers than serving legitimate users.</p><div class="body-copy"><p>Simon Willison points to Konstantin Ryabitsev’s account of abusive crawlers hammering git.kernel.org, the official Git repository for the Linux kernel. The quoted bottom line is grimly comic: the site spends more CPU cycles rendering commits for scrapers than on all legitimate access, including git clones. Across five geographically distributed nodes, 14 CPU cores are said to be doing nothing but rendering Git commits as HTML. Willison connects the problem to Datasette, which serves many crawlable pages, and tags the issue with crawling, AI ethics and infrastructure. The phrase “background radiation” captures the new normal: not a single attack, but constant machine attention.</p></div><p class="why"><strong>Why it matters:</strong> The AI-era web has an externality problem. Crawlers may look like traffic, but at scale they shift costs onto maintainers of public-interest infrastructure.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Sep/7/creepy-crawlies/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>A fight over Irish seaweed shows how quickly a sleepy resource can become strategic</h2><p class="dek">Rising global demand has put local harvesters at odds with a Canadian company seeking exclusive rights in western Ireland.</p><div class="body-copy"><p>Seaweed, once the definition of a quiet coastal trade, is now valuable enough to provoke a fight over control. In western Ireland, a Canadian corporation’s bid for exclusive harvesting rights has upended a long-established way of life, according to the source. The excerpt gives the outline rather than the fine print: global demand is surging, a company wants sweeping access, and local communities see a threat to an industry that has historically been embedded in place. It is a small story with a familiar shape — traditional use meets global commodity logic.</p></div><p class="why"><strong>Why it matters:</strong> As climate, food and materials markets hunt for new resources, even humble coastal economies can become targets for consolidation.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/08/world/europe/ireland-seaweed-harvesting.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>France wants cinema to act like it still has a state behind it</h2><p class="dek">A Riviera gathering rallied an industry rattled by YouTube, TikTok and artificial intelligence.</p><div class="body-copy"><p>At an A-list gathering on the French Riviera, the film industry’s survival anxiety was given a characteristically French answer: mobilize culture as something worth defending. The sector, according to the source, sees threats from YouTube, TikTok and artificial intelligence — not just competitors, but forces that alter attention, production and value. The excerpt positions France as trying to “save the day,” which may be grandiose, but not unserious. France has long treated cinema as both art and national infrastructure; the interesting question is whether that model travels in a platform-dominated era.</p></div><p class="why"><strong>Why it matters:</strong> The movie business is no longer only competing with other movies. Its fight is with feeds, creators, synthetic media and collapsing attention spans.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/07/movies/france-south-korea-film-industry-hollywood.html" target="_blank" rel="noreferrer">NYT Movies</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Emily Wilson keeps making translation sound like moral intelligence</h2><p class="dek">The classicist discusses complicated men, productive strangeness and the premise that there is always another way to say it.</p><div class="body-copy"><p>Emily Wilson’s literary celebrity remains a rare phenomenon: a classicist becoming widely known because of how she translates ancient texts. Literary Hub’s interview foregrounds the qualities that made her 2017 Odyssey — noted here as the first complete English version by a woman — feel like an event: attention to complicated men, comfort with strangeness and a translator’s insistence that language is never inevitable. The two sources in the cluster are effectively the same item rather than independent accounts, so there is no competing frame to reconcile. The attraction is clear enough: Wilson treats translation not as a museum service, but as live argument.</p></div><p class="why"><strong>Why it matters:</strong> Translation choices shape which old books feel dead, dangerous or newly readable. Wilson has made that invisible labor unusually visible.</p><p class="sources">Sources: <a href="https://lithub.com/emily-wilson-talks-complicated-men-celebrating-strangeness-and-why-there-is-always-another-way-to-say-it/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZUhuTVlhQVVqRXFlSFBtcTg3cDZvRUotWmFmemw4aTJvOEdOYkhJMUZsQnlwNWJMZU1tMmZmVFF2M0hYUEdERmRVYWtyWE41VTFuMDVnTndBdlN2TmJtRVVMN3RiU0J2WnczTGZqem96TzFUbkpveG53VENFZ0NzWjA5SG4xU2dPRXEyZW1sVzd4MVU3Rzl3UklDV3VULUNyRGpUVU5SRXlkLVNjNHZzRmdZMldCRjkzRXllODdHMzJtUQ?oc=5" target="_blank" rel="noreferrer">lithub.com</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · September 8, 2026
+</footer>
+</main>
+</body>
+</html>
