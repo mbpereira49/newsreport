@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-09-09</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Wednesday, September 9, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Elizabeth Holmes gets the Nathan Fielder treatment</h2><p class="dek">A new documentary, “You Can See Everything,” became a Telluride flashpoint by pairing the convicted Theranos executive with Fielder and filmmaker Lance Oppenheim.</p><div class="lead-lower"><div class="body-copy"><p>The festival surprise here is not just that Elizabeth Holmes sat for another major screen treatment, but who is asking the questions. “You Can See Everything” teams comic Nathan Fielder with filmmaker Lance Oppenheim to interview the convicted executive, according to the New York Times. Deadline and Variety both frame the film as a review item, while the Times emphasizes its disruptive effect at Telluride—so the available sourcing tells us more about the movie’s arrival and aura than its full critical consensus.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Holmes has already been turned into a symbol, a cautionary tale and a content franchise. Fielder’s involvement suggests this version may be less straightforward exposé than discomfort machine—an attempt to examine not only Holmes, but the audience’s appetite for seeing her again.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/07/movies/elizabeth-holmes-documentary-nathan-fielder-a24.html" target="_blank" rel="noreferrer">NYT Movies</a> · <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPMkw5QXZNYjFtMmtlUUlqS3ladjlkcGotNDU2UW1jczFHUWJPMGFCci1FaDFTSTkzV0t3aFhhT0Q4ay0zenlQRmhnV3g2bzBnTzJlWVZENW5IRjJQUDlWTnBCNTNvcXNySHJSZHl3d0w3a1hxVGRxeHNubWRzNHptNGF0TEpFZmk5TTRBdzJ2bzJzNktIVllEVTZVUVFUc25J?oc=5" target="_blank" rel="noreferrer">Deadline</a> · <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNa3E4VmtaYUIxTGg4UWoyeHd3bUVtbVpRZ2R4cEE5NGNtZy0xLWxPQVJFZTI3NGZOelRBYmprNWZ5aFQ0cnJ4OHYyU1Z1XzhpaWROR1M1QS1vRTJjLUZLbjV4bWlwcFhBcm9VVG13MGhKMFVmUm5YbjAzb2h5cTlqaXVqZGRieU52WDE3R2dXNVZWNGU5bFdGMlpNSXROY3NKN0oyTllRWnE?oc=5" target="_blank" rel="noreferrer">Variety</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Trump’s mail-voting plan heads straight into a constitutional fight</h2><p class="dek">The proposal would add new rules for who can receive mail ballots, and two dozen states are already challenging it.</p><div class="body-copy"><p>The Trump mail-voting plan, as described by the Times, would impose new requirements around who is eligible to receive mail ballots. That is the operational piece. The political and legal piece is already moving: two dozen states have challenged the plan as unconstitutional. With only one excerpt available, the mechanics are still thin, but the collision is clear—federal rulemaking over mail voting is being met by states asserting that the plan overreaches.</p></div><p class="why"><strong>Why it matters:</strong> Mail voting is no longer merely election administration; it is a proxy battlefield over access, fraud claims, federal power and state control. The immediate question is who gets a ballot. The larger one is who gets to write the rules before an election is underway.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/09/us/politics/trump-mail-in-voting-ballots-usps.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>The bond market shrugs off Treasury’s $6 billion move</h2><p class="dek">A plan to buy back government bonds was meant to help reduce borrowing costs. Instead, the 10-year yield hit a three-year high.</p><div class="body-copy"><p>Treasury’s $6 billion plan to buy back government bonds did not get the market response officials presumably wanted. The 10-year yield rose to its highest level in three years, a move the Times says suggested investors were underwhelmed by the details. That reaction matters because buybacks can signal an effort to improve market functioning or ease borrowing pressures—but bond investors appear to be asking for more than a relatively modest repurchase plan.</p></div><p class="why"><strong>Why it matters:</strong> When yields rise despite an intervention meant to reduce borrowing costs, it is a clean vote of skepticism. Higher Treasury yields ripple outward into mortgages, corporate debt and the government’s own interest bill. The market is saying: show us something bigger, clearer or more convincing.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/09/business/economy/treasury-repurchase-bessent.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>California reopens the nuclear question</h2><p class="dek">The state is considering extending Diablo Canyon’s life—and even allowing new reactors—as it tries to hit clean-energy goals.</p><div class="body-copy"><p>California, long identified with a move away from nuclear power, is reconsidering the boundary of that stance. The Times reports that the state is weighing an extension for Diablo Canyon, its last nuclear plant, while also considering whether to allow construction of new reactors. The stated pressure point is clean energy: keeping the grid reliable while reducing emissions. The excerpt does not say how far the proposals have advanced, but the shift in what is politically thinkable is the story.</p></div><p class="why"><strong>Why it matters:</strong> California’s energy choices tend to become national case studies. If a climate-forward state decides nuclear power is useful—or necessary—for decarbonization, it could soften one of the environmental movement’s longest-running taboos.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/09/business/energy-environment/california-diablo-canyon-nuclear-energy.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>AI’s impact may be both imminent and century-long</h2><p class="dek">Interconnects argues we are less than five years into a compounding revolution whose effects could unfold over generations.</p><div class="body-copy"><p>The Interconnects piece frames AI not as a single adoption wave but as a compounding revolution: early enough that many people may not yet feel it directly, powerful enough that its trajectory could stretch across a century. The excerpt points to a management problem for the AI industry—how to handle expectations, deployment and social consequences when the technology is advancing quickly but its everyday effects are unevenly distributed.</p></div><p class="why"><strong>Why it matters:</strong> The useful tension is timing. If AI is overhyped in the short run, people tune out. If it is underestimated in the long run, institutions fail to adapt. The industry’s challenge is to communicate impact without pretending the future arrives everywhere at once.</p><p class="sources">Sources: <a href="https://interconnects.ai/p/when-will-average-people-feel-ais" target="_blank" rel="noreferrer">Interconnects</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Terence Tao worries AI could make open problems scarce</h2><p class="dek">In a quote highlighted by Simon Willison, Tao warns that AI-powered research races may discourage mathematicians from sharing promising directions.</p><div class="body-copy"><p>The Terence Tao quote, posted by Simon Willison, is a sharp version of a growing anxiety: open science depends on researchers being willing to share unfinished ideas, but AI may change the incentives. Tao describes “good, fruitful open problems” as something being mined in a “non-renewable fashion.” More strikingly, he warns that even a rumor of someone working on a problem can trigger AI-powered efforts to “flatten it” before the original project matures.</p></div><p class="why"><strong>Why it matters:</strong> This is not just a math-world etiquette dispute. If AI systems make it easier to swarm partially formed research leads, scholars may become more secretive. That would reverse a deep norm of open scientific exchange—not because openness stopped being virtuous, but because it became strategically dangerous.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Sep/9/terence-tao/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>A huge 9/11 air-quality paper trail is now public</h2><p class="dek">More than 170,000 pages of reports, contamination records and official correspondence from the months after Sept. 11 were released Tuesday.</p><div class="body-copy"><p>The newly released 9/11 air-quality documents are massive in scope: more than 170,000 pages, including air-quality reports, contamination records and correspondence among city officials in the months after the attacks. The Times excerpt does not characterize what the documents reveal, so the immediate significance is archival and evidentiary rather than conclusive. The release creates a fuller record of what officials knew, measured and discussed during a public-health crisis whose consequences lasted long after the smoke cleared.</p></div><p class="why"><strong>Why it matters:</strong> Documents like these can reshape accountability years later. For survivors, responders and residents, the question has always been not only what the air contained, but what authorities understood at the time—and how they communicated risk.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/08/nyregion/what-to-know-sept-11-air-quality-documents.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Salvadorans keep TPS, but only “for now”</h2><p class="dek">Temporary Protected Status for El Salvador was set to expire Wednesday; Trump officials say a future announcement will come at the “appropriate time.”</p><div class="body-copy"><p>Temporary Protected Status for Salvadorans will continue for now, according to Trump administration officials, despite having been set to expire Wednesday. The administration did not provide a final policy direction in the excerpt, saying only that it would announce the program’s future at the “appropriate time.” That leaves recipients in a familiar limbo: protected from immediate expiration, but still waiting on a decision that could alter their legal footing.</p></div><p class="why"><strong>Why it matters:</strong> TPS is designed as temporary relief, but for many immigrants it becomes the basis of long-established lives. A non-decision can be stabilizing in the short term while still keeping families, employers and communities suspended between reassurance and disruption.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/09/us/tps-el-salvador-immigrants-trump.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · September 9, 2026
+</footer>
+</main>
+</body>
+</html>

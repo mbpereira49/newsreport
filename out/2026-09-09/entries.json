@@ -1,0 +1,84 @@
+[
+  {
+    "body": "The festival surprise here is not just that Elizabeth Holmes sat for another major screen treatment, but who is asking the questions. \u201cYou Can See Everything\u201d teams comic Nathan Fielder with filmmaker Lance Oppenheim to interview the convicted executive, according to the New York Times. Deadline and Variety both frame the film as a review item, while the Times emphasizes its disruptive effect at Telluride\u2014so the available sourcing tells us more about the movie\u2019s arrival and aura than its full critical consensus.",
+    "cluster_id": "bea0c5c2d506b9f9",
+    "dek": "A new documentary, \u201cYou Can See Everything,\u201d became a Telluride flashpoint by pairing the convicted Theranos executive with Fielder and filmmaker Lance Oppenheim.",
+    "headline": "Elizabeth Holmes gets the Nathan Fielder treatment",
+    "source_ids": [
+      "bea0c5c2d506b9f9-s1",
+      "bea0c5c2d506b9f9-s2",
+      "bea0c5c2d506b9f9-s3"
+    ],
+    "why_it_matters": "Holmes has already been turned into a symbol, a cautionary tale and a content franchise. Fielder\u2019s involvement suggests this version may be less straightforward expos\u00e9 than discomfort machine\u2014an attempt to examine not only Holmes, but the audience\u2019s appetite for seeing her again."
+  },
+  {
+    "body": "The Trump mail-voting plan, as described by the Times, would impose new requirements around who is eligible to receive mail ballots. That is the operational piece. The political and legal piece is already moving: two dozen states have challenged the plan as unconstitutional. With only one excerpt available, the mechanics are still thin, but the collision is clear\u2014federal rulemaking over mail voting is being met by states asserting that the plan overreaches.",
+    "cluster_id": "6889e89f171905f1",
+    "dek": "The proposal would add new rules for who can receive mail ballots, and two dozen states are already challenging it.",
+    "headline": "Trump\u2019s mail-voting plan heads straight into a constitutional fight",
+    "source_ids": [
+      "6889e89f171905f1-s1"
+    ],
+    "why_it_matters": "Mail voting is no longer merely election administration; it is a proxy battlefield over access, fraud claims, federal power and state control. The immediate question is who gets a ballot. The larger one is who gets to write the rules before an election is underway."
+  },
+  {
+    "body": "Treasury\u2019s $6 billion plan to buy back government bonds did not get the market response officials presumably wanted. The 10-year yield rose to its highest level in three years, a move the Times says suggested investors were underwhelmed by the details. That reaction matters because buybacks can signal an effort to improve market functioning or ease borrowing pressures\u2014but bond investors appear to be asking for more than a relatively modest repurchase plan.",
+    "cluster_id": "742ef603fb052308",
+    "dek": "A plan to buy back government bonds was meant to help reduce borrowing costs. Instead, the 10-year yield hit a three-year high.",
+    "headline": "The bond market shrugs off Treasury\u2019s $6 billion move",
+    "source_ids": [
+      "742ef603fb052308-s1"
+    ],
+    "why_it_matters": "When yields rise despite an intervention meant to reduce borrowing costs, it is a clean vote of skepticism. Higher Treasury yields ripple outward into mortgages, corporate debt and the government\u2019s own interest bill. The market is saying: show us something bigger, clearer or more convincing."
+  },
+  {
+    "body": "California, long identified with a move away from nuclear power, is reconsidering the boundary of that stance. The Times reports that the state is weighing an extension for Diablo Canyon, its last nuclear plant, while also considering whether to allow construction of new reactors. The stated pressure point is clean energy: keeping the grid reliable while reducing emissions. The excerpt does not say how far the proposals have advanced, but the shift in what is politically thinkable is the story.",
+    "cluster_id": "e41613692495a7fb",
+    "dek": "The state is considering extending Diablo Canyon\u2019s life\u2014and even allowing new reactors\u2014as it tries to hit clean-energy goals.",
+    "headline": "California reopens the nuclear question",
+    "source_ids": [
+      "e41613692495a7fb-s1"
+    ],
+    "why_it_matters": "California\u2019s energy choices tend to become national case studies. If a climate-forward state decides nuclear power is useful\u2014or necessary\u2014for decarbonization, it could soften one of the environmental movement\u2019s longest-running taboos."
+  },
+  {
+    "body": "The Interconnects piece frames AI not as a single adoption wave but as a compounding revolution: early enough that many people may not yet feel it directly, powerful enough that its trajectory could stretch across a century. The excerpt points to a management problem for the AI industry\u2014how to handle expectations, deployment and social consequences when the technology is advancing quickly but its everyday effects are unevenly distributed.",
+    "cluster_id": "e90da9695f78db1b",
+    "dek": "Interconnects argues we are less than five years into a compounding revolution whose effects could unfold over generations.",
+    "headline": "AI\u2019s impact may be both imminent and century-long",
+    "source_ids": [
+      "e90da9695f78db1b-s1"
+    ],
+    "why_it_matters": "The useful tension is timing. If AI is overhyped in the short run, people tune out. If it is underestimated in the long run, institutions fail to adapt. The industry\u2019s challenge is to communicate impact without pretending the future arrives everywhere at once."
+  },
+  {
+    "body": "The Terence Tao quote, posted by Simon Willison, is a sharp version of a growing anxiety: open science depends on researchers being willing to share unfinished ideas, but AI may change the incentives. Tao describes \u201cgood, fruitful open problems\u201d as something being mined in a \u201cnon-renewable fashion.\u201d More strikingly, he warns that even a rumor of someone working on a problem can trigger AI-powered efforts to \u201cflatten it\u201d before the original project matures.",
+    "cluster_id": "feb42ee8ed272303",
+    "dek": "In a quote highlighted by Simon Willison, Tao warns that AI-powered research races may discourage mathematicians from sharing promising directions.",
+    "headline": "Terence Tao worries AI could make open problems scarce",
+    "source_ids": [
+      "feb42ee8ed272303-s1"
+    ],
+    "why_it_matters": "This is not just a math-world etiquette dispute. If AI systems make it easier to swarm partially formed research leads, scholars may become more secretive. That would reverse a deep norm of open scientific exchange\u2014not because openness stopped being virtuous, but because it became strategically dangerous."
+  },
+  {
+    "body": "The newly released 9/11 air-quality documents are massive in scope: more than 170,000 pages, including air-quality reports, contamination records and correspondence among city officials in the months after the attacks. The Times excerpt does not characterize what the documents reveal, so the immediate significance is archival and evidentiary rather than conclusive. The release creates a fuller record of what officials knew, measured and discussed during a public-health crisis whose consequences lasted long after the smoke cleared.",
+    "cluster_id": "ddaeed06f5d8595e",
+    "dek": "More than 170,000 pages of reports, contamination records and official correspondence from the months after Sept. 11 were released Tuesday.",
+    "headline": "A huge 9/11 air-quality paper trail is now public",
+    "source_ids": [
+      "ddaeed06f5d8595e-s1"
+    ],
+    "why_it_matters": "Documents like these can reshape accountability years later. For survivors, responders and residents, the question has always been not only what the air contained, but what authorities understood at the time\u2014and how they communicated risk."
+  },
+  {
+    "body": "Temporary Protected Status for Salvadorans will continue for now, according to Trump administration officials, despite having been set to expire Wednesday. The administration did not provide a final policy direction in the excerpt, saying only that it would announce the program\u2019s future at the \u201cappropriate time.\u201d That leaves recipients in a familiar limbo: protected from immediate expiration, but still waiting on a decision that could alter their legal footing.",
+    "cluster_id": "87de44f2aaa8e3ba",
+    "dek": "Temporary Protected Status for El Salvador was set to expire Wednesday; Trump officials say a future announcement will come at the \u201cappropriate time.\u201d",
+    "headline": "Salvadorans keep TPS, but only \u201cfor now\u201d",
+    "source_ids": [
+      "87de44f2aaa8e3ba-s1"
+    ],
+    "why_it_matters": "TPS is designed as temporary relief, but for many immigrants it becomes the basis of long-established lives. A non-decision can be stabilizing in the short term while still keeping families, employers and communities suspended between reassurance and disruption."
+  }
+]
