@@ -1,0 +1,83 @@
+[
+  {
+    "body": "The data-center buildout is usually discussed in terms of chips, electricity demand and cloud capacity. This warning reframes it in more human terms: air pollution from gas-fired power plants used to run those facilities. According to the group cited by The New York Times, the expected health-care burden could reach at least $20 billion a year by 2028. That figure is less a footnote than a challenge to the industry\u2019s clean, abstract vocabulary around \u201cAI infrastructure.\u201d",
+    "cluster_id": "ecfc53b90abff098",
+    "dek": "Former E.P.A. officials warn that gas-fired power for data centers could add at least $20 billion in annual health costs by 2028.",
+    "headline": "The AI boom\u2019s power bill is turning into a health bill",
+    "source_ids": [
+      "ecfc53b90abff098-s1"
+    ],
+    "why_it_matters": "AI\u2019s costs are increasingly showing up outside tech balance sheets \u2014 in grids, local air quality and public health systems."
+  },
+  {
+    "body": "Jimmy Kimmel used his Wednesday monologue to explain why an interview with James Talarico would appear on YouTube instead of the broadcast show: in Kimmel\u2019s telling, the F.C.C. had \u201cthreatened\u201d ABC over \u201ctraditional editorial decisions.\u201d The excerpt gives Kimmel\u2019s framing, not the regulator\u2019s response, so the boundaries of the alleged pressure are not yet clear here. But the move itself is revealing: a late-night program treated a platform shift as the safer editorial route.",
+    "cluster_id": "60a21d464150b8c7",
+    "dek": "Jimmy Kimmel said ABC moved a James Talarico interview to YouTube because the F.C.C. had \u201cthreatened\u201d the network over editorial decisions.",
+    "headline": "Kimmel takes an interview off broadcast TV after an F.C.C. warning",
+    "source_ids": [
+      "60a21d464150b8c7-s1"
+    ],
+    "why_it_matters": "The story sits at the uneasy intersection of political speech, broadcast regulation and the migration of TV moments to less regulated digital platforms."
+  },
+  {
+    "body": "The U.S. Supreme Court again declined to revive Republican-favored congressional lines in Missouri, deferring to the state Supreme Court\u2019s ruling against the map. The state court had invalidated the lines and said voters must first have an opportunity to approve them in a statewide referendum. The result is procedural, but consequential: the fight over the map is not simply about district shapes, but about who gets the last word before they take effect.",
+    "cluster_id": "a8b91b40ffdef534",
+    "dek": "The justices deferred to Missouri\u2019s Supreme Court, which said voters must get a referendum chance before the Republican-backed district lines can proceed.",
+    "headline": "The Supreme Court leaves Missouri\u2019s GOP map blocked \u2014 again",
+    "source_ids": [
+      "a8b91b40ffdef534-s1"
+    ],
+    "why_it_matters": "Redistricting cases can decide political power for years; this one also underscores how state courts and referendum rules can slow or reshape national partisan plans."
+  },
+  {
+    "body": "The practical chaos of tariffs is often hidden inside classification codes and procurement spreadsheets. Here it surfaces in a wonderfully absurd question: \u201cAre sprinkles on the list?\u201d President Trump\u2019s levies on an eclectic set of Canadian products have businesses scrambling to determine whether their ingredients, inputs or finished goods are affected. The policy may be national; the burden is intensely granular, falling on companies that now have to map every corner of their supply chains against a changing tariff list.",
+    "cluster_id": "5535d8119702bdd0",
+    "dek": "Trump\u2019s new levies on a long list of Canadian products have companies racing to decode whether their supply chains are exposed.",
+    "headline": "Tariff compliance, now with sprinkles",
+    "source_ids": [
+      "5535d8119702bdd0-s1"
+    ],
+    "why_it_matters": "Tariffs do not just raise prices at the border \u2014 they create uncertainty, administrative drag and surprise costs deep inside everyday commerce."
+  },
+  {
+    "body": "San Francisco Mayor Daniel Lurie wants to declare a rent emergency, aiming to combat evictions as the city rides an AI-driven housing frenzy. The excerpt gives the central tension cleanly: a tech boom is again colliding with a fragile rental market, and San Francisco is already seeing the nation\u2019s highest rent increases. Emergency declarations can be politically potent, but the real test will be whether they meaningfully slow displacement in a market where demand can outrun policy quickly.",
+    "cluster_id": "644f6426d39457ad",
+    "dek": "Mayor Daniel Lurie plans to declare a rent emergency in a city facing the nation\u2019s highest rent increases.",
+    "headline": "San Francisco reaches for emergency powers as AI pressure hits rents",
+    "source_ids": [
+      "644f6426d39457ad-s1"
+    ],
+    "why_it_matters": "AI\u2019s local footprint is not just office leases and salaries; in boom cities, it can translate almost immediately into rent pressure and eviction risk."
+  },
+  {
+    "body": "Simon Willison flags a startling claim from Calif Research: a demo worm, dubbed WeWorm, that spreads through WeChat calls across iOS and Android without the victim answering or touching the phone. The quoted researchers say AI helped them find the bug and write the first remote code execution exploit in about two days, with the worm taking one more week. Their larger point is the unsettling one: work that once required a larger team over months may now be accelerated by AI, while humans provide target selection and safety judgment. This is framed as a demo, not a reported wild outbreak.",
+    "cluster_id": "d1de852252ba8b02",
+    "dek": "Calif Research says it built a cross-platform WeChat call worm after using AI to find and exploit a remote-code-execution bug in days.",
+    "headline": "A zero-click WeChat worm demo shows how AI changes exploit work",
+    "source_ids": [
+      "d1de852252ba8b02-s1"
+    ],
+    "why_it_matters": "If the claim holds, AI is not merely helping defenders write reports \u2014 it is compressing the timeline for serious offensive security research."
+  },
+  {
+    "body": "New York has no shortage of excellent Thai food, which makes longevity a harder trick. Eater\u2019s revisit of Fish Cheeks argues that the Nolita restaurant \u2014 opened in 2016 by brothers and chefs Ohm and Chat Suansilphong with Jenn Saesue \u2014 still matters in that dense landscape. Its identity remains specific: Thai seafood, a vivid room, and a menu that never leaned on pad Thai as shorthand. In a city where restaurants age quickly, \u201cstill relevant\u201d is real praise.",
+    "cluster_id": "0f5cdd588c058931",
+    "dek": "Eater revisits the Nolita Thai seafood restaurant, open since 2016 and still defined by a bright room, strong point of view and no pad Thai.",
+    "headline": "Fish Cheeks still earns its place in New York\u2019s crowded Thai scene",
+    "source_ids": [
+      "0f5cdd588c058931-s1",
+      "0f5cdd588c058931-s2"
+    ],
+    "why_it_matters": "The piece is a reminder that restaurant influence is not only about openings; it is also about maintaining a clear voice after the hype cycle moves on."
+  },
+  {
+    "body": "P-22, the mountain lion who became a Los Angeles civic icon, will be memorialized in bronze in Griffith Park. The placement matters: this is where he roamed before his death in 2022, turning an urban park into the stage for a rare cross-species celebrity story. The sculpture sounds less like a conventional monument than a marker of the city\u2019s affection for a wild animal that managed to live improbably close to millions of people.",
+    "cluster_id": "96c3125c505e4849",
+    "dek": "A sculpture of the beloved mountain lion will be installed in Griffith Park, where he roamed before his death in 2022.",
+    "headline": "Los Angeles gives P-22 a bronze afterlife",
+    "source_ids": [
+      "96c3125c505e4849-s1"
+    ],
+    "why_it_matters": "Public monuments usually tell us whom a city wants to remember; this one suggests Los Angeles also wants to remember the wildness threaded through it."
+  }
+]
