@@ -1,0 +1,83 @@
+[
+  {
+    "body": "A little-known terrorism court has now been used to deport an Afghan woman, according to the New York Times. The available excerpt is sparse on the allegations, proceedings, and the woman\u2019s circumstances; what it does make clear is that the administration successfully obtained an expulsion order from the court\u2019s chief judge. The story\u2019s unresolved center is precedent: officials have shown the mechanism can work, but it is not yet clear whether they intend to reach for it again.",
+    "cluster_id": "95896f0f25750cac",
+    "dek": "The administration won an order to expel an Afghan woman, but the bigger question is whether this becomes a one-off or a template.",
+    "headline": "An obscure terrorism court gets its first immigration test",
+    "source_ids": [
+      "95896f0f25750cac-s1"
+    ],
+    "why_it_matters": "Obscure legal tools often matter most after their first successful use. If this court becomes a repeat pathway for expulsions, it could reshape immigration and national-security practice with relatively little public familiarity or scrutiny."
+  },
+  {
+    "body": "August\u2019s Consumer Price Index report appears to have changed the mood around the Federal Reserve\u2019s next move. The New York Times reports that the odds of a quarter-point rate increase at next week\u2019s Fed meeting jumped to 90 percent after the inflation data. That framing suggests the report was not merely a disappointment; it was enough to reprice expectations sharply toward more tightening.",
+    "cluster_id": "a7b6db991ecc32cb",
+    "dek": "Markets now see a quarter-point Fed increase next week as overwhelmingly likely after August\u2019s CPI report.",
+    "headline": "Inflation puts a rate hike back on the table",
+    "source_ids": [
+      "a7b6db991ecc32cb-s1"
+    ],
+    "why_it_matters": "Higher rates would ripple through mortgages, business borrowing, credit cards, and asset prices. The Fed\u2019s problem is familiar but still painful: inflation that stays elevated limits its room to protect growth."
+  },
+  {
+    "body": "Minnesota has become the first state to pass a law banning Kalshi and Polymarket, putting it at the center of the fight over prediction markets. The New York Times frames the next stage as a jurisdictional battle: a lawsuit filed by a federal agency may set a precedent for whether states can police these markets or whether federal regulators occupy the field. The excerpt does not specify the agency or claims, but the regulatory stakes are clear.",
+    "cluster_id": "8fab6bff01a974e3",
+    "dek": "Its ban on Kalshi and Polymarket has turned into a test case over who gets to regulate event-betting platforms.",
+    "headline": "Minnesota draws the line on prediction markets",
+    "source_ids": [
+      "8fab6bff01a974e3-s1"
+    ],
+    "why_it_matters": "Prediction markets keep blurring the line between finance, gambling, and information aggregation. The Minnesota case could decide not just whether two prominent platforms operate there, but which level of government gets to write the rules."
+  },
+  {
+    "body": "Simon Willison\u2019s post describes an extraordinary claim: OpenAI used an unreleased model to produce a resolution to the Navier\u2013Stokes existence and smoothness problem, one of the seven Millennium Prize Problems carrying a $1 million prize. But the discovery, as Willison frames it, is \u201csomewhat overshadowed\u201d by accusations of skulduggery from NYU mathematician Tristan Buckmaster, who had been collaborating on related problems with Levent Alp\u00f6ge, a mathematician now at Anthropic. Buckmaster\u2019s complaint came alongside a hastily published version of their own results. The excerpt cuts off mid-explanation, so the precise substance and merits of the dispute remain unclear from the supplied material.",
+    "cluster_id": "0d46dd571cc3d49d",
+    "dek": "Simon Willison points to an impressive OpenAI result\u2014and to accusations that complicate the celebration.",
+    "headline": "AI\u2019s claimed Navier\u2013Stokes breakthrough arrives under a cloud",
+    "source_ids": [
+      "0d46dd571cc3d49d-s1"
+    ],
+    "why_it_matters": "If the mathematical result holds, it would be a landmark for both mathematics and AI-assisted discovery. If the process is disputed, it also becomes a case study in credit, secrecy, and trust when frontier labs enter high-stakes research domains."
+  },
+  {
+    "body": "Interconnects has published a reading list on open-source AI and open models, pitched as a way to get up to speed on the technology and its implications. The excerpt does not enumerate the readings, but the framing is useful: this is less breaking news than a map for a messy terrain where \u201copen\u201d can mean model weights, code, data, licenses, reproducibility, or just marketing.",
+    "cluster_id": "c50f0c43398beb91",
+    "dek": "Interconnects offers a reading list for getting oriented on open-source AI and open model debates.",
+    "headline": "A field guide to open models",
+    "source_ids": [
+      "c50f0c43398beb91-s1"
+    ],
+    "why_it_matters": "Open models are now central to AI policy, competition, safety, and developer practice. A good reading list can help separate real openness from branding\u2014and make the trade-offs legible before the debate hardens into slogans."
+  },
+  {
+    "body": "The New York Times looks at how the years after 9/11 shaped Muslim and Sikh New Yorkers. The excerpt describes a wave of hate following the attacks, while also noting that Muslim Americans\u2019 political and cultural influence has grown in the decades since. That dual framing matters: the legacy is not simply trauma, nor simply progress, but the tension between the two.",
+    "cluster_id": "47e2322db7b30515",
+    "dek": "A generation of Muslim and Sikh New Yorkers was shaped by backlash\u2014but the story is not only one of victimization.",
+    "headline": "The long afterlife of post-9/11 Islamophobia in New York",
+    "source_ids": [
+      "47e2322db7b30515-s1"
+    ],
+    "why_it_matters": "Anniversary stories can flatten history into ritual. This one, at least in outline, points to a more complicated civic arc: communities targeted by suspicion and violence also becoming more visible, organized, and influential in public life."
+  },
+  {
+    "body": "Eater New York argues that Fish Cheeks remains relevant in a city whose Thai food scene is described as unparalleled in America. The Nolita restaurant, open since 2016, is framed as a seafood-focused spot with a vivid, poppy room and \u201cno pad Thai in sight.\u201d The original team included brothers and chefs Ohm and Chat Suansilphong, along with Jenn, according to the excerpt. The duplicate feed item adds no new reporting, but reinforces that this is a current reassessment rather than a nostalgia hit.",
+    "cluster_id": "0f5cdd588c058931",
+    "dek": "Eater revisits the Nolita seafood specialist that opened in 2016 and helped define a bolder downtown Thai lane.",
+    "headline": "Fish Cheeks still cuts through New York\u2019s Thai-food noise",
+    "source_ids": [
+      "0f5cdd588c058931-s1",
+      "0f5cdd588c058931-s2"
+    ],
+    "why_it_matters": "Restaurants age quickly in New York, especially in crowded categories. A place still earning attention after a decade says something about staying power, point of view, and the city\u2019s appetite for regional Thai cooking beyond the default American canon."
+  },
+  {
+    "body": "In the day\u2019s most charming detour, the New York Times goes live from the Minnesota State Fair with world-class pickle experts. The premise is practical and oddly serious: how to identify a great pickle, and how to make your own safely at home. The excerpt offers no recipes, but the safety note is the giveaway that this is not just crunch appreciation; preservation is food craft with rules.",
+    "cluster_id": "bc69f7913430ead4",
+    "dek": "The Minnesota State Fair becomes a stage for experts on spotting a great pickle\u2014and making one safely at home.",
+    "headline": "Pickle literacy, straight from the fair",
+    "source_ids": [
+      "bc69f7913430ead4-s1"
+    ],
+    "why_it_matters": "Not every useful story needs to be about institutions in crisis. Fermentation and pickling sit at the intersection of thrift, taste, tradition, and microbiology\u2014and the difference between delicious and dangerous can come down to technique."
+  }
+]
