@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-09-13</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Sunday, September 13, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>A map for the open-model maze</h2><p class="dek">Interconnects offers a reading list for people trying to understand open-source AI without pretending the term is settled.</p><div class="lead-lower"><div class="body-copy"><p>The useful thing here is not a single argument so much as a curated on-ramp: Interconnects has put together an “Open-Source AI &amp; Open Models Reading List” aimed at readers who want to get up to speed on open models and their implications. The phrasing matters. “Open-source AI” and “open models” are often used as if they are interchangeable; the source title keeps both in view, suggesting a field where definitions, incentives, and consequences still need sorting.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Open models are now a policy, business, and developer question, not just a technical preference. A good reading list can be infrastructure: it tells you which debates are mature enough to learn from and which are still branding exercises.</p><p class="sources">Sources: <a href="https://interconnects.ai/p/open-source-ai-reading-list" target="_blank" rel="noreferrer">Interconnects</a> · <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBhRVhlNkJITVp3RWRoZ21EN191QzM1T3dLZ19GSUxqVHJ3TlItWW1LYXhwWFlqWXNIMVNTcVVjZU9vZFlCNllhczhETWRINUFYb3RaYU14MkQ1R3ZXYlhEY1hRWUttV1I4Q2c?oc=5" target="_blank" rel="noreferrer">Interconnects AI</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Washington notices AI doom, then hits snooze</h2><p class="dek">The Times frames the federal response to catastrophic AI risk as hesitant, with Trump cast as unusually uninterested in balancing danger and upside.</p><div class="body-copy"><p>The New York Times’ headline does a lot of work: as fears of AI catastrophe grow, Washington “stirs, but mostly slumbers.” The excerpt singles out President Trump as leading a “what-me-worry?” camp, refusing to engage on how to balance AI’s risks and rewards. That is a sharper framing than the usual “regulators are catching up” story; it suggests not merely delay, but a political choice to avoid the hardest trade-offs.</p></div><p class="why"><strong>Why it matters:</strong> The AI-risk debate is moving faster than the institutions meant to govern it. If Washington treats catastrophe scenarios as either science fiction or someone else’s problem, the real policy action may default to companies, courts, states, and crises.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/13/us/politics/ai-catastrophe-fears-washington.html" target="_blank" rel="noreferrer">NYT U.S.</a> · <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQb0NQRzNOcFFtdklrZmN5a1VDcE9TUnJ5bzJuRmEwVUs3N1RtNmQ4U3Z3X0FwOWhVNW9xcE5oaTdjLVBQY3dfcnZmbi0tTjVmMHhISFFLWDBXNmJDb25sNE81TmU3NXdnMnRpaWp6SU9qbmc0X3RXTFBGNlY1ek9CQ1RMc1BCbnF5MV9j?oc=5" target="_blank" rel="noreferrer">nytimes.com</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>The Ultimate Championships, reduced to what counts: results</h2><p class="dek">LetsRun is doing the useful archival work: full Day 1 and Day 2 results in one place.</p><div class="body-copy"><p>For all the narrative dressing around elite track, some days the service journalism wins. LetsRun has compiled the World Athletics Ultimate Championships results for both Day 1 and Day 2, with the latest post giving the full second-day results and the earlier one collecting the opener. The excerpts do not surface winners or standout performances, so the story here is less analysis than consolidation: one page, all results, no hunt through fragmented event coverage.</p></div><p class="why"><strong>Why it matters:</strong> Track fans live on splits, placements, and context. A complete results hub becomes the raw material for everything else: arguments about form, championship pressure, national depth, and who is actually peaking when it matters.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/09/world-athletics-ultimate-championships-results-full-day-2-results/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/09/world-athletics-ultimate-championships-results-full-day-1-results/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Lit Hub’s week: fall books, translation, and the eternal “what if?”</h2><p class="dek">The latest roundup points to 34 fall titles, Emily Wilson on translation, Harlan Coben on idea generation, and Phillip Lopate on Sleepy Hollow.</p><div class="body-copy"><p>Lit Hub’s weekly and daily roundups are doing what literary roundups do best: making the season feel overfull in a good way. The weekly edition leads with 34 books to read this fall and an Emily Wilson conversation with Leanne Ogasawara about “the high stakes and complexities of translation,” complicated men, and her essay. The daily edition adds Harlan Coben’s craft answer — ideas sometimes begin with a simple “what-if” — plus Phillip Lopate on the lore and legacy of “The Legend of Sleepy Hollow.”</p></div><p class="why"><strong>Why it matters:</strong> This is the literary internet as browsing engine. Not every item needs to be a major event; together, they sketch the season’s preoccupations: translation as interpretation, genre as craft, and old American myths that refuse to stay buried.</p><p class="sources">Sources: <a href="https://lithub.com/lit-hub-weekly-september-7-11-2026/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://lithub.com/lit-hub-daily-september-11-2026/" target="_blank" rel="noreferrer">Literary Hub</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Venice gives its top prize to a postwar Danish drama</h2><p class="dek">May el-Toukhy’s “Woman Unknown” won the festival’s top award; Lee Chang-dong’s “Possible Love” was runner-up.</p><div class="body-copy"><p>“Woman Unknown,” directed by May el-Toukhy, has taken the top prize at the Venice Film Festival, according to The New York Times. The film is described as a drama about a Danish servant in the uneasy years after World War II — a premise that sounds intimate rather than spectacle-driven, and very much in the festival tradition of rewarding historical unease rendered through private life. Lee Chang-dong’s “Possible Love” won the runner-up award.</p></div><p class="why"><strong>Why it matters:</strong> Festival prizes are not box-office prophecies, but they are powerful signals: they shape distribution attention, awards-season narratives, and which international films enter the wider conversation rather than staying on the festival circuit.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/12/movies/venice-film-festival-golden-lion-woman-unknown.html" target="_blank" rel="noreferrer">NYT Movies</a> · <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOT29Jbm9oMVV6NDRKaWFkRk1jS09uVXU2MDAtanAxQl9PZHlyZ1VSUVZUeDlNR1ViMzI2T21BZU9uYnhXdmVjalNmRHFwQkxTUjJOMFRqZkQzS0p5TTZTNXloZmdxSHZxemZKSVBhZzR5YkdfbDhxanI4S0d4YTJQZzhXbGhWc1J3NFY0RXVGT0tDamF0LTFSRQ?oc=5" target="_blank" rel="noreferrer">nytimes.com</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Soho’s restaurant map sits on top of an older city</h2><p class="dek">Eater’s editor-picked guide folds today’s dining scene into the neighborhood’s industrial, cast-iron past.</p><div class="body-copy"><p>Eater NY’s Soho restaurant guide starts with a useful reminder: before Soho became a shorthand for art, shopping, loft apartments, and destination dining, it was largely industrial and commercial, defined by Victorian-era cast-iron architecture. By the 1960s and ’70s, the neighborhood had become rundown enough for artists to move in and make studios in those distinctive buildings. The current list of “best restaurants,” then, lands in a place already shaped by cycles of abandonment, reinvention, and taste-making.</p></div><p class="why"><strong>Why it matters:</strong> Restaurant guides are often treated as pure consumption tools. In Soho, the where-to-eat question is inseparable from the neighborhood’s long conversion of industrial space into cultural cachet — and then into expensive appetite.</p><p class="sources">Sources: <a href="https://ny.eater.com/maps/best-restaurants-soho-nyc" target="_blank" rel="noreferrer">Eater NY</a> · <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBENEI0NlhWUGk4NUNRX1E0b0xIcHVxRFJ2V3ZyRllweG1Ea2NvcmVxXzdQa3IyUDZuX0NYc1NSTC16SzlOTGY4Y18wRHJnYTdyd3RNTkExc09mVDEtZFdBYQ?oc=5" target="_blank" rel="noreferrer">Eater New York</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>The preschool revolution that became a $440 million fiasco</h2><p class="dek">The Times digs into the collapse of Guidepost Montessori and the ambitions behind Higher Ground Education.</p><div class="body-copy"><p>The New York Times frames the Guidepost Montessori story with brutal economy: a man with a vision set out to revolutionize preschool, and it became a $440 million fiasco. The piece centers on Guidepost Montessori, Higher Ground Education, and Ray Girn, according to the article metadata. The excerpt does not provide the mechanics of the collapse, but the scale alone suggests a cautionary tale about applying growth-company ambition to early-childhood education.</p></div><p class="why"><strong>Why it matters:</strong> Child care and preschool are tempting targets for “disruption” language because the systems are fragmented, expensive, and emotionally urgent. But when the sector being scaled involves children, families, teachers, and trust, failure is not just a balance-sheet event.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/13/business/guidepost-montessori-higher-ground-education-ray-girn.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>Pacifica Pier closes; pelicans move in</h2><p class="dek">A cracked concrete walkway made the pier unsafe for people. California brown pelicans appear to have found the vacancy useful.</p><div class="body-copy"><p>Simon Willison’s wildlife note is a tiny civic parable: Pacifica Pier in San Mateo County shut down at the start of June after a crack in the concrete walkway made access unsafe. Since then, it has been “entirely taken over by pelicans.” The sighting is tagged as wildlife, despite the cluster metadata awkwardly filing it among AI-related tags — a nice accidental reminder that not every feed item wants to be optimized into the same category.</p></div><p class="why"><strong>Why it matters:</strong> Infrastructure failure usually reads as loss: closed access, delayed repairs, public inconvenience. Here, at least from the excerpt, vacancy becomes habitat. The pelicans do not solve the pier problem, but they do complicate the story.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Sep/12/sighting-399708714/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · September 13, 2026
+</footer>
+</main>
+</body>
+</html>
