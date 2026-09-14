@@ -1,0 +1,85 @@
+[
+  {
+    "body": "",
+    "cluster_id": "e89b5e22088f5dec",
+    "dek": "Agents expressed concern about being directed by top Homeland Security leaders to use private information to look up voter records in state databases.",
+    "headline": "Whistle-Blower: Federal Agents May Have Broken State Laws in Search For Voter Fraud",
+    "source_ids": [
+      "e89b5e22088f5dec-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "82ade85c477980cf",
+    "dek": "One of the world\u2019s most important interest rates hit a level recorded only once since the global financial crisis, as investors continued to rebuff the Trump administration\u2019s efforts to sway the bond market.",
+    "headline": "10-Year Treasury Yield Touches 5%, Highest Level in Years",
+    "source_ids": [
+      "82ade85c477980cf-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "fd93947d0fdb2202",
+    "dek": "OpenAI agents carried out an undisclosed attack on RubyGems is a new bombshell report from Spencer Kitts, Thomas Larsen, and Sydney Von Arx - three of the four authors of the report on the agent attack on disused wiki...",
+    "headline": "OpenAI agents attacked RubyGems back in May",
+    "source_ids": [
+      "fd93947d0fdb2202-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "There was Windows on the World, the restaurant atop the World Trade Center\u2019s North Tower, whose workers were among those who died; the restaurant teams and chefs who fed rescue and recovery workers",
+    "cluster_id": "7504212276f82ddc",
+    "dek": "Twenty-five years after September 11, 2001, restaurants remain part of how New York remembers the day and what came after.",
+    "headline": "How New York Restaurants Remember 9/11, 25 Years Later",
+    "source_ids": [
+      "7504212276f82ddc-s1",
+      "7504212276f82ddc-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "Lee Chang-dong\u2019s \u201cPossible Love\u201d won the runner-up award.",
+    "cluster_id": "1a75173dbc597b55",
+    "dek": "The film, a drama directed by May el-Toukhy, follows a Danish servant in the uneasy years after World War II.",
+    "headline": "\u2018Woman Unknown\u2019 Takes Top Prize at Venice Film Festival",
+    "source_ids": [
+      "1a75173dbc597b55-s1",
+      "1a75173dbc597b55-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in criticism, movies, reviews."
+  },
+  {
+    "body": "The post World Athletics Ultimate Championships Results \u2013 Full Day 3 Results appeared first on LetsRun.com .",
+    "cluster_id": "c53121d9a1d9aff1",
+    "dek": "Get Sunday's resutls here.",
+    "headline": "World Athletics Ultimate Championships Results \u2013 Full Day 3 Results",
+    "source_ids": [
+      "c53121d9a1d9aff1-s1",
+      "c53121d9a1d9aff1-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in elite-running, race-commentary, running."
+  },
+  {
+    "body": "But solving the problem with city taxes? That might be an issue.",
+    "cluster_id": "dfbd5029125d477a",
+    "dek": "Yes, child care is too expensive, a new group of business leaders says.",
+    "headline": "Mamdani and New York\u2019s Business Leaders Find Common Cause in Affordable Child Care",
+    "source_ids": [
+      "dfbd5029125d477a-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "5f9eb31837c10f27",
+    "dek": "Traditionally found in warm climates, like the American Southwest, armadillos have been migrating farther and farther north, researchers say.",
+    "headline": "An Armadillo Arrives in \u2026 Ohio?",
+    "source_ids": [
+      "5f9eb31837c10f27-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  }
+]
