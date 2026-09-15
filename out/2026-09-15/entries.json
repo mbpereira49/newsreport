@@ -1,0 +1,83 @@
+[
+  {
+    "body": "The Supreme Court is not moving like a standing opposition party, but the pattern in this NYT account is still notable: the justices \u201ctake their time and pick their spots,\u201d then occasionally say no. The latest rejected presidential initiative concerns the coming election and mail ballots, adding to a list that already includes tariffs, citizenship and the National Guard. The excerpt leaves the legal reasoning and vote breakdown unspecified, so the significance here is less any single doctrine than the accumulation of limits around executive power.",
+    "cluster_id": "34331ba1b0515218",
+    "dek": "After earlier rejections on tariffs, citizenship and the National Guard, the court has now pushed back on mail voting, too.",
+    "headline": "The Supreme Court keeps choosing moments to check Trump",
+    "source_ids": [
+      "34331ba1b0515218-s1"
+    ],
+    "why_it_matters": "For a presidency testing institutional boundaries, intermittent court resistance can matter as much as sweeping rulings. Election rules are an especially high-stakes place for that line to be drawn."
+  },
+  {
+    "body": "Artificial intelligence may be the rare issue where alarm is widespread but partisan advantage is still up for grabs. A New York Times/Siena poll, as described by NYT, found growing voter fears about AI and no clear party edge on the technology. The sharper finding: voters are \u201cunited in opposition to data centers,\u201d suggesting the most tangible local face of AI \u2014 land, power, water, noise, construction \u2014 may be more politically potent than abstract arguments about productivity or existential risk.",
+    "cluster_id": "dcdfe0abdefef8c5",
+    "dek": "A Times/Siena poll finds broad voter unease about artificial intelligence \u2014 and unified opposition to data centers.",
+    "headline": "AI has a politics problem, but neither party owns the backlash",
+    "source_ids": [
+      "dcdfe0abdefef8c5-s1"
+    ],
+    "why_it_matters": "AI policy is moving from white papers to zoning meetings. If data centers become the symbol of the technology, the politics of AI may be shaped less by innovation rhetoric than by local resistance to infrastructure."
+  },
+  {
+    "body": "Simon Willison highlights Bryan Cantrill\u2019s response to a former Anthropic employee\u2019s claim that many Anthropic researchers believe AI \u201ccould kill us all by the end of the decade.\u201d Cantrill\u2019s objection is not that AI is unimportant; it is that extreme claims can spread fear faster than they explain mechanisms. He compares the dynamic to youthful technical mistakes that caused unjustified panic among less technical peers, and argues that examples like \u201chacking critical infrastructure\u201d rely on leaps into speculative futures. The excerpt is clearly one side of an argument, not a settlement of it: Coxon frames the risk as urgent; Cantrill frames the communication of that risk as irresponsible and under-specified.",
+    "cluster_id": "95a6cfd1f6651c92",
+    "dek": "Bryan Cantrill pushes back on claims from inside Anthropic circles that AI could kill everyone by decade\u2019s end, arguing the scenarios lean on hand-wavy extrapolation.",
+    "headline": "A warning against making AI fear contagious",
+    "source_ids": [
+      "95a6cfd1f6651c92-s1"
+    ],
+    "why_it_matters": "The AI-risk debate is increasingly public, emotional and political. The quality of the mechanisms being argued over matters: vague catastrophe talk can either warn people in time or corrode trust before evidence catches up."
+  },
+  {
+    "body": "Mamdani is preparing a street-safety plan aimed at curbing pedestrian deaths, according to NYT. The proposal, called \u201cVision Zero Reimagined,\u201d includes two ideas that go straight at vehicle speed: speed-capping devices in some cars and reduced speed limits near hundreds more schools. The excerpt does not specify which vehicles would get the devices, how enforcement would work, or how the plan would be funded. But the framing suggests a shift from treating pedestrian deaths as a design-only problem to treating speed itself as the central danger.",
+    "cluster_id": "eade74f555a962fb",
+    "dek": "\u201cVision Zero Reimagined\u201d would include speed-capping devices in some cars and lower speed limits near hundreds more schools.",
+    "headline": "Mamdani\u2019s street-safety pitch goes after speed, not just streetscape",
+    "source_ids": [
+      "eade74f555a962fb-s1"
+    ],
+    "why_it_matters": "New York\u2019s Vision Zero era has often been judged by whether it can turn moral consensus \u2014 fewer people killed in traffic \u2014 into politically durable constraints on drivers. Speed caps would test that consensus."
+  },
+  {
+    "body": "The 10-year Treasury yield has breached levels last seen in 2007, NYT reports, as oil prices jump and investors worry about energy-driven inflation. That yield is a benchmark for borrowing costs across the economy, so the move is more than a bond-market curiosity. The excerpt points to angst among bond investors, with oil and Iran in the story\u2019s metadata suggesting geopolitical energy risk is part of the pressure. What is not provided here: whether markets see this as a temporary shock or a more durable repricing of inflation and fiscal risk.",
+    "cluster_id": "0e35b07d960dfb97",
+    "dek": "A jump in oil prices is feeding inflation worries and pushing a key U.S. borrowing rate toward a 20-year high.",
+    "headline": "The 10-year Treasury yield is flashing 2007 again",
+    "source_ids": [
+      "0e35b07d960dfb97-s1"
+    ],
+    "why_it_matters": "When the 10-year yield rises, mortgages, business financing and government debt costs all feel it. Energy inflation is especially awkward because it can squeeze households while making rate-cut hopes harder to sustain."
+  },
+  {
+    "body": "Federal prosecutors say two Chinese firms used Binance to launder Iranian oil proceeds, according to NYT. The allegation is stark: money from the sale of sanctioned Iranian oil flowed through the world\u2019s largest crypto exchange and helped finance terrorism. The excerpt does not include Binance\u2019s response, the specific charges, or whether prosecutors allege the exchange knowingly facilitated the flows. That distinction matters. But even as an allegation, the case lands on a pressure point for crypto: whether global exchanges can prevent sanctioned money from moving through high-speed, cross-border rails.",
+    "cluster_id": "b2c4b8073fd7c288",
+    "dek": "Two Chinese firms allegedly used the world\u2019s largest crypto exchange to launder proceeds from Iranian oil sales and finance terrorism.",
+    "headline": "U.S. prosecutors put Binance in the middle of an Iranian oil-money case",
+    "source_ids": [
+      "b2c4b8073fd7c288-s1"
+    ],
+    "why_it_matters": "Crypto\u2019s compliance problem is not abstract when it intersects with oil sanctions and terrorism financing. Cases like this shape how aggressively governments police exchanges \u2014 and how much trust large platforms retain."
+  },
+  {
+    "body": "LetsRun published full results pages for Day 2 and Day 3 of the World Athletics Ultimate Championships. The available excerpts are bare-bones \u2014 \u201cFull day 2 results\u201d and \u201cGet Sunday\u2019s results here\u201d \u2014 so there is no basis here to crown a breakout athlete, identify a surprise, or summarize medal swings. What can be said: the meet has moved through at least three days of competition, and LetsRun is functioning as a results hub rather than an analysis source in the supplied material.",
+    "cluster_id": "c53121d9a1d9aff1",
+    "dek": "LetsRun has posted full Day 2 and Day 3 results from the meet, but the supplied excerpts offer no event-by-event highlights.",
+    "headline": "World Athletics Ultimate Championships: the results dump is the story, for now",
+    "source_ids": [
+      "c53121d9a1d9aff1-s1",
+      "c53121d9a1d9aff1-s2"
+    ],
+    "why_it_matters": "For track fans, results pages are raw material: the splits, placements and event outcomes that later become narratives. But without the results themselves in the excerpt, this remains a pointer, not a recap."
+  },
+  {
+    "body": "The Pacifica Pier in San Mateo County shut down at the start of June after a crack in its concrete walkway made public access unsafe. Since then, according to Simon Willison\u2019s wildlife sighting, California brown pelicans have \u201centirely taken over\u201d the structure. It is a tiny story, but a pleasingly concrete one: remove humans from a coastal platform, even for an infrastructure problem, and birds may immediately reinterpret it as habitat.",
+    "cluster_id": "ff8e7517a7b9920d",
+    "dek": "After the pier closed over safety concerns, California brown pelicans moved in \u2014 a small, perfect bit of urban wildlife opportunism.",
+    "headline": "A cracked Pacifica Pier becomes pelican territory",
+    "source_ids": [
+      "ff8e7517a7b9920d-s1"
+    ],
+    "why_it_matters": "This is the day\u2019s serendipity: a reminder that neglected or closed human spaces do not sit empty for long. Sometimes the repair backlog belongs to the pelicans first."
+  }
+]

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-09-15</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Tuesday, September 15, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>The Supreme Court keeps choosing moments to check Trump</h2><p class="dek">After earlier rejections on tariffs, citizenship and the National Guard, the court has now pushed back on mail voting, too.</p><div class="lead-lower"><div class="body-copy"><p>The Supreme Court is not moving like a standing opposition party, but the pattern in this NYT account is still notable: the justices “take their time and pick their spots,” then occasionally say no. The latest rejected presidential initiative concerns the coming election and mail ballots, adding to a list that already includes tariffs, citizenship and the National Guard. The excerpt leaves the legal reasoning and vote breakdown unspecified, so the significance here is less any single doctrine than the accumulation of limits around executive power.</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> For a presidency testing institutional boundaries, intermittent court resistance can matter as much as sweeping rulings. Election rules are an especially high-stakes place for that line to be drawn.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/15/us/politics/supreme-court-trump-mail-ballots.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>AI has a politics problem, but neither party owns the backlash</h2><p class="dek">A Times/Siena poll finds broad voter unease about artificial intelligence — and unified opposition to data centers.</p><div class="body-copy"><p>Artificial intelligence may be the rare issue where alarm is widespread but partisan advantage is still up for grabs. A New York Times/Siena poll, as described by NYT, found growing voter fears about AI and no clear party edge on the technology. The sharper finding: voters are “united in opposition to data centers,” suggesting the most tangible local face of AI — land, power, water, noise, construction — may be more politically potent than abstract arguments about productivity or existential risk.</p></div><p class="why"><strong>Why it matters:</strong> AI policy is moving from white papers to zoning meetings. If data centers become the symbol of the technology, the politics of AI may be shaped less by innovation rhetoric than by local resistance to infrastructure.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/15/us/politics/ai-polls-midterms.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>A warning against making AI fear contagious</h2><p class="dek">Bryan Cantrill pushes back on claims from inside Anthropic circles that AI could kill everyone by decade’s end, arguing the scenarios lean on hand-wavy extrapolation.</p><div class="body-copy"><p>Simon Willison highlights Bryan Cantrill’s response to a former Anthropic employee’s claim that many Anthropic researchers believe AI “could kill us all by the end of the decade.” Cantrill’s objection is not that AI is unimportant; it is that extreme claims can spread fear faster than they explain mechanisms. He compares the dynamic to youthful technical mistakes that caused unjustified panic among less technical peers, and argues that examples like “hacking critical infrastructure” rely on leaps into speculative futures. The excerpt is clearly one side of an argument, not a settlement of it: Coxon frames the risk as urgent; Cantrill frames the communication of that risk as irresponsible and under-specified.</p></div><p class="why"><strong>Why it matters:</strong> The AI-risk debate is increasingly public, emotional and political. The quality of the mechanisms being argued over matters: vague catastrophe talk can either warn people in time or corrode trust before evidence catches up.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Mamdani’s street-safety pitch goes after speed, not just streetscape</h2><p class="dek">“Vision Zero Reimagined” would include speed-capping devices in some cars and lower speed limits near hundreds more schools.</p><div class="body-copy"><p>Mamdani is preparing a street-safety plan aimed at curbing pedestrian deaths, according to NYT. The proposal, called “Vision Zero Reimagined,” includes two ideas that go straight at vehicle speed: speed-capping devices in some cars and reduced speed limits near hundreds more schools. The excerpt does not specify which vehicles would get the devices, how enforcement would work, or how the plan would be funded. But the framing suggests a shift from treating pedestrian deaths as a design-only problem to treating speed itself as the central danger.</p></div><p class="why"><strong>Why it matters:</strong> New York’s Vision Zero era has often been judged by whether it can turn moral consensus — fewer people killed in traffic — into politically durable constraints on drivers. Speed caps would test that consensus.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/15/nyregion/mamdani-street-safety-vision-zero-reimagined.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>The 10-year Treasury yield is flashing 2007 again</h2><p class="dek">A jump in oil prices is feeding inflation worries and pushing a key U.S. borrowing rate toward a 20-year high.</p><div class="body-copy"><p>The 10-year Treasury yield has breached levels last seen in 2007, NYT reports, as oil prices jump and investors worry about energy-driven inflation. That yield is a benchmark for borrowing costs across the economy, so the move is more than a bond-market curiosity. The excerpt points to angst among bond investors, with oil and Iran in the story’s metadata suggesting geopolitical energy risk is part of the pressure. What is not provided here: whether markets see this as a temporary shock or a more durable repricing of inflation and fiscal risk.</p></div><p class="why"><strong>Why it matters:</strong> When the 10-year yield rises, mortgages, business financing and government debt costs all feel it. Energy inflation is especially awkward because it can squeeze households while making rate-cut hopes harder to sustain.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/15/business/bond-yields-oil-price-iran.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>U.S. prosecutors put Binance in the middle of an Iranian oil-money case</h2><p class="dek">Two Chinese firms allegedly used the world’s largest crypto exchange to launder proceeds from Iranian oil sales and finance terrorism.</p><div class="body-copy"><p>Federal prosecutors say two Chinese firms used Binance to launder Iranian oil proceeds, according to NYT. The allegation is stark: money from the sale of sanctioned Iranian oil flowed through the world’s largest crypto exchange and helped finance terrorism. The excerpt does not include Binance’s response, the specific charges, or whether prosecutors allege the exchange knowingly facilitated the flows. That distinction matters. But even as an allegation, the case lands on a pressure point for crypto: whether global exchanges can prevent sanctioned money from moving through high-speed, cross-border rails.</p></div><p class="why"><strong>Why it matters:</strong> Crypto’s compliance problem is not abstract when it intersects with oil sanctions and terrorism financing. Cases like this shape how aggressively governments police exchanges — and how much trust large platforms retain.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/09/15/technology/binance-iran-china.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>World Athletics Ultimate Championships: the results dump is the story, for now</h2><p class="dek">LetsRun has posted full Day 2 and Day 3 results from the meet, but the supplied excerpts offer no event-by-event highlights.</p><div class="body-copy"><p>LetsRun published full results pages for Day 2 and Day 3 of the World Athletics Ultimate Championships. The available excerpts are bare-bones — “Full day 2 results” and “Get Sunday’s results here” — so there is no basis here to crown a breakout athlete, identify a surprise, or summarize medal swings. What can be said: the meet has moved through at least three days of competition, and LetsRun is functioning as a results hub rather than an analysis source in the supplied material.</p></div><p class="why"><strong>Why it matters:</strong> For track fans, results pages are raw material: the splits, placements and event outcomes that later become narratives. But without the results themselves in the excerpt, this remains a pointer, not a recap.</p><p class="sources">Sources: <a href="https://letsrun.com/news/2026/09/world-athletics-ultimate-championships-results-full-day-3-results/" target="_blank" rel="noreferrer">LetsRun</a> · <a href="https://letsrun.com/news/2026/09/world-athletics-ultimate-championships-results-full-day-2-results/" target="_blank" rel="noreferrer">LetsRun</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>A cracked Pacifica Pier becomes pelican territory</h2><p class="dek">After the pier closed over safety concerns, California brown pelicans moved in — a small, perfect bit of urban wildlife opportunism.</p><div class="body-copy"><p>The Pacifica Pier in San Mateo County shut down at the start of June after a crack in its concrete walkway made public access unsafe. Since then, according to Simon Willison’s wildlife sighting, California brown pelicans have “entirely taken over” the structure. It is a tiny story, but a pleasingly concrete one: remove humans from a coastal platform, even for an infrastructure problem, and birds may immediately reinterpret it as habitat.</p></div><p class="why"><strong>Why it matters:</strong> This is the day’s serendipity: a reminder that neglected or closed human spaces do not sit empty for long. Sometimes the repair backlog belongs to the pelicans first.</p><p class="sources">Sources: <a href="https://simonwillison.net/2026/Sep/12/sighting-399708714/" target="_blank" rel="noreferrer">Simon Willison</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · September 15, 2026
+</footer>
+</main>
+</body>
+</html>
