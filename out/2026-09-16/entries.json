@@ -1,0 +1,83 @@
+[
+  {
+    "body": "The clearest sign of A.I. in the workplace may be what does not happen: the raise that is smaller, the entry-level opening that never appears, the hiring plan that quietly gets delayed. The New York Times frames the effect as tentative but consequential, reporting that lower wage growth and slower hiring in some sectors may be tied to artificial intelligence, with younger workers especially exposed.",
+    "cluster_id": "91c5dd3b6961930f",
+    "dek": "The visible disruption isn\u2019t necessarily mass layoffs; it may be weaker wage growth and more cautious hiring, especially for younger workers.",
+    "headline": "A.I.\u2019s labor-market impact may be arriving as a slowdown, not a shock",
+    "source_ids": [
+      "91c5dd3b6961930f-s1"
+    ],
+    "why_it_matters": "A.I. disruption is often discussed as a dramatic replacement story. This points to a subtler\u2014and harder to measure\u2014version: pressure on early-career opportunity and wage bargaining before it shows up as a clean jobs crisis."
+  },
+  {
+    "body": "The Fed\u2019s next interest-rate call is being made under unusually direct political pressure. According to the New York Times, President Trump this month threatened to halt a broad swath of trade if interest rates were not cut\u2014another move aimed at an institution designed to operate independently from the White House. The economic question is rates; the institutional question is whether threats can become a routine tool for leaning on the central bank.",
+    "cluster_id": "51e623199f0fd1eb",
+    "dek": "Ahead of an interest-rate decision, the president has threatened to halt a broad swath of trade unless rates come down.",
+    "headline": "Trump\u2019s rate-cut pressure puts the Fed\u2019s independence back in the foreground",
+    "source_ids": [
+      "51e623199f0fd1eb-s1"
+    ],
+    "why_it_matters": "Markets watch the Fed for policy signals. They also watch whether the Fed can make those decisions without coercion. Political pressure on rate-setting can become its own source of uncertainty."
+  },
+  {
+    "body": "Oil markets are again being reminded how quickly infrastructure risk can become inflation risk. After attacks on Saudi pipelines, prolonged restrictions on exports could push global oil prices even higher, potentially to their highest levels in months, according to the New York Times. The key word is \u201cprolonged\u201d: a temporary disruption is one kind of shock; a sustained export constraint is another.",
+    "cluster_id": "a0feb4bb58c19338",
+    "dek": "Export restrictions after the attacks could send global oil prices to their highest levels in months, the Times reports.",
+    "headline": "Saudi pipeline attacks threaten to push oil prices higher",
+    "source_ids": [
+      "a0feb4bb58c19338-s1"
+    ],
+    "why_it_matters": "Oil prices feed into transportation, manufacturing, consumer costs, and central-bank politics. A supply disruption in Saudi Arabia can ripple far beyond energy traders."
+  },
+  {
+    "body": "In a quote highlighted by Simon Willison, Mustafa Suleyman warns against extending moral or legal consideration to A.I. models on the basis of simulated personhood. \u201cWe should not treat models as though they have feelings, preferences, rights, or any entitlement to our welfare,\u201d he says, arguing that consciousness underpins ethical, legal, and political systems and that the evidence does not justify inviting A.I. into that framework. His sharper claim: doing so could make containment and alignment harder.",
+    "cluster_id": "44dbfbcdad605105",
+    "dek": "The Microsoft A.I. executive argues that treating models as if they have feelings or rights is unsupported\u2014and could make alignment harder.",
+    "headline": "Mustafa Suleyman draws a hard line against \u2018model welfare\u2019",
+    "source_ids": [
+      "44dbfbcdad605105-s1"
+    ],
+    "why_it_matters": "As models become more conversational and emotionally persuasive, the politics of what they are\u2014not just what they do\u2014will matter. Suleyman is arguing for a boundary before public intuition softens it."
+  },
+  {
+    "body": "A.I. evaluation is moving from ad hoc benchmarking toward something more institutional. Latent Space reports that an AEF-1 standard has emerged for third-party evaluators, with xAI, OpenAI, and Anthropic all cosigning. The excerpt is sparse\u2014\u201cPacing gathers pace\u201d\u2014but the signal is clear enough: the industry is trying to formalize who gets to evaluate advanced systems and under what shared expectations.",
+    "cluster_id": "40452765391e272e",
+    "dek": "Latent Space flags the emergence of AEF-1, a third-party evaluator standard reportedly cosigned by xAI, OpenAI, and Anthropic.",
+    "headline": "A new evaluator standard gets backing from major A.I. labs",
+    "source_ids": [
+      "40452765391e272e-s1"
+    ],
+    "why_it_matters": "Independent or third-party evaluation is only as useful as the trust around it. A common standard, especially with major labs attached, could shape how safety, capability, and deployment claims get audited."
+  },
+  {
+    "body": "The physical footprint of the digital economy showed up in a very analog way: diesel in the water. A storage tank at a large data center in Secaucus, N.J., spilled about 5,000 gallons of fuel into a tributary of the Hackensack River, forcing a cleanup, according to the New York Times. The excerpt does not say what caused the spill or how much fuel reached the broader river system.",
+    "cluster_id": "1da68aa53b1febfc",
+    "dek": "About 5,000 gallons of fuel poured from a storage tank in Secaucus into a tributary of the Hackensack River.",
+    "headline": "A data center diesel spill forces cleanup in a New Jersey river system",
+    "source_ids": [
+      "1da68aa53b1febfc-s1"
+    ],
+    "why_it_matters": "Data centers are usually discussed in terms of power demand, chips, and cloud capacity. This is a reminder that they also involve tanks, backup fuel, local waterways, and environmental risk."
+  },
+  {
+    "body": "Street redesign often sounds abstract until a machine shows up and blasts the old paint away. New York City transportation officials have deployed the Stripe Hog, a high-pressure water truck that removes outdated street markings so new bus lanes and safety improvements can be installed. It is a small piece of municipal machinery with an outsized role in making street plans real.",
+    "cluster_id": "1a22ecaf03c6469a",
+    "dek": "The city is using a high-pressure water truck to erase old markings and clear the way for bus lanes and safety improvements.",
+    "headline": "New York\u2019s street redesign tool has a perfect name: the Stripe Hog",
+    "source_ids": [
+      "1a22ecaf03c6469a-s1"
+    ],
+    "why_it_matters": "Urban policy lives or dies in implementation. A faster way to erase and redraw markings can help convert transportation promises into visible changes on the street."
+  },
+  {
+    "body": "RogerEbert.com has posted table-of-contents pages for its 2026 Toronto International Film Festival and Venice Film Festival coverage. The excerpts do not identify standout films or critical consensus; they simply point readers to everything the site has covered from each festival. Still, for movie obsessives, these hubs are useful infrastructure: a way to track the early critical conversation before festival titles move toward wider release, awards campaigns, or obscurity.",
+    "cluster_id": "0f89098d64083454",
+    "dek": "The site has collected its 2026 coverage from both Toronto and Venice film festivals into table-of-contents hubs.",
+    "headline": "A festival-season reading map from RogerEbert.com",
+    "source_ids": [
+      "0f89098d64083454-s1",
+      "0f89098d64083454-s2"
+    ],
+    "why_it_matters": "Festival coverage is where many films first acquire momentum\u2014or fail to. A consolidated guide makes it easier to follow what critics are seeing before the broader movie calendar catches up."
+  }
+]

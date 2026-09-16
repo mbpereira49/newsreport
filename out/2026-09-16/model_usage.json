@@ -1,0 +1,79 @@
+{
+  "calls": [
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.09856,
+      "input_tokens": 7736,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 1996,
+      "raw_usage": {
+        "input_tokens": 7736,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1996,
+        "output_tokens_details": {
+          "reasoning_tokens": 1547
+        },
+        "total_tokens": 9732
+      },
+      "reasoning_tokens": 1547,
+      "stage": "digest_selection",
+      "total_tokens": 9732
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.06361,
+      "input_tokens": 2354,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 1728,
+      "raw_usage": {
+        "input_tokens": 2354,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1728,
+        "output_tokens_details": {
+          "reasoning_tokens": 139
+        },
+        "total_tokens": 4082
+      },
+      "reasoning_tokens": 139,
+      "stage": "digest_entries",
+      "total_tokens": 4082
+    },
+    {
+      "cached_input_tokens": 0,
+      "estimated_cost_usd": 0.108335,
+      "input_tokens": 3055,
+      "model": "gpt-5.5-2026-04-23",
+      "output_tokens": 3102,
+      "raw_usage": {
+        "input_tokens": 3055,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3102,
+        "output_tokens_details": {
+          "reasoning_tokens": 420
+        },
+        "total_tokens": 6157
+      },
+      "reasoning_tokens": 420,
+      "stage": "digest_layout",
+      "total_tokens": 6157
+    }
+  ],
+  "summary": {
+    "cached_input_tokens": 0,
+    "calls": 3,
+    "estimated_cost_usd": 0.270505,
+    "input_tokens": 13145,
+    "output_tokens": 6826,
+    "reasoning_tokens": 2106,
+    "total_tokens": 19971
+  }
+}
