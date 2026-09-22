@@ -1,0 +1,84 @@
+[
+  {
+    "body": "Behind her, Emma Grace Hurley (1:06:23 American women-only record), Weini Kelati, and Jess McClain went 5-6-7 to secure an unexpected team s",
+    "cluster_id": "bb058650b5afe591",
+    "dek": "Just like at World Cross, Agnes Ngetich once again destroyed a world-class field, but she had to dig deep to get the $50,000 bonus for the women-only WR which she got by 1-second.",
+    "headline": "Agnes Ngetich dusts the field for 1:05:15 women-only half marathon world record; US women go 5-6-7 to take stunner team silver over Ethiopia",
+    "source_ids": [
+      "bb058650b5afe591-s1",
+      "bb058650b5afe591-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in elite-running, race-commentary, running."
+  },
+  {
+    "body": "",
+    "cluster_id": "775fac69f8e2f7ae",
+    "dek": "",
+    "headline": "The current balance of power in open models",
+    "source_ids": [
+      "775fac69f8e2f7ae-s1",
+      "775fac69f8e2f7ae-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in ai, industry-analysis, model-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "5f634b23e084d11c",
+    "dek": "Inside the settlement talks between the media mogul David Ellison and the coalition of states seeking to block his $111 billion deal.",
+    "headline": "How Paramount Won Warner Bros.",
+    "source_ids": [
+      "5f634b23e084d11c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "1 spot on the Billboard chart for a 23rd nonconsecutive week, besting the record set by \u201cAll I Want for Christmas Is You.\u201d",
+    "cluster_id": "1d709601589494e3",
+    "dek": "The country ballad holds the No.",
+    "headline": "Ella Langley\u2019s \u2018Choosin\u2019 Texas\u2019 Topples Mariah Carey\u2019s Chart Record",
+    "source_ids": [
+      "1d709601589494e3-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "3e11aaf144dc87a5",
+    "dek": "President Trump\u2019s remarks about oil reserves, the drug trade and his peace efforts contained falsehoods and exaggerations.",
+    "headline": "Fact-Checking Trump\u2019s Speech at the United Nations",
+    "source_ids": [
+      "3e11aaf144dc87a5-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "93ec5ba36c0a0cf7",
+    "dek": "A veterans benefits bill that Republicans had hoped to pass ahead of the midterm elections is falling apart amid a battle over its cost.",
+    "headline": "Veterans Package Stalls After House\u2019s Swift Departure",
+    "source_ids": [
+      "93ec5ba36c0a0cf7-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "Install it like this: llm install llm-typesafe Then set an API key ( get one here , the waitlist seems to move pretty fast): llm keys set typesafe # Paste key And now you can ask yes/no \"noul\" questions like thi",
+    "cluster_id": "ede29e4aea8aba5c",
+    "dek": "Release: llm-typesafe 0.1a0 I built this new plugin for LLM to add support for TypeSafe AI's new Jev model .",
+    "headline": "llm-typesafe 0.1a0",
+    "source_ids": [
+      "ede29e4aea8aba5c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "cce9f7fa6826082a",
+    "dek": "",
+    "headline": "Why bridging AI and agriculture is key for the future of food",
+    "source_ids": [
+      "cce9f7fa6826082a-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
