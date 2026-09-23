@@ -1,0 +1,83 @@
+[
+  {
+    "body": "",
+    "cluster_id": "7bb678595bed322a",
+    "dek": "At Indienne in Hudson Yards, a Chicago chef presents the cuisine in a tasting menu that impresses more often than it seduces.",
+    "headline": "Restaurant Review: Indienne in New York",
+    "source_ids": [
+      "7bb678595bed322a-s1",
+      "7bb678595bed322a-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in cooking, dining, food."
+  },
+  {
+    "body": "Think of it as an agentic show-and-tell: \u200bCompare notes with other builders and experimenters on things you\u2019re trying, what you're learnin",
+    "cluster_id": "a99c0a425d55324c",
+    "dek": "I'm hosting an evening event with Jesse Vincent in San Francisco on Wednesday 14th October for people who are building weird and interesting things with and on top of coding agents.",
+    "headline": "SF October 14th: A Birds of a Feather Session on Agentic Engineering",
+    "source_ids": [
+      "a99c0a425d55324c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "Today Anthropic released Claude Opus 5.5 , and around an hour later OpenAI released GPT-6 Sol and GPT-6 Luna . It's going to take a while to get a good read on all of these new models, but here are my impressions so far. GPT-6 Sol and Luna a",
+    "cluster_id": "3b2d37bc71ed9a55",
+    "dek": "Yesterday was Grok 4.7 ( pelicans ) and MiMo v2.6 Flash/Pro ( more pelicans ).",
+    "headline": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
+    "source_ids": [
+      "3b2d37bc71ed9a55-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "e28c0141b868593d",
+    "dek": "The compromise, if confirmed, would be the latest in a string of cybersecurity failures at the F.B.I., which said it was investigating the matter.",
+    "headline": "Hackers Say They Stole Thousands of Sensitive F.B.I. Personnel Records",
+    "source_ids": [
+      "e28c0141b868593d-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "He was taken to the hospital on Sunday with head and neck injuries, local police said.",
+    "cluster_id": "794442cfceac63ad",
+    "dek": "The Department of Homeland Security said agents released the man after he identified himself.",
+    "headline": "ICE Mistakenly Detains U.S. Citizen in Chicago Area, Leaving Him Injured",
+    "source_ids": [
+      "794442cfceac63ad-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "71d19eedf2331ddc",
+    "dek": "The home of Sean Hannity and Laura Ingraham has joined rival networks in suspending its coverage of pooled presidential events.",
+    "headline": "Fox News Finds Itself at Odds With Trump on Press Ban",
+    "source_ids": [
+      "71d19eedf2331ddc-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "Bessent incorrectly listed at least $100,000 of the stock, which was owned by his husband, as cash.",
+    "cluster_id": "dab7d0a3989e1631",
+    "dek": "Treasury Secretary Scott Bessent\u2019s finances were reviewed by the inspector general after Mr.",
+    "headline": "Bessent \u2018Inadvertently\u2019 Failed to Report Holdings of JPMorgan Stock",
+    "source_ids": [
+      "dab7d0a3989e1631-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "9f233529005c9c8d",
+    "dek": "",
+    "headline": "He\u2019s Less Obnoxious as a Falcon Than a Monk",
+    "source_ids": [
+      "9f233529005c9c8d-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
