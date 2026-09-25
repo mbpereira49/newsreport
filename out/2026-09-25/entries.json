@@ -1,0 +1,84 @@
+[
+  {
+    "body": "",
+    "cluster_id": "0d878e5a0f2af42d",
+    "dek": "Easing tensions with Washington gives Beijing room to tackle economic troubles at home while reducing its vulnerability to American pressure.",
+    "headline": "China\u2019s Truce With Trump Buys It Valuable Time",
+    "source_ids": [
+      "0d878e5a0f2af42d-s1",
+      "0d878e5a0f2af42d-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "b20f52f18a7e8f7b",
+    "dek": "",
+    "headline": "Here\u2019s the latest.",
+    "source_ids": [
+      "b20f52f18a7e8f7b-s1",
+      "b20f52f18a7e8f7b-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in context, general, new-york."
+  },
+  {
+    "body": "",
+    "cluster_id": "779a31ca385bb715",
+    "dek": "Muse is getting a lot of attention \u2014 including mine \u2014 because it\u2019s both groundbreaking technically (each user gets their own entire persistent Linux VM running in Meta\u2019s cloud) and because it\u2019s packaged in an easy-to-...",
+    "headline": "Quoting John Gruber",
+    "source_ids": [
+      "779a31ca385bb715-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "They really like hanging out under that sign in the harbor!",
+    "cluster_id": "1eac4cb848de7501",
+    "dek": ", in Monterey Bay National Marine Sanctuary, CA, US, CA New 200-800mm Canon EF lens got me my best photo of Morris yet.",
+    "headline": "Northern Gannet, Great Blue Heron, California Brown Pelican",
+    "source_ids": [
+      "1eac4cb848de7501-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "91826b39dafbe084",
+    "dek": "Rain, flooding and gusty winds are in the forecast this weekend for the Northeast, including New York and Boston.",
+    "headline": "Live Updates: Powerful Fall Storm Strengthens as It Crawls Up the East Coast",
+    "source_ids": [
+      "91826b39dafbe084-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "7c02a0c5a32ce5b7",
+    "dek": "Investigators found that New Jersey\u2019s lieutenant governor, Dale Caldwell, sought a promotion for his girlfriend and made a sexually charged comment to a staff member.",
+    "headline": "Dale Caldwell, New Jersey\u2019s Lt. Governor, Violated Workplace Policies, Report Finds",
+    "source_ids": [
+      "7c02a0c5a32ce5b7-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "Questions remain about its reliability.",
+    "cluster_id": "4a0b8e702a4605d4",
+    "dek": "The Supreme Court allowed the Trump administration to deploy a system that merges personal data from across the government.",
+    "headline": "Here\u2019s How Trump Is Building a National Citizenship Database to Check Voters",
+    "source_ids": [
+      "4a0b8e702a4605d4-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "37d8ec4d1dd708ca",
+    "dek": "",
+    "headline": "Bounded Minds, Generative Machines",
+    "source_ids": [
+      "37d8ec4d1dd708ca-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
