@@ -1,0 +1,82 @@
+[
+  {
+    "body": "Same as last year I'll be live blogging the keynote and some other notes during the day. OpenAI gave me a free ticket and a seat in the \"creator\" area for the keynote.",
+    "cluster_id": "413e0f8c69c8aec1",
+    "dek": "I'm at OpenAI DevDay today, in Fort Mason, San Francisco.",
+    "headline": "OpenAI DevDay 2026 live blog",
+    "source_ids": [
+      "413e0f8c69c8aec1-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "They say it \"runs 30%+ faster, and costs up to 30% less for most work\" - it's priced the same as Sonnet 5 but appears to beat it on every benchmark, and should be cheaper to run as well. Here are some pelicans riding bicycles . Sonnet 5.5 suffered from the same bug as Opus 5.5 : t",
+    "cluster_id": "d8ceed70ef7a7285",
+    "dek": "New Sonnet model from Anthropic today.",
+    "headline": "Claude Sonnet 5.5",
+    "source_ids": [
+      "d8ceed70ef7a7285-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "Peltola, the Alaska Democrat running for Senate, was shaped by growing up in remote villages in southwestern Alaska.",
+    "cluster_id": "d5616ba4c58d6026",
+    "dek": "Ms.",
+    "headline": "Chartering a Boat on the Kuskokwim River to Reach Peltola\u2019s Alaska",
+    "source_ids": [
+      "d5616ba4c58d6026-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "He held the woman against her will for six weeks, officials said.",
+    "cluster_id": "cf78dddef181a764",
+    "dek": "The man, Jordende Pierre, 29, faces kidnapping, sex trafficking and other charges.",
+    "headline": "Woman Is Found Captive in Attic Near Boston, Leading to Charges for Man",
+    "source_ids": [
+      "cf78dddef181a764-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "a1066ca6b471ff19",
+    "dek": "Assemblywoman Rodneyse Bichotte Hermelyn will not seek another term after the party was thrown into chaos after disputed rule changes.",
+    "headline": "Brooklyn Democratic Chair Accused of \u2018Power Grab\u2019 Won\u2019t Seek Re-election",
+    "source_ids": [
+      "a1066ca6b471ff19-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "9ff2b8ffb9d83ee9",
+    "dek": "A report issued by Mayor Zohran Mamdani describes ways that New York City is funding hate crime prevention and celebrating the contributions of Jewish New Yorkers.",
+    "headline": "Mamdani Announces Plan to Fight Antisemitism, Without Discussing Israel",
+    "source_ids": [
+      "9ff2b8ffb9d83ee9-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "786c8272bb2aca15",
+    "dek": "Saudi authorities had taken the pipeline offline this month after it was damaged in a drone attack by an Iranian-backed Iraqi militia.",
+    "headline": "Tankers Are Loading Oil Again From a Vital Saudi Pipeline",
+    "source_ids": [
+      "786c8272bb2aca15-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "be256ee2b4e28ef4",
+    "dek": "",
+    "headline": "Documentary Review: Hog Heaven: The Pigz Brotherz Story: Documenting a Rosy High and a Forced Decline",
+    "source_ids": [
+      "be256ee2b4e28ef4-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
