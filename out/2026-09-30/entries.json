@@ -1,0 +1,82 @@
+[
+  {
+    "body": "",
+    "cluster_id": "6594d649bfae0083",
+    "dek": "Shouyong Zhang and Shili Chen were accused of planning the killing of Jonathan McKinsey, an engineer who worked in the games department of The New York Times, near a park in Dublin, Calif.",
+    "headline": "California Couple Charged With Murder in Shooting of Son-in-Law",
+    "source_ids": [
+      "6594d649bfae0083-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "2af4d5c108269882",
+    "dek": "The lawsuit filed by Louisiana, Alabama and Arkansas to the Supreme Court escalates the battle between states that outlaw abortion and those that support nationwide access by mail.",
+    "headline": "States That Ban Abortion Challenge Shield Laws for Providers Who Mail Pills",
+    "source_ids": [
+      "2af4d5c108269882-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "52fce156adf92280",
+    "dek": "The former New York governor bought a compound on the South Shore of Long Island in June that includes a nine-bedroom main house, a guesthouse and a tennis court.",
+    "headline": "Andrew Cuomo Buys $10 Million Hamptons Home After Mayoral Loss",
+    "source_ids": [
+      "52fce156adf92280-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "Officials are moving to address a growing safety crisis.",
+    "cluster_id": "4c3321159b3ce732",
+    "dek": "More than two dozen people have died in crashes involving electric bikes and scooters in New York City this year.",
+    "headline": "As E-Bikes and Scooters Surge on New York Streets, So Do Fatal Crashes",
+    "source_ids": [
+      "4c3321159b3ce732-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "attorney general.",
+    "cluster_id": "3d7e6baeafe533b2",
+    "dek": "A new report by the Federal Reserve\u2019s independent inspector general concluded that a nearly $2.5 billion construction project was poorly managed but made no referrals to the U.S.",
+    "headline": "Fed\u2019s Watchdog Finds No Misconduct or Illegal Activity in Costly Renovations",
+    "source_ids": [
+      "3d7e6baeafe533b2-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "0e473ffbcc4bc2ad",
+    "dek": "The Equal Employment Opportunity Commission filed a lawsuit asking a judge to compel the university to provide information on hiring practices that the agency said discriminated against white men.",
+    "headline": "E.E.O.C. Sues Harvard for Data on Diversity in Hiring Practices",
+    "source_ids": [
+      "0e473ffbcc4bc2ad-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "Analysts say any plan would face multiple daunting challenges.",
+    "cluster_id": "3ab39d42f2350052",
+    "dek": "The president has entertained the idea of tearing down the performing arts venue.",
+    "headline": "Can Trump Legally Demolish the Kennedy Center? Experts Say Not Easily.",
+    "source_ids": [
+      "3ab39d42f2350052-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in arts, context, culture."
+  },
+  {
+    "body": "",
+    "cluster_id": "6bd2a8049b9730fc",
+    "dek": "",
+    "headline": "Meet the professor who thinks generic AI models should become obsolete",
+    "source_ids": [
+      "6bd2a8049b9730fc-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
