@@ -1,0 +1,12 @@
+{
+  "calls": [],
+  "summary": {
+    "cached_input_tokens": 0,
+    "calls": 0,
+    "estimated_cost_usd": 0.0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "total_tokens": 0
+  }
+}

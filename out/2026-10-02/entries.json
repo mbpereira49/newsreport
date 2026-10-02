@@ -1,0 +1,83 @@
+[
+  {
+    "body": "Eater editors do thorough reporting on the most exciting restaurant openings to hit their city, as well as smaller openings worth having on the radar. In this map, we narrow the field to those places in Brooklyn that are drawing",
+    "cluster_id": "0df3400ed6c00979",
+    "dek": "Welcome to the Eater Heatmap, focusing on the hottest new openings in Brooklyn this month.",
+    "headline": "The Best New Restaurants in Brooklyn, According to Eater Editors",
+    "source_ids": [
+      "0df3400ed6c00979-s1",
+      "0df3400ed6c00979-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "",
+    "cluster_id": "cbf833bfa635107b",
+    "dek": "Prosecutors have long considered the defendants\u2019 admissions during interrogations in 2007 to be their best evidence.",
+    "headline": "Judge Throws Out Another Confession in Sept. 11 Case",
+    "source_ids": [
+      "cbf833bfa635107b-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "a4e3e2dd74660b15",
+    "dek": "The move, affecting about one-fifth of the National Science Foundation\u2019s primary research budget, is the latest sign of how the White House is asserting more control over grants.",
+    "headline": "National Science Foundation Diverted $1.4 Billion in Science Funds Mandated by Congress",
+    "source_ids": [
+      "a4e3e2dd74660b15-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "88a0afb52a85d7a1",
+    "dek": "Economists had taken a recent drop in Black unemployment as a hopeful sign that job gains were lifting a broad share of workers.",
+    "headline": "Black Unemployment Rose Sharply in September, Jobs Report Shows",
+    "source_ids": [
+      "88a0afb52a85d7a1-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "61331cc3c9c27c58",
+    "dek": "The odds of an interest rate change at the Federal Reserve\u2019s meeting in late October have dropped following a softer jobs report and strong signaling from bank officials.",
+    "headline": "Soft Jobs Report Boosts Market Bets Fed Will Skip October Rate Increase",
+    "source_ids": [
+      "61331cc3c9c27c58-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "36946b6161e5e8a7",
+    "dek": "\u201cYour Mother Your Mother Your Mother\u201d was conceived well before the star and the director met for \u201cBlade.\u201d But it was fatherhood that informed the new movie.",
+    "headline": "Mahershala Ali and Bassam Tariq on Faith and Love in \u2018Your Mother Your Mother Your Mother\u2019",
+    "source_ids": [
+      "36946b6161e5e8a7-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in criticism, movies, reviews."
+  },
+  {
+    "body": "The star brings his usual high energy to the role of a Texas oil tycoon in Alejandro G. I\u00f1\u00e1rritu\u2019s ponderous climate comedy.",
+    "cluster_id": "39715de6ce173e6f",
+    "dek": "Though mightily he does try.",
+    "headline": "\u2018Digger\u2019 Review: Even Tom Cruise Can\u2019t Save This Strained Satire",
+    "source_ids": [
+      "39715de6ce173e6f-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in criticism, movies, reviews."
+  },
+  {
+    "body": "",
+    "cluster_id": "fa0167dfdede7e2f",
+    "dek": "The football drama\u2019s themes of community and hope are just as moving today, but ever more distant.",
+    "headline": "\u2018Friday Night Lights\u2019 at 20: Can We Ever Get Back to Dillon?",
+    "source_ids": [
+      "fa0167dfdede7e2f-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in arts, context, culture."
+  }
+]
