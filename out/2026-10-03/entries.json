@@ -1,0 +1,84 @@
+[
+  {
+    "body": "Eater editors do thorough reporting on the most exciting restaurant openings to hit their city, as well as smaller openings worth having on the radar. In this map, we narrow the field to those places in Brooklyn that are drawing",
+    "cluster_id": "0df3400ed6c00979",
+    "dek": "Welcome to the Eater Heatmap, focusing on the hottest new openings in Brooklyn this month.",
+    "headline": "The Best New Restaurants in Brooklyn, According to Eater Editors",
+    "source_ids": [
+      "0df3400ed6c00979-s1",
+      "0df3400ed6c00979-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "Humm will debut October 10 at 435 Hudson Street, between Leroy and Morton streets, in the West Village. This is a big-deal ope",
+    "cluster_id": "342f024fb05b48f1",
+    "dek": "Reservations open today, Thursday, October 1, for Humm, the new casual restaurant from Daniel Humm and the team behind fine dining beacon Eleven Madison Park and its newer sibling Clemente Bar.",
+    "headline": "Reservations Have Opened for Daniel Humm\u2019s New Downtown Restaurant",
+    "source_ids": [
+      "342f024fb05b48f1-s1",
+      "342f024fb05b48f1-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "",
+    "cluster_id": "a7a3218f0351e38d",
+    "dek": "Faced with bots immune to traditional marketing tactics, marketers are racing to win them over with logic and data.",
+    "headline": "As A.I. Agents Begin Shopping, Brands Are Changing Their Sales Pitch",
+    "source_ids": [
+      "a7a3218f0351e38d-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "0778da30394bdb82",
+    "dek": "The president, who had hoped to tout a growing economy on the campaign trail, has found it hard to break through as workers\u2019 wages fail to keep up.",
+    "headline": "Trump Says Economy Has \u2018Public Relations\u2019 Problem Amid High Prices and Slow Hiring",
+    "source_ids": [
+      "0778da30394bdb82-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "Sellers say they are serving a market.",
+    "cluster_id": "000774968a85b928",
+    "dek": "New York City lawmakers say many vendors are misleading tourists who seek an up-close experience, and they want to tighten enforcement.",
+    "headline": "Statue of Liberty Boat Tours: Legit or Scams? Depends Whom You Ask.",
+    "source_ids": [
+      "000774968a85b928-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "c0f668a7d9847619",
+    "dek": "Records show that campus police officers informed Tompkins County prosecutors that they had conducted additional interviews beyond taking a statement from the woman who said she was raped.",
+    "headline": "D.A. in Cornell Rape Inquiry Declined to Review Additional Evidence",
+    "source_ids": [
+      "c0f668a7d9847619-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "He could face pressure should Democrats win the Senate in November.",
+    "cluster_id": "5415736bcc625249",
+    "dek": "The justice, the second oldest on the court at 76, told CBS News that he decided against stepping down last term.",
+    "headline": "As Midterms Near, Justice Alito Says He Considers Each Year Whether to Retire",
+    "source_ids": [
+      "5415736bcc625249-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "27241a1c456f68d5",
+    "dek": "",
+    "headline": "Winners of the International Booker Prize",
+    "source_ids": [
+      "27241a1c456f68d5-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
