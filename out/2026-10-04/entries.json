@@ -1,0 +1,84 @@
+[
+  {
+    "body": "Eater editors do thorough reporting on the most exciting restaurant openings to hit their city, as well as smaller openings worth having on the radar. In this map, we narrow the field to those places in Brooklyn that are drawing",
+    "cluster_id": "0df3400ed6c00979",
+    "dek": "Welcome to the Eater Heatmap, focusing on the hottest new openings in Brooklyn this month.",
+    "headline": "The Best New Restaurants in Brooklyn, According to Eater Editors",
+    "source_ids": [
+      "0df3400ed6c00979-s1",
+      "0df3400ed6c00979-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "Humm will debut October 10 at 435 Hudson Street, between Leroy and Morton streets, in the West Village. This is a big-deal ope",
+    "cluster_id": "342f024fb05b48f1",
+    "dek": "Reservations open today, Thursday, October 1, for Humm, the new casual restaurant from Daniel Humm and the team behind fine dining beacon Eleven Madison Park and its newer sibling Clemente Bar.",
+    "headline": "Reservations Have Opened for Daniel Humm\u2019s New Downtown Restaurant",
+    "source_ids": [
+      "342f024fb05b48f1-s1",
+      "342f024fb05b48f1-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "I'm talking about the feature of pay-by-usage services and APIs that lets you say \"after $X/month, cut this thing off and return errors\". These need to be hard limits. Soft caps, \"a",
+    "cluster_id": "618fbede52ab69e2",
+    "dek": "Here's a product feature which the world is going to need a whole lot more of over the coming months and years: default hard budget caps .",
+    "headline": "We're going to need default hard budget caps on pretty much everything",
+    "source_ids": [
+      "618fbede52ab69e2-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "If you are a sponsor (or start a sponsorship now) you can access it here . This month: More Fable class models A pricing war 3D graphics, Blender, and pixel art LLMs come for mathematics So many more accidental cyberattacks The vulnapocalypse co",
+    "cluster_id": "ea7497c182780c19",
+    "dek": "I just sent the September edition of my sponsors-only monthly newsletter .",
+    "headline": "September sponsors-only newsletter",
+    "source_ids": [
+      "ea7497c182780c19-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "Can the university ever be the same?",
+    "cluster_id": "89238f3d33b1478e",
+    "dek": "Accusations of sexual assault at a fraternity party have tarnished the self-image of a fiercely proud Ivy League institution.",
+    "headline": "A Campus Reckoning: \u2018Cornell Is Now Known for This\u2019",
+    "source_ids": [
+      "89238f3d33b1478e-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "Kathy Hochul and the New York attorney general, Letitia James, has raised questions of impartiality as both face re-election.",
+    "cluster_id": "7e95fc723ebd3cb5",
+    "dek": "The decision to intercede by Gov.",
+    "headline": "Cornell Case Carries Far-Reaching Implications for Hochul and James",
+    "source_ids": [
+      "7e95fc723ebd3cb5-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "Economic challenges during President Trump\u2019s second term, as well as other factors, have put it in play.",
+    "cluster_id": "b8dfd0157707c019",
+    "dek": "The state hasn\u2019t elected a Democrat to the Senate in nearly a century.",
+    "headline": "How Kansas Suddenly Became a Battleground State for Senate Control",
+    "source_ids": [
+      "b8dfd0157707c019-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "d956b266b2e585b4",
+    "dek": "",
+    "headline": "Film Review: \u2018The History of Concrete\u2019 \u2013 A visual gag of urban existentialism",
+    "source_ids": [
+      "d956b266b2e585b4-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
