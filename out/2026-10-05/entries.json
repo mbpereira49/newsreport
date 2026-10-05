@@ -1,0 +1,82 @@
+[
+  {
+    "body": "",
+    "cluster_id": "f17c780aa70f22a3",
+    "dek": "A school bus carrying 39 people to Winter Haven High School in Florida was struck by a sedan and rolled over, killing a student and a person in another vehicle, officials said.",
+    "headline": "2 People, Including Winter Haven High School Student, Killed in Florida Bus Crash",
+    "source_ids": [
+      "f17c780aa70f22a3-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "bbad5babab1f31ad",
+    "dek": "The candidates for Ohio governor have significant policy differences, but the campaign ads have been strikingly personal, with exaggerated portrayals of one candidate as a con artist and the other as a drunk.",
+    "headline": "The Campaign for Ohio\u2019s Next Governor May Be the Ugliest in the Country",
+    "source_ids": [
+      "bbad5babab1f31ad-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "The concerts are back on now, thanks to a tech company gift.",
+    "cluster_id": "af111e73ce051b8e",
+    "dek": "The symphony announced last week that it was pausing the rest of the season after disclosing financial trouble.",
+    "headline": "Nashville Symphony Receives $10 Million Lifeline From Oracle",
+    "source_ids": [
+      "af111e73ce051b8e-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "But they are doing little to dampen enthusiasm for investments in A.I. infrastructure, which are contributing to inflation.",
+    "cluster_id": "8aad25d03d452d3c",
+    "dek": "Rising borrowing costs are taking a toll on households and businesses.",
+    "headline": "High Interest Rates Aren\u2019t Slowing the A.I. Boom. That\u2019s a Problem for the Fed.",
+    "source_ids": [
+      "8aad25d03d452d3c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "3bb6368acfbefe54",
+    "dek": "Research: Qwen3.8 27B addition in words Colin Frasier posted on Bluesky about an experiment he ran over two years ago using GPT-4o to see how well it could \"compute the sum but return the answer in words\" across incre...",
+    "headline": "Qwen3.8 27B addition in words",
+    "source_ids": [
+      "3bb6368acfbefe54-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "I'm talking about the feature of pay-by-usage services and APIs that lets you say \"after $X/month, cut this thing off and return errors\". These need to be hard limits. Soft caps, \"a",
+    "cluster_id": "618fbede52ab69e2",
+    "dek": "Here's a product feature which the world is going to need a whole lot more of over the coming months and years: default hard budget caps .",
+    "headline": "We're going to need default hard budget caps on pretty much everything",
+    "source_ids": [
+      "618fbede52ab69e2-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "I\u00f1\u00e1rritu knows that \u201cDigger\u201d is polarizing. \u201cI prefer that to the lukewarm reception,\u201d he says of the climate-change satire with Tom Cruise.",
+    "cluster_id": "9617e2ac78ead2c2",
+    "dek": "Alejandro G.",
+    "headline": "Alejandro G. I\u00f1\u00e1rritu Knows That \u2018Digger\u2019 Is Polarizing. That\u2019s the Point.",
+    "source_ids": [
+      "9617e2ac78ead2c2-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in criticism, movies, reviews."
+  },
+  {
+    "body": "",
+    "cluster_id": "c37535784896c42a",
+    "dek": "",
+    "headline": "Does the gender pay gap extend to AI? New University of Limerick research finds female AI agents \u2018paid\u2019 less",
+    "source_ids": [
+      "c37535784896c42a-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
