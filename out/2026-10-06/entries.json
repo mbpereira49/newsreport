@@ -1,0 +1,86 @@
+[
+  {
+    "body": "ones.",
+    "cluster_id": "bd680ada31b3dc0d",
+    "dek": "Reflection AI, a start-up backed by Nvidia, unveiled an open-weight artificial intelligence model meant to compete with Chinese tools \u2014 and other U.S.",
+    "headline": "A New Open-Weight Challenger to Anthropic, Reflection, Emerges",
+    "source_ids": [
+      "bd680ada31b3dc0d-s1",
+      "bd680ada31b3dc0d-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in ai, business, context."
+  },
+  {
+    "body": "",
+    "cluster_id": "f0b148f5bc40ff28",
+    "dek": "",
+    "headline": "Critic-Favorite Lucia Pizza Opens First Upper West Side Slice Shop",
+    "source_ids": [
+      "f0b148f5bc40ff28-s1",
+      "f0b148f5bc40ff28-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in nyc-food, restaurants."
+  },
+  {
+    "body": "Now it\u2019s a casualty in the trade war with Canada.",
+    "cluster_id": "e2e63453067e1edc",
+    "dek": "The Can-Am Spyder has a devoted fan base across the United States.",
+    "headline": "How Trump\u2019s Tariff War With Canada Ensnared the Can-Am Spyder",
+    "source_ids": [
+      "e2e63453067e1edc-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "393662fde46954d9",
+    "dek": "The plea hearing revealed a far larger pattern of fraud against the government, while keeping some key secrets still hidden.",
+    "headline": "Ex-C.I.A. Officer Who Stashed Gold Bars Admits to Far Larger $145 Million Scam",
+    "source_ids": [
+      "393662fde46954d9-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "A White House official said he was taken out of context.",
+    "cluster_id": "7e9d5e29c6a60259",
+    "dek": "President Trump\u2019s comments caused an uproar from members of both parties.",
+    "headline": "What, Exactly, Did Trump Say About Iran Taking Out Los Angeles and San Diego?",
+    "source_ids": [
+      "7e9d5e29c6a60259-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "Gary R. Brown, a federal judge, condemned the agency\u2019s actions.",
+    "cluster_id": "111f042b45db3d32",
+    "dek": "Two men were mistakenly arrested in the Bronx by Immigration and Customs Enforcement agents.",
+    "headline": "Trump-Appointed Judge Accuses ICE of Lying and Fabricating Records",
+    "source_ids": [
+      "111f042b45db3d32-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "179545619fc99b73",
+    "dek": "Five women have said they were the targets of malicious public relations campaigns that were spearheaded by three influential players.",
+    "headline": "How to Destroy a Reputation in Hollywood, as Told in 5 Women\u2019s Lawsuits",
+    "source_ids": [
+      "179545619fc99b73-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "The winners will be announced at the 77th National Book Awards Ceremony & Benefit Dinner",
+    "cluster_id": "b89c5384c57a249d",
+    "dek": "Today, the National Book Foundation announced the finalists in all five categories\u2014Fiction, Nonfiction, Poetry, Translated Literature, and Young People\u2019s Literature\u2014for the 2026 National Book Awards.",
+    "headline": "Here are the 2026 National Book Awards finalists.",
+    "source_ids": [
+      "b89c5384c57a249d-s1",
+      "b89c5384c57a249d-s2",
+      "b89c5384c57a249d-s3"
+    ],
+    "why_it_matters": "Flagged from 3 sources in books, criticism, literary-fiction."
+  }
+]
