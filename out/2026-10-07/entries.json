@@ -1,0 +1,84 @@
+[
+  {
+    "body": "Eater editors do thorough reporting on the most exciting restaurant openings to hit the city, as well as smaller openings worth having on the radar. In this monthly map, we narrow the field to cocktail bars that are",
+    "cluster_id": "7de3977e5ee2d35d",
+    "dek": "Welcome to the Eater Cocktail Heatmap, focusing on the hottest new bar openings in New York every month.",
+    "headline": "The Best New Cocktail Bars in New York City, According to Eater Editors",
+    "source_ids": [
+      "7de3977e5ee2d35d-s1",
+      "7de3977e5ee2d35d-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "",
+    "cluster_id": "3823b3f508bc38f1",
+    "dek": "Burmese Bites has traveled a three-decade road, from street fairs to a market stall to this Astoria spot where the fine-tuned cooking enthralls.",
+    "headline": "Restaurant Review: Burmese Bites in New York",
+    "source_ids": [
+      "3823b3f508bc38f1-s1",
+      "3823b3f508bc38f1-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in cooking, dining, food."
+  },
+  {
+    "body": "",
+    "cluster_id": "b70945ca35ddf1e9",
+    "dek": "Policymakers grew increasingly concerned about inflation risks at their most recent meeting in September.",
+    "headline": "Fed Minutes Show Officials Saw More Work to Do to Quell Inflation",
+    "source_ids": [
+      "b70945ca35ddf1e9-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "54a261ebb2b93bd5",
+    "dek": "An American Airlines flight was diverted to New York on Tuesday because of an \u201cinadequate number of operational lavatories\u201d \u2014 two, on a plane that normally has eight.",
+    "headline": "6 Broken Bathrooms Force Flight to Make an Urgent Landing",
+    "source_ids": [
+      "54a261ebb2b93bd5-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "3c0526b4199a0404",
+    "dek": "The civil rights investigation was the latest salvo by the Trump administration against the largest school system in the country.",
+    "headline": "Education Dept. Is Investigating Sexual Misconduct in N.Y.C. Schools",
+    "source_ids": [
+      "3c0526b4199a0404-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "bb1fe5e3ef81e485",
+    "dek": "A 27-year-old woman who received a shot of a longevity supplement at Luis Rojas Cabrera\u2019s office in the Bronx died of an embolism.",
+    "headline": "Unlicensed Wellness-Spa Director in Bronx Faces Murder Charge for Fatal Injection",
+    "source_ids": [
+      "bb1fe5e3ef81e485-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "from political interference.",
+    "cluster_id": "35eb0d89d2ee002b",
+    "dek": "Senator Patty Murray, a former chair of the Senate health committee, is forming a group of experts to examine how to insulate the C.D.C.",
+    "headline": "A Public Health-Minded Senator Asks: What Comes After Trump and Kennedy?",
+    "source_ids": [
+      "35eb0d89d2ee002b-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "82bd0a6cb3df66c2",
+    "dek": "",
+    "headline": "Unpacking the New SNAP Stocking Requirements",
+    "source_ids": [
+      "82bd0a6cb3df66c2-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
