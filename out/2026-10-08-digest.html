@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Daily - 2026-10-08</title>
+<style>
+:root {
+  color-scheme: light;
+  --ink: #121212;
+  --muted: #555555;
+  --line: #222222;
+  --fine-line: #d9d9d9;
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --wash: #f2f2f2;
+  --accent: #1f4e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 32px;
+  padding: 24px 44px 40px;
+  background: var(--paper);
+  border: 0;
+  box-shadow: none;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead-rule {
+  grid-column: 1 / -1;
+  display: block;
+  border-top: 1px solid var(--line);
+}
+
+.masthead-rule.heavy {
+  border-top: 3px double var(--line);
+}
+
+.kicker,
+.dateline,
+.sources,
+.story-number,
+.section-label,
+.edition-footer {
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.kicker {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.masthead h1 {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0 auto;
+  font-family: "Hoefler Text", "Bodoni 72", Didot, Baskerville, Georgia, serif;
+  font-size: 4.7rem;
+  line-height: 0.92;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.dateline {
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brief-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0;
+  margin: 16px 0 18px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.brief-card {
+  min-width: 0;
+  padding: 4px 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+}
+
+.brief-card:first-child {
+  border-left: 0;
+}
+
+.brief-card h2 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brief-card p,
+.brief-card li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.brief-card p + p,
+.brief-card li + li {
+  margin-top: 8px;
+}
+
+.brief-card ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.brief-card li span {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 310px);
+  gap: 18px 26px;
+  margin-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: 3px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.section-label,
+.story-number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-label {
+  grid-column: 1 / -1;
+  width: auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--fine-line);
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.lead-story h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dek {
+  margin: 4px 0 8px;
+  color: #312e2a;
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lead-story .dek {
+  grid-column: 1 / -1;
+  max-width: 820px;
+  color: #312e2a;
+  font-size: 1.16rem;
+}
+
+.lead-lower {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 28px;
+  align-items: start;
+  margin-top: 4px;
+}
+
+.lead-lower.meta-only {
+  grid-template-columns: minmax(220px, 340px);
+}
+
+.story-meta {
+  padding: 0 0 0 14px;
+  background: transparent;
+  border-left: 1px solid var(--fine-line);
+  border-radius: 0;
+  color: var(--ink);
+}
+
+.body-copy p {
+  margin: 0 0 0.85rem;
+}
+
+.lead-story .body-copy {
+  color: var(--ink);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 28px;
+}
+
+.story-card {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 0 0 16px;
+  background: transparent;
+  border-bottom: 1px solid var(--fine-line);
+  border-radius: 0;
+  break-inside: avoid;
+}
+
+.story-card:not(:nth-child(3n+1)) {
+  padding-left: 18px;
+  border-left: 1px solid var(--fine-line);
+}
+
+.story-number {
+  width: auto;
+  margin-bottom: 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--accent);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.story-card h2 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.12;
+  font-weight: 700;
+}
+
+.story-card .dek {
+  font-size: 0.98rem;
+  margin-top: 8px;
+}
+
+.why {
+  margin: 12px 0 0;
+  padding: 8px 0 0;
+  background: transparent;
+  border-top: 1px solid var(--fine-line);
+  border-left: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.lead-story .why {
+  background: transparent;
+}
+
+.sources {
+  margin: 12px 0 0;
+  font-size: 0.78rem;
+}
+
+.lead-story .sources {
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 78, 121, 0.35);
+}
+
+.lead-story a {
+  color: var(--accent);
+  border-bottom-color: rgba(31, 78, 121, 0.35);
+}
+
+.edition-footer {
+  margin-top: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 18px 34px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+  }
+
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .kicker,
+  .masthead h1,
+  .dateline {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .dateline {
+    justify-self: start;
+    white-space: normal;
+  }
+
+  .lead-story {
+    grid-template-columns: 1fr;
+    padding: 16px 0 18px;
+  }
+
+  .lead-story h2 {
+    font-size: 2.1rem;
+  }
+
+  .lead-lower,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-meta {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--fine-line);
+    padding-top: 12px;
+  }
+
+  .story-card:not(:nth-child(3n+1)) {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  a {
+    color: inherit;
+    border-bottom: 0;
+  }
+}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><div class="masthead-rule"></div><p class="kicker">Personal edition</p><h1>Personal Daily</h1><p class="dateline">Thursday, October 8, 2026 · America/Los Angeles</p><div class="masthead-rule heavy"></div></header>
+<aside class="brief-strip" aria-label="Daily notes">
+<section class="brief-card"><h2>Editor's Note</h2><p>This is optional local context for the digest editor. Replace it with standing preferences, reminders, or leave the file empty.</p></section>
+</aside>
+<section class="lead-story"><div class="section-label">Lead story</div><h2>Examining Footage From the Night of Epstein's Death</h2><p class="dek">Jeffrey Epstein’s 2019 death was ruled a suicide, but seven years later, skepticism remains widespread.</p><div class="lead-lower"><div class="body-copy"><p>In this New York Times special report, the host Natalie Kitroeff sits down with the reporters Jan Ransom, Steve Eder, Michael Rothfeld and Charles Homans to examine jail surveillance footage from the night of Mr. Eps</p></div><div class="story-meta"><p class="why"><strong>Why it matters:</strong> Flagged from 1 source in context, general, us.</p><p class="sources">Sources: <a href="https://nytimes.com/video/us/100000011201216/examining-footage-from-the-night-of-epsteins-death.html" target="_blank" rel="noreferrer">NYT U.S.</a> · <a href="https://nytimes.com/video/us/100000011201199/was-jeffrey-epstein-really-suicidal.html" target="_blank" rel="noreferrer">NYT U.S.</a> · <a href="https://nytimes.com/video/us/100000011200882/what-really-happened-to-jeffrey-epstein-a-times-investigation.html" target="_blank" rel="noreferrer">NYT U.S.</a></p></div></div></section>
+<section class="story-grid" aria-label="Digest stories">
+<article class="story-card"><div class="story-number">02</div><h2>Anne Carson has won the 2026 Nobel Prize in Literature.</h2><p class="dek">Today, the Swedish Academy awarded the 2026 Nobel Prize in Literature to Canadian author Anne Carson, for “her bold and inventive oeuvre that in playful dialogue with the classical tradition has created new forms for...</p><p class="why"><strong>Why it matters:</strong> Flagged from 2 sources in books, criticism, literary-fiction.</p><p class="sources">Sources: <a href="https://lithub.com/anne-carson-has-won-the-2026-nobel-prize-in-literature/" target="_blank" rel="noreferrer">Literary Hub</a> · <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaVFzdTFUT244MEZBdlB6ekNJeFlQNzlYNnlhcFJLYlVWc2NCWW5tRE5rdTlzMk0ydi1HU2FMdkNJTGZqTUNIbWxlLTAwSkFucTF5Qkl6RTNuTm80QU1SX21CUHRSemFDR1YwYTB4LVo4d0RMMUw1MXVsMnhoRzFJbmtGVG5jbGh3YzJrN3p1bFJHV2hjZDNDZks3SDlqdHZKelR1X2tTVWpjbFNDTzMxM3lHR2pPZ2dG?oc=5" target="_blank" rel="noreferrer">The National</a></p></article>
+<article class="story-card"><div class="story-number">03</div><h2>The Best New Cocktail Bars in New York City, According to Eater Editors</h2><p class="dek">Welcome to the Eater Cocktail Heatmap, focusing on the hottest new bar openings in New York every month.</p><div class="body-copy"><p>Eater editors do thorough reporting on the most exciting restaurant openings to hit the city, as well as smaller openings worth having on the radar. In this monthly map, we narrow the field to cocktail bars that are</p></div><p class="why"><strong>Why it matters:</strong> Flagged from 1 source in nyc-food, openings, restaurants.</p><p class="sources">Sources: <a href="https://ny.eater.com/maps/nyc-best-new-cocktail-bars-heatmap" target="_blank" rel="noreferrer">Eater NY</a> · <a href="https://ny.eater.com/maps/best-new-queens-restaurants-heatmap" target="_blank" rel="noreferrer">Eater NY</a></p></article>
+<article class="story-card"><div class="story-number">04</div><h2>Judge Extends Pause on Trump’s Ban Against CNN, MS NOW and Politico</h2><p class="dek">The judge overseeing the case said that the pause would extend until next week, and promised to decide whether to further extend it by Tuesday.</p><p class="why"><strong>Why it matters:</strong> Flagged from 1 source in business, context, economy.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/10/08/business/media/cnn-msnow-politico-media-ban-trump.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">05</div><h2>Shifting Eating Habits Have PepsiCo Investors Seeking Operational Changes</h2><p class="dek">Even though sales rose in the most recent quarter, the beverage and snack company is under increasing pressure to expand its business in North America, as consumers cut costs and calories.</p><p class="why"><strong>Why it matters:</strong> Flagged from 1 source in business, context, economy.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/10/08/business/pepsico-earnings-splitting.html" target="_blank" rel="noreferrer">NYT Business</a></p></article>
+<article class="story-card"><div class="story-number">06</div><h2>Maduro Charged With Ordering Torture of Americans in Venezuelan Prison</h2><p class="dek">Nicolás Maduro and his wife, Cilia Flores, inflicted severe physical and mental pain on both Americans and Venezuelans to silence dissent and protect their authority, according to prosecutors.</p><p class="why"><strong>Why it matters:</strong> Flagged from 1 source in context, new-york, nyc.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/10/08/nyregion/nicolas-maduro-venezuela-torture-americans.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">07</div><h2>Toxic Dust Was Everywhere After 9/11. Little Was Done for Months.</h2><p class="dek">Newly released records show how residue from the World Trade Center towers coated the inside of homes.</p><div class="body-copy"><p>Officials allowed residents to return with scant guidance.</p></div><p class="why"><strong>Why it matters:</strong> Flagged from 1 source in context, new-york, nyc.</p><p class="sources">Sources: <a href="https://nytimes.com/2026/10/08/nyregion/world-trade-center-dust-contamination.html" target="_blank" rel="noreferrer">NYT New York Region</a></p></article>
+<article class="story-card"><div class="story-number">08</div><h2>'Bold and inventive' Canadian poet Anne Carson wins Nobel Literature Prize</h2><p class="why"><strong>Why it matters:</strong> Flagged from 3 sources in serendipity.</p><p class="sources">Sources: <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9SQjd5WW5lcEpOSVRTUlR0T3liS3BfU2lXNDk5YVNyOHRKaTVfckxiMVl1elBXTDVYbHVpM21abEd3cXN2bEZoU3RVazlDM21vLVNzZklta0cxcVE?oc=5" target="_blank" rel="noreferrer">BBC</a> · <a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxONElXYnd2dzJ5VXNRYTZ0QW1sd2E5Q3YwektLQ1VkSlhRQnhxblVIZ0FWcEF4aFZheF9uTXJGbklzZ3Ayd1lpRm5KeFRDc1NrdHNLRTFpeGFOMFpsYk1BODdNcFB0aDFLV3dSd2lfQ1FVOGx5TTR0MWRCU3RCejdZNXVVemNTSVNxOUxjWms1TW44OGl0cThWWXRid2VqaHhqNGRBT3NmaV9nd0VKcGIzTE9PRHFmT2dhSGFyVUJkVVFRR3FnWUFJazY5RVc3V29COWM1dEJUUmlsdjBJckkyN3B30gHiAUFVX3lxTE40SVdid3Z3MnlVc1FhNnRBbWx3YTlDdjB6S0tDVWRKWFFCeHFuVUhnQVZwQXhoVmF4X25NckZuSXNncDJ3WWlGbkp4VENzU2t0c0tFMWl4YU4wWmxiTUE4N01wUHRoMUtXd1J3aV9DUVU4bHlNNHQxZEJTdEJ6N1k1dVV6Y1NJU3E5TGNaazVNbjg4aXRxOFZZdGJ3ZWpoeGo0ZEFPc2ZpX2d3RUpwYjNMT09EcWZPZ2FIYXJVQmRVUVFHcWdZQUlrNjlFVzdXb0I5YzV0QlRSaWx2MElySTI3cHc?oc=5" target="_blank" rel="noreferrer">The Tribune</a> · <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPSjlTZUE3RnVuUzcwN19MdllsSGxLZ1g0TmZFZkpscFcxMHFNRUl3Nmx3ZUVjdXg2VVZPNEdFaWpJY1g5R2NSSm5saklHWDExZkpSc1kwcWFKV1RLSTYwQkdCcXY1UkpKN2wzemljMUpfeXB0eFpNZksycGhQc0FmMnVwb0xzQngtb2kzcUpSd28zX0M1YmVZ?oc=5" target="_blank" rel="noreferrer">PBS</a></p></article>
+</section>
+<footer class="edition-footer">
+Personal Daily · October 8, 2026
+</footer>
+</main>
+</body>
+</html>

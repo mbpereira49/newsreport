@@ -1,0 +1,88 @@
+[
+  {
+    "body": "In this New York Times special report, the host Natalie Kitroeff sits down with the reporters Jan Ransom, Steve Eder, Michael Rothfeld and Charles Homans to examine jail surveillance footage from the night of Mr. Eps",
+    "cluster_id": "92620859da4d3504",
+    "dek": "Jeffrey Epstein\u2019s 2019 death was ruled a suicide, but seven years later, skepticism remains widespread.",
+    "headline": "Examining Footage From the Night of Epstein's Death",
+    "source_ids": [
+      "92620859da4d3504-s1",
+      "92620859da4d3504-s2",
+      "92620859da4d3504-s3"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "1c196ac0f5cdb458",
+    "dek": "Today, the Swedish Academy awarded the 2026 Nobel Prize in Literature to Canadian author Anne Carson, for \u201cher bold and inventive oeuvre that in playful dialogue with the classical tradition has created new forms for...",
+    "headline": "Anne Carson has won the 2026 Nobel Prize in Literature.",
+    "source_ids": [
+      "1c196ac0f5cdb458-s1",
+      "1c196ac0f5cdb458-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in books, criticism, literary-fiction."
+  },
+  {
+    "body": "Eater editors do thorough reporting on the most exciting restaurant openings to hit the city, as well as smaller openings worth having on the radar. In this monthly map, we narrow the field to cocktail bars that are",
+    "cluster_id": "7de3977e5ee2d35d",
+    "dek": "Welcome to the Eater Cocktail Heatmap, focusing on the hottest new bar openings in New York every month.",
+    "headline": "The Best New Cocktail Bars in New York City, According to Eater Editors",
+    "source_ids": [
+      "7de3977e5ee2d35d-s1",
+      "7de3977e5ee2d35d-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "",
+    "cluster_id": "df3f67f591d173d4",
+    "dek": "The judge overseeing the case said that the pause would extend until next week, and promised to decide whether to further extend it by Tuesday.",
+    "headline": "Judge Extends Pause on Trump\u2019s Ban Against CNN, MS NOW and Politico",
+    "source_ids": [
+      "df3f67f591d173d4-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "d6a140700cad5cff",
+    "dek": "Even though sales rose in the most recent quarter, the beverage and snack company is under increasing pressure to expand its business in North America, as consumers cut costs and calories.",
+    "headline": "Shifting Eating Habits Have PepsiCo Investors Seeking Operational Changes",
+    "source_ids": [
+      "d6a140700cad5cff-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "c1b78b422760cdc4",
+    "dek": "Nicol\u00e1s Maduro and his wife, Cilia Flores, inflicted severe physical and mental pain on both Americans and Venezuelans to silence dissent and protect their authority, according to prosecutors.",
+    "headline": "Maduro Charged With Ordering Torture of Americans in Venezuelan Prison",
+    "source_ids": [
+      "c1b78b422760cdc4-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "Officials allowed residents to return with scant guidance.",
+    "cluster_id": "494659738082b9d9",
+    "dek": "Newly released records show how residue from the World Trade Center towers coated the inside of homes.",
+    "headline": "Toxic Dust Was Everywhere After 9/11. Little Was Done for Months.",
+    "source_ids": [
+      "494659738082b9d9-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "4ceae5e04b4afef2",
+    "dek": "",
+    "headline": "'Bold and inventive' Canadian poet Anne Carson wins Nobel Literature Prize",
+    "source_ids": [
+      "4ceae5e04b4afef2-s1",
+      "4ceae5e04b4afef2-s2",
+      "4ceae5e04b4afef2-s3"
+    ],
+    "why_it_matters": "Flagged from 3 sources in serendipity."
+  }
+]
