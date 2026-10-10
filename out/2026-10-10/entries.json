@@ -1,0 +1,85 @@
+[
+  {
+    "body": "and realized that it was defaulting to the GPT-4 tokenizer when it should very clearly default to GPT-5/GPT-6 instead! I figured switching the default was a reasonable excuse to finally ship a 1.0. OpenAI haven't act",
+    "cluster_id": "5e0ed883c55835d0",
+    "dek": "Release: ttok 1.0 I released ttok 0.4 , ran uv tool upgrade ttok , piped a file into the new version...",
+    "headline": "ttok 1.0",
+    "source_ids": [
+      "5e0ed883c55835d0-s1",
+      "5e0ed883c55835d0-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "| Lit Hub Criticism How British media legitimized J.K. Rowling\u2019s transphobia: \u201cWe are rendered hostile abstractions in a contradictory narrative: Trans people are not real, only our",
+    "cluster_id": "25abb2cdbfb2e275",
+    "dek": "Samantha\u2019s all grown up, and American Girl books are entering a new era.",
+    "headline": "Lit Hub Weekly: October 5 \u2013 9, 2026",
+    "source_ids": [
+      "25abb2cdbfb2e275-s1",
+      "25abb2cdbfb2e275-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in books, criticism, literary-fiction."
+  },
+  {
+    "body": "The new West Village French brasserie comes from Eugene Remm, Tilman Fertitta, and Catch Hospitality Group, which has been on an opening tear as of late with the Corner Store, the Eighty Six, and [\u2026]",
+    "cluster_id": "7e36fcddda22aa0f",
+    "dek": "I visited Cafe Charmant during its second week or so open, and here\u2019s the short version: I really like the cooking.",
+    "headline": "The Chef at Cafe Charmant Is One to Watch in the West Village",
+    "source_ids": [
+      "7e36fcddda22aa0f-s1",
+      "7e36fcddda22aa0f-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "agents in a blog post on Friday, without naming the targeted websites. But two sources with knowledge of the incidents said Anthropic\u2019s A.I. agents had submitted 20 visa applications through a form available on the State Department\u2019s website. All the applications were incompl",
+    "cluster_id": "99a0b86c5b8f964d",
+    "dek": "Anthropic detailed the activity of its A.I.",
+    "headline": "Quoting The New York Times",
+    "source_ids": [
+      "99a0b86c5b8f964d-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "9b0ac020ef6b6833",
+    "dek": "I\u2019ve often been surprised when I hear from top researchers in industry that they think AI will be better than them at their job in a few years, and I didn\u2019t really know why I doubted it.",
+    "headline": "I expect rapid progress but not towards general superintelligence",
+    "source_ids": [
+      "9b0ac020ef6b6833-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in ai, model-analysis, practitioner-analysis."
+  },
+  {
+    "body": "Officials said they took \u201csignificant fire.\u201d",
+    "cluster_id": "d22a7d4746dc00f0",
+    "dek": "Two officers responding to a call were shot multiple times as they reached the scene.",
+    "headline": "One Philadelphia Police Officer Killed, Another Shot 12 Times in Ambush Attack",
+    "source_ids": [
+      "d22a7d4746dc00f0-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "418704378efb64b7",
+    "dek": "The National Park Service notified a court of the plan as part of continuing litigation over the president\u2019s proposal to create a \u201cchampion-level\u201d course.",
+    "headline": "More Than 500 Trees to Be Cut Down at D.C. Golf Course That Trump Wants to Redo",
+    "source_ids": [
+      "418704378efb64b7-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "22514bf5ce002f55",
+    "dek": "",
+    "headline": "Research reveals the ways students really use AI to write",
+    "source_ids": [
+      "22514bf5ce002f55-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
