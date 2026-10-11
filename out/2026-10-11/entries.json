@@ -1,0 +1,86 @@
+[
+  {
+    "body": "and realized that it was defaulting to the GPT-4 tokenizer when it should very clearly default to GPT-5/GPT-6 instead! I figured switching the default was a reasonable excuse to finally ship a 1.0. OpenAI haven't act",
+    "cluster_id": "5e0ed883c55835d0",
+    "dek": "Release: ttok 1.0 I released ttok 0.4 , ran uv tool upgrade ttok , piped a file into the new version...",
+    "headline": "ttok 1.0",
+    "source_ids": [
+      "5e0ed883c55835d0-s1",
+      "5e0ed883c55835d0-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "| Lit Hub Criticism How British media legitimized J.K. Rowling\u2019s transphobia: \u201cWe are rendered hostile abstractions in a contradictory narrative: Trans people are not real, only our",
+    "cluster_id": "25abb2cdbfb2e275",
+    "dek": "Samantha\u2019s all grown up, and American Girl books are entering a new era.",
+    "headline": "Lit Hub Weekly: October 5 \u2013 9, 2026",
+    "source_ids": [
+      "25abb2cdbfb2e275-s1",
+      "25abb2cdbfb2e275-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in books, criticism, literary-fiction."
+  },
+  {
+    "body": "Now he\u2019s bringing his cooking to Straker\u2019s, at 59 Grand Street, at West Broadway, in Soho, taking over the fo",
+    "cluster_id": "dd8bfe5bf4f2e08a",
+    "dek": "Thomas Straker, the London-based celebrity chef with more than two million followers on both Instagram and TikTok, is known for viral cooking videos, a cookbook, and an almost-evangelical enthusiasm for butter.",
+    "headline": "A Viral London Chef Has Opened His Buzzy Soho Restaurant",
+    "source_ids": [
+      "dd8bfe5bf4f2e08a-s1",
+      "dd8bfe5bf4f2e08a-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control more . That's art. I went looking and I'm sad to report that the days without version con",
+    "cluster_id": "629c795a0382ad4c",
+    "dek": "I remember hearing a while ago that Dwarf Fortress didn't use version control.",
+    "headline": "Dwarf Fortress uses version control now",
+    "source_ids": [
+      "629c795a0382ad4c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "9b0ac020ef6b6833",
+    "dek": "I\u2019ve often been surprised when I hear from top researchers in industry that they think AI will be better than them at their job in a few years, and I didn\u2019t really know why I doubted it.",
+    "headline": "I expect rapid progress but not towards general superintelligence",
+    "source_ids": [
+      "9b0ac020ef6b6833-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in ai, model-analysis, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "1b3ae71c0d74d174",
+    "dek": "A new letter from 74 lawmakers suggests that civilian casualties will become a focus of investigation if Democrats take control of Congress.",
+    "headline": "Democrats Press Pentagon on Iran Civilian Deaths",
+    "source_ids": [
+      "1b3ae71c0d74d174-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "5652b1f567f476c4",
+    "dek": "Two Democratic candidates choose opposite tacks on public safety and policing, seeking to corral undecided voters.",
+    "headline": "In Unlikely Turn, Law and Order Heats Up L.A. Mayor\u2019s Race",
+    "source_ids": [
+      "5652b1f567f476c4-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "0f043f42db90cdbd",
+    "dek": "Amid a bathroom shortage in New York City, community leaders and advocates are calling on city officials to require bathroom access in privately owned public spaces.",
+    "headline": "A New Tower Will Have Lots of Public Space but No Public Bathrooms",
+    "source_ids": [
+      "0f043f42db90cdbd-s1",
+      "0f043f42db90cdbd-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in context, new-york, nyc."
+  }
+]
