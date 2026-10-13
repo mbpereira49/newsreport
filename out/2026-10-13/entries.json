@@ -1,0 +1,83 @@
+[
+  {
+    "body": "",
+    "cluster_id": "4f5f1331fe6e5a99",
+    "dek": "",
+    "headline": "Meta says its new AI models on par with OpenAI, Anthropic",
+    "source_ids": [
+      "4f5f1331fe6e5a99-s1",
+      "4f5f1331fe6e5a99-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in ai, industry-analysis."
+  },
+  {
+    "body": "investigators worked with the cybersecurity firm CrowdStrike to dismantle so-called laptop farms that steal American identities to earn cash for Pyongyang.",
+    "cluster_id": "1e91e0d524a3db8c",
+    "dek": "F.B.I.",
+    "headline": "F.B.I. Disrupts Pyongyang Revenue Stream: North Koreans in U.S. Tech Jobs",
+    "source_ids": [
+      "1e91e0d524a3db8c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "course while a federal judge seeks testimony from Interior Department officials about whether they ignored a court order.",
+    "cluster_id": "0f75ee16b241e978",
+    "dek": "The ruling barred major modifications at the D.C.",
+    "headline": "Judge Prohibits Further Tree Cutting at East Potomac Golf Course for Two Weeks",
+    "source_ids": [
+      "0f75ee16b241e978-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "Their freewheeling segments included \u201cSex Thursday.\u201d",
+    "cluster_id": "b20d989c02b20b0a",
+    "dek": "She and Kathy O\u2019Malley \u2014 known as \u201cthe Girlfriends\u201d \u2014 were the rare female hosts in a major market.",
+    "headline": "Judy Markey, Frank and Funny Voice on Chicago Radio, Dies at 82",
+    "source_ids": [
+      "b20d989c02b20b0a-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "be6bce82bbd3cf72",
+    "dek": "The tone of the WPC Energy Congress in Riyadh this week was defiant even as delegates were forced to redirect travel or address the audience from afar.",
+    "headline": "War Collides With Saudi Ambition at a Gathering of Oil Powers",
+    "source_ids": [
+      "be6bce82bbd3cf72-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "1e78fc631bfb9dc0",
+    "dek": "Duane Keith Davis was convicted by a jury of obtaining a gun and pursuing the rapper in a violent act of revenge in 1996.",
+    "headline": "Tupac Shakur Murder Conviction Lands Man 40 Years to Life in Prison",
+    "source_ids": [
+      "1e78fc631bfb9dc0-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in arts, context, culture."
+  },
+  {
+    "body": "",
+    "cluster_id": "86fa6cdc7b66a47a",
+    "dek": "Reich, whose music will be featured in birthday celebrations this month, said his latest work was \u201cone of the best things I\u2019ve done in a long time.\u201d",
+    "headline": "Composer Steve Reich, at 90, Returns With \u2018In All Your Ways\u2019",
+    "source_ids": [
+      "86fa6cdc7b66a47a-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in arts, context, culture."
+  },
+  {
+    "body": "",
+    "cluster_id": "a618d7b0ac11a22d",
+    "dek": "",
+    "headline": "Book tips for Anne Carson",
+    "source_ids": [
+      "a618d7b0ac11a22d-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
