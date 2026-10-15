@@ -1,0 +1,82 @@
+[
+  {
+    "body": "director, Kash Patel, after he went to the Olympics in Milan.",
+    "cluster_id": "82ed61ea7075eeed",
+    "dek": "The lawsuit also suggests that a motivating factor for the dismissals was the intense scrutiny of the F.B.I.",
+    "headline": "Fired FBI Agents Who Worked on Trump Investigation Sue Patel and Others",
+    "source_ids": [
+      "82ed61ea7075eeed-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "8cf91c0ab65791bc",
+    "dek": "Election officials say they worry the administration could use its own unsubstantiated claims to contest the vote in November.",
+    "headline": "Trump\u2019s Attacks on Voting Raise Fears He Will Try to Challenge Midterm Results",
+    "source_ids": [
+      "8cf91c0ab65791bc-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "4ed11be8bf7a8c0b",
+    "dek": "The average 30-year, fixed-rate mortgage has steadily risen in recent weeks, compounding affordability challenges for many Americans.",
+    "headline": "Mortgage Rates Hover at 7.4%, Highest Since 2023",
+    "source_ids": [
+      "4ed11be8bf7a8c0b-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "ae343ac3342ec8ea",
+    "dek": "Military forces have sought to damage the computing hubs that power online services and artificial intelligence systems.",
+    "headline": "Data Centers Become Targets in Wars in Ukraine, Russia and the Middle East",
+    "source_ids": [
+      "ae343ac3342ec8ea-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "Kathy Hochul, in which he attacks her Republican rival, Bruce Blakeman, has some of the mayor\u2019s hallmark appeal, but a bit less pizazz.",
+    "cluster_id": "a75f831b3f38cd3d",
+    "dek": "Mayor Zohran Mamdani\u2019s first campaign video for Gov.",
+    "headline": "Mamdani Taps His Social Media Charm on Behalf of Hochul, a Crucial Ally",
+    "source_ids": [
+      "a75f831b3f38cd3d-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "The incident was captured on a deli\u2019s surveillance camera.",
+    "cluster_id": "44fe24bed0ef1f14",
+    "dek": "A Brooklyn school aide said transit workers assaulted him after asking whether he had paid.",
+    "headline": "NYC School Aide Says He Paid Bus Fare Before MTA Officers Tackled Him",
+    "source_ids": [
+      "44fe24bed0ef1f14-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "a9c66cb90b99d67d",
+    "dek": "The disgraced tech entrepreneur and the comic Nathan Fielder chat and joust in a dizzying movie about truth, reality and the contours of knowledge.",
+    "headline": "\u2018You Can See Everything\u2019 Review: The Slippery Mind of Elizabeth Holmes",
+    "source_ids": [
+      "a9c66cb90b99d67d-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in arts, context, culture."
+  },
+  {
+    "body": "",
+    "cluster_id": "d3adfa9c4a897eb6",
+    "dek": "",
+    "headline": "Innovation at the Bedside with James Mitchell",
+    "source_ids": [
+      "d3adfa9c4a897eb6-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
