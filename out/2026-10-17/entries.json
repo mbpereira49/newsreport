@@ -1,0 +1,84 @@
+[
+  {
+    "body": "James Folta considers how generative AI is poisoning the literary well for everyone. | Lit Hub Technology \u201cThe embodied realm is eager for inquiry, if one is willing and interested.\u201d Emily Hyland praises the poetics",
+    "cluster_id": "b21dea4d520b731c",
+    "dek": "Is it or isn\u2019t it?",
+    "headline": "Lit Hub Weekly: October 12 \u2013 16, 2026",
+    "source_ids": [
+      "b21dea4d520b731c-s1",
+      "b21dea4d520b731c-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in books, criticism, literary-fiction."
+  },
+  {
+    "body": "",
+    "cluster_id": "81f1df173523b807",
+    "dek": "After competing and becoming a finalist in the 23rd season of Top Chef in the Carolinas, Sherry Cardoso (who had been an opening chef at Olmsted, among other positions) came back to New York to debut her tasting menu...",
+    "headline": "Nothing Goes to Waste at This Brazilian Tasting Menu in the West Village",
+    "source_ids": [
+      "81f1df173523b807-s1",
+      "81f1df173523b807-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "",
+    "cluster_id": "6922af08e2b364c0",
+    "dek": "We think \"did a human read the code?\" is an imprecise proxy for \"what could go wrong with this change, and which check\u2014automated or human\u2014is the right one to catch it?\" Asking that question also changed when review ha...",
+    "headline": "Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+    "source_ids": [
+      "6922af08e2b364c0-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "It seems to work! Build a two player competitive pong like game where two players use their phones close to",
+    "cluster_id": "4eeb8e24e6bf8b03",
+    "dek": "Tool: Chirp Pong Another game experiment - I wanted to see if it was feasible to have a two player game on two separate phones running in static HTML where the networking code uses chirps sent via the microphone.",
+    "headline": "Chirp Pong",
+    "source_ids": [
+      "4eeb8e24e6bf8b03-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "a9c66cb90b99d67d",
+    "dek": "The disgraced tech entrepreneur and the comic Nathan Fielder chat and joust in a dizzying movie about truth, reality and the contours of knowledge.",
+    "headline": "\u2018You Can See Everything\u2019 Review: The Slippery Mind of Elizabeth Holmes",
+    "source_ids": [
+      "a9c66cb90b99d67d-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in criticism, movies, reviews."
+  },
+  {
+    "body": "It was a house party for the ages.",
+    "cluster_id": "ce96b0b2a964f678",
+    "dek": "The Black luminaries who turned 1920s Harlem into a hub of artistic expression gathered decades later to reminisce.",
+    "headline": "\u2018Once Upon a Time in Harlem\u2019 Review: A Renaissance of Their Own",
+    "source_ids": [
+      "ce96b0b2a964f678-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in criticism, movies, reviews."
+  },
+  {
+    "body": "",
+    "cluster_id": "709d76a57e81d690",
+    "dek": "The White House inquiry is focused on diverging accounts from Richard Grenell and Alina Habba Mildon about a $17 million transfer from a government account in the African country to a Texas defense firm.",
+    "headline": "Dispute Between Trump Allies Centers on Payment From Congo",
+    "source_ids": [
+      "709d76a57e81d690-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "13ad96b505759351",
+    "dek": "",
+    "headline": "El Ni\u00f1o looms large on World Food Day",
+    "source_ids": [
+      "13ad96b505759351-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
