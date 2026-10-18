@@ -1,0 +1,86 @@
+[
+  {
+    "body": "James Folta considers how generative AI is poisoning the literary well for everyone. | Lit Hub Technology \u201cThe embodied realm is eager for inquiry, if one is willing and interested.\u201d Emily Hyland praises the poetics",
+    "cluster_id": "b21dea4d520b731c",
+    "dek": "Is it or isn\u2019t it?",
+    "headline": "Lit Hub Weekly: October 12 \u2013 16, 2026",
+    "source_ids": [
+      "b21dea4d520b731c-s1",
+      "b21dea4d520b731c-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in books, criticism, literary-fiction."
+  },
+  {
+    "body": "",
+    "cluster_id": "14770a9dffe9a770",
+    "dek": "",
+    "headline": "Meta shakes up the frontiers, open and closed",
+    "source_ids": [
+      "14770a9dffe9a770-s1",
+      "14770a9dffe9a770-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in ai, industry-analysis, model-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "e3ebf35f91b16610",
+    "dek": "",
+    "headline": "Analysis-IMF/World Bank meetings leave developing countries with more questions than answers",
+    "source_ids": [
+      "e3ebf35f91b16610-s1",
+      "e3ebf35f91b16610-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in context, general."
+  },
+  {
+    "body": "",
+    "cluster_id": "cd3d123cca21d953",
+    "dek": "",
+    "headline": "Trump paused Russia sanctions to 'analyze' impact on global economy: Rubio",
+    "source_ids": [
+      "cd3d123cca21d953-s1",
+      "cd3d123cca21d953-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in context, general."
+  },
+  {
+    "body": "",
+    "cluster_id": "46b1c9a0232513e2",
+    "dek": "The president praised the embattled prime minister for his endurance, saying any other candidate would be the \u201cwrong Leader.\u201d",
+    "headline": "Trump Endorses Netanyahu as Best U.S. Partner in Tight Israeli Election",
+    "source_ids": [
+      "46b1c9a0232513e2-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "The informant\u2019s brother told The Times his sibling was at the crime scene.",
+    "cluster_id": "c3e6df235c856ac5",
+    "dek": "An \u201cextremely reliable\u201d informant told authorities about the missing murder weapon, according to newly unsealed records.",
+    "headline": "O.J. Simpson, a Secret Informant and a Decades-Old Mystery",
+    "source_ids": [
+      "c3e6df235c856ac5-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "And Netflix had a box office milestone.",
+    "cluster_id": "8ab3400c5179b3d4",
+    "dek": "\u201cYou Can See Everything,\u201d a documentary about the Theranos founder, made a big splash for a movie not yet in wide release.",
+    "headline": "Elizabeth Holmes Documentary \u2018You Can See Everything\u2019 Opens to Over 2,000 Sold-Out Shows",
+    "source_ids": [
+      "8ab3400c5179b3d4-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "0d4cc88a28cc9d56",
+    "dek": "",
+    "headline": "Finalists for U.S. National Book Awards Announced, Ceremony Hosted by Kyle MacLachlan",
+    "source_ids": [
+      "0d4cc88a28cc9d56-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
