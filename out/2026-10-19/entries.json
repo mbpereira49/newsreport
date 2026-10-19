@@ -1,0 +1,82 @@
+[
+  {
+    "body": "",
+    "cluster_id": "51861c3788e28c37",
+    "dek": "The police in Long Beach, Calif., said they were called by ICE for backup and found a man who was bleeding and handcuffed.",
+    "headline": "U.S. Citizen Hospitalized After Being Detained by ICE, His Family Says",
+    "source_ids": [
+      "51861c3788e28c37-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "647050566c178069",
+    "dek": "A 55-year-old rector from a university in Brazil was killed while on a walking tour of the famed architect\u2019s winter home in Scottsdale, Ariz.",
+    "headline": "Visitor Killed by Roof Debris at Frank Lloyd Wright\u2019s Taliesin West",
+    "source_ids": [
+      "647050566c178069-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "8d6fa86ac4f034da",
+    "dek": "The chief international anchor, one of the most famous names in broadcast news, started as an assistant at the network in 1983.",
+    "headline": "Christiane Amanpour Says She Is Leaving CNN After 43 Years",
+    "source_ids": [
+      "8d6fa86ac4f034da-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "Stewart returned over two years ago to host the show on Monday nights.",
+    "cluster_id": "32a04e1d4454df89",
+    "dek": "Ratings have surged since Mr.",
+    "headline": "Jon Stewart to Stay at \u2018The Daily Show\u2019 Through the 2028 Election",
+    "source_ids": [
+      "32a04e1d4454df89-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "ab8e678f274bc5ec",
+    "dek": "\u201cYou Can See Everything\u201d has been described as \u201cbonkers.\u201d Our critics have their own thoughts, and we\u2019d like to hear your reactions in the comments, too.",
+    "headline": "What Critics Think About Nathan Fielder\u2019s \u2018Bonkers\u2019 Elizabeth Holmes Movie",
+    "source_ids": [
+      "ab8e678f274bc5ec-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in criticism, movies, reviews."
+  },
+  {
+    "body": "",
+    "cluster_id": "4167ab9793052f5c",
+    "dek": "A sprawling three-pronged Spanish epic reads the past to find meaning in the present, but can\u2019t quite find its ending.",
+    "headline": "\u2018La Bola Negra\u2019 Review: In Search of Freedom, and Love",
+    "source_ids": [
+      "4167ab9793052f5c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in criticism, movies, reviews."
+  },
+  {
+    "body": "| Lit Hub Criticism Cundill Prize finalist Beth Lew-Williams recommends essential reading on Chinese American history by Erika Lee, Gordon Chang, Brianna Nofil and more. | Lit Hub",
+    "cluster_id": "06d1845601c48584",
+    "dek": "When you think of the Bront\u00ebs, maybe you should think of botany.",
+    "headline": "Lit Hub Daily: October 19, 2026",
+    "source_ids": [
+      "06d1845601c48584-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in books, criticism, literary-fiction."
+  },
+  {
+    "body": "",
+    "cluster_id": "63d84fa5ad2a9b6a",
+    "dek": "",
+    "headline": "Film Review: In enticing Elizabeth Holmes documentary, 'You Can See Everything' but the truth",
+    "source_ids": [
+      "63d84fa5ad2a9b6a-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
