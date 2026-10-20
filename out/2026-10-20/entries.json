@@ -1,0 +1,83 @@
+[
+  {
+    "body": "| Lit Hub Craft How being a writer helped Emma Smith-Stevens navigate the American health insurance system (and why her experiences expose the cruelty of for-profit medicine). | Lit Hub Health We",
+    "cluster_id": "02ff5a82d23d126f",
+    "dek": "Was Cormac McCarthy that guy in your MFA?",
+    "headline": "Lit Hub Daily: October 20, 2026",
+    "source_ids": [
+      "02ff5a82d23d126f-s1",
+      "02ff5a82d23d126f-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in books, criticism, literary-fiction."
+  },
+  {
+    "body": "You got paid to work on tricky little logic puzzles. The trickier the puzzle, the more you got paid. But even prett",
+    "cluster_id": "b94c74856eaa8b92",
+    "dek": "Jeremy Scheff poignantly captures the key loss caused by coding agents for career programmers who enjoyed the puzzle of developing code: Programming turned into one of the greatest jobs you could imagine.",
+    "headline": "My obituary for programming",
+    "source_ids": [
+      "b94c74856eaa8b92-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "llm-tools-datasette was one of those plugins, now fixed.",
+    "cluster_id": "093bde221be9e598",
+    "dek": "Release: llm-tools-datasette 0.1.1 When I switched LLM over to httpx2 in LLM 0.33 I forget that this would break any plugins which used httpx without directly depending on it.",
+    "headline": "llm-tools-datasette 0.1.1",
+    "source_ids": [
+      "093bde221be9e598-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "9e8564e628fe4ace",
+    "dek": "Congrats to DeepSeek V4.1 Flash 1017, MiniMax M3.1 Flash, and Mercury 3 (details below) but they\u2019re not going to be in super wide use just yet.",
+    "headline": "[AINews] not much happened today",
+    "source_ids": [
+      "9e8564e628fe4ace-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, industry-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "673bbd77f1ded683",
+    "dek": "At East Potomac Park, several residents bemoaned a plan to revamp the federal property that might wipe out features they have cherished for years.",
+    "headline": "Trump\u2019s D.C. Golf Course Renovation Plan Has Many Residents Feeling Discouraged",
+    "source_ids": [
+      "673bbd77f1ded683-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "Riehle, best remembered for playing an anxious character with \u201cpeople skills,\u201d built a career in theater, TV and film that lasted more than half a century.",
+    "cluster_id": "1c1f7e0d1b54d66e",
+    "dek": "Mr.",
+    "headline": "Richard Riehle, Prolific Actor Who Appeared in \u2018Office Space,\u2019 Dies at 78",
+    "source_ids": [
+      "1c1f7e0d1b54d66e-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "4167ab9793052f5c",
+    "dek": "A sprawling three-pronged Spanish epic reads the past to find meaning in the present, but can\u2019t quite find its ending.",
+    "headline": "\u2018La Bola Negra\u2019 Review: In Search of Freedom, and Love",
+    "source_ids": [
+      "4167ab9793052f5c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in criticism, movies, reviews."
+  },
+  {
+    "body": "",
+    "cluster_id": "03e73709a0fec87c",
+    "dek": "",
+    "headline": "3 Ways AI Goes Wrong in a Dealership \u2014 and What to Do Instead",
+    "source_ids": [
+      "03e73709a0fec87c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
