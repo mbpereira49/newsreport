@@ -1,0 +1,82 @@
+[
+  {
+    "body": "",
+    "cluster_id": "bf9b58bcdafc14ac",
+    "dek": "To help us report an upcoming article, we want to hear about all the places you\u2019ve cried \u2014 subways, sidewalks, stoops, saunas and beyond.",
+    "headline": "New Yorkers, Where\u2019s the Best Place to Cry in the City?",
+    "source_ids": [
+      "bf9b58bcdafc14ac-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "Comey, the daughter of James Comey, the former director of the F.B.I., worked for the U.S. attorney\u2019s office in Manhattan, handling the prosecutions of Jeffrey Epstein and Sean Combs.",
+    "cluster_id": "665c2572298047f7",
+    "dek": "Ms.",
+    "headline": "Trump Administration Unlawfully Fired Maurene Comey, Judge Rules",
+    "source_ids": [
+      "665c2572298047f7-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "Sanger, a White House and national security correspondent for The New York Times, studied the atmosphere at Mr. Trump\u2019s recent events. What he found was a faint echo of the moments that made Mr. Trump\u2019s 2016 rallies so shockin",
+    "cluster_id": "92e5becb99fdd839",
+    "dek": "Examining President Trump\u2019s praise of a rallygoer who punched a protester last week, David E.",
+    "headline": "How Scuffles at Trump Rallies Echo His Past Events",
+    "source_ids": [
+      "92e5becb99fdd839-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "David Beasley and Democratic Gov. Jim Hodges recorded a joint video throwing their support to the Democrat in the tight Senate race.",
+    "cluster_id": "911fe241e8193b45",
+    "dek": "Former Republican Gov.",
+    "headline": "Former South Carolina Governors Endorse Annie Andrews Over Darline Graham in Senate Race",
+    "source_ids": [
+      "911fe241e8193b45-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "c5f6cb3754325c9c",
+    "dek": "Manufacturers and their customers are using materials made without the clouds of dust that have sickened workers in quartz-cutting shops.",
+    "headline": "California\u2019s Potential Quartz Ban Pushes Contractors and Retailers to Alternatives",
+    "source_ids": [
+      "c5f6cb3754325c9c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "a8dcfff58b0d5c9e",
+    "dek": "In Congress and in several states, officials have been questioning online gambling companies about their use of artificial intelligence.",
+    "headline": "DraftKings Faces Growing Pressure Over How It Targets Customers",
+    "source_ids": [
+      "a8dcfff58b0d5c9e-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "And, increasingly, ChatGPT is telling people that have normal tech support problems that they have discovered some",
+    "cluster_id": "4f7b5d2d8d075bae",
+    "dek": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech problems have turned to ChatGPT.",
+    "headline": "Quoting Jason Koebler",
+    "source_ids": [
+      "4f7b5d2d8d075bae-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "8009db66ff27759a",
+    "dek": "",
+    "headline": "Civic architecture done right: Nine exciting new public spaces, from Brisbane to Geneva",
+    "source_ids": [
+      "8009db66ff27759a-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
