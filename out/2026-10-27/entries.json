@@ -1,0 +1,83 @@
+[
+  {
+    "body": "",
+    "cluster_id": "180617e074748b6f",
+    "dek": "Katelyn Lesse and Angela Jiang on Opus 5.5, the Claude Platform, and the engineering behind AI agents.",
+    "headline": "How Anthropic ships Claude with Claude: Separating the Brain from the Hands",
+    "source_ids": [
+      "180617e074748b6f-s1",
+      "180617e074748b6f-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, industry-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "f3f13e253f76074e",
+    "dek": "After more than 100 years on the New York Stock Exchange, the automaker is shifting its listing to the Nasdaq, which is home to many technology companies.",
+    "headline": "GM Is Leaving NYSE for the Nasdaq After More Than 100 Years",
+    "source_ids": [
+      "f3f13e253f76074e-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "But this time, investors are not sure it will work.",
+    "cluster_id": "373bda17c444c886",
+    "dek": "The Communist Party uses a \u201cnational team\u201d of state-owned investment funds to stem the market rout.",
+    "headline": "China Steps In to Rescue Stocks, But the Market Continues to Fall",
+    "source_ids": [
+      "373bda17c444c886-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "The differences could matter quite a bit.",
+    "cluster_id": "905e6901d1d864aa",
+    "dek": "Recent presidential election polls have overestimated Democrats, but midterm polls are far less consistent state by state.",
+    "headline": "How Accurate Are the Midterm Polls? The Bias Varies by State.",
+    "source_ids": [
+      "905e6901d1d864aa-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "804ce3b0a2961357",
+    "dek": "Reports of an uptick in operations, alongside a push to root out alleged noncitizen voting, have unnerved immigrant communities ahead of next week\u2019s election.",
+    "headline": "As Election Nears, Reports of an Increase in ICE Arrests Across California",
+    "source_ids": [
+      "804ce3b0a2961357-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "In the case of GPT-6.1 Terra, OpenAI went with visual reasoning and computer use: We\u2019re introducing GPT-6.1 Terra , a fast, efficient model that combines detailed visual reasoning and precise computer use alongside",
+    "cluster_id": "c1ffd858e21837cb",
+    "dek": "It's always interesting to note which aspects of a new model are emphasized in the release announcement.",
+    "headline": "GPT-6.1 Terra",
+    "source_ids": [
+      "c1ffd858e21837cb-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "And, increasingly, ChatGPT is telling people that have normal tech support problems that they have discovered some",
+    "cluster_id": "4f7b5d2d8d075bae",
+    "dek": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech problems have turned to ChatGPT.",
+    "headline": "Quoting Jason Koebler",
+    "source_ids": [
+      "4f7b5d2d8d075bae-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "641bd6b9cf421367",
+    "dek": "",
+    "headline": "Leicester farms unearth flavor in food beyond the usual",
+    "source_ids": [
+      "641bd6b9cf421367-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
