@@ -1,0 +1,86 @@
+[
+  {
+    "body": "",
+    "cluster_id": "e192bb492c447738",
+    "dek": "",
+    "headline": "Here\u2019s the latest.",
+    "source_ids": [
+      "e192bb492c447738-s1",
+      "e192bb492c447738-s2",
+      "e192bb492c447738-s3"
+    ],
+    "why_it_matters": "Flagged from 2 sources in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "180617e074748b6f",
+    "dek": "Katelyn Lesse and Angela Jiang on Opus 5.5, the Claude Platform, and the engineering behind AI agents.",
+    "headline": "How Anthropic ships Claude with Claude: Separating the Brain from the Hands",
+    "source_ids": [
+      "180617e074748b6f-s1",
+      "180617e074748b6f-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, industry-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "571c9dbbecca798e",
+    "dek": "Our favorite restaurants of the moment in the city that never stops eating; updated monthly.",
+    "headline": "Where to Eat in New York City Right Now",
+    "source_ids": [
+      "571c9dbbecca798e-s1",
+      "571c9dbbecca798e-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in cooking, dining, food."
+  },
+  {
+    "body": "But it was underfunded and couldn\u2019t absorb the rising cost of fuel.",
+    "cluster_id": "86ed57872165916f",
+    "dek": "The cruise promised a lifetime of sailing, for less than what it cost to live on land.",
+    "headline": "An \u2018Endless\u2019 Cruise Around the World Is Suspended, Leaving Passengers Stranded",
+    "source_ids": [
+      "86ed57872165916f-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "EVP Jay Parikh just announced this year's Octoverse report, and highlighted these numbers in particular: This is a pretty stark representation of the impact of agentic engineering on GitHub. In 2026, merged pull requests t",
+    "cluster_id": "45d3fd464d78495e",
+    "dek": "I'm at GitHub Universe today (GitHub gave me a free ticket through their \"GitHub Stars\" program).",
+    "headline": "GitHub Octoverse 2026",
+    "source_ids": [
+      "45d3fd464d78495e-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "97660b77762a0715",
+    "dek": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily driv...",
+    "headline": "The October inflection point for vibe game development",
+    "source_ids": [
+      "97660b77762a0715-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "7891c84941f40246",
+    "dek": "A \u201cbad actor\u201d tried to breach the system, according to the Federal Election Commission, disrupting political finance disclosures during the final week of campaigning.",
+    "headline": "System to Report Campaign Donations Shut Down After a Hacking Attempt",
+    "source_ids": [
+      "7891c84941f40246-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "9dc3ec534d027351",
+    "dek": "",
+    "headline": "Nuance, Power, Antiquity and Cardi B: A Review of of Emily Wilson\u2019s Crossing the Wine-Dark Sea",
+    "source_ids": [
+      "9dc3ec534d027351-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
