@@ -1,0 +1,83 @@
+[
+  {
+    "body": "",
+    "cluster_id": "180617e074748b6f",
+    "dek": "Katelyn Lesse and Angela Jiang on Opus 5.5, the Claude Platform, and the engineering behind AI agents.",
+    "headline": "How Anthropic ships Claude with Claude: Separating the Brain from the Hands",
+    "source_ids": [
+      "180617e074748b6f-s1",
+      "180617e074748b6f-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, industry-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "6fdc657c459906d7",
+    "dek": "How I Built the Most AI-Pilled Company in the World Don't be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building Spawn is a fascinating exploration of the bleeding edge of...",
+    "headline": "Building a multiplayer game world with autonomous Fable-class models",
+    "source_ids": [
+      "6fdc657c459906d7-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "except for our product, of course. in our product, customers love the ui and love us very much. we're special that way. \u2014 Ben Hylak",
+    "cluster_id": "07340e28c237e07d",
+    "dek": "every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath.",
+    "headline": "Quoting Ben Hylak",
+    "source_ids": [
+      "07340e28c237e07d-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "e2eff55d19e771af",
+    "dek": "The city\u2019s Hispanic majority, news media reach and air links to Latin America have made it an ideal base for politicians escaping their home countries.",
+    "headline": "Why Miami Is a Destination for Latin America\u2019s Political Exiles",
+    "source_ids": [
+      "e2eff55d19e771af-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "e7cc5cabd5e0155d",
+    "dek": "Tensions have risen between the United States and Cuba as the Trump administration tries to force the island\u2019s Communist government to make drastic changes.",
+    "headline": "U.S. Expels Cuban Diplomat After Fiery Showdown at United Nations",
+    "source_ids": [
+      "e7cc5cabd5e0155d-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "43b8bbc2f435cdcd",
+    "dek": "The Personal Consumption Expenditures index picked up in September, according to data released a day after the Federal Reserve\u2019s decision to hold interest rates steady.",
+    "headline": "Inflation Accelerated in October, PCE Index Shows",
+    "source_ids": [
+      "43b8bbc2f435cdcd-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "Strong spending and growth contrast with the poor marks many voters are giving the economy.",
+    "cluster_id": "32257dbda537c6f4",
+    "dek": "The economy grew 3.4 percent in the third quarter, the fastest pace in a year.",
+    "headline": "U.S. GDP Increased 3.4% in Third Quarter",
+    "source_ids": [
+      "32257dbda537c6f4-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "26b244adb29400bf",
+    "dek": "",
+    "headline": "Closure review: Missing-persons doc tackles thorny questions of grief and doc ethics",
+    "source_ids": [
+      "26b244adb29400bf-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
