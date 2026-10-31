@@ -1,0 +1,83 @@
+[
+  {
+    "body": "",
+    "cluster_id": "a164c3a1e43ccb46",
+    "dek": "From Psycho to Christine, a highway is something \u201caltogether different when they appear in the horror genre: there they expose themselves as highways to hell.\u201d | Lit Hub Film Fake news, far-right propaganda, exaggerat...",
+    "headline": "Lit Hub Weekly: October 26 \u2013 30, 2026",
+    "source_ids": [
+      "a164c3a1e43ccb46-s1",
+      "a164c3a1e43ccb46-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in books, criticism, literary-fiction."
+  },
+  {
+    "body": "You can now play NES ROMs such as Super Mario Bros (very slowly) running inside Qwen! In a comment on Hacker News Drew reveals the Opus 5.5 prompts he used to bui",
+    "cluster_id": "9429979c052d4d5c",
+    "dek": "Inspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B.",
+    "headline": "dbreunig/nesformer",
+    "source_ids": [
+      "9429979c052d4d5c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "b11ce4faabd89024",
+    "dek": "Earlier this month Anthropic announced a generous new benefit for their Max and Team subscriptions: $100, $200, and $500 per month subscribers would get the equivalent quantity of (expiring) credits to use with the An...",
+    "headline": "API credits benefit for eligible ChatGPT subscriptions",
+    "source_ids": [
+      "b11ce4faabd89024-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "After workers tore off the roof, conservation officers arrived.",
+    "cluster_id": "9958fd9c18947ef5",
+    "dek": "A family of barn owls drew a crowd after making a nest in a derelict water tower in Manhattan.",
+    "headline": "Birders Fear for N.Y. Celebrity Owls Over Construction Near Their Nest",
+    "source_ids": [
+      "9958fd9c18947ef5-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "But the culture of racing, especially in New York, is often anything but.",
+    "cluster_id": "ff67454a124798cc",
+    "dek": "Running has long been celebrated as a cheap and accessible sport.",
+    "headline": "The NYC Marathon Is as Popular as Ever. It Remains Inaccessible to Many.",
+    "source_ids": [
+      "ff67454a124798cc-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "f3af8d21b09879cb",
+    "dek": "The two jurisdictions contend that President Trump\u2019s proposed 250-foot arch is \u201cflagrantly unlawful,\u201d citing concerns over traffic, the environment and historic preservation.",
+    "headline": "Trump\u2019s Arch Faces New Legal Challenge From Virginia and D.C.",
+    "source_ids": [
+      "f3af8d21b09879cb-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "886cf2e556f4cbb5",
+    "dek": "The police, who called the shooting \u201ctargeted,\u201d are searching for a person who shot seven people at a costume shop on the eve of the holiday.",
+    "headline": "One Dead in Halloween Store Shooting in California",
+    "source_ids": [
+      "886cf2e556f4cbb5-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "854ee9d1e746daaa",
+    "dek": "",
+    "headline": "Pratt\u2019s MLA Students Creatively Design for a Wetter Brooklyn",
+    "source_ids": [
+      "854ee9d1e746daaa-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
