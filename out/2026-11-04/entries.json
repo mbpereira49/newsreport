@@ -1,0 +1,85 @@
+[
+  {
+    "body": "",
+    "cluster_id": "4ea1237b83bb7341",
+    "dek": "Release: llm 0.37.1 A bugfix release for LLM , with contributions from Steven Huang , Tao An , Arjan Mossel , and XQ .",
+    "headline": "llm 0.37.1",
+    "source_ids": [
+      "4ea1237b83bb7341-s1",
+      "4ea1237b83bb7341-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "6e039f80b52c3a00",
+    "dek": "Prolific chef and restaurateur Jean-Georges Vongerichten is bringing two restaurants, along with catering and an events space, to 70 Hudson Yards, the 50-plus-story office tower under construction at Hudson Boulevard...",
+    "headline": "Jean-Georges Vongerichten Is Opening Two New Restaurants in Hudson Yards",
+    "source_ids": [
+      "6e039f80b52c3a00-s1",
+      "6e039f80b52c3a00-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "",
+    "cluster_id": "0e63c6108f925a05",
+    "dek": "Graciela channels that country\u2019s distinctive style, steeped in a deep appreciation of beef and skilled in the art of the grill.",
+    "headline": "Restaurant Review: Graciela in New York",
+    "source_ids": [
+      "0e63c6108f925a05-s1",
+      "0e63c6108f925a05-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in cooking, dining, food."
+  },
+  {
+    "body": "",
+    "cluster_id": "29182aeef7487dc8",
+    "dek": "Release: datasette-llm 0.1a10 Fixes a bug that affected my agent.datasette.io demo site, where the set of available LLM models was not correctly restricted to just those in the configuration.",
+    "headline": "datasette-llm 0.1a10",
+    "source_ids": [
+      "29182aeef7487dc8-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "4b15c83d2a1c4473",
+    "dek": "Our first open model economy research note for paid subscribers.",
+    "headline": "How big is the open model economy today?",
+    "source_ids": [
+      "4b15c83d2a1c4473-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in ai, model-analysis, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "5402fdae6b7f7083",
+    "dek": "Evals without traces, million-cell tabular reviews, and cracks in the billable hour as a business model",
+    "headline": "Building AI for Lawyers - Jacob Lauritzen, CTO of Legora",
+    "source_ids": [
+      "5402fdae6b7f7083-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, industry-analysis."
+  },
+  {
+    "body": "The data belongs to the law firm\u2019s clients. How do you build and test an agent when you can\u2019t see its work? Jacob Lauritzen is the CTO of Legora, one of the fastest-growing companies...",
+    "cluster_id": "cf70cec853f17dc7",
+    "dek": "Legora can\u2019t read a single trace of what its agent does for a lawyer.",
+    "headline": "Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora",
+    "source_ids": [
+      "cf70cec853f17dc7-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, industry-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "8d925895ac93f3df",
+    "dek": "",
+    "headline": "A Trio of Six-Figure Grants to Advance AI, Analytics and Computing Systems Research",
+    "source_ids": [
+      "8d925895ac93f3df-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
