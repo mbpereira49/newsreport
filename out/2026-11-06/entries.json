@@ -1,0 +1,85 @@
+[
+  {
+    "body": "Eater editors do thorough reporting on the most exciting restaurant openings to hit their city, as well as smaller openings worth having on the radar. In this map, we narrow the field to those places in Brooklyn that are drawing",
+    "cluster_id": "3eb3c5e31e40c5ea",
+    "dek": "Welcome to the Eater Heatmap, focusing on the hottest new openings in Brooklyn this month.",
+    "headline": "The Best New Restaurants in Brooklyn, According to Eater Editors",
+    "source_ids": [
+      "3eb3c5e31e40c5ea-s1",
+      "3eb3c5e31e40c5ea-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "",
+    "cluster_id": "cb831d8bbe63cb7a",
+    "dek": "",
+    "headline": "Here\u2019s the latest.",
+    "source_ids": [
+      "cb831d8bbe63cb7a-s1",
+      "cb831d8bbe63cb7a-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "f40ec97d7ae2064f",
+    "dek": "Highlights from this year's Tokyo International Film Festival.",
+    "headline": "Tokyo International Film Festival 2026: Weaving Cultural Threads",
+    "source_ids": [
+      "f40ec97d7ae2064f-s1",
+      "f40ec97d7ae2064f-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in criticism, movies, reviews."
+  },
+  {
+    "body": "You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just isn't worth it to anyone. And agents aren't real and they migh",
+    "cluster_id": "6ad941f9d1146cff",
+    "dek": "The products aren't good enough to sell people on the costs.",
+    "headline": "Quoting Nilay Patel",
+    "source_ids": [
+      "6ad941f9d1146cff-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "\u2014 Paul Ford , The Web Is More Than Enough",
+    "cluster_id": "fabdd37ceb30126a",
+    "dek": "The web browser is very, very, very powerful software for applications, and the cost of accessing that power is going down seemingly every day .",
+    "headline": "Quoting Paul Ford",
+    "source_ids": [
+      "fabdd37ceb30126a-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "4b15c83d2a1c4473",
+    "dek": "Our first open model economy research note for paid subscribers.",
+    "headline": "How big is the open model economy today?",
+    "source_ids": [
+      "4b15c83d2a1c4473-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in ai, model-analysis, practitioner-analysis."
+  },
+  {
+    "body": "But O.S.U. officials said he was not charged with wrongdoing and his name would remain.",
+    "cluster_id": "68f80c51ccc641dd",
+    "dek": "Hundreds complained about Les Wexner\u2019s ties to the convicted sex offender.",
+    "headline": "Ohio State Will Not Remove Wexner Name From Buildings Over Epstein Ties",
+    "source_ids": [
+      "68f80c51ccc641dd-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "b80d454c391d8493",
+    "dek": "",
+    "headline": "How This Year\u2019s Super El Ni\u00f1o Will Worsen Global Hunger",
+    "source_ids": [
+      "b80d454c391d8493-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
