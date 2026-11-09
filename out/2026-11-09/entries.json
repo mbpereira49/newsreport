@@ -1,0 +1,84 @@
+[
+  {
+    "body": "Inside CS146S and the engineering team at Monaco.",
+    "cluster_id": "4ad239269cc94406",
+    "dek": "What happens when students can one-shot last year\u2019s homework?",
+    "headline": "How Stanford Teaches AI-Native Engineering \u2014 Mihail Eric, Monaco",
+    "source_ids": [
+      "4ad239269cc94406-s1",
+      "4ad239269cc94406-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, industry-analysis."
+  },
+  {
+    "body": "Half. She talks to Race Results Weekly about her marathon ambitions, her husband being profession calf roper, living in r",
+    "cluster_id": "7d7799e3f2e43f1e",
+    "dek": "Reigning USATF 10,000m champion Sydney Vaught (n\u00e9e Thorvaldson) is only seven months into her pro career with Nike, but she\u2019s already stepping up to the 13.1-mile distance this weekend at the B.A.A.",
+    "headline": "USATF 10,000m champ Sydney Vaught (n\u00e9e Thorvaldson) to make half marathon debut at B.A.A. Half on Sunday",
+    "source_ids": [
+      "7d7799e3f2e43f1e-s1",
+      "7d7799e3f2e43f1e-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in elite-running, race-commentary, running."
+  },
+  {
+    "body": "",
+    "cluster_id": "2c0ef7b8c07810c5",
+    "dek": "The cause of the early-morning fire was under investigation, officials said, noting there was \u201cheavy clutter\u201d in the unit where the blaze broke out.",
+    "headline": "Man, 80, Killed in Fire at His Harlem Apartment, Officials Say",
+    "source_ids": [
+      "2c0ef7b8c07810c5-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "Taylor was known as the unofficial first lady of New York City while Mr. Bloomberg was mayor. It is the second marriage for both.",
+    "cluster_id": "953fe942b7ce9a29",
+    "dek": "Ms.",
+    "headline": "Michael Bloomberg Marries Diana Taylor",
+    "source_ids": [
+      "953fe942b7ce9a29-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef-Egg... (77KB) I just asked Claude (Opus 5.5 Medium running",
+    "cluster_id": "e30570db0b8e75bc",
+    "dek": "My comment on The Web Is More Than Enough, by Paul Ford \u2014 Hacker News.",
+    "headline": "The Web Is More Than Enough, by Paul Ford",
+    "source_ids": [
+      "e30570db0b8e75bc-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at",
+    "cluster_id": "752f3d44be0a4338",
+    "dek": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex.",
+    "headline": "Hide your slop PR descriptions behind",
+    "source_ids": [
+      "752f3d44be0a4338-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "9016318047da6e4d",
+    "dek": "The company said it needed fewer workers because production was increasing more slowly than previously expected.",
+    "headline": "Boeing Will Cut 5% of Commercial Plane Employees",
+    "source_ids": [
+      "9016318047da6e4d-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "e0ce4b513bae3df3",
+    "dek": "",
+    "headline": "Interactive 3D Tool Treellis Fosters Human Learning in Artificial Intelligence Design",
+    "source_ids": [
+      "e0ce4b513bae3df3-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
