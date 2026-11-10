@@ -1,0 +1,84 @@
+[
+  {
+    "body": "Inside CS146S and the engineering team at Monaco.",
+    "cluster_id": "4ad239269cc94406",
+    "dek": "What happens when students can one-shot last year\u2019s homework?",
+    "headline": "How Stanford Teaches AI-Native Engineering \u2014 Mihail Eric, Monaco",
+    "source_ids": [
+      "4ad239269cc94406-s1",
+      "4ad239269cc94406-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, industry-analysis."
+  },
+  {
+    "body": "The new restaurant puts cocktails and dinner at the center of the former all-day spot, with [\u2026]",
+    "cluster_id": "7a6534e51b667e66",
+    "dek": "While Enrique Olvera closed Atla in May, he didn\u2019t give up the space: In its place, on Tuesday, November 10, the chef behind Cosme and Mexico City\u2019s Pujol opens Bar Cosme at 11 Great Jones Street, at Lafayette Street.",
+    "headline": "Bar Cosme From Enrique Olvera Opens Tomorrow With a Focus on Tortillas",
+    "source_ids": [
+      "7a6534e51b667e66-s1",
+      "7a6534e51b667e66-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "",
+    "cluster_id": "d4869f5259f6b794",
+    "dek": "Defense Secretary Pete Hegseth broke a monthslong drought of press briefings to defend his record in office.",
+    "headline": "On the Defense: Takeaways From Hegseth\u2019s Remarks on Articles of Impeachment",
+    "source_ids": [
+      "d4869f5259f6b794-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "c2c2ffd89a5847e2",
+    "dek": "The former Trump lawyer had signed the contract with a family company weeks before the president gave the family\u2019s patriarch a pardon.",
+    "headline": "Alina Habba Loses $50 Million Contract That Enraged Trump",
+    "source_ids": [
+      "c2c2ffd89a5847e2-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "The most recent attack happened on the east side of the park in October.",
+    "cluster_id": "9ae5cce0c7957b66",
+    "dek": "Dereck Rivera-Deleon, 30, was apprehended while working at a Burger King in Miami.",
+    "headline": "U.S. Marshals Detain Man Tied to 3 Rapes in Central Park",
+    "source_ids": [
+      "9ae5cce0c7957b66-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "007bcb9afba74020",
+    "dek": "A federal judge ordered Mayor Zohran Mamdani to comply with a federal subpoena for information about some migrants with serious criminal records.",
+    "headline": "Mamdani Has Been a Fierce Opponent of ICE. A Judge Handed Him a Setback.",
+    "source_ids": [
+      "007bcb9afba74020-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "company.",
+    "cluster_id": "b221c51047a206e2",
+    "dek": "Nvidia planned to invest $10 billion in Anthropic alongside its initial public offering, the largest of the new financial commitments from several giants to the A.I.",
+    "headline": "Anthropic\u2019s Giant IPO Will Tie It Closer to Nvidia",
+    "source_ids": [
+      "b221c51047a206e2-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "c107ed474674d76b",
+    "dek": "",
+    "headline": "Mayor Mamdani Breaks Ground on $184 Million Rebirth of Chinatown\u2019s Historic 70 Mulberry Street",
+    "source_ids": [
+      "c107ed474674d76b-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
