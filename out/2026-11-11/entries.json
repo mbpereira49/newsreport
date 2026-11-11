@@ -1,0 +1,85 @@
+[
+  {
+    "body": "Inside CS146S and the engineering team at Monaco.",
+    "cluster_id": "4ad239269cc94406",
+    "dek": "What happens when students can one-shot last year\u2019s homework?",
+    "headline": "How Stanford Teaches AI-Native Engineering \u2014 Mihail Eric, Monaco",
+    "source_ids": [
+      "4ad239269cc94406-s1",
+      "4ad239269cc94406-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, industry-analysis."
+  },
+  {
+    "body": "Emma Grace Hurley has run two seconds faster this year. With about 500 days until the Olympic Marathon Trials, we debate the favorites and make the case for dark horse Rachael Rudel. The post 500 Days Until the 2028 US Olympic Marathon Trials: Who Are the Women\u2019",
+    "cluster_id": "59cbc719f4964d1b",
+    "dek": "Jess McClain came within six seconds of winning New York.",
+    "headline": "500 Days Until the 2028 US Olympic Marathon Trials: Who Are the Women\u2019s Favorites?",
+    "source_ids": [
+      "59cbc719f4964d1b-s1",
+      "59cbc719f4964d1b-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in elite-running, race-commentary, running."
+  },
+  {
+    "body": "The new restaurant puts cocktails and dinner at the center of the former all-day spot, with [\u2026]",
+    "cluster_id": "7a6534e51b667e66",
+    "dek": "While Enrique Olvera closed Atla in May, he didn\u2019t give up the space: In its place, on Tuesday, November 10, the chef behind Cosme and Mexico City\u2019s Pujol opens Bar Cosme at 11 Great Jones Street, at Lafayette Street.",
+    "headline": "Bar Cosme From Enrique Olvera Opens Tomorrow With a Focus on Tortillas",
+    "source_ids": [
+      "7a6534e51b667e66-s1",
+      "7a6534e51b667e66-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "I had a few Fable 5.2 credits left over before my weekly reset so I set it to work using tree-sitter to analyze the code for JavaScript APIs, libraries, and web API hosts used by each tool. The homepage now featur",
+    "cluster_id": "ce9fcd9513ad051e",
+    "dek": "I've been wanting a better way to browse my collection of vibe-coded tools (244 and counting) for a while.",
+    "headline": "Browse tools.simonwillison.net by tag",
+    "source_ids": [
+      "ce9fcd9513ad051e-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endpoint add command - for using LLM with OpenAI-compatible API endpoints from other providers. Daniel",
+    "cluster_id": "52e295b7d762af38",
+    "dek": "Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w .",
+    "headline": "llm 0.37.2",
+    "source_ids": [
+      "52e295b7d762af38-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "Just over a year later, he was fatally shot on the way to school in the Bronx.",
+    "cluster_id": "6e185b6a30184d78",
+    "dek": "Javits Frimpong came to New York from Ghana with big dreams.",
+    "headline": "He Was Killed at Age 15. Now a 17-Year-Old Is Arrested in His Murder.",
+    "source_ids": [
+      "6e185b6a30184d78-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "ad9ebf71653eb7d2",
+    "dek": "Mayor Zohran Mamdani will begin contract talks with District Council 37, New York City\u2019s largest municipal union, whose leader is seeking worker protections against artificial intelligence.",
+    "headline": "Unions to Press on A.I. Threat in Mamdani\u2019s First Labor Talks as Mayor",
+    "source_ids": [
+      "ad9ebf71653eb7d2-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "ea938fbf374362f5",
+    "dek": "",
+    "headline": "At COP31, Governments Must Invest in Farming Systems Built to Endure",
+    "source_ids": [
+      "ea938fbf374362f5-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
