@@ -1,0 +1,84 @@
+[
+  {
+    "body": "Think again. Maris Kreizman recommends 10 you might have missed. | Lit Hub Reading Lists Zachary Fletcher interviews former New York Times romance columnist Olivia Waite about being fired and the",
+    "cluster_id": "efdbf4f38cedc97a",
+    "dek": "Think you saw every great debut novel in 2026?",
+    "headline": "Lit Hub Weekly: November 9 \u2013 13, 2026",
+    "source_ids": [
+      "efdbf4f38cedc97a-s1",
+      "efdbf4f38cedc97a-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in books, criticism, literary-fiction."
+  },
+  {
+    "body": "Throughout the month, we\u2019ll update the list weekly (see: October, September, August, July, June, May, April, March, February, January). When we\u2019ve been to",
+    "cluster_id": "e2607d4417bf89ff",
+    "dek": "This is Eater NY\u2019s new guide to all of the new restaurants, bars, and cafes that have opened around New York City this November 2026, in a brand-new format as a map.",
+    "headline": "All the New Restaurant Openings to Know in New York City",
+    "source_ids": [
+      "e2607d4417bf89ff-s1",
+      "e2607d4417bf89ff-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web prot",
+    "cluster_id": "8b64cb14c13dfed2",
+    "dek": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins.",
+    "headline": "datasette-llm 0.1a11",
+    "source_ids": [
+      "8b64cb14c13dfed2-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "The last release was in July 2018! I finally bumped it for compatibility with the latest Datasette alphas, plus some cosmetic tweaks to make it work better",
+    "cluster_id": "b95ec0ae929ebdaf",
+    "dek": "Release: datasette-vega 0.7 A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite ) against data in a table or custom query.",
+    "headline": "datasette-vega 0.7",
+    "source_ids": [
+      "b95ec0ae929ebdaf-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "84cb2bbdd332c405",
+    "dek": "Officers were trying to detain the man, who was driving on the Belt Parkway, when he started ramming other vehicles, the New York Police Department said.",
+    "headline": "Police Fatally Shoot Man in Brooklyn After Report of Possible Abduction",
+    "source_ids": [
+      "84cb2bbdd332c405-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "616806a072fb272c",
+    "dek": "A Halloween moment in the subway, no desserts at the movies and more reader tales of New York City in this week\u2019s Metropolitan Diary.",
+    "headline": "\u2018At 14th Street, We Peered Through the Windows and Across the Platform\u2019",
+    "source_ids": [
+      "616806a072fb272c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "e0674b4ee3de5b69",
+    "dek": "More than a half-dozen potential Democratic presidential candidates made early pitches for themselves and their visions at what amounted to a party-wide post-election victory party.",
+    "headline": "8 Takeaways From a Big Democratic Gathering in Denver: Democrats in Array",
+    "source_ids": [
+      "e0674b4ee3de5b69-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "78976460054cc8b0",
+    "dek": "",
+    "headline": "Seven Diller & Scofidio architectural landmarks you should visit",
+    "source_ids": [
+      "78976460054cc8b0-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
