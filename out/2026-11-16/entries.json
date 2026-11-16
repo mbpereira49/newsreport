@@ -1,0 +1,82 @@
+[
+  {
+    "body": "",
+    "cluster_id": "d9cf910259cfa804",
+    "dek": "Police unions reacted angrily to Mayor Zohran Mamdani\u2019s decision to revamp the Strategic Response Group, but criminal justice activists were pleased.",
+    "headline": "Mamdani\u2019s Move to Disband N.Y.P.D. Unit Provokes Praise, Anger and Spin",
+    "source_ids": [
+      "d9cf910259cfa804-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "Kotlikoff announced further steps in response to a former student\u2019s lawsuit alleging a gang rape at a frat house.",
+    "cluster_id": "760cd11c5f584dbc",
+    "dek": "President Michael I.",
+    "headline": "Cornell University\u2019s President Vows Fraternity Review in Wake of No Confidence Vote",
+    "source_ids": [
+      "760cd11c5f584dbc-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "40ad6933e7401943",
+    "dek": "The disruption, after a nationwide ground stop last week, added to concerns about air travel ahead of a busy Thanksgiving travel period.",
+    "headline": "United Airlines Grounds Flights as It Reports \u2018Widespread System Outage\u2019",
+    "source_ids": [
+      "40ad6933e7401943-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "technology.",
+    "cluster_id": "fdf30a4b7d27de82",
+    "dek": "The Treasury secretary who sought to de-escalate tariff wars is taking a tougher approach to exports of sensitive U.S.",
+    "headline": "Bessent Takes Hawkish Turn in White House Debate on China",
+    "source_ids": [
+      "fdf30a4b7d27de82-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "bed2335a078e4c65",
+    "dek": "The court filing confirms that the Trump administration has sought on two parallel fronts to identify the sources for an article as part of one overarching investigation.",
+    "headline": "Trump Administration Sought LinkedIn Data in Effort to Identify New York Times Sources",
+    "source_ids": [
+      "bed2335a078e4c65-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "44f9c1558d2db19a",
+    "dek": "After technical problems grounded flights nationwide and Microsoft products failed, the banking issues added to a sense of doom about the systems underpinning daily life.",
+    "headline": "Chase Bank Transactions Disrupted by \u2018Technical Issue\u2019 Amid Outage Reports",
+    "source_ids": [
+      "44f9c1558d2db19a-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "bbf5046acea4aedb",
+    "dek": "Langley is the first straight-up country artist to contend for the top album prize in eight years, and Raye\u2019s 11 nods lead all nominees.",
+    "headline": "Raye, Rosal\u00eda and Ella Langley Top a Women-Led 2027 Grammys Field",
+    "source_ids": [
+      "bbf5046acea4aedb-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in arts, context, culture."
+  },
+  {
+    "body": "",
+    "cluster_id": "cd3037999c73beaa",
+    "dek": "Madonna and Kahan were locked out of nominations in the top categories, the Womack Sisters were recognized and country\u2019s gender divide showed up in an unexpected way.",
+    "headline": "2027 Grammy Snubs and Surprises: Madonna, Noah Kahan, Audrey Hobert and More",
+    "source_ids": [
+      "cd3037999c73beaa-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in arts, context, culture."
+  }
+]
