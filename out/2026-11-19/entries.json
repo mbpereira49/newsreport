@@ -1,0 +1,83 @@
+[
+  {
+    "body": "",
+    "cluster_id": "591ac71f8a85d7ec",
+    "dek": "The son of Keith McNally, the man who defined the genre at Balthazar and the Odeon, follows up with another restaurant where the food is not the point.",
+    "headline": "Restaurant Review: At Faux, the Scene-y NYC Bistro Enters Its Next Generation",
+    "source_ids": [
+      "591ac71f8a85d7ec-s1",
+      "591ac71f8a85d7ec-s2"
+    ],
+    "why_it_matters": "Flagged from 2 sources in cooking, dining, food."
+  },
+  {
+    "body": "",
+    "cluster_id": "765b6a022b4d0352",
+    "dek": "A rule set to take effect next month would deny federal housing assistance to households that include undocumented immigrants, even if other family members are citizens.",
+    "headline": "Lawsuit Seeks to Block Trump\u2019s Housing Rule Targeting Immigrants",
+    "source_ids": [
+      "765b6a022b4d0352-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "afc4e572f8977c50",
+    "dek": "The New York attorney general said that immigrant workers renovating a Rochester hotel had lived in unfit conditions and been underpaid.",
+    "headline": "Workers at Holiday Inn Were Threatened With Deportation, Lawsuit Says",
+    "source_ids": [
+      "afc4e572f8977c50-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, new-york, nyc."
+  },
+  {
+    "body": "",
+    "cluster_id": "66097e99739813ca",
+    "dek": "Jen O\u2019Malley Dillon, who led the former president\u2019s last two White House bids, is inviting top Democratic operatives to a gathering funded in part by the megadonor Alex Soros.",
+    "headline": "Former Biden Chief, With Help From Alex Soros, Will Gather Aides of 2028 Hopefuls",
+    "source_ids": [
+      "66097e99739813ca-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "0078c7fbf45eb442",
+    "dek": "The beloved Nile hippopotamus became ill after eating a children\u2019s hat that accidentally ended up in her enclosure.",
+    "headline": "Fiona the Hippo, Star of Cincinnati Zoo and Beyond, Dies After Eating Child\u2019s Hat",
+    "source_ids": [
+      "0078c7fbf45eb442-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "517ba2775d81a722",
+    "dek": "The artist unveils projects in New Haven, Conn., Brooklyn and San Francisco, where her sculpted soundscape offers a new standard for accessibility.",
+    "headline": "Sarah Sze\u2019s Artful \u2018Constellations\u2019 Invite Wonder and Inclusion",
+    "source_ids": [
+      "517ba2775d81a722-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in arts, context, culture."
+  },
+  {
+    "body": "",
+    "cluster_id": "27ba0ad76fb5f267",
+    "dek": "With huge hits from Ella Langley and Stella Lefty, a slate of nominations in the top Grammy categories and Taylor Swift\u2019s return to the genre, women expanded, and blurred, country music\u2019s borders.",
+    "headline": "Women Led Country\u2019s Big-Tent Revival in 2026",
+    "source_ids": [
+      "27ba0ad76fb5f267-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in arts, context, culture."
+  },
+  {
+    "body": "",
+    "cluster_id": "18053f068945df70",
+    "dek": "",
+    "headline": "Helping AI text detectors keep up with changing conditions",
+    "source_ids": [
+      "18053f068945df70-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
