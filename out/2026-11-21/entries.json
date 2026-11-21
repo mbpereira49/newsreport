@@ -1,0 +1,88 @@
+[
+  {
+    "body": "",
+    "cluster_id": "c09ee46838d2660c",
+    "dek": "Each fall, the Roger Ebert Fellowship program selects three College of Media undergraduate students at the University of Illinois Urbana-Champaign to participate in a yearlong fellowship that aims to shape their skill...",
+    "headline": "CIFF 2026: In \u201cOnce Upon a Time in Harlem,\u201d a Documentary\u2019s Multigenerational Co-Creation Opens Meaningful Dialogue",
+    "source_ids": [
+      "c09ee46838d2660c-s1",
+      "c09ee46838d2660c-s2",
+      "c09ee46838d2660c-s3"
+    ],
+    "why_it_matters": "Flagged from 1 source in criticism, movies, reviews."
+  },
+  {
+    "body": "I missed that when I added those models to the llm-gemini plugin, which is now fixed in this dot release. The xhigh setting for Hydrogen makes a signi",
+    "cluster_id": "edf6035cd33715ac",
+    "dek": "Release: llm-gemini 0.38.1 Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level.",
+    "headline": "llm-gemini 0.38.1",
+    "source_ids": [
+      "edf6035cd33715ac-s1",
+      "edf6035cd33715ac-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "| Lit Hub \u201cFear of the defiling power of Roman fantasy ran so deep that the entrance to the room was, at one point, bricked",
+    "cluster_id": "786ebc578b6cc7a7",
+    "dek": "It\u2019s the moment you\u2019ve all been waiting for: Meet this year\u2019s National Book Award finalists.",
+    "headline": "Lit Hub Weekly: November 16 \u2013 20, 2026",
+    "source_ids": [
+      "786ebc578b6cc7a7-s1",
+      "786ebc578b6cc7a7-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in books, criticism, literary-fiction."
+  },
+  {
+    "body": "The domestic airport went through intensive renovations, resulting in a shiny, bright new traveling hub in New York City. This extends into its food and drinks offerings, which include outposts of Te",
+    "cluster_id": "20e55f4a6eab4f41",
+    "dek": "After some rough decades, LaGuardia Airport is now considered one of the best airports in North America for good reason.",
+    "headline": "Where to Eat at LaGuardia Airport in New York City",
+    "source_ids": [
+      "20e55f4a6eab4f41-s1",
+      "20e55f4a6eab4f41-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in nyc-food, openings, restaurants."
+  },
+  {
+    "body": "The post 2026 NCAA Cross Country Championships Men\u2019s Results appeared first on LetsRun.com .",
+    "cluster_id": "ec1960c8a50bccea",
+    "dek": "Elsingi Kipruto of Louisville and the New Mexico Lobos came in as the favorites and left as winners of the 2026 NCAA XC titles.",
+    "headline": "2026 NCAA Cross Country Championships Men\u2019s Results",
+    "source_ids": [
+      "ec1960c8a50bccea-s1",
+      "ec1960c8a50bccea-s2"
+    ],
+    "why_it_matters": "Flagged from 1 source in elite-running, race-commentary, running."
+  },
+  {
+    "body": "",
+    "cluster_id": "ab4cb255b71fa0c1",
+    "dek": "The president\u2019s executive order is the latest effort to blunt Democratic plans to investigate the administration\u2019s actions.",
+    "headline": "Trump Moves to Restrict Congressional Oversight of Contractors",
+    "source_ids": [
+      "ab4cb255b71fa0c1-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "d6670fbbbfbc9c39",
+    "dek": "\u201cIt was a life-changing moment,\u201d said a searcher who found the girl, Vella Campillo, early on Wednesday in a remote area of Arizona after she had been missing for more than seven hours.",
+    "headline": "2-Year-Old Girl Wearing Only a Diaper Is Rescued After Hours in the Desert",
+    "source_ids": [
+      "d6670fbbbfbc9c39-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "4741ca20095443fa",
+    "dek": "",
+    "headline": "From Farmers\u2019 Market to the Dinner Table: L.A. Restaurants Putting Seasonal Produce First",
+    "source_ids": [
+      "4741ca20095443fa-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in serendipity."
+  }
+]
