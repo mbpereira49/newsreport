@@ -1,0 +1,4552 @@
+[
+  {
+    "id": "f3aa9757964fbd12",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "954b0c2f3a86ba9c",
+        "metadata": {
+          "domain": "simonwillison.net",
+          "publisher": "Simon Willison",
+          "publisher_url": null,
+          "source_url": "https://simonwillison.net/atom/everything/"
+        },
+        "published_at": "2026-11-26T15:09:31+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Simon Willison",
+        "summary": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find pitches and articles from ostensibly serious people with ostensibly serious credentials attached to ostensibly serious institutions who want to publish things attached to their reputations and mine, and I see Claude . \u2014 Jack Despain Zhou , Spitting in the Face of Glaude Tags: ai-misuse , claude , generative-ai , ai , llms",
+        "tags": [
+          "ai",
+          "agent-infrastructure",
+          "practitioner-analysis"
+        ],
+        "title": "Quoting Jack Despain Zhou",
+        "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "simonwillison.net",
+        "id": "f3aa9757964fbd12-s1",
+        "name": "Simon Willison",
+        "published_at": "2026-11-26T15:09:31+00:00",
+        "publisher": "Simon Willison",
+        "title": "Quoting Jack Despain Zhou",
+        "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/"
+      }
+    ],
+    "summary": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find pitches and articles from ostensibly serious people with ostensibly serious credentials attached to ostensibly serious institutions who want to publish things attached to their reputations and mine, and I see Claude . \u2014 Jack Despain Zhou , Spitting in the Face of Glaude Tags: ai-misuse , claude , generative-ai , ai , llms",
+    "tags": [
+      "agent-infrastructure",
+      "ai",
+      "practitioner-analysis"
+    ],
+    "title": "Quoting Jack Despain Zhou"
+  },
+  {
+    "id": "3ab5aac84010e395",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "2aeffc716880cedd",
+        "metadata": {
+          "domain": "simonwillison.net",
+          "publisher": "Simon Willison",
+          "publisher_url": null,
+          "source_url": "https://simonwillison.net/atom/everything/"
+        },
+        "published_at": "2026-11-26T06:08:25+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Simon Willison",
+        "summary": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood one of its most attractive characteristics. Normally, if you want to grab a snapshot copy of a SQLite database, you need to use either the backup API or VACUUM INTO . In both cases you need enough disk space to create a duplicate copy of your database, so if you're on a small instance and you already use more than half of the available disk you are plain out of luck. sqlite3_rsync can copy a snapshot of your database over an SSH connection to another machine, without first needing to create a full local copy! It's also good for synchronizing an existing copy of a database without re-transmitting the entire thing over the network. It works in a similar way to regular rsync: The core idea behind the protocol is that the replica sends cryptographic hashes for pages or groups of pages over to the origin side. The origin sends back page content that differs, or requests finer-grain hashes if a multi-page hash does not match. If the origin and replica start out being vastly different, the total network bandwidth can exceed the size of the entire database, due to the overhead of exchanging hashes, but the excess bandwidth is not great - a few percent at most. Update : Hah! Turns out I wrote about this application of sqlite_rsync back in October 2024 when the tool was first released. Tags: backups , sqlite",
+        "tags": [
+          "ai",
+          "agent-infrastructure",
+          "practitioner-analysis"
+        ],
+        "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+        "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "simonwillison.net",
+        "id": "3ab5aac84010e395-s1",
+        "name": "Simon Willison",
+        "published_at": "2026-11-26T06:08:25+00:00",
+        "publisher": "Simon Willison",
+        "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+        "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/"
+      }
+    ],
+    "summary": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood one of its most attractive characteristics. Normally, if you want to grab a snapshot copy of a SQLite database, you need to use either the backup API or VACUUM INTO . In both cases you need enough disk space to create a duplicate copy of your database, so if you're on a small instance and you already use more than half of the available disk you are plain out of luck. sqlite3_rsync can copy a snapshot of your database over an SSH connection to another machine, without first needing to create a full local copy! It's also good for synchronizing an existing copy of a database without re-transmitting the entire thing over the network. It works in a similar way to regular rsync: The core idea behind the protocol is that the replica sends cryptographic hashes for pages or groups of pages over to the origin side. The origin sends back page content that differs, or requests finer-grain hashes if a multi-page hash does not match. If the origin and replica start out being vastly different, the total network bandwidth can exceed the size of the entire database, due to the overhead of exchanging hashes, but the excess bandwidth is not great - a few percent at most. Update : Hah! Turns out I wrote about this application of sqlite_rsync back in October 2024 when the tool was first released. Tags: backups , sqlite",
+    "tags": [
+      "agent-infrastructure",
+      "ai",
+      "practitioner-analysis"
+    ],
+    "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite"
+  },
+  {
+    "id": "eacab4b32c1517dd",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "df1721614f9d773b",
+        "metadata": {
+          "domain": "simonwillison.net",
+          "publisher": "Simon Willison",
+          "publisher_url": null,
+          "source_url": "https://simonwillison.net/atom/everything/"
+        },
+        "published_at": "2026-11-26T05:08:46+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Simon Willison",
+        "summary": "My comment on The New York Times warns photographers not to update Photoshop over AI features \u2014 Hacker News. I had a NYT photographer take my picture at my home earlier this year (for a story about Moltbook, oddly enough). At one point I asked if they could fix things up if I had a stain on my shirt and they said absolutely not - they present photographs as they were taken, with cropping and balancing applied but no edits beyond that. He did spend a bunch of time trying to find the best possible natural lighting for the shots he wanted. The photo at the top of https://www.nytimes.com/2026/02/02/technology/moltbook-ai-so... is my laptop, taken in my garden, after hunting around for the best spot that didn't have too much glare on the screen. You can see how dirty my screen is, too! Photography for a newspaper is photo journalism, and they take it seriously. (Thankfully I did not have a visible stain on my shirt.) Tags: photography , new-york-times , hacker-news , journalism",
+        "tags": [
+          "ai",
+          "agent-infrastructure",
+          "practitioner-analysis"
+        ],
+        "title": "The New York Times warns photographers not to update Photoshop over AI features",
+        "url": "https://simonwillison.net/2026/Nov/26/hn-50651685/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "simonwillison.net",
+        "id": "eacab4b32c1517dd-s1",
+        "name": "Simon Willison",
+        "published_at": "2026-11-26T05:08:46+00:00",
+        "publisher": "Simon Willison",
+        "title": "The New York Times warns photographers not to update Photoshop over AI features",
+        "url": "https://simonwillison.net/2026/Nov/26/hn-50651685/"
+      }
+    ],
+    "summary": "My comment on The New York Times warns photographers not to update Photoshop over AI features \u2014 Hacker News. I had a NYT photographer take my picture at my home earlier this year (for a story about Moltbook, oddly enough). At one point I asked if they could fix things up if I had a stain on my shirt and they said absolutely not - they present photographs as they were taken, with cropping and balancing applied but no edits beyond that. He did spend a bunch of time trying to find the best possible natural lighting for the shots he wanted. The photo at the top of https://www.nytimes.com/2026/02/02/technology/moltbook-ai-so... is my laptop, taken in my garden, after hunting around for the best spot that didn't have too much glare on the screen. You can see how dirty my screen is, too! Photography for a newspaper is photo journalism, and they take it seriously. (Thankfully I did not have a visible stain on my shirt.) Tags: photography , new-york-times , hacker-news , journalism",
+    "tags": [
+      "agent-infrastructure",
+      "ai",
+      "practitioner-analysis"
+    ],
+    "title": "The New York Times warns photographers not to update Photoshop over AI features"
+  },
+  {
+    "id": "a97fb6ae96b8105b",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "6dc0628172ebe0a8",
+        "metadata": {
+          "domain": "simonwillison.net",
+          "publisher": "Simon Willison",
+          "publisher_url": null,
+          "source_url": "https://simonwillison.net/atom/everything/"
+        },
+        "published_at": "2026-11-25T23:26:32+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Simon Willison",
+        "summary": "It\u2019s now obvious that we\u2019ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we\u2019d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondwater, or Galileo first training his telescope on the stars. That might give you some idea of how our resolution into the complexity-theoretic universe, and the whole universe of mathematical truth beyond it, has now improved. \u2014 Scott Aaronson Tags: mathematics , llms , ai , generative-ai",
+        "tags": [
+          "ai",
+          "agent-infrastructure",
+          "practitioner-analysis"
+        ],
+        "title": "Quoting Scott Aaronson",
+        "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "simonwillison.net",
+        "id": "a97fb6ae96b8105b-s1",
+        "name": "Simon Willison",
+        "published_at": "2026-11-25T23:26:32+00:00",
+        "publisher": "Simon Willison",
+        "title": "Quoting Scott Aaronson",
+        "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/"
+      }
+    ],
+    "summary": "It\u2019s now obvious that we\u2019ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we\u2019d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondwater, or Galileo first training his telescope on the stars. That might give you some idea of how our resolution into the complexity-theoretic universe, and the whole universe of mathematical truth beyond it, has now improved. \u2014 Scott Aaronson Tags: mathematics , llms , ai , generative-ai",
+    "tags": [
+      "agent-infrastructure",
+      "ai",
+      "practitioner-analysis"
+    ],
+    "title": "Quoting Scott Aaronson"
+  },
+  {
+    "id": "1b6b812d65bb3e0c",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "f31b251ab5f404d8",
+        "metadata": {
+          "domain": "simonwillison.net",
+          "publisher": "Simon Willison",
+          "publisher_url": null,
+          "source_url": "https://simonwillison.net/atom/everything/"
+        },
+        "published_at": "2026-11-25T18:16:50+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Simon Willison",
+        "summary": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in Datasette Lite , where you can tweak the annotations using the chart builder UI: If you also install Datasette Agent the agent can build annotated charts for you. Here's what I got on the agent.datasette.io demo for this prompt: Show a chart comparing Simon's tagged content about LLMs with his tagged content about Datasette, with annotations Tags: datasette , visualization , datasette-charts",
+        "tags": [
+          "ai",
+          "agent-infrastructure",
+          "practitioner-analysis"
+        ],
+        "title": "datasette-charts 0.3a0",
+        "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "simonwillison.net",
+        "id": "1b6b812d65bb3e0c-s1",
+        "name": "Simon Willison",
+        "published_at": "2026-11-25T18:16:50+00:00",
+        "publisher": "Simon Willison",
+        "title": "datasette-charts 0.3a0",
+        "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/"
+      }
+    ],
+    "summary": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in Datasette Lite , where you can tweak the annotations using the chart builder UI: If you also install Datasette Agent the agent can build annotated charts for you. Here's what I got on the agent.datasette.io demo for this prompt: Show a chart comparing Simon's tagged content about LLMs with his tagged content about Datasette, with annotations Tags: datasette , visualization , datasette-charts",
+    "tags": [
+      "agent-infrastructure",
+      "ai",
+      "practitioner-analysis"
+    ],
+    "title": "datasette-charts 0.3a0"
+  },
+  {
+    "id": "6e131983d1b3bcde",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "8ebf288da06b7cf1",
+        "metadata": {
+          "domain": "simonwillison.net",
+          "publisher": "Simon Willison",
+          "publisher_url": null,
+          "source_url": "https://simonwillison.net/atom/everything/"
+        },
+        "published_at": "2026-11-24T23:02:07+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Simon Willison",
+        "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model. In the Opus 4.5 announcement, Anthropic said: Testers noted that Claude Opus 4.5 handles ambiguity and reasons about tradeoffs without hand-holding. They told us that, when pointed at a complex, multi-system bug, Opus 4.5 figures out the fix. They said that tasks that were near-impossible for Sonnet 4.5 just a few weeks ago are now within reach. This held up. Claude Code was 9 months old at that point, having been introduced alongside Claude 3.7 Sonnet on February 24th, 2025. Opus 4.5 was the first model I had used with Claude Code where the default result was generally the right thing. I hadn't been using Claude Code as a daily driver because it didn't feel reliable enough - I had to correct it often enough that it didn't feel like a clear accelerant. The new Opus changed that. For most of the coding problems I faced on a daily basis, Opus would get them right . It was clearly faster than working through the problems myself. Also in November, OpenAI released GPT-5.1 Instant, GPT-5.1 Thinking, GPT-5.1-Codex, and GPT-5.1-Codex-Max. These had a similar effect on their Codex coding agent: it became reliably useful for many of my coding tasks. The timing was convenient, because the December holidays were upon us. A lot of people, myself included, spent December tinkering with these new tools to see what they could do. By January we were ready to use them for our actual work. Fable class models in June/July We got our first hint of Claude Fable in April, when Anthropic announced Claude Mythos and said that it was too dangerous to release , due to its improved cybersecurity capabilities. Mythos was a model that could not just find security vulnerabilities, it could also figure out how to exploit them. In June we got to see how good that model was for ourselves, with the release of Claude Fable 5 - a defanged Mythos, that would solve most problems but would actively block you from using it for security work. After three glorious days... the US government took it away from us. Fable 5 was placed under export controls that effectively banned the model. We wouldn't get it back until July 1st. For me, Fable was an inflection point because it introduced us to what I now think of as Fable class models . My definition of these: In June I wrote about how Claude Fable is relentlessly proactive , after I asked it to help fix a display glitch in Safari and it spun up its own pyobjc-framework-Quartz screenshot mechanism and a CORS-enabled localhost logging server to help resolve the bug. A more recent example of the power of Fable class models is my mysterious beep finder from a couple of weeks ago. I gave Opus 5.5 and then Fable 5.2 access to five WebAudio microphones in a room full of boxes and it was able to triangulate the source of an infuriating mysterious beep to within about 40cm. Give it a goal, give it the right tools, and watch it cook. I'd currently class Claude Fable 5, 5.1, 5.2 and Claude Opus 5.5 as Fable class (I think of Opus 5.5 as \"cheap Fable\"). GPT-6 Astra got there for me too, and I think the new Gemini 4 Neon may count as well. These now represent the baseline for what I expect from a frontier model. 3D modeling and game development in September/October Something interesting happened with frontier LLMs over just the past four months: they got really good at 3D modeling. Set them up with Blender or ask them to write Three.js code and they'll produce credible models of almost anything you ask for. I first noticed this with Claude Fable 5, but it really kicked into gear with Opus 5.5, GPT-5.6 Sol, GPT-6 Astra, and most recently the Gemini 4 family. Here's Gemini 4 Neon's attempt at \"Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data\", for example. 3D spatial awareness is crucial if you want to use vision LLMs for robotics. I don't know if 3D modeling capabilities are a side-effect of the labs focusing on that or vice-versa. Back in August I experimented with having Fable 5 build me a raccoon heist game . It had 3D graphics, looked like a game, and played really poorly. GPT-5.6 Sol Ultra did a much better job but the game itself was still pretty dull after the first 90 seconds of play. I was somewhat relieved that designing a game that was fun appeared to remain a uniquely human pursuit. I even used that in a talk in September to reassure people that us humans still had a role to play! Then, I tried telling Claude Opus 5.5 \"This game isn't fun enough yet. Make it a LOT more fun.\" And it worked . My Command & Conquer-style RTS went from boring to deeply entertaining overnight, after Opus spent 12 hours playtesting new features and rebalancing the gameplay. Opus 5.5 was the first model I'd used that appeared to understand fun. I've since worked on several little game projects where prompts like \"Think hard about how to make sure it is both fun and beautiful\" produced results that kept me engaged for significant amounts of time. Opus 5.5 came out on September 22nd, 2026. I've been to two different conferences since then where people showed me game projects they'd been working on that really did feel like proper, worthwhile games. The indie games scene has descended into a full-blown culture war over AI-assisted programming. A lot of people are calling GTA VI the last pre-generative AI blockbuster . It feels like another inflection point to me. Is Fable 5.2 an inflection point too? I'm still trying to decide if Fable 5.2 represents a new inflection point, or just another incremental improvement. I'm getting so much done with that model right now! It seems to have taste that almost exactly matches my own. I have been burning through all sorts of gnarly problems that I've been thinking about (or procrastinating on) for several years now. The release notes for Datasette 1.0a42 , 1.0a43 , and 1.0a44 - plus LLM 0.37 , 0.37.1 , 0.37.2 , 0.37.3 , and 0.38 - all in the last three weeks , represent a flood of fixes, features and improvements. If this does represent an inflection point, the key feature seems to be that if you can imagine and then clearly describe a piece of software, Fable can build it . That's a wild thing to say, but it matches my experience over the past few weeks. Software development has transformed beyond recognition in the last year. I don't think I'll ever go back to typing most of my code by hand. Tags: game-design , my-talks , ai , generative-ai , llms , annotated-talks , coding-agents , claude-code , codex , claude-mythos-fable",
+        "tags": [
+          "ai",
+          "agent-infrastructure",
+          "practitioner-analysis"
+        ],
+        "title": "Three LLM inflection points in twelve months",
+        "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "simonwillison.net",
+        "id": "6e131983d1b3bcde-s1",
+        "name": "Simon Willison",
+        "published_at": "2026-11-24T23:02:07+00:00",
+        "publisher": "Simon Willison",
+        "title": "Three LLM inflection points in twelve months",
+        "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/"
+      }
+    ],
+    "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model. In the Opus 4.5 announcement, Anthropic said: Testers noted that Claude Opus 4.5 handles ambiguity and reasons about tradeoffs without hand-holding. They told us that, when pointed at a complex, multi-system bug, Opus 4.5 figures out the fix. They said that tasks that were near-impossible for Sonnet 4.5 just a few weeks ago are now within reach. This held up. Claude Code was 9 months old at that point, having been introduced alongside Claude 3.7 Sonnet on February 24th, 2025. Opus 4.5 was the first model I had used with Claude Code where the default result was generally the right thing. I hadn't been using Claude Code as a daily driver because it didn't feel reliable enough - I had to correct it often enough that it didn't feel like a clear accelerant. The new Opus changed that. For most of the coding problems I faced on a daily basis, Opus would get them right . It was clearly faster than working through the problems myself. Also in November, OpenAI released GPT-5.1 Instant, GPT-5.1 Thinking, GPT-5.1-Codex, and GPT-5.1-Codex-Max. These had a similar effect on their Codex coding agent: it became reliably useful for many of my coding tasks. The timing was convenient, because the December holidays were upon us. A lot of people, myself included, spent December tinkering with these new tools to see what they could do. By January we were ready to use them for our actual work. Fable class models in June/July We got our first hint of Claude Fable in April, when Anthropic announced Claude Mythos and said that it was too dangerous to release , due to its improved cybersecurity capabilities. Mythos was a model that could not just find security vulnerabilities, it could also figure out how to exploit them. In June we got to see how good that model was for ourselves, with the release of Claude Fable 5 - a defanged Mythos, that would solve most problems but would actively block you from using it for security work. After three glorious days... the US government took it away from us. Fable 5 was placed under export controls that effectively banned the model. We wouldn't get it back until July 1st. For me, Fable was an inflection point because it introduced us to what I now think of as Fable class models . My definition of these: In June I wrote about how Claude Fable is relentlessly proactive , after I asked it to help fix a display glitch in Safari and it spun up its own pyobjc-framework-Quartz screenshot mechanism and a CORS-enabled localhost logging server to help resolve the bug. A more recent example of the power of Fable class models is my mysterious beep finder from a couple of weeks ago. I gave Opus 5.5 and then Fable 5.2 access to five WebAudio microphones in a room full of boxes and it was able to triangulate the source of an infuriating mysterious beep to within about 40cm. Give it a goal, give it the right tools, and watch it cook. I'd currently class Claude Fable 5, 5.1, 5.2 and Claude Opus 5.5 as Fable class (I think of Opus 5.5 as \"cheap Fable\"). GPT-6 Astra got there for me too, and I think the new Gemini 4 Neon may count as well. These now represent the baseline for what I expect from a frontier model. 3D modeling and game development in September/October Something interesting happened with frontier LLMs over just the past four months: they got really good at 3D modeling. Set them up with Blender or ask them to write Three.js code and they'll produce credible models of almost anything you ask for. I first noticed this with Claude Fable 5, but it really kicked into gear with Opus 5.5, GPT-5.6 Sol, GPT-6 Astra, and most recently the Gemini 4 family. Here's Gemini 4 Neon's attempt at \"Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data\", for example. 3D spatial awareness is crucial if you want to use vision LLMs for robotics. I don't know if 3D modeling capabilities are a side-effect of the labs focusing on that or vice-versa. Back in August I experimented with having Fable 5 build me a raccoon heist game . It had 3D graphics, looked like a game, and played really poorly. GPT-5.6 Sol Ultra did a much better job but the game itself was still pretty dull after the first 90 seconds of play. I was somewhat relieved that designing a game that was fun appeared to remain a uniquely human pursuit. I even used that in a talk in September to reassure people that us humans still had a role to play! Then, I tried telling Claude Opus 5.5 \"This game isn't fun enough yet. Make it a LOT more fun.\" And it worked . My Command & Conquer-style RTS went from boring to deeply entertaining overnight, after Opus spent 12 hours playtesting new features and rebalancing the gameplay. Opus 5.5 was the first model I'd used that appeared to understand fun. I've since worked on several little game projects where prompts like \"Think hard about how to make sure it is both fun and beautiful\" produced results that kept me engaged for significant amounts of time. Opus 5.5 came out on September 22nd, 2026. I've been to two different conferences since then where people showed me game projects they'd been working on that really did feel like proper, worthwhile games. The indie games scene has descended into a full-blown culture war over AI-assisted programming. A lot of people are calling GTA VI the last pre-generative AI blockbuster . It feels like another inflection point to me. Is Fable 5.2 an inflection point too? I'm still trying to decide if Fable 5.2 represents a new inflection point, or just another incremental improvement. I'm getting so much done with that model right now! It seems to have taste that almost exactly matches my own. I have been burning through all sorts of gnarly problems that I've been thinking about (or procrastinating on) for several years now. The release notes for Datasette 1.0a42 , 1.0a43 , and 1.0a44 - plus LLM 0.37 , 0.37.1 , 0.37.2 , 0.37.3 , and 0.38 - all in the last three weeks , represent a flood of fixes, features and improvements. If this does represent an inflection point, the key feature seems to be that if you can imagine and then clearly describe a piece of software, Fable can build it . That's a wild thing to say, but it matches my experience over the past few weeks. Software development has transformed beyond recognition in the last year. I don't think I'll ever go back to typing most of my code by hand. Tags: game-design , my-talks , ai , generative-ai , llms , annotated-talks , coding-agents , claude-code , codex , claude-mythos-fable",
+    "tags": [
+      "agent-infrastructure",
+      "ai",
+      "practitioner-analysis"
+    ],
+    "title": "Three LLM inflection points in twelve months"
+  },
+  {
+    "id": "0d0e3c737d42c394",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "709a501793942ea9",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT U.S.",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+        },
+        "published_at": "2026-11-27T19:43:58+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT U.S.",
+        "summary": "Ms. Stewart-Cousins, 76, served in the state senate for 20 years.",
+        "tags": [
+          "general",
+          "us",
+          "context"
+        ],
+        "title": "Andrea Stewart-Cousins, New York\u2019s First Female Senate Majority Leader, Dies",
+        "url": "https://nytimes.com/2026/11/27/us/andrea-stewart-cousins-dead.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "0d0e3c737d42c394-s1",
+        "name": "NYT U.S.",
+        "published_at": "2026-11-27T19:43:58+00:00",
+        "publisher": "NYT U.S.",
+        "title": "Andrea Stewart-Cousins, New York\u2019s First Female Senate Majority Leader, Dies",
+        "url": "https://nytimes.com/2026/11/27/us/andrea-stewart-cousins-dead.html"
+      }
+    ],
+    "summary": "Ms. Stewart-Cousins, 76, served in the state senate for 20 years.",
+    "tags": [
+      "context",
+      "general",
+      "us"
+    ],
+    "title": "Andrea Stewart-Cousins, New York\u2019s First Female Senate Majority Leader, Dies"
+  },
+  {
+    "id": "b2a262270f87528c",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "746f0025fa96a43e",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT U.S.",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+        },
+        "published_at": "2026-11-27T15:47:57+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT U.S.",
+        "summary": "The incoming Democratic majorities have begun targeting businesses and other outsiders in their planned inquiries, but the president has threatened to fire them if they comply without his permission.",
+        "tags": [
+          "general",
+          "us",
+          "context"
+        ],
+        "title": "In Democrats vs. Trump, the Loser May Be Federal Contractors",
+        "url": "https://nytimes.com/2026/11/27/us/politics/trump-congressional-investigations-contractors.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "b2a262270f87528c-s1",
+        "name": "NYT U.S.",
+        "published_at": "2026-11-27T15:47:57+00:00",
+        "publisher": "NYT U.S.",
+        "title": "In Democrats vs. Trump, the Loser May Be Federal Contractors",
+        "url": "https://nytimes.com/2026/11/27/us/politics/trump-congressional-investigations-contractors.html"
+      }
+    ],
+    "summary": "The incoming Democratic majorities have begun targeting businesses and other outsiders in their planned inquiries, but the president has threatened to fire them if they comply without his permission.",
+    "tags": [
+      "context",
+      "general",
+      "us"
+    ],
+    "title": "In Democrats vs. Trump, the Loser May Be Federal Contractors"
+  },
+  {
+    "id": "2af2361b0d944374",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "43d5e20567519141",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT U.S.",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+        },
+        "published_at": "2026-11-27T21:08:35+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT U.S.",
+        "summary": "Decisions on voting rights, immigration and corruption generated a backlash that helped spur turnout that drove the Democratic sweep of Congress.",
+        "tags": [
+          "general",
+          "us",
+          "context"
+        ],
+        "title": "Supreme Court Rulings Cheered by Republicans Wound Up Hurting Them",
+        "url": "https://nytimes.com/2026/11/27/us/supreme-court-rulings-midterms-voting.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "2af2361b0d944374-s1",
+        "name": "NYT U.S.",
+        "published_at": "2026-11-27T21:08:35+00:00",
+        "publisher": "NYT U.S.",
+        "title": "Supreme Court Rulings Cheered by Republicans Wound Up Hurting Them",
+        "url": "https://nytimes.com/2026/11/27/us/supreme-court-rulings-midterms-voting.html"
+      }
+    ],
+    "summary": "Decisions on voting rights, immigration and corruption generated a backlash that helped spur turnout that drove the Democratic sweep of Congress.",
+    "tags": [
+      "context",
+      "general",
+      "us"
+    ],
+    "title": "Supreme Court Rulings Cheered by Republicans Wound Up Hurting Them"
+  },
+  {
+    "id": "5ee9c1ba78f53ef9",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "ea94f27faab189e0",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT U.S.",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+        },
+        "published_at": "2026-11-27T14:33:05+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT U.S.",
+        "summary": "Will JD Vance and Marco Rubio run? What about Kamala Harris and Alexandria Ocasio-Cortez? And, of course, what role will President Trump play?",
+        "tags": [
+          "general",
+          "us",
+          "context"
+        ],
+        "title": "Five Big Questions for the 2028 Presidential Race",
+        "url": "https://nytimes.com/2026/11/27/us/politics/2028-presidential-race-questions.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "5ee9c1ba78f53ef9-s1",
+        "name": "NYT U.S.",
+        "published_at": "2026-11-27T14:33:05+00:00",
+        "publisher": "NYT U.S.",
+        "title": "Five Big Questions for the 2028 Presidential Race",
+        "url": "https://nytimes.com/2026/11/27/us/politics/2028-presidential-race-questions.html"
+      }
+    ],
+    "summary": "Will JD Vance and Marco Rubio run? What about Kamala Harris and Alexandria Ocasio-Cortez? And, of course, what role will President Trump play?",
+    "tags": [
+      "context",
+      "general",
+      "us"
+    ],
+    "title": "Five Big Questions for the 2028 Presidential Race"
+  },
+  {
+    "id": "46e0909d38fc6cf9",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "1340a26eed2daaec",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT U.S.",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+        },
+        "published_at": "2026-11-27T21:42:02+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT U.S.",
+        "summary": "Conditions continued to improve on Friday after heavy rain and strong winds lashed the coast from Virginia to New York. But many remained without power and travel disruptions persisted.",
+        "tags": [
+          "general",
+          "us",
+          "context"
+        ],
+        "title": "Thanksgiving Storm Leaves More Than 400,000 Without Power on the East Coast",
+        "url": "https://nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "46e0909d38fc6cf9-s1",
+        "name": "NYT U.S.",
+        "published_at": "2026-11-27T21:42:02+00:00",
+        "publisher": "NYT U.S.",
+        "title": "Thanksgiving Storm Leaves More Than 400,000 Without Power on the East Coast",
+        "url": "https://nytimes.com/2026/11/27/us/thanksgiving-weather-east-coast-storm.html"
+      }
+    ],
+    "summary": "Conditions continued to improve on Friday after heavy rain and strong winds lashed the coast from Virginia to New York. But many remained without power and travel disruptions persisted.",
+    "tags": [
+      "context",
+      "general",
+      "us"
+    ],
+    "title": "Thanksgiving Storm Leaves More Than 400,000 Without Power on the East Coast"
+  },
+  {
+    "id": "07e150a3e4a4f581",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "7d2d2314d000764c",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT U.S.",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+        },
+        "published_at": "2026-11-27T10:02:56+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT U.S.",
+        "summary": "They treated victims of one of Australia\u2019s worst mass shootings, which targeted a Hanukkah celebration. Last week an Orthodox rabbi married them, even though they\u2019re not Jewish.",
+        "tags": [
+          "general",
+          "us",
+          "context"
+        ],
+        "title": "After Deadly Bondi Beach Shooting, Two Non-Jews Marry Under a Huppah",
+        "url": "https://nytimes.com/2026/11/27/us/australia-bondi-beach-shooting-wedding.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "07e150a3e4a4f581-s1",
+        "name": "NYT U.S.",
+        "published_at": "2026-11-27T10:02:56+00:00",
+        "publisher": "NYT U.S.",
+        "title": "After Deadly Bondi Beach Shooting, Two Non-Jews Marry Under a Huppah",
+        "url": "https://nytimes.com/2026/11/27/us/australia-bondi-beach-shooting-wedding.html"
+      }
+    ],
+    "summary": "They treated victims of one of Australia\u2019s worst mass shootings, which targeted a Hanukkah celebration. Last week an Orthodox rabbi married them, even though they\u2019re not Jewish.",
+    "tags": [
+      "context",
+      "general",
+      "us"
+    ],
+    "title": "After Deadly Bondi Beach Shooting, Two Non-Jews Marry Under a Huppah"
+  },
+  {
+    "id": "da893ced569e5b1b",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "800f4257388e6ce5",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT U.S.",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+        },
+        "published_at": "2026-11-27T17:26:37+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT U.S.",
+        "summary": "A family came together at a farmhouse in southeast Iowa the day after the explosion at an ammunition plant. It felt as if a storm had passed.",
+        "tags": [
+          "general",
+          "us",
+          "context"
+        ],
+        "title": "After the Iowa Detonation, a Family Gathered for an Unusual Thanksgiving",
+        "url": "https://nytimes.com/2026/11/26/us/iowa-detonation-family-thanksgiving.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "da893ced569e5b1b-s1",
+        "name": "NYT U.S.",
+        "published_at": "2026-11-27T17:26:37+00:00",
+        "publisher": "NYT U.S.",
+        "title": "After the Iowa Detonation, a Family Gathered for an Unusual Thanksgiving",
+        "url": "https://nytimes.com/2026/11/26/us/iowa-detonation-family-thanksgiving.html"
+      }
+    ],
+    "summary": "A family came together at a farmhouse in southeast Iowa the day after the explosion at an ammunition plant. It felt as if a storm had passed.",
+    "tags": [
+      "context",
+      "general",
+      "us"
+    ],
+    "title": "After the Iowa Detonation, a Family Gathered for an Unusual Thanksgiving"
+  },
+  {
+    "id": "6cf8bce60b7e461d",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "49dabfae080a1bdd",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT U.S.",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+        },
+        "published_at": "2026-11-27T00:46:52+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT U.S.",
+        "summary": "The famed pier in Pacifica, Calif., had long been crumbling. This week, a portion of it succumbed to fierce waves and toppled into the sea.",
+        "tags": [
+          "general",
+          "us",
+          "context"
+        ],
+        "title": "Pacifica, Calif., Fears the Loss of Its Pier After a Section Collapsed Into the Sea",
+        "url": "https://nytimes.com/2026/11/26/us/pacifica-pier-collapse-el-nino-king-tides.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "6cf8bce60b7e461d-s1",
+        "name": "NYT U.S.",
+        "published_at": "2026-11-27T00:46:52+00:00",
+        "publisher": "NYT U.S.",
+        "title": "Pacifica, Calif., Fears the Loss of Its Pier After a Section Collapsed Into the Sea",
+        "url": "https://nytimes.com/2026/11/26/us/pacifica-pier-collapse-el-nino-king-tides.html"
+      }
+    ],
+    "summary": "The famed pier in Pacifica, Calif., had long been crumbling. This week, a portion of it succumbed to fierce waves and toppled into the sea.",
+    "tags": [
+      "context",
+      "general",
+      "us"
+    ],
+    "title": "Pacifica, Calif., Fears the Loss of Its Pier After a Section Collapsed Into the Sea"
+  },
+  {
+    "id": "86ddec8d8cf17df7",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "5ce89bde70e3aa54",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT U.S.",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+        },
+        "published_at": "2026-11-27T00:23:58+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT U.S.",
+        "summary": "The inmate, Rebecca Taylor, 26, took control of the S.U.V. in a Whataburger parking lot as she was being returned to prison from a prenatal appointment, the authorities said.",
+        "tags": [
+          "general",
+          "us",
+          "context"
+        ],
+        "title": "Pregnant Inmate Escapes in New Mexico Prison Transport Vehicle",
+        "url": "https://nytimes.com/2026/11/26/us/pregnant-inmate-escapes-new-mexico.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "86ddec8d8cf17df7-s1",
+        "name": "NYT U.S.",
+        "published_at": "2026-11-27T00:23:58+00:00",
+        "publisher": "NYT U.S.",
+        "title": "Pregnant Inmate Escapes in New Mexico Prison Transport Vehicle",
+        "url": "https://nytimes.com/2026/11/26/us/pregnant-inmate-escapes-new-mexico.html"
+      }
+    ],
+    "summary": "The inmate, Rebecca Taylor, 26, took control of the S.U.V. in a Whataburger parking lot as she was being returned to prison from a prenatal appointment, the authorities said.",
+    "tags": [
+      "context",
+      "general",
+      "us"
+    ],
+    "title": "Pregnant Inmate Escapes in New Mexico Prison Transport Vehicle"
+  },
+  {
+    "id": "5c9d3e11690eb4be",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "692a4df43dfd6c46",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Business",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+        },
+        "published_at": "2026-11-27T17:02:48+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Business",
+        "summary": "Fewer original series, decision fatigue and a desire for comfort have viewers escaping to the past.",
+        "tags": [
+          "business",
+          "economy",
+          "context"
+        ],
+        "title": "It\u2019s Boom Times for Old TV Shows. New TV, Not So Much.",
+        "url": "https://nytimes.com/2026/11/27/business/media/old-tv-shows-mad-men.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "5c9d3e11690eb4be-s1",
+        "name": "NYT Business",
+        "published_at": "2026-11-27T17:02:48+00:00",
+        "publisher": "NYT Business",
+        "title": "It\u2019s Boom Times for Old TV Shows. New TV, Not So Much.",
+        "url": "https://nytimes.com/2026/11/27/business/media/old-tv-shows-mad-men.html"
+      }
+    ],
+    "summary": "Fewer original series, decision fatigue and a desire for comfort have viewers escaping to the past.",
+    "tags": [
+      "business",
+      "context",
+      "economy"
+    ],
+    "title": "It\u2019s Boom Times for Old TV Shows. New TV, Not So Much."
+  },
+  {
+    "id": "6820cbbc8aabf565",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "85d4d5b20b814262",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Business",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+        },
+        "published_at": "2026-11-27T15:29:05+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Business",
+        "summary": "A growing part of a brand\u2019s Black Friday and Cyber Monday marketing strategy rests on paying top dollar for social media influencers to post videos.",
+        "tags": [
+          "business",
+          "economy",
+          "context"
+        ],
+        "title": "Black Friday Deals and Holiday Sales Are Big Money for Influencers",
+        "url": "https://nytimes.com/2026/11/27/business/influencers-black-friday-deals-holiday-shopping.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "6820cbbc8aabf565-s1",
+        "name": "NYT Business",
+        "published_at": "2026-11-27T15:29:05+00:00",
+        "publisher": "NYT Business",
+        "title": "Black Friday Deals and Holiday Sales Are Big Money for Influencers",
+        "url": "https://nytimes.com/2026/11/27/business/influencers-black-friday-deals-holiday-shopping.html"
+      }
+    ],
+    "summary": "A growing part of a brand\u2019s Black Friday and Cyber Monday marketing strategy rests on paying top dollar for social media influencers to post videos.",
+    "tags": [
+      "business",
+      "context",
+      "economy"
+    ],
+    "title": "Black Friday Deals and Holiday Sales Are Big Money for Influencers"
+  },
+  {
+    "id": "bbbf3446c8f275a1",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "3fda76ffe7704d0a",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Business",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+        },
+        "published_at": "2026-11-27T15:18:58+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Business",
+        "summary": "Fatih Birol, head of the International Energy Agency, said that market forces, data centers and energy security are driving the clean transition anyway.",
+        "tags": [
+          "business",
+          "economy",
+          "context"
+        ],
+        "title": "Climate Talks Imploded, but the \u2018Age of Electricity\u2019 Rolls On, Energy Chief Says",
+        "url": "https://nytimes.com/2026/11/27/business/fatih-birol-iea-cop31-electrification.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "bbbf3446c8f275a1-s1",
+        "name": "NYT Business",
+        "published_at": "2026-11-27T15:18:58+00:00",
+        "publisher": "NYT Business",
+        "title": "Climate Talks Imploded, but the \u2018Age of Electricity\u2019 Rolls On, Energy Chief Says",
+        "url": "https://nytimes.com/2026/11/27/business/fatih-birol-iea-cop31-electrification.html"
+      }
+    ],
+    "summary": "Fatih Birol, head of the International Energy Agency, said that market forces, data centers and energy security are driving the clean transition anyway.",
+    "tags": [
+      "business",
+      "context",
+      "economy"
+    ],
+    "title": "Climate Talks Imploded, but the \u2018Age of Electricity\u2019 Rolls On, Energy Chief Says"
+  },
+  {
+    "id": "096f1d5aa21f75aa",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "bca52c0e4414215d",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Business",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+        },
+        "published_at": "2026-11-27T18:13:54+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Business",
+        "summary": "Volatility has buffeted investors in an eventful but holiday-shortened series of trading sessions.",
+        "tags": [
+          "business",
+          "economy",
+          "context"
+        ],
+        "title": "Stocks Rally at End of a Week of Wild Swings",
+        "url": "https://nytimes.com/2026/11/27/business/stocks-tech-stocks-ai.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "096f1d5aa21f75aa-s1",
+        "name": "NYT Business",
+        "published_at": "2026-11-27T18:13:54+00:00",
+        "publisher": "NYT Business",
+        "title": "Stocks Rally at End of a Week of Wild Swings",
+        "url": "https://nytimes.com/2026/11/27/business/stocks-tech-stocks-ai.html"
+      }
+    ],
+    "summary": "Volatility has buffeted investors in an eventful but holiday-shortened series of trading sessions.",
+    "tags": [
+      "business",
+      "context",
+      "economy"
+    ],
+    "title": "Stocks Rally at End of a Week of Wild Swings"
+  },
+  {
+    "id": "11ee6587a0a2b781",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "2fa2e77a757a5611",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Business",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+        },
+        "published_at": "2026-11-27T15:29:56+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Business",
+        "summary": "Some deals are too good to be true. Experts suggest doing the math, making lists and avoiding using \u201cbuy now, pay later\u201d platforms to make purchases.",
+        "tags": [
+          "business",
+          "economy",
+          "context"
+        ],
+        "title": "Holiday Deals Are Tempting. Here\u2019s How to Avoid Buyer\u2019s Remorse.",
+        "url": "https://nytimes.com/2026/11/27/business/holiday-shopping-deals-spending.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "11ee6587a0a2b781-s1",
+        "name": "NYT Business",
+        "published_at": "2026-11-27T15:29:56+00:00",
+        "publisher": "NYT Business",
+        "title": "Holiday Deals Are Tempting. Here\u2019s How to Avoid Buyer\u2019s Remorse.",
+        "url": "https://nytimes.com/2026/11/27/business/holiday-shopping-deals-spending.html"
+      }
+    ],
+    "summary": "Some deals are too good to be true. Experts suggest doing the math, making lists and avoiding using \u201cbuy now, pay later\u201d platforms to make purchases.",
+    "tags": [
+      "business",
+      "context",
+      "economy"
+    ],
+    "title": "Holiday Deals Are Tempting. Here\u2019s How to Avoid Buyer\u2019s Remorse."
+  },
+  {
+    "id": "58898007917d6322",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "4362ce7205f32ca8",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Business",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+        },
+        "published_at": "2026-11-27T22:16:28+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Business",
+        "summary": "Nvidia has been down, up, and down again, and the market has followed. But there\u2019s no need for long-term, diversified investors to alter their course, our columnist says.",
+        "tags": [
+          "business",
+          "economy",
+          "context"
+        ],
+        "title": "How to Live Calmly, Despite Stock Market Whiplash",
+        "url": "https://nytimes.com/2026/11/27/business/nvidia-jensen-huang-trump-markets.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "58898007917d6322-s1",
+        "name": "NYT Business",
+        "published_at": "2026-11-27T22:16:28+00:00",
+        "publisher": "NYT Business",
+        "title": "How to Live Calmly, Despite Stock Market Whiplash",
+        "url": "https://nytimes.com/2026/11/27/business/nvidia-jensen-huang-trump-markets.html"
+      }
+    ],
+    "summary": "Nvidia has been down, up, and down again, and the market has followed. But there\u2019s no need for long-term, diversified investors to alter their course, our columnist says.",
+    "tags": [
+      "business",
+      "context",
+      "economy"
+    ],
+    "title": "How to Live Calmly, Despite Stock Market Whiplash"
+  },
+  {
+    "id": "495e0e05f674cd56",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "1ae7180ddf7e4191",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Business",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+        },
+        "published_at": "2026-11-27T10:02:41+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Business",
+        "summary": "Within strong consumer spending lie the decisions many families are making to stretch their dollars to cover the meals, trips and activities they value most.",
+        "tags": [
+          "business",
+          "economy",
+          "context"
+        ],
+        "title": "As Prices Rise, Americans Are Making Trade-Offs Rather Than Cutting Back",
+        "url": "https://nytimes.com/2026/11/27/business/inflation-consumer-spending-trade-offs-holidays.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "495e0e05f674cd56-s1",
+        "name": "NYT Business",
+        "published_at": "2026-11-27T10:02:41+00:00",
+        "publisher": "NYT Business",
+        "title": "As Prices Rise, Americans Are Making Trade-Offs Rather Than Cutting Back",
+        "url": "https://nytimes.com/2026/11/27/business/inflation-consumer-spending-trade-offs-holidays.html"
+      }
+    ],
+    "summary": "Within strong consumer spending lie the decisions many families are making to stretch their dollars to cover the meals, trips and activities they value most.",
+    "tags": [
+      "business",
+      "context",
+      "economy"
+    ],
+    "title": "As Prices Rise, Americans Are Making Trade-Offs Rather Than Cutting Back"
+  },
+  {
+    "id": "61ae4935b7184aae",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "6230c1b2b06700bc",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Business",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+        },
+        "published_at": "2026-11-27T10:02:08+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Business",
+        "summary": "The limited series \u201cThe Altruists\u201d and the documentary \u201cThe Boy Who Stole Billions?\u201d offer different takes on the crypto exchange founder\u2019s role in one of the largest frauds in history.",
+        "tags": [
+          "business",
+          "economy",
+          "context"
+        ],
+        "title": "2 TV Shows Take on Sam Bankman-Fried and FTX",
+        "url": "https://nytimes.com/2026/11/27/business/media/sam-bankman-fried-ftx-altruists.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "61ae4935b7184aae-s1",
+        "name": "NYT Business",
+        "published_at": "2026-11-27T10:02:08+00:00",
+        "publisher": "NYT Business",
+        "title": "2 TV Shows Take on Sam Bankman-Fried and FTX",
+        "url": "https://nytimes.com/2026/11/27/business/media/sam-bankman-fried-ftx-altruists.html"
+      }
+    ],
+    "summary": "The limited series \u201cThe Altruists\u201d and the documentary \u201cThe Boy Who Stole Billions?\u201d offer different takes on the crypto exchange founder\u2019s role in one of the largest frauds in history.",
+    "tags": [
+      "business",
+      "context",
+      "economy"
+    ],
+    "title": "2 TV Shows Take on Sam Bankman-Fried and FTX"
+  },
+  {
+    "id": "8e6b64fcb3c239e5",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "24dfca5503aa03aa",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Business",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+        },
+        "published_at": "2026-11-27T10:00:34+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Business",
+        "summary": "A Boeing 787 pilot visits some favorite restaurants, a Snoopy museum and a tranquil shrine.",
+        "tags": [
+          "business",
+          "economy",
+          "context"
+        ],
+        "title": "48 Hours in Tokyo With an Airline Pilot",
+        "url": "https://nytimes.com/2026/11/27/travel/48-hours-tokyo-layover.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "8e6b64fcb3c239e5-s1",
+        "name": "NYT Business",
+        "published_at": "2026-11-27T10:00:34+00:00",
+        "publisher": "NYT Business",
+        "title": "48 Hours in Tokyo With an Airline Pilot",
+        "url": "https://nytimes.com/2026/11/27/travel/48-hours-tokyo-layover.html"
+      }
+    ],
+    "summary": "A Boeing 787 pilot visits some favorite restaurants, a Snoopy museum and a tranquil shrine.",
+    "tags": [
+      "business",
+      "context",
+      "economy"
+    ],
+    "title": "48 Hours in Tokyo With an Airline Pilot"
+  },
+  {
+    "id": "badf6848b8c75fe7",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "32c2206e609e62f6",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Business",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+        },
+        "published_at": "2026-11-26T20:37:15+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Business",
+        "summary": "The franchise with the iconic red roof began small, in a tiny brick hut in Kansas. Little more than a decade later, it was the world\u2019s biggest pizza chain. He was 95.",
+        "tags": [
+          "business",
+          "economy",
+          "context"
+        ],
+        "title": "Dan Carney Has Died. He Co-Founded Pizza Hut and Then Made It Ubiquitous.",
+        "url": "https://nytimes.com/2026/11/26/business/dan-carney-dead.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "badf6848b8c75fe7-s1",
+        "name": "NYT Business",
+        "published_at": "2026-11-26T20:37:15+00:00",
+        "publisher": "NYT Business",
+        "title": "Dan Carney Has Died. He Co-Founded Pizza Hut and Then Made It Ubiquitous.",
+        "url": "https://nytimes.com/2026/11/26/business/dan-carney-dead.html"
+      }
+    ],
+    "summary": "The franchise with the iconic red roof began small, in a tiny brick hut in Kansas. Little more than a decade later, it was the world\u2019s biggest pizza chain. He was 95.",
+    "tags": [
+      "business",
+      "context",
+      "economy"
+    ],
+    "title": "Dan Carney Has Died. He Co-Founded Pizza Hut and Then Made It Ubiquitous."
+  },
+  {
+    "id": "4ca36ac175f76e23",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "c2d2cec8b54d0443",
+        "metadata": {
+          "domain": "lithub.com",
+          "publisher": "Literary Hub",
+          "publisher_url": null,
+          "source_url": "https://lithub.com/feed/"
+        },
+        "published_at": "2026-11-25T18:54:33+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Literary Hub",
+        "summary": "\u2013 Weird and in person celebrations of books. \u2013 Listening to a poem while doing my little stretches. The Library of Congress and Poetry Archive collections, to be specific. \u2013 And I\u2019m thankful in advance to the programmer who builds",
+        "tags": [
+          "literary-fiction",
+          "criticism",
+          "books"
+        ],
+        "title": "What I\u2019m thankful for, literarily.",
+        "url": "https://lithub.com/what-im-thankful-for-literarily/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "lithub.com",
+        "id": "4ca36ac175f76e23-s1",
+        "name": "Literary Hub",
+        "published_at": "2026-11-25T18:54:33+00:00",
+        "publisher": "Literary Hub",
+        "title": "What I\u2019m thankful for, literarily.",
+        "url": "https://lithub.com/what-im-thankful-for-literarily/"
+      }
+    ],
+    "summary": "\u2013 Weird and in person celebrations of books. \u2013 Listening to a poem while doing my little stretches. The Library of Congress and Poetry Archive collections, to be specific. \u2013 And I\u2019m thankful in advance to the programmer who builds",
+    "tags": [
+      "books",
+      "criticism",
+      "literary-fiction"
+    ],
+    "title": "What I\u2019m thankful for, literarily."
+  },
+  {
+    "id": "21fefe614409ac13",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "3f0cf914f1ad3751",
+        "metadata": {
+          "domain": "lithub.com",
+          "publisher": "Literary Hub",
+          "publisher_url": null,
+          "source_url": "https://lithub.com/feed/"
+        },
+        "published_at": "2026-11-25T11:30:28+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Literary Hub",
+        "summary": "No\u00eblle de Leeuw reads Gloria Steinem\u2019s An Unexpected Life and expresses some gratitude. | Lit Hub Criticism Why the Ukrainian battle against Russian domination was over a century in the making. | Lit Hub History On the radicalization of Eugene",
+        "tags": [
+          "literary-fiction",
+          "criticism",
+          "books"
+        ],
+        "title": "Lit Hub Daily: November 25, 2026",
+        "url": "https://lithub.com/lit-hub-daily-november-25-2026/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "lithub.com",
+        "id": "21fefe614409ac13-s1",
+        "name": "Literary Hub",
+        "published_at": "2026-11-25T11:30:28+00:00",
+        "publisher": "Literary Hub",
+        "title": "Lit Hub Daily: November 25, 2026",
+        "url": "https://lithub.com/lit-hub-daily-november-25-2026/"
+      }
+    ],
+    "summary": "No\u00eblle de Leeuw reads Gloria Steinem\u2019s An Unexpected Life and expresses some gratitude. | Lit Hub Criticism Why the Ukrainian battle against Russian domination was over a century in the making. | Lit Hub History On the radicalization of Eugene",
+    "tags": [
+      "books",
+      "criticism",
+      "literary-fiction"
+    ],
+    "title": "Lit Hub Daily: November 25, 2026"
+  },
+  {
+    "id": "39f28ee58b2c3bb5",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "4fd0105f71ffc90a",
+        "metadata": {
+          "domain": "lithub.com",
+          "publisher": "Literary Hub",
+          "publisher_url": null,
+          "source_url": "https://lithub.com/feed/"
+        },
+        "published_at": "2026-11-25T09:00:35+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Literary Hub",
+        "summary": "Gloria Steinem was booked up. There had been luncheons and interviews scheduled for the fall; a high-profile conversation with Katie Couric at 92NY and a prominent place in The New Yorker Festival\u2019s lineup. She left appearances unfulfilled, interviews unaired, an",
+        "tags": [
+          "literary-fiction",
+          "criticism",
+          "books"
+        ],
+        "title": "Gratitude for Gloria Steinem",
+        "url": "https://lithub.com/gratitude-for-gloria-steinem/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "lithub.com",
+        "id": "39f28ee58b2c3bb5-s1",
+        "name": "Literary Hub",
+        "published_at": "2026-11-25T09:00:35+00:00",
+        "publisher": "Literary Hub",
+        "title": "Gratitude for Gloria Steinem",
+        "url": "https://lithub.com/gratitude-for-gloria-steinem/"
+      }
+    ],
+    "summary": "Gloria Steinem was booked up. There had been luncheons and interviews scheduled for the fall; a high-profile conversation with Katie Couric at 92NY and a prominent place in The New Yorker Festival\u2019s lineup. She left appearances unfulfilled, interviews unaired, an",
+    "tags": [
+      "books",
+      "criticism",
+      "literary-fiction"
+    ],
+    "title": "Gratitude for Gloria Steinem"
+  },
+  {
+    "id": "3599529c846bf281",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "8b0b04391bf80d95",
+        "metadata": {
+          "domain": "lithub.com",
+          "publisher": "Literary Hub",
+          "publisher_url": null,
+          "source_url": "https://lithub.com/feed/"
+        },
+        "published_at": "2026-11-25T09:00:25+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Literary Hub",
+        "summary": "On a foggy September morning in 1877, Eugene Victor Debs adjusted his suit collar and set out for the Indiana State House. Just shy of twenty-two years old, he\u2019d been a member of his labor union, the Brotherhood of Locomotive",
+        "tags": [
+          "literary-fiction",
+          "criticism",
+          "books"
+        ],
+        "title": "The Radicalization of Eugene V. Debs and the Country He Radicalized in Return",
+        "url": "https://lithub.com/the-radicalization-of-eugene-v-debs-and-the-country-he-radicalized-in-return/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "lithub.com",
+        "id": "3599529c846bf281-s1",
+        "name": "Literary Hub",
+        "published_at": "2026-11-25T09:00:25+00:00",
+        "publisher": "Literary Hub",
+        "title": "The Radicalization of Eugene V. Debs and the Country He Radicalized in Return",
+        "url": "https://lithub.com/the-radicalization-of-eugene-v-debs-and-the-country-he-radicalized-in-return/"
+      }
+    ],
+    "summary": "On a foggy September morning in 1877, Eugene Victor Debs adjusted his suit collar and set out for the Indiana State House. Just shy of twenty-two years old, he\u2019d been a member of his labor union, the Brotherhood of Locomotive",
+    "tags": [
+      "books",
+      "criticism",
+      "literary-fiction"
+    ],
+    "title": "The Radicalization of Eugene V. Debs and the Country He Radicalized in Return"
+  },
+  {
+    "id": "7cbf3dd1cd6d6b39",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "b9f10cc34c71a373",
+        "metadata": {
+          "domain": "lithub.com",
+          "publisher": "Literary Hub",
+          "publisher_url": null,
+          "source_url": "https://lithub.com/feed/"
+        },
+        "published_at": "2026-11-25T08:45:07+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Literary Hub",
+        "summary": "Fingers, frozen to the bone in the damp cold, barely obey. A trembling hand fumbles in the scratchy wool of an overcoat pocket for another five-round clip. That damned bolt again. The last round stuck fast. One strike. Another\u2014with a",
+        "tags": [
+          "literary-fiction",
+          "criticism",
+          "books"
+        ],
+        "title": "1918 or 2014? On Russia\u2019s Cyclical Aggression Against Ukraine",
+        "url": "https://lithub.com/1918-or-2014-on-russias-cyclical-aggression-against-ukraine/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "lithub.com",
+        "id": "7cbf3dd1cd6d6b39-s1",
+        "name": "Literary Hub",
+        "published_at": "2026-11-25T08:45:07+00:00",
+        "publisher": "Literary Hub",
+        "title": "1918 or 2014? On Russia\u2019s Cyclical Aggression Against Ukraine",
+        "url": "https://lithub.com/1918-or-2014-on-russias-cyclical-aggression-against-ukraine/"
+      }
+    ],
+    "summary": "Fingers, frozen to the bone in the damp cold, barely obey. A trembling hand fumbles in the scratchy wool of an overcoat pocket for another five-round clip. That damned bolt again. The last round stuck fast. One strike. Another\u2014with a",
+    "tags": [
+      "books",
+      "criticism",
+      "literary-fiction"
+    ],
+    "title": "1918 or 2014? On Russia\u2019s Cyclical Aggression Against Ukraine"
+  },
+  {
+    "id": "868c7c585c998d86",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "2d72f9f4a582ace2",
+        "metadata": {
+          "domain": "lithub.com",
+          "publisher": "Literary Hub",
+          "publisher_url": null,
+          "source_url": "https://lithub.com/feed/"
+        },
+        "published_at": "2026-11-25T08:35:48+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Literary Hub",
+        "summary": "In 1994, as a refugee from New York City advertising (an accidental career resulting from a failed attempt to convert my biology degree into artistic fame in the big city), I returned to my home state of Vermont and dove",
+        "tags": [
+          "literary-fiction",
+          "criticism",
+          "books"
+        ],
+        "title": "Finding My Way in the Wilderness with Brush and Pen",
+        "url": "https://lithub.com/finding-my-way-in-the-wilderness-with-brush-and-pen/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "lithub.com",
+        "id": "868c7c585c998d86-s1",
+        "name": "Literary Hub",
+        "published_at": "2026-11-25T08:35:48+00:00",
+        "publisher": "Literary Hub",
+        "title": "Finding My Way in the Wilderness with Brush and Pen",
+        "url": "https://lithub.com/finding-my-way-in-the-wilderness-with-brush-and-pen/"
+      }
+    ],
+    "summary": "In 1994, as a refugee from New York City advertising (an accidental career resulting from a failed attempt to convert my biology degree into artistic fame in the big city), I returned to my home state of Vermont and dove",
+    "tags": [
+      "books",
+      "criticism",
+      "literary-fiction"
+    ],
+    "title": "Finding My Way in the Wilderness with Brush and Pen"
+  },
+  {
+    "id": "2911f7cc0751e956",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "ca1895ac5a1da387",
+        "metadata": {
+          "domain": "lithub.com",
+          "publisher": "Literary Hub",
+          "publisher_url": null,
+          "source_url": "https://lithub.com/feed/"
+        },
+        "published_at": "2026-11-25T08:19:37+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Literary Hub",
+        "summary": "Louise Kennedy\u2019s Stations, Daisy Johnson\u2019s Long Wave, and Tom Drury\u2019s West of Loveland all feature among the best reviewed fiction titles of the month. Brought to you by Book Marks, Lit Hub\u2019s home for book reviews. * 1. Stations by Louise",
+        "tags": [
+          "literary-fiction",
+          "criticism",
+          "books"
+        ],
+        "title": "November\u2019s Best Reviewed Fiction",
+        "url": "https://lithub.com/novembers-best-reviewed-fiction-2026/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "lithub.com",
+        "id": "2911f7cc0751e956-s1",
+        "name": "Literary Hub",
+        "published_at": "2026-11-25T08:19:37+00:00",
+        "publisher": "Literary Hub",
+        "title": "November\u2019s Best Reviewed Fiction",
+        "url": "https://lithub.com/novembers-best-reviewed-fiction-2026/"
+      }
+    ],
+    "summary": "Louise Kennedy\u2019s Stations, Daisy Johnson\u2019s Long Wave, and Tom Drury\u2019s West of Loveland all feature among the best reviewed fiction titles of the month. Brought to you by Book Marks, Lit Hub\u2019s home for book reviews. * 1. Stations by Louise",
+    "tags": [
+      "books",
+      "criticism",
+      "literary-fiction"
+    ],
+    "title": "November\u2019s Best Reviewed Fiction"
+  },
+  {
+    "id": "9a7898088b62af14",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "d449a775f58efe13",
+        "metadata": {
+          "domain": "lithub.com",
+          "publisher": "Literary Hub",
+          "publisher_url": null,
+          "source_url": "https://lithub.com/feed/"
+        },
+        "published_at": "2026-11-25T08:15:39+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Literary Hub",
+        "summary": "Hermione Lee\u2019s Anita Brookner: Life and Art, James Gleick\u2019s The Telephone, and Gerald Martin\u2019s Mario Vargas Llosa: A Life all feature among the best reviewed nonfiction titles of the month. Brought to you by Book Marks, Lit Hub\u2019s home for book",
+        "tags": [
+          "literary-fiction",
+          "criticism",
+          "books"
+        ],
+        "title": "November\u2019s Best Reviewed Nonfiction",
+        "url": "https://lithub.com/novembers-best-reviewed-nonfiction-2026/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "lithub.com",
+        "id": "9a7898088b62af14-s1",
+        "name": "Literary Hub",
+        "published_at": "2026-11-25T08:15:39+00:00",
+        "publisher": "Literary Hub",
+        "title": "November\u2019s Best Reviewed Nonfiction",
+        "url": "https://lithub.com/novembers-best-reviewed-nonfiction-2026/"
+      }
+    ],
+    "summary": "Hermione Lee\u2019s Anita Brookner: Life and Art, James Gleick\u2019s The Telephone, and Gerald Martin\u2019s Mario Vargas Llosa: A Life all feature among the best reviewed nonfiction titles of the month. Brought to you by Book Marks, Lit Hub\u2019s home for book",
+    "tags": [
+      "books",
+      "criticism",
+      "literary-fiction"
+    ],
+    "title": "November\u2019s Best Reviewed Nonfiction"
+  },
+  {
+    "id": "24369f710448775a",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "3a0fef337ac5eea3",
+        "metadata": {
+          "domain": "lithub.com",
+          "publisher": "Literary Hub",
+          "publisher_url": null,
+          "source_url": "https://lithub.com/feed/"
+        },
+        "published_at": "2026-11-25T08:00:43+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Literary Hub",
+        "summary": "Our goodie bag of gorgeous reviews this week includes S. C. Cornell on Don DeLillo\u2019s Amazons, Lauren Oyler on the stories of Donald Barthelme, Blair Braverman on Daniel Duane\u2019s Yosemite Falls, Ron Charles on Daisy Johnson\u2019s Long Wave, and Lily",
+        "tags": [
+          "literary-fiction",
+          "criticism",
+          "books"
+        ],
+        "title": "5 Book Reviews You Need to Read This Week",
+        "url": "https://lithub.com/5-book-reviews-you-need-to-read-this-week-24/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "lithub.com",
+        "id": "24369f710448775a-s1",
+        "name": "Literary Hub",
+        "published_at": "2026-11-25T08:00:43+00:00",
+        "publisher": "Literary Hub",
+        "title": "5 Book Reviews You Need to Read This Week",
+        "url": "https://lithub.com/5-book-reviews-you-need-to-read-this-week-24/"
+      }
+    ],
+    "summary": "Our goodie bag of gorgeous reviews this week includes S. C. Cornell on Don DeLillo\u2019s Amazons, Lauren Oyler on the stories of Donald Barthelme, Blair Braverman on Daniel Duane\u2019s Yosemite Falls, Ron Charles on Daisy Johnson\u2019s Long Wave, and Lily",
+    "tags": [
+      "books",
+      "criticism",
+      "literary-fiction"
+    ],
+    "title": "5 Book Reviews You Need to Read This Week"
+  },
+  {
+    "id": "0e8ff2cff3f91992",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "4908c667b01167d5",
+        "metadata": {
+          "domain": "lithub.com",
+          "publisher": "Literary Hub",
+          "publisher_url": null,
+          "source_url": "https://lithub.com/feed/"
+        },
+        "published_at": "2026-11-25T08:00:30+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Literary Hub",
+        "summary": "The Natural History of the Sea-Serpent A lively review by Dr. Octavia Arbogad of The Natural History of the Sea Serpent, To which is added, a Sketch of a Serpent-Hunting Voyage, by Achabbu Zarxas, translated by Kailung Smirtha. Published in",
+        "tags": [
+          "literary-fiction",
+          "criticism",
+          "books"
+        ],
+        "title": "Lives of Eminent Sorcerers",
+        "url": "https://lithub.com/lives-of-eminent-sorcerers-and-other-readings/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "lithub.com",
+        "id": "0e8ff2cff3f91992-s1",
+        "name": "Literary Hub",
+        "published_at": "2026-11-25T08:00:30+00:00",
+        "publisher": "Literary Hub",
+        "title": "Lives of Eminent Sorcerers",
+        "url": "https://lithub.com/lives-of-eminent-sorcerers-and-other-readings/"
+      }
+    ],
+    "summary": "The Natural History of the Sea-Serpent A lively review by Dr. Octavia Arbogad of The Natural History of the Sea Serpent, To which is added, a Sketch of a Serpent-Hunting Voyage, by Achabbu Zarxas, translated by Kailung Smirtha. Published in",
+    "tags": [
+      "books",
+      "criticism",
+      "literary-fiction"
+    ],
+    "title": "Lives of Eminent Sorcerers"
+  },
+  {
+    "id": "10fbab95702677c4",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "c10b93b94d2805ba",
+        "metadata": {
+          "domain": "latent.space",
+          "publisher": "Latent Space",
+          "publisher_url": null,
+          "source_url": "https://www.latent.space/feed"
+        },
+        "published_at": "2026-11-27T22:19:18+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Latent Space",
+        "summary": "A frontier lab can pay more for training data it gets to keep exclusive, or take a discount on data another lab can buy too. At AI Engineer CODE, G2i founder Gabe Greenberg tells swyx how labs make that decision, how small pilot orders turn into bigger...",
+        "tags": [
+          "ai",
+          "agent-infrastructure",
+          "industry-analysis"
+        ],
+        "title": "Inside the AI Training Data Market \u2014 Gabe Greenberg, G2i",
+        "url": "https://latent.space/p/inside_the_ai_training_data_market_gabe_greenberg_g2i/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "latent.space",
+        "id": "10fbab95702677c4-s1",
+        "name": "Latent Space",
+        "published_at": "2026-11-27T22:19:18+00:00",
+        "publisher": "Latent Space",
+        "title": "Inside the AI Training Data Market \u2014 Gabe Greenberg, G2i",
+        "url": "https://latent.space/p/inside_the_ai_training_data_market_gabe_greenberg_g2i/"
+      }
+    ],
+    "summary": "A frontier lab can pay more for training data it gets to keep exclusive, or take a discount on data another lab can buy too. At AI Engineer CODE, G2i founder Gabe Greenberg tells swyx how labs make that decision, how small pilot orders turn into bigger...",
+    "tags": [
+      "agent-infrastructure",
+      "ai",
+      "industry-analysis"
+    ],
+    "title": "Inside the AI Training Data Market \u2014 Gabe Greenberg, G2i"
+  },
+  {
+    "id": "d8c3ac6755600f06",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "6292a8e861fe5c5d",
+        "metadata": {
+          "domain": "latent.space",
+          "publisher": "Latent Space",
+          "publisher_url": null,
+          "source_url": "https://www.latent.space/feed"
+        },
+        "published_at": "2026-11-26T23:02:48+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Latent Space",
+        "summary": "How $1,500 could qualify every company in the world, why customers hate the model selector, and how Clay is building go-to-market infrastructure for every agent",
+        "tags": [
+          "ai",
+          "agent-infrastructure",
+          "industry-analysis"
+        ],
+        "title": "How Clay Builds GTM Agents \u2014 Jeff Barg, Head of AI",
+        "url": "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "latent.space",
+        "id": "d8c3ac6755600f06-s1",
+        "name": "Latent Space",
+        "published_at": "2026-11-26T23:02:48+00:00",
+        "publisher": "Latent Space",
+        "title": "How Clay Builds GTM Agents \u2014 Jeff Barg, Head of AI",
+        "url": "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/"
+      }
+    ],
+    "summary": "How $1,500 could qualify every company in the world, why customers hate the model selector, and how Clay is building go-to-market infrastructure for every agent",
+    "tags": [
+      "agent-infrastructure",
+      "ai",
+      "industry-analysis"
+    ],
+    "title": "How Clay Builds GTM Agents \u2014 Jeff Barg, Head of AI"
+  },
+  {
+    "id": "50c062ece286e2d6",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "0faf1125bce611c5",
+        "metadata": {
+          "domain": "latent.space",
+          "publisher": "Latent Space",
+          "publisher_url": null,
+          "source_url": "https://www.latent.space/feed"
+        },
+        "published_at": "2026-11-25T22:28:01+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Latent Space",
+        "summary": "AI can make software cheap enough to produce by the thousand and still give you more time to make one thing feel right. At AI Engineer CODE, Thariq Shihipar shows how those two futures can coexist. In his fighting game, he edits the size of a rock in t...",
+        "tags": [
+          "ai",
+          "agent-infrastructure",
+          "industry-analysis"
+        ],
+        "title": "The Revolution vs The Renaissance \u2014 Thariq Shihipar, OpenAI",
+        "url": "https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "latent.space",
+        "id": "50c062ece286e2d6-s1",
+        "name": "Latent Space",
+        "published_at": "2026-11-25T22:28:01+00:00",
+        "publisher": "Latent Space",
+        "title": "The Revolution vs The Renaissance \u2014 Thariq Shihipar, OpenAI",
+        "url": "https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/"
+      }
+    ],
+    "summary": "AI can make software cheap enough to produce by the thousand and still give you more time to make one thing feel right. At AI Engineer CODE, Thariq Shihipar shows how those two futures can coexist. In his fighting game, he edits the size of a rock in t...",
+    "tags": [
+      "agent-infrastructure",
+      "ai",
+      "industry-analysis"
+    ],
+    "title": "The Revolution vs The Renaissance \u2014 Thariq Shihipar, OpenAI"
+  },
+  {
+    "id": "dbf7e1167c29a97d",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "fae3b1c27deab1f2",
+        "metadata": {
+          "domain": "latent.space",
+          "publisher": "Latent Space",
+          "publisher_url": null,
+          "source_url": "https://www.latent.space/feed"
+        },
+        "published_at": "2026-11-25T22:23:41+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Latent Space",
+        "summary": "November 25, 2026 \u2014 From Erd\u0151s problems to new bounds for matrix multiplication and Fourier transforms.",
+        "tags": [
+          "ai",
+          "agent-infrastructure",
+          "industry-analysis"
+        ],
+        "title": "[AINews] Math Proofs Are Landing Faster Than We Can Read Them",
+        "url": "https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "latent.space",
+        "id": "dbf7e1167c29a97d-s1",
+        "name": "Latent Space",
+        "published_at": "2026-11-25T22:23:41+00:00",
+        "publisher": "Latent Space",
+        "title": "[AINews] Math Proofs Are Landing Faster Than We Can Read Them",
+        "url": "https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/"
+      }
+    ],
+    "summary": "November 25, 2026 \u2014 From Erd\u0151s problems to new bounds for matrix multiplication and Fourier transforms.",
+    "tags": [
+      "agent-infrastructure",
+      "ai",
+      "industry-analysis"
+    ],
+    "title": "[AINews] Math Proofs Are Landing Faster Than We Can Read Them"
+  },
+  {
+    "id": "5c3cd3d5804829df",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "85b29bba71eb7152",
+        "metadata": {
+          "domain": "latent.space",
+          "publisher": "Latent Space",
+          "publisher_url": null,
+          "source_url": "https://www.latent.space/feed"
+        },
+        "published_at": "2026-11-25T04:29:07+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Latent Space",
+        "summary": "November 24, 2026 \u2014 Neon beats Astra and Fable on LiveBench and cuts Theo\u2019s TS Rust benchmark runtime by 48.6%.",
+        "tags": [
+          "ai",
+          "agent-infrastructure",
+          "industry-analysis"
+        ],
+        "title": "[AINews] Gemini 4 Neon marks GDM's full return as a Frontier Lab",
+        "url": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "latent.space",
+        "id": "5c3cd3d5804829df-s1",
+        "name": "Latent Space",
+        "published_at": "2026-11-25T04:29:07+00:00",
+        "publisher": "Latent Space",
+        "title": "[AINews] Gemini 4 Neon marks GDM's full return as a Frontier Lab",
+        "url": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/"
+      }
+    ],
+    "summary": "November 24, 2026 \u2014 Neon beats Astra and Fable on LiveBench and cuts Theo\u2019s TS Rust benchmark runtime by 48.6%.",
+    "tags": [
+      "agent-infrastructure",
+      "ai",
+      "industry-analysis"
+    ],
+    "title": "[AINews] Gemini 4 Neon marks GDM's full return as a Frontier Lab"
+  },
+  {
+    "id": "96168605bee3c5a3",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "436734f81d493b0e",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Movies",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml"
+        },
+        "published_at": "2026-11-27T10:02:31+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Movies",
+        "summary": "Skyler Gisondo, Beanie Feldstein and Eduardo Franco had breakout roles in the 2019 high-school comedy. Now, they\u2019re reuniting for \u201cFocker In-Law.\u201d",
+        "tags": [
+          "movies",
+          "criticism",
+          "reviews"
+        ],
+        "title": "\u2018Focker In-Law\u2019 Reunites Skyler Gisondo, Beanie Feldstein and Eduardo Franco",
+        "url": "https://nytimes.com/2026/11/27/movies/focker-in-law-cast-gisondo-feldstein-franco.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "96168605bee3c5a3-s1",
+        "name": "NYT Movies",
+        "published_at": "2026-11-27T10:02:31+00:00",
+        "publisher": "NYT Movies",
+        "title": "\u2018Focker In-Law\u2019 Reunites Skyler Gisondo, Beanie Feldstein and Eduardo Franco",
+        "url": "https://nytimes.com/2026/11/27/movies/focker-in-law-cast-gisondo-feldstein-franco.html"
+      }
+    ],
+    "summary": "Skyler Gisondo, Beanie Feldstein and Eduardo Franco had breakout roles in the 2019 high-school comedy. Now, they\u2019re reuniting for \u201cFocker In-Law.\u201d",
+    "tags": [
+      "criticism",
+      "movies",
+      "reviews"
+    ],
+    "title": "\u2018Focker In-Law\u2019 Reunites Skyler Gisondo, Beanie Feldstein and Eduardo Franco"
+  },
+  {
+    "id": "ad5706df5eaea3ce",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "291259eff577bf3d",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Movies",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml"
+        },
+        "published_at": "2026-11-27T10:02:32+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Movies",
+        "summary": "A six-minute short that plays before Disney\u2019s latest animated theatrical release, \u201cHexed,\u201d is a throwback to the days of hand-drawn animation.",
+        "tags": [
+          "movies",
+          "criticism",
+          "reviews"
+        ],
+        "title": "How a New \u2018Lilo & Stitch\u2019 Short Came Together",
+        "url": "https://nytimes.com/2026/11/27/movies/lilo-stitch-film-disney.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "ad5706df5eaea3ce-s1",
+        "name": "NYT Movies",
+        "published_at": "2026-11-27T10:02:32+00:00",
+        "publisher": "NYT Movies",
+        "title": "How a New \u2018Lilo & Stitch\u2019 Short Came Together",
+        "url": "https://nytimes.com/2026/11/27/movies/lilo-stitch-film-disney.html"
+      }
+    ],
+    "summary": "A six-minute short that plays before Disney\u2019s latest animated theatrical release, \u201cHexed,\u201d is a throwback to the days of hand-drawn animation.",
+    "tags": [
+      "criticism",
+      "movies",
+      "reviews"
+    ],
+    "title": "How a New \u2018Lilo & Stitch\u2019 Short Came Together"
+  },
+  {
+    "id": "2211d0bf15d2975f",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "f96f67094a1b6bd6",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Movies",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml"
+        },
+        "published_at": "2026-11-27T10:03:45+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Movies",
+        "summary": "Whether you\u2019re a casual moviegoer or an avid buff, our reviewers think these films are worth knowing about.",
+        "tags": [
+          "movies",
+          "criticism",
+          "reviews"
+        ],
+        "title": "7 New Movies Our Critics Are Talking About This Week",
+        "url": "https://nytimes.com/2026/11/27/movies/new-movies-this-week-critics.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "2211d0bf15d2975f-s1",
+        "name": "NYT Movies",
+        "published_at": "2026-11-27T10:03:45+00:00",
+        "publisher": "NYT Movies",
+        "title": "7 New Movies Our Critics Are Talking About This Week",
+        "url": "https://nytimes.com/2026/11/27/movies/new-movies-this-week-critics.html"
+      }
+    ],
+    "summary": "Whether you\u2019re a casual moviegoer or an avid buff, our reviewers think these films are worth knowing about.",
+    "tags": [
+      "criticism",
+      "movies",
+      "reviews"
+    ],
+    "title": "7 New Movies Our Critics Are Talking About This Week"
+  },
+  {
+    "id": "f989ae15db1a700f",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "2336dd218c7160c7",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Movies",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml"
+        },
+        "published_at": "2026-11-26T10:01:55+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Movies",
+        "summary": "A collaboration with Coca-Cola hit screens in 2024 and has made microcelebrities of its little-known performers.",
+        "tags": [
+          "movies",
+          "criticism",
+          "reviews"
+        ],
+        "title": "Like Nicole Kidman, They\u2019re the Stars of an Oft-Memed AMC Ad",
+        "url": "https://nytimes.com/2026/11/26/movies/amc-theaters-coke-light-speed-ad.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "f989ae15db1a700f-s1",
+        "name": "NYT Movies",
+        "published_at": "2026-11-26T10:01:55+00:00",
+        "publisher": "NYT Movies",
+        "title": "Like Nicole Kidman, They\u2019re the Stars of an Oft-Memed AMC Ad",
+        "url": "https://nytimes.com/2026/11/26/movies/amc-theaters-coke-light-speed-ad.html"
+      }
+    ],
+    "summary": "A collaboration with Coca-Cola hit screens in 2024 and has made microcelebrities of its little-known performers.",
+    "tags": [
+      "criticism",
+      "movies",
+      "reviews"
+    ],
+    "title": "Like Nicole Kidman, They\u2019re the Stars of an Oft-Memed AMC Ad"
+  },
+  {
+    "id": "3fa9477e0e53e745",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "c80099b0bc274c8c",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Movies",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml"
+        },
+        "published_at": "2026-11-26T10:02:27+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Movies",
+        "summary": "\u201cAvengers: Doomsday\u201d and \u201cDune: Part Three\u201d are expected to open to at least $350 million in ticket sales. Some forecasts approach $500 million.",
+        "tags": [
+          "movies",
+          "criticism",
+          "reviews"
+        ],
+        "title": "\u2018Avengers\u2019 and \u2018Dune\u2019 Have Hollywood Dreaming of a December Windfall",
+        "url": "https://nytimes.com/2026/11/26/business/media/avengers-infinity-vision-dune.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "3fa9477e0e53e745-s1",
+        "name": "NYT Movies",
+        "published_at": "2026-11-26T10:02:27+00:00",
+        "publisher": "NYT Movies",
+        "title": "\u2018Avengers\u2019 and \u2018Dune\u2019 Have Hollywood Dreaming of a December Windfall",
+        "url": "https://nytimes.com/2026/11/26/business/media/avengers-infinity-vision-dune.html"
+      }
+    ],
+    "summary": "\u201cAvengers: Doomsday\u201d and \u201cDune: Part Three\u201d are expected to open to at least $350 million in ticket sales. Some forecasts approach $500 million.",
+    "tags": [
+      "criticism",
+      "movies",
+      "reviews"
+    ],
+    "title": "\u2018Avengers\u2019 and \u2018Dune\u2019 Have Hollywood Dreaming of a December Windfall"
+  },
+  {
+    "id": "0c7cdc3639a72503",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "30652ef11c544b9e",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Movies",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml"
+        },
+        "published_at": "2026-11-27T10:02:25+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Movies",
+        "summary": "This month\u2019s picks include a 50-year-old labor classic, a restored Soviet rock portrait and a look at comedy\u2019s \u201cGodspell\u201d roots.",
+        "tags": [
+          "movies",
+          "criticism",
+          "reviews"
+        ],
+        "title": "Three Great Documentaries to Stream",
+        "url": "https://nytimes.com/2026/11/27/movies/great-documentaries-streaming.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "0c7cdc3639a72503-s1",
+        "name": "NYT Movies",
+        "published_at": "2026-11-27T10:02:25+00:00",
+        "publisher": "NYT Movies",
+        "title": "Three Great Documentaries to Stream",
+        "url": "https://nytimes.com/2026/11/27/movies/great-documentaries-streaming.html"
+      }
+    ],
+    "summary": "This month\u2019s picks include a 50-year-old labor classic, a restored Soviet rock portrait and a look at comedy\u2019s \u201cGodspell\u201d roots.",
+    "tags": [
+      "criticism",
+      "movies",
+      "reviews"
+    ],
+    "title": "Three Great Documentaries to Stream"
+  },
+  {
+    "id": "642352d0acfd4346",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "f52f8b29dfee8e3e",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Movies",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml"
+        },
+        "published_at": "2026-11-25T10:02:31+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Movies",
+        "summary": "Disney unleashes a new witchy princess in a mother-daughter adventure tale that could use some decluttering.",
+        "tags": [
+          "movies",
+          "criticism",
+          "reviews"
+        ],
+        "title": "\u2018Hexed\u2019 Review: Disney\u2019s Witchy New Princess",
+        "url": "https://nytimes.com/2026/11/25/movies/hexed-review-disney.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "642352d0acfd4346-s1",
+        "name": "NYT Movies",
+        "published_at": "2026-11-25T10:02:31+00:00",
+        "publisher": "NYT Movies",
+        "title": "\u2018Hexed\u2019 Review: Disney\u2019s Witchy New Princess",
+        "url": "https://nytimes.com/2026/11/25/movies/hexed-review-disney.html"
+      }
+    ],
+    "summary": "Disney unleashes a new witchy princess in a mother-daughter adventure tale that could use some decluttering.",
+    "tags": [
+      "criticism",
+      "movies",
+      "reviews"
+    ],
+    "title": "\u2018Hexed\u2019 Review: Disney\u2019s Witchy New Princess"
+  },
+  {
+    "id": "b932b3f33b451a46",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "a4651becaec7f986",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Movies",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml"
+        },
+        "published_at": "2026-11-25T15:23:35+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Movies",
+        "summary": "One of the year\u2019s best films meditates on care, connection and how we spend our days.",
+        "tags": [
+          "movies",
+          "criticism",
+          "reviews"
+        ],
+        "title": "\u2018All of a Sudden\u2019 Review: Ryusuke Hamaguchi\u2019s Exquisite New Drama",
+        "url": "https://nytimes.com/2026/11/25/movies/all-of-a-sudden-review.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "b932b3f33b451a46-s1",
+        "name": "NYT Movies",
+        "published_at": "2026-11-25T15:23:35+00:00",
+        "publisher": "NYT Movies",
+        "title": "\u2018All of a Sudden\u2019 Review: Ryusuke Hamaguchi\u2019s Exquisite New Drama",
+        "url": "https://nytimes.com/2026/11/25/movies/all-of-a-sudden-review.html"
+      }
+    ],
+    "summary": "One of the year\u2019s best films meditates on care, connection and how we spend our days.",
+    "tags": [
+      "criticism",
+      "movies",
+      "reviews"
+    ],
+    "title": "\u2018All of a Sudden\u2019 Review: Ryusuke Hamaguchi\u2019s Exquisite New Drama"
+  },
+  {
+    "id": "4a0cc6b3f1c9ea99",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "ed1a50447295336d",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Movies",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml"
+        },
+        "published_at": "2026-11-25T19:29:28+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Movies",
+        "summary": "This mostly painless sequel to \u201cMeet the Parents\u201d flips the dynamics from the original.",
+        "tags": [
+          "movies",
+          "criticism",
+          "reviews"
+        ],
+        "title": "\u2018Focker In-Law\u2019 Review: Ariana Grande Steals the Show",
+        "url": "https://nytimes.com/2026/11/25/movies/focker-in-law-review.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "4a0cc6b3f1c9ea99-s1",
+        "name": "NYT Movies",
+        "published_at": "2026-11-25T19:29:28+00:00",
+        "publisher": "NYT Movies",
+        "title": "\u2018Focker In-Law\u2019 Review: Ariana Grande Steals the Show",
+        "url": "https://nytimes.com/2026/11/25/movies/focker-in-law-review.html"
+      }
+    ],
+    "summary": "This mostly painless sequel to \u201cMeet the Parents\u201d flips the dynamics from the original.",
+    "tags": [
+      "criticism",
+      "movies",
+      "reviews"
+    ],
+    "title": "\u2018Focker In-Law\u2019 Review: Ariana Grande Steals the Show"
+  },
+  {
+    "id": "6312d5dbcf818775",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "bfefbd0c398c416b",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Movies",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Movies.xml"
+        },
+        "published_at": "2026-11-27T21:02:01+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Movies",
+        "summary": "This month\u2019s picks include well-planned heists, a $1 billion loan recovery mission and a family battle against mercenaries.",
+        "tags": [
+          "movies",
+          "criticism",
+          "reviews"
+        ],
+        "title": "Five Action Movies to Stream Now",
+        "url": "https://nytimes.com/2026/11/27/movies/action-movies-streaming.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "6312d5dbcf818775-s1",
+        "name": "NYT Movies",
+        "published_at": "2026-11-27T21:02:01+00:00",
+        "publisher": "NYT Movies",
+        "title": "Five Action Movies to Stream Now",
+        "url": "https://nytimes.com/2026/11/27/movies/action-movies-streaming.html"
+      }
+    ],
+    "summary": "This month\u2019s picks include well-planned heists, a $1 billion loan recovery mission and a family battle against mercenaries.",
+    "tags": [
+      "criticism",
+      "movies",
+      "reviews"
+    ],
+    "title": "Five Action Movies to Stream Now"
+  },
+  {
+    "id": "dc7b0dba7dff9a54",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "cad9b50a5fe8b4b5",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT New York Region",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml"
+        },
+        "published_at": "2026-11-27T08:00:05+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT New York Region",
+        "summary": "The dispute between state officials and the federal government is the latest twist in a lawsuit over Massapequa\u2019s Native American mascot.",
+        "tags": [
+          "nyc",
+          "new-york",
+          "context"
+        ],
+        "title": "New York and Trump Officials Locked in Unlikely Clash Over Mascot Ban",
+        "url": "https://nytimes.com/2026/11/27/nyregion/new-york-trump-massapequa-mascot.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "dc7b0dba7dff9a54-s1",
+        "name": "NYT New York Region",
+        "published_at": "2026-11-27T08:00:05+00:00",
+        "publisher": "NYT New York Region",
+        "title": "New York and Trump Officials Locked in Unlikely Clash Over Mascot Ban",
+        "url": "https://nytimes.com/2026/11/27/nyregion/new-york-trump-massapequa-mascot.html"
+      }
+    ],
+    "summary": "The dispute between state officials and the federal government is the latest twist in a lawsuit over Massapequa\u2019s Native American mascot.",
+    "tags": [
+      "context",
+      "new-york",
+      "nyc"
+    ],
+    "title": "New York and Trump Officials Locked in Unlikely Clash Over Mascot Ban"
+  },
+  {
+    "id": "4e38f14f48a22ddc",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "11d6df583e73bf42",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT New York Region",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml"
+        },
+        "published_at": "2026-11-27T14:35:45+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT New York Region",
+        "summary": "Many houses of worship in New York were once used as crucial shelter spaces. A nonprofit leader wants to help more congregations open their doors to those in need.",
+        "tags": [
+          "nyc",
+          "new-york",
+          "context"
+        ],
+        "title": "One Man\u2019s Mission: Turning Church Basements Into Homeless Shelters",
+        "url": "https://nytimes.com/2026/11/27/nyregion/nyc-homeless-shelters-church.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "4e38f14f48a22ddc-s1",
+        "name": "NYT New York Region",
+        "published_at": "2026-11-27T14:35:45+00:00",
+        "publisher": "NYT New York Region",
+        "title": "One Man\u2019s Mission: Turning Church Basements Into Homeless Shelters",
+        "url": "https://nytimes.com/2026/11/27/nyregion/nyc-homeless-shelters-church.html"
+      }
+    ],
+    "summary": "Many houses of worship in New York were once used as crucial shelter spaces. A nonprofit leader wants to help more congregations open their doors to those in need.",
+    "tags": [
+      "context",
+      "new-york",
+      "nyc"
+    ],
+    "title": "One Man\u2019s Mission: Turning Church Basements Into Homeless Shelters"
+  },
+  {
+    "id": "89999ea2bde51168",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "447e2acb198d189b",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT New York Region",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml"
+        },
+        "published_at": "2026-11-27T02:15:51+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT New York Region",
+        "summary": "The authorities said that Joaquin J. Morris, 18, was killed in a shooting that interrupted a longtime sporting event that dates to the 1930s in the New Jersey suburbs.",
+        "tags": [
+          "nyc",
+          "new-york",
+          "context"
+        ],
+        "title": "One Dead After Shooting Mars High School Football Tradition",
+        "url": "https://nytimes.com/2026/11/26/nyregion/teaneck-shooting-football-game-turkey-bowl.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "89999ea2bde51168-s1",
+        "name": "NYT New York Region",
+        "published_at": "2026-11-27T02:15:51+00:00",
+        "publisher": "NYT New York Region",
+        "title": "One Dead After Shooting Mars High School Football Tradition",
+        "url": "https://nytimes.com/2026/11/26/nyregion/teaneck-shooting-football-game-turkey-bowl.html"
+      }
+    ],
+    "summary": "The authorities said that Joaquin J. Morris, 18, was killed in a shooting that interrupted a longtime sporting event that dates to the 1930s in the New Jersey suburbs.",
+    "tags": [
+      "context",
+      "new-york",
+      "nyc"
+    ],
+    "title": "One Dead After Shooting Mars High School Football Tradition"
+  },
+  {
+    "id": "257126513299e056",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "ef4c65f8fb7414c1",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT New York Region",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml"
+        },
+        "published_at": "2026-11-26T20:53:41+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT New York Region",
+        "summary": "Wind and rain grounded the beloved balloons that typically dominate the Thanksgiving skies, leaving the streets along the parade route mostly deserted on Thursday.",
+        "tags": [
+          "nyc",
+          "new-york",
+          "context"
+        ],
+        "title": "New Yorkers and Tourists Try to Salvage a Parade Day Postponed by Rain",
+        "url": "https://nytimes.com/2026/11/26/nyregion/macys-thanksgiving-day-parade-empty-streets.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "257126513299e056-s1",
+        "name": "NYT New York Region",
+        "published_at": "2026-11-26T20:53:41+00:00",
+        "publisher": "NYT New York Region",
+        "title": "New Yorkers and Tourists Try to Salvage a Parade Day Postponed by Rain",
+        "url": "https://nytimes.com/2026/11/26/nyregion/macys-thanksgiving-day-parade-empty-streets.html"
+      }
+    ],
+    "summary": "Wind and rain grounded the beloved balloons that typically dominate the Thanksgiving skies, leaving the streets along the parade route mostly deserted on Thursday.",
+    "tags": [
+      "context",
+      "new-york",
+      "nyc"
+    ],
+    "title": "New Yorkers and Tourists Try to Salvage a Parade Day Postponed by Rain"
+  },
+  {
+    "id": "2f31bcd51160e755",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "ef3e9ff6af143df9",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT New York Region",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml"
+        },
+        "published_at": "2026-11-26T08:00:06+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT New York Region",
+        "summary": "With the affordability crisis and cuts to food stamps, pantries are seeing more clients and some people say they can\u2019t afford groceries in their neighborhoods.",
+        "tags": [
+          "nyc",
+          "new-york",
+          "context"
+        ],
+        "title": "Thanksgiving Highlights Rising Hunger Across New York Amid SNAP Cuts",
+        "url": "https://nytimes.com/2026/11/26/nyregion/food-insecurity-snap-thanksgiving.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "2f31bcd51160e755-s1",
+        "name": "NYT New York Region",
+        "published_at": "2026-11-26T08:00:06+00:00",
+        "publisher": "NYT New York Region",
+        "title": "Thanksgiving Highlights Rising Hunger Across New York Amid SNAP Cuts",
+        "url": "https://nytimes.com/2026/11/26/nyregion/food-insecurity-snap-thanksgiving.html"
+      }
+    ],
+    "summary": "With the affordability crisis and cuts to food stamps, pantries are seeing more clients and some people say they can\u2019t afford groceries in their neighborhoods.",
+    "tags": [
+      "context",
+      "new-york",
+      "nyc"
+    ],
+    "title": "Thanksgiving Highlights Rising Hunger Across New York Amid SNAP Cuts"
+  },
+  {
+    "id": "3bb8c06ce3e56fc9",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "6bb20239f74fb2f1",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT New York Region",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml"
+        },
+        "published_at": "2026-11-26T14:06:46+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT New York Region",
+        "summary": "After the Macy\u2019s Thanksgiving Day Parade was postponed because of a powerful storm, crews worked through the night to deflate balloons before the bad weather arrived.",
+        "tags": [
+          "nyc",
+          "new-york",
+          "context"
+        ],
+        "title": "Thanksgiving Parade Balloons Are Deflated in New York",
+        "url": "https://nytimes.com/2026/11/26/nyregion/macys-parade-balloons-thanksgiving.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "3bb8c06ce3e56fc9-s1",
+        "name": "NYT New York Region",
+        "published_at": "2026-11-26T14:06:46+00:00",
+        "publisher": "NYT New York Region",
+        "title": "Thanksgiving Parade Balloons Are Deflated in New York",
+        "url": "https://nytimes.com/2026/11/26/nyregion/macys-parade-balloons-thanksgiving.html"
+      }
+    ],
+    "summary": "After the Macy\u2019s Thanksgiving Day Parade was postponed because of a powerful storm, crews worked through the night to deflate balloons before the bad weather arrived.",
+    "tags": [
+      "context",
+      "new-york",
+      "nyc"
+    ],
+    "title": "Thanksgiving Parade Balloons Are Deflated in New York"
+  },
+  {
+    "id": "f7dc389b7386a677",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "b48170083ceb87b6",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT New York Region",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml"
+        },
+        "published_at": "2026-11-27T19:28:36+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT New York Region",
+        "summary": "It isn\u2019t always easy to keep New York City\u2019s Thanksgiving parade on track. Here\u2019s a look back at notable moments and mishaps.",
+        "tags": [
+          "nyc",
+          "new-york",
+          "context"
+        ],
+        "title": "Photos: Macy\u2019s Thanksgiving Day Parade History and Wacky Moments",
+        "url": "https://nytimes.com/2026/11/26/nyregion/macys-thanksgiving-parade-history-timeline.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "f7dc389b7386a677-s1",
+        "name": "NYT New York Region",
+        "published_at": "2026-11-27T19:28:36+00:00",
+        "publisher": "NYT New York Region",
+        "title": "Photos: Macy\u2019s Thanksgiving Day Parade History and Wacky Moments",
+        "url": "https://nytimes.com/2026/11/26/nyregion/macys-thanksgiving-parade-history-timeline.html"
+      }
+    ],
+    "summary": "It isn\u2019t always easy to keep New York City\u2019s Thanksgiving parade on track. Here\u2019s a look back at notable moments and mishaps.",
+    "tags": [
+      "context",
+      "new-york",
+      "nyc"
+    ],
+    "title": "Photos: Macy\u2019s Thanksgiving Day Parade History and Wacky Moments"
+  },
+  {
+    "id": "feca08fb31917c7e",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "c40cbf39408af596",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT New York Region",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml"
+        },
+        "published_at": "2026-11-26T14:07:50+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT New York Region",
+        "summary": "After more than a century of tradition, the Macy\u2019s Thanksgiving Day Parade is suddenly flexible. Sure, this is fine.",
+        "tags": [
+          "nyc",
+          "new-york",
+          "context"
+        ],
+        "title": "The Thanksgiving Parade Is on a Saturday. Can They Do That?",
+        "url": "https://nytimes.com/2026/11/25/nyregion/thanksgiving-parade-new-york-postponed.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "feca08fb31917c7e-s1",
+        "name": "NYT New York Region",
+        "published_at": "2026-11-26T14:07:50+00:00",
+        "publisher": "NYT New York Region",
+        "title": "The Thanksgiving Parade Is on a Saturday. Can They Do That?",
+        "url": "https://nytimes.com/2026/11/25/nyregion/thanksgiving-parade-new-york-postponed.html"
+      }
+    ],
+    "summary": "After more than a century of tradition, the Macy\u2019s Thanksgiving Day Parade is suddenly flexible. Sure, this is fine.",
+    "tags": [
+      "context",
+      "new-york",
+      "nyc"
+    ],
+    "title": "The Thanksgiving Parade Is on a Saturday. Can They Do That?"
+  },
+  {
+    "id": "6ca7e893292a0b3b",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "fc8bc005444a4446",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT New York Region",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml"
+        },
+        "published_at": "2026-11-27T22:30:10+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT New York Region",
+        "summary": "Mayor Zohran Mamdani, who injured himself playing soccer, returned to Gracie Mansion and was expected to make a \u201cfull recovery,\u201d the spokesman said.",
+        "tags": [
+          "nyc",
+          "new-york",
+          "context"
+        ],
+        "title": "Mamdani Underwent Successful Achilles\u2019 Tendon Surgery, Spokesman Says",
+        "url": "https://nytimes.com/2026/11/27/nyregion/mamdani-achilles-tendon-surgery-success.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "6ca7e893292a0b3b-s1",
+        "name": "NYT New York Region",
+        "published_at": "2026-11-27T22:30:10+00:00",
+        "publisher": "NYT New York Region",
+        "title": "Mamdani Underwent Successful Achilles\u2019 Tendon Surgery, Spokesman Says",
+        "url": "https://nytimes.com/2026/11/27/nyregion/mamdani-achilles-tendon-surgery-success.html"
+      }
+    ],
+    "summary": "Mayor Zohran Mamdani, who injured himself playing soccer, returned to Gracie Mansion and was expected to make a \u201cfull recovery,\u201d the spokesman said.",
+    "tags": [
+      "context",
+      "new-york",
+      "nyc"
+    ],
+    "title": "Mamdani Underwent Successful Achilles\u2019 Tendon Surgery, Spokesman Says"
+  },
+  {
+    "id": "5310f15f881f7f10",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "984b26ae9762bfbb",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Arts",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml"
+        },
+        "published_at": "2026-11-27T10:00:45+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Arts",
+        "summary": "\u201cGood Weather for Immaculate Conception\u201d features holiday classics and original songs that ruminate on the season in surprising, occasionally somber ways.",
+        "tags": [
+          "arts",
+          "culture",
+          "context"
+        ],
+        "title": "Alanis Morissette Made a Christmas Album for the Rest of Us",
+        "url": "https://nytimes.com/2026/11/27/arts/music/alanis-morissette-christmas-album.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "5310f15f881f7f10-s1",
+        "name": "NYT Arts",
+        "published_at": "2026-11-27T10:00:45+00:00",
+        "publisher": "NYT Arts",
+        "title": "Alanis Morissette Made a Christmas Album for the Rest of Us",
+        "url": "https://nytimes.com/2026/11/27/arts/music/alanis-morissette-christmas-album.html"
+      }
+    ],
+    "summary": "\u201cGood Weather for Immaculate Conception\u201d features holiday classics and original songs that ruminate on the season in surprising, occasionally somber ways.",
+    "tags": [
+      "arts",
+      "context",
+      "culture"
+    ],
+    "title": "Alanis Morissette Made a Christmas Album for the Rest of Us"
+  },
+  {
+    "id": "46427e754c773c8b",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "9db999fbc28529b0",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Arts",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml"
+        },
+        "published_at": "2026-11-27T19:00:39+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Arts",
+        "summary": "For the Metropolitan Opera\u2019s new production of \u201cJenufa,\u201d Sean Panikkar learned the role of Laca in under two weeks. He talks about how it came together.",
+        "tags": [
+          "arts",
+          "culture",
+          "context"
+        ],
+        "title": "Sean Panikkar on Quickly Learning His Role in the Met\u2019s \u2018Jenufa\u2019",
+        "url": "https://nytimes.com/2026/11/27/arts/music/metropolitan-opera-jenufa-sean-panikkar.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "46427e754c773c8b-s1",
+        "name": "NYT Arts",
+        "published_at": "2026-11-27T19:00:39+00:00",
+        "publisher": "NYT Arts",
+        "title": "Sean Panikkar on Quickly Learning His Role in the Met\u2019s \u2018Jenufa\u2019",
+        "url": "https://nytimes.com/2026/11/27/arts/music/metropolitan-opera-jenufa-sean-panikkar.html"
+      }
+    ],
+    "summary": "For the Metropolitan Opera\u2019s new production of \u201cJenufa,\u201d Sean Panikkar learned the role of Laca in under two weeks. He talks about how it came together.",
+    "tags": [
+      "arts",
+      "context",
+      "culture"
+    ],
+    "title": "Sean Panikkar on Quickly Learning His Role in the Met\u2019s \u2018Jenufa\u2019"
+  },
+  {
+    "id": "cf47cd74ee9d4244",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "ed6c1fa26d3e3982",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Arts",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml"
+        },
+        "published_at": "2026-11-27T10:00:22+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Arts",
+        "summary": "With a major Paris residency and a new work headed to Vienna, Back to Back Theater puts power dynamics and audience assumptions under a magnifying glass.",
+        "tags": [
+          "arts",
+          "culture",
+          "context"
+        ],
+        "title": "How an Australian Troupe of Actors With Disabilities Conquered the World Stage",
+        "url": "https://nytimes.com/2026/11/27/theater/back-to-back-theatre-paris-vienna.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "cf47cd74ee9d4244-s1",
+        "name": "NYT Arts",
+        "published_at": "2026-11-27T10:00:22+00:00",
+        "publisher": "NYT Arts",
+        "title": "How an Australian Troupe of Actors With Disabilities Conquered the World Stage",
+        "url": "https://nytimes.com/2026/11/27/theater/back-to-back-theatre-paris-vienna.html"
+      }
+    ],
+    "summary": "With a major Paris residency and a new work headed to Vienna, Back to Back Theater puts power dynamics and audience assumptions under a magnifying glass.",
+    "tags": [
+      "arts",
+      "context",
+      "culture"
+    ],
+    "title": "How an Australian Troupe of Actors With Disabilities Conquered the World Stage"
+  },
+  {
+    "id": "440116e219e0bec6",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "c840e498c9582933",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Arts",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml"
+        },
+        "published_at": "2026-11-27T10:00:20+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Arts",
+        "summary": "Dismissed as a backward-looking flop after its Venice premiere, \u201cThe Rake\u2019s Progress\u201d is returning to Italy with productions that find fresh resonance in its tale of greed and deception.",
+        "tags": [
+          "arts",
+          "culture",
+          "context"
+        ],
+        "title": "75 Years On, Stravinsky\u2019s Opera Is \u2018a Piece of Our Time\u2019",
+        "url": "https://nytimes.com/2026/11/27/arts/stravinsky-the-rakes-progress-opera.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "440116e219e0bec6-s1",
+        "name": "NYT Arts",
+        "published_at": "2026-11-27T10:00:20+00:00",
+        "publisher": "NYT Arts",
+        "title": "75 Years On, Stravinsky\u2019s Opera Is \u2018a Piece of Our Time\u2019",
+        "url": "https://nytimes.com/2026/11/27/arts/stravinsky-the-rakes-progress-opera.html"
+      }
+    ],
+    "summary": "Dismissed as a backward-looking flop after its Venice premiere, \u201cThe Rake\u2019s Progress\u201d is returning to Italy with productions that find fresh resonance in its tale of greed and deception.",
+    "tags": [
+      "arts",
+      "context",
+      "culture"
+    ],
+    "title": "75 Years On, Stravinsky\u2019s Opera Is \u2018a Piece of Our Time\u2019"
+  },
+  {
+    "id": "5f047b099bad9f35",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "6fbdd437f0742b60",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Arts",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml"
+        },
+        "published_at": "2026-11-27T08:00:05+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Arts",
+        "summary": "A mash-up of two classic French novels creates an unsatisfying new story.",
+        "tags": [
+          "arts",
+          "culture",
+          "context"
+        ],
+        "title": "\u2018The Hunchback, Soul of Paris\u2019 Review: Hugo Remix",
+        "url": "https://nytimes.com/2026/11/27/movies/the-hunchback-soul-of-paris-review.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "5f047b099bad9f35-s1",
+        "name": "NYT Arts",
+        "published_at": "2026-11-27T08:00:05+00:00",
+        "publisher": "NYT Arts",
+        "title": "\u2018The Hunchback, Soul of Paris\u2019 Review: Hugo Remix",
+        "url": "https://nytimes.com/2026/11/27/movies/the-hunchback-soul-of-paris-review.html"
+      }
+    ],
+    "summary": "A mash-up of two classic French novels creates an unsatisfying new story.",
+    "tags": [
+      "arts",
+      "context",
+      "culture"
+    ],
+    "title": "\u2018The Hunchback, Soul of Paris\u2019 Review: Hugo Remix"
+  },
+  {
+    "id": "a2720195e190915c",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "676d25871da894a6",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Arts",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml"
+        },
+        "published_at": "2026-11-27T10:02:20+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Arts",
+        "summary": "With multiple tree lighting ceremonies, markets and performances, the next few weeks in the city can be exciting but overwhelming. This guide cuts through the noise.",
+        "tags": [
+          "arts",
+          "culture",
+          "context"
+        ],
+        "title": "44 Fun Things to Do in N.Y.C. for the Holidays",
+        "url": "https://nytimes.com/2026/11/27/arts/nyc-holidays-things-to-do.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "a2720195e190915c-s1",
+        "name": "NYT Arts",
+        "published_at": "2026-11-27T10:02:20+00:00",
+        "publisher": "NYT Arts",
+        "title": "44 Fun Things to Do in N.Y.C. for the Holidays",
+        "url": "https://nytimes.com/2026/11/27/arts/nyc-holidays-things-to-do.html"
+      }
+    ],
+    "summary": "With multiple tree lighting ceremonies, markets and performances, the next few weeks in the city can be exciting but overwhelming. This guide cuts through the noise.",
+    "tags": [
+      "arts",
+      "context",
+      "culture"
+    ],
+    "title": "44 Fun Things to Do in N.Y.C. for the Holidays"
+  },
+  {
+    "id": "0e3f3a9fea27af4f",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "f7684a5a43a3d530",
+        "metadata": {
+          "domain": "ny.eater.com",
+          "publisher": "Eater NY",
+          "publisher_url": null,
+          "source_url": "https://ny.eater.com/rss/index.xml"
+        },
+        "published_at": "2026-11-27T15:00:00+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Eater NY",
+        "summary": "This is Eater\u2019s guide to all the New York City restaurants, bars, and cafes that closed in November 2026. This list will be updated weekly (see: October, September, August, July, June, May, April, March, February, January), serving as a round-up of the dining and drinking places that have shuttered around the city. If a restaurant [\u2026]",
+        "tags": [
+          "nyc-food",
+          "restaurants",
+          "openings"
+        ],
+        "title": "A Nearly-30-Year-Old Bistro Facing Grand Central Reaches the End",
+        "url": "https://ny.eater.com/news/414724/nyc-restaurants-closed-november-2026"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "ny.eater.com",
+        "id": "0e3f3a9fea27af4f-s1",
+        "name": "Eater NY",
+        "published_at": "2026-11-27T15:00:00+00:00",
+        "publisher": "Eater NY",
+        "title": "A Nearly-30-Year-Old Bistro Facing Grand Central Reaches the End",
+        "url": "https://ny.eater.com/news/414724/nyc-restaurants-closed-november-2026"
+      }
+    ],
+    "summary": "This is Eater\u2019s guide to all the New York City restaurants, bars, and cafes that closed in November 2026. This list will be updated weekly (see: October, September, August, July, June, May, April, March, February, January), serving as a round-up of the dining and drinking places that have shuttered around the city. If a restaurant [\u2026]",
+    "tags": [
+      "nyc-food",
+      "openings",
+      "restaurants"
+    ],
+    "title": "A Nearly-30-Year-Old Bistro Facing Grand Central Reaches the End"
+  },
+  {
+    "id": "51aab889c0eed1de",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "3b35171c271c265b",
+        "metadata": {
+          "domain": "ny.eater.com",
+          "publisher": "Eater NY",
+          "publisher_url": null,
+          "source_url": "https://ny.eater.com/rss/index.xml"
+        },
+        "published_at": "2026-11-25T20:10:23+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Eater NY",
+        "summary": "A new Latin American-leaning bakery and cafe from the former pastry chef of Soho restaurant Manuela will debut after Thanksgiving this weekend. La Mestiza will open in Fort Greene at 154 Carlton Avenue, at Myrtle Avenue on Saturday, November 28. Co-founders and couple, chef Katherine Morales Ordo\u00f1ez and Zack Green, are behind La Mestiza. Ordo\u00f1ez [\u2026]",
+        "tags": [
+          "nyc-food",
+          "restaurants",
+          "openings"
+        ],
+        "title": "A New Bakery With Ecuadorian Croissants and Flan Opens in Brooklyn",
+        "url": "https://ny.eater.com/news/415193/la-mestiza-nyc-bakery-opening-latin-american-baked-goods-ecuadorian-fort-greene"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "ny.eater.com",
+        "id": "51aab889c0eed1de-s1",
+        "name": "Eater NY",
+        "published_at": "2026-11-25T20:10:23+00:00",
+        "publisher": "Eater NY",
+        "title": "A New Bakery With Ecuadorian Croissants and Flan Opens in Brooklyn",
+        "url": "https://ny.eater.com/news/415193/la-mestiza-nyc-bakery-opening-latin-american-baked-goods-ecuadorian-fort-greene"
+      }
+    ],
+    "summary": "A new Latin American-leaning bakery and cafe from the former pastry chef of Soho restaurant Manuela will debut after Thanksgiving this weekend. La Mestiza will open in Fort Greene at 154 Carlton Avenue, at Myrtle Avenue on Saturday, November 28. Co-founders and couple, chef Katherine Morales Ordo\u00f1ez and Zack Green, are behind La Mestiza. Ordo\u00f1ez [\u2026]",
+    "tags": [
+      "nyc-food",
+      "openings",
+      "restaurants"
+    ],
+    "title": "A New Bakery With Ecuadorian Croissants and Flan Opens in Brooklyn"
+  },
+  {
+    "id": "46c915c4032c7e56",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "5feb39fbc74dcdb4",
+        "metadata": {
+          "domain": "ny.eater.com",
+          "publisher": "Eater NY",
+          "publisher_url": null,
+          "source_url": "https://ny.eater.com/rss/index.xml"
+        },
+        "published_at": "2026-11-25T18:17:27+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Eater NY",
+        "summary": "This is Eater NY\u2019s new guide to all of the new restaurants, bars, and cafes that have opened around New York City this November 2026, in a brand-new format as a map. Throughout the month, we\u2019ll update the list weekly (see: October, September, August, July, June, May, April, March, February, January). When we\u2019ve been to [\u2026]",
+        "tags": [
+          "nyc-food",
+          "restaurants",
+          "openings"
+        ],
+        "title": "All the New Restaurant Openings to Know in New York City",
+        "url": "https://ny.eater.com/maps/nyc-new-restaurant-openings-2026"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "ny.eater.com",
+        "id": "46c915c4032c7e56-s1",
+        "name": "Eater NY",
+        "published_at": "2026-11-25T18:17:27+00:00",
+        "publisher": "Eater NY",
+        "title": "All the New Restaurant Openings to Know in New York City",
+        "url": "https://ny.eater.com/maps/nyc-new-restaurant-openings-2026"
+      }
+    ],
+    "summary": "This is Eater NY\u2019s new guide to all of the new restaurants, bars, and cafes that have opened around New York City this November 2026, in a brand-new format as a map. Throughout the month, we\u2019ll update the list weekly (see: October, September, August, July, June, May, April, March, February, January). When we\u2019ve been to [\u2026]",
+    "tags": [
+      "nyc-food",
+      "openings",
+      "restaurants"
+    ],
+    "title": "All the New Restaurant Openings to Know in New York City"
+  },
+  {
+    "id": "fb675ee5646d2fb4",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "7bc3594b35a1bd7b",
+        "metadata": {
+          "domain": "ny.eater.com",
+          "publisher": "Eater NY",
+          "publisher_url": null,
+          "source_url": "https://ny.eater.com/rss/index.xml"
+        },
+        "published_at": "2026-11-25T15:49:58+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Eater NY",
+        "summary": "We\u2019ve been covering various NYC restaurants, food, drinks, bars, etc. news intel over on our daily newsletter (please sign up if you haven\u2019t already!), but we\u2019re also making it easier for everyone to catch up by rounding \u2018em up here every week (check out October, September, August, July, and June). November 25 Kokomo, the Williamsburg [\u2026]",
+        "tags": [
+          "nyc-food",
+          "restaurants",
+          "openings"
+        ],
+        "title": "ICYMI: A Williamsburg Caribbean Waterfront Restaurant Will Close in December",
+        "url": "https://ny.eater.com/news/414704/nyc-restaurant-news-november-2026"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "ny.eater.com",
+        "id": "fb675ee5646d2fb4-s1",
+        "name": "Eater NY",
+        "published_at": "2026-11-25T15:49:58+00:00",
+        "publisher": "Eater NY",
+        "title": "ICYMI: A Williamsburg Caribbean Waterfront Restaurant Will Close in December",
+        "url": "https://ny.eater.com/news/414704/nyc-restaurant-news-november-2026"
+      }
+    ],
+    "summary": "We\u2019ve been covering various NYC restaurants, food, drinks, bars, etc. news intel over on our daily newsletter (please sign up if you haven\u2019t already!), but we\u2019re also making it easier for everyone to catch up by rounding \u2018em up here every week (check out October, September, August, July, and June). November 25 Kokomo, the Williamsburg [\u2026]",
+    "tags": [
+      "nyc-food",
+      "openings",
+      "restaurants"
+    ],
+    "title": "ICYMI: A Williamsburg Caribbean Waterfront Restaurant Will Close in December"
+  },
+  {
+    "id": "0de14ab228c0cd0a",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "fc3be777b45a8975",
+        "metadata": {
+          "domain": "ny.eater.com",
+          "publisher": "Eater NY",
+          "publisher_url": null,
+          "source_url": "https://ny.eater.com/rss/index.xml"
+        },
+        "published_at": "2026-11-25T15:06:42+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Eater NY",
+        "summary": "Since 2015, tempura fans have had a haven in Midtown East thanks to the late chef Masao Matsui. Now, Tempura Matsui is run by executive chef Koichi Endo, who serves very seasonal seafood and vegetables lightly battered and fried. A meal at the one-Michelin-starred restaurant shows that tempura can be a simple work of shatteringly [\u2026]",
+        "tags": [
+          "nyc-food",
+          "restaurants",
+          "openings"
+        ],
+        "title": "This Midtown Restaurant Is a Temple to Tempura",
+        "url": "https://ny.eater.com/dining-report/415149/tempura-matsui-nyc-restaurant-review-japanese-omakase-tasting-menu-midtown-east"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "ny.eater.com",
+        "id": "0de14ab228c0cd0a-s1",
+        "name": "Eater NY",
+        "published_at": "2026-11-25T15:06:42+00:00",
+        "publisher": "Eater NY",
+        "title": "This Midtown Restaurant Is a Temple to Tempura",
+        "url": "https://ny.eater.com/dining-report/415149/tempura-matsui-nyc-restaurant-review-japanese-omakase-tasting-menu-midtown-east"
+      }
+    ],
+    "summary": "Since 2015, tempura fans have had a haven in Midtown East thanks to the late chef Masao Matsui. Now, Tempura Matsui is run by executive chef Koichi Endo, who serves very seasonal seafood and vegetables lightly battered and fried. A meal at the one-Michelin-starred restaurant shows that tempura can be a simple work of shatteringly [\u2026]",
+    "tags": [
+      "nyc-food",
+      "openings",
+      "restaurants"
+    ],
+    "title": "This Midtown Restaurant Is a Temple to Tempura"
+  },
+  {
+    "id": "28698b9738da6200",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "b9dc7b4461c02b06",
+        "metadata": {
+          "domain": "publicbooks.org",
+          "publisher": "Public Books",
+          "publisher_url": null,
+          "source_url": "https://www.publicbooks.org/feed/"
+        },
+        "published_at": "2026-11-25T16:00:00+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Public Books",
+        "summary": "\u201cSleep stories save us from ourselves.\u201d The post The Radical Project of Sleep Stories appeared first on Public Books .",
+        "tags": [
+          "literary-fiction",
+          "criticism",
+          "essays"
+        ],
+        "title": "The Radical Project of Sleep Stories",
+        "url": "https://publicbooks.org/the-radical-project-of-sleep-stories/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "publicbooks.org",
+        "id": "28698b9738da6200-s1",
+        "name": "Public Books",
+        "published_at": "2026-11-25T16:00:00+00:00",
+        "publisher": "Public Books",
+        "title": "The Radical Project of Sleep Stories",
+        "url": "https://publicbooks.org/the-radical-project-of-sleep-stories/"
+      }
+    ],
+    "summary": "\u201cSleep stories save us from ourselves.\u201d The post The Radical Project of Sleep Stories appeared first on Public Books .",
+    "tags": [
+      "criticism",
+      "essays",
+      "literary-fiction"
+    ],
+    "title": "The Radical Project of Sleep Stories"
+  },
+  {
+    "id": "b870c637ea93a629",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "28d01d0386fec451",
+        "metadata": {
+          "domain": "curbed.com",
+          "publisher": "Curbed",
+          "publisher_url": null,
+          "source_url": "https://www.curbed.com/rss/index.xml"
+        },
+        "published_at": "2026-11-27T12:00:06+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Curbed",
+        "summary": "This week\u2019s worth-it New York City apartment listings.",
+        "tags": [
+          "nyc",
+          "urbanism",
+          "housing"
+        ],
+        "title": "Mega-Bookshelves and a Why-Is-This-Still-Available Dining Room",
+        "url": "http://curbed.com/article/best-nyc-apartments-for-rent-november-27-2026.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "curbed.com",
+        "id": "b870c637ea93a629-s1",
+        "name": "Curbed",
+        "published_at": "2026-11-27T12:00:06+00:00",
+        "publisher": "Curbed",
+        "title": "Mega-Bookshelves and a Why-Is-This-Still-Available Dining Room",
+        "url": "http://curbed.com/article/best-nyc-apartments-for-rent-november-27-2026.html"
+      }
+    ],
+    "summary": "This week\u2019s worth-it New York City apartment listings.",
+    "tags": [
+      "housing",
+      "nyc",
+      "urbanism"
+    ],
+    "title": "Mega-Bookshelves and a Why-Is-This-Still-Available Dining Room"
+  },
+  {
+    "id": "eea379b6bcb83a92",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "40cdb02aebe42d5d",
+        "metadata": {
+          "domain": "curbed.com",
+          "publisher": "Curbed",
+          "publisher_url": null,
+          "source_url": "https://www.curbed.com/rss/index.xml"
+        },
+        "published_at": "2026-11-25T17:37:21+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Curbed",
+        "summary": "The building is among the first of a new crop of condos popping up in the historic district in decades.",
+        "tags": [
+          "nyc",
+          "urbanism",
+          "housing"
+        ],
+        "title": "A Penthouse in a Robert A.M. Stern Tower Poised to Set a Lower Fifth Record",
+        "url": "http://curbed.com/article/greenwich-village-penthouse-sale-lower-fifth-record-robert-stern.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "curbed.com",
+        "id": "eea379b6bcb83a92-s1",
+        "name": "Curbed",
+        "published_at": "2026-11-25T17:37:21+00:00",
+        "publisher": "Curbed",
+        "title": "A Penthouse in a Robert A.M. Stern Tower Poised to Set a Lower Fifth Record",
+        "url": "http://curbed.com/article/greenwich-village-penthouse-sale-lower-fifth-record-robert-stern.html"
+      }
+    ],
+    "summary": "The building is among the first of a new crop of condos popping up in the historic district in decades.",
+    "tags": [
+      "housing",
+      "nyc",
+      "urbanism"
+    ],
+    "title": "A Penthouse in a Robert A.M. Stern Tower Poised to Set a Lower Fifth Record"
+  },
+  {
+    "id": "acc9690fe2365f3a",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "b17b4a40114b712b",
+        "metadata": {
+          "domain": "curbed.com",
+          "publisher": "Curbed",
+          "publisher_url": null,
+          "source_url": "https://www.curbed.com/rss/index.xml"
+        },
+        "published_at": "2026-11-25T16:15:10+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Curbed",
+        "summary": "How the city struck a long-awaited deal with Lyft.",
+        "tags": [
+          "nyc",
+          "urbanism",
+          "housing"
+        ],
+        "title": "Electric Citi Bikes Will Get a Lot Cheaper",
+        "url": "http://curbed.com/article/electric-citi-bikes-lyft-price-cap.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "curbed.com",
+        "id": "acc9690fe2365f3a-s1",
+        "name": "Curbed",
+        "published_at": "2026-11-25T16:15:10+00:00",
+        "publisher": "Curbed",
+        "title": "Electric Citi Bikes Will Get a Lot Cheaper",
+        "url": "http://curbed.com/article/electric-citi-bikes-lyft-price-cap.html"
+      }
+    ],
+    "summary": "How the city struck a long-awaited deal with Lyft.",
+    "tags": [
+      "housing",
+      "nyc",
+      "urbanism"
+    ],
+    "title": "Electric Citi Bikes Will Get a Lot Cheaper"
+  },
+  {
+    "id": "f3413d3be72655e2",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "66bcb11f16fb5a03",
+        "metadata": {
+          "domain": "curbed.com",
+          "publisher": "Curbed",
+          "publisher_url": null,
+          "source_url": "https://www.curbed.com/rss/index.xml"
+        },
+        "published_at": "2026-11-25T12:00:43+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Curbed",
+        "summary": "We spoke to experts about how to avoid getting ripped off and the trick that reveals if an evergreen is fresh.",
+        "tags": [
+          "nyc",
+          "urbanism",
+          "housing"
+        ],
+        "title": "How to Buy a Christmas Tree in the City",
+        "url": "http://curbed.com/article/where-to-buy-christmas-tree-in-nyc.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "curbed.com",
+        "id": "f3413d3be72655e2-s1",
+        "name": "Curbed",
+        "published_at": "2026-11-25T12:00:43+00:00",
+        "publisher": "Curbed",
+        "title": "How to Buy a Christmas Tree in the City",
+        "url": "http://curbed.com/article/where-to-buy-christmas-tree-in-nyc.html"
+      }
+    ],
+    "summary": "We spoke to experts about how to avoid getting ripped off and the trick that reveals if an evergreen is fresh.",
+    "tags": [
+      "housing",
+      "nyc",
+      "urbanism"
+    ],
+    "title": "How to Buy a Christmas Tree in the City"
+  },
+  {
+    "id": "a9117cbb6925a8ce",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "969bf4ef48e74b7a",
+        "metadata": {
+          "domain": "letsrun.com",
+          "publisher": "LetsRun",
+          "publisher_url": null,
+          "source_url": "https://www.letsrun.com/feed/"
+        },
+        "published_at": "2026-11-27T03:20:26+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "LetsRun",
+        "summary": "Find out what happened in the 90th edition of one of America's most historic races where many of America's best 40+ runners ran including Sara Hall (43), Molly Huddle (42), and Sally Kipyego (40). The post Sam Atkin barely slept last night, but that didn\u2019t stop him from crushing world champ Dawit Seare and everyone else at the Manchester Road Race appeared first on LetsRun.com .",
+        "tags": [
+          "running",
+          "elite-running",
+          "race-commentary"
+        ],
+        "title": "Sam Atkin barely slept last night, but that didn\u2019t stop him from crushing world champ Dawit Seare and everyone else at the Manchester Road Race",
+        "url": "https://letsrun.com/news/2026/11/sam-atkin-barely-slept-last-night-but-that-didnt-stop-him-from-crushing-world-champ-dawit-seare-and-everyone-else-at-the-manchester-road-race/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "letsrun.com",
+        "id": "a9117cbb6925a8ce-s1",
+        "name": "LetsRun",
+        "published_at": "2026-11-27T03:20:26+00:00",
+        "publisher": "LetsRun",
+        "title": "Sam Atkin barely slept last night, but that didn\u2019t stop him from crushing world champ Dawit Seare and everyone else at the Manchester Road Race",
+        "url": "https://letsrun.com/news/2026/11/sam-atkin-barely-slept-last-night-but-that-didnt-stop-him-from-crushing-world-champ-dawit-seare-and-everyone-else-at-the-manchester-road-race/"
+      }
+    ],
+    "summary": "Find out what happened in the 90th edition of one of America's most historic races where many of America's best 40+ runners ran including Sara Hall (43), Molly Huddle (42), and Sally Kipyego (40). The post Sam Atkin barely slept last night, but that didn\u2019t stop him from crushing world champ Dawit Seare and everyone else at the Manchester Road Race appeared first on LetsRun.com .",
+    "tags": [
+      "elite-running",
+      "race-commentary",
+      "running"
+    ],
+    "title": "Sam Atkin barely slept last night, but that didn\u2019t stop him from crushing world champ Dawit Seare and everyone else at the Manchester Road Race"
+  },
+  {
+    "id": "dc4736c0f3a9b935",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "b3cd78427b2173c9",
+        "metadata": {
+          "domain": "letsrun.com",
+          "publisher": "LetsRun",
+          "publisher_url": null,
+          "source_url": "https://www.letsrun.com/feed/"
+        },
+        "published_at": "2026-11-26T18:42:30+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "LetsRun",
+        "summary": "Britian's Sam Atkins (20:57) got the win over course record holder Edwin Kurgat (21:01) as Morgan Beadlescomb took top American honors in 3rd in 21:03. World road 5k champ Dawit Seare was just 4th in 21:11. The Netherlands Diane van Es dominated the women's race by 20 seconds in 24:03 as Annie Rodenfels took top American honors in third (24:23). The post 2026 Manchester Road Race Results \u2013 Sam Atkins (20:57) and Diane van Es (24:03) win appeared first on LetsRun.com .",
+        "tags": [
+          "running",
+          "elite-running",
+          "race-commentary"
+        ],
+        "title": "2026 Manchester Road Race Results \u2013 Sam Atkins (20:57) and Diane van Es (24:03) win",
+        "url": "https://letsrun.com/news/2026/11/2026-manchester-road-race-results-sam-atkins-2057-and-diane-van-es-2403-win/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "letsrun.com",
+        "id": "dc4736c0f3a9b935-s1",
+        "name": "LetsRun",
+        "published_at": "2026-11-26T18:42:30+00:00",
+        "publisher": "LetsRun",
+        "title": "2026 Manchester Road Race Results \u2013 Sam Atkins (20:57) and Diane van Es (24:03) win",
+        "url": "https://letsrun.com/news/2026/11/2026-manchester-road-race-results-sam-atkins-2057-and-diane-van-es-2403-win/"
+      }
+    ],
+    "summary": "Britian's Sam Atkins (20:57) got the win over course record holder Edwin Kurgat (21:01) as Morgan Beadlescomb took top American honors in 3rd in 21:03. World road 5k champ Dawit Seare was just 4th in 21:11. The Netherlands Diane van Es dominated the women's race by 20 seconds in 24:03 as Annie Rodenfels took top American honors in third (24:23). The post 2026 Manchester Road Race Results \u2013 Sam Atkins (20:57) and Diane van Es (24:03) win appeared first on LetsRun.com .",
+    "tags": [
+      "elite-running",
+      "race-commentary",
+      "running"
+    ],
+    "title": "2026 Manchester Road Race Results \u2013 Sam Atkins (20:57) and Diane van Es (24:03) win"
+  },
+  {
+    "id": "73cab820a4d7cbc2",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "d69b198709af9a71",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Dining & Wine",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/DiningandWine.xml"
+        },
+        "published_at": "2026-11-26T10:03:51+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Dining & Wine",
+        "summary": "Few sports arenas emphasize wine like Barclays, which offers grand cru Burgundy, Champagne and much more, sponsors events and has a wine club.",
+        "tags": [
+          "cooking",
+          "food",
+          "dining"
+        ],
+        "title": "At the Barclays Center, Fans Can Experience Some of the Finest Wines in the World",
+        "url": "https://nytimes.com/2026/11/26/dining/drinks/wine-basketball-barclays-center.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "73cab820a4d7cbc2-s1",
+        "name": "NYT Dining & Wine",
+        "published_at": "2026-11-26T10:03:51+00:00",
+        "publisher": "NYT Dining & Wine",
+        "title": "At the Barclays Center, Fans Can Experience Some of the Finest Wines in the World",
+        "url": "https://nytimes.com/2026/11/26/dining/drinks/wine-basketball-barclays-center.html"
+      }
+    ],
+    "summary": "Few sports arenas emphasize wine like Barclays, which offers grand cru Burgundy, Champagne and much more, sponsors events and has a wine club.",
+    "tags": [
+      "cooking",
+      "dining",
+      "food"
+    ],
+    "title": "At the Barclays Center, Fans Can Experience Some of the Finest Wines in the World"
+  },
+  {
+    "id": "bb857279521ed0f3",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "ed614a15cffbfc16",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Dining & Wine",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/DiningandWine.xml"
+        },
+        "published_at": "2026-11-25T10:04:09+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Dining & Wine",
+        "summary": "Gallaghers is turning 100 next year, and the outsize steaks still deliver heady, dry-aged pleasures.",
+        "tags": [
+          "cooking",
+          "food",
+          "dining"
+        ],
+        "title": "Restaurant Review: Gallaghers in New York",
+        "url": "https://nytimes.com/2026/11/25/dining/restaurant-review-gallaghers-nyc.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "bb857279521ed0f3-s1",
+        "name": "NYT Dining & Wine",
+        "published_at": "2026-11-25T10:04:09+00:00",
+        "publisher": "NYT Dining & Wine",
+        "title": "Restaurant Review: Gallaghers in New York",
+        "url": "https://nytimes.com/2026/11/25/dining/restaurant-review-gallaghers-nyc.html"
+      }
+    ],
+    "summary": "Gallaghers is turning 100 next year, and the outsize steaks still deliver heady, dry-aged pleasures.",
+    "tags": [
+      "cooking",
+      "dining",
+      "food"
+    ],
+    "title": "Restaurant Review: Gallaghers in New York"
+  },
+  {
+    "id": "a857579b8817bd67",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "7f3a8386ebaa2ea3",
+        "metadata": {
+          "domain": "nytimes.com",
+          "publisher": "NYT Dining & Wine",
+          "publisher_url": null,
+          "source_url": "https://rss.nytimes.com/services/xml/rss/nyt/DiningandWine.xml"
+        },
+        "published_at": "2026-11-24T23:10:25+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "NYT Dining & Wine",
+        "summary": "A lab-grown shortcut named Leaven is wooing many high-end bakers and pizza makers who\u2019ve prided themselves on their painstaking use of live cultures.",
+        "tags": [
+          "cooking",
+          "food",
+          "dining"
+        ],
+        "title": "Is an \u2018A.I. Agent\u2019 Coming for Our Sourdough Starter?",
+        "url": "https://nytimes.com/2026/11/20/dining/leaven-lab-grown-sourdough-starter.html"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "nytimes.com",
+        "id": "a857579b8817bd67-s1",
+        "name": "NYT Dining & Wine",
+        "published_at": "2026-11-24T23:10:25+00:00",
+        "publisher": "NYT Dining & Wine",
+        "title": "Is an \u2018A.I. Agent\u2019 Coming for Our Sourdough Starter?",
+        "url": "https://nytimes.com/2026/11/20/dining/leaven-lab-grown-sourdough-starter.html"
+      }
+    ],
+    "summary": "A lab-grown shortcut named Leaven is wooing many high-end bakers and pizza makers who\u2019ve prided themselves on their painstaking use of live cultures.",
+    "tags": [
+      "cooking",
+      "dining",
+      "food"
+    ],
+    "title": "Is an \u2018A.I. Agent\u2019 Coming for Our Sourdough Starter?"
+  },
+  {
+    "id": "86a49a0f760ad0d8",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:45+00:00",
+        "id": "0c9972feffa337e7",
+        "metadata": {
+          "domain": "rogerebert.com",
+          "publisher": "RogerEbert.com",
+          "publisher_url": null,
+          "source_url": "https://www.rogerebert.com/feed"
+        },
+        "published_at": "2026-11-26T08:01:00+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "RogerEbert.com",
+        "summary": "For all its flaws, \"The Hunting Wives\"\u2019 second season is a wild, propulsive outing, full of steadily escalating plot twists and bonkers narrative swerves that the binge TV model was made to exploit.",
+        "tags": [
+          "movies",
+          "criticism",
+          "reviews"
+        ],
+        "title": "\u201cThe Hunting Wives\u201d\u2018s Uneven Second Season Doubles Down on Plot Twists and Murder",
+        "url": "https://rogerebert.com/streaming/the-hunting-wives-season-2-netflix-tv-review-2026"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "rogerebert.com",
+        "id": "86a49a0f760ad0d8-s1",
+        "name": "RogerEbert.com",
+        "published_at": "2026-11-26T08:01:00+00:00",
+        "publisher": "RogerEbert.com",
+        "title": "\u201cThe Hunting Wives\u201d\u2018s Uneven Second Season Doubles Down on Plot Twists and Murder",
+        "url": "https://rogerebert.com/streaming/the-hunting-wives-season-2-netflix-tv-review-2026"
+      }
+    ],
+    "summary": "For all its flaws, \"The Hunting Wives\"\u2019 second season is a wild, propulsive outing, full of steadily escalating plot twists and bonkers narrative swerves that the binge TV model was made to exploit.",
+    "tags": [
+      "criticism",
+      "movies",
+      "reviews"
+    ],
+    "title": "\u201cThe Hunting Wives\u201d\u2018s Uneven Second Season Doubles Down on Plot Twists and Murder"
+  },
+  {
+    "id": "a843b90c3425f29b",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:53+00:00",
+        "id": "de8d385c0859cd0f",
+        "metadata": {
+          "domain": "washingtonpost.com",
+          "publisher": "Washington Post World",
+          "publisher_url": null,
+          "source_url": "https://feeds.washingtonpost.com/rss/world"
+        },
+        "published_at": "2026-11-27T20:47:01+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Washington Post World",
+        "summary": "The Mexican president described the tip line as a form of U.S. \u201cinterference.\u201d",
+        "tags": [
+          "general",
+          "world",
+          "context"
+        ],
+        "title": "Mexico condemns DEA tip line asking people to report corrupt officials in Sinaloa",
+        "url": "https://washingtonpost.com/world/2026/11/27/mexico-condemns-dea-tip-line-asking-people-report-corrupt-officials-sinaloa/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "washingtonpost.com",
+        "id": "a843b90c3425f29b-s1",
+        "name": "Washington Post World",
+        "published_at": "2026-11-27T20:47:01+00:00",
+        "publisher": "Washington Post World",
+        "title": "Mexico condemns DEA tip line asking people to report corrupt officials in Sinaloa",
+        "url": "https://washingtonpost.com/world/2026/11/27/mexico-condemns-dea-tip-line-asking-people-report-corrupt-officials-sinaloa/"
+      }
+    ],
+    "summary": "The Mexican president described the tip line as a form of U.S. \u201cinterference.\u201d",
+    "tags": [
+      "context",
+      "general",
+      "world"
+    ],
+    "title": "Mexico condemns DEA tip line asking people to report corrupt officials in Sinaloa"
+  },
+  {
+    "id": "c1482fd7c8654198",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:53+00:00",
+        "id": "de4292a2c3c1ddb5",
+        "metadata": {
+          "domain": "washingtonpost.com",
+          "publisher": "Washington Post World",
+          "publisher_url": null,
+          "source_url": "https://feeds.washingtonpost.com/rss/world"
+        },
+        "published_at": "2026-11-27T20:07:19+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Washington Post World",
+        "summary": "Neighborhoods around a major American naval facility are deserted, and the nearby businesses are wondering what comes next.",
+        "tags": [
+          "general",
+          "world",
+          "context"
+        ],
+        "title": "After heavy strikes by Iran, U.S. naval base in Bahrain faces uncertain future",
+        "url": "https://washingtonpost.com/world/2026/11/27/after-heavy-strikes-by-iran-major-us-naval-base-bahrain-faces-uncertain-future/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "washingtonpost.com",
+        "id": "c1482fd7c8654198-s1",
+        "name": "Washington Post World",
+        "published_at": "2026-11-27T20:07:19+00:00",
+        "publisher": "Washington Post World",
+        "title": "After heavy strikes by Iran, U.S. naval base in Bahrain faces uncertain future",
+        "url": "https://washingtonpost.com/world/2026/11/27/after-heavy-strikes-by-iran-major-us-naval-base-bahrain-faces-uncertain-future/"
+      }
+    ],
+    "summary": "Neighborhoods around a major American naval facility are deserted, and the nearby businesses are wondering what comes next.",
+    "tags": [
+      "context",
+      "general",
+      "world"
+    ],
+    "title": "After heavy strikes by Iran, U.S. naval base in Bahrain faces uncertain future"
+  },
+  {
+    "id": "c89f7d25862158e1",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:53+00:00",
+        "id": "f67ac4c1ef9f0bae",
+        "metadata": {
+          "domain": "washingtonpost.com",
+          "publisher": "Washington Post World",
+          "publisher_url": null,
+          "source_url": "https://feeds.washingtonpost.com/rss/world"
+        },
+        "published_at": "2026-11-27T18:57:17+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Washington Post World",
+        "summary": "The highly anticipated game landed in an already strained market, where console manufacturers have been hit hard by a global memory chip shortage.",
+        "tags": [
+          "general",
+          "world",
+          "context"
+        ],
+        "title": "\u2018GTA VI\u2019 release has swept PlayStation 5 off the shelves worldwide",
+        "url": "https://washingtonpost.com/world/2026/11/27/gta-vi-release-has-swept-playstation-5-off-shelves-worldwide/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "washingtonpost.com",
+        "id": "c89f7d25862158e1-s1",
+        "name": "Washington Post World",
+        "published_at": "2026-11-27T18:57:17+00:00",
+        "publisher": "Washington Post World",
+        "title": "\u2018GTA VI\u2019 release has swept PlayStation 5 off the shelves worldwide",
+        "url": "https://washingtonpost.com/world/2026/11/27/gta-vi-release-has-swept-playstation-5-off-shelves-worldwide/"
+      }
+    ],
+    "summary": "The highly anticipated game landed in an already strained market, where console manufacturers have been hit hard by a global memory chip shortage.",
+    "tags": [
+      "context",
+      "general",
+      "world"
+    ],
+    "title": "\u2018GTA VI\u2019 release has swept PlayStation 5 off the shelves worldwide"
+  },
+  {
+    "id": "69a1748773d22c88",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:53+00:00",
+        "id": "1d3f6a9d519d7011",
+        "metadata": {
+          "domain": "washingtonpost.com",
+          "publisher": "Washington Post World",
+          "publisher_url": null,
+          "source_url": "https://feeds.washingtonpost.com/rss/world"
+        },
+        "published_at": "2026-11-27T18:24:12+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Washington Post World",
+        "summary": "Alliances that seemed unthinkable before the Oct. 27 election are now possible or even likely, as campaign trail taboos give way to realpolitik coalition talks.",
+        "tags": [
+          "general",
+          "world",
+          "context"
+        ],
+        "title": "How Israel\u2019s odd-couple politics could be close to toppling Netanyahu",
+        "url": "https://washingtonpost.com/world/2026/11/27/how-israels-odd-couple-politics-could-be-close-toppling-netanyahu/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "washingtonpost.com",
+        "id": "69a1748773d22c88-s1",
+        "name": "Washington Post World",
+        "published_at": "2026-11-27T18:24:12+00:00",
+        "publisher": "Washington Post World",
+        "title": "How Israel\u2019s odd-couple politics could be close to toppling Netanyahu",
+        "url": "https://washingtonpost.com/world/2026/11/27/how-israels-odd-couple-politics-could-be-close-toppling-netanyahu/"
+      }
+    ],
+    "summary": "Alliances that seemed unthinkable before the Oct. 27 election are now possible or even likely, as campaign trail taboos give way to realpolitik coalition talks.",
+    "tags": [
+      "context",
+      "general",
+      "world"
+    ],
+    "title": "How Israel\u2019s odd-couple politics could be close to toppling Netanyahu"
+  },
+  {
+    "id": "9653ff3d191b1be4",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:53+00:00",
+        "id": "e910fe0e4cbe1d2b",
+        "metadata": {
+          "domain": "washingtonpost.com",
+          "publisher": "Washington Post World",
+          "publisher_url": null,
+          "source_url": "https://feeds.washingtonpost.com/rss/world"
+        },
+        "published_at": "2026-11-27T18:15:00+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Washington Post World",
+        "summary": "A former consultant who answered a job advertisement to lead a political party has secured a powerful position in an extremely close election race.",
+        "tags": [
+          "general",
+          "world",
+          "context"
+        ],
+        "title": "Political novice turns kingmaker after New Zealand\u2019s deadlocked election",
+        "url": "https://washingtonpost.com/world/2026/11/27/opportunity-qiulae-wong-turns-kingmaker-after-new-zealand-election/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "washingtonpost.com",
+        "id": "9653ff3d191b1be4-s1",
+        "name": "Washington Post World",
+        "published_at": "2026-11-27T18:15:00+00:00",
+        "publisher": "Washington Post World",
+        "title": "Political novice turns kingmaker after New Zealand\u2019s deadlocked election",
+        "url": "https://washingtonpost.com/world/2026/11/27/opportunity-qiulae-wong-turns-kingmaker-after-new-zealand-election/"
+      }
+    ],
+    "summary": "A former consultant who answered a job advertisement to lead a political party has secured a powerful position in an extremely close election race.",
+    "tags": [
+      "context",
+      "general",
+      "world"
+    ],
+    "title": "Political novice turns kingmaker after New Zealand\u2019s deadlocked election"
+  },
+  {
+    "id": "003b30fd0c8cdc00",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:53+00:00",
+        "id": "7f60ab2057f81671",
+        "metadata": {
+          "domain": "washingtonpost.com",
+          "publisher": "Washington Post World",
+          "publisher_url": null,
+          "source_url": "https://feeds.washingtonpost.com/rss/world"
+        },
+        "published_at": "2026-11-27T16:14:59+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Washington Post World",
+        "summary": "Patriarch Kirill, head of the Russian Orthodox Church, urged followers to help prevent a scenario in which humans are relegated to the margins of existence.",
+        "tags": [
+          "general",
+          "world",
+          "context"
+        ],
+        "title": "Russian Orthodox patriarch calls on Christians to tame AI, warns of \u2018Apocalypse\u2019",
+        "url": "https://washingtonpost.com/world/2026/11/27/russian-orthodox-church-patriarch-kirill-calls-christians-tame-ai/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "washingtonpost.com",
+        "id": "003b30fd0c8cdc00-s1",
+        "name": "Washington Post World",
+        "published_at": "2026-11-27T16:14:59+00:00",
+        "publisher": "Washington Post World",
+        "title": "Russian Orthodox patriarch calls on Christians to tame AI, warns of \u2018Apocalypse\u2019",
+        "url": "https://washingtonpost.com/world/2026/11/27/russian-orthodox-church-patriarch-kirill-calls-christians-tame-ai/"
+      }
+    ],
+    "summary": "Patriarch Kirill, head of the Russian Orthodox Church, urged followers to help prevent a scenario in which humans are relegated to the margins of existence.",
+    "tags": [
+      "context",
+      "general",
+      "world"
+    ],
+    "title": "Russian Orthodox patriarch calls on Christians to tame AI, warns of \u2018Apocalypse\u2019"
+  },
+  {
+    "id": "f70b257b50f9c166",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:53+00:00",
+        "id": "5357f2612bb9889c",
+        "metadata": {
+          "domain": "washingtonpost.com",
+          "publisher": "Washington Post World",
+          "publisher_url": null,
+          "source_url": "https://feeds.washingtonpost.com/rss/world"
+        },
+        "published_at": "2026-11-27T14:30:00+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Washington Post World",
+        "summary": "Students spend years preparing for one make-or-break test, and cheating scandals have raised fears that AI is undermining trust in the system.",
+        "tags": [
+          "general",
+          "world",
+          "context"
+        ],
+        "title": "South Korea is cracking down on AI cheating with metal detectors and body cameras",
+        "url": "https://washingtonpost.com/world/2026/11/27/south-korea-is-cracking-down-ai-cheating-with-metal-detectors-body-cameras/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "washingtonpost.com",
+        "id": "f70b257b50f9c166-s1",
+        "name": "Washington Post World",
+        "published_at": "2026-11-27T14:30:00+00:00",
+        "publisher": "Washington Post World",
+        "title": "South Korea is cracking down on AI cheating with metal detectors and body cameras",
+        "url": "https://washingtonpost.com/world/2026/11/27/south-korea-is-cracking-down-ai-cheating-with-metal-detectors-body-cameras/"
+      }
+    ],
+    "summary": "Students spend years preparing for one make-or-break test, and cheating scandals have raised fears that AI is undermining trust in the system.",
+    "tags": [
+      "context",
+      "general",
+      "world"
+    ],
+    "title": "South Korea is cracking down on AI cheating with metal detectors and body cameras"
+  },
+  {
+    "id": "edd592b64051d781",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:53+00:00",
+        "id": "324bfedfac06ccda",
+        "metadata": {
+          "domain": "washingtonpost.com",
+          "publisher": "Washington Post World",
+          "publisher_url": null,
+          "source_url": "https://feeds.washingtonpost.com/rss/world"
+        },
+        "published_at": "2026-11-27T12:55:25+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Washington Post World",
+        "summary": "Asked about their relationship, President Donald Trump said: \u201cWe want to make a deal,\u201d blaming the Russian and Ukrainian leaders' \u201chate\u201d as the biggest problem keeping them from peace.",
+        "tags": [
+          "general",
+          "world",
+          "context"
+        ],
+        "title": "Trump defends Putin friendship that Zelensky calls \u2018strange\u2019",
+        "url": "https://washingtonpost.com/world/2026/11/27/trump-defends-putin-friendship-that-zelensky-calls-strange/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "washingtonpost.com",
+        "id": "edd592b64051d781-s1",
+        "name": "Washington Post World",
+        "published_at": "2026-11-27T12:55:25+00:00",
+        "publisher": "Washington Post World",
+        "title": "Trump defends Putin friendship that Zelensky calls \u2018strange\u2019",
+        "url": "https://washingtonpost.com/world/2026/11/27/trump-defends-putin-friendship-that-zelensky-calls-strange/"
+      }
+    ],
+    "summary": "Asked about their relationship, President Donald Trump said: \u201cWe want to make a deal,\u201d blaming the Russian and Ukrainian leaders' \u201chate\u201d as the biggest problem keeping them from peace.",
+    "tags": [
+      "context",
+      "general",
+      "world"
+    ],
+    "title": "Trump defends Putin friendship that Zelensky calls \u2018strange\u2019"
+  },
+  {
+    "id": "cb07dfed8561aa25",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:53+00:00",
+        "id": "5128a0b98a0620d6",
+        "metadata": {
+          "domain": "washingtonpost.com",
+          "publisher": "Washington Post World",
+          "publisher_url": null,
+          "source_url": "https://feeds.washingtonpost.com/rss/world"
+        },
+        "published_at": "2026-11-27T11:00:00+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Washington Post World",
+        "summary": "U.S. allies and partners want the incoming Congress to be more assertive, but some remain skeptical Trump can be reined in.",
+        "tags": [
+          "general",
+          "world",
+          "context"
+        ],
+        "title": "Democrats vow to restrain Trump\u2019s foreign policy, but foresee limits",
+        "url": "https://washingtonpost.com/national-security/2026/11/27/democrats-vow-restrain-trumps-foreign-policy-foresee-limits/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "washingtonpost.com",
+        "id": "cb07dfed8561aa25-s1",
+        "name": "Washington Post World",
+        "published_at": "2026-11-27T11:00:00+00:00",
+        "publisher": "Washington Post World",
+        "title": "Democrats vow to restrain Trump\u2019s foreign policy, but foresee limits",
+        "url": "https://washingtonpost.com/national-security/2026/11/27/democrats-vow-restrain-trumps-foreign-policy-foresee-limits/"
+      }
+    ],
+    "summary": "U.S. allies and partners want the incoming Congress to be more assertive, but some remain skeptical Trump can be reined in.",
+    "tags": [
+      "context",
+      "general",
+      "world"
+    ],
+    "title": "Democrats vow to restrain Trump\u2019s foreign policy, but foresee limits"
+  },
+  {
+    "id": "4a4d4bf20eca421d",
+    "is_serendipity": false,
+    "items": [
+      {
+        "fetched_at": "2026-11-27T22:31:53+00:00",
+        "id": "93dd6670113a0c00",
+        "metadata": {
+          "domain": "washingtonpost.com",
+          "publisher": "Washington Post World",
+          "publisher_url": null,
+          "source_url": "https://feeds.washingtonpost.com/rss/world"
+        },
+        "published_at": "2026-11-26T17:40:41+00:00",
+        "query": null,
+        "query_set": null,
+        "ranking_weight": 1.0,
+        "source_kind": "curated_feed",
+        "source_name": "Washington Post World",
+        "summary": "Gadi Eisenkot's Yashar party and its presumed partners now hold 48 of the Knesset\u2019s 120 seats \u2014 still short of the 61 needed for a majority and the ouster of Benjamin Netanyahu.",
+        "tags": [
+          "general",
+          "world",
+          "context"
+        ],
+        "title": "As he races to unseat Netanyahu, Eisenkot reaches deal with left-wing party",
+        "url": "https://washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/"
+      }
+    ],
+    "score": 3.25,
+    "source_count": 1,
+    "source_refs": [
+      {
+        "domain": "washingtonpost.com",
+        "id": "4a4d4bf20eca421d-s1",
+        "name": "Washington Post World",
+        "published_at": "2026-11-26T17:40:41+00:00",
+        "publisher": "Washington Post World",
+        "title": "As he races to unseat Netanyahu, Eisenkot reaches deal with left-wing party",
+        "url": "https://washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/"
+      }
+    ],
+    "summary": "Gadi Eisenkot's Yashar party and its presumed partners now hold 48 of the Knesset\u2019s 120 seats \u2014 still short of the 61 needed for a majority and the ouster of Benjamin Netanyahu.",
+    "tags": [
+      "context",
+      "general",
+      "world"
+    ],
+    "title": "As he races to unseat Netanyahu, Eisenkot reaches deal with left-wing party"
+  }
+]

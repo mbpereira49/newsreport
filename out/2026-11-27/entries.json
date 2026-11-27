@@ -1,0 +1,82 @@
+[
+  {
+    "body": "I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find pitches and articles from ostensibly serious people with ostensibly serious credentials attached to ost",
+    "cluster_id": "f3aa9757964fbd12",
+    "dek": "Among the many already existing effects of AI has been a great de-individualization.",
+    "headline": "Quoting Jack Despain Zhou",
+    "source_ids": [
+      "f3aa9757964fbd12-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "It was only today that I understood one of its most attractive characteristics. Normally, if you want to grab a snapshot copy of a SQLite database, yo",
+    "cluster_id": "3ab5aac84010e395",
+    "dek": "This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 .",
+    "headline": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+    "source_ids": [
+      "3ab5aac84010e395-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in agent-infrastructure, ai, practitioner-analysis."
+  },
+  {
+    "body": "",
+    "cluster_id": "b2a262270f87528c",
+    "dek": "The incoming Democratic majorities have begun targeting businesses and other outsiders in their planned inquiries, but the president has threatened to fire them if they comply without his permission.",
+    "headline": "In Democrats vs. Trump, the Loser May Be Federal Contractors",
+    "source_ids": [
+      "b2a262270f87528c-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "2af2361b0d944374",
+    "dek": "Decisions on voting rights, immigration and corruption generated a backlash that helped spur turnout that drove the Democratic sweep of Congress.",
+    "headline": "Supreme Court Rulings Cheered by Republicans Wound Up Hurting Them",
+    "source_ids": [
+      "2af2361b0d944374-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in context, general, us."
+  },
+  {
+    "body": "",
+    "cluster_id": "5c9d3e11690eb4be",
+    "dek": "Fewer original series, decision fatigue and a desire for comfort have viewers escaping to the past.",
+    "headline": "It\u2019s Boom Times for Old TV Shows. New TV, Not So Much.",
+    "source_ids": [
+      "5c9d3e11690eb4be-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "",
+    "cluster_id": "6820cbbc8aabf565",
+    "dek": "A growing part of a brand\u2019s Black Friday and Cyber Monday marketing strategy rests on paying top dollar for social media influencers to post videos.",
+    "headline": "Black Friday Deals and Holiday Sales Are Big Money for Influencers",
+    "source_ids": [
+      "6820cbbc8aabf565-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in business, context, economy."
+  },
+  {
+    "body": "\u2013 Listening to a poem while doing my little stretches. The Library of Congress and Poetry Archive collections, to be specific. \u2013 And I\u2019m thankful in advance to the programmer who builds",
+    "cluster_id": "4ca36ac175f76e23",
+    "dek": "\u2013 Weird and in person celebrations of books.",
+    "headline": "What I\u2019m thankful for, literarily.",
+    "source_ids": [
+      "4ca36ac175f76e23-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in books, criticism, literary-fiction."
+  },
+  {
+    "body": "| Lit Hub Criticism Why the Ukrainian battle against Russian domination was over a century in the making. | Lit Hub History On the radicalization of Eugene",
+    "cluster_id": "21fefe614409ac13",
+    "dek": "No\u00eblle de Leeuw reads Gloria Steinem\u2019s An Unexpected Life and expresses some gratitude.",
+    "headline": "Lit Hub Daily: November 25, 2026",
+    "source_ids": [
+      "21fefe614409ac13-s1"
+    ],
+    "why_it_matters": "Flagged from 1 source in books, criticism, literary-fiction."
+  }
+]
